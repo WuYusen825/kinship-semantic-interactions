@@ -1,0 +1,721 @@
+{
+  "status": "completed",
+  "started_utc": "2026-10-15T08:56:25.018874+00:00",
+  "metadata": {
+    "protocol_commit": "6ba7afba369d3d15446ea7571eabd2117b7e8c74",
+    "protocol_sha256": "61874a1c28ab37758670a61d12e08b6097af07f7922f63cfd76da5dacfcef8be",
+    "protocol_commit_utc": "2026-10-15T08:48:55+00:00",
+    "script_absent_from_protocol_commit": true,
+    "script_sha256": "6f87e11e135c3e142cc66e96bead8868c6277040625d53110abe2daa56bcf2e3",
+    "pairs_sha256": "47e676a8fe2e988a40a45a5dd558f61cfa85b4f1a528a6a7bf4153d8e128dfbf",
+    "seed": 20261014,
+    "versions": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0",
+      "statsmodels": "0.15.0"
+    }
+  },
+  "frozen_baseline_reproduction": {
+    "protocol_commit": "6ba7afba369d3d15446ea7571eabd2117b7e8c74",
+    "protocol_sha256": "61874a1c28ab37758670a61d12e08b6097af07f7922f63cfd76da5dacfcef8be",
+    "verified_utc": "2026-10-15T08:51:53.416811+00:00",
+    "passed": true,
+    "language_equal_C1_losses": {
+      "M0": 0.5810488878419937,
+      "M1": 0.5784682088411487,
+      "M2": 0.576625431756988
+    },
+    "max_absolute_error": 0.0,
+    "tolerance": 1e-09,
+    "folds": [
+      {
+        "fold": 0,
+        "test_systems": 296
+      },
+      {
+        "fold": 1,
+        "test_systems": 161
+      },
+      {
+        "fold": 2,
+        "test_systems": 161
+      },
+      {
+        "fold": 3,
+        "test_systems": 161
+      },
+      {
+        "fold": 4,
+        "test_systems": 160
+      }
+    ],
+    "artifact_sha256": "ddfb289e607bad56c6129c8cfe93ce7910791de46e7ca450276ad648611f69a3"
+  },
+  "numerical_verification": {
+    "passed": true,
+    "actual_weighted_row_vs_cell_absolute_errors": {
+      "objective": 0.0,
+      "gradient": 1.7195134205394424e-12,
+      "information": 4.263256414560601e-14,
+      "total_weight": 2.2737367544323206e-13
+    },
+    "synthetic_finite_MLE": {
+      "parameter_max_error": 5.364242386396434e-08,
+      "probability_max_error": 6.062050167399136e-09,
+      "diagnostics": {
+        "rank": 14,
+        "weight_sum": 5600.0,
+        "separation": false,
+        "separation_lp_objective": 0.0,
+        "method": "MLE",
+        "converged": true,
+        "iterations": 5,
+        "standardized_score": 8.640672253891677e-10,
+        "max_abs_beta": 0.399999946374544,
+        "min_probability": 0.13814666738256015,
+        "max_probability": 0.42367811935524213
+      }
+    },
+    "synthetic_separated_Firth_analytic_cases": [
+      {
+        "binomial_cells": 1,
+        "analytic_probability_max_error": 9.342878692919498e-10,
+        "diagnostics": {
+          "rank": 1,
+          "weight_sum": 20.0,
+          "separation": true,
+          "separation_lp_objective": 1.0,
+          "method": "Firth",
+          "converged": true,
+          "trigger": "检出完全或准完全分离",
+          "iterations": 9,
+          "standardized_score": 9.810022627565473e-10,
+          "max_abs_beta": 3.713572026507143,
+          "min_probability": 0.023809524743811677,
+          "max_probability": 0.023809524743811677
+        }
+      },
+      {
+        "binomial_cells": 2,
+        "analytic_probability_max_error": 9.342878692919498e-10,
+        "diagnostics": {
+          "rank": 2,
+          "weight_sum": 40.0,
+          "separation": true,
+          "separation_lp_objective": 2.0,
+          "method": "Firth",
+          "converged": true,
+          "trigger": "检出完全或准完全分离",
+          "iterations": 9,
+          "standardized_score": 9.810023002265744e-10,
+          "max_abs_beta": 3.713572026507144,
+          "min_probability": 0.023809524743811677,
+          "max_probability": 0.9761904752561883
+        }
+      }
+    ],
+    "scope": "验证目标/梯度/信息矩阵的聚合等价与解析可解估计，不重现内部实现作为答案。"
+  },
+  "fit_api_sha256": "ce55131d9063f1aa441b525d84b9f7affb04a4da0a063f6f1683fd9ede3685fc",
+  "measurement": "D1",
+  "weighting": "family_equal",
+  "estimator_requested": "MLE",
+  "systems": 939,
+  "family_groups": 125,
+  "pairs": 26292,
+  "columns": [
+    "intercept",
+    "Dr",
+    "Da",
+    "De",
+    "DrDa",
+    "DrDe",
+    "DaDe",
+    "E",
+    "B",
+    "S",
+    "M",
+    "DrE",
+    "DaB",
+    "DaS"
+  ],
+  "pair_types": [
+    "feB|feZ",
+    "feB|fyB",
+    "feB|fyZ",
+    "feZ|fyZ",
+    "fyB|feZ",
+    "fyB|fyZ",
+    "meB|feB",
+    "meB|feZ",
+    "meB|fyB",
+    "meB|fyZ",
+    "meB|meZ",
+    "meB|myB",
+    "meB|myZ",
+    "meZ|feB",
+    "meZ|feZ",
+    "meZ|fyB",
+    "meZ|fyZ",
+    "meZ|myZ",
+    "myB|feB",
+    "myB|feZ",
+    "myB|fyB",
+    "myB|fyZ",
+    "myB|meZ",
+    "myB|myZ",
+    "myZ|feB",
+    "myZ|feZ",
+    "myZ|fyB",
+    "myZ|fyZ"
+  ],
+  "full_sample_coefficients": {
+    "intercept": 2.843561066323501,
+    "Dr": -3.907151028424148,
+    "Da": -3.221459830402771,
+    "De": -1.9345626010450363,
+    "DrDa": 1.4012457404930925,
+    "DrDe": 2.544030710164891,
+    "DaDe": 0.6739303016047936,
+    "E": 0.012186429598932182,
+    "B": -0.0478759639374925,
+    "S": 0.07030933675801108,
+    "M": 0.004728339067264319,
+    "DrE": -0.4578417310811507,
+    "DaB": -0.11951831014511637,
+    "DaS": -0.6558214425314142
+  },
+  "full_sample_diagnostics": {
+    "rank": 14,
+    "weight_sum": 939.0000000000002,
+    "separation": false,
+    "separation_lp_objective": 0.0,
+    "method": "MLE",
+    "converged": true,
+    "iterations": 6,
+    "standardized_score": 3.9698139058352956e-09,
+    "max_abs_beta": 3.907151028424148,
+    "min_probability": 0.05296001842218944,
+    "max_probability": 0.7152834746698684
+  },
+  "bootstrap_requested": 5000,
+  "bootstrap_weight_formula": "k_g*N/(G*n_g*28); 每次总权重固定N",
+  "regional_coefficients": {
+    "Africa": {
+      "systems": 73,
+      "family_groups": 7,
+      "coefficients": {
+        "intercept": 2.2396663242764663,
+        "Dr": -2.2600224991849744,
+        "Da": -2.1344136524373223,
+        "De": -0.6718863720975399,
+        "DrDa": 0.4433464523049594,
+        "DrDe": 0.7205632968178849,
+        "DaDe": 0.01104412479538664,
+        "E": 0.01555254452282435,
+        "B": 0.015552544522824258,
+        "S": 0.022831167517279694,
+        "M": -0.003584285251512678,
+        "DrE": -0.6146737089716947,
+        "DaB": -0.27308169732852217,
+        "DaS": -0.0458005255936359
+      },
+      "theory_term_signs": {
+        "DrE": -1,
+        "DaB": -1,
+        "DaS": -1
+      },
+      "diagnostics": {
+        "rank": 14,
+        "weight_sum": 73.00000000000001,
+        "separation": false,
+        "separation_lp_objective": 0.0,
+        "method": "MLE",
+        "converged": true,
+        "iterations": 5,
+        "standardized_score": 1.06507988882031e-09,
+        "max_abs_beta": 2.2600224991849744,
+        "min_probability": 0.1525153267321482,
+        "max_probability": 0.8318624965758828
+      }
+    },
+    "Australia": {
+      "systems": 93,
+      "family_groups": 7,
+      "coefficients": {
+        "intercept": 2.8394238562437772,
+        "Dr": -3.2490863476725536,
+        "Da": -2.3780629070674992,
+        "De": -0.5773758186440373,
+        "DrDa": 1.4715491008555315,
+        "DrDe": 0.4540812466704547,
+        "DaDe": 0.17933007755295757,
+        "E": -0.3168003502479935,
+        "B": -0.3168003502479935,
+        "S": -3.840034485614926e-17,
+        "M": 0.2903032131065865,
+        "DrE": -0.8670613641258791,
+        "DaB": 0.46994387048364417,
+        "DaS": -0.469379242733241
+      },
+      "theory_term_signs": {
+        "DrE": -1,
+        "DaB": 1,
+        "DaS": -1
+      },
+      "diagnostics": {
+        "rank": 14,
+        "weight_sum": 93.0,
+        "separation": false,
+        "separation_lp_objective": 0.0,
+        "method": "MLE",
+        "converged": true,
+        "iterations": 6,
+        "standardized_score": 1.0139380374733909e-13,
+        "max_abs_beta": 3.2490863476725536,
+        "min_probability": 0.1506489828527852,
+        "max_probability": 0.9056847196461777
+      }
+    },
+    "Eurasia": {
+      "systems": 170,
+      "family_groups": 16,
+      "coefficients": {
+        "intercept": 1.519988619979388,
+        "Dr": -2.737639921722333,
+        "Da": -2.8970076835989786,
+        "De": 0.34754550579964455,
+        "DrDa": 0.6206684446580624,
+        "DrDe": -0.3717012421238528,
+        "DaDe": -0.4537974243461054,
+        "E": -0.5397346502370264,
+        "B": 0.16644561076927025,
+        "S": -0.01309978158117774,
+        "M": 0.12729656402984665,
+        "DrE": -0.6141756411728978,
+        "DaB": -0.19226904684639895,
+        "DaS": 0.31996675392995166
+      },
+      "theory_term_signs": {
+        "DrE": -1,
+        "DaB": -1,
+        "DaS": 1
+      },
+      "diagnostics": {
+        "rank": 14,
+        "weight_sum": 170.00000000000006,
+        "separation": true,
+        "separation_lp_objective": 4.0,
+        "method": "Firth",
+        "converged": true,
+        "trigger": "检出完全或准完全分离",
+        "iterations": 9,
+        "standardized_score": 1.3845452592426842e-09,
+        "max_abs_beta": 2.8970076835989786,
+        "min_probability": 0.018488520176898626,
+        "max_probability": 0.8843188242694018
+      }
+    },
+    "North America": {
+      "systems": 110,
+      "family_groups": 23,
+      "coefficients": {
+        "intercept": 1.6506339277750368,
+        "Dr": -3.2623671934356198,
+        "Da": -3.0518416143717406,
+        "De": -0.25668407028618795,
+        "DrDa": 1.7872218149879482,
+        "DrDe": 0.3195001534005645,
+        "DaDe": 0.04236798836697081,
+        "E": 0.24270426433357117,
+        "B": -0.16890249136784724,
+        "S": 0.30005379247017455,
+        "M": 0.0354543458467561,
+        "DrE": -0.8447670318929459,
+        "DaB": -0.11136519013598352,
+        "DaS": -0.38400250217261306
+      },
+      "theory_term_signs": {
+        "DrE": -1,
+        "DaB": -1,
+        "DaS": -1
+      },
+      "diagnostics": {
+        "rank": 14,
+        "weight_sum": 110.0,
+        "separation": false,
+        "separation_lp_objective": 0.0,
+        "method": "MLE",
+        "converged": true,
+        "iterations": 6,
+        "standardized_score": 5.123478102381734e-09,
+        "max_abs_beta": 3.2623671934356198,
+        "min_probability": 0.05333497176580753,
+        "max_probability": 0.8370791489002821
+      }
+    },
+    "Papunesia": {
+      "systems": 400,
+      "family_groups": 48,
+      "coefficients": {
+        "intercept": 4.2327383241331695,
+        "Dr": -5.170120204613296,
+        "Da": -3.8884290040396112,
+        "De": -4.413279947972523,
+        "DrDa": 1.3307651979972839,
+        "DrDe": 5.6648732516179106,
+        "DaDe": 1.5319378400036983,
+        "E": 0.006013394345259308,
+        "B": -0.0465808661503556,
+        "S": 0.1630171414659752,
+        "M": -0.022461561407725573,
+        "DrE": -0.16610554937075753,
+        "DaB": 0.13295704297374517,
+        "DaS": -1.236203616213734
+      },
+      "theory_term_signs": {
+        "DrE": -1,
+        "DaB": 1,
+        "DaS": -1
+      },
+      "diagnostics": {
+        "rank": 14,
+        "weight_sum": 400.0,
+        "separation": false,
+        "separation_lp_objective": 0.0,
+        "method": "MLE",
+        "converged": true,
+        "iterations": 7,
+        "standardized_score": 3.052293529037797e-11,
+        "max_abs_beta": 5.6648732516179106,
+        "min_probability": 0.02881818042267141,
+        "max_probability": 0.6170932274521453
+      }
+    },
+    "South America": {
+      "systems": 63,
+      "family_groups": 30,
+      "coefficients": {
+        "intercept": 2.77906180448842,
+        "Dr": -3.9909393997620413,
+        "Da": -3.4113211488297175,
+        "De": -0.7365854570435131,
+        "DrDa": 1.7585040118392081,
+        "DrDe": 0.9828977947933197,
+        "DaDe": 0.28297467845938157,
+        "E": 0.09448903836327652,
+        "B": -1.615715242151984e-15,
+        "S": -0.1752201021388647,
+        "M": -0.008774269357274551,
+        "DrE": -0.8003855329876085,
+        "DaB": -0.4205786904947273,
+        "DaS": -0.06039776869417445
+      },
+      "theory_term_signs": {
+        "DrE": -1,
+        "DaB": -1,
+        "DaS": -1
+      },
+      "diagnostics": {
+        "rank": 14,
+        "weight_sum": 63.0,
+        "separation": false,
+        "separation_lp_objective": 0.0,
+        "method": "MLE",
+        "converged": true,
+        "iterations": 6,
+        "standardized_score": 3.530947267816481e-09,
+        "max_abs_beta": 3.9909393997620413,
+        "min_probability": 0.0534807768713866,
+        "max_probability": 0.8944444444435155
+      }
+    }
+  },
+  "bootstrap_completed": 5000,
+  "bootstrap_valid": 5000,
+  "bootstrap_failures": 0,
+  "all_requested_refits_converged": true,
+  "bootstrap_method_counts": {
+    "MLE": 5000
+  },
+  "bootstrap_failure_replicates": [],
+  "bootstrap_failure_messages": {},
+  "bootstrap_csv_sha256": "c092953479963330dd2ad0af1e4aff25fe7251ba3af92236964290fdeecd821c",
+  "bootstrap_intervals_conditioned_on_successful_refits": false,
+  "theory_terms": {
+    "DrE": {
+      "point_estimate": -0.4578417310811507,
+      "family_refit_percentile_95_interval": [
+        -0.782206214109294,
+        -0.16484082949449264
+      ],
+      "bonferroni_98_333333_percent_interval": [
+        -0.8512399988817064,
+        -0.112695775002743
+      ],
+      "negative_fraction": 0.9986,
+      "valid_replicates": 5000,
+      "direction_assessment": "逐项95%区间支持预期负方向"
+    },
+    "DaB": {
+      "point_estimate": -0.11951831014511637,
+      "family_refit_percentile_95_interval": [
+        -0.38013852134224557,
+        0.1305139293961301
+      ],
+      "bonferroni_98_333333_percent_interval": [
+        -0.44290221994048673,
+        0.18685669726585583
+      ],
+      "negative_fraction": 0.8154,
+      "valid_replicates": 5000,
+      "direction_assessment": "方向证据未定"
+    },
+    "DaS": {
+      "point_estimate": -0.6558214425314142,
+      "family_refit_percentile_95_interval": [
+        -1.0488149802186169,
+        -0.3196767656485335
+      ],
+      "bonferroni_98_333333_percent_interval": [
+        -1.1315120217532861,
+        -0.25163349676926366
+      ],
+      "negative_fraction": 1.0,
+      "valid_replicates": 5000,
+      "direction_assessment": "逐项95%区间支持预期负方向"
+    }
+  },
+  "all_three_pointwise_intervals_below_zero": false,
+  "interval_scope": "整谱系重抽样并重拟合的全样本条件系数区间；不是固定折外评分区间。",
+  "finished_utc": "2026-10-15T08:56:26.509781+00:00",
+  "elapsed_bootstrap_seconds": 1.3316025159983838,
+  "execution_source_snapshot": {
+    "file": "uncertainty_bootstrap_executed_script.log",
+    "sha256": "6f87e11e135c3e142cc66e96bead8868c6277040625d53110abe2daa56bcf2e3"
+  },
+  "regional_input_accounting": {
+    "primary_systems": 939,
+    "complete_case_systems": 909,
+    "complete_case_pairs": 25452,
+    "complete_case_family_groups": 123,
+    "excluded_missing_area_systems": 30,
+    "excluded_system_records": [
+      {
+        "Language_ID": "p_attaatta1244",
+        "Glottocode": "atta1244",
+        "Name": "Atta",
+        "family_group": "aust1307",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_bardibard1254",
+        "Glottocode": "bard1254",
+        "Name": "Bardic",
+        "family_group": "nyul1248",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_buinbuin1247",
+        "Glottocode": "buin1247",
+        "Name": "Buin",
+        "family_group": "sout2948",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_morgan1871burmeseburm1266",
+        "Glottocode": "burm1266",
+        "Name": "Burmish",
+        "family_group": "sino1245",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_dhuwaldhuwalayolngudhuw1248",
+        "Glottocode": "dhuw1248",
+        "Name": "Dhuwal-Dhuwala",
+        "family_group": "pama1250",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "v_frisianfris1239",
+        "Glottocode": "fris1239",
+        "Name": "Frisian",
+        "family_group": "indo1319",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "v_gondigond1265",
+        "Glottocode": "gond1265",
+        "Name": "Gondi",
+        "family_group": "drav1251",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_morgan1871hareindiansortanatinnehare1243",
+        "Glottocode": "hare1243",
+        "Name": "Slaveyic",
+        "family_group": "atha1245",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_ifugawifugaoifug1247",
+        "Glottocode": "ifug1247",
+        "Name": "Ifugaw",
+        "family_group": "aust1307",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_inanwatansuaboinan1242",
+        "Glottocode": "inan1242",
+        "Name": "Inanwatan",
+        "family_group": "sout3418",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_morgan1871japanesejapa1256",
+        "Glottocode": "japa1256",
+        "Name": "Japanesic",
+        "family_group": "japo1237",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_jinghpawjing1260",
+        "Glottocode": "jing1260",
+        "Name": "Jingpho",
+        "family_group": "sino1245",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_morgan1871karenkare1337",
+        "Glottocode": "kare1337",
+        "Name": "Karenic",
+        "family_group": "sino1245",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_kayardildkaya1318",
+        "Glottocode": "kaya1318",
+        "Name": "Kayardild-Yangkaal",
+        "family_group": "tang1340",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_kunjenkunj1248",
+        "Glottocode": "kunj1248",
+        "Name": "Southwestern Alaya-Athima",
+        "family_group": "pama1250",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "v_lahndalahn1241",
+        "Glottocode": "lahn1241",
+        "Name": "Lahnda",
+        "family_group": "indo1319",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_madakkonnosmada1284",
+        "Glottocode": "mada1284",
+        "Name": "Madak linkage",
+        "family_group": "aust1307",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_marquesasmarq1246",
+        "Glottocode": "marq1246",
+        "Name": "Marquesan",
+        "family_group": "aust1307",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_protooceanicocea1241",
+        "Glottocode": "ocea1241",
+        "Name": "Oceanic",
+        "family_group": "aust1307",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_morgan1871ojibwakansasojib1241",
+        "Glottocode": "ojib1241",
+        "Name": "Ojibwa",
+        "family_group": "algi1248",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "v_osseticosse1245",
+        "Glottocode": "osse1245",
+        "Name": "Ossetic",
+        "family_group": "indo1319",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "v_pashtopash1269",
+        "Glottocode": "pash1269",
+        "Name": "Pashto",
+        "family_group": "indo1319",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_morgan1871karenpwodialectpwoo1239",
+        "Glottocode": "pwoo1239",
+        "Name": "Pwo",
+        "family_group": "sino1245",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "v_sardiniansard1257",
+        "Glottocode": "sard1257",
+        "Name": "Sardinian",
+        "family_group": "indo1319",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_morgan1871chinesesini1245",
+        "Glottocode": "sini1245",
+        "Name": "Sinitic",
+        "family_group": "sino1245",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_sogeramsoge1235",
+        "Glottocode": "soge1235",
+        "Name": "Sogeram",
+        "family_group": "nucl1709",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "v_southerntepehuansout2975",
+        "Glottocode": "sout2975",
+        "Name": "Southern Tepehuan",
+        "family_group": "utoa1244",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_watutwatu1246",
+        "Glottocode": "watu1246",
+        "Name": "Watut",
+        "family_group": "aust1307",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_morgan1871winnebagoewinn1245",
+        "Glottocode": "winn1245",
+        "Name": "Winnebago-Chiwere",
+        "family_group": "siou1252",
+        "area_primary": ""
+      },
+      {
+        "Language_ID": "p_yalicyali1257",
+        "Glottocode": "yali1257",
+        "Name": "Yalic",
+        "family_group": "nucl1709",
+        "area_primary": ""
+      }
+    ],
+    "policy": "随机区域截距仅使用area_primary非空的完整个案；其他主分析仍用939系统。"
+  },
+  "accounting_annotation_utc": "2026-10-15T08:59:16.303329+00:00",
+  "accounting_script_sha256": "ca93fb54ee7cadff0f6ef9b0ed368c9e36932ddcc884150198cd160c0f85f73f"
+}

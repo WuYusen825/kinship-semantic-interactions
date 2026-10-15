@@ -1,0 +1,35 @@
+{
+  "protocol_commit": "6ba7afba369d3d15446ea7571eabd2117b7e8c74",
+  "protocol_sha256": "61874a1c28ab37758670a61d12e08b6097af07f7922f63cfd76da5dacfcef8be",
+  "verified_utc": "2026-10-15T08:57:26.242111+00:00",
+  "passed": true,
+  "language_equal_C1_losses": {
+    "M0": 0.5810488878419937,
+    "M1": 0.5784682088411487,
+    "M2": 0.576625431756988
+  },
+  "max_absolute_error": 0.0,
+  "tolerance": 1e-09,
+  "folds": [
+    {
+      "fold": 0,
+      "test_systems": 296
+    },
+    {
+      "fold": 1,
+      "test_systems": 161
+    },
+    {
+      "fold": 2,
+      "test_systems": 161
+    },
+    {
+      "fold": 3,
+      "test_systems": 161
+    },
+    {
+      "fold": 4,
+      "test_systems": 160
+    }
+  ]
+}
