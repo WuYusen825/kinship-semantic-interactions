@@ -1,0 +1,743 @@
+                                    Available online at www.sciencedirect.com
+                                                                                                           Journal of
+                                                                                                          Memory and
+                                                                                                           Language
+                                  Journal of Memory and Language 59 (2008) 434–446
+                                                                                                      www.elsevier.com/locate/jml
+
+
+
+          Categorical data analysis: Away from ANOVAs
+      (transformation or not) and towards logit mixed models
+                                                    T. Florian Jaeger
+         Brain and Cognitive Sciences, University of Rochester Meliora Hall, Box 270268, Rochester, NY 14627-0268, USA
+
+                                   Received 14 March 2007; revision received 27 November 2007
+                                                Available online 8 February 2008
+
+
+
+
+Abstract
+
+   This paper identifies several serious problems with the widespread use of ANOVAs for the analysis of categorical
+outcome variables such as forced-choice variables, question-answer accuracy, choice in production (e.g. in syntactic
+priming research), et cetera. I show that even after applying the arcsine-square-root transformation to proportional
+data, ANOVA can yield spurious results. I discuss conceptual issues underlying these problems and alternatives pro-
+vided by modern statistics. Specifically, I introduce ordinary logit models (i.e. logistic regression), which are well-sui-
+ted to analyze categorical data and oﬀer many advantages over ANOVA. Unfortunately, ordinary logit models do
+not include random eﬀect modeling. To address this issue, I describe mixed logit models (Generalized Linear Mixed
+Models for binomially distributed outcomes, Breslow and Clayton [Breslow, N. E. & Clayton, D. G. (1993). Approx-
+imate inference in generalized linear mixed models. Journal of the American Statistical Society 88(421), 9–25]), which
+combine the advantages of ordinary logit models with the ability to account for random subject and item eﬀects in
+one step of analysis. Throughout the paper, I use a psycholinguistic data set to compare the diﬀerent statistical
+methods.
+! 2007 Elsevier Inc. All rights reserved.
+
+Keywords: Arcsine-square-root transformation; Logistic regression; Mixed logit models; Categorical data analysis
+
+
+
+Introduction                                                         neurons into diﬀerent bins based on their firing rates).
+                                                                     CDA is common in all behavioral sciences. For example,
+   In the psychological sciences, training in the statisti-          much research on language production has investigated
+cal analysis of continuous outcomes (i.e. responses or               influences on speakers’ choice between two or more pos-
+independent variables) is a fundamental part of our edu-             sible structures (see e.g. research on syntactic persis-
+cation. The same cannot be said about categorical data               tence, Bock, 1986; Pickering & Branigan, 1998; among
+analysis (Agresti, 2002; henceforth CDA), the analysis               many others; or in research on speech errors). For lan-
+of outcomes that are either inherently categorical (e.g.             guage comprehension, examples of research on categor-
+the response to a yes/no question) or measured in a                  ical outcomes include eye-tracking experiments (first
+way that results in categorical grouping (e.g. grouping              fixations), picture identification tasks to test semantic
+                                                                     understanding, and, of course, comprehension ques-
+                                                                     tions. More generally, any kind of forced-choice task,
+   E-mail address: fjaeger@bcs.rochester.edu                         such as multiple-choice questions, and any count data
+   URL: http://www.bcs.rochester.edu/people/fjaeger/                 constitute categorical data.
+
+0749-596X/$ - see front matter ! 2007 Elsevier Inc. All rights reserved.
+doi:10.1016/j.jml.2007.11.007
+                              T.F. Jaeger / Journal of Memory and Language 59 (2008) 434–446                             435
+
+   Despite this preponderance of categorical data, the          and then show that these problems stem from concep-
+use of statistical analyses that have long been known           tual issues.
+to be questionable for CDA (such as analysis of var-
+iance, ANOVA) is still commonplace in our field.                Interpretability of ANOVA over categorical outcomes
+While there are powerful modern methods designed
+for CDA (e.g. ordinary and mixed logit models; see                  ANOVA compares the means of diﬀerent experimen-
+below), they are considered too complicated or simply           tal conditions and determines whether to reject the
+unnecessary.                                                    hypothesis that the conditions have the same population
+   There is a widely-held belief that categorical out-          means given the observed sample variances within and
+comes can safely be analyzed using ANOVA, if the arc-           between the conditions. For continuous outcomes, the
+sine-square-root transformation (Cochran, 1940; Rao,            means, variances, and the confidence intervals have
+1960; Winer, Brown, & Michels, 1971) is applied. This           straightforward interpretations. But what happens if
+belief is misleading: even ANOVAs over arcsine-square-          the outcome is categorical? For example, we may be
+root transformed proportions of categorical outcomes            interested in whether subjects answer a question cor-
+(see below) can lead to spurious null results and spurious      rectly depending on the experimental condition. So, we
+significances. These spurious results go beyond the nor-        may observe that of the 10 elicited answers, 8 are correct
+mal chance of Type I and Type II errors. The arcsine-           and 2 are incorrect. What is the mean and variance of 8
+square-root and other transformations (e.g. by using            correct answers and 2 incorrect answers? We can code
+the empirical logit transformation, Haldane, 1955;              one of the outcomes, e.g. correct answers, as 1 and the
+Cox, 1970) are simply approximations that were pri-             other outcome, e.g. wrong answers, as 0. In that case,
+marily intended to reduce costly computation time. In           we can calculate a mean (here 0.8) and variance (here
+an age of cheap computing at everyone’s fingertips,             0.18). The mean is apparently straightforwardly inter-
+we can abandon ANOVA for CDA. Modern statistics                 preted as the mean proportion of correct answers (or
+provide us with alternatives that are in many ways              percentages of correct answers if multiplied by 100).
+superior.                                                           The current standard for CDA in psychology fol-
+   This paper provides an informal introduction to              lows the aforementioned logic. Categorical outcomes
+one such method, generalized linear mixed models                are analyzed using subject and item ANOVAs (F1
+with a logit link function, henceforth mixed logit mod-         and F2) over proportions or percentages. The approach
+els (DebRoy & Bates, 2004; Bates & Sarkar, 2007;                is seemingly intuitive and, by now, so widespread that
+Breslow & Clayton, 1993; see also conditional logistic          it is hard to imagine that there is any problem with it.
+regression, Dixon, this issue; for an overview of other         Unfortunately, that is not the case. ANOVAs over pro-
+methods, see Agresti, 2002). Mixed logit models are a           portions can lead to hard-to-interpret results because
+generalization of logistic regression. Like ordinary            confidence intervals can extend beyond the interpret-
+logistic regression (Cox, 1958, 1970; Dyke & Patter-            able values between 0 and 1. For the above example,
+son, 1952; henceforth ordinary logit models), they              a 95% confidence interval would range from 0.52 to
+are well-suited for the analysis of categorical out-            1.08 (=0.8 ± 0.275), rendering an interpretation of the
+comes. Going beyond ordinary logit models, however,             outcome variable as a proportion of correct answers
+mixed logit models include random eﬀects, such as               impossible (proportions above 1 are not defined). One
+subject and item eﬀects. I introduce both ordinary              way to think about the problem of interpretability is
+and mixed logit models and compare them to                      that ANOVAs attribute probability mass to events that
+ANOVA over untransformed and arcsine-square-root                can never occur, thereby likely underestimating the
+transformed proportions using data from a psycholin-            probability mass over events that actually can occur.
+guistics study (Arnon, submitted for publication). All          This intuition points at the most crucial problem with
+analyses were performed using the statistics software           ANOVAs over proportions of categorical outcomes.
+package R (R Development Core Team, 2005). The                  ANOVA over proportions easily leads to spurious
+R code is available from the author.                            results.
+
+                                                                Categorical outcomes violate ANOVA’s assumptions
+The inadequacy of ANOVA over categorical outcomes
+                                                                    The inappropriateness of ANOVAs over categorical
+   Issues with ANOVAs and, more generally, linear               data can be derived on theoretical grounds. Assume a
+models over categorical data have been known for a              binary outcome (e.g. correct or incorrect answers to
+long time (e.g. Cochran, 1940; Rao, 1960; Winer                 yes/no-questions) that is binomially distributed; that is,
+et al., 1971; for summaries, see Agresti, 2002: 120;            for every trial there is a probability p that the answer will
+Hogg & Craig, 1995). I discuss problems with the                be correct. Then the probability of k correct answers in n
+interpretability of ANOVAs over categorical data                trials is given by the following function:
+436                              T.F. Jaeger / Journal of Memory and Language 59 (2008) 434–446
+                ! "
+                 n k                  n!                           ances will only be identical if p1 and p2 are equally
+f ðk; n; pÞ ¼      p ð1 $ pÞn$k ¼            pk ð1 $ pÞn$k
+                 k                k!ðn $ kÞ!                       distant from 0.5 (e.g. p1 = .4 and p2 = .6). The bigger
+                                                         ð1Þ       the diﬀerence in distance from 0.5 between the condi-
+                                                                   tions, the less similar the variances will be. Also, as
+The population mean and variance of a binomially dis-              can be see in Fig. 1, diﬀerences close to 0.5 will matter
+tributed variable X are given in (2) and (3).                      less than diﬀerences closer to 0 or 1. Even if p1 and p2
+lX ¼ n½1p þ 0ðp $ 1Þ' ¼ np                               ð2Þ       are unequally distant from 0.5, as long as they are close
+                                                                   to 0.5, the variances of the sample proportions will be
+r2X ¼ n½ð1 $ pÞ2 p þ ð0 $ pÞ2 ð1 $ pÞ' ¼ npð1 $ pÞ       ð3Þ       similar. Sample proportions between 0.3 and 0.7 are
+The expected sample proportion p over n trials is given            considered close enough to 0.5 to assume homogeneous
+by dividing lX by the number of trials n, and hence is             variances (Agresti, 2002: 120). Within this interval,
+p. Similarly, the variance of the sample proportion is a           p(1 $ p) ranges from 0.21 for p = .3 or .7 to .25 for
+function of p:                                                     p = .5. Unfortunately, we usually cannot determine a
+                                                                   priori the range of sample proportions in our experiment
+        pð1 $ pÞ                                                   (see also Dixon, this issue). Also, in general, variances in
+r2P ¼                                                    ð4Þ
+           n                                                       two binomially distributed conditions will not be homo-
+From (4) it follows that the variance of the sample propor-        geneous—contrary to the assumption of ANOVA.
+tions will be highest for p = .5 (the product of n numbers x           The inappropriateness of ANOVA for CDA was rec-
+that add up to 1 is highest if x1=. . .=xn) and will decrease      ognized as early as Cochran (1940, referred to in Agresti,
+symmetrically as we approach 0 or 1. This is illustrated in        2002: 596). Before I discuss the most commonly used
+Fig. 1. Note that the shape of the curve and the location of       method for CDA using ANOVA over transformed pro-
+its maximum are determined by p alone.                             portions, I introduce logistic regression, which is an
+    Now assume that we have two samples elicited under             alternative to ANOVA that was designed for the analy-
+diﬀerent conditions. In one condition, the probability             sis of binomially distributed categorical data.
+that a trial will yield a correct answer is p1, in the other
+condition it is p2. For example, if p1 = .45 and p2 = .8,
+then:                                                              An alternative: ordinary logit models (logistic regression)
+           p1 ð1 $ p1 Þ 0:2475 0:16 p2 ð1 $ p2 Þ
+r2P ðp1 Þ ¼            ¼      >    ¼                                   Logistic regression, also called ordinary logit models,
+                 n         n    n        n
+                                                                   was first used by Dyke and Patterson (1952), but was
+         ¼ r2P ðp2 Þ                                     ð5Þ       most widely introduced by Cox (1958, 1970, see Agresti,
+In other words, if the probability of a binomially distrib-        2002: Ch. 16; for early applications of logistic regression
+uted outcome diﬀers between two conditions, the vari-              to language research, see Sankoﬀ & Labov, 1979). For
+                                                                   extensive formal introductions to logistic regression, I
+                                                                   refer to Agresti (2002: Ch. 5), Chatterjee et al. (2000:
+                                                                   Ch. 12), and Harrell (2001). For a concise formal intro-
+                                                                   duction written for language researchers, I recommend
+                                                                   Manning (2003: Ch. 5.7).
+                                                                       Logit models can be seen to be a specific instance of a
+                                                                   generalization of ANOVA. To see this link between logit
+                                                                   models and ANOVA, it helps to know that ANOVA can
+                                                                   be understood as linear regression (cf. Chatterjee et al.
+                                                                   (2000: Ch. 5)). Linear regression describes outcome y
+                                                                   as a linear combination of the independent variables
+                                                                   x1 . . . xn (also called predictors) plus some random error
+                                                                   e (and optionally an intercept b0). Eq. (6) provides two
+                                                                   common descriptions of linear models. The first equa-
+                                                                   tion describes the value of y. The second equation
+                                                                   describes the expected value of y. Note that categorical
+                                                                   predictors have to be recoded into numerical values
+                                                                   for (6) to make sense (treatment-coding being a common
+                                                                   coding in the regression literature).
+
+                                                                   y ¼ b0 þ b1 x1 þ ( ( ( þ bn xn þ e () EðyÞ
+Fig. 1. Variance of sample proportion depending on p (for            ¼ b0 þ b1 x1 þ ( ( ( þ bn xn                          ð6Þ
+n = 1).
+                                     T.F. Jaeger / Journal of Memory and Language 59 (2008) 434–446                               437
+
+We can further abbreviate (6) using vector notation                    The natural logarithm of odds is called the logit (or log-
+E(y) = x0 b (boldface for vectors), where x0 is a trans-               odds). The logit is centered around 0 (i.e.
+posed vector consisting of 1 for the intercept, and all                logit(p) = $logit(1 $ p)), corresponding to a probability
+predictor values x1 . . . xn, and b is a vector of coeﬃcients          of 0.5, and ranges from negative to positive infinity. The
+b0 . . . bn. The coeﬃcients b0. . .bn have to be estimated.            ln b0 . . . ln bn in (10) are constants, so we can substitute
+This is done in such a way that the resulting model fits               b0 . . . bn for them (or any other arbitrary variable name).
+the data ‘optimally’. Usually, the model is considered                 This yields (11):
+optimal if it is the model for which the actually observed                    p
+data are most likely to be observed (the maximum like-                 ln           ¼ logit p ¼ b0 þ b1 x1 þ ( ( ( þ bn xn ¼ x0 b ð11Þ
+                                                                          1$p
+lihood model; for an informal introduction, see see Baa-
+yen, Davidson, & Bates, 2008).                                         In other words, we can think of ordinary logit models as
+    Now imagine that we want to fit a linear regression to             linear regression in log-odds space! The logit function
+proportions of a categorical outcome variable y. So, we                defines a transformation that maps points in probability
+could define the following model of expected proportions:              space into points in log-odds space. In probability space,
+                                                                       the linear relationship that we see in logit space is gone.
+EðyÞ ¼ p ¼ x0 b                                              ð7Þ       This is apparent in (12), describing the same model as in
+Such a linear model, also called linear probability model              (11), but transformed into probability space:
+(Agresti, 2002: 120; not to be confused with a probit                           0
+                                                                              ex b       1
+model), has many of the problems mentioned above                       p¼            ¼           ¼ E½y'                          ð12Þ
+                                                                            1 þ ex0 b 1 þ e$x0 b
+for ANOVAs over proportions. But, what if we trans-
+formed proportions into a space that is not bounded                    Logit models capture the fact that diﬀerences in proba-
+by 0 and 1 and that captures the fact that, in real bino-              bilities around p = .5 matter less than the same changes
+mially distributed data, a change in proportions around                close to 0 or 1. This is illustrated in Fig. 2, where the left
+0.5 usually corresponds to a smaller change in the pre-                panel shows a hypothetical linear eﬀect of a predictor x
+dictors than the same change in proportions close to 0                 in logit space (y = $3 + 0.2x), and the right panel shows
+or 1 (i.e. the relation between the predictors and propor-             the same eﬀect in probability space. As can be seen in the
+tions is nonlinear; cf. Agresti, 2002: 122)? Consider                  right panel, small changes on the x-axis around p = .5
+odds. They are easily derived from probabilities (and                  (i.e. x = 15 since 0 = $3 + 0.2 * 15 = logit(0.5)) lead to
+vice versa):                                                           large decreases or increases in probabilities compared
+                                                                       to the same change on the x-axis closer to 0 or 1.
+                p                             odds
+oddsðpÞ ¼               and     pðoddsÞ ¼                    ð8Þ           Thus logit models, unlike ANOVA, are well-suited
+               1$p                          1 þ odds
+                                                                       for the analysis of binomially distributed categorical
+Thus, odds increase with increasing probabilities, with                outcomes (i.e. any event that occurs with the same prob-
+odds ranging from 0 to positive infinity and odds of 1                 ability at each trial). Logit models have additional
+corresponding to a proportion of 0.5. Diﬀerences in                    advantages over ANOVA. Logit models scale to cate-
+odds are usually described multiplicatively (i.e. in terms             gorical dependent variables with more than two out-
+of x-fold increases or decreases). For example, the odds               comes (in which case we call the model a multinomial
+of being on a plane with a drunken pilot are reported to               model; for an introduction, see Agresti, 2002). Among
+be ‘‘1 to 117” (http://www.funny2.com/). In the nota-                  other things, this can help avoid confounds due to data
+tion used here, this corresponds to odds of 1/117                      exclusion. For example, in priming studies where
+) 0.0086. Unfortunately, these odds are 860 times high-                researchers are interested in speakers’ choice between
+er than the odds of dating a supermodel ()0.00001).                    two structures, subject sometimes produce neither of
+Thus, we can describe the odds of an outcome as a                      those two. If non-randomly distributed, such ‘‘errors”
+product of coeﬃcients raised to the respective predictor               can confound the analysis because what appears to be
+values (assuming treatment-coding, predictor values are                an eﬀect on the choice between two outcomes may, in
+either 0 or 1):                                                        reality, be an eﬀect on the chance of an error. Consider
+                                                                       a scenario in which, for condition X, participants pro-
+  p
+      ¼ b0 * bx11 * ( ( ( * bxnn                        ð9Þ            duce 50% outcome 1, 45% outcome 2, and 5% errors,
+1$p
+                                                                       but, for condition Y, they produce 50% outcome 1,
+By simply taking the natural logarithm of odds instead                 30% outcome 2, and 20% errors. If an analysis was con-
+of plain odds, we can turn the model back into a linear                ducted after errors are excluded, we may conclude, given
+combination, which has many desirable properties:                      small enough standard errors, that there is a main eﬀect
+      p                                                                of condition (in condition X, the proportion of outcome
+ln       ¼ lnðb0 * bx11 * ( ( ( * bxnn Þ                               1 would be 50/95 = 0.53; in condition Y, 50/80 = 0.63).
+     1$p
+                                                                       This conclusion would be misleading, since what really
+            ¼ lnðb0 Þ þ lnðb1 Þx1 þ ( ( ( þ lnðbn Þxn       ð10Þ       happens is that there is an eﬀect on the probability of
+438                               T.F. Jaeger / Journal of Memory and Language 59 (2008) 434–446
+
+
+
+
+                                                                                                                          1
+Fig. 2. Example eﬀect of predictor x on categorical outcome y. The left panel displays the eﬀect in logit space with ln 1$pðyÞ ¼ $3 þ 0:2x.
+The right panel displays the same eﬀect in probability space with pðyÞ ¼ 1þe3$0:2x .
+                                                                              1
+
+
+
+
+an error. We would find a spurious main eﬀect on out-                    A case study: Spurious significance in ANOVA over
+come 1 vs. 2. The problem is not only limited to errors.                 proportions
+It also includes any case in which ‘‘other” categories are
+excluded from the analysis (e.g. when speakers in a pro-                     Arnon (2006, submitted for publication) investigated
+duction experiment produce structures that we are not                    the source of children’s diﬃculty with object relative
+interested in). Multinomial models make such exclusion                   clauses in production and comprehension. Arnon pre-
+unnecessary and allow us to test which of all possible                   sents evidence that children are sensitive to the same fac-
+outcomes a given predictor aﬀects. For the above exam-                   tors that aﬀect adult language processing. I consider
+ple, we could test whether the condition aﬀects the prob-                only parts of the comprehension results of Arnon’s
+ability of outcome 1 or outcome 2, or the probability of                 Study 2. In this 2 + 2 experiment, twenty-four
+an error.                                                                Hebrew-speaking children listened to Hebrew relative
+    Logit models also inherit a variety of advantages                    clauses (RCs). RCs were either subject or object
+from regression analyses. They provide researchers with                  extracted. The noun phrase in the RC (the object for
+more information on the directionality and size of an                    subject extracted RCs and the subject for object
+eﬀect than the standard ANOVA output (this will                          extracted RCs) was either a first person pronoun or a
+become apparent below). They can deal with imbalanced                    lexical noun phrase (NP). An example item in all four
+data, thereby freeing researchers from all too restrictive               conditions is given in Table 1 (taken from Arnon,
+designs that aﬀect the naturalness of the object of their                2006), where the manipulated NP is underlined.
+study (see Jaeger, 2006, for more details). Like other                       Arnon hypothesized that, like adults (Warren & Gib-
+types of regression, ordinary logit models also force us                 son, 2002), children perform better on RCs with pro-
+to be explicit in the specification of assumed model                     noun NPs than on RCs with lexical NPs, and that
+structure. At the same time, regression models make it                   they perform better on subject RCs than on object
+easier to add and remove additional post-hoc control                     RCs. Table 2 summarizes the mean question-answer
+in the analysis, thereby giving researchers more flexibil-               accuracy (i.e. the proportion of correct answers) and
+ity and better post-hoc control. Another nice feature                    standard errors across the four conditions.
+that logit models inherit from regressions is that they                      Arnon (submitted for publication) used mixed logit
+can include continuous predictors. Modern implementa-                    models to analyze her data which yielded two main
+tions of logit models come with a variety of tools to                    eﬀects and no interaction. For the sake of argument, I
+investigate linearity assumptions for continuous predic-                 demonstrate that using ANOVAs would have resulted
+tors (e.g. rcs for restricted cubic splines in R’s Design                in a spurious interaction.
+library; Harrell, 2005). Ordinary logit models do, how-                      Note that, contrary to the assumption of the homo-
+ever, have a major drawback compared to ANOVA:                           geneity of variances, but as expected for binomially dis-
+they do not model random subject and item eﬀects.                        tributed outcomes, the standard errors (and hence the
+Later I describe how mixed logit models overcome this                    variances) are bigger the closer the mean proportion of
+problem. First I present a case study that exemplifies                   correct answers is to 50%. The results in Table 2 also
+the problems of ANOVA over proportions using a real                      suggest that an ANOVA will find main eﬀects of RC
+psycholinguistic data set. The case study illustrates that               type and NP type as well as an interaction. Question-
+these problems persist even if arcsine-square-root trans-                answer accuracy is higher for subject RCs than for
+formed proportions are used in the ANOVA.                                object RCs (92.7% vs. 76.6%) and higher for pronoun
+                                T.F. Jaeger / Journal of Memory and Language 59 (2008) 434–446                                439
+
+Table 1
+Materials from Study 2 in Arnon (2006, Comprehension experiment)
+Subject RC,                                                      Eize tzeva ha-naalaim shel ha-yalda she metzayeret et ha-axot?
+Lexical NP                                                       Which color the-shoes of the-girl that draws the nurse-ACC
+                                                                 What color are the shoes of the girl that is drawing the nurse?
+Object RC,                                                       Eize tzeva ha-naalaim shel ha-yalda she ha-axot metzayeret?
+Lexical NP                                                       Which color the-shoes of the-girl that the nurse draws?
+                                                                 What color are the shoes of the girl that the nurse is drawing?
+Subject RC,                                                      Eize tzeva ha-naalaim shel ha-axot she metzayeret oti?
+Pronoun                                                          Which color the-shoes of the-nurse that draws me-ACC?
+                                                                 What color are the shoes of the nurse that is drawing me?
+Object RC,                                                       Eize tzeva ha-naalaim shel ha-axot she ani metzayeret?
+Pronoun                                                          Which color the-shoes of the-nurse that I-NOM draw?
+                                                                 What color are the shoes of the nurse that I am drawing?
+
+
+
+Table 2                                                                For the ordinary logit model, the analyzed outcomes
+Percentage of correct answers and standard errors by condition     are the correct or incorrect answers. Thus, all cases are
+                        Lexical NP               Pronoun NP        entered into the regression (instead of averaging across
+Subject RC              89.7% (.02)              95.7% (.02)       subjects or items). Significance of predictors in the fitted
+Object RC               68.9% (.04)              84.3% (.03)       model is tested with likelihood ratio tests (Agresti, 2002,
+                                                                   12). Likelihood ratio tests compare the data likelihood
+                                                                   of a subset model with the data likelihood of a superset
+NPs than for lexical NPs (90.0% vs. 79.3%). Further-               model that contains all of the subset model’s predictors
+more, the eﬀect of NP type on the percentage of correct            and some more. A model’s data likelihood is a measure
+answers seems to be bigger for object RCs (68.9% vs.               of its quality or fit, describing the likelihood of the sam-
+84.3%) than for subject RCs (89.7% vs. 95.7%), suggest-            ple given the model. The $2 * logarithm of the ratio
+ing that an ANOVA will find an interaction.                        between the likelihoods of the models is asymptotically
+                                                                   v2-distributed with the diﬀerence in degrees of freedoms
+ANOVA over untransformed proportions                               between the two models. Thus a predictor’s significance
+                                                                   in a model is tested by comparing that model against a
+    Indeed, subject and item ANOVAs over the average               model without the predictor using a v2-test (Table 3).
+percentages of correct answers return significance for                 Here I use the function anova.Design from R’s Design
+both main eﬀects and the interaction.                              library (Harrell, 2005). The function automatically com-
+    As expected the interaction comes out as highly sig-           pares a model against all its subset models that are
+nificant in the ANOVA. Now, are these eﬀects spurious              derived by removing exactly one predictor. For Arnon’s
+or not? In the previous section, I discussed several theo-         data, we find that a model without RC type has consid-
+retical issues with ANOVAs over proportions. But do                erably lower data likelihood (v2(1) = 28.8, p < .001), as
+those issues aﬀect the validity of these ANOVA results?            does a model without NP type (v2(1) = 12.2, p < .001).
+As I show next, the answer is yes, they do.                        Thus RC and NP type contribute significant informa-
+                                                                   tion to the model. The interaction, however, does not
+Ordinary logit model                                               (v2(1) = 0.01, p > .9). The summary of the full model
+                                                                   in Table 4 confirms this.
+   Ordinary logit models are implemented in most mod-
+ern statistics program. I use the function lrm in R’s
+Design library (Harrell, 2005). The model formula for
+                                                                   Table 3
+the R function lrm is given in (13).
+                                                                   Summary of the ANOVA results over untransformed data
+Correct , 1 þ RCtype þ NPtype                                                       Subject            Item          Combined
+                                                         ð13Þ
+                þ RCtype : NPtype                                                   analysis          analysis
+                                                                                   F1          p    F2       p     minF        p
+The ‘‘1” specifies that an intercept should be included in
+                                                                                 (1, 23)           (1, 5)          (1, 10)
+the model (the default). Further shortening the formula,
+I could have written Correct , RCtype*NPtype, which                RC type       24.2      <.01    10.2     <.03     7.2     <.03
+in R implies inclusion of all combinations of the terms            NP type       16.1      <.01    19.7     <.01     8.9     <.01
+                                                                   Interaction    9.7      <.01    12.6     <.02     5.5     <.04
+connected by ‘‘*” (I will use this notation below).
+440                            T.F. Jaeger / Journal of Memory and Language 59 (2008) 434–446
+
+Table 4
+Summary of the ordinary logit model (N = 696; model Nagelkerke r2 = 0.126)
+Predictor                                         Coeﬃcient                   SE                   Wald Z                      p
+Intercept                                            0.80                    (0.167)                 4.72                    <.001
+RC type = subject RC                                 1.35                    (0.295)                 4.58                    <.001
+NP type = pronoun                                    0.89                    (0.272)                 3.26                    <.001
+Interaction = subject RC & pronoun                   0.05                    (0.511)                 0.10                    >.9
+
+
+    Note that the standard summary of a regression               centered (VIFs < 1.5).1 This makes it possible to use
+model provides information about the size and direc-             the coeﬃcients to interpret the direction and size of
+tionality of eﬀects (an ANOVA would require planned              the eﬀects in the model.
+contrasts for this information). The first column of                 The main eﬀects of RC type and NP type are highly
+Table 4 lists all the predictors entered into the regres-        significant. We can also interpret the significant inter-
+sion. The second column gives the estimate of the coef-          cept. It means that, if the RC type is not ‘subject RC’
+ficient associated with the eﬀect. The coeﬃcients have an        and the NP type is not ‘pronoun’, the chance of a correct
+intuitive geometrical interpretation: they describe the          answer in Arnon’s sample is significantly higher than
+slope associated with an eﬀect in log-odds (or logit)            50%. The odds are estimated at e0.8 ) 2.2, which means
+space. For categorical predictors, the precise interpreta-       that the chance of a correct answer for object RCs with a
+tion depends on what numerical coding is used. Treat-            lexical NP is estimated as p ¼ 1þ2:2
+                                                                                                  2:2
+                                                                                                       ) 0:69. Indeed, this is
+ment-coding compares each level of a categorical                 what we have seen in Table 2. Similarly the predicted
+predictor against all other levels. This contrasts with          probability of a correct answer for subject RC with a
+eﬀect-coding, which compares two levels against each             pronoun is calculated by adding all relevant log-odds,
+                                                                                                                 e3:04
+other. Here I have used treatment-coding, because it is          0.8 + 1.35 + 0.89 = 3.04, which gives p ¼ 1þe      3:04 ) 0:95
+
+the most common coding scheme in the regression liter-           (compared to 95.7% given in Table 2).
+ature. For example, for the current data set, subject RCs            The numbers do not quite match because we did not
+are coded as 1 and compared against object RCs (which            include the coeﬃcient for the interaction. However,
+are taken as the baseline and coded as 0). So, the coeﬃ-         notice that they almost match. This is the case because
+cient associated with RC type tells us that the log-odds         the interaction does not add significant information to
+of a correct answer for subject RCs are 1.35 log-odds            the model (Wald’s Z = 0.01, p > .9). The eﬀects are illus-
+higher than for object RCs. But what does this mean?             trated in Fig. 3, showing the predicted means and confi-
+Recall that log-odds are simply the log of odds. So,             dence intervals for all combinations of RC and NP type
+the odds of a correct answer for subject RCs are                 (the plot uses plot.Design from R’s Design library, Har-
+e1.35 ) 3.9 times higher than the odds for object RCs.           rell, 2005).
+Following the same logic, the odds for RCs with pro-                 In sum, there is no significant interaction because the
+nouns are estimated to be e0.89 ) 2.4 times higher than          eﬀect of NP type for diﬀerent levels of RC type does not
+the odds for RCs with lexical NPs.                               diﬀer in odds (and hence neither does it diﬀer in log-
+    The third column in Table 4 gives the estimate of the        odds). Indeed, both the change from 68.9% to 84.3%
+coeﬃcients’ standard errors. The standard errors are             associated with NP type for object RCs and the change
+used to calculate Wald’s z-score (henceforth Wald’s Z,           from 89.7% to 95.7% associated with NP type for subject
+Wald, 1943) in the fourth column by dividing the coeﬃ-           RCs correspond to an approximate 2.5-fold odds
+cient estimate by the estimate for its standard error. The       increase. So, unlike ANOVA, logistic regression returns
+absolute value of Wald’s Z describes how distant the             a result that respects the nature of the outcome variable.
+coeﬃcient estimate is from zero in terms of its standard
+error. The test returns significance if this standardized
+                                                                   1
+distance from zero is large enough. Coeﬃcients that                  Collinearity is more of a concern in unbalanced data sets,
+are significantly smaller than zero decrease the log-odds        but even in balanced data sets it can cause problems (for
+(and hence odds) of the outcome (here: a correct                 example, interactions and their main eﬀects are often collinear
+answer). Coeﬃcients significantly larger than zero               even in balanced data sets). R comes with several implemented
+increase the log-odds of the outcome. Unlike the likeli-         measures of collinearity (e.g. the function kappa as a measure of
+                                                                 a model’s collinearity; or the function vif in the Design library,
+hood ratio test, however, Wald’s Z-test is not robust
+                                                                 which gives variance inflation factors—a measure of how much
+in the presence of collinearity (Agresti, 2002: 12). Collin-     of one predictor is explained by the other predictors in the
+earity leads to inflated estimates of the standard errors        model). R also provides methods to remove collinearity from a
+and changes coeﬃcient estimates (although in an                  model: from simple centering and standardizing (see the
+unbiased way). The model presented here contains only            functions scale) to the use of residuals or principal component
+very limited collinearity because all predictors were            analysis (PCA, see the function princomp).
+                                T.F. Jaeger / Journal of Memory and Language 59 (2008) 434–446                               441
+
+                                                                     To begin with there is also reason to doubt that transfor-
+                                                                     mations are applied correctly. The most popular trans-
+                                                                     formation, the arcsine-square-root transformation
+                                                                                     pﬃﬃ
+                                                                     (tðxÞ ¼ arcsinð xÞ; e.g. Rao, 1960; Winer et al., 1971;
+                                                                     henceforth arcsine transformation) requires further mod-
+                                                                     ifications for small numbers of observations or propor-
+                                                                     tions close to 0 or 1 (e.g. Bartlett, 1937: 168; for an
+                                                                     overview, see Hogg & Craig, 1995). In practice these
+                                                                     modifications are rarely applied (Victor Ferreira, p.c.),
+                                                                     although sample proportions close to 0 or 1 are common
+                                                                     (e.g. in research on speech errors or when analyzing
+                                                                     comprehension accuracies). Even more worrisome is
+                                                                     the lack of any theoretical justification for the use of
+                                                                     transformed proportions (cf. Cochran, 1940: 346). Most
+                                                                     importantly, however, even ANOVA over transformed
+                                                                     proportions can lead to spurious results. I use Arnon’s
+                                                                     data to illustrate this point.
+                                                                         I focus on the subject analysis, where the insuﬃciency
+                                                                     of the arcsine transformation is most apparent. The two
+                                                                     main eﬀects are correctly recognized as significant (RC
+                                                                     type: F1(1, 23)= 28.5, p < .01; NP type: F1(1, 23)=
+Fig. 3. Estimated eﬀects of RC type and NP type on the log-
+                                                                     17.3, p < .01). However, the interaction is still incor-
+odds of a correct answer.
+                                                                     rectly considered significant (F1(1, 23)= 8.5; p < .01).
+                                                                     This is the case because several children in Arnon’s
+   The spurious interaction in the ANOVA should be of                experiment performed close to ceiling (the proportions
+no further surprise given the before-mentioned concep-               of correct answers are 1 or close to 1). For such data,
+tual problems. Readers familiar with transformations                 ANOVAs over arcsine transformed data are unreliable.
+for proportional data may find the argument against                      One reason why the arcsine transformation is unreli-
+ANOVA a straw man because they believe that ANO-                     able for such data becomes apparent once we compare
+VAs will correctly recognize the interaction as insignifi-           the plots of logit and arcsine transformed proportions.
+cant once the data is adequately transformed. Next I                 Fig. 4 shows the slope (1st derivative) and curvature
+describe why this assumption is wrong for at least the               (2nd derivative) of the two transformations. Both trans-
+most commonly used transformation.                                   formations have a saddle point at p = .5, but for all
+                                                                     p – .5 the slope of the logit is always higher than the
+                                                                     slope of the arcsine-square-root. The absolute curvature
+The arcsine-square-root transformation and its failure               (the change in the slope) is also larger. In other words, as
+                                                                     one moves away from p = .5, a change in probability p1
+   There are several problems with the reliance on                   to p2 corresponds to more of a change in log-odds than
+transformation for ANOVA over proportional data.                     to a change in arcsine transformed probabilities. This
+
+
+
+
+Fig. 4. Slope and curvature of the logit and arcsine-square-root transformation.
+442                            T.F. Jaeger / Journal of Memory and Language 59 (2008) 434–446
+
+means that, compared to the logit, the arcsine transfor-         Mixed logit models
+mation underestimates changes in probability more the
+closer they are to 0 or 1.                                          Mixed logit models are a type of Generalized Linear
+   In other words, while the arcsine transformation              Mixed Model (Breslow & Clayton, 1993; Lindstrom &
+makes for proportional data more similar to logit                Bates, 1990; for a formal introduction, see Agresti,
+transformed data, for proportions close to 0 or 1, even          2002). Mixed Models with diﬀerent link functions have
+ANOVA over arcsine transformed data can return                   been developed for a variety of underlying distributions.
+spurious results. As mentioned earlier, this problem is          Mixed logit models are designed for binomially distrib-
+not limited to spurious significances. Imagine that in           uted outcomes.
+Arnon’s data the eﬀect of NP type would be identical                Generalized Linear Mixed Models (Breslow &
+in proportions for subject and object RCs (e.g. imagine          Clayton, 1993; for an introduction, see Agresti, 2002:
+Arnon’s data but with 74.9% correct answers for                  Chapter 12) describe an outcome as the linear combi-
+object RCs with pronouns): in proportions there would            nation of fixed eﬀects (described by x0 b below) and
+seem to be no interaction, but in logit space there              conditional random eﬀects associated with e.g. subjects
+would be one (granted suﬃciently small standard                  and items (described by z0 b). Just as x0 contains the
+errors).                                                         values of the explanatory variables for the fixed eﬀects
+   At this point, one may ask whether there are any bet-         (the predictors), z0 contains the values of the explana-
+ter transformations that would allow us to continue to           tory variables for the random eﬀects (e.g. the subject
+use ANOVA for CDA. Several such transformations                  and item IDs). The random eﬀect vector b can be
+have been proposed, the most well-known being the                thought of as the coeﬃcients for the random eﬀects.
+empirical logit (first proposed by Haldane (1955), but           It is characterized by a multivariate normal distribu-
+often attributed to Cox (1970)). The idea behind such            tion, centered around 0 and with the variance–covari-
+transformations is to stay as close as possible to the           ance matrix R (for details, see Agresti, 2002: 492). A
+actual logit transformation while avoiding its negative          mixed logit model then has the form (for linear mixed
+and positive infinity values for proportions of 0 and 1,         models, see Pinheiro & Bates, 2000; Baayen et al.,
+respectively (for an empirical comparison of diﬀerent            2008):
+logit estimates, see Gart & Zweifel, 1967). Indeed,
+appropriate transformations combined with appropriate            logitðpÞ ¼ x0 b þ z0 b;   b , Nð0; r2 RÞ              ð14Þ
+weighing of cases mostly avoid the problems of ANOVA
+described above (for weighted linear regression that             Just as for ordinary logit models, the parameters of
+deals with heterogeneous variances, see McCullagh &              mixed logit models are fit to the data in such a way
+Nelder, 1989). However, it is important to note that even        that the resulting model describes the data optimally.
+these transformations are still ad-hoc in nature (which          However, unlike for mixed linear models, there are
+transformation works best depends on the actual sample           no known analytic solutions for the exact optimization
+the researcher is investigating, Gart & Zweifel, 1967).          of mixed logit models’ data likelihood (Harding &
+Transformations for categorical data were originally             Hausman, 2007: 1312; Bates, 2007: 29). Instead, either
+developed because they provided a computationally                numerical simulations, such as Monte Carlo simula-
+cheap approximation of the more adequate logistic                tions, or analytic optimization of approximations of
+regression—approximations that are no longer                     the true log likelihood, so called quasi-log-likelihoods,
+necessary.                                                       are used to find the optimal parameters. For larger
+   This leaves one potential argument for the use of             data sets, Monte Carlo simulations are computation-
+ANOVA (with transformations) for CDA: the fact that              ally unfeasible even for models with parameters. Opti-
+ordinary logit models provide no direct way to model             mization of quasi-log-likelihood is a computationally
+random subject and item eﬀects. The lack of random               eﬃcient alternative (see Agresti, 2002: 523–524). R’s
+eﬀect modeling is problematic as repeated measures on            lmer function (lme4 library, Bates & Sarkar, 2007)
+the subject or item in our sample constitute violations          uses Laplace approximation to maximize quasi-log-
+of the assumption that all observations in our data set          likelihood (Bates, 2007: 29). Laplace approximation
+are independent of one another. Data from the same               ‘‘performs extremely well, both in terms of numerical
+subject or item is often referred to as a cluster. Analyses      accuracy and computational time” (Harding & Haus-
+that ignore clusters produce invalid standard errors and         man, 2007: 1325).
+therefore lead to unreliable results. Next I show that
+mixed logit models address this problem (other methods           A case study using mixed logit models
+include separate logistic regressions for each subject/
+item, see Lorch & Myers, 1990, or bootstrap sampling                 The model formula is specified in (15), where the term
+with random cluster replacement, see Feng, McLerran,             in parentheses describes the random subject eﬀects for the
+& Grizzle, 1996).                                                intercept, the eﬀects of RC and NP type, and their interac-
+                                T.F. Jaeger / Journal of Memory and Language 59 (2008) 434–446                                443
+
+Table 5
+Summary of the fixed eﬀects in the mixed logit model (N = 696; log-likelihood = $256.2)
+Predictor                                          Coeﬃcient                     SE                  Wald Z                   p
+Intercept                                                 0.84               (0.203)                   4.17                 <.001
+RC type = subject RC                                      1.82               (0.365)                   4.97                 <.001
+NP type = pronoun                                         1.05               (0.288)                   3.66                 <.001
+Interaction = subject RC & pronoun                        0.59               (0.580)                   1.02                 >.3
+
+
+Table 6
+Summary of random subject eﬀects and correlations in the mixed logit model
+Random subject eﬀect                                 s2                               Correlation with random eﬀect for
+                                                                       Intercept                  RC type                 NP type
+Intercept                                          0.283
+RC type = subject RC                               0.645                 0.625
+NP type = pronoun                                  0.010                 0.800                     0.459
+Interaction = subject RC & pronoun                 0.221                 0.800                     0.459                  1.000
+
+
+tion.2 Random eﬀects are assumed to be normally distrib-           eﬀects, but that’s not all. Mixed logit models do not
+uted (in log-odds space) around a mean of zero. The only           make the frequently unjustified assumption of the
+parameter the model fits for the random eﬀects is their var-       homogeneity of variances. Also, the R implementation
+iance (see also Baayen et al., 2008; for details on the imple-     of mixed logit models used here (lmer) actually maxi-
+mentation, see Bates & Sarkar, 2007). The random                   mizes penalized quasi-log-likelihood (Bates, 2007, 29).
+intercept captures potential diﬀerences in children’s base         Fitting a model that is optimal in terms of penalized
+performance. The other random eﬀects capture potential             likelihood rather than absolute likelihoods reduces the
+diﬀerences between children in terms of how they are               chance that the model will be overfitted to the sample.
+aﬀected by the manipulations.                                      Overfitting is a potential problem for any statistical
+Correct , 1 þ RCtype * NPtype                                      model (including ANOVA), because it makes a model
+                                                                   less likely to generalize to the entire population (Agresti,
+                 þ ð1 þ RCtype * NPtypejchildÞ ð15Þ
+                                                                   2002: 524). Penalization is thus a welcome feature of
+The estimated fixed eﬀects are summarized in Table 5.              mixed logit models.
+The number of observations and the quasi-log-likeli-                   Another crucial advantage of mixed logit models over
+hood of the model are given in the table’s caption. The            ANOVA for CDA is their greater power. That is, mixed
+estimated variances of the random eﬀects are summa-                logit models are more likely to detect true eﬀects. Simula-
+rized in Table 6.                                                  tions show that lmer’s quasi-likelihood optimization out-
+    In sum, a mixed logit model analysis of the data from          performs ANOVA in terms of accurately estimating eﬀect
+Arnon (submitted for publication) confirms the results             sizes and standard errors (Dixon, this issue). The greater
+from the ordinary logit model presented above. Even                power of mixed logit models may in part depend on the
+after controlling for random subject eﬀects, the interac-          method used to approximate quasi-likelihood (Dixon’s
+tion between RC type and NP type is not significant.               results are based on Laplace approximation, implemented
+Note that the total correlation between the random                 in lmer; even better approximations are under develop-
+interaction and eﬀect of NP type for subjects in Table             ment, Bates & Sarkar, 2007).
+6 suggests that the model has been overparameterized                   Another advantage of mixed models is that they
+(cf. Baayen et al., 2008)—one of the two random eﬀects             allow us to test rather than to stipulate whether a
+is redundant. I get back to this shortly, when I show that         hypothesized random eﬀect should be included in the
+we can further simplify the model.                                 model. The question of whether or to what extent ran-
+                                                                   dom subject and items eﬀects (especially the latter) are
+Additional advantages of mixed logit models                        actually necessary has been the target of an ongoing
+                                                                   debate (Clark, 1973; Raaijmakers, Schrijnemakers, &
+   Mixed logit models combine all the advantages of                Gremmen, 1999, a). As Baayen et al., 2008 demonstrate,
+ordinary logit models with the ability to model random             mixed models can be used to test a hypothesized random
+                                                                   eﬀect. The test follows the same logic that was used
+  2
+    Formula (15) is part of an R call to lmer (formula, data,      above to test fixed eﬀects: we simply compare the likeli-
+family = ‘‘binomial”), where family = ‘‘binomial” causes R to      hood of the model with and the model without the ran-
+fit a mixed logit model rather than a linear mixed model (for      dom eﬀect. Before I illustrate this for the mixed logit
+further information, see help (‘‘family”) in R).                   model from Tables 5 and 6, a word of caution is in
+444                               T.F. Jaeger / Journal of Memory and Language 59 (2008) 434–446
+
+Table 7
+Summary of the fixed eﬀects in the mixed logit model (N = 696; log-likelihood = $256.8)
+Predictor                                            Coeﬃcient                 SE                   Wald Z                    p
+Intercept                                              0.86                  (0.212)                 3.99                    <.001
+RC type = subject RC                                   1.90                  (0.380)                 5.01                    <.001
+NP type = pronoun                                      0.96                  (0.278)                 3.44                    <.001
+Interaction = subject RC & pronoun                     0.10                  (0.544)                 0.18                    >.8
+
+Table 8                                                             up. Wald’s Z for RC type does not diﬀer much between
+Summary of random subject eﬀects and correlations in the            the two models. In summary, if there are random subject
+mixed logit model                                                   eﬀects associated with NP type or the interaction of RC
+Random subject eﬀect        s2        Correlation with random       and NP type (e.g. if children in the sample diﬀer in terms
+                                      eﬀect for Intercept           of how they react to NP type), they would seem to be
+Intercept                 0.399                                     subtle.
+RC type = subject RC      0.744              0.629                     Finally, mixed logit models inherit yet another
+                                                                    advantage from the fact that they are a type of general-
+                                                                    ized linear mixed model. They allow us to conduct one
+                                                                    combined analysis for many independent random eﬀects.
+order. Comparisons of models via quasi-log-likelihood
+                                                                    For example, we could include random intercepts for
+can be problematic, since quasi-likelihood are approxi-
+                                                                    both subjects and items in the model:
+mations (see above). This problem is likely to become
+less of an issue as the employed approximations become              Correct , 1 þ RCtype * NPtype
+better (for discussion, see Bates & Sarkar, 2007). In any                              þ ð1 þ RCtypejchildÞ þ ð1jitemÞ
+case, we can use quasi-log-likelihood comparisons
+                                                                                                                             ð17Þ
+between models to get an idea of how much evidence
+there is for a hypothesized random eﬀect.                           If a fixed eﬀect is significant in such a model, this means it
+    As mentioned above, the correlation between the                 is significant after the variance associated with subject and
+random subject eﬀects in Table 6 shows that some of                 items is simultaneously controlled for. In other words,
+the random eﬀects are redundant. Indeed, model com-                 mixed logit models can combine F1 and F2 analysis (for
+parisons suggest that neither the random eﬀect for the              more detail and examples for linear mixed models, see
+interaction nor the random eﬀect for NP type is justified.          Pinheiro & Bates, 2000; Baayen et al., 2008). Here only
+The quasi-log-likelihood decreases only minimally (from             a random intercept (rather than random slopes for RC
+$256.8 to $258.5) when these two random eﬀects are                  type, etc.) is included for items, because all further ran-
+removed. A revised mixed logit model without random                 dom eﬀects are highly correlated with the random inter-
+eﬀects for NP type and the interaction is specified in              cept (rs > 0.8) and hence unnecessary. The resulting
+(16). Tables 7 and 8 give the updated results.                      model is summarized in Tables 9 and 10. The minimal
+Correct , 1 þ RCtype * NPtype
+            þ ð1 þ RCtypejchildÞ                          ð16Þ      Table 10
+                                                                    Summary of random subject and item eﬀects and correlations in
+Note that most fixed eﬀect coeﬃcients have not changed
+                                                                    the mixed logit model
+much – neither compared to the full mixed logit model
+in (15), nor compared to the ordinary logit model in                Random eﬀect                        s2       Correlation with
+(13). In all models the main eﬀects are significant but                                                          random eﬀect
+                                                                                                                 for Intercept
+the interaction is not. Only the coeﬃcient of RC type
+diﬀers between the current mixed logit model and the or-            Subject intercept                  0.420
+dinary logit model: it is quite a bit larger in the current         Subject RC type = subject RC       0.770         0.620
+model, but note that the standard error has also gone               Item intercept                     0.086
+
+
+
+Table 9
+Summary of the fixed eﬀects in the mixed logit model (N = 696; log-likelihood = $256.0)
+Predictor                                            Coeﬃcient                 SE                   Wald Z                    p
+Intercept                                              0.85                  (0.244)                 3.49                    <.001
+RC type = subject RC                                   1.97                  (0.385)                 5.11                    <.001
+NP type = pronoun                                      0.99                  (0.283)                 3.49                    <.001
+Interaction = subject RC & pronoun                     0.07                  (0.550)                 0.13                    >.8
+                                 T.F. Jaeger / Journal of Memory and Language 59 (2008) 434–446                                 445
+
+change in the quasi-log-likelihood, and the small esti-            Arnon, I. (submitted for publication). Re-thinking child diﬃ-
+mates for the item variance, suggest that item diﬀerences             culty: The eﬀect of NP type on child processing in Hebrew.
+do not account for much of the variance. Note that despite         Baayen, R. H., Davidson, D. J., & Bates, D. M. (2008).
+the fact that two items had missing cells and had to be ex-           Mixed-eﬀects modeling with crossed random eﬀects for
+                                                                      subjects and items. Journal of Memory and Language, 59,
+cluded from the ANOVA, the current model uses all 8
+                                                                      390–412.
+items and 24 subjects in Arnon’s data.                             Bartlett, M. S. (1937). Some examples of statistical methods
+   Combining subject and item analyses into one unified               of research in agriculture and applied biology. Supple-
+model is eﬃcient and conceptually desirable (cf. Clark,               ment to the Journal of the Royal Statistical Society, 4(2),
+1973). Note that, in principle, mixed models are even                 137–183.
+compatible with random eﬀects beyond subject and item              Bates, D. M. (2007). Linear mixed model implementation in
+eﬀects (e.g. if the children spoke diﬀerent dialects and we           lme4. Ms., University of Wisconsin, Madison, August 2007.
+hypothesized that this matters, we could include a ran-            Bates, D. M., & Sarkar, D. (2007). lme4: Linear mixed-eﬀects
+dom eﬀect for dialect).                                               models using S4 classes. R package version 0.9975-12.
+                                                                   Bock, J. K. (1986). Syntactic persistence in language produc-
+                                                                      tion. Cognitive Psychology, 18, 355–387.
+                                                                   Breslow, N. E., & Clayton, D. G. (1993). Approximate
+Conclusions                                                           inference in generalized linear mixed models. Journal of
+                                                                      the American Statistical Society, 88(421), 9–25.
+   I have summarized arguments against the use of                  Chatterjee, S., Hadi, A., & Price, B. (2000). Regression analysis
+ANOVA over proportions of categorical outcomes.                       by example. New York: John Wiley & Sons, Inc..
+Such an analysis—regardless of whether the propor-                 Clark, H. H. (1973). The language-as-fixed-eﬀect fallacy: A
+tional data are arcsine-square-root transformed—can                   critique of language statistics in psychological research.
+lead to spurious results. With the advent of mixed logit              Journal of Verbal Learning and Verbal Behavior, 12,
+models, the last remaining valid excuse for ANOVA                     335–359.
+over categorical data (the inability of ordinary logit             Cochran, W. G. (1940). The analysis of variances when
+                                                                      experimental errors follow the Poisson or binomial laws.
+models to model random eﬀects) no longer applies.
+                                                                      The Annals of Mathematical Statistics, 11, 335–347.
+Mixed logit models combine the strengths of logistic               Cox, D. R. (1958). The regression analysis of binary sequences.
+regression with random eﬀects, while inheriting a variety             Journal of the Royal Statistical Society, Series B, 20,
+of advantages from regression models. Most crucially,                 215–242.
+mixed models avoid spurious eﬀects and have more                   Cox, D. R. (1970). The analysis of binary data (2nd ed., 1989; D.
+power (Dixon, this issue). Finally, they form part of                 R. Cox, E. J. Snell (Eds.)). London: Chapman & Hall.
+the generalized linear mixed model framework that pro-             DebRoy, S., & Bates, D. M. (2004). Linear mixed models and
+vides a common language for analysis of many diﬀerent                 penalized least squares. Journal of Multivariate Analysis,
+types of outcomes.                                                    91(1), 1–17.
+                                                                   Dyke, G. V., & Patterson, H. D. (1952). Analysis of factorial
+                                                                      arrangements when the data are proportions. Biometrics, 8,
+                                                                      1–12.
+Acknowledgment                                                     Feng, Z., McLerran, D., & Grizzle, J. (1996). A comparison of
+                                                                      statistical methods for clustered data analysis with Gaussian
+   This work was supported by a post-doctoral fellow-                 error. Statistics in Medicine, 15, 1793–1806.
+ship at the Department of Psychology, UC San Diego                 Gart, J. J., & Zweifel, J. R. (1967). On the bias of various
+(V. Ferreira’s NICHD Grant R01 HD051030). I am ex-                    estimators of the logit and its variance with application to
+tremely grateful to Inbal Arnon for making her data                   quantal bioassay. Biometrika, 54(1 & 2), 181–187.
+available to me. For feedback on earlier drafts, I thank           Haldane, J. B. S. (1955). The estimation and significance of the
+R. Levy, C. Kidd, H. Baayen, A. Frank, D. Barr, P. But-               logarithm of a ratio of frequencies. Annals of Human
+tery, V. Ferreira, E. Norcliﬀe, H. Tily, and P. Chesley, as           Genetics, 20, 309–311.
+                                                                   Harding, M. C., & Hausman, J. (2007). Using a Laplace
+well as the audiences at UC San Diego, the University of
+                                                                      approximation to estimate the random coeﬃcients logit
+Rochester, and the LSA Institute 2007.                                model by non-linear least squares. International Economic
+                                                                      Review, 48(4), 1311–1328.
+                                                                   Harrell, F. E. Jr., (2001). Regression modeling strategies. New
+References                                                            York: Springer.
+                                                                   Harrell Jr., F. E. (2005). Design: Design Package. R package
+Agresti, A. (2002). Categorical data analysis (second ed.). New       version 2.0–12. http://biostat.mc.vanderbilt.edu/s/Design,
+   York, NY: John Wiley & Sons.                                       http://biostat.mc.vanderbilt.edu/rms.
+Arnon, I. (2006). Re-thinking child diﬃculty: The eﬀect of NP      Hogg, R., & Craig, A. T. (1995). Introduction into mathematical
+   type on child processing of relative clauses in Hebrew.            statistics. Englewood Cliﬀs, NJ: Prentice Hall.
+   Poster presented at The 9th Annual CUNY Conference on           Jaeger, T. F. (2006). Redundancy and syntactic reduction in
+   Human Sentence Processing, CUNY, March 2006.                       spontaneous speech. Ph.D. thesis, Stanford University.
+446                              T.F. Jaeger / Journal of Memory and Language 59 (2008) 434–446
+
+Lindstrom, M. J., & Bates, D. M. (1990). Nonlinear mixed              native solutions. Journal of Memory and Language, 41,
+   eﬀects models for repeated measures data. Biometrics, 46(3),       416–426.
+   673–687.                                                        R development core team (2005). R: A language and environ-
+Lorch, R. F., & Myers, J. L. (1990). Regression analyses of           ment for statistical computing. Vienna: R Foundation for
+   repeated measures data in cognitive research. Journal of           Statistical Computing, http://www.R-project.org.
+   Experimental Psychology: Learning, Memory, and Cogni-           Rao, M. M. (1960). Some asymptotic results on transforma-
+   tion, 16(1), 149–157.                                              tions in the analysis of variance. ARL Technical Note, 60–
+Manning, C. D. (2003). Probabilistic syntax. In R. Bod, J. Hay,       126. Aerospace Research Laboratory, Wright-Patterson Air
+   & S. Jannedy (Eds.), Probabilistic linguistics (pp. 289–341).      Force Base.
+   Cambridge, MA: MIT Press.                                       Sankoﬀ, D., & Labov, W. (1979). On the uses of variable rules.
+McCullagh, P., & Nelder, J. A. (1989). Generalized linear             Language in Society, 8(3), 189–222.
+   models. New York, NY: Chapman and Hall.                         Wald, A. (1943). Test of statistical hypotheses concerning
+Pickering, M. J., & Branigan, H. P. (1998). The representation        several parameters when the number of observations is
+   of verbs: evidence from syntactic priming in language              large. Transactions of the American Mathematical Society,
+   production. Journal of Memory and Language, 39, 633–651.           54(3), 426–482.
+Pinheiro, J. C., & Bates, D. M. (2000). Mixed-eﬀects models in S   Warren, T., & Gibson, E. (2002). The influence of referential
+   and S-PLUS. New York: Springer.                                    processing on sentence complexity. Cognition, 85(1),
+Raaijmakers, J. G. W., Schrijnemakers, J. M. C., &                    79–112.
+   Gremmen, F. (1999). How to deal with ”the language-             Winer, B. J., Brown, D. R., & Michels, K. M. (1971). Statistical
+   as-fixed-eﬀect-fallacy”: Common misconceptions and alter-          principles in experimental design. New York: McGraw-Hill.
+

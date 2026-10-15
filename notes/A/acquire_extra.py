@@ -1,0 +1,2 @@
+ns={};s=open('/workspace/kinship_research/notes/A/acquire.py').read();exec(s[:s.index('for r in ThreadPoolExecutor')],ns)
+for row in [('A18','10.1007/s13752-021-00379-6',['https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/4df17a60-f4f8-4d6b-96e7-ca4dfea5255f/content','https://link.springer.com/content/pdf/10.1007/s13752-021-00379-6.pdf']),('A19','10.1525/ae.1997.24.3.652',['https://anthrosource.onlinelibrary.wiley.com/doi/pdf/10.1525/ae.1997.24.3.652'])]:print(ns['f'](row))

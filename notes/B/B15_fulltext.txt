@@ -1,0 +1,782 @@
+UC Berkeley
+UC Berkeley Previously Published Works
+
+Title
+The forms and meanings of grammatical markers support efficient communication
+
+Permalink
+https://escholarship.org/uc/item/9zx351pm
+
+Journal
+Proceedings of the National Academy of Sciences of the United States of America,
+118(49)
+
+ISSN
+0027-8424
+
+Authors
+Mollica, Francis
+Bacon, Geoff
+Zaslavsky, Noga
+et al.
+
+Publication Date
+2021-12-07
+
+DOI
+10.1073/pnas.2025993118
+
+Peer reviewed
+
+
+
+
+ eScholarship.org                            Powered by the California Digital Library
+                                                             University of California
+The forms and meanings of grammatical markers
+support efﬁcient communication
+Francis Mollicaa,1 , Geoff Baconb , Noga Zaslavskyc,d , Yang Xue , Terry Regierb,f , and Charles Kempg
+a
+ Institute for Language, Cognition and Computation, School of Informatics, University of Edinburgh, Edinburgh EH8 9LE, United Kingdom; b Department
+of Linguistics, University of California, Berkeley, CA 94720; c Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology,
+Cambridge, MA 02139; d Center for Brains, Minds, and Machines, Massachusetts Institute of Technology, Cambridge, MA 02139; e Department of Computer
+Science, Cognitive Science Program, University of Toronto, Toronto, ON M5S 3G8, Canada; f Cognitive Science Program, University of California, Berkeley,
+CA 94720; and g School of Psychological Sciences, University of Melbourne, Parkville, VIC 3010, Australia
+
+Edited by William Croft, The University of New Mexico, Albuquerque, NM, and accepted by the Editorial Board October 18, 2021 (received for review
+March 23, 2021)
+
+Functionalist accounts of language suggest that forms are paired              future). Evidentiality refers to the source of information (e.g.,
+with meanings in ways that support efficient communication.                   did the speaker see it, or hear someone else describe it?). Gram-
+Previous work on grammatical marking suggests that word forms                 matical features like these are core components of language,
+have lengths that enable efficient production, and work on the                yet there is considerable variation in the size of grammatical
+semantic typology of the lexicon suggests that word meanings                  feature inventories and the realization of grammatical features
+represent efficient partitions of semantic space. Here we establish           across languages. For example, the data analyzed in this paper
+a theoretical link between these two lines of work and present an             include 15 distinct morphological systems that languages use to
+information-theoretic analysis that captures how communicative                mark grammatical number. Whereas English only distinguishes
+pressures influence both form and meaning. We apply our ap-                   between singular and plural, Larike distinguishes between singu-
+
+
+
+
+                                                                                                                                                                                  PSYCHOLOGICAL AND
+proach to the grammatical features of number, tense, and eviden-              lar, dual, trial, and plural (15). Accounting for the diversity of
+
+
+
+
+                                                                                                                                                                                  COGNITIVE SCIENCES
+tiality and show that the approach explains both which systems                feature inventories and realizations across languages is therefore
+of feature values are attested across languages and the relative              a significant challenge.
+lengths of the forms for those feature values. Our approach shows                Our work builds on functionalist accounts of grammatical
+that general information-theoretic principles can capture variation           features from several areas of the literature. A long-standing line
+in both form and meaning across languages.                                    of work has used corpus analyses to show that the realizations of
+                                                                              grammatical feature values are shaped by the principle of least
+communicative efficiency | grammatical features | linguistic typology |       effort (4). Because speakers often need to convey the meanings
+information theory                                                            associated with grammatical features, grammatical markers have
+                                                                              short forms that are easy to produce, and the most frequent
+                                                                              feature values may receive no overt marking (9, 11, 16). A second
+A      primary goal of linguistic typology is to characterize and
+      explain the diversity in extant linguistic systems compared
+to possible but unattested systems (1). Linguistic typology can
+                                                                              line of work has used artificial language learning experiments
+                                                                              and evolutionary models to demonstrate that learners restructure
+                                                                              their input to produce systems that are simpler, easier to produce,
+be approached from a variety of perspectives (e.g., ref. 2), but              and more informative (17–20), often in line with linguistic univer-
+here we take a functional approach and build on a large body of               sals (e.g., ref. 21). Related work has also demonstrated that more
+work that has explored ways in which language supports efficient              easily acquired grammatical systems occur more frequently in the
+communication (3–7). Recent work in this tradition has formal-                world’s languages (22, 23). Our approach is broadly consistent
+ized communicative efficiency in terms of information theory
+and has used this formalization to demonstrate that linguistic
+forms and meanings support efficient communication (8), but
+form and meaning are usually treated separately. On one hand, a                    Significance
+substantial body of work has demonstrated that linguistic forms
+allow communication with a minimum of effort (4, 9–11), but                        Grammatical marking of features such as number, tense, and
+this work typically does not explain the meanings associated                       evidentiality varies widely across languages. Despite this vari-
+with the forms in question. On the other hand, recent work in                      ation, we show that grammatical markers support efficient
+semantic typology has shown that word meanings within several                      information transfer from speakers to listeners. We apply
+semantic domains support efficient communication (12, 13) but                      a formal model of communication to data from dozens of
+has not addressed the forms used to express these meanings.                        languages and find that grammatical marking achieves a near-
+Here we show that an existing information-theoretic account of                     optimal balance between maximizing informativeness and
+lexical semantics (ref. 13, as formulated in ref. 14) also accounts                minimizing code lengths. Our approach shows how general
+for classic ideas about coding efficiency from the literature on                   information-theoretic principles can capture variation in both
+grammatical marking (9, 11). Connecting these lines of work                        form and meaning across languages.
+illustrates how information theory provides a unified account of
+both the meanings encoded in natural language and the forms                   Author contributions: F.M., G.B., Y.X., T.R., and C.K. designed research; F.M., G.B., Y.X., T.R.,
+used to express them.                                                         and C.K. performed research; N.Z. contributed new reagents/analytic tools; F.M., G.B., and
+   Our theoretical framework applies to both grammar and the                  C.K. analyzed data; and F.M., G.B., N.Z., Y.X., T.R., and C.K. wrote the paper.
+lexicon, but we focus here on grammatical marking expressed                   The authors declare no competing interest.
+by morphology and in particular on the grammatical features                   This article is a PNAS Direct Submission. W.C. is a guest editor invited by the Editorial
+of number, tense, and evidentiality. We chose these features                  Board.
+because they primarily convey semantic information and because                Published under the PNAS license.
+each encodes a rich semantic dimension instead of a simple bi-                1
+                                                                                  To whom correspondence may be addressed. Email: f.mollica@ed.ac.uk.
+nary distinction. Number reflects the number of entities involved             This article contains supporting information online at https://www.pnas.org/lookup/
+in one role of an event (e.g., four lions chasing a giraffe). Tense           suppl/doi:10.1073/pnas.2025993118/-/DCSupplemental.
+refers to the location of an event in time (e.g., past, present, and          Published December 3, 2021.
+
+
+
+PNAS 2021 Vol. 118 No. 49 e2025993118                                                                          https://doi.org/10.1073/pnas.2025993118                1 of 10
+with all of these research strands but formally bridges them by                 informativeness) and complexity (the inverse of simplicity). We
+providing an integrated account of both grammatical feature                     then provide an overview of number, tense, and evidentiality
+values and the forms used to express them.                                      across languages and introduce the typological data that we
+   The information-theoretic framework that we use formalizes                   analyze. The first set of analyses focuses on meaning and
+the trade-off between informativeness and simplicity that lan-                  demonstrates that grammatical feature inventories achieve
+guages must negotiate. Consider a speaker who wishes to con-                    near-optimal trade-offs between informativeness and simplicity.
+vey some meaning (e.g., the number of empty coffee cups still                   The second set of analyses focuses on form and demonstrates
+on their desk) to a hearer (Fig. 1, Top). A highly informative                  that the realizations of grammatical features enable concise
+system allows the speaker to discriminate between many differ-                  communication.
+ent meanings (e.g., many different numbers of cups), but this
+communicative precision can only be achieved if the system
+is far from simple. The trade-off between informativeness and                   Theoretical Framework
+simplicity has been discussed for many years in the literature                  We build on the theoretical framework in ref. 14, which has been
+on competing motivations (3, 24, 25), and several measures of                   previously used to account for word meanings across languages,
+morphological simplicity have been proposed (see SI Appendix                    and show that the same framework can also be linked to aspects
+for a discussion). Here we build on a recent account of lexical                 of linguistic form. The framework, illustrated in Fig. 1, Top,
+semantics (14, 26) that is grounded in rate–distortion theory (27,              assumes a speaker and a listener who wish to communicate
+28) (the branch of information theory characterizing efficient                  about states of the world u drawn from the universe U. The
+data compression) and that formalizes both informativeness and                  speaker is uncertain about the true state of the world, and their
+simplicity in information-theoretic terms. Within this framework,               mental state is captured by a speaker distribution s over states
+the simplicity dimension connects naturally with the notion of                  in U. To summarize this mental state the speaker generates a
+coding efficiency from the literature on grammatical marking (6,                linguistic form f according to an encoder q(f |s), which maps
+16). We will therefore argue that the trade-off between infor-                  speaker distributions into forms. Upon receiving this form, the
+mativeness and simplicity helps to explain both which feature                   listener computes a distribution ŝ that is intended to approximate
+values are attested across languages and the relative lengths of                the speaker distribution s. We assume that this distribution ŝ
+the linguistic realizations of these feature values.                            is computed by carrying out Bayesian inference based on the
+   The next section introduces our theoretical framework and                    encoder q(f |s) and a prior p(s) over speaker distributions, which
+provides formal definitions of information loss (the inverse of                 gives the optimal ŝ (14). The prior reflects communicative need
+
+
+
+
+Fig. 1. Communicative scenario along with speaker distributions and priors for number, tense, and evidentiality. (Top) Communicative scenario illustrating
+how a speaker generates a form which is then used by a listener to reconstruct the speaker distribution s over world states. In reality the form would not be
+uttered in isolation but rather combined with the noun “cup” to generate the utterance “cups.” (Center) Speaker distributions su for number, tense, and
+evidentiality. (Bottom) Priors p(s) on the three sets of speaker distributions.
+
+
+2 of 10   PNAS                                                                                                                                   Mollica et al.
+          https://doi.org/10.1073/pnas.2025993118                              The forms and meanings of grammatical markers support efficient communication
+or the relative frequency with which speakers communicate about                    Given this theoretical framework, we can ask whether attested
+different states of the world (8, 29, 30).                                      grammatical feature inventories achieve near-optimal trade-offs
+   An optimal encoder q(f |s) should satisfy two criteria: it should            between complexity and information loss. For any given feature,
+allow the listener to accurately reconstruct the speaker’s mental               applying the framework requires three components to be spec-
+state, and it should minimize production effort by ensuring that                ified: the universe of world states U, the speaker distributions
+frequently used forms are short. To formalize these criteria it                 for each objective world state su , and the prior on speaker
+will be convenient to represent a grammatical marker as a pair                  distributions p(s). Given these components we can compute the
+(m, f ) that includes both a meaning (or feature value) m and a                 complexity and information loss of both attested and hypotheti-
+form (or realization) f. For number in English, there are two such              cal systems and trace out the IB Pareto frontier of systems that
+pairs: (SINGULAR, ∅) and (PLURAL, “-s”), where the empty set ∅                  achieve optimal trade-offs between complexity and information
+indicates that the singular is zero-marked, or realized without                 loss (14, 32).
+an overt form. Given this representation we can decompose
+the encoder q(f |s) into a meaning encoder qm (m|s) that maps                   Efﬁciency of Form. We now consider the mapping qf from mean-
+speaker distributions into meanings and a form encoder qf (f |m)                ings to forms, or strings of phonemes. Because this mapping is
+that maps meanings into forms. This two-stage encoding process                  assumed to be lossless, efficiency is purely a matter of minimizing
+is illustrated in Fig. 1 and is used in the following sections to               expected form length. The entropy H (M ) gives a lower bound
+develop analyses that focus on efficiency of meaning and analyses               on expected form length (27), and an efficient mapping qf is
+that focus on efficiency of form.                                               expected to assign a form to meaning m that has length close to
+   The meaning encoder qm is lossy, but for simplicity we assume                                                      
+that the form encoder qf is lossless, which means that the listener                       h(m) = − log p(m) = log          qm (m|s)p(s).            [3]
+is able to reconstruct the meaning m without error given the                                                           s
+form f. In reality this assumption does not hold. Languages
+permit ambiguity in the linguistic signal, and ambiguity (including                In reality, natural language mappings qf are likely to yield
+                                                                                expected code lengths that do not come especially close to the
+
+
+
+
+                                                                                                                                                            PSYCHOLOGICAL AND
+ambiguity arising from reanalysis) may have implications for the
+
+
+
+
+                                                                                                                                                            COGNITIVE SCIENCES
+historical emergence of grammatical forms (31). Assuming that                   entropy H (M ) (33–35). These mappings, however, may nev-
+qf is lossless, however, is a natural starting point given the cross-           ertheless reflect a pressure toward brevity. Eq. 3 suggests that
+linguistic data available to us.                                                shorter forms should be used for more frequent meanings, and
+                                                                                we will examine whether this inverse relationship between form
+Efﬁciency of Meaning. An efficient encoder qm achieves an op-                   length and frequency holds in our data.
+timal trade-off between complexity and information loss (the                       Previous work on grammatical marking (11, 36) and the lexicon
+inverse of informativeness). Following ref. 14, the formal defi-                (4, 10, 37) has emphasized the notion of coding efficiency and
+nitions of complexity and information loss are grounded in the                  has demonstrated that forms tend to be paired with meanings
+information bottleneck (IB) principle (32), which is a special                  in ways that allow utterances to be relatively concise. Similar
+type of a rate–distortion trade-off. The complexity of an encoder               results have emerged from studies of phonetic realization (38),
+measures how much information about the speaker’s mental                        online word choice (39), and word ordering (40). Our theoretical
+state is preserved in the meaning of a grammatical marker and                   approach is consistent with all of these results but goes beyond
+is defined as the mutual information between meanings and                       them by considering efficiency of form within a framework that
+speaker distributions:                                                          also captures efficiency of meaning.
+                                                                                   Considering efficiency of form and meaning within a single
+                   I (M ; S ) = H (M ) − H (M |S ),                    [1]      framework is important because the two are connected via the
+                                                                                entropy H (M ). Minimizing the expected code length for an
+which, as shown, can be formulated as the difference of the                     efficient code (i.e., minimizing H (M )) can only be achieved if
+entropy over meanings H (M ) and the conditional entropy                        the encoder qm generates the same meaning for every speaker
+H (M |S ).                                                                      distribution. A system of this kind is maximally simple but also
+   The informativeness of an encoder is negatively related to the               maximally uninformative (i.e., the information loss in Eq. 2 is
+expected information loss associated with each communicative                    maximized). The pressure toward minimizing code lengths must
+interaction. Following refs. 12 and 14, we define this information              therefore trade off against a pressure toward informative com-
+loss as the expected Kullback–Leibler divergence KL(s||ŝ) be-                  munication (41). This trade-off is especially clear for determin-
+tween the speaker distribution s and the listener’s reconstruction              istic encoders qm , for which the complexity measure in Eq. 1
+ŝ of that distribution:                                                        is equivalent to the entropy H (M ). Most (but not all) of the
+                                                                               grammatical feature systems that we analyze are deterministic to
+            E [KL[S ||Ŝ ]] =   p(s)qm (m|s)KL[s||ŝm ],       [2]
+                                                                                a good first approximation: for example, in the English number
+                              s,m
+                                                                                system the singular is consistently used for individual items, and
+where ŝm is the reconstructed distribution for occasions on which              the plural is consistently used for multiple items.
+the speaker chooses meaning m.
+   Every possible mapping from speaker distributions to mean-                   Framework Instantiations
+ings corresponds to a point in a two-dimensional space where                    Now that we have introduced our general theoretical framework,
+the dimensions represent complexity and information loss. Some                  we show how it can be applied to the grammatical features
+points in this space cannot be achieved by any possible language–               of number, tense, and evidentiality. To evaluate our theory we
+for example, in any realistic setting it is impossible for an encoder           will make several simplifying assumptions (42, 43). First, while
+to achieve both zero complexity and zero information loss. The                  number, tense, and evidentiality can reflect multiple semantic
+boundary separating achievable points from unachievable points                  dimensions (e.g., numerosity vs. individuality and absolute vs.
+is a special case of a Pareto frontier known as the IB theoretical              relative time), we focus on a single grammaticalized semantic
+limit, and encoders along this continuous frontier achieve opti-                dimension for each. Each of these semantic dimensions can be
+mal trade-offs between complexity and information loss. These                   expressed using a variety of strategies (e.g., numerals, adverbs,
+encoders are optimal in the sense that complexity cannot be                     and verbal constructions), but for tractability we focus on sys-
+reduced without increasing information loss, and information                    tems that use obligatory morphological markers. As a result of
+loss cannot be reduced without increasing complexity.                           these simplifications, the set of unique feature inventories in our
+
+Mollica et al.                                                                                                                           PNAS     3 of 10
+The forms and meanings of grammatical markers support efficient communication                                    https://doi.org/10.1073/pnas.2025993118
+Table 1.   Example inventories for grammatical number, tense, and evidentiality
+                                                                                                                                 Information Frontier    Form
+              Language                                                System                                      Complexity         loss    distance correlation
+Number        Pirahã                                              (GENERAL, ∅)                                          0.00          1.44         0.00          NA
+              Russian                                           (SG, ∅)(PL, “ы”)                                        0.94          0.55         0.01          1.00
+              Larike                    (SG, “mane”) (DUO , “matua”) (TRO , “matidu”) (PL, “mati”)                      1.13          0.40         0.03          1.00
+              Murrinh-Patha        (SG, “nukunu”) (DU, “‘penintha”) (PAUC, “peneme”) (PL, “pigunu”)                     1.43          0.16         0.01          0.16
+              Sursurunga              (SG, “i”) (DU, “diar”) (PAUC, “ditul”) (GPAUC, “dihat”) (PL, “di”)                1.47          0.14         0.02          0.44
+Tense         West Greenlandic                               (ABCR, ∅) (XYZ, “ssa”)                                     0.81          0.50         0.04          1.0
+              Japanese                                        (ABC, “た”) (RXYZ, ∅)                                      0.85          0.47         0.04          1.00
+              Wolof                                 (ABC, “naa”) (R, “nge”) (XYZ, “dinaa”)                              1.52          0.08         0.00          1.00
+              Hixkaryana                       (A, “ye”) (B, “yako”) (C, “no”) (RXYZ, “yaha”)                           1.26          0.42         0.21          0.32
+              Zulu                             (A, “a”) (BC, “ile”) (R, ∅) (X, “za”) (YZ, “yaku”)                       2.01          0.02         0.00          0.88
+Evidentiality Sissala                                             (VSIA, ∅) (HQ, “E”)                                   0.28          0.15         0.00          1.0
+              Abkhaz                                           (VS, ∅) (IAHQ, “заарен”)                                 0.36          0.12         0.01          1.0
+              Quechua                                     (VS, “mi”) (IA, “chi”) (HQ, “shi”)                            0.42          0.08         0.00         0.99
+              Turkish                                            (V, ∅) (SIAHQ, “mIs”)                                  1.00          0.26         0.23          1.0
+              Barasano                               (V, “ka”) (S, “ruyu”) (IA, “ra”) (HQ, “yu”)                        1.35          0.01         0.00         –0.09
+
+   Each system includes a single representative form for each meaning, and orthographic forms are shown instead of phonemic forms. The meanings for
+number are as follows: GENERAL, “the noun can be expressed without reference to number” (ref. 46, p. 10); SG, singular; PL, plural; DU, dual; TR, trial; PAUC,
+paucal (a few); GPAUC, greater paucal (a bunch); GPL, greater plural. Optional values are shown using the subscript “O.” For tense, A, B, and C denote distant,
+near, and immediate past; R denotes present; and X, Y, and Z denote immediate, near, and remote future. For evidentiality, V and S denote visual and sensory,
+I and A denote inferred and assumed, and H and Q denote hearsay and quotative. Frontier distance shows the Euclidean distance between a system and the
+corresponding Pareto frontier in Fig. 2, and small values indicate efficiency of meaning. Form correlations show correlations between optimal and observed
+form lengths (Fig. 4), and large values indicate efficiency of form.
+
+
+
+
+sample is relatively small, and many languages are coded using a                    samples cover the space of attested feature inventories. Some
+single feature value that spans the entire dimension. This kind of                  extant inventories are almost certainly missing from our samples,
+inventory is maximally simple (and therefore technically optimal)                   and it will be valuable to revisit our analyses if and when larger
+but also maximally uninformative. The languages coded in this                       datasets become available.
+way may not make use of obligatory grammatical markers but
+                                                                                    Number. Although the underlying semantic dimension for num-
+typically rely on other linguistic constructions or contextual infor-
+                                                                                    ber is probably the natural numbers,* we consider only natural
+mation for conveying information about the semantic dimensions
+                                                                                    numbers less than or equal to 10 for simplicity. The universe U
+in question. Evaluating the efficiency of these alternative commu-
+                                                                                    therefore includes 10 world states, one for each number consid-
+nicative strategies is an important challenge for future work, and
+                                                                                    ered. Number marking in English distinguishes between singular
+we return to this issue in the Discussion.
+                                                                                    (1) and plural (>1), but some languages have more precise
+   A second assumption is that the prior on speaker distributions
+                                                                                    systems. For example, Murrinh-Patha distinguishes between sin-
+P (s) and the speaker distributions themselves are invariant
+                                                                                    gular (1), dual (2), paucal (3 to 6), and plural (>5) (46). While
+across cultures. Previous studies have made similar assumptions
+                                                                                    English and Murrinh-Patha require a speaker to always use the
+(14, 44), and in all cases these assumptions should be viewed
+                                                                                    most specific marker, some languages allow speakers a choice
+as rough first approximations that can be subsequently relaxed
+                                                                                    between specific and less specific markers. For example, Larike
+using data from studies that directly estimate culture-specific
+                                                                                    distinguishes between singular (1), optional dual (2), optional
+priors (45). Third, our operationalization of production effort is
+                                                                                    trial (3), and plural (>2) which means that the plural is always
+relatively coarse, and we treat this quantity as a binary variable
+                                                                                    an alternative to the dual and to the trial (15).
+(marker present vs. marker absent) or define it as the length of
+                                                                                       When communicating about a state including n items, the
+a marker’s orthographic representation. Considering phonetic
+                                                                                    speaker distribution sn is intended to capture the speaker’s
+structure would allow for a more satisfying operationalization
+                                                                                    uncertainty about the precise number of items present. Speaker
+but is not possible given the data available to us. Finally, the
+                                                                                    distributions associated with the 10 possible world states are
+grammatical systems considered in our analyses (including the
+                                                                                    shown in Fig. 1, Left Center, and these distributions are based
+examples in Table 1) are idealizations that are best treated as
+                                                                                    on data from a timed, high-contrast estimation task (48). The
+high-level summaries of a more complex reality. Within any indi-
+                                                                                    prior distribution p(s) captures the relative frequencies with
+vidual language, there may be departures from our idealizations,
+                                                                                    which speakers attempt to convey the 10 different meanings.
+and these differences may be irregular (e.g., the English plural
+                                                                                    Usage frequencies for number have been extensively studied
+is not marked for some nouns like “deer”) or context-dependent
+                                                                                    using cross-linguistic corpora (49, 50), and these studies suggest
+(e.g., in Hunzib, evidentiality is marked only in the past
+                                                                                    that p(s) can be roughly approximated as an inverse square law
+tense).
+                                                                                    (Fig. 1, Bottom Left).
+   The following sections introduce additional assumptions made
+                                                                                       For our analysis, we compiled and coded the number marking
+when analyzing each of the three grammatical features and de-
+                                                                                    inventories from 37 languages in ref. 46, representing 15 language
+scribe our samples of attested languages. These samples are
+                                                                                    families and 15 unique encoding systems. Five of these inven-
+drawn from a diverse set of language families and geographic
+                                                                                    tories are shown in Table 1. We adopt the standard linguistic
+regions but are convenience samples that aim for breadth of cov-
+                                                                                    conventions for number distinctions as labels (glossed in the
+erage rather than tight control over genealogical or geographic
+relationships. Given the nature of our analyses, controlling for
+historical descent and geographic region does not seem essential,                   * We only consider numerical amounts in our analysis, leaving the dimension of individ-
+and the more important question is the extent to which our                           ualization (47) for future work.
+
+
+
+4 of 10    PNAS                                                                                                                                      Mollica et al.
+           https://doi.org/10.1073/pnas.2025993118                                 The forms and meanings of grammatical markers support efficient communication
+legend). The main challenge in coding number systems is that                            (see SI Appendix, Table S1, for the complete list) to distribute
+indeterminate meanings (paucal, 3 to 6; plural, >2; greater pau-                        probability mass among the three levels of remoteness within
+cal, 6 to 8; greater plural, >9) vary slightly across languages.                        both past and future categories. All frequencies were derived
+For example, we code plural in Murrinh-Patha as greater than                            from the Google Ngram English corpus (59) for 1985, the year of
+5 because there are nonoptional meanings for all lower numbers,                         publication for the source of many of our tense systems (60). The
+whereas plural in English is greater than 2 because there is only                       prior distribution resulting from the two-step process is shown in
+one other meaning. When a distinction is optional, we assume                            Fig. 1, Bottom Center.
+that the speaker chooses the two possible meanings equally often                           For our analysis, we compiled tense inventories for 157 lan-
+(see SI Appendix for further details).                                                  guages, representing 73 language families and 16 unique inven-
+   To study how meanings are realized as forms, we compiled                             tories. Our sample was largely taken from ref. 60. To study how
+number forms for a subset of 33 languages. Number is marked                             meanings are realized as forms, we compiled forms for a subset
+in a variety of ways across languages, and we considered only                           of 33 languages. Languages were selected with a bias toward
+nominal and pronominal marking of grammatical number. For                               languages with more linguistic forms and toward grammars that
+brevity, the systems in Table 1 show a single form for each                             made the relevant information especially clear.
+meaning, but our dataset and analyses allow for multiple forms                             The major challenge encountered in assembling the data is
+per meaning. For example, the Russian data include number                               that tense is often hard to separate from aspect and modality
+forms for different combinations of case and gender.                                    (61). For example, in some languages the primary distinction is
+                                                                                        between perfective and imperfective (roughly whether an action
+Tense. Tense is analogous to number, but the underlying di-                             is complete or incomplete) rather than between past and fu-
+mension is time rather than quantity. Tense marking in English                          ture. Some languages include markers for categories (e.g., past
+distinguishes between past, present, and future, but some lan-                          perfective) that combine tense and aspect. When consulting our
+guages have more elaborate tense inventories that specify not                           primary sources, we made our best judgment about whether a
+only whether an event is in the past or future but also how far in                      language could be represented in our coding scheme without
+the past or future it is. For example, Hixkaryana distinguishes be-
+
+
+
+
+                                                                                                                                                                    PSYCHOLOGICAL AND
+                                                                                        distorting it too greatly and excluded two languages (Hawaiian
+
+
+
+
+                                                                                                                                                                    COGNITIVE SCIENCES
+tween events in the immediate past (same day or previous night),                        and Ewe) for which our scheme seemed especially inadequate.
+near past (past few months), and remote past (51). Researchers                          A second and less fundamental challenge is that languages which
+in formal semantics and artificial intelligence have developed                          make remoteness distinctions do not include categories that are
+precise representations of tense that could potentially be used                         precisely equivalent. Our coding scheme distinguishes between
+in frameworks like ours (52–55), but we take a simpler approach                         remote (more than 7 d distant), near (between 1 and 7 d), and
+that can be readily applied across languages and is similar to that                     immediate (on the same day), and we fitted each language into
+of ref. 56. We formulate U as a set of seven temporal intervals:                        this scheme as best we could.
+remote past (A), near past (B), immediate past (C), present (R),
+immediate future (X), near future (Y), and remote future (Z).                           Evidentiality. Evidentiality is a grammatical feature that conveys
+These intervals are not sufficient to capture the tense inventory                       the source of a piece of information: for example, whether the
+of every language in full: for example, Comrie (57) reports that                        speaker saw an event or heard it described by another person.
+Kiksht, a language of the US Pacific Northwest, distinguishes                           There is no standard characterization of the space of possible
+between six or seven past tense categories. Our seven-interval                          sources, and we therefore formulate U as the set of six sources
+timeline is therefore a pragmatic choice that allows us to rep-                         distinguished by Aikhenvald in her typology of evidential systems
+resent the tense inventories of many but not all of the languages                       (62). In principle, our framework allows these sources to be
+of the world.†                                                                          located within a multidimensional space, but for simplicity we
+   As in our number analysis, we pair each element of U with                            order them along a single dimension that is consistent with Wil-
+a speaker distribution s, and the seven meaning distributions                           lett’s (63) hierarchy of evidentiality values and roughly captures
+are shown in Fig. 1, Center. These distributions are intended to                        distance from the speaker. The first source is visual perception,
+capture the uncertainty that speakers maintain over the exact                           and the second includes all senses other than vision. Next comes
+time of an event: for example, sa captures uncertainty about an                         inference from visual evidence (e.g., learning there was a fire
+event that actually took place in the remote past. To formulate                         by seeing smoke), followed by assumption. The penultimate
+these distributions we postulate major boundaries between past,                         source combines general world knowledge (e.g., “it is known”)
+present, and future and minor boundaries between the three                              and hearsay, and the final source is quoted speech. Languages
+pasts (remote, near, and immediate) and between the three                               group these six sources in different ways. For example, Quechua
+futures. The distributions are defined in terms of two parameters                       (Table 1) has markers for direct evidence (visual and sensory
+κ and λ that specify how sharply probability mass decreases                             perception), indirect evidence (inference and assumption), and
+across minor and major boundaries. We set κ = 0.5 and λ = 0.1,                          reported evidence (hearsay and quotation). In contrast, Turkish
+which means that distributions drop by factors of 2 and 10                              makes a simple partition between firsthand (visual sources) and
+across minor and major boundaries, respectively. Our results are                        nonfirsthand (all other information sources).
+qualitatively robust to variation in the speaker distributions as                          Psychological evidence from Western populations suggests
+long as there is an appreciable decrease across minor bound-                            that speakers are often uncertain about the source of infor-
+aries (κ ≤ 0.75) and a reasonable distinction between major                             mation retrieved from memory (64), but there are no detailed
+and minor boundaries (κ and λ are not equivalent or near                                characterizations of how this uncertainty is distributed across
+equivalent).                                                                            different kinds of sources. We therefore specify the speaker
+   We estimated the prior p(s) using a two-step process. In the                         distributions using the same hierarchical approach described
+first step we used estimates of past, present, and future from                          for tense. Following Willett’s (63) hierarchy, we assume major
+an analysis of social media (58). The resulting counts yield a                          boundaries between perception (visual and sensory), reasoning
+distribution of [0.274, 0.475, 0.251] over the coarse categories of                     (inference and assumption), and external report (hearsay and
+past, present, and future. Second, we used frequencies of tempo-                        quotation speech) and minor boundaries within each of these
+ral adverbs such as “yesterday,” “last week,” and “last month”                          three pairs. As for our tense analysis we use parameters κ and λ
+                                                                                        that specify how sharply probability mass decreases across minor
+                                                                                        and major boundaries. Our results are again qualitatively robust
+†
+    We focus in this paper on absolute tense, leaving relative tense for future work.   to variation in these parameters, and as before we set κ = 0.5 and
+
+Mollica et al.                                                                                                                                   PNAS     5 of 10
+The forms and meanings of grammatical markers support efficient communication                                            https://doi.org/10.1073/pnas.2025993118
+λ = 0.1. The resulting speaker distributions are shown in Fig. 1,               Encoders that achieve optimal trade-offs between information
+Right Center.                                                                   loss and complexity lie along the Pareto frontier, shown here
+   Although evidentiality occurs in around a quarter of the                     as a solid line, and the dark gray region below the curve shows
+world’s languages, few corpora are available for languages with                 trade-offs that are impossible to achieve. Attested inventories
+fine-grained evidentiality inventories. We therefore estimate the               are shown as black points, and the light gray points include all
+prior p(s) using a single corpus of Cuzco Quechua text (65).                    possible inventories that partition U into nonoverlapping feature
+Quechua groups the six sources in U into three pairs, and we                    values. Attested inventories (black points) are generally closer
+therefore divide corpus frequencies evenly within these pairs to                to the Pareto frontier than are unattested inventories (light gray
+produce the prior shown in Fig. 1, Bottom Right. For evidentiality              points), suggesting that attested inventories for number, tense,
+in particular, the data available for grounding assumptions about               and evidentiality are near optimal. SI Appendix includes a quan-
+the prior and speaker distributions are relatively limited, and our             titative analysis that supports this conclusion strongly for number
+results should be viewed as tentative conclusions only.                         and tense and less strongly for evidentiality. It also shows that our
+   We conducted our analysis on a set of 184 extant languages,                  model accounts better for attested inventories than an alternative
+representing 61 language families and 16 unique inventories.                    approach previously applied to tense marking (66) that defines
+Descriptions of all languages were taken from ref. 62, and five                 the complexity of an inventory as the number of markers that it
+are represented in Table 1. To study how meanings are realized                  includes.
+as forms, we compiled forms for a subset of 31 languages. Similar                  Although most attested inventories lie close to the Pareto
+to tense, there was some difficulty separating evidentiality from               frontier, there are a handful of notable exceptions. There are
+other grammatical features including mood, mirativity (gram-                    no clear outliers for number, and for tense, the single outlier is
+maticalized surprise), aspect, and tense. For example, in Mansi,                Hixkaryana. The Hixkaryana tense inventory (Table 1) is unusual
+Svan, and Turkish, evidentiality correlates with mirativity, and the            because it includes a relatively large number of categories but
+nonfirsthand marker can be used when the speaker has perfect                    does not distinguish between present and future. For eviden-
+visual evidence but witnesses something so surprising that they                 tiality, there are two notable groups of outliers driven by the
+do not believe it. Evidentiality can also interact with genre,                  same principle: our model predicts that distinctions at the level of
+register, and person systems. For example, in Meithei, the source               Willett’s (63) clusters should be made before distinctions within
+of information is not always with respect to the speaker (first                 these clusters. For a few two-term systems, including Turkish,
+person) but can be calculated with respect to the listener (second              Mansi, and Meithei, and one three-term system, Siona, a dis-
+person). As with tense, we tried our best to encode each system                 tinction between visual and sensory information is made before
+as faithfully as possible but acknowledge that our encoding of                  distinctions are made between all of Willett’s (63) levels. For a
+evidentiality represents a starting point only and that future work             more detailed discussion of individual languages and outliers, see
+will be required (see SI Appendix for further discussion).                      SI Appendix. The general conclusion from this discussion is that
+                                                                                most attested systems are qualitatively similar to optimal systems.
+Analysis of Meaning                                                                For each of the plots in Fig. 2, traversing the Pareto frontier
+We first analyze the feature values or meanings captured by each                from top left to bottom right generates a hypothetical evolu-
+language in our dataset, and the next section analyzes the forms                tionary trajectory that makes predictions about the order in
+that realize these meanings. For each of the three grammatical                  which distinctions are introduced if a system grows more complex
+features, the space of possible encoders qm is shown in Fig. 2.                 over time (14, 26). SI Appendix includes a detailed analysis of
+
+
+A                                                   B                                                   C
+
+
+
+
+Fig. 2. Analysis of the meaning of grammatical markers. Trade-offs between information loss and complexity for (A) number, (B) tense, and (C) evidentiality.
+Attested inventories (black points) and unattested systems (gray points) are plotted in the space of all possible grammatical systems. Systems that achieve
+optimal trade-offs lie along the Pareto frontier (solid line), and the shaded region below the line shows trade-offs that are impossible to achieve.
+
+
+6 of 10   PNAS                                                                                                                                  Mollica et al.
+          https://doi.org/10.1073/pnas.2025993118                             The forms and meanings of grammatical markers support efficient communication
+these trajectories and shows that they recapitulate some patterns               zero-marking can be partially predicted by the information loss
+previously identified by work in linguistic typology. Following                 of the meaning encoding system. When information loss is high,
+(67), these patterns are often formulated as universal constraints              zero-marking provides relatively large reductions in expected
+on possible systems: for example, one such universal states that                length and is relatively likely to be used. In contrast, systems with
+if a number system has a trial, then it also has a dual. Our                    low information loss have little to gain by zero-marking and are
+theory broadly captures this and other known patterns but is                    relatively likely to be explicit.
+most compatible with the view that they are strong regularities                   We now ask more generally whether the frequency of a gram-
+that emerge from soft functional constraints instead of strict                  matical marker is inversely related to the length of its form.
+universals that hold without exception (68, 69).                                Form length should ideally be measured in phonemes, but we
+                                                                                do not have phonemic transcriptions for all languages in our
+Analysis of Form                                                                samples and therefore use orthographic length as a rough proxy
+We now analyze form length for number, tense, and evidentiality.                for phonemic length. Within each system, form lengths are nor-
+Before comparing form lengths across languages, we normalize                    malized so that the longest form has length 1. We compare
+lengths within each system to allow for the fact that lengths may               these observed lengths to predicted or optimal lengths, where
+be systematically longer in some languages (e.g., those with rela-              the optimal length for a marker with probability p(m) is the
+tively small phoneme inventories) than others. Our first analysis               surprisal − log(p(m)). Frequent markers have short optimal
+asks whether feature values that are zero-marked (i.e., not overtly             lengths, and the optimal length of each marker can be interpreted
+expressed, as for the nominal singular marker in English) tend                  as the number of bits used to represent the marker given an
+to be more frequent than other feature values belonging to the                  optimal code. Fig. 4 shows that observed and optimal lengths
+same system (9, 11). To address this question we use a coarse                   are positively correlated across our samples of number, tense,
+form of normalization that assigns a length of 0 to any feature                 and evidentiality systems, and correlations for selected languages
+value that is zero-marked and lengths of 1 to all other feature                 are shown in the seventh column of Table 1. The labeled data
+values. Fig. 3 plots the information loss from our analysis of                  points in Fig. 4 are based on averages across all systems that
+
+
+
+
+                                                                                                                                                             PSYCHOLOGICAL AND
+meaning against expected length for tense and therefore shows                   share a given feature value, and the gray lines are regression lines
+
+
+
+
+                                                                                                                                                             COGNITIVE SCIENCES
+how informativeness of meaning trades off against brevity of                    based on lengths from individual languages. Some individual
+form. SI Appendix contains an analogous plot for evidentiality                  languages (gray lines) represent exceptions to the general trend–
+but not number because our sample of number markers includes                    for example, Tamil and Seneca have slightly shorter forms for
+pronominal forms for which zero-marking does not occur. The                     future tense than for past (ABC) or past/present (ABCR) tenses.
+black dots represent attested systems, and the light blue dots                  In general, however, languages tend to assign relatively short
+include all permutations of systems that use zero-marking for at                forms to markers that are high in frequency.
+most one category in an attested system. The small gray dots show                 The results in Fig. 4 are highly compatible with previous
+all ways to apply zero-marking to unattested systems. Attested                  discussions of coding efficiency and grammatical marking. Most
+systems with zero-marking overwhelmingly tend to zero-mark                      relevant to our approach is the work of Haspelmath (11), who
+the most frequent feature value and therefore lie along the                     uses a broad range of grammatical patterns to demonstrate that
+Pareto frontier. The remaining attested systems explicitly mark                 more frequent grammatical feature values tend to have relatively
+all grammatical feature values and appear as a column of black                  short forms and explains this result using the same functional-
+dots with expected length equal to 1. SI Appendix includes a sta-               adaptive principles invoked by our theory. Relative to this prior
+tistical analysis suggesting that whether or not a tense system uses            work, our main contribution is to suggest that coding efficiency
+                                                                                should not be considered in isolation but rather trades off against
+                                                                                a pressure for informative communication.
+                                                                                Discussion
+                                                                                We presented an account of grammatical marking which suggests
+                                                                                that number, tense, and evidentiality systems across languages
+                                                                                achieve efficient trade-offs between informativeness and simplic-
+                                                                                ity. Our results align with related results previously reported for
+                                                                                domains including color naming (14), kin naming (44), quanti-
+                                                                                fiers (70), numeral systems (71), and indefinite pronouns (72)
+                                                                                and with a broader literature that characterizes ways in which
+                                                                                language supports efficient communication (8). Within this lit-
+                                                                                erature, there are studies that focus on meaning (e.g., ref. 13)
+                                                                                and studies that focus on form (e.g., ref. 10) but few that address
+                                                                                both meaning and form (e.g., refs. 73, 74). Our work suggests
+                                                                                how form and meaning can be brought together in an integrated
+                                                                                information-theoretic framework.
+                                                                                   Our analysis assumed that the function of each grammati-
+                                                                                cal feature is to convey information about a single underlying
+                                                                                dimension. Our approach, however, can be directly applied to
+                                                                                settings in which the conceptual universe U combines multiple
+                                                                                semantic dimensions, for example, both person and number
+                                                                                (75). Applying the framework in this way may provide a fresh
+                                                                                perspective on grammatical paradigms and may help to explain
+                                                                                attested patterns of syncretism. A further possible extension is
+Fig. 3. Zero-marking analysis of tense systems. Trade-off between infor-
+                                                                                to allow for additional functions that grammatical features may
+mation loss and expected length when zero-marking is allowed for all            serve: for example, some features (e.g., case; ref. 76) may convey
+tense systems (N = 157). Black dots show attested systems (size denotes         information about structural dependencies via indexing, and oth-
+frequency), blue dots show all ways to zero-mark at most one feature value      ers (e.g., grammatical gender; ref. 77) may convey information
+in an attested system, and gray dots show possible but unattested systems.      about what forms should be expected next. Frequent linguistic
+
+Mollica et al.                                                                                                                            PNAS     7 of 10
+The forms and meanings of grammatical markers support efficient communication                                     https://doi.org/10.1073/pnas.2025993118
+Fig. 4. Analyses of the form of grammatical markers. Relationship between optimal and observed code lengths for a subsample of (Left) number, (Middle)
+tense, and (Right) evidentiality systems. Within each language, forms were unit normalized, and the lengths of multiple forms for the same feature value
+within a language were averaged. Gray lines show trend lines for each language, and each colored data point shows an average across all languages that
+include a given feature value. Error bars show SEM, and the vertical error bars occur because of normalization and because the optimal length for a marker
+(e.g., past, or abc) depends on whether or not it is optional. Colors are arbitrary but help to distinguish overlapping error bars.
+
+units such as grammatical markers are especially likely to have                   Although we focused on number, tense, and evidentiality
+multiple functions (4, 78), and capturing the full range of these              marking, our general approach can be applied both to other
+functions is a major challenge for quantitative approaches.                    grammatical features and to the lexicon. In all cases, the goal
+   Our analysis focused only on grammatical marking, but other                 is to simultaneously explain both the meanings captured by a
+linguistic strategies are available for communicating about num-               linguistic system and the relative lengths of the forms that express
+ber, time, and information source, including the use of quanti-                those meanings. Grammar and the lexicon have traditionally
+fiers, temporal adverbs, and modal verbs. The languages in our                 been explored somewhat separately, but information-theoretic
+datasets that do not mark number, tense, and evidentiality rely on             analyses can help to characterize how both support efficient
+these other strategies. Studying grammatical marking and other                 communication.
+individual strategies in isolation is a natural first step, but future
+work should aim to allow for multiple different strategies when                Materials and Methods
+evaluating communicative efficiency.                                           Treatment of Data. Languages were primarily sampled from monographs
+   Our work suggests that systems of grammatical markers                       surveying the grammatical features of number (46), tense (60), and eviden-
+achieve efficient trade-offs between informativeness and sim-                  tiality (62) with the goal of including as many distinct attested systems as
+plicity but do not capture the historical processes that led to                possible.
+this outcome. It is possible that efficient trade-offs could arise in          Specifying Encoder Distributions. Because usage data are not available for
+the absence of communicative pressures (79), but recent work                   many languages in the dataset, encoders q(m|s) were determined using
+on cultural evolution and language acquisition suggests that                   a maximum entropy assumption. This assumption is only relevant for lan-
+language learning and use impose pressures toward informa-                     guages that have optional distinctions. The unique encoders in our analysis
+tiveness and simplicity (80–82). On this account, the pressure                 are shown in detail in SI Appendix.
+toward informativeness applies during cooperative language use                 Speaker Distributions. For number, the nth speaker distribution is given by
+(e.g., ref. 83), and the pressure toward simplicity applies during             the analytical form
+language learning (e.g., ref. 84). There is now a sizable body of                                                                         
+evidence in language acquisition showing that learners reshape                                                               p(n)        2
+                                                                                                 S(u|n) ∝ p(u) exp       −        (n − u) ,               [4]
+their input to learn languages that are simpler, easier to produce,                                                           λn
+and more informative than their input (17–20, 85).                             where the λi are empirically estimated precision parameters. To avoid
+   Connecting our approach with a model of historical language                 having speaker distributions with no uncertainty due to values smaller than
+change may help to address two additional questions left open                  numerical precision, we added 10−5 to each state u and renormalized. For
+by our results. Our approach helps to explain the range of gram-               tense and evidentiality, the speaker distribution associated with state u∗ is
+matical systems observed across languages but does not explain                 given by
+                                                                                                                  ∗       λ κ
+why some systems are more frequent than others or why any                                                    S(u|u ) ∝ B b ,                             [5]
+particular language has the systems that it does. One possibility              where B and b are the number of major and minor boundaries separating
+is that different cultures impose different functional constraints,            u and u∗ and λ and κ are the discount rates across major and minor
+but a second possibility is that variation across languages reflects           boundaries, respectively. For our analyses, λ and κ were set to 0.1 and 0.5,
+a set of crystallized historical accidents. If grammatical systems             respectively.
+were initialized randomly, selective pressures over time may lead
+                                                                               The IB Pareto Frontier. The trade-off between complexity and information
+them to converge on a relatively small set of attractors, and the
+                                                                               loss is given by the IB objective function (32)
+relative frequencies of these attractors could be explained by the
+relative sizes of their basins of attraction. Phylogenetic analyses                                 Fβ [q(m|s)] = I(M; S) − βI(M; U).                     [6]
+have provided insight into the evolution of both semantic and
+grammatical systems (86–88), and a similar approach could be                   Following ref. 14, the Pareto frontier was computed using reverse determin-
+productively applied to our data.                                              istic annealing (32). For number, the β schedule was 2x for x from 4 to 0 by
+
+
+8 of 10   PNAS                                                                                                                                 Mollica et al.
+          https://doi.org/10.1073/pnas.2025993118                            The forms and meanings of grammatical markers support efficient communication
+0.001 increments. For tense, the β schedule was 2x for x from 5 to 0 by 0.001                         ACKNOWLEDGMENTS. We thank Naomi Baes for her meticulous work in
+increments. For evidentiality, the β schedule was 2x for x from 5 to 0 by 0.001                       compiling the number forms. A preliminary version of this work was pre-
+increments.                                                                                           sented at the Annual Meeting of the Cognitive Science Society in 2020. This
+                                                                                                      work was supported in part by a Brain and Cognitive Sciences fellowship in
+Data Availability. All data and code used in the analyses are available in an                         computation (N.Z.) and by Australian Research Council grant FT190100200
+Open Science Foundation repository (89) at https://osf.io/s5b7h/.                                     (C.K.).
+
+
+ 1. W. Croft, Typology and Universals (Cambridge University Press, 2002).                             34. J. Pate, “Optimization of American English, Spanish, and Mandarin Chinese over
+ 2. F. J. Newmeyer, Possible and Probable Languages: A Generative Perspective on                          time for efficient communication” in Proceedings of the 39th Annual Conference of
+    Linguistic Typology (Oxford University Press, 2005).                                                  the Cognitive Science Society, G. Gunzelmann, A. Howes, T. Tenbrink, E. J. Davelaar,
+ 3. G. von der Gabelentz, Die Sprachwissenschaft: Ihre Aufgaben, Methoden und                             Eds. (Cognitive Science Society, 2017), pp. 901–906.
+    bisherigen Ergebnisse (Chr. Herm. Tauchnitz, Leipzig, 1901).                                      35. T. Pimentel, I. Nikkarinen, K. Mahowald, R. Cotterell, D. Blasi, “How (non-)optimal is
+ 4. G. K. Zipf, Human Behavior and the Principle of Least Effort (Addison-Wesley Press,                   the lexicon?” in Proceedings of the 2021 Conference of the North American Chapter
+    1949).                                                                                                of the Association for Computational Linguistics: Human Language Technologies
+ 5. J. Bybee, Language, Usage and Cognition (Cambridge University Press, 2010).                           (Association for Computational Linguistics, 2021), pp. 4426–4438.
+ 6. J. A. Hawkins, Efficiency and Complexity in Grammars (Oxford University Press,                    36. G. Fenk-Oczlon, Familiarity, information flow, and linguistic form. Typolog. Stud.
+    2004).                                                                                                Lang. 45, 431–448 (2001).
+                                                                                                      37. C. Bentz, R. Ferrer-i Concho, “Zipf’s law of abbreviation as a language universal”
+ 7. J. A. Hawkins, Cross-Linguistic Variation and Efficiency (Oxford University Press,
+                                                                                                          in Proceedings of the Leiden Workshop on Capturing Phylogenetic Algorithms for
+    2014).
+                                                                                                          Linguistics (University of Tübingen, 2016).
+ 8. E. Gibson et al., How efficiency shapes human language. Trends Cogn. Sci. 23, 389–
+                                                                                                      38. M. Aylett, A. Turk, The smooth signal redundancy hypothesis: A functional explana-
+    407 (2019).
+                                                                                                          tion for relationships between redundancy, prosodic prominence, and duration in
+ 9. J. H. Greenberg, Language Universals with Special Reference to Feature Hierarchies
+                                                                                                          spontaneous speech. Lang. Speech 47, 31–56 (2004).
+    (Mouton, The Hague, 1966).
+                                                                                                      39. K. Mahowald, E. Fedorenko, S. T. Piantadosi, E. Gibson, Info/information theory:
+10. S. T. Piantadosi, H. Tily, E. Gibson, Word lengths are optimized for efficient commu-                 Speakers choose shorter words in predictive contexts. Cognition 126, 313–318
+    nication. Proc. Natl. Acad. Sci. U.S.A. 108, 3526–3529 (2011).                                        (2013).
+11. M. Haspelmath, Explaining grammatical coding asymmetries: Form–frequency cor-                     40. M. Hahn, D. Jurafsky, R. Futrell, Universals of word order reflect optimization of
+    respondences and predictability. J. Linguist. 57, 605–633 (2021).                                     grammars for efficient communication. Proc. Natl. Acad. Sci. U.S.A. 117, 2347–2353
+
+
+
+
+                                                                                                                                                                                                      PSYCHOLOGICAL AND
+12. T. Regier, C. Kemp, P. Kay, “Word meanings across languages support efficient                         (2020).
+
+
+
+
+                                                                                                                                                                                                      COGNITIVE SCIENCES
+    communication” in The Handbook of Language Emergence, B. MacWhinney, W.                           41. R. Ferrer i Cancho, R. V. Solé, Least effort and the origins of scaling in human
+    O’Grady, Eds. (Wiley, 2015), pp. 237–263.                                                             language. Proc. Natl. Acad. Sci. U.S.A. 100, 788–791 (2003).
+13. C. Kemp, Y. Xu, T. Regier, Semantic typology and efficient communication. Annu.                   42. R. P. Cooper, O. Guest, Implementations are not specifications: Specification, repli-
+    Rev. Linguist. 4, 109–128 (2018).                                                                     cation and experimentation in computational cognitive modeling. Cogn. Syst. Res.
+14. N. Zaslavsky, C. Kemp, T. Regier, N. Tishby, Efficient compression in color naming and                27, 42–49 (2014).
+    its evolution. Proc. Natl. Acad. Sci. U.S.A. 115, 7937–7942 (2018).                               43. O. Guest, A. E. Martin, How computational modeling can force theory building in
+15. W. D. Laidig, C. J. Laidig, Larike pronouns: Duals and trials in a central Moluccan                   psychological science. Perspect. Psychol. Sci. 16, 789–802 (2021).
+    language. Ocean. Linguist. 29, 87–109 (1990).                                                     44. C. Kemp, T. Regier, Kinship categories across languages reflect general communica-
+16. M. Haspelmath, A. Karjus, Explaining asymmetries in number marking: Singulatives,                     tive principles. Science 336, 1049–1054 (2012).
+    pluratives, and usage frequency. Linguistics 55, 1213–1235 (2017).                                45. P. Rácz, S. Passmore, C. Sheard, F. M. Jordan, Usage frequency and lexical class
+17. M. Fedzechkina, T. F. Jaeger, E. L. Newport, Language learners restructure their input                determine the evolution of kinship terms in Indo-European. R. Soc. Open Sci. 6,
+    to facilitate efficient communication. Proc. Natl. Acad. Sci. U.S.A. 109, 17897–17902                 191385 (2019).
+    (2012).                                                                                           46. G. G. Corbett, Number (Cambridge University Press, 2000).
+18. J. Kanwal, K. Smith, J. Culbertson, S. Kirby, Zipf’s law of abbreviation and the                  47. S. Grimm, Grammatical number and the scale of individuation. Language 94, 527–
+                                                                                                          574 (2018).
+    principle of least effort: Language users optimise a miniature lexicon for efficient
+                                                                                                      48. S. J. Cheyette, S. T. Piantadosi, A unified theory of numerosity perception. Nat. Hum.
+    communication. Cognition 165, 45–52 (2017).
+                                                                                                          Behav. 4, 1265–1272 (2020).
+19. C. Kurumada, S. Grimm, Predictability of meaning in grammatical encoding: Op-
+                                                                                                      49. S. Dehaene, J. Mehler, Cross-linguistic regularities in the frequency of number
+    tional plural marking. Cognition 191, 103953 (2019).
+                                                                                                          words. Cognition 43, 1–29 (1992).
+20. M. Fedzechkina, T. F. Jaeger, Production efficiency can cause grammatical change:
+                                                                                                      50. S. T. Piantadosi, A rational analysis of the approximate number system. Psychon.
+    Learners deviate from the input to better balance efficiency against robust message
+                                                                                                          Bull. Rev. 23, 877–886 (2016).
+    transmission. Cognition 196, 104115 (2020).                                                       51. D. C. Derbyshire, Hixkaryana (North-Holland, 1979).
+21. J. Culbertson, P. Smolensky, G. Legendre, Learning biases predict a word order                    52. N. Rescher, A. Urquhart, Temporal Logic (Springer-Verlag, Wien, 1971).
+    universal. Cognition 122, 306–329 (2012).                                                         53. J. McCarthy, P. J. Hayes, “Some philosophical problems from the standpoint of
+22. D. Gentner, M. Bowerman, “Why some spatial semantic categories are harder                             artificial intelligence” in Readings in Artificial Intelligence, B. L. Webber, N. J.
+    to learn than others: The typological prevalence hypothesis” in Crosslinguistic                       Nilsson, Eds. (Elsevier, 1981), pp. 431–450.
+    Approaches to the Psychology of Language: Research in the Tradition of Dan Isaac                  54. J. F. Allen, Maintaining knowledge about temporal intervals. Commun. ACM 26,
+    Slobin, J. Guo et al., Eds. (Psychology Press, 2009), pp. 465–480.                                    832–843 (1983).
+23. D. Saratsli, S. Bartell, A. Papafragou, Cross-linguistic frequency and the learnability           55. H. Reichenbach, “The tenses of verbs” in The Language of Time: A Reader, I. Mani,
+    of semantics: Artificial language learning studies of evidentiality. Cognition 197,                   J. Pustejovsky, R. Gaizauskas, Eds. (Oxford University Press, 1947), pp. 71–78.
+    104194 (2020).                                                                                    56. V. Velupillai, Partitioning the timeline: A cross-linguistic survey of tense. Stud. Lang.
+24. J. Haiman, “Competing motivations” in The Oxford Handbook of Linguistic Typol-                        40, 93–136 (2016).
+    ogy, J. J. Song, Ed. (Oxford University Press, 2010), pp. 148–165.                                57. B. Comrie, Tense (Cambridge University Press, 1985).
+25. J. W. Du Bois, “Competing motivations” in Iconicity in Syntax, J. Haiman, Ed.                     58. G. Park et al., Living in the past, present, and future: Measuring temporal orienta-
+    (Benjamins Amsterdam, 1985), pp. 343–365.                                                             tion with language. J. Pers. 85, 270–280 (2017).
+26. N. Zaslavsky, “Information-theoretic principles in the evolution of semantic sys-                 59. J. B. Michel et al.; Google Books Team, Quantitative analysis of culture using millions
+    tems,” PhD thesis, The Hebrew University of Jerusalem, Jerusalem, Israel (2020).                      of digitized books. Science 331, 176–182 (2011).
+27. C. E. Shannon, A mathematical theory of communication. Bell Syst. Tech. J. 27, 379–               60. Ö. Dahl, Tense and Aspect Systems (Basil Blackwell, 1985).
+    423 (1948).                                                                                       61. J. L. Bybee, R. D. Perkins, W. Pagliuca, The Evolution of Grammar: Tense, Aspect, and
+28. C. E. Shannon “Coding theorems for a discrete source with a fidelity criterion” in                    Modality in the Languages of the World (University of Chicago Press,1994).
+                                                                                                      62. A. Aikhenvald, Evidentiality (Oxford University Press, 2004).
+    Institute of Radio Engineers International Convention Record (Institute of Radio
+                                                                                                      63. T. Willett, A cross-linguistic survey of the grammaticization of evidentiality. Stud.
+    Engineers, 1959), vol. 7, pp. 325–350.
+                                                                                                          Lang. 12, 51–97 (1988).
+29. N. Zaslavsky, C. Kemp, N. Tishby, T. Regier, Communicative need in colour naming.
+                                                                                                      64. M. K. Johnson, S. Hashtroudi, D. S. Lindsay, Source monitoring. Psychol. Bull. 114,
+    Cogn. Neuropsychol. 37, 312–324 (2020).
+                                                                                                          3–28 (1993).
+30. A. Karjus, R. A. Blythe, S. Kirby, K. Smith, Communicative need modulates compe-
+                                                                                                      65. A. Rios, A. Göhring, M. Volk, “A Quechua-Spanish parallel treebank” in LOT
+    tition in language change. arXiv [Preprint] (2020). https://arxiv.org/abs/2006.09277
+                                                                                                          Occasional Series (LOT, Netherlands Graduate School of Linguistics), vol. 12, pp. 53–
+    (Accessed 17 June 2020).                                                                              64 (2008).
+31. E. C. Traugott, “Grammaticalization and mechanisms of change” in The Oxford                       66. G. I. Bacon, “Evaluating linguistic knowledge in neural networks,” PhD thesis,
+    Handbook of Grammaticalization, B. Heine, H. Narrog, Eds. (Oxford University Press,                   University of California, Berkeley, CA (2020).
+    2011), pp. 19–30.                                                                                 67. J. H. Greenberg, Universals of Language (MIT Press, 1963).
+32. N. Tishby, F. Pereira, W. Bialek, “The information bottleneck method” in Proceedings              68. M. S. Dryer, “Why statistical universals are better than absolute universals” in
+    of the 37th Annual Allerton Conference on Communication, Control and Comput-                          Papers from the 33rd Regional Meeting of the Chicago Linguistic Society (Chicago
+    ing , N. Tishby, F. C. Pereira, B. Hajek, R. S. Screenivas, Eds. (University of Illinois Press,       Linguistic Society, 1998), pp. 123–145.
+    1999), pp. 368–377.                                                                               69. N. Evans, S. C. Levinson, The myth of language universals: Language diversity and its
+33. R. L. Futrell, “Memory and locality in natural language,” PhD thesis, Massachusetts                   importance for cognitive science. Behav. Brain Sci. 32, 429–448, discussion 448–494
+    Institute of Technology, Cambridge, MA (2017).                                                        (2009).
+
+
+
+Mollica et al.                                                                                                                                                              PNAS     9 of 10
+The forms and meanings of grammatical markers support efficient communication                                                                       https://doi.org/10.1073/pnas.2025993118
+70. S. Steinert-Threlkeld, “Quantifiers in natural language optimize the simplic-            79. S. Caplan, J. Kodner, C. Yang, Miller’s monkey updated: Communicative efficiency
+    ity/informativeness trade-off” in Proceedings of the 22nd Amsterdam Colloquium,              and the statistics of words in natural language. Cognition 205, 104466 (2020).
+    J. J. Schlöder, D. McHugh, F. Roelofsen, Eds. (Institute for Logic, Language and         80. S. Kirby, M. Tamariz, H. Cornish, K. Smith, Compression and communication in the
+    Computation at the University of Amsterdam, 2020), pp. 513–522.
+                                                                                                 cultural evolution of linguistic structure. Cognition 141, 87–102 (2015).
+71. Y. Xu, E. Liu, T. Regier, Numeral systems across languages support efficient commu-
+    nication: From approximate numerosity to recursion. Open Mind (Camb.) 4, 57–70           81. A. Carstensen, J. Xu, C. Smith, T. Regier, “Language evolution in the lab tends toward
+    (2020).                                                                                      informative communication” in Proceedings of the 37th Annual Meeting of the
+72. M Denić, S Steinert-Threlkeld, J Szymanik, “Complexity/informativeness trade-off            Cognitive Science Society, D. C. Noelle et al., Eds. (Cognitive Science Society, 2015),
+    in the domain of indefinite pronouns” in Semantics and Linguistic Theory 2020,               pp. 303–308.
+    J. Rhyne, K. Lamp, N. Dreier, C. Kwon, Eds. (Linguistic Society of America, 2020),       82. J. W. Carr, K. Smith, J. Culbertson, S. Kirby, Simplicity and informativeness in semantic
+    pp. 166–184.                                                                                 category systems. Cognition 202, 104289 (2020).
+73. I. Dautriche, K. Mahowald, E. Gibson, S. T. Piantadosi, Wordform similarity increases
+                                                                                             83. N. Fay, S. Garrod, L. Roberts, N. Swoboda, The interactive evolution of human
+    with semantic similarity: An analysis of 100 languages. Cogn. Sci. (Hauppauge) 41,
+    2149–2169 (2017).                                                                            communication systems. Cogn. Sci. 34, 351–386 (2010).
+74. M. Tamariz, Exploring systematicity between phonological and context-                    84. C. L. Hudson Kam, E. L. Newport, Regularizing unpredictable variation: The roles
+    cooccurrence representations of the mental lexicon. Ment. Lex. 3, 259–278                    of adult and child learners in language formation and change. Lang. Learn. Dev. 1,
+    (2008).                                                                                      151–195 (2005).
+75. N. Zaslavsky, M. Maldonado, J. Culbertson, “Let’s talk (efficiently) about us: Person    85. J. Culbertson, P. Smolensky, A Bayesian model of biases in artificial language
+    systems achieve near-optimal compression” in Proceedings of the 43rd Annual
+                                                                                                 learning: The case of a word-order universal. Cogn. Sci. 36, 1468–1498 (2012).
+    Meeting of the Cognitive Science Society, T. Fitch, C. Lamm, H. Leder, K. Teßmar-
+    Raible, Eds. (Cognitive Science Society, 2021), pp. 938–944.                             86. F. M. Jordan, A phylogenetic analysis of the evolution of Austronesian sibling
+76. F. Mollica, C. Kemp, “An efficient communication analysis of morpho-syntactic gram-          terminologies. Hum. Biol. 83, 297–321 (2011).
+    matical features” in Proceedings of the 42th Annual Conference of the Cognitive          87. H. J. Haynie, C. Bowern, Phylogenetic approach to the evolution of color term
+    Science Society, S. Denison, M. Mack, Y. Xu, B. C. Armstrong, Eds. (Cognitive Science        systems. Proc. Natl. Acad. Sci. U.S.A. 113, 13666–13671 (2016).
+    Society, 2020), pp. 3198–3204.                                                           88. M. Dunn, S. J. Greenhill, S. C. Levinson, R. D. Gray, Evolved structure of lan-
+77. M. Dye, P. Milin, R. Futrell, M. Ramscar, “A functional theory of gender paradigms”          guage shows lineage-specific trends in word-order universals. Nature 473, 79–82
+    in Perspectives on Morphological Organization, F. Kiefer, J. Blevins, H. Bartos, Eds.
+                                                                                                 (2011).
+    (Brill, 2017), pp. 212–239.
+78. M. Haspelmath, “The geometry of grammatical meaning: Semantic maps and cross-            89. F. Mollica et al., The forms and meanings of grammatical markers support efficient
+    linguistic comparison” in The New Psychology of Language, M. Tomasello, Ed.                  communication. Open Science Framework. https://doi.org/10.17605/OSF.IO/S5B7H.
+    (Psychology Press, 2003), vol. 2, pp. 1–30.                                                  Deposited 29 September 2021.
+
+
+
+
+10 of 10     PNAS                                                                                                                                             Mollica et al.
+             https://doi.org/10.1073/pnas.2025993118                                        The forms and meanings of grammatical markers support efficient communication
+

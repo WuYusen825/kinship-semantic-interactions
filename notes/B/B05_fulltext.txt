@@ -1,0 +1,1188 @@
+                                       To appear in the Annual Review of Linguistics.
+
+
+
+                    Semantic typology and efficient communication
+
+                                   Charles Kemp∗1 , Yang Xu2 , and Terry Regier∗3
+        1 Department of Psychology, Carnegie Mellon University, Pittsburgh, PA, USA, 15213
+2 Department of Computer Science, Cognitive Science Program, University of Toronto, Toronto,
+
+                                                  Ontario M5S 3G8, Canada
+3 Department of Linguistics, Cognitive Science Program, University of California, Berkeley, CA,
+
+                                USA, 94707; email: terry.regier@berkeley.edu
+
+
+
+
+                                                           Abstract
+             Cross-linguistic work on domains including kinship, color, folk biology, number, and spatial rela-
+        tions has documented the different ways in which languages carve up the world into named categories.
+        Although word meanings vary widely across languages, unrelated languages often have words with sim-
+        ilar or identical meanings, and many logically possible meanings are never observed. We review work
+        suggesting that this pattern of constrained variation is explained in part by the need for words to sup-
+        port efficient communication. This work includes several recent studies that have formalized efficient
+        communication in computational terms, and a larger set of studies, both classic and recent, that do not
+        explicitly appeal to efficient communication but are nevertheless consistent with this notion. The effi-
+        cient communication framework has implications for the relationship between language and culture and
+        for theories of language change, and we draw out some of these connections.
+
+        Keywords: lexicon, word meaning, categorization, culture, cognitive anthropology, information theory
+
+
+1     INTRODUCTION
+The study of word meanings across languages has traditionally served as an arena for exploring the inter-
+play of language, culture, and cognition, and as a bridge between linguistics and neighboring disciplines
+such as anthropology and psychology. Within linguistics, this area of study falls within semantic typology
+(Bach and Chao, 2009; Evans, 2011). Specifically, it is the semantic typology of the lexicon: the study
+of cross-language variation in the semantic categories labeled by single words (Boas, 1911; Sapir, 1929;
+Whorf, 1956; Witkowski and Brown, 1978; Wierzbicka, 1992; Koch, 2001; Brown, 2001; Boster, 2005;
+Koptjevskaja-Tamm et al., 2007; Malt and Majid, 2013; Majid, 2015).
+     Over the years word meanings have been investigated in semantic domains such as kinship (Murdock,
+1949; Nerlove and Romney, 1967), color (Berlin and Kay, 1969; Kay and McDaniel, 1978), folk biol-
+ogy (Brown, 1984; Berlin, 1992), numeral systems (Greenberg, 1978; Comrie, 2013), and spatial relations
+(Talmy, 2000; Levinson and Meira, 2003; Majid et al., 2004). A natural and commonly-adopted approach
+is to focus on a particular semantic domain (but see Lucy, 2004), and to characterize that domain in terms
+    ∗ These authors contributed equally to this article.
+                                                     MM           MF         FM            FF
+
+                                                           Mother                 Father
+
+                                                                           ♀
+                                                                     Alice(FFF)
+
+                                                           Daughter                Son
+
+                                                     DD             DS       SD          SS
+
+                                                                                                                           English
+WobéF(IvoryFCoast)                                                                                                         in                  around
+                                    MM    MF         FM             FF            MM        MF         FM             FF
+
+                                     Mother                Father                   Mother                   Father
+
+                                                    ♀
+                                              Alice(FFF)                                              ♀
+                                                                                                Alice(FFF)
+                                                                                                                           mu                     pa
+                                     Daughter               Son                     Daughter                  Son
+
+                                    DD    DS         SD           SS              DD        DS         SD           SS
+
+BuglereF(Panama)                    English                                  NorthernFPaiuteF(California)
+                                                                                                                           ChichewaF(Malawi)
+
+
+Figure 1: Variation in word meaning within the domains of color (left), kinship (middle) and spatial rela-
+tions (right). The top row shows fine-grained meanings that correspond to colors and shades of lightness,
+kin types with respect to a female speaker, and spatial relations between figure objects (gold) and ground
+objects (grey). For each domain, the bottow row uses color-coded regions, sets or outlines to show how
+two languages group these fine-grained meanings into categories (color, Kay et al. (2009); kinship, Kroe-
+ber (1917), spatial relations, Carstensen (2011)). We ask why languages vary as they do in their category
+systems.
+
+
+
+of a set of fine-grained meanings that are grouped into categories in different ways by different languages.
+This approach is illustrated in Figure 1 with respect to the semantic domains of color, kinship, and spatial
+relations. In this approach, given a body of cross-language semantic data, one may note which categori-
+cal groupings of fine-grained meanings tend to recur across languages, and which do not—and derive on
+that basis a set of generalizations governing cross-language semantic variation in that domain. Two promi-
+nent examples of this approach are Berlin and Kay’s (1969) study of color naming across languages, which
+yielded an implicational hierarchy summarizing what sorts of color naming systems were and were not at-
+tested in their data, and Haspelmath’s (1997) study of indefinite pronouns across languages, which yielded a
+semantic map of that domain, suggesting possible conceptual connections between the various fine-grained
+meanings (Croft, 2003). This general approach is attractive because it allows one to specify cross-linguistic
+semantic patterns in a way that highlights both what is universal and what is variable across languages.
+     A natural question is what general principles explain such semantic variation—ideally not just within a
+single domain, but also across different domains. Several such principles have been proposed, accounting
+for observed patterns of semantic variation in terms of: connectedness in a discrete semantic map (Jurafsky,
+1996; van der Auwera and Plungian, 1998; Haspelmath, 1997, 2003; Cysouw et al., 2010), relative positions
+of fine-grained meanings in a continuous semantic space (Cysouw, 2001; Levinson and Meira, 2003; Croft
+and Poole, 2008; Majid et al., 2008; Gärdenfors, 2014), and universal semantic primitives combined in
+culture-specific ways (Wierzbicka, 1972, 1980, 1992). In this review, we focus on a specific principle with
+cross-domain scope: the need for efficient communication, an idea with roots in the functionalist tradition
+(e.g. von der Gabelentz, 1901; Haiman, 1985; Haspelmath, 1999; Hopper and Traugott, 2003; Croft, 2003).
+This principle holds that languages are under pressure to be simultaneously informative (so as to support
+effective communication) and simple (so as to minimize cognitive load). The research we survey argues
+that this principle—which has been invoked to explain aspects of linguistic form—also helps to explain why
+systems of word meanings vary across languages as they do. Like the other principles referenced above, the
+
+                                                                         2
+principle of efficiency appears to operate in similar ways across very different semantic domains, including
+domains that have traditionally been characterized by a focus on semantic universals (e.g. color), and those
+traditionally characterized by a focus on culture-dependent variation (e.g. kinship, and the vexed question
+of words for snow). As we shall see, exploring this principle leads naturally to an approach that integrates
+psychological and cultural factors, and casts that integration in computational terms.
+    An efficient communication approach to semantic variation connects naturally with work on pragmatics,
+conceptual development, and language evolution (Frank, 2017). We will not be able to draw out all of these
+connections, but focus instead on a set of ideas directly rooted in the typological literature. We begin in the
+next section by providing a general theoretical framework for exploring efficient communication, and then
+review recent studies that have used this framework to explain cross-language variation in semantic category
+systems in several semantic domains. We next examine the interaction of cultural forces with systems of
+semantic categories, and the question of semantic change, both through the lens of efficiency. We close by
+considering a number of limitations of existing research along these lines, as well as ideas for extension.
+
+
+2    THEORETICAL FRAMEWORK
+Language is often viewed as a means of transmitting ideas from one mind to another. To serve this func-
+tion well, language must be informative: it must convey the speaker’s intended message to the listener with
+reasonable accuracy. Ideally, language should also be simple: it should require only minimal cognitive
+resources. These two desiderata necessarily compete against each other. A highly informative commu-
+nicative system would be very fine-grained, detailed, and explicit—and would as a result be complex, not
+simple. A very simple system, in contrast, would necessarily leave implicit or unspecified many aspects of
+the speaker’s intended meaning—and would therefore not be very informative. A system supports efficient
+communication to the extent that it achieves an optimal tradeoff between these two competing considera-
+tions.
+    A general preference for efficient communication—often formalized in information-theoretic terms—
+has been invoked to explain several aspects of language, including word frequency distributions (Zipf, 1949;
+Ferrer i Cancho and Solé, 2003), word lengths (Piantadosi et al., 2011), syllable duration (Aylett and Turk,
+2004), syntactic structures and processing (Hawkins, 2004; Levy, 2008; Jaeger, 2010), pragmatic language
+understanding (Wilson and Sperber, 2004; Frank and Goodman, 2012), the acquisition of case marking
+(Fedzechkina et al., 2012), and compositional structure (Kirby et al., 2015). Of particular relevance to this
+review is Rosch’s (1999, p 190) suggestion that semantic categories tend to “provide maximum information
+with the least cognitive effort.” The research we review here formalizes this idea in information-theoretic
+terms, and tests it across languages, across domains, and to some extent across time. Broadly related pro-
+posals have also been formalized in terms of optimality theory (Jones, 2015).
+    Figure 2 illustrates these general principles in the specific domain of kinship. Here, the domain universe
+U of objects about which one might communicate includes kin types such as mother, father, and others. The
+speaker wishes to communicate about a specific kin type t ∈ U (here, her older brother), and she represents
+that object in her own mind as a probability distribution s (for speaker) over the universe, with mass only at
+t. The speaker then utters the word w (here, “brother”) to convey this mental representation to the listener.
+Upon hearing this word, the listener attempts to reconstruct the speaker’s intention given the word used by
+the speaker; this listener reconstruction is also represented as a probability distribution, l (for listener). In the
+present example, the listener can infer that the speaker has in mind either her older brother or her younger
+brother, but cannot distinguish between these two possible kin types. Thus, some information has been
+lost in this act of communication, and that information loss can be captured using a standard information-
+
+
+                                                         3
+                            t                      s                          w                         l
+
+
+                                                                         brother
+
+
+
+
+                                                       father
+
+
+
+
+                                                                                                           father
+                                             younger sister
+
+                                            younger brother
+
+
+
+
+                                                                                                 younger sister
+
+                                                                                                younger brother
+                        father
+
+
+
+
+                                                 older sister
+
+                                               older brother
+
+
+
+
+                                                                                                     older sister
+
+                                                                                                   older brother
+                                                     mother
+
+
+
+
+                                                                                                         mother
+              younger sister
+
+             younger brother
+                      mother
+
+
+                  older sister
+
+                older brother
+
+
+
+
+                   U
+
+
+
+
+Figure 2: A communicative scenario. The speaker wishes to communicate about a specific kin type, t
+(older brother), represents it mentally as a distribution s (for speaker) over the universe U of all kin types,
+and expresses it using a word, w (here the English term “brother”). On the basis of this term, the listener
+attempts to mentally reconstruct the speaker’s intended meaning in a distribution l (for listener), but cannot
+tell whether the older or younger brother was intended; thus some information is lost in communication.
+Efficient communication involves minimizing such information loss while keeping language simple.
+
+
+
+theoretic measure of the divergence between the speaker and listener distributions (Frank and Goodman,
+2012; Kemp and Regier, 2012; Regier et al., 2015). We use the term e(t) to denote this information loss, or
+error, in communicating about a particular target object t. We similarly use the term n(t) to denote the need
+probability for object t, that is, the probability that the speaker will need to communicate about that object
+rather than any other in the domain. Given this, the overall expected information loss is:
+
+                                                        E = ∑ n(t)e(t)                                                            (1)
+                                                                t∈U
+
+which is simply the average information loss across objects in the domain, weighted by need. This quantity
+gives us a measure of the communicative cost of using a given semantic system to communicate about
+this domain. We take a semantic system to be informative to the extent that it yields low communicative
+cost, and we wish to compare different semantic systems with respect to this measure. For example, a
+language that had a separate kin term for each kin type in the domain universe of Figure 2 would have
+lower communicative cost, and would therefore be more informative about this domain, than English. As
+noted above, however, such a system would also be less simple (more complex) than English: it would have
+more terms, with finer-grained meanings. We assess simplicity by the size of the mental representation of
+the lexicon for a given domain, and refer to this quantity as cognitive cost. An ideal measure of cognitive
+cost would be grounded in detailed knowledge of the relevant mental representations and processes, but in
+practice, simple measures such as minimum description length or the number of terms in a semantic system
+may be used as proxies.1
+  1 This characterization differs from some others in the literature, in that we focus on the simplicity of a cognitive representation
+
+
+
+                                                                  4
+                                                                                                                        !!
+      (a)!                                         (b)!                                          (c)!
+
+          communica*ve!!cost!
+
+
+
+
+                                                          communica*ve!!cost!
+
+
+
+
+                                                                                                        communica*ve!!cost!
+            informa*veness!
+
+
+
+
+                                cogni*ve!cost!                                  cogni*ve!cost!                                cogni*ve!cost!
+                                  simplicity!
+
+Figure 3: Tradeoff between communicative and cognitive costs. Each point is a semantic system; gray points
+are hypothetical systems that together designate the achievable region within this space, and black points
+are attested systems. (a) Attested systems are predicted to lie along or near the optimal frontier. (b) Systems
+from cultures for which this domain is important are predicted to be more informative and more complex
+(lower right cluster) than systems from cultures for which the domain is less important (upper left cluster).
+(c) As semantic systems change over time, they are predicted to follow the optimal frontier.
+
+
+
+     The tradeoff at the heart of efficient communication is illustrated in Figure 3. The two dimensions of
+each graph represent communicative cost and cognitive cost, and each point in the resulting two-dimensional
+space represents a semantic system. The ideal communicative system would be located at the origin: this
+represents perfectly informative (lossless) communication, with perfect simplicity (no cognitive cost). This
+situation amounts to mind-reading, and is of course impossible. However it is still useful conceptually, for
+it suggests that mind-reading is the ideal to which language aspires but can never actually reach. What then
+can language reach? The achievable region of possible semantic systems may be determined by creating
+a wide range of hypothetical systems out of semantic primitives for a given domain. Such hypothetical
+systems are shown as gray points in Figure 3. We then predict that attested semantic systems, shown as
+black dots in the figure, will tend to lie along or near the optimal frontier of this region: the curve defined
+by systems that are as informative as possible for their level of simplicity, and as simple as possible for their
+level of informativeness.
+     The core idea explored by the research we review is that the wide but constrained variation found in
+systems of word meanings across languages corresponds to variation along the optimal frontier (Figure 3a).
+We expect systems to lie either on the frontier, or in the parts of the achievable region that are near it, as this
+nearby area is highly if not quite optimally efficient. On this view, communicative and cognitive costs are
+universal forces that shape semantic systems in every language, but different languages may make different
+tradeoffs between the two dimensions, and may therefore lie in different regions along the optimal frontier.
+One factor that could drive such variation is the culture-specific importance of a particular semantic domain
+(Figure 3b). If a domain is important to a given culture, and elements in that domain are frequently referred
+to, then it would make sense to invest in some complexity for this domain in order to acquire increased
+informativeness—and it would make less sense to do so if the domain is not culturally important. The same
+framework also makes predictions about semantic change over time (Figure 3c). If languages adapt over
+time to shifting functional pressure for efficient communication, we would expect semantic change to be
+represented as motion along or near the optimal frontier, in one direction or another.
+     The framework that we have described here is extremely simple, and real-world communication departs
+(Chater and Vitányi, 2003), rather than simplicity of overt linguistic form (e.g. Piantadosi et al., 2011; Fedzechkina et al., 2012).
+
+
+                                                                                 5
+(a)                                                                                         (b)                          4
+
+                  MM       MF                                FM       FF
+
+
+
+
+                                                                                                                  cost
+                                                                                                                         3
+
+
+
+
+                                                                                                    communicativecost
+                                                                                                  communicative
+      MZy   MBy        M        MZe MBe          FZy   FBy        F            FZe   FBe
+                                                                                                                         2
+
+    Zy            By                       Ego                        Ze               Be
+                                                                                                                         1
+                                  D                    S
+
+                                                                                                                         0
+                            DD        DS         SD        SS
+                                                                                                                             0        50          100
+                                                                                                                                 cognitive cost
+                                                                                                                                  complexity
+
+Figure 4: Kinship analysis. (a) Kin types arranged in a family tree (e.g. MF: mother’s father; FZe: father’s
+elder sister). Color codes show how these kin types are grouped into the kinship categories of English.
+Languages partition this tree into categories in a wide but constrained variety of ways. (b) Hypothetical
+kinship systems are shown as gray dots, and systems from the Murdock dataset are shown as black circles.
+English is shown as a red dot, and Northern Paiute as a yellow dot. Attested systems tend to lie near the
+optimal frontier. Adapted from Kemp and Regier (2012).
+
+
+
+from it in a number of important respects. For example, speakers utter phrases and sentences rather than
+single words; semantic categories are sometimes used in ways that do not involve reference to single specific
+objects; context often supplies substantial information about the speaker’s intended meaning; and speakers
+may have goals such as establishing social status instead of conveying information to their hearer. In section
+6 below we discuss how this framework might be extended to capture some of these factors, but we argue
+below that even this simple framework can account in a straightforward way for a substantial amount of data
+concerning cross-language semantic variation.
+
+
+3        EFFICIENCY ANALYSES ACROSS SEMANTIC DOMAINS
+Efficiency analyses along the lines sketched above have been conducted in several semantic domains, as we
+review below.
+
+3.1      Kinship
+Cross-language variation in kin terminologies has traditionally been a focus of interest among anthropolo-
+gists as well as linguists (Kroeber, 1917; Murdock, 1949, 1970; Nerlove and Romney, 1967; Kronenfeld,
+1974; Valdés-Pérez and Pericliev, 1999; Greenberg, 2005; Read, 2007; Jones, 2010), and for this reason it
+is a natural domain in which to explore principles of efficiency—as foreshadowed in the previous section.
+Kemp and Regier (2012) conducted such an analysis, based on the set of kin types shown in Figure 4a, cate-
+gorized according to a large set of languages from the dataset of Murdock (1970). These languages partition
+this family tree into kinship categories in a wide variety of ways. Each kinship system was represented
+as a kinship grammar, composed of primitives from the literature, such as PARENT(x,y) and FEMALE(x).
+Need probability across kin types was estimated from corpus frequencies in English and German; this was a
+
+
+                                                                           6
+choice of convenience, and we consider below how need probability distributions may vary across cultures
+and across time. The central results of this analysis are shown in Figure 4b. Each gray dot represents a
+hypothetical kinship system, constructed out of the same set of primitives used to represent attested sys-
+tems, but arranged in many different ways. Each black circle represents the kinship system of a language
+in the Murdock dataset. The red dot represents English, and the yellow dot represents Northern Paiute, an
+indigenous language of northern California (Kroeber, 1917) that also appears in Figure 1. It can be seen
+that attested systems tend to fall along the optimal frontier of the achievable region of this space, efficiently
+trading off communicative cost and cognitive cost. These results are compatible with the idea that kinship
+systems are under pressure to support efficient communication, and that they navigate that pressure in a
+wide variety of language-specific ways. Follow-up analyses showed that this account captures known de-
+scriptive generalizations from the literature. For example, markedness constraints concerning the relative
+semantic breadth of various kinship categories (Greenberg, 1990, 2005) are explained by the distribution of
+need across the family tree, and a preference for categories defined by conjunction rather than disjunction
+of primitives (Nerlove and Romney, 1967; Kronenfeld, 1974; Greenberg, 1990) is explained by the greater
+informativeness of conjunctively defined categories.
+
+3.2   Color
+The domain of color provides a useful point of comparison and contrast with kinship. Like kin terminologies,
+color naming systems across languages have been of interest for many years (Berlin and Kay, 1969; Kay and
+McDaniel, 1978; Lucy, 1997; Jameson and D’Andrade, 1997; Kay and Regier, 2003; Lindsey and Brown,
+2006, 2009). Color has moreover been a central testing-ground in the debate over linguistic relativity (Brown
+and Lenneberg, 1954; Kay and Kempton, 1984; Roberson et al., 2000, 2005; Winawer et al., 2007). At the
+same time, and importantly for our purposes, there are major representational differences between kinship
+and color. Kinship involves discrete kin types in a conceptually represented hierarchy—color, in contrast,
+is a perceptual domain and is represented in a continuous space. Despite these differences, recent work has
+suggested that semantic variation in color naming can be accounted for in terms of the same principles just
+reviewed for kinship (see also Jones, 2015).
+     Color naming has sometimes been seen as reflecting underlying perceptual structure in a fairly direct
+way (e.g. Berlin and Kay, 1969; Kay and McDaniel, 1978). More recent work, however, suggests that
+color naming is shaped not only by perceptual constraints (Boster, 1986) but also by the need to communi-
+cate informatively about color (Jameson and D’Andrade, 1997; Jameson, 2005; Steels and Belpaeme, 2005;
+Dowman, 2007; Komarova et al., 2007; Puglisi et al., 2008; Baronchelli et al., 2010). For example, Regier
+et al. (2015) conducted an efficiency analysis of color naming systems, assuming a standard model of per-
+ceptual color space and the measure of informativeness introduced above. Figure 5 shows the theoretically
+optimally informative color naming systems for n=3,4,5,6 categories, on this analysis, compared with color
+naming systems from selected languages drawn from the World Color Survey (Kay et al., 2009). These the-
+oretical optima capture qualitative aspects of the corresponding attested color naming systems, such as the
+rough location and shape of the various color categories. Not all color naming systems examined matched
+these globally optimal templates as closely, but most were found to be at least locally optimal, consistent
+with the hypothesis of adaptation to functional pressure for efficiency. The progression of optimal systems
+for increasing numbers of categories shown in Figure 5 qualitatively tracks, and provides an explanation
+for, early stages of the well-known implicational hierarchy of color naming systems advanced by Berlin and
+Kay (1969).
+
+
+
+
+                                                       7
+Figure 5: Theoretically optimally informative color naming systems (left) for n=3,4,5,6 categories, com-
+pared with color naming systems (right, top to bottom) of Ejagam (Nigeria/Cameroon), Culina (Peru/Brazil),
+Iduna (Papua New Guinea), and Buglere (Panama). Each false-colored blob denotes the extension of a color
+term. All systems are plotted against the color naming grid in the top left panel of Figure 1. Adapted from
+Regier et al. (2015).
+
+
+3.3   Other domains
+The same principles of efficiency have also been applied to other semantic domains. As in the work reviewed
+above, the work we review here assumes a universal conceptual space for each domain; to what extent this is
+a valid assumption across domains is a separate and important question in its own right (Sapir, 1929; Whorf,
+1956). Khetarpal et al. (2013) considered the domain of topological spatial relations (Bowerman and Ped-
+erson, 1992, 1993; Bowerman, 1996)—categorized in English by such spatial terms as “in”, “on”, “around”,
+and the like—and conducted an efficiency analysis of cross-language data in this domain drawn from inde-
+pendent sources (Levinson and Meira, 2003; Michael et al., 2013; Neveu, 2013). Although the languages
+they considered differed substantially in their structurings of space (Talmy, 2000), each language’s spatial
+category system was found to be highly informative relative to a large set of comparable hypothetical sys-
+tems of the same complexity. Xu and Regier (2014) conducted a similar analysis of numeral systems across
+languages (Greenberg, 1978; Comrie, 2013), based on numeral grammars grounded in primitives of both
+approximate (Gordon, 2004; Pica et al., 2004; Dehaene, 2011) and exact numerosity. This analysis found
+that numeral systems of qualitatively different sorts tend to lie along the optimal frontier. The same analysis
+also supported a view of recursion in numeral systems as a cognitive tool (Frank et al., 2008) that enables
+very high informativeness at the cost of only modest cognitive complexity. Finally, Xu et al. (2016) consid-
+ered names for artifacts, specifically household containers such as bottles, jars, etc., in English, Spanish, and
+Chinese (Malt et al., 1999). They found that the semantic systems of these three languages in this domain,
+
+
+                                                       8
+although different, were all highly informative when compared with a large set of hypothetical systems of
+equal complexity.
+    There are other semantic domains for which existing data could be analyzed in terms of efficiency, but
+such analyses have to our knowledge not yet been conducted. These domains include folk biology (Brown,
+1984; Berlin, 1992), body parts (Enfield et al., 2006), and acts of cutting and breaking (Majid et al., 2008).
+A natural direction for future research is determining how well principles of efficiency generalize to these
+and other domains.
+
+
+4     CULTURE
+The efficient communication hypothesis holds that semantic systems are shaped in part by communicative
+needs. Thus, it predicts that when these needs vary across cultures, semantic systems should vary accord-
+ingly, reflecting local communicative needs. This idea echoes the work of many scholars, including Boas
+(1911), who suggested that the terms in any language “must to a certain extent depend upon the chief inter-
+ests of a people” (p. 26). Sapir (1912) went further and suggested that the complete vocabulary of a language
+may be “looked upon as a complex inventory of all the ideas, interests, and occupations that take up the at-
+tention of the community,” and that “were such a complete thesaurus of the language of a given tribe at our
+disposal, we might to a large extent infer the character of the physical environment and the characteristics
+of the culture of the people making use of it” (p. 228).
+    Although there is broad agreement that the lexicon is influenced by culture, Sapir’s claim is almost cer-
+tainly too strong (Hymes, 1964). One reason why cultural interests and the lexicon may diverge is that the
+two change at different rates, and vocabulary may lag behind current cultural interests (Malt and Majid,
+2013). There are also other grounds for caution. A naive view of cultural need and language might lead one
+to always expect very different color naming systems among societies located in densely forested versus
+desert environments—but in fact there are instances of rather similar color naming systems from such dis-
+similar environments (Roberson et al., 2005). Finally, the distortion through popularization of the question
+of “Eskimo words for snow” (discussed in the following subsection) has lent an air of unsophistication and
+faint disreputability to the entire topic. For these reasons, the relationship between culture and the lexicon
+demands careful empirical study, and provides a useful testing ground for understanding the scope and limits
+of the efficient communication hypothesis.
+
+4.1   Words for snow revisited
+The claim that Eskimo/Inuit languages have unrelated forms for different types of snow is well-known
+among the public, but has also been grossly distorted. The idea originated with Boas (1911), was repeated
+by Whorf (1956), and then entered popular culture, with people attributing ever greater numbers of words
+for types of snow to Eskimo languages on the basis of essentially no evidence, as discussed by Martin
+(1986) and Pullum (1991). However, despite all the attention given to Boas’ original snow example, it is
+striking that remarkably little attention has been given to the central principle that his example was meant to
+illustrate. That principle is that the environment shapes local communicative needs—in Boas’ words, “the
+chief interests of a people” (p. 26)—which in turn shape the category system of a language. This causal
+chain can be seen as a specific instance of the more general hypothesis that language is shaped by the need
+for efficient communication, here modulated by locally determined communicative needs. This hypothesis
+predicts that concepts that are high-frequency in local lifestyle will receive semantically narrow categories
+(yielding low expected information loss), consistent with Boas’ original snow observation. Krupnik and
+
+
+                                                      9
+Figure 6: Words for snow revisited. (a) Locations of languages that have a single term for ice and snow. (b)
+Locations of languages that have different terms for ice and snow. (c) Temperature distributions associated
+with the two groups of languages. Languages with a single term for ice and snow are found in warm climates,
+consistent with the hypothesis of efficient communication, modulated by locally determined need. Adapted
+from Regier et al. (2016).
+
+
+
+Müller-Wille (2010) argued that Boas’ original claim is in fact well-founded as regards several Eskimo/Inuit
+languages and dialects. Regier et al. (2016) tested a variant of the same principle more broadly across
+languages. They found that languages with a single term for ice and snow are found only in warm regions
+of the world, whereas languages with different terms for ice and snow are distributed more widely, as shown
+in Figure 6. They also analyzed Twitter posts in different languages and confirmed that communicative
+need to refer to ice and snow is lower in warmer than in colder regions. These findings are consistent
+with the theory of efficient communication modulated by local need. Thus, despite its awkward history,
+the well-known question of “words for snow” may contain an element of truth, along with the regrettable
+exaggeration. A natural direction for future analyses of this sort concerns terms for other environmental
+features such as mountains, rivers and the like (Burenhult and Levinson, 2008; Mark et al., 2011).
+
+4.2   Culture and need probability
+There are many ways in which communicative needs vary across cultures and may thereby influence lo-
+cal naming systems, but there are two kinds of variation that are tied especially closely to the theoretical
+framework outlined earlier. In Equation 1, the notion of communicative cost is formulated with respect to
+object-level need probabilities n(·) that capture the frequency with which speakers refer to particular objects
+within a given semantic domain. These probabilities may vary across cultures. For example, need probabil-
+ities for the kin types in Figure 4a may be different for cultures with different social structures. To evaluate
+whether a given semantic system achieves an efficient tradeoff between cognitive and communicative costs,
+it is important to use object-level need probabilities that are appropriate for the language in question. A sec-
+ond way in which communicative needs vary across cultures is at the level of a semantic domain taken as a
+whole. For example, a given domain such as kinship may be more important and therefore more frequently
+discussed in some cultures compared to others. Need probabilities at the domain-level can be thought of
+as corresponding to the overall proportion of time spent by a representative member of a culture in talking
+about a given domain. As suggested by Figure 3b, the domain-level need probability for a given culture
+can be used to predict where along the optimal frontier that culture’s semantic system should lie. If the
+domain-level need probability is high, any information loss in communication will be compounded by many
+repetitions, and therefore the system should privilege low communicative cost even if the associated cogni-
+tive cost is high. In contrast, languages with low domain-level need probability should prioritize cognitive
+
+
+                                                      10
+cost over communicative cost, because any information loss occurs relatively rarely and therefore does not
+justify the cognitive investment of a complex semantic system.
+
+4.3   Color
+The view of color naming reviewed earlier emphasized the interaction of perceptual constraints with a
+drive for efficient communication. To what extent does color naming across languages depend on local
+communicative needs? The picture is mixed. There is some evidence that the fine-grainedness of a color
+naming system is associated with societal complexity and degree of interest in color in the local culture
+(Berlin and Kay, 1969; Kuschel and Monberg, 1974), which may plausibly affect local domain-level need.
+There is also some preliminary evidence suggesting that color naming systems may vary systematically
+with local climate (Stickles, 2014). Relatedly, Baddeley and Attewell (2009) found that the number of
+lightness terms in a language (e.g. “black,” “white,” “gray” in English) can be explained by the distribution
+of surface reflectances in an urban vs. forest or rural environment. At the same time, caution is needed
+in interpreting these findings. As noted above, there is evidence for similar color naming systems from
+unrelated languages spoken in very different environments (Roberson et al., 2005). And it is intriguing
+that the theoretically optimally informative systems in Figure 5 above qualitatively match attested systems,
+given that that analysis assumed a uniform object-level need distribution over colors. This suggests that
+while local need may influence color naming systems, particularly at the domain level, these systems are
+also strongly influenced by underlying perceptual constraints.
+
+4.4   Kinship
+The social organization of kin groups varies widely across cultures with respect to such factors as patterns of
+descent, marriage, and residence, and it seems natural to expect such socio-cultural factors to influence kin-
+ship terminologies. However the extent of this influence has been debated for more than a century (Kroeber,
+1909; Rivers, 1914; Service, 1985). The most comprehensive analysis of the relationship between social
+factors and kinship terminologies was carried out by Murdock (1949), who presented a large set of sta-
+tistical tests that revealed correlations between social factors and kinship terminologies. Murdock’s work
+did not control for phylogenetic relationships between languages, and therefore needs to be revisited using
+state-of-the art statistical methods (Jordan, 2011). Work in this direction has just begun, and Guillon and
+Mace (2016) present a phylogenetic study that finds only weak support for the hypothesis that cousin terms
+co-evolved with patterns of descent and residence rules. Future research can potentially use the D-PLACE
+database (Kirby et al., 2016) to determine which aspects of kinship terminologies (if any) are strongly linked
+with social variables.
+     Factors such as descent, marriage, and residence are plausibly linked to object-level need probabilities,
+but have no obvious implications for need probabilities at the domain level. It is commonly held, however,
+that the domain of kinship is more important in some cultures than others (Lévi-Strauss, 1963). We know
+of no studies that quantify the importance of kinship within a given culture, but this variable might be
+expected to decrease with societal complexity generally. Existing studies of the relationship between kinship
+terminology and societal complexity (Dole, 1972; Witkowski and Burris, 1981) could therefore serve as a
+starting point for assessing whether complex kinship terminologies tend to be found in cultures that place
+high importance on kinship.
+
+
+
+
+                                                      11
+4.5   Folk biology
+Animals and plants can be categorized at multiple levels, and we will focus on folk-generic categories
+such as trout and oak that typically lie at the level of biological species (Berlin, 1992). Any given language
+includes names for only some of the local species, and the efficient communication perspective is compatible
+with the view that folk-generic categories often correspond to species of cultural importance (Hunn, 1982).
+This functionalist view has been contrasted with the view that folk-generic categories pick out natural kinds
+that are perceptually salient even if they have little cultural importance (Berlin, 1992). It seems likely that
+biological categories are shaped by both cultural importance and perceptual salience (Malt, 1995), and it
+remains to be seen whether the efficient communication framework can account for the relative weights of
+these factors.
+    Efficiency considerations may also help to explain the total number of folk-generic categories in a given
+language. One relevant factor is biological diversity: other factors being equal, it seems plausible that
+domain-level need probabilities would be greater in areas with high biological diversity. Another is mode of
+subsistence: it seems plausible that domain-level need probabilities for plants would be higher for cultivators
+than for hunter-gatherers, and low for urban populations (e.g. Witkowski and Burris, 1981). Berlin (1992)
+reports that the number of folk-generic categories increases as biological diversity increases. Consistent
+with an earlier proposal by Brown (1985), Berlin also reports that cultivators tend to have larger numbers
+of folk-generic plant categories than hunter-gatherers, and subsequent work has supported this claim us-
+ing comparisons between cultivators and hunter-gatherers that occupy the same environment (Balée, 1999;
+Voeks, 2007). All of these results suggest that the number of folk-generic categories identified by a culture
+is systematically related to domain-level need probability.
+
+4.6   Future directions
+Given the state of the literature, our discussion of variation in need probability across cultures has been
+unavoidably speculative. Two directions for further work seem especially important. Operationalizing com-
+municative need is not straightforward, but a natural first step is to estimate need probabilities at the object
+and domain level on a per-language or per-culture basis, using direct measures such as corpus frequency or
+some reasonable proxy. This step is essential in order to move beyond intuitions about how need probability
+relates to other variables that characterize the physical and social environment.
+    The second important direction is to explore factors that can potentially explain when predictions based
+on need probability are supported and when they are not. We find it striking that intuitions about need
+probability lead to some predictions that appear to be false (e.g. color naming should be very dissimilar in
+rainforest languages vs. desert languages), and others that seem to be true (e.g. languages in warm regions
+are more likely to have a single term for snow and ice). One possible explanation is that domains may vary
+in the extent to which the structure of the domain itself outweighs any influence of need. For example, the
+asymmetric shape of perceptual color space (Jameson and D’Andrade, 1997) may place strong structural
+constraints on naming systems, even if need does exert some influence—whereas in other domains the
+structural constraints may be weaker, allowing need to “tilt the balance” more easily.
+
+
+5     LANGUAGE CHANGE
+If semantic systems support efficient communication about the concerns of a given culture, it is impor-
+tant to ask how they ended up this way (e.g. Levinson, 2012). A natural explanation is that semantic
+systems are outcomes of an evolutionary process that tends toward efficient communication (e.g. Kirby
+
+                                                      12
+et al., 2015). Characterizing this evolutionary process is critical in order to understand diachronic data (e.g.
+Biggam, 2012), and may also lead to a more comprehensive account of synchronic data. For example, in an
+informativeness-vs.-simplicity plot such as Figure 3a, a point corresponding to a given language migrates
+as that system changes over time. Some points on the optimal frontier may be unreachable in the sense
+that they cannot be attained by any plausible evolutionary sequence, whereas other points (either on or off
+the optimal frontier) may correspond to local optima that are endpoints of many plausible evolutionary se-
+quences. Characterizing evolutionary dynamics is therefore important in order to understand why attested
+systems lie where they do relative to the optimal frontier.
+    The tradeoff between simplicity and informativeness has a long history in investigations of language
+change (e.g. von der Gabelentz, 1901; Hopper and Traugott, 2003), but as yet only a handful of stud-
+ies have applied this idea to change in systems of word meanings. Carstensen et al. (2015) used iterated
+learning (Kirby et al., 2014) to study semantic change in the laboratory. They considered the semantic
+domains of color (Xu et al., 2013) and spatial relations, and showed for both domains that as semantic
+systems evolved through simulated cultural transmission, the communicative cost of those systems gradu-
+ally decreased. These results are consistent with the idea that semantic change brought about by cultural
+transmission tends toward informative, efficient communication. In a separate line of research, Xu et al.
+(2016) explored the process of historical semantic chaining, by which a name for one idea is extended to
+also cover a similar idea, and from there on to an idea similar to it, and so on, resulting in a chained structure
+(Brugman, 1988; Heit, 1992; Lakoff, 1987; Bybee et al., 1994; Hopper and Traugott, 2003; Zalizniak et al.,
+2012). Across three languages, they found evidence for such historical chaining in the names for household
+containers (Malt et al., 1999), and also found that the process of chaining itself appeared to be constrained
+by the need to support efficient communication.
+    An important direction for future research is to build on existing work that uses phylogenetic techniques
+to reveal how semantic systems have changed over time. Over the past several decades researchers have
+proposed evolutionary sequences for domains including color (Berlin and Kay, 1969), biology (Brown,
+1984) and kinship (Dole, 1972; Witkowski, 1972), and recently phylogenetic methods have been applied to
+suggest which pathways actually produced the semantic systems that are attested in the literature (Jordan,
+2013; Zhou and Bowern, 2015; Haynie and Bowern, 2016). To our knowledge, there are currently no
+systematic analyses of the extent to which these evolutionary pathways are consistent with selective pressure
+for efficient communication. Another important direction is to explore the extent to which semantic change
+may reflect changes in need probability over time. For example, Figure 3c shows a hypothetical case in
+which a semantic system becomes more complex over time, and such an increase in complexity could result
+from an increase in need probability for the domain in question.
+
+
+6    EXTENSIONS AND FUTURE DIRECTIONS
+Previous sections have already mentioned several directions for future work, and we now outline several
+additional directions that seem especially important. One major direction concerns loosening some simpli-
+fying assumptions. To evaluate whether a system of categories supports efficient communication, it is crit-
+ical to think carefully about the way in which words are actually used in practice (e.g. Enfield, 2014). The
+communicative scenario in Figure 2 is only a starting point, and future efficiency analyses should consider
+communicative scenarios that come closer to the richness of real-world communication in several important
+respects. For example, word use is heavily dependent on context, both linguistic and nonlinguistic (Halff
+et al., 1976; Frank and Goodman, 2012), and informativeness would ideally be measured by considering
+the information that a word adds to an already-established context (e.g. Piantadosi et al., 2012). Another
+
+
+                                                       13
+characteristic of real-world language use is that while words are often used to refer to specific objects, as
+we have assumed here, they are also used for a wide variety of other functions, including making generic
+statements such as “grandmothers should help their grandchildren”, or for communicating particular fea-
+tures of an object, such as the information about expected social role that is generally conveyed by a word
+like “grandmother” (Service, 1960). Future efficiency analyses should assess whether systems of categories
+are near-optimal with respect to this multiplicity of uses. One possible starting point is corpus analyses that
+carefully characterize the ways in which words are actually used (e.g. Wisniewski and Murphy, 1989).
+     The work we have reviewed here has mostly discussed one semantic domain at a time, but the notion
+of communicative efficiency may generalize to larger subsets of the lexicon than have been considered thus
+far, and at least in principle to the lexicon as a whole. One possible approach would be to consider a broad
+conceptual universe that includes a wide range of concepts, such as those represented in Swadesh lists and
+similar resources (List et al., 2016), and to use efficiency considerations to predict when a language will use
+a single word to refer to two or more concepts in this universe (Brown, 2001; Koptjevskaja-Tamm, 2008;
+List et al., 2013; Youn et al., 2016). Finally, beyond scaling up to larger chunks of the lexicon, it is enticing
+to consider the prospect of integrating the formal treatment we have explored here with very closely related
+ideas that concern grammar, and the pathway from lexicon to grammar via grammaticalization (Bybee et al.,
+1994; Heine and Kuteva, 2002; Hopper and Traugott, 2003).
+
+
+7    CONCLUSION
+At first glance, the proposal that word meanings reflect a need for efficient communication might seem
+unpromising as a framework for approaching the semantic typology of the lexicon. In terms of the two
+dimensions we have discussed throughout, the proposal seems both too simple and relatively uninformative.
+We have suggested, however, that formulating this idea in computational terms opens up a large space of
+empirical questions that have begun to be tested only recently. In particular, the efficient communication
+perspective is appealing as an integrative framework that brings together work across multiple semantic
+domains, work on the relationship between language and culture, and both synchronic and diachronic ap-
+proaches. We have suggested how the efficient communication framework motivates new research directions
+in all of these areas, and are optimistic that the framework may also be applied in directions we have not
+envisioned.
+
+
+DISCLOSURE STATEMENT
+The authors are not aware of any affiliations, memberships, funding, or financial holdings that might be
+perceived as affecting the objectivity of this review.
+
+
+ACKNOWLEDGMENTS
+This work was supported in part by National Science Foundation award SBE-1041707. We thank Bernard
+Comrie, Amy Rose Deal, Larry Hyman, Fiona Jordan, and Asifa Majid for their comments. Any errors are
+our own.
+
+
+
+
+                                                       14
+References
+Aylett, M. and Turk, A. (2004). The smooth signal redundancy hypothesis: A functional explanation for
+  relationships between redundancy, prosodic prominence, and duration in spontaneous speech. Language
+  and Speech, 47:31–56.
+
+Bach, E. and Chao, W. (2009). On semantic universals and typology. In Christiansen, M. H., Collins, C.,
+  and Edelman, S., editors, Language universals, pages 1–33. Oxford University Press.
+
+Baddeley, R. and Attewell, D. (2009). The relationship between language and the environment: Information
+  theory shows why we have only three lightness terms. Psychological Science, 20:1100–1107.
+
+Balée, W. (1999). Mode of production and ethnobotanical vocabulary: A controlled comparison of Guajá
+  and Ka’apor. Ethnoecology: Knowledge, resources, and rights, pages 24–40.
+
+Baronchelli, A., Gong, T., Puglisi, A., and Loreto, V. (2010). Modeling the emergence of universality in
+  color naming patterns. Proceedings of the National Academy of Sciences, 107(6):2403–2407.
+
+Berlin, B. (1992). Ethnobiological classification: Principles of categorization of plants and animals in
+  traditional societies. Princeton University Press.
+
+Berlin, B. and Kay, P. (1969). Basic color terms: Their universality and evolution. University of California
+  Press.
+
+Biggam, C. P. (2012). The semantics of colour: A historical approach. Cambridge University Press.
+
+Boas, F. (1911). Introduction. In Handbook of American Indian Languages, Vol.1, pages 1–83. Government
+  Print Office (Smithsonian Institution, Bureau of American Ethnology, Bulletin 40).
+
+Boster, J. S. (1986). Can individuals recapitulate the evolutionary development of color lexicons? Ethnology,
+  25(1):61–74.
+
+Boster, J. S. (2005). Categories and cognitive anthropology. In Cohen, H. and Lefebvre, C., editors, Hand-
+  book of categorization in cognitive science, pages 91–118. Elsevier.
+
+Bowerman, M. (1996). Learning how to structure space for language: A cross-linguistic perspective. In
+  Bloom, P., Peterson, M. A., Nadel, L., and Garrett, M. F., editors, Language and space, pages 385–436.
+  MIT Press.
+
+Bowerman, M. and Pederson, E. (1992). Topological relations picture series. In Levinson, S. C., editor,
+  Space stimuli kit 1.2: November 1992, 51, pages 53–56. Max Planck Institute for Psycholinguistics.
+
+Bowerman, M. and Pederson, E. (1993). Cross-linguistic studies of spatial semantic organization. In Annual
+  Report of the Max Planck Institute for Psycholinguistics 1992, pages 53–56. Max Planck Institute for
+  Psycholinguistics.
+
+Brown, C. H. (1984). Language and living things: Uniformities in folk classification and naming. Rutgers
+  University Press.
+
+Brown, C. H. (1985). Mode of subsistence and folk biological taxonomy. Current Anthropology, 26(1):43–
+  53.
+
+                                                     15
+Brown, C. H. (2001). Lexical typology from an anthropological point of view. In Haspelmath, M., König, E.,
+  and Oesterreicher, W., editors, Language typology and language universals: An international handbook,
+  volume 2, pages 1178–1190. De Gruyter Mouton.
+
+Brown, R. W. and Lenneberg, E. H. (1954). A study in language and cognition. The Journal of Abnormal
+  and Social Psychology, 49:454–462.
+
+Brugman, C. M. (1988). The story of over: Polysemy, semantics, and the structure of the lexicon. Garland.
+
+Burenhult, N. and Levinson, S. C. (2008). Language and landscape: A cross-linguistic perspective. Lan-
+  guage Sciences, 30:135–150.
+
+Bybee, J., Perkins, R., and Pagliuca, W. (1994). The evolution of grammar: Tense, aspect, and modality in
+  the languages of the world. University of Chicago Press.
+
+Carstensen, A. (2011). Universals and variation in spatial language and cognition. Linguistics Undergradu-
+  ate Honors Thesis. University of California, Berkeley.
+
+Carstensen, A., Xu, J., Smith, C., and Regier, T. (2015). Language evolution in the lab tends toward infor-
+  mative communication. In Proceedings of the 37th Annual Meeting of the Cognitive Science Society.
+
+Chater, N. and Vitányi, P. (2003). Simplicity: A unifying principle in cognitive science? Trends in Cognitive
+  Sciences, 7(1):19–22.
+
+Comrie, B. (2013). Numeral Bases. Max Planck Institute for Evolutionary Anthropology, Leipzig.
+
+Croft, W. (2003). Typology and Universals, 2nd edition. Cambridge University Press.
+
+Croft, W. and Poole, K. T. (2008). Inferring universals from grammatical variation: Multidimensional
+  scaling for typological analysis. Theoretical Linguistics, 34:1–37.
+
+Cysouw, M. (2001). Review of Martin Haspelmath, Indefinite pronouns (1997). Journal of Linguistics,
+  37:607–612.
+
+Cysouw, M., Haspelmath, M., and Malchukov, A. (2010). Introduction to the special issue “Semantic maps:
+  Methods and applications”. Linguistic Discovery, 8:1–3.
+
+Dehaene, S. (2011). The number sense: How the mind creates mathematics. Oxford University Press.
+
+Dole, G. E. (1972). Developmental sequences of kinship patterns. In Reining, P., editor, Kinship studies in
+  the Morgan centennial year, pages 134–166.
+
+Dowman, M. (2007). Explaining color term typology with an evolutionary model. Cognitive Science,
+  31(1):99–132.
+
+Enfield, N. J. (2014). The utility of meaning: What words mean and why. Oxford University Press.
+
+Enfield, N. J., Majid, A., and van Staden, M. (2006). Cross-linguistic categorisation of the body: Introduc-
+  tion. Language Sciences, 28:137–147.
+
+Evans, N. (2011). Semantic typology. In Song, J. J., editor, The Oxford Handbook of Linguistic Typology,
+  pages 504–533. Oxford University Press.
+
+                                                     16
+Fedzechkina, M., Jaeger, T. F., and Newport, E. L. (2012). Language learners restructure their input to
+  facilitate efficient communication. Proceedings of the National Academy of Sciences, 109:17897–17902.
+
+Ferrer i Cancho, R. and Solé, R. V. (2003). Least effort and the origins of scaling in human language.
+  Proceedings of the National Academy of Sciences, 100:788–791.
+
+Frank, M. C. (2017). What’s the relationship between language and thought? The optimal semantic ex-
+  pressivity hypothesis. Available at http://babieslearninglanguage.blogspot.com/2017/07/
+  whats-relationship-between-language-and.html.
+
+Frank, M. C., Everett, D. L., Fedorenko, E., and Gibson, E. (2008). Number as a cognitive technology:
+  Evidence from Pirahã language and cognition. Cognition, 108(3):819–824.
+
+Frank, M. C. and Goodman, N. D. (2012). Predicting pragmatic reasoning in language games. Science,
+  336:998.
+
+Gärdenfors, P. (2014). The geometry of meaning: Semantics based on conceptual spaces. MIT Press.
+
+Gordon, P. (2004). Numerical cognition without words: Evidence from Amazonia. Science, 306:496–499.
+
+Greenberg, J. H. (1978). Generalizations about numeral systems. In Greenberg, J. H., editor, Universals of
+  Human Language, Volume 3: Word Structure, pages 249–295. Stanford University Press.
+
+Greenberg, J. H. (1990). Universals of kinship terminology: Their nature and the problem of their explana-
+  tion. In Denning, K. and Kemmer, S., editors, On language: Selected writings of Joseph H. Greenberg,
+  pages 310–327. Stanford University Press.
+
+Greenberg, J. H. (2005). Universals of kinship terminology. In Language universals: With special reference
+  to feature hierarchies, pages 72–87. Mouton de Gruyter. Chapter 5.
+
+Guillon, M. and Mace, R. (2016). A phylogenetic comparative study of Bantu kinship terminology finds
+  limited support for its co-evolution with social organisation. PLOS ONE, 11(3).
+
+Haiman, J. (1985). Natural syntax: Iconicity and erosion. Cambridge University Press.
+
+Halff, H. M., Ortony, A., and Anderson, R. C. (1976). A context-sensitive representation of word meanings.
+  Memory & Cognition, 4(4):378–383.
+
+Haspelmath, M. (1997). Indefinite Pronouns. Clarendon Press.
+
+Haspelmath, M. (1999). Optimality and diachronic adaptation. Zeitschrift für Sprachwissenschaft, 18:180–
+  205.
+
+Haspelmath, M. (2003). The geometry of grammatical meaning: Semantic maps and cross-linguistic com-
+  parison. In Tomasello, M., editor, The new psychology of language, Volume 2, pages 211–242. Erlbaum.
+
+Hawkins, J. A. (2004). Efficiency and complexity in grammars. Oxford University Press.
+
+Haynie, H. J. and Bowern, C. (2016). Phylogenetic approach to the evolution of color term systems. Pro-
+  ceedings of the National Academy of Sciences, 113(48):13666–13671.
+
+Heine, B. and Kuteva, T. (2002). World lexicon of grammaticalization. Cambridge University Press.
+
+                                                   17
+Heit, E. (1992). Categorization using chains of examples. Cognitive Psychology, 24:341–380.
+
+Hopper, P. J. and Traugott, E. C. (2003). Grammaticalization. Cambridge University Press, 2 edition.
+
+Hunn, E. (1982). The utilitarian factor in folk biological classification. American Anthropologist, 84(4):830–
+  847.
+
+Hymes, D. (1964). Language in culture and society: A reader in linguistics and anthropology. Harper and
+  Row.
+
+Jaeger, T. F. (2010). Redundancy and reduction: Speakers manage syntactic information density. Cognitive
+  Psychology, 61:23–62.
+
+Jameson, K. A. (2005). Why GRUE? An interpoint-distance model analysis of composite color categories.
+  Cross-Cultural Research, 39(2):159–204.
+
+Jameson, K. A. and D’Andrade, R. G. (1997). It’s not really red, green, yellow, blue. In Hardin, C. L.
+  and Maffi, L., editors, Color categories in thought and language, pages 295–319. Cambridge University
+  Press.
+
+Jones, D. (2010). Human kinship, from conceptual structure to grammar. Behavioral and Brain Sciences,
+  33:367–416.
+
+Jones, D. (2015). Grammars of kinship and color: Cognitive universals and optimal communication. In
+  Jones, D. and Milicic, B., editors, Kinship, Language, and Prehistory: Per Hage and the Renaissance in
+  Kinship Studies, pages 196–211. University of Utah Press. Project MUSE.
+
+Jordan, F. M. (2011). A phylogenetic analysis of the evolution of Austronesian sibling terminologies. Human
+  Biology, 83(2):297–321.
+
+Jordan, F. M. (2013). Comparative phylogenetic methods and the study of pattern and process in kinship.
+  In McConvell, P., Keen, I., and Hendery, R., editors, Kinship systems: Change and reconstruction, pages
+  43–58. University of Utah Press.
+
+Jurafsky, D. (1996). Universal tendencies in the semantics of the diminutive. Language, 72:533–578.
+
+Kay, P., Berlin, B., Maffi, L., Merrifield, W. R., and Cook, R. (2009). The World Color Survey. CSLI
+  Publications.
+
+Kay, P. and Kempton, W. (1984). What is the Sapir-Whorf hypothesis? American Anthropologist, 86:65–79.
+
+Kay, P. and McDaniel, C. K. (1978). The linguistic significance of the meanings of basic color terms.
+  Language, 54:610–646.
+
+Kay, P. and Regier, T. (2003). Resolving the question of color naming universals. Proceedings of the
+  National Academy of Sciences, 100:9085–9089.
+
+Kemp, C. and Regier, T. (2012). Kinship categories across languages reflect general communicative princi-
+  ples. Science, 336:1049–1054.
+
+
+
+
+                                                     18
+Khetarpal, N., Neveu, G., Majid, A., Michael, L., and Regier, T. (2013). Spatial terms across languages
+  support near-optimal communication: Evidence from Peruvian Amazonia, and computational analyses. In
+  Knauff, M., Pauen, M., Sebanz, N., and Wachsmuth, I., editors, Proceedings of the 35th Annual Meeting
+  of the Cognitive Science Society, pages 764–769. Cognitive Science Society.
+
+Kirby, K. R., Gray, R. D., Greenhill, S. J., Jordan, F. M., Gomes-Ng, S., Bibiko, H.-J., Blasi, D. E., Botero,
+  C. A., Bowern, C., Ember, C. R., Leehr, D., Low, B. S., McCarter, J., Divale, W., and Gavin, M. C. (2016).
+  D-PLACE: A global database of cultural, linguistic and environmental diversity. PLOS ONE, 11(7).
+
+Kirby, S., Griffiths, T., and Smith, K. (2014). Iterated learning and the evolution of language. Current
+  opinion in Neurobiology, 28:108–114.
+
+Kirby, S., Tamariz, M., Cornish, H., and Smith, K. (2015). Compression and communication in the cultural
+  evolution of linguistic structure. Cognition, 141:87–102.
+
+Koch, P. (2001). Lexical typology from a cognitive and linguistic point of view. In Haspelmath, M.,
+  König, E., and Oestrreicher, W., editors, Language typology and language universals: An international
+  handbook, volume 2, pages 1142–1178. De Gruyter Mouton.
+
+Komarova, N. L., Jameson, K. A., and Narens, L. (2007). Evolutionary models of color categorization based
+  on discrimination. Journal of Mathematical Psychology, 51(6):359–382.
+
+Koptjevskaja-Tamm, M. (2008). Approaching lexical typology. In Vanhove, M., editor, From polysemy to
+  semantic change: Towards a typology of lexical semantic associations, pages 3–52. John Benjamins.
+
+Koptjevskaja-Tamm, M., Vanhove, M., and Koch, P. (2007). Typological approaches to lexical semantics.
+  Linguistic Typology, 11:159–185.
+
+Kroeber, A. L. (1909). Classificatory systems of relationship. Journal of the Royal Anthropological Institute
+  of Great Britain and Ireland, 39:77–84.
+
+Kroeber, A. L. (1917). California kinship systems. University of California Press.
+
+Kronenfeld, D. B. (1974). Sibling typology: Beyond Nerlove and Romney. American Ethnologist, 1(3):489–
+  506.
+
+Krupnik, I. and Müller-Wille, L. (2010). Franz Boas and Inuktitut terminology for ice and snow: from
+  the emergence of the field to the “Great Eskimo Vocabulary Hoax”. In SIKU: Knowing our ice, pages
+  377–400. Springer.
+
+Kuschel, R. and Monberg, T. (1974). ‘We don’t talk much about colour here’: A study of colour semantics
+  on Bellona island. Man, 9(2):213–242.
+
+Lakoff, G. (1987). Women, fire, and dangerous things: What categories reveal about the mind. University
+  of Chicago Press.
+
+Lévi-Strauss, C. (1963). Structural anthropology. Basic Books.
+
+Levinson, S. C. (2012). Kinship and human thought. Science, 336:988–989.
+
+Levinson, S. C. and Meira, S. (2003). ‘Natural concepts’ in the spatial topologial domain–adpositional
+  meanings in crosslinguistic perspective: An exercise in semantic typology. Language, 79:485–516.
+
+                                                     19
+Levy, R. (2008). Expectation-based syntactic comprehension. Cognition, 106:1126–1177.
+
+Lindsey, D. T. and Brown, A. M. (2006). Universality of color names. Proceedings of the National Academy
+  of Sciences, 103(44):16608–16613.
+
+Lindsey, D. T. and Brown, A. M. (2009). World Color Survey color naming reveals universal motifs and
+  their within-language diversity. Proceedings of the National Academy of Sciences, 106(47):19785–19790.
+
+List, J.-M., Cysouw, M., and Forkel, R., editors (2016). Concepticon. Max Planck Institute for the Science
+  of Human History, Jena. http://concepticon.clld.org/.
+
+List, J.-M., Terhalle, A., and Urban, M. (2013). Using network approaches to enhance the analysis of cross-
+  linguistic polysemies. In Proceedings of the 10th International Conference on Computational Semantics
+  - Short Papers, pages 347–353.
+
+Lucy, J. A. (1997). The linguistics of “color”. In Hardin, C. L. and Maffi, L., editors, Color categories in
+  thought and language, pages 320–346. Cambridge University Press.
+
+Lucy, J. A. (2004). Language, culture, and mind in comparative perspective. In Achard, M. and Kemmer,
+  S., editors, Language, Culture, and Mind, pages 1–22. CSLI Publications.
+
+Majid, A. (2015). Comparing lexicons cross-linguistically. In Taylor, J. R., editor, The Oxford Handbook of
+ the Word, pages 364–379. Oxford University Press, Oxford, UK.
+
+Majid, A., Boster, J. S., and Bowerman, M. (2008). The cross-linguistic categorization of everyday events:
+ A study of cutting and breaking. Cognition, 109:235–250.
+
+Majid, A., Bowerman, M., Kita, S., Haun, D. B., and Levinson, S. C. (2004). Can language restructure
+ cognition? The case for space. Trends in Cognitive Sciences, 8:108–114.
+
+Malt, B. C. (1995). Category coherence in cross-cultural perspective. Cognitive Psychology, 29(2):85–148.
+
+Malt, B. C. and Majid, A. (2013). How thought is mapped into words. Wiley Interdisciplinary Reviews:
+ Cognitive Science, 4(6):483–597.
+
+Malt, B. C., Sloman, S. A., Gennari, S., Shi, M., and Wang, Y. (1999). Knowing versus naming: Similarity
+ and the linguistic categorization of artifacts. Journal of Memory and Language, 40(2):230–262.
+
+Mark, D. M., Turk, A. G., Burenhult, N., and Stea, D. (2011). Landscape in language: Transdisciplinary
+ perspectives. John Benjamins Publishing.
+
+Martin, L. (1986). “Eskimo words for snow”: A case study in the genesis and decay of an anthropological
+ example. American Anthropologist, 88:418–423.
+
+Michael, L., Beier, C., Farmer, S., Neely, K., Skilton, A., Finley, G., Sylak, J., and Neveu, G. (2013).
+ Diccionario Bilingüe máı́jikı̀-castellano y castellano-máı́jikı̀. Máı́jikı̀ Project. http://linguistics.
+                            ¯                                  ¯            ¯
+ berkeley.edu/~levmichael/pubs/mai_ore_diccionario_oct_2013.pdf.
+
+Murdock, G. P. (1949). Social structure. Macmillan, New York.
+
+Murdock, G. P. (1970). Kin term patterns and their distribution. Ethnology, 9(2):165–208.
+
+
+                                                     20
+Nerlove, S. and Romney, A. K. (1967). Sibling terminology and cross-sex behavior. American Anthropolo-
+  gist, 69:179–187.
+
+Neveu, G. (2013). Spatial relations in Máı́jikı̀. Linguistics Undergraduate Honors Thesis. University of
+                                             ¯
+  California, Berkeley.
+
+Piantadosi, S. T., Tily, H., and Gibson, E. (2011). Word lengths are optimized for efficient communication.
+  Proceedings of the National Academy of Sciences, 108:3526–3529.
+
+Piantadosi, S. T., Tily, H., and Gibson, E. (2012). The communicative function of ambiguity in language.
+  Cognition, 122(3):280–291.
+
+Pica, P., Lemer, C., Izard, V., and Dehaene, S. (2004). Exact and approximate arithmetic in an Amazonian
+  indigene group. Science, 306:499–503.
+
+Puglisi, A., Baronchelli, A., and Loreto, V. (2008). Cultural route to the emergence of linguistic categories.
+  Proceedings of the National Academy of Sciences, 105(23):7936–7940.
+
+Pullum, G. (1991). The great Eskimo vocabulary hoax. In The great Eskimo vocabulary hoax and other
+  irreverent essays on the study of language, pages 159–171. University of Chicago Press.
+
+Read, D. W. (2007). Kinship theory: A paradigm shift. Ethnology, 46(4):329–364.
+
+Regier, T., Carstensen, A., and Kemp, C. (2016). Languages support efficient communication about the
+  environment: Words for snow revisited. PLOS ONE, 11(4).
+
+Regier, T., Kemp, C., and Kay, P. (2015). Word meanings across languages support efficient communication.
+  In MacWhinney, B. and O’Grady, W., editors, The Handbook of Language Emergence, pages 237–263.
+  Wiley-Blackwell.
+
+Rivers, W. H. (1914). Kinship and social organisation. Constable & Co.
+
+Roberson, D., Davidoff, J., Davies, I. R., and Shapiro, L. R. (2005). Color categories: Evidence for the
+  cultural relativity hypothesis. Cognitive Psychology, 50:378–411.
+
+Roberson, D., Davies, I., and Davidoff, J. (2000). Color categories are not universal: Replications and new
+  evidence from a stone-age culture. Journal of Experimental Psychology: General, 129:369–398.
+
+Rosch, E. (1999). Principles of categorization. In Margolis, E. and Laurence, S., editors, Concepts: Core
+  readings, pages 189–206. MIT Press. Reprinted from Rosch, Eleanor and Lloyd, Barbara B. (Eds.)
+  (1978), Cognition and categorization (pp. 27-48). Hillsdale, NJ: Erlbaum.
+
+Sapir, E. (1912). Language and environment. American Anthropologist, 14(2):226–242.
+
+Sapir, E. (1929). The status of linguistics as a science. Language, 5:207–214.
+
+Service, E. R. (1960). Kinship terminology and evolution. American Anthropologist, 62(5):747–763.
+
+Service, E. R. (1985). A century of controversy: Ethnological issues from 1860 to 1960. Academic Press.
+
+Steels, L. and Belpaeme, T. (2005). Coordinating perceptually grounded categories through language: A
+  case study for colour. Behavioral and Brain Sciences, 28(4):469–489.
+
+                                                     21
+Stickles, E. (2014). The relation of color naming and the environment. In Bello, P., Guarini, M., McShane,
+   M., and Scassellati, B., editors, Proceedings of the 36th Annual Meeting of the Cognitive Science Society,
+   page 3408. Cognitive Science Society.
+
+Talmy, L. (2000). How language structures space. In Talmy, L., editor, Toward a cognitive semantics,
+  Volume 1, pages 177–254. MIT Press.
+
+Valdés-Pérez, R. E. and Pericliev, V. (1999). Computer enumeration of significant implicational universals
+  of kinship terminology. Cross-Cultural Research, 33(2):162–1174.
+
+van der Auwera, J. and Plungian, V. (1998). Modality’s semantic map. Linguistic Typology, 2:79–124.
+
+Voeks, R. A. (2007). Penan ethnobotany: Subsistence strategy and breadth of knowledge. In Sercombe,
+  P. G. and Sellato, B., editors, Beyond the green myth: Borneos hunter-gatherers in the twenty-first century,
+  pages 262–288.
+
+von der Gabelentz, G. (1901). Sprachwissenschaft, ihre Aufgaben, Methoden, und bisherige Ergebnisse.
+  Weigel.
+
+Whorf, B. L. (1956). Science and linguistics. In Carroll, J. B., editor, Language, Thought, and Reality:
+ Selected Writings of Benjamin Lee Whorf, pages 207–219. MIT Press.
+
+Wierzbicka, A. (1972). Semantic primitives. Athenum.
+
+Wierzbicka, A. (1980). Lingua mentalis: The semantics of natural language. Academic Press.
+
+Wierzbicka, A. (1992). Semantics, culture and cognition: Universal human concepts in culture-specific
+ configurations. Oxford University Press.
+
+Wilson, D. and Sperber, D. (2004). Relevance theory. In Horn, L. R. and Ward, G., editors, The Handbook
+ of Pragmatics, pages 607–632. Blackwell, Oxford, UK.
+
+Winawer, J., Witthoft, N., Frank, M. C., Wu, L., Wade, A. R., and Boroditsky, L. (2007). Russian blues
+ reveal effects of language on color discrimination. Proceedings of the National Academy of Sciences,
+ 104:7780–7785.
+
+Wisniewski, E. J. and Murphy, G. L. (1989). Superordinate and basic category names in discourse: A textual
+ analysis. Discourse Processes, 12(2):245–261.
+
+Witkowski, S. R. (1972). Guttman scaling of semantic distinctions. In Reining, P., editor, Kinship studies in
+ the Morgan centennial year, pages 167–188.
+
+Witkowski, S. R. and Brown, C. H. (1978). Lexical universals. Annual Review of Anthropology, 7:427–451.
+
+Witkowski, S. R. and Burris, H. W. (1981). Societal complexity and lexical growth. Cross-cultural research,
+ 16(1-2):143–159.
+
+Xu, J., Dowman, M., and Griffiths, T. L. (2013). Cultural transmission results in convergence towards colour
+  term universals. Proceedings of the Royal Society of London B: Biological Sciences, 280(1758).
+
+
+
+
+                                                     22
+Xu, Y. and Regier, T. (2014). Numeral systems across languages support efficient communication: From
+  approximate numerosity to recursion. In Bello, P., Guarini, M., McShane, M., and Scassellati, B., editors,
+  Proceedings of the 36th Annual Meeting of the Cognitive Science Society, pages 1802–1807. Cognitive
+  Science Society.
+
+Xu, Y., Regier, T., and Malt, B. C. (2016). Historical semantic chaining and efficient communication: The
+  case of container names. Cognitive Science, 40:2081–2094.
+
+Youn, H., Sutton, L., Smith, E., Moore, C., Wilkins, J. F., Maddieson, I., Croft, W., and Bhattacharya, T.
+  (2016). On the universal structure of human lexical semantics. Proceedings of the National Academy of
+  Sciences, 113(7):1766–1771.
+
+Zalizniak, A. A., Bulakh, M., Ganenkov, D., Gruntov, I., Maisak, T., and Russo, M. (2012). The catalogue
+  of semantic shifts as a database for lexical semantic typology. Linguistics, 50(3):633–669.
+
+Zhou, K. and Bowern, C. (2015). Quantifying uncertainty in the phylogenetics of Australian numeral sys-
+  tems. Proceedings of the Royal Society of London B: Biological Sciences, 282(1815).
+
+Zipf, G. K. (1949). Human behavior and the principle of least effort. Addison-Wesley.
+
+
+
+
+                                                    23
+

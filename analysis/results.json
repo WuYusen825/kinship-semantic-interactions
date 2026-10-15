@@ -1,0 +1,855 @@
+{
+  "execution_time_utc": "2026-10-14T17:55:53.160074+00:00",
+  "structural_audit": {
+    "forms_records": 218412,
+    "language_ids_total": 1314,
+    "parameters_total": 1342,
+    "sibling_records": 12537,
+    "sibling_valid_records": 12537,
+    "sibling_language_ids": 1208,
+    "sibling_glottocodes_selected": 1110,
+    "duplicate_source_ids_removed": 98,
+    "coverage_before_dedup": {
+      "1": 3,
+      "2": 18,
+      "3": 3,
+      "4": 89,
+      "5": 7,
+      "6": 47,
+      "7": 19,
+      "8": 1022
+    },
+    "coverage_after_dedup": {
+      "1": 1,
+      "2": 16,
+      "3": 3,
+      "4": 84,
+      "5": 7,
+      "6": 42,
+      "7": 16,
+      "8": 941
+    },
+    "selected_family_status": {
+      "family": 1079,
+      "isolate": 29,
+      "unclassified": 1,
+      "unmatched": 1
+    },
+    "original_missing_family_ids": 193,
+    "original_missing_family_selected": 180,
+    "normalization_changed_records": 798,
+    "invalid_form_records": 0,
+    "target_categories": [
+      "meB",
+      "myB",
+      "meZ",
+      "myZ",
+      "feB",
+      "fyB",
+      "feZ",
+      "fyZ"
+    ],
+    "model_design_ranks": {
+      "raw_additive": 4,
+      "classical_additive": 5,
+      "pairwise": 7
+    },
+    "rank_two_dimensions_additive": 3,
+    "rank_two_dimensions_with_interaction": 3,
+    "sha256": {
+      "data/kinbank/kinbank/cldf/forms.csv": "7d1238a69a8ac2f8e4b70b9bca797ad50bf85519fa26acc72fb571e067f01664",
+      "data/kinbank/kinbank/cldf/languages.csv": "0ef532ed2bfe8db4b8cba16ef0fcd80bac69f83a9b302801454bf5b6166f43c9",
+      "data/kinbank/kinbank/cldf/parameters.csv": "90543bf2ecc32c8778181e0e4755c9e3e54212f0c9760077e6157ed6ae85d0cc",
+      "data/glottolog_languages.csv": "1a50a393bc81568b656f9522be18aa4f80f38e94309ba6c863d583234adfbb89"
+    }
+  },
+  "source_audit": {
+    "selected_records": 11428,
+    "selected_language_ids": 1110,
+    "records_without_source": 80,
+    "categories_with_multiple_sources": 701,
+    "categories_with_source": 8229,
+    "languages_with_multiple_sources": 133,
+    "maximum_category_sources": 6,
+    "maximum_language_sources": 6,
+    "primary_shared_pairs": 8412,
+    "primary_shared_pairs_with_same_source_support": 8326,
+    "primary_shared_pairs_without_same_source_support": 86,
+    "primary_shared_pairs_with_missing_source_on_shared_forms": 62
+  },
+  "excluded_genealogy": [
+    {
+      "ID": "p_limilnganlimi1242",
+      "Name": "Limilngan-Wulna",
+      "Glottocode": "limi1242",
+      "n_categories": 8,
+      "family_status": "unclassified"
+    },
+    {
+      "ID": "v_prototupiguaranitupi1276",
+      "Name": "Proto-Tupi-Guarani",
+      "Glottocode": "tupi1239",
+      "n_categories": 8,
+      "family_status": "unmatched"
+    }
+  ],
+  "analyses": [
+    {
+      "variant": "primary",
+      "cv_grouping": "family",
+      "C": 1,
+      "languages": 939,
+      "family_groups": 125,
+      "pairs": 26292,
+      "shared_form_prevalence": 0.3199452304883615,
+      "language_equal_logloss": {
+        "raw_additive": 0.5810488878419937,
+        "classical_additive": 0.5784682088411487,
+        "pairwise": 0.576625431756988
+      },
+      "pair_equal_logloss": {
+        "raw_additive": 0.5810488878419936,
+        "classical_additive": 0.5784682088411486,
+        "pairwise": 0.5766254317569881
+      },
+      "language_equal_brier": {
+        "raw_additive": 0.19294261982320124,
+        "classical_additive": 0.19261309324253142,
+        "pairwise": 0.19183479402468329
+      },
+      "comparisons": {
+        "raw": {
+          "language_equal_gain": 0.004423456085005574,
+          "family_cluster_bootstrap_95ci": [
+            -0.0005099248921372266,
+            0.008204789775725568
+          ],
+          "family_equal_gain": 0.00939336975637993,
+          "largest_family": "aust1307",
+          "largest_family_languages": 296,
+          "gain_excluding_largest_family_fixed_predictions": 0.0023261159143628204,
+          "families_with_positive_gain": 53,
+          "families_with_negative_gain": 72
+        },
+        "classical": {
+          "language_equal_gain": 0.0018427770841605978,
+          "family_cluster_bootstrap_95ci": [
+            -0.0006035471597976721,
+            0.006119784026667319
+          ],
+          "family_equal_gain": 0.0023149019605050117,
+          "largest_family": "aust1307",
+          "largest_family_languages": 296,
+          "gain_excluding_largest_family_fixed_predictions": 0.0038622294809595044,
+          "families_with_positive_gain": 71,
+          "families_with_negative_gain": 54
+        },
+        "classical_over_raw": {
+          "language_equal_gain": 0.0025806790008449762,
+          "family_cluster_bootstrap_95ci": [
+            -0.004826402129619612,
+            0.008116300001220322
+          ],
+          "family_equal_gain": 0.007078467795874917,
+          "largest_family": "aust1307",
+          "largest_family_languages": 296,
+          "gain_excluding_largest_family_fixed_predictions": -0.0015361135665966843,
+          "families_with_positive_gain": 41,
+          "families_with_negative_gain": 84
+        }
+      }
+    },
+    {
+      "variant": "coverage75",
+      "cv_grouping": "family",
+      "C": 1,
+      "languages": 997,
+      "family_groups": 132,
+      "pairs": 27258,
+      "shared_form_prevalence": 0.3180717587497249,
+      "language_equal_logloss": {
+        "raw_additive": 0.5745650159576711,
+        "classical_additive": 0.5720902889292133,
+        "pairwise": 0.569799686732625
+      },
+      "pair_equal_logloss": {
+        "raw_additive": 0.5774716992764366,
+        "classical_additive": 0.5748818089890388,
+        "pairwise": 0.5726712241707128
+      },
+      "language_equal_brier": {
+        "raw_additive": 0.18999891111265016,
+        "classical_additive": 0.189709468288056,
+        "pairwise": 0.18875848176507395
+      },
+      "comparisons": {
+        "raw": {
+          "language_equal_gain": 0.0047653292250459615,
+          "family_cluster_bootstrap_95ci": [
+            -0.00010824677376033565,
+            0.008337033238428191
+          ],
+          "family_equal_gain": 0.00881181381648236,
+          "largest_family": "aust1307",
+          "largest_family_languages": 307,
+          "gain_excluding_largest_family_fixed_predictions": 0.002734327114374186,
+          "families_with_positive_gain": 66,
+          "families_with_negative_gain": 66
+        },
+        "classical": {
+          "language_equal_gain": 0.0022906021965882132,
+          "family_cluster_bootstrap_95ci": [
+            -0.00017844345361118827,
+            0.006472212010817474
+          ],
+          "family_equal_gain": 0.002420027751541042,
+          "largest_family": "aust1307",
+          "largest_family_languages": 307,
+          "gain_excluding_largest_family_fixed_predictions": 0.00418314533975053,
+          "families_with_positive_gain": 72,
+          "families_with_negative_gain": 60
+        },
+        "classical_over_raw": {
+          "language_equal_gain": 0.0024747270284577487,
+          "family_cluster_bootstrap_95ci": [
+            -0.0046160354068629,
+            0.007642302875360408
+          ],
+          "family_equal_gain": 0.0063917860649413205,
+          "largest_family": "aust1307",
+          "largest_family_languages": 307,
+          "gain_excluding_largest_family_fixed_predictions": -0.001448818225376345,
+          "families_with_positive_gain": 43,
+          "families_with_negative_gain": 89
+        }
+      }
+    },
+    {
+      "variant": "equal_sets",
+      "cv_grouping": "family",
+      "C": 1,
+      "languages": 939,
+      "family_groups": 125,
+      "pairs": 26292,
+      "shared_form_prevalence": 0.26087783356153965,
+      "language_equal_logloss": {
+        "raw_additive": 0.5104968696045701,
+        "classical_additive": 0.5058427441909068,
+        "pairwise": 0.5078148531088249
+      },
+      "pair_equal_logloss": {
+        "raw_additive": 0.5104968696045701,
+        "classical_additive": 0.5058427441909068,
+        "pairwise": 0.5078148531088249
+      },
+      "language_equal_brier": {
+        "raw_additive": 0.16432046293926883,
+        "classical_additive": 0.1638011444776584,
+        "pairwise": 0.1635513901343639
+      },
+      "comparisons": {
+        "raw": {
+          "language_equal_gain": 0.002682016495745125,
+          "family_cluster_bootstrap_95ci": [
+            -0.0020459014245822267,
+            0.006596929231578603
+          ],
+          "family_equal_gain": 0.009655466940976205,
+          "largest_family": "aust1307",
+          "largest_family_languages": 296,
+          "gain_excluding_largest_family_fixed_predictions": 0.0009296702359674531,
+          "families_with_positive_gain": 41,
+          "families_with_negative_gain": 84
+        },
+        "classical": {
+          "language_equal_gain": -0.0019721089179181362,
+          "family_cluster_bootstrap_95ci": [
+            -0.005237452394927016,
+            0.0027014921470575946
+          ],
+          "family_equal_gain": -0.00021311948232943646,
+          "largest_family": "aust1307",
+          "largest_family_languages": 296,
+          "gain_excluding_largest_family_fixed_predictions": 0.0010189474317305407,
+          "families_with_positive_gain": 66,
+          "families_with_negative_gain": 59
+        },
+        "classical_over_raw": {
+          "language_equal_gain": 0.004654125413663261,
+          "family_cluster_bootstrap_95ci": [
+            -0.0035772230579096407,
+            0.010878761182333323
+          ],
+          "family_equal_gain": 0.009868586423305646,
+          "largest_family": "aust1307",
+          "largest_family_languages": 296,
+          "gain_excluding_largest_family_fixed_predictions": -8.92771957630871e-05,
+          "families_with_positive_gain": 41,
+          "families_with_negative_gain": 84
+        }
+      }
+    },
+    {
+      "variant": "singleton_only",
+      "cv_grouping": "family",
+      "C": 1,
+      "languages": 625,
+      "family_groups": 108,
+      "pairs": 17500,
+      "shared_form_prevalence": 0.2836,
+      "language_equal_logloss": {
+        "raw_additive": 0.5438038938824188,
+        "classical_additive": 0.5370246368347029,
+        "pairwise": 0.5404520600608499
+      },
+      "pair_equal_logloss": {
+        "raw_additive": 0.5438038938824188,
+        "classical_additive": 0.5370246368347029,
+        "pairwise": 0.5404520600608499
+      },
+      "language_equal_brier": {
+        "raw_additive": 0.17932255431729732,
+        "classical_additive": 0.17789013015461347,
+        "pairwise": 0.1780385609211557
+      },
+      "comparisons": {
+        "raw": {
+          "language_equal_gain": 0.0033518338215689134,
+          "family_cluster_bootstrap_95ci": [
+            -0.002486154568676993,
+            0.007487685821034107
+          ],
+          "family_equal_gain": 0.007887341808364126,
+          "largest_family": "aust1307",
+          "largest_family_languages": 208,
+          "gain_excluding_largest_family_fixed_predictions": 0.0011471621060310897,
+          "families_with_positive_gain": 34,
+          "families_with_negative_gain": 74
+        },
+        "classical": {
+          "language_equal_gain": -0.0034274232261470457,
+          "family_cluster_bootstrap_95ci": [
+            -0.006600655441014141,
+            0.0012993575812668713
+          ],
+          "family_equal_gain": -0.0007272562756166803,
+          "largest_family": "aust1307",
+          "largest_family_languages": 208,
+          "gain_excluding_largest_family_fixed_predictions": -0.00017622871593891843,
+          "families_with_positive_gain": 65,
+          "families_with_negative_gain": 43
+        },
+        "classical_over_raw": {
+          "language_equal_gain": 0.006779257047715958,
+          "family_cluster_bootstrap_95ci": [
+            -0.0027388520463613084,
+            0.013237536475907186
+          ],
+          "family_equal_gain": 0.008614598083980808,
+          "largest_family": "aust1307",
+          "largest_family_languages": 208,
+          "gain_excluding_largest_family_fixed_predictions": 0.001323390821970008,
+          "families_with_positive_gain": 34,
+          "families_with_negative_gain": 74
+        }
+      }
+    },
+    {
+      "variant": "single_source",
+      "cv_grouping": "family",
+      "C": 1,
+      "languages": 911,
+      "family_groups": 122,
+      "pairs": 25508,
+      "shared_form_prevalence": 0.320801317233809,
+      "language_equal_logloss": {
+        "raw_additive": 0.5849311065666408,
+        "classical_additive": 0.581923144196913,
+        "pairwise": 0.5806292922577241
+      },
+      "pair_equal_logloss": {
+        "raw_additive": 0.5849311065666407,
+        "classical_additive": 0.5819231441969132,
+        "pairwise": 0.5806292922577242
+      },
+      "language_equal_brier": {
+        "raw_additive": 0.19439731534913468,
+        "classical_additive": 0.19394406902716477,
+        "pairwise": 0.1932690332721122
+      },
+      "comparisons": {
+        "raw": {
+          "language_equal_gain": 0.004301814308916624,
+          "family_cluster_bootstrap_95ci": [
+            -0.0012727378823021232,
+            0.008328478161958407
+          ],
+          "family_equal_gain": 0.009483259350490094,
+          "largest_family": "aust1307",
+          "largest_family_languages": 296,
+          "gain_excluding_largest_family_fixed_predictions": 0.0019738448122344674,
+          "families_with_positive_gain": 41,
+          "families_with_negative_gain": 81
+        },
+        "classical": {
+          "language_equal_gain": 0.0012938519391889579,
+          "family_cluster_bootstrap_95ci": [
+            -0.0010748712162446234,
+            0.0055928488496760995
+          ],
+          "family_equal_gain": 0.0021758650437054246,
+          "largest_family": "aust1307",
+          "largest_family_languages": 296,
+          "gain_excluding_largest_family_fixed_predictions": 0.003353243086258876,
+          "families_with_positive_gain": 69,
+          "families_with_negative_gain": 53
+        },
+        "classical_over_raw": {
+          "language_equal_gain": 0.0030079623697276668,
+          "family_cluster_bootstrap_95ci": [
+            -0.005020661255675859,
+            0.008607113363074187
+          ],
+          "family_equal_gain": 0.007307394306784668,
+          "largest_family": "aust1307",
+          "largest_family_languages": 296,
+          "gain_excluding_largest_family_fixed_predictions": -0.0013793982740244088,
+          "families_with_positive_gain": 39,
+          "families_with_negative_gain": 83
+        }
+      }
+    },
+    {
+      "variant": "C0.1",
+      "cv_grouping": "family",
+      "C": 0.1,
+      "languages": 939,
+      "family_groups": 125,
+      "pairs": 26292,
+      "shared_form_prevalence": 0.3199452304883615,
+      "language_equal_logloss": {
+        "raw_additive": 0.5730967811398391,
+        "classical_additive": 0.574680746137183,
+        "pairwise": 0.5736982479698296
+      },
+      "pair_equal_logloss": {
+        "raw_additive": 0.573096781139839,
+        "classical_additive": 0.5746807461371831,
+        "pairwise": 0.5736982479698296
+      },
+      "language_equal_brier": {
+        "raw_additive": 0.1926102290775048,
+        "classical_additive": 0.19375038226707034,
+        "pairwise": 0.19197839688814883
+      },
+      "comparisons": {
+        "raw": {
+          "language_equal_gain": -0.0006014668299905698,
+          "family_cluster_bootstrap_95ci": [
+            -0.00408655806462117,
+            0.00449887374660895
+          ],
+          "family_equal_gain": 0.005533989215458013,
+          "largest_family": "aust1307",
+          "largest_family_languages": 296,
+          "gain_excluding_largest_family_fixed_predictions": 0.0027548345161888016,
+          "families_with_positive_gain": 66,
+          "families_with_negative_gain": 59
+        },
+        "classical": {
+          "language_equal_gain": 0.0009824981673535473,
+          "family_cluster_bootstrap_95ci": [
+            -0.0023718295993568066,
+            0.005483016639483905
+          ],
+          "family_equal_gain": 0.0011181697652861203,
+          "largest_family": "aust1307",
+          "largest_family_languages": 296,
+          "gain_excluding_largest_family_fixed_predictions": 0.0038533728438592168,
+          "families_with_positive_gain": 81,
+          "families_with_negative_gain": 44
+        },
+        "classical_over_raw": {
+          "language_equal_gain": -0.0015839649973441172,
+          "family_cluster_bootstrap_95ci": [
+            -0.003697718176871826,
+            0.00196260438072513
+          ],
+          "family_equal_gain": 0.004415819450171892,
+          "largest_family": "aust1307",
+          "largest_family_languages": 296,
+          "gain_excluding_largest_family_fixed_predictions": -0.0010985383276704143,
+          "families_with_positive_gain": 40,
+          "families_with_negative_gain": 85
+        }
+      }
+    },
+    {
+      "variant": "C10",
+      "cv_grouping": "family",
+      "C": 10,
+      "languages": 939,
+      "family_groups": 125,
+      "pairs": 26292,
+      "shared_form_prevalence": 0.3199452304883615,
+      "language_equal_logloss": {
+        "raw_additive": 0.584921905998951,
+        "classical_additive": 0.5820301107232806,
+        "pairwise": 0.5748950267533331
+      },
+      "pair_equal_logloss": {
+        "raw_additive": 0.5849219059989509,
+        "classical_additive": 0.5820301107232807,
+        "pairwise": 0.5748950267533331
+      },
+      "language_equal_brier": {
+        "raw_additive": 0.19345964667994428,
+        "classical_additive": 0.1928898615725998,
+        "pairwise": 0.19176985206182723
+      },
+      "comparisons": {
+        "raw": {
+          "language_equal_gain": 0.010026879245617813,
+          "family_cluster_bootstrap_95ci": [
+            0.00035904298144733286,
+            0.017341170528845117
+          ],
+          "family_equal_gain": 0.012641136327292121,
+          "largest_family": "aust1307",
+          "largest_family_languages": 296,
+          "gain_excluding_largest_family_fixed_predictions": 0.0041960110622735036,
+          "families_with_positive_gain": 73,
+          "families_with_negative_gain": 52
+        },
+        "classical": {
+          "language_equal_gain": 0.007135083969947458,
+          "family_cluster_bootstrap_95ci": [
+            0.002892545466903594,
+            0.010126147462811904
+          ],
+          "family_equal_gain": 0.005407242932938651,
+          "largest_family": "aust1307",
+          "largest_family_languages": 296,
+          "gain_excluding_largest_family_fixed_predictions": 0.006025800405180018,
+          "families_with_positive_gain": 76,
+          "families_with_negative_gain": 49
+        },
+        "classical_over_raw": {
+          "language_equal_gain": 0.002891795275670355,
+          "family_cluster_bootstrap_95ci": [
+            -0.005284258856671545,
+            0.009101589410552413
+          ],
+          "family_equal_gain": 0.0072338933943534725,
+          "largest_family": "aust1307",
+          "largest_family_languages": 296,
+          "gain_excluding_largest_family_fixed_predictions": -0.0018297893429065144,
+          "families_with_positive_gain": 40,
+          "families_with_negative_gain": 85
+        }
+      }
+    },
+    {
+      "variant": "unpenalized",
+      "cv_grouping": "family",
+      "C": null,
+      "languages": 939,
+      "family_groups": 125,
+      "pairs": 26292,
+      "shared_form_prevalence": 0.3199452304883615,
+      "language_equal_logloss": {
+        "raw_additive": 0.5854650204203754,
+        "classical_additive": 0.5825621792426049,
+        "pairwise": 0.5750284986323668
+      },
+      "pair_equal_logloss": {
+        "raw_additive": 0.5854650204203754,
+        "classical_additive": 0.5825621792426049,
+        "pairwise": 0.5750284986323668
+      },
+      "language_equal_brier": {
+        "raw_additive": 0.19353220269660873,
+        "classical_additive": 0.19293568411953926,
+        "pairwise": 0.191853125533163
+      },
+      "comparisons": {
+        "raw": {
+          "language_equal_gain": 0.010436521788008647,
+          "family_cluster_bootstrap_95ci": [
+            6.317014082576588e-05,
+            0.018156142114711952
+          ],
+          "family_equal_gain": 0.013001945400063468,
+          "largest_family": "aust1307",
+          "largest_family_languages": 296,
+          "gain_excluding_largest_family_fixed_predictions": 0.004322785232412197,
+          "families_with_positive_gain": 75,
+          "families_with_negative_gain": 50
+        },
+        "classical": {
+          "language_equal_gain": 0.007533680610238107,
+          "family_cluster_bootstrap_95ci": [
+            0.0027127325133292617,
+            0.010828920603778484
+          ],
+          "family_equal_gain": 0.00575776073756966,
+          "largest_family": "aust1307",
+          "largest_family_languages": 296,
+          "gain_excluding_largest_family_fixed_predictions": 0.006193611293019485,
+          "families_with_positive_gain": 77,
+          "families_with_negative_gain": 48
+        },
+        "classical_over_raw": {
+          "language_equal_gain": 0.00290284117777054,
+          "family_cluster_bootstrap_95ci": [
+            -0.005348112736611981,
+            0.00916838466766857
+          ],
+          "family_equal_gain": 0.007244184662493808,
+          "largest_family": "aust1307",
+          "largest_family_languages": 296,
+          "gain_excluding_largest_family_fixed_predictions": -0.0018708260606072878,
+          "families_with_positive_gain": 40,
+          "families_with_negative_gain": 85
+        }
+      }
+    },
+    {
+      "variant": "primary",
+      "cv_grouping": "language",
+      "C": 1,
+      "languages": 939,
+      "family_groups": 125,
+      "pairs": 26292,
+      "shared_form_prevalence": 0.3199452304883615,
+      "language_equal_logloss": {
+        "raw_additive": 0.5440863425687592,
+        "classical_additive": 0.5366023586304852,
+        "pairwise": 0.5350548145188079
+      },
+      "pair_equal_logloss": {
+        "raw_additive": 0.5440863425687593,
+        "classical_additive": 0.5366023586304852,
+        "pairwise": 0.5350548145188079
+      },
+      "language_equal_brier": {
+        "raw_additive": 0.18162300322405364,
+        "classical_additive": 0.17875210481296555,
+        "pairwise": 0.17789704792165018
+      },
+      "comparisons": {
+        "raw": {
+          "language_equal_gain": 0.009031528049951398,
+          "family_cluster_bootstrap_95ci": [
+            0.0013393870107132086,
+            0.015255703049005996
+          ],
+          "family_equal_gain": 0.00911469169052999,
+          "largest_family": "aust1307",
+          "largest_family_languages": 296,
+          "gain_excluding_largest_family_fixed_predictions": 0.003624526735418636,
+          "families_with_positive_gain": 74,
+          "families_with_negative_gain": 51
+        },
+        "classical": {
+          "language_equal_gain": 0.0015475441116773122,
+          "family_cluster_bootstrap_95ci": [
+            -0.0013777169435918318,
+            0.006196315980671699
+          ],
+          "family_equal_gain": 0.0018877286332698467,
+          "largest_family": "aust1307",
+          "largest_family_languages": 296,
+          "gain_excluding_largest_family_fixed_predictions": 0.004109819117274755,
+          "families_with_positive_gain": 70,
+          "families_with_negative_gain": 55
+        },
+        "classical_over_raw": {
+          "language_equal_gain": 0.007483983938274086,
+          "family_cluster_bootstrap_95ci": [
+            -0.0033615647398089568,
+            0.016330505647180183
+          ],
+          "family_equal_gain": 0.007226963057260145,
+          "largest_family": "aust1307",
+          "largest_family_languages": 296,
+          "gain_excluding_largest_family_fixed_predictions": -0.00048529238185611846,
+          "families_with_positive_gain": 42,
+          "families_with_negative_gain": 83
+        }
+      }
+    }
+  ],
+  "full_fit_max_unpenalized_saturated_rate_error": 1.152669681925289e-09,
+  "all_cv_fits_converged": true,
+  "cv_fits_count": 135,
+  "minimum_training_rank": {
+    "raw_additive": 4,
+    "classical_additive": 5,
+    "pairwise": 7
+  },
+  "seven_cells": [
+    {
+      "Dr": 0,
+      "Da": 0,
+      "De": 1,
+      "pattern": "001",
+      "n_pairs": 3756,
+      "shared_pairs": 2775,
+      "share_rate": 0.7388178913738019,
+      "n_languages": 939,
+      "p_raw_additive_ridge": 0.6923141016788549,
+      "p_raw_additive_mle": 0.7028443551590979,
+      "p_classical_additive_ridge": 0.6699978234034097,
+      "p_classical_additive_mle": 0.6807516569535595,
+      "p_pairwise_ridge": 0.7090754434629929,
+      "p_pairwise_mle": 0.7388178907052594
+    },
+    {
+      "Dr": 0,
+      "Da": 1,
+      "De": 0,
+      "pattern": "010",
+      "n_pairs": 3756,
+      "shared_pairs": 1395,
+      "share_rate": 0.37140575079872207,
+      "n_languages": 939,
+      "p_raw_additive_ridge": 0.2843949020830633,
+      "p_raw_additive_mle": 0.2853344952481505,
+      "p_classical_additive_ridge": 0.364151939975538,
+      "p_classical_additive_mle": 0.37140575188577785,
+      "p_pairwise_ridge": 0.3499755104934792,
+      "p_pairwise_mle": 0.3714057496460524
+    },
+    {
+      "Dr": 0,
+      "Da": 1,
+      "De": 1,
+      "pattern": "011",
+      "n_pairs": 3756,
+      "shared_pairs": 747,
+      "share_rate": 0.1988817891373802,
+      "n_languages": 939,
+      "p_raw_additive_ridge": 0.3228080822984122,
+      "p_raw_additive_mle": 0.32092663106687136,
+      "p_classical_additive_ridge": 0.26393843214991736,
+      "p_classical_additive_mle": 0.2569480280203778,
+      "p_pairwise_ridge": 0.23538604876341726,
+      "p_pairwise_mle": 0.19888178900460562
+    },
+    {
+      "Dr": 1,
+      "Da": 0,
+      "De": 0,
+      "pattern": "100",
+      "n_pairs": 3756,
+      "shared_pairs": 1041,
+      "share_rate": 0.2771565495207668,
+      "n_languages": 939,
+      "p_raw_additive_ridge": 0.3413887930948813,
+      "p_raw_additive_mle": 0.3434210667456368,
+      "p_classical_additive_ridge": 0.29214332407695637,
+      "p_classical_additive_mle": 0.2898809815496966,
+      "p_pairwise_ridge": 0.2684102778998689,
+      "p_pairwise_mle": 0.27715654986047467
+    },
+    {
+      "Dr": 1,
+      "Da": 0,
+      "De": 1,
+      "pattern": "101",
+      "n_pairs": 3756,
+      "shared_pairs": 1550,
+      "share_rate": 0.4126730564430245,
+      "n_languages": 939,
+      "p_raw_additive_ridge": 0.38337594474915165,
+      "p_raw_additive_mle": 0.38238205052461705,
+      "p_classical_additive_ridge": 0.4535815399149586,
+      "p_classical_additive_mle": 0.45801487722694956,
+      "p_pairwise_ridge": 0.4393526341424527,
+      "p_pairwise_mle": 0.4126730572897532
+    },
+    {
+      "Dr": 1,
+      "Da": 1,
+      "De": 0,
+      "pattern": "110",
+      "n_pairs": 3756,
+      "shared_pairs": 281,
+      "share_rate": 0.0748136315228967,
+      "n_languages": 939,
+      "p_raw_additive_ridge": 0.09894800548075382,
+      "p_raw_additive_mle": 0.09462035964144147,
+      "p_classical_additive_ridge": 0.0679401260708733,
+      "p_classical_additive_mle": 0.06208921265912489,
+      "p_pairwise_ridge": 0.10443798907355774,
+      "p_pairwise_mle": 0.0748136321368517
+    },
+    {
+      "Dr": 1,
+      "Da": 1,
+      "De": 1,
+      "pattern": "111",
+      "n_pairs": 3756,
+      "shared_pairs": 623,
+      "share_rate": 0.16586794462193824,
+      "n_languages": 939,
+      "p_raw_additive_ridge": 0.1163867791090825,
+      "p_raw_additive_mle": 0.11008767318385566,
+      "p_classical_additive_ridge": 0.12786344485483542,
+      "p_classical_additive_mle": 0.12052612777648215,
+      "p_pairwise_ridge": 0.13297870714443893,
+      "p_pairwise_mle": 0.16586794523839812
+    }
+  ],
+  "extension_descriptive_summary": [
+    {
+      "domain": "grandparent",
+      "Dr": 0,
+      "Dc": 1,
+      "pairs": 1966,
+      "languages": 983,
+      "share_rate": 0.8519837232960326
+    },
+    {
+      "domain": "grandparent",
+      "Dr": 1,
+      "Dc": 0,
+      "pairs": 1966,
+      "languages": 983,
+      "share_rate": 0.2711088504577823
+    },
+    {
+      "domain": "grandparent",
+      "Dr": 1,
+      "Dc": 1,
+      "pairs": 1966,
+      "languages": 983,
+      "share_rate": 0.2726347914547304
+    },
+    {
+      "domain": "parental_sibling",
+      "Dr": 0,
+      "Dc": 1,
+      "pairs": 658,
+      "languages": 329,
+      "share_rate": 0.3404255319148936
+    },
+    {
+      "domain": "parental_sibling",
+      "Dr": 1,
+      "Dc": 0,
+      "pairs": 658,
+      "languages": 329,
+      "share_rate": 0.030395136778115502
+    },
+    {
+      "domain": "parental_sibling",
+      "Dr": 1,
+      "Dc": 1,
+      "pairs": 658,
+      "languages": 329,
+      "share_rate": 0.0121580547112462
+    }
+  ]
+}

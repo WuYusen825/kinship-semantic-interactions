@@ -1,0 +1,89 @@
+OCR C07_page-01.png
+Controlling the False Discovery Rate: A Practical and Powerful Approach to
+Multiple Testing
+
+Yoav Benjamini; Yosef Hochberg
+
+Journal of the Royal Statistical Society. Series B (Methodological), Vol. 57, No. 1
+(1995), 289-300.
+
+Stable URL:
+http://linl
+
+tor.org/sic ci=0035-9246% 28 1995%2957%3A 1%3C289%3 ACTFDRA %3E2.0.CO%3B2-E
+
+Journal of the Royal Statistical Society. Series B (Methodological) is currently published by Royal Statistical
+Society.
+
+Your use of the JSTOR archive indicates your acceptance of JSTOR’s Terms and Conditions of Use, available at
+http://www jstor.org/about/terms.html. JSTOR’s Terms and Conditions of Use provides, in part, that unless you
+have obtained prior permission, you may not download an entire issue of a journal or multiple copies of articles, and
+you may use content in the JSTOR archive only for your personal, non-commercial use.
+
+Please contact the publisher regarding any further use of this work. Publisher contact information may be obtained at
+http://www jstor.org/journals/rss.html.
+
+Each copy of any part of a JSTOR transmission must contain the same copyright notice that appears on the screen or
+printed page of such transmission.
+
+ISTOR is an independent not-for-profit organization dedicated to creating and preserving a digital archive of
+scholarly journals. For more information regarding JSTOR, please contact support @jstor.org.
+
+hup://www.jstor.org/
+Tue Aug 9 05:04:53 2005
+
+
+OCR C07_page-02.png
+JR. Statist. Soc. B (1995)
+57, No. 1, pp. 289-300
+
+Controlling the False Discovery Rate: a Practical and Powerful
+Approach to Multiple Testing
+
+By YOAV BENJAMINIt and YOSEF HOCHBERG
+Tel Aviv University, Israel
+
+[Received January 1993, Revised March 1994]
+
+SUMMARY
+‘The common approach to the multiplicity problem calls for controlling the familywise
+error rate (FWER). This approach, though, has faults, and we point out a few. A different
+approach to problems of multiple significance testing is presented. It calls for controlling
+the expected proportion of falsely rejected hypotheses —the false discovery rate. This error
+rate is equivalent to the FWER when all hypotheses are true but is smaller otherwise. There-
+fore, in problems where the control of the false discovery rate rather than that of the
+FWER is desired, there is potential for a gain in power. A simple sequential Bonferroni-
+type procedure is proved to control the false discovery rate for independent test statistics,
+and a simulation study shows that the gain in power is substantial. The use of the new
+procedure and the appropriateness of the criterion are illustrated with examples.
+‘Keywords; BONFERRONI-TYPE PROCEDURES; FAMILYWISE ERROR RATE; MULTIPLE-
+COMPARISON PROCEDURES; p-VALUES
+
+1. INTRODUCTION
+
+When pursuing multiple inferences, researchers tend to select the (statistically) signif-
+icant ones for emphasis, discussion and support of conclusions. An unguarded use
+of single-inference procedures results in a greatly increased false positive (signif-
+icance) rate. To control this multiplicity (selection) effect, classical multiple-
+comparison procedures (MCPs) aim to control the probability of committing any
+type I error in families of comparisons under simultaneous consideration. The
+control of this familywise error rate (FWER) is usually required in a strong sense,
+i.e. under all configurations of the true and false hypotheses tested (see for example
+Hochberg and Tamhane (1987).
+
+Even though MCPs have been in use since the early 1950s, and in spite of the
+advocacy for their use (e.g. being mandatory for some journals, as well as in some
+institutions such as the Food and Drug Administration of the USA), researchers
+have not yet widely adopted these procedures. In medical research, for example,
+Godfrey (1985), Pocock ef al. (1987) and Smith et al. (1987) examined samples of
+reports of comparative studies from major medical journals. They found that
+researchers overlook various kinds of multiplicity, and as a result reporting tends
+to exaggerate treatment differences (Pocock ef al., 1987).
+
+Some of the difficulties with classical MCPs which cause their underutilization
+in applied research are as follows.
+
+Address for correspondence: Department of Statistics, School of Mathematical Sciences, Sackler Faculty for
+iences, Tel Aviv University, Tel Aviv 69978, Israel.
+
+© 1995 Royal Statistical Society 0035-9246/95/57289

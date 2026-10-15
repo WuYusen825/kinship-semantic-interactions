@@ -1,0 +1,1245 @@
+                                                                                                         Ecography 40: 913–929, 2017
+                                                                                                                doi: 10.1111/ecog.02881
+                                                                           © 2016 The Authors. Ecography © 2016 Nordic Society Oikos
+                                                           Subject Editor and Editor-in-Chief: Miguel Araújo. Accepted 7 December 2016
+
+
+
+
+Cross-validation strategies for data with temporal, spatial,
+hierarchical, or phylogenetic structure
+
+David R. Roberts, Volker Bahn, Simone Ciuti, Mark S. Boyce, Jane Elith, Gurutzeta Guillera-Arroita,
+Severin Hauenstein, José J. Lahoz-Monfort, Boris Schröder, Wilfried Thuiller, David I. Warton,
+Brendan A. Wintle, Florian Hartig and Carsten F. Dormann­
+D. R. Roberts (http://orcid.org//0000-0002-3437-2422)(droxroberts@gmail.com), S. Ciuti, S. Hauenstein, F. Hartig and C. F. Dormann, Dept
+of Biometry and Environmental System Analysis, Univ. of Freiburg, Freiburg, Germany. FH also at: Theoretical Ecology, Univ. of Regensburg,
+Regensburg, Germany. – V. Bahn, Dept of Biological Sciences, Wright State Univ., Dayton, OH, USA. – M. S. Boyce, Dept of Biological Sciences,
+Univ. of Alberta, Edmonton, AB, Canada. – J. Elith, G. Guillera-Arroita, J. J. Lahoz-Monfort and B. A. Wintle, School of BioSciences, Univ. of
+Melbourne, Melbourne, Australia. – B. Schröder, Inst. of Geoecology, Div. of Landscape Ecology and Environmental Systems Analysis, Technische
+Univ. Braunschweig, Braunschweig, Germany, and: Berlin-Brandenburg Inst. of Advanced Biodiversity Research (BBIB), Berlin, Germany. – W.
+Thuiller, Lab. d’Écologie Alpine, Univ. Joseph Fourier, Grenoble, France. – D. I. Warton, School of Mathematics and Statistics and Evolution and
+Ecology Research Centre, The Univ. of New South Wales, Sydney, Australia.­
+
+
+
+        Ecological data often show temporal, spatial, hierarchical (random effects), or phylogenetic structure. Modern statistical
+        approaches are increasingly accounting for such dependencies. However, when performing cross-validation, these structures
+        are regularly ignored, resulting in serious underestimation of predictive error. One cause for the poor performance of
+        uncorrected (random) cross-validation, noted often by modellers, are dependence structures in the data that persist as
+        dependence structures in model residuals, violating the assumption of independence. Even more concerning, because often
+        overlooked, is that structured data also provides ample opportunity for overfitting with non-causal predictors. This problem
+        can persist even if remedies such as autoregressive models, generalized least squares, or mixed models are used. Block cross-
+        validation, where data are split strategically rather than randomly, can address these issues. However, the blocking strategy
+        must be carefully considered. Blocking in space, time, random effects or phylogenetic distance, while accounting for
+        dependencies in the data, may also unwittingly induce extrapolations by restricting the ranges or combinations of predictor
+        variables available for model training, thus overestimating interpolation errors. On the other hand, deliberate blocking in
+        predictor space may also improve error estimates when extrapolation is the modelling goal. Here, we review the ecological
+        literature on non-random and blocked cross-validation approaches. We also provide a series of simulations and case studies,
+        in which we show that, for all instances tested, block cross-validation is nearly universally more appropriate than random
+        cross-validation if the goal is predicting to new data or predictor space, or for selecting causal predictors. We recommend
+        that block cross-validation be used wherever dependence structures exist in a dataset, even if no correlation structure is
+        visible in the fitted model residuals, or if the fitted models account for such correlations.
+
+
+The problem of structured data                                            may also lead to dependence between species (phylogenetic
+                                                                          structure) or populations of species (genetic structure) with
+Ecological data often show internal dependence structures:                more recent divergence will tend to be more similar than
+the tendency for values of nearby observations to be more                 those which diverged longer ago (Harvey and Pagel 1991).
+similar than distant observations is widespread, if not perva-                While such underlying structures in the data are not
+sive. It can be found within every spatial scale from micro-              fundamentally problematic for statistical analyses, they tend
+habitats to continents (spatial structure; Legendre 1993,                 to create two undesirable outcomes. First, model error, as
+Koenig 1999, Dormann et al. 2007), or within sequentially                 well as neglected processes and variables connected to these
+timed observations (temporal structure), such as in animal                structures, often leads to dependence structures in the model
+telemetry data (Rooney et al. 1998, Otis and White 1999) or               residuals, which violates the critical assumption of indepen-
+population size estimates (Lundberg et al. 2000, Bjørnstad                dence present in many models and methods (Legendre and
+and Grenfell 2001). In behavioural ecology, individuals may               Fortin 1989, Miller et al. 2007). Second, because predictor
+form groups (herds, flocks, schools, packs) with synchro-                 variables are often correlated with underlying dependence
+nised activity or movement (hierarchical structure; Wu and                structures (e.g. climate with space), models may use predic-
+David 2002, Sumpter 2006). In multi-species analyses or                   tors to overfit the residual dependence structure and thereby
+in analyses of genetic populations, evolutionary relatedness              remove it, partially or completely.
+
+                                                                                                                                           913
+ Dependence Parametric                            Blocking               community structures, or evolutionary changes may affect
+ structure  solution               Blocking       illustration           species responses in different regions or time periods (Fielding
+                                                                         and Bell 1997, Maguire et al. 2015). Because of these difficul-
+ Spatial            Spatial models Spatial                               ties, predictive error on new data is commonly approximated
+                    (e.g.CAR,                                            by cross-validation, in which data are (repeatedly) split into
+                    INLA, GWR)                                           two subsets, one used for model training and the other for
+                                                                         model testing (see Supplementary material Appendix 1 Table
+ Temporal           Time-series    Temporal                              A1.1 for an overview of specific approaches and Table A2
+                    models                                               for compiled references). This principle of data splitting is
+                    (e.g.ARIMA )
+                                                                         central to many of today’s statistical algorithms and work-
+                                                                         flows, in particular for all predictive modelling frameworks
+ Grouping           Mixed effect   Group                                 in ecology (Hastie et al. 2009). The central assumption here
+                    models                                               is that training and evaluation data are independent. If not,
+                    (e.g. GLMM)
+                                                                         error estimates will be too optimistic, and model selection
+                                                                         will favour too complex models.
+ Hierarchical /     Phylogenetic   Hierarchical
+ Phylogenetic       models                                                   Early in their development, statistical models were typi-
+                    (e.g. PGLS)                                          cally assessed on their fit to the data alone (euphemistically
+ ­                                                                       referred to as ‘resubstitution’), representing an extreme
+Figure 1. Examples of dependence structures, parametric solutions        case of non-independence of the hold-out. Of course, any
+to parameter estimation, and the associated blocking approaches          such dependence of the validation with the training data
+for cross-validation to increase reliability of prediction error         will favour overfitted models (Larimore and Mehra 1985,
+estimates.                                                               Hawkins 2004), resulting in artificially small error esti-
+                                                                         mates and thus overly optimistic estimates of model per-
+                                                                         formance (Mosteller and Tukey 1977, Olden et al. 2002,
+    The standard statistical answer to this problem is the use           Arlot and Celisse 2010). A similar situation occurs when
+of appropriate parametric models that include the respec-                there are dependence structures in the data. When data
+tive dependence structure (Table 1), such as spatial or tem-             held-out for validation are drawn from nearby in the depen-
+poral autoregressive models, mixed models, or phylogenetic               dence structure (e.g. close in space or time, from the same
+least squared regressions. In principle, these models solve              herd, etc.) the independence of evaluation data can be
+the problem of independence and should allow the use of                  compromised (Dormann et al. 2007, Kuhn 2007, Hastie
+standard parametric methods for evaluating model fit and                 et al. 2009, Telford and Birks 2009, Bahn and McGill
+model selection (Dormann et al. 2007, Miller et al. 2007).               2013), again producing overly optimistic estimates of
+In practice, however, specification errors as well as the prob-          prediction error (Mosteller and Tukey 1977, Picard and
+lem of structural overfitting, as described above, can lead to           Cook 1984), and potentially leading to erroneous scientific
+a poor performance of these parametric model evaluations.                conclusions (Kuhn 2007, Hastie et al. 2009, Telford and
+Moreover, many popular machine-learning methods such as                  Birks 2009).
+random forest or neural networks do not allow accounting                     In other words, non-independence of hold-out data from
+for such dependence structures. For all these reasons, it is             the training data erroneously makes models appear more
+crucial that we have robust nonparametric methods for vali-              reliable than they are, enticing us to have more faith in their
+dation, selection, and assessment of predictive accuracy of              predictions than is actually warranted. Comparative studies
+models when used on ecological data with internal depen-                 of model validations for ecological applications have consis-
+dence structures.                                                        tently demonstrated this e.g. (Olden et al. 2002, Reineking
+    Ideally, model validation, selection, and predictive errors          and Schröder 2003, Araújo et al. 2005, Veloz 2009, Lieske
+should be calculated using independent data (Araújo et al.               and Bender 2011, Roberts and Hamann 2012a, Wenger and
+2005). For example, validation may be undertaken with data               Olden 2012, Bahn and McGill 2013). Problematically,
+from different geographic regions or spatially distinct subsets          modellers often partook (and frequently still do) in what
+of the region, different time periods, such as historic spe-             Stone (1974, p. 111) labels “controlled division” of data,
+cies records from the recent past or from fossil records. Most           wherein “the cautious statistician … sets aside a randomly
+commonly, however, either no such independent data exist                 [our emphasis] selected part of his sample without look-
+or they do not meet assumptions of independence (Araújo                  ing at it and then plays without inhibition with what’s
+et al. 2005). Further, changes in biological relationships,              left, confident in the knowledge that the set-aside data
+
+Table 1. Guidelines for achieving reliable error estimates in consideration of modelling objectives (extrapolation vs. interpolation) and
+cross-validation approaches that may block in predictor space, structure, both predictor space and structure, or neither.
+
+                                                                                       Cross-validation structure
+                                                                        Random                                           Blocked
+Cross-validation                   Random                  Correct interpolation error without               Correct interpolation error with
+  predictor space                                            random structure                                  random structure
+                                   Blocked                 Correct extrapolation error without               Correct extrapolation error with
+                                                             random structure                                  random structure
+
+
+
+914
+will deliver an unbiased judgment on the efficacy of his             environmental space could lead to an overestimation of
+analysis.” Of course, such random data splitting does not            interpolation errors.
+provide independent validation when a dependence struc-                  Our objective for this article is to examine the utility and
+ture is present and, thus, “unbiased judgment” is compro-            application of block cross-validation. We review existing
+mised.                                                               approaches, clarify the reasons for their use and their poten-
+    In response, statisticians have introduced a smorgasbord         tial implementations, and discuss their shortcomings and
+of cross-validation approaches in an effort to achieve unbi-         challenges. We believe a better understanding of blocking
+ased error and parameter estimates (Stone 1974, Picard               and its relevance is highly important. Currently, blocking is
+and Cook 1984, Shao 1993, Kohavi 1995), many of which                not widely used in biogeographical studies and, when it is,
+have been incorporated into ecological studies (Mankin               the motivations for doing so are often not clear. This is a con-
+et al. 1977, Verbyla and Litvaitis 1989, Power 1993, Rykiel          cern when so many studies now involve prediction to new
+1996). Early solutions were leave-n-out cross-validation             times and/or places. However, we also demonstrate compel-
+approaches (Stone 1974, Picard and Cook 1984) that run               ling reasons for using block cross-validation even for model
+iteratively, each time withholding a small randomly selected         predictions to the same time and same region. Moreover, the
+subset of the data for testing. Because these approaches have        majority of applications in our review come from the species
+also been shown to produce biased error estimates (Shao              distribution modelling literature, block cross-validation has
+1993, Kohavi 1995, Telford et al. 2004, Amesbury et al.              broad applicability to virtually any ecological analysis per-
+2013), further corrections have been proposed, for example           formed on structured data. We illustrate this point through
+by incorporating distance-based buffers around hold-out              simulations and case studies across a range of ecological
+points (Bahn 2009, Telford and Birks 2009, Le Rest et al.            questions. Specifically, we look at four block cross-validation
+2014).                                                               scenarios: spatial blocking, blocking by hierarchical groups,
+    A general strategy to increase independence in cross-            phylogenetic blocking, and blocking in predictor space. Via
+validation is to split data into ‘blocks’ at some central point(s)   these analyses, we demonstrate that:
+of the dependence structure, such as in time or space. There
+                                                                       1) random cross-validations, even with models that
+are some examples of block cross-validations in the eco-
+                                                                          should correct for dependence structures, yield error
+logical literature, implemented with a wide variety of stated
+                                                                          estimates that are too low;
+objectives: most often for identifying non-transferability or
+                                                                       2) block cross-validation does not only increase error
+the general inability to extrapolate, but also for increasing
+                                                                          estimates but actually provides estimates that are closer
+independence, avoiding overfitting, providing more reli-
+                                                                          to true values;
+able error estimates, or selecting better predictive models
+                                                                       3) blocking in structured data often restricts the predictor
+(Supplementary material Appendix 1 Table A1.2–A1.3).
+                                                                          space and controlling this tendency may be neces-
+When systematically compared with random data splits,
+                                                                          sary, depending on whether inter or extrapolation in
+they consistently demonstrate larger errors in predictions
+                                                                          predictor space is the goal.
+(Burman et al. 1994, Arlot and Celisse 2010, Lieske and
+Bender 2011, Roberts and Hamann 2012a, Wenger and
+Olden 2012, Bahn and McGill 2013, Radosavljevic
+and Anderson 2014). It should be noted, however, that                Cross-validation with structured data
+few studies have explicitly demonstrated that the estimates
+resulting from blocked cross-validations are indeed closer to        Ecological variables (observations of biota) commonly con-
+the ‘true’ error that would be expected for a truly indepen-         tain four types of internal structure: autocorrelation in time,
+dent dataset (but see Trachsel and Telford 2016).                    autocorrelation in space, group dependence structures, and
+    However, there is also reason to be cautious about               phylogenetic structure (i.e. relatedness). These can lead to
+reported block cross-validation errors. While block cross-           two issues in statistical models: 1) non-independence of
+validation addresses correlations, it can create a new valida-       residuals, and 2) overfitting to the dependence structure of
+tion problem: if blocking structures follow environmental            the data. The first issue arises, for example, when a model
+gradients, blocking may hold out entire portions of the              misses a structured variable, or if it does not describe its
+predictor space (i.e. ranges and/or combinations of pre-             effect on the response perfectly. Non-independence of
+dictor variables), introducing extrapolation between cross-          residuals violates a central assumption of regression models
+validation folds (Kennard and Stone 1969, Snee 1977).                and other statistical methods, typically leading to over-
+Consequently, when predicting to the hold-out data,                  optimistic confidence intervals and incorrect p-values (Ives
+the model has to predict outside the ranges or into new              and Zhu 2006). The second issue, overfitting to the depen-
+combinations of predictor values of those included in the            dence structure of the data, describes the phenomenon that
+training folds. This could occur, for example, with spatial          the model may absorb structured residual variation with
+data splits, as climatic environments tend to be geographi-          another predictor (e.g. time or space themselves or another
+cally structured (e.g. latitudinal gradients of temperature),        covariate that correlates with them). This can mask both
+or in temporal splits, as some periods will not have expe-           the first problem and the underlying model misspecifica-
+rienced certain predictor conditions (Zurell et al. 2012).           tion, creating an overfitted model that does not predict well
+In some cases, one may make a virtue of necessity, using             to new data.
+this to test a model’s extrapolation error. In general, how-             To clarify these two issues, we provide four ecological
+ever, the concern remains that unwanted blocking of the              examples where both issues could emerge:
+
+
+                                                                                                                                915
+1) Temporal structure - Imagine that we have annual time            post-glacially from a single ice-age refugium, structuring
+series data of antelope population size, which fluctuates over      genetic relatedness in space). In this case, the model may
+time but always tends to be similar to a previous year’s size.      attribute part of the effect of the unmeasured covariates to
+Also imagine that we have annual rainfall in each relevant          coastal distance, which would result in biased parameter
+year as a covariate. Population size may be partly driven by        estimates and reduced autocorrelation of residuals (over-
+rainfall but is also affected by other covariates which we          fitting). Coastal distance is confounded with phylogenetic
+have not measured but that may also be structured in time,          dissimilarity. The same type of situation could apply when
+leading to model residuals that are temporally autocorre-           considering multiple species that are phylogenetically
+lated (non-independence of residuals). However, because             related.
+the missing covariates are also likely to correlate with rain-
+fall, and that they all follow similar temporal structure, the      Non-independence of residuals may be addressed by explic-
+model may attribute part of the effect of these other covari-       itly modelling correlation structures, such as with autoregres-
+ates to rainfall itself, which would result in biased parameter     sive models (for space and/or time), hierarchical models (for
+estimates and reduced autocorrelation of residuals (over-           describing nested structures), or phylogenetic contrasts (Ives
+fitting). Rainfall and demographically induced temporal             and Zhu 2006; Table 1). For example, in parametric models,
+autocorrelation are confounded.                                     such problems are addressed by moving from simple regres-
+2) Spatial structure - Imagine the distribution of an anolis        sion models with independent random error assumptions
+lizard across an island archipelago, which likely dispersed         to more complex model structures such as conditional spa-
+gradually throughout the individual islands from a single           tial autoregressive models (CAR; Cressie 1993), integrated
+source, so their populations are spatially structured (i.e.         nested Laplace approximations (INLA; Rue et al. 2009), or
+data from nearby islands are likely to be more similar). If         geographically weighted regressions (GWR; Fotheringham
+we model lizard distribution with climate, we will certainly        et al. 2002), time series methods such as autoregressive
+end up with spatial autocorrelation in model errors due to          integrated moving averages (ARIMA; Brockwell and Davis
+the historic dispersal pattern of populations. However, these       1996), methods that include random effects such as gen-
+residuals will be reduced because we also certainly (and            eralised linear mixed models (GLMM; Breslow and Clayton
+unintentionally) alias part of the geographic space via spa-        1993), or phylogenetic comparative methods such as phy-
+tially structured environments. Thus, even if climate was           logenetic generalised least squares (PGLS; Grafen 1989).
+immaterial to the species, it would be used by the model as         These model structures can account for correlations among
+a trend-surface-regression to reduce residual spatial autocor-      data points, yielding unbiased estimates, at least in theory.
+relation (overfitting). Geographic space and climate space              Overfitting is a more insidious problem because it can
+are confounded.                                                     easily escape detection unless cross-validations are care-
+                                                                    fully implemented. Here, structure in observations (e.g.
+3) Hierarchical or group structure - Imagine we have recorded       space, time, groups) is being explained by the model
+observations of hyena movements paired with tree cover              through some other non-causal covariate. This is partic-
+classes. While hyena movement may be partly driven by tree          ularly common in ecology because covariates themselves
+cover, they are also driven by movements of other hyena indi-       can be structured in the same way as the residuals (i.e.
+viduals in the same cackle. A habitat selection model based         in space, time, phylogeny, etc.). Thus, covariates need not
+on tree cover will then result in residuals autocorrelated          be orthogonal to model structure, as assumed implicitly
+by individual animals or even by groups themselves (non-            by methods in the previous paragraph. Resulting model
+independence of residuals). Further, each cackle likely moves       predictions may perform fine in a situation where the
+within different tree covers, particularly if the cackles tend to   correlation structure between non-causal and the “true”
+avoid one-another (i.e. tree cover correlates with individu-        predictors (i.e. underlying structures) remains unchanged
+als or groups). Therefore, other variables that correlate with      (Bahn and McGill 2007), but they could completely fail
+individuals or groups, and thus also with tree cover, may be        when predicting to novel situations. Methods that directly
+partly accounted for in the model by tree cover itself (over-       target residuals (e.g. spatial variograms, or regression mod-
+fitting), further reducing model residuals. We are unable to        els with structured errors; Table 1) may fail to detect this
+separate the contribution to the model of tree cover and the        problem because overfitting may hide the structure of the
+underlying random structure that tree cover represents, thus        residuals. This can occur even when using models that
+confounding individual or grouping structures.                      account for dependence structures, such as those discussed
+4) Phylogenetic or genetic structure - Imagine that we have         above (and listed in Table 1).
+drought tolerance data for a tree species, which tends to               As a consequence of both problems, cross-validation on
+vary across several genotypes. Also imagine that we use             random data splits (all of which will be largely consistent
+distance from the coastline as a covariate, knowing that            in underlying structure) as well as the various parametric
+interior populations can survive drier conditions. Drought          modelling options (Table 1) will tend to underestimate
+tolerance may be partly driven by the distance from the             predictive error (Araújo et al. 2005, Veloz 2009, Bahn
+coast, but is also affected by other, unmeasured covariates,        and McGill 2013), leading to false confidence in model
+leading to model residuals that are autocorrelated by phy-          predictions. We show in our later examples that this prob-
+logenetic relatedness (non-independence of residuals). It is        lem persists, although to a lower extent, even if appropri-
+possible that these missing covariates correlate both with          ate parametric models (e.g. spatial models, mixed models,
+coastal distance (say, if they are environmentally driven) and      PGLS) are used. To address these issues associated with
+with genetic relatedness (especially if the species migrated        dependence structures, whether or not we know they are
+
+916
+present, we can introduce blocking across the given correla-          We present an example in Box 2, in which we estimate
+tion structure into our cross-validations (Table 1). Different    resource selection functions (RSFs; Manly et al. 2002) with
+modelling objectives and different underlying data struc-         repeated movement observations of individual ungulates. In
+tures will necessitate different blocking approaches. When        this case study, blocking for cross-validation by individual
+models are intended only to predict within the same spatial       animals circumvents the problem of the underlying ran-
+and temporal ranges or on the same individuals or groups          dom structure and delivers a more realistic error estimate for
+by which they were trained, random cross-validation may           predictions onto new individuals. This case study also illus-
+yield fair error estimates because the model’s condition-         trates that, while a including random effects in a regression
+als do not change. When models are intended to only to            approach (i.e. a mixed model) might yield unbiased model
+predict on the same data structure, without the desire to         parameter estimates, it cannot offer a reliable uncertainty for
+make causal inferences, random cross-validation may yield         those estimates and, further, does not address the problem
+fair error estimates. However, if the goal is to infer causal     of underestimation of predictive error from cross-validations
+predictors, or predict into new dependence structures             with random data splits.
+(i.e. new locations, new time periods, new individuals or
+groups, or for new species within a phylogeny), blocking is
+required. Moreover, blocking can also be used to estimate         Blocking to account for phylogenetic correlations
+errors under extrapolation in predictor space, which will be
+discussed in the next section.                                    Species properties are often phylogenetically conserved,
+                                                                  meaning that closely related species tend to be more similar
+                                                                  to each other than distant relatives. Consequently, analyz-
+Blocking to account for spatial and temporal                      ing data across species can lead to phylogenetically correlated
+autocorrelation                                                   residuals, resulting in individual observations that are not
+                                                                  independent (Felsenstein 1985). Just as in time, space, or
+When validation data are randomly selected for cross-             individuals and groups, phylogenetic structure can be overfit
+validation from the entire spatial domain, training and           by the model when covariates correlate with phylogenetic
+validation data from nearby locations will be dependent           structure. It has therefore become common in ecological
+(spatial autocorrelation). Consequently, if the objective is      analysis to fit regression models that include phylogenetic
+to project outside the spatial structure of the training data,    structure in their residuals (PGLS; Table 1; Revell 2010).
+error estimates from random cross-validations will be overly      To ensure independence in cross-validation, it may also be
+optimistic. To address this, blocks can be designed across        necessary to block observations by phylogenetic distance.
+the spatial structure itself (i.e. in contiguous geographic       To our knowledge, such an approach to cross-validation
+space). This effectively forces testing on more spatially dis-    has not been undertaken in the phylogenetic literature. We
+tant records, thus decreasing spatial dependence and reduc-       demonstrate in Box 3 that this greatly improves inference for
+ing optimism in error estimates (Trachsel and Telford 2016).      phylogenetically structured data.
+We demonstrate this via a simulation in Box 1. Temporal
+autocorrelation, which is functionally similar to spatial auto-
+correlation in a single dimension, presents the same depen-       Disentangling blocking and extrapolation
+dence challenges. When models are intended to predict in
+time, blocks may be drawn in the same manner (i.e. blocks         So far, we have discussed block cross-validation as a means
+of contiguous time) to better ensure independence between         for model selection (Box 3) and calculating a corrected inter-
+cross-validation folds (Burman et al. 1994, Racine 2000,          polation error in the presence of correlation structures within
+Bergmeir and Benitez 2012).                                       data or residuals (Box 1, 2). Blocking, however, can also be
+                                                                  used to estimate extrapolation error. Extrapolations into
+                                                                  new predictor space are different from changes in underly-
+Blocking to account for random effect structures                  ing structure of the data: the latter only changes correlations
+                                                                  between predictors, while the former requires the model to
+A somewhat different structure is presented by hierarchical       predict a response in an area of predictor space about which
+data, such as blocked or nested experimental designs, data        they are uninformed. Models typically show larger error when
+replicated by individuals in groups, or repeated measure-         extrapolating into these no-analogue conditions (Pearson
+ments such as animal telemetry data. In these cases, data are     2006, Elith and Graham 2009). Consequently, if our mod-
+structured by units such that observations within the same        elling goal is extrapolation, we are likely to underestimate
+block, individual, or group will tend be more similar in          prediction errors with standard cross-validation approaches
+quality and more dependent in response. Just as with spa-         (Heikkinen et al. 2012). On the other hand, blocking may
+tial or temporal autocorrelation, models parameterised on         inadvertently restrict the predictor space for model training,
+such data may be fitted to the grouping structure itself via      especially as data structures are often collinear with clines in
+covariate predictors and consequent optimism in error esti-       predictor variables (e.g. spatial temperature clines), creating
+mates would be expected from random cross-validations (i.e.       overly pessimistic error estimates when model extrapola-
+that predict only on the same grouping structure) relative        tion is of no interest. Thus, when making decisions about
+to the error expected when predicting to new individuals or       cross-validation approaches, model objectives must be
+groups.                                                           carefully considered (Table 1).
+
+
+
+                                                                                                                             917
+  Box 1. Spatial blocking
+  Spatial structure in data can lead to the underestimation of model prediction error when covariate predictors allow
+  models to fit these structural patterns. In this simulation we investigate the ability of spatial blocking strategies to
+  minimize this problem. We simulated data of species abundances on a 50  50 grid that depended in complex ways
+  (interactions, non-linear combinations, limiting effects, and exclusion by disease) on four spatially autocorrelated
+  ‘environmental’ variables. We modelled the data using Random Forest (Breiman 2001) and compared the root mean
+  squared errors (RMSE) among evaluation strategies. The results are based on 100 replicated landscapes (Supplementary
+  material Appendix 2 for details).
+      Evaluation strategies tested included 1) using the same data for training and evaluation (resubstitution), 2) randomly
+  splitting data into training and test data (random), 3) splitting the data into training and test data blocked in space
+  with block sizes 10  10, 20  20 cells and half of the grid (25  50 cells), and 4) a leave-one-out cross validation
+  (LOO) with spatial buffering , in which the cell held-out for evaluation is buffered by a circle of cells (radius 5, 8 or
+  10), which are also omitted from the training set. We either used all test sites resulting from the evaluation strategies,
+  even if they were environmentally non-analogous to training data (no-analogues included), or restricted testing sites to
+  analogue ones (minimal environmental extrapolation). Cross-validations were compared to an ‘ideal’ RMSE, which was
+  estimated by producing a model for each of the 100 landscapes and predicting to the remaining 99 then averaging the
+  errors to achieve a single RMSE per landscape.
+      Our results show that ignoring dependence between training and test sites (resubstitution and randomly drawn
+  folds) lead to artificially low error estimates, while block cross-validation and the buffered LOO produce error estimates
+  much closer to the true error as determined by predicting on new, independent data, particularly when test sites are
+  forced to be environmentally analogous to training sites. We also find that the size of the blocks needs to be substantially
+  larger than the range of the spatial autocorrelation in the model residuals (∼10 units) to provide a good error estimate,
+  while a buffer size equivalent to distances at which residual autocorrelation is reduced to zero suffices for the buffered
+  LOO (Supplementary material Appendix 2 Fig. A1.1).
+      Complete R scripts for this simulation are provided in Supplementary material Appendix 6.
+
+                                                                                                      Ideal
+                                0.2
+                                                                                             Resubstitution
+                                                                                                 Random
+
+                                0.1
+
+
+                                0.0
+
+                                                                                                      Blocked
+                                0.2                                                                  10×10
+                      Density
+
+
+
+
+                                                                                                     20×20
+                                                                                                     25×50
+                                0.1
+
+
+                                0.0
+
+                                                                                                Buffered LOO
+                                0.2                                                            Radius = 5
+                                                                                               Radius = 8
+                                                                                              Radius = 10
+                                0.1
+
+
+                                0.0
+                                        0.25                0.50               0.75                1.00
+                                                                     RMSE
+  Figure B1.1. Root mean squared error (RMSE, n  100 simulations) for the various spatially blocked cross-validation approaches.
+  Semi-transparent shading and black vertical lines respectively show the 95% range and mean values of true RMSE (Ideal), which is
+  determined by predicting onto independent realizations of the simulation. Solid lines show RMSE distributions with all test locations
+  included while dashed lines show RMSE distributions with test locations non-analogous to training locations removed.
+
+
+
+
+918
+  Box 2. Blocking by individual or group
+  We estimated resource selection functions (RSFs) for 43 female elk Cervus elaphus monitored using satellite telemetry
+  in Alberta, Canada. We fitted generalized linear mixed models (GLMM) with a Bernoulli response (1  use by elk;
+  0  available, i.e. random points drawn from elk home ranges), environmental covariates as predictors, and elk indi-
+  vidual as a random intercept. Exponentiated non-intercept parameters estimates of the GLMMs were interpreted as
+  relative selection strength in favour of any given predictor (Lele et al. 2013).
+      RSFs were evaluated using five-fold cross-validation as proposed by Boyce et al. (2002), based on nonparametric
+  correlation between RSF bins and area-adjusted frequencies for each withheld sub-sample of the data in turn. A model
+  with good predictive performance has a strong positive correlation (Boyce et al. 2002). We evaluated the performance
+  of a full resubstitution model (train data  test data) and three five-fold cross-validations, each with a different blocking
+  design: 1) random, in which each elk contributed to each fold with 20% of its position fixes (no blocking); 2) randomly
+  selected individuals, in which each elk contributed to one fold with 100% of its fixes and home ranges of elk belonging
+  to different folds may overlap (blocked by individual); and 3) spatially blocked individuals, in which each elk contrib-
+  uted to one fold with 100% of its fixes and selected in such a way that home ranges of elk belonging to different folds do
+  not overlap (blocked by individuals that behave independently). Extended methods and complete results are provided
+  in Supplementary material Appendix 3.
+      Evaluation by both resubstitution and random cross-validation erroneously suggests outstanding model performance
+  (Fig. B2.1a–b). In contrast, both blocked cross-validations (by individual and by spatially blocked individual) showed
+  notably lower performances on average and much higher variability in Spearman-rank correlations across folds (Fig.
+  B2.1ab). Cross-validation blocked by random individuals resulted in a notable decrease in model evaluation perfor-
+  mance relative to random splits across all position fixes. Blocking by spatially independent individuals resulted in no fur-
+  ther decrease in model performance, suggesting that independence between folds was achieved at the level of individual
+  animals (or, ecologically speaking: individuals with overlapping home ranges did not behave more similarly than any
+  two random individuals). Parameter estimates, while consistent on average across methods, covered a wider breadth of
+  values in the blocked cross-validations, providing a measure of uncertainty for their true values (Supplementary material
+  Appendix 3).
+      Both the acceptance of precision in parameter estimates as well as optimism in model validations due to non-inde-
+  pendent folds are prevalent in RSFs studies (Supplementary material Appendix 1 Table A1.2–A1.3; but see Wiens et al.
+  2008, Koper and Manseau 2009, Coe et al. 2011). Block cross-validation can help avoid such overconfidence in model
+  performance and foster greater care in the search for sound model structures.
+      Complete R scripts and data for this case study are provided in Supplementary material Appendix 6.
+    (a)                                                                                                                             (b)
+                     3.0   Resubstitution            Random fixes             Randomly                   Spatially                        1.00
+                     2.5                                                      blocked                    blocked
+                                                                                                                                          0.95
+                                                                              individuals                individuals
+     Area adjusted
+
+
+
+
+                     2.0
+       frequency
+
+
+
+
+                                                                                                                                    rho
+
+
+
+
+                                                                                                                                          0.90
+                     1.5
+                                                                                                                                          0.85
+                     1.0
+                                                                                                                                          0.80
+                     0.5
+                                                                                                                                                 Resub- Random Randomly Spatially
+                            2    4   6      8   10    2   4   6      8   10    2    4       6   8   10    2    4       6   8   10                stitution fixes   blocked     blocked
+                                                                    Binned RSF score                                                                             individuals individuals
+
+  Figure B2.1. Summaries of resource selection function (RSF) implementations incorporating several validation approaches including
+  resubstitution, cross-validation with random fixes, cross-validation with randomly blocked individuals, and cross-validation with
+  spatially blocked individuals, showing (a) the area-adjusted frequency of RSF score bins and (b) Spearman’s rank correlations (rho)
+  between RSF bin ranks and area-adjusted frequencies for each cross-validation fold.
+
+
+
+Avoiding extrapolation                                                                                   and more local extents (Mackey and Lindenmayer 2001).
+                                                                                                         When models are intended to interpolate (i.e. predict only to
+Environments tend to be structured in space and time: cli-                                               similar predictor space), blocking may induce extrapolation
+mates tend to be similar in nearby locations just as they tend                                           in cross-validation when unnecessary. While it’s unlikely that
+to be similar in consecutive time periods. Therefore, because                                            this can be avoided entirely, these effects can be minimised
+blocking to achieve structural independence in cross-                                                    by 1) using blocks no larger than necessary considering the
+validation requires the grouping of similar structural groups                                            grain and extent of analysis and the spatial scale of patterning
+(e.g. contiguous space or time), such blocking also might                                                of environment, 2) using as much data as possible for model
+group similar predictor space together, potentially removing                                             training, and 3) representing predictors equally across blocks
+all such like space from the remaining data. This effect is                                              or folds.
+likely to be more pronounced when simple sets of predic-                                                     Extrapolation will generally increase as more data are
+tor variables with global effects such as climate are used, in                                           withheld for testing (Box 4). Consequently, predictor
+contrast to variables that explain distributions at finer grains                                         coverage in training data can be maximised by making blocks
+
+                                                                                                                                                                                           919
+(or leave-one-out buffers) only as large as required. The min-   via structural covariates may reduce residual autocorrelation
+imum blocking distance should be the extent of autocor-          while not offering increased independence. Therefore, larger
+relation in model residuals (‘autocorrelation requirements’      blocks than suggested by variograms or other measures of
+in Fig. 2a). If correlation structures are multidimensional,     autocorrelation may be required to avoid optimistic error
+anisotropic analyses of residual autocorrelation (in individ-    estimates, though the extent of this effect is unlikely to be
+ual dimensions) may also allow blocks to be narrower in one      known by the modeller. While the potential for introducing
+direction than the other, while still achieving independence.    extrapolation is higher when blocks are made conservatively
+For example, a model describing spatial data that is missing     large, this can be mitigated through different approaches to
+a key temperature variable may result in residual autocorrela-   block fold assignments (Fig. 2b).
+tion that extends in the north–south direction (the general          While the preferred number of folds in k-fold approaches
+direction of the temperature gradient) much farther than         has been suggested to be between 5 and 10 (Kohavi 1995,
+in the east–west direction. Dividing such data into square       Hastie et al. 2009), such recommendations are perhaps more
+blocks or defining a circular buffer radius for a leave-one-     appropriate for random splitting where an ad hoc number
+out approach based on an isotropic autocorrelation distance      of folds must be chosen. To include as much data for model
+would, in such a case, result in unnecessarily large east–       training as possible in each cross-validation iteration, each
+west block distances, and potentially introduce unnecessary      block should be its own fold. This, of course, maximises
+extrapolation into the cross-validation. Portrait-oriented       required iterations of the cross-validation, resulting in a
+rectangular blocks might better limit extrapolation.             potentially computationally expensive procedure, particu-
+    We state the extents of residual autocorrelation as a        larly when models are slow to fit or when data sets are very
+blocking minimum because, as explained above, overfitting        large (‘computational limits’ in Fig. 2a). However, while a
+
+
+
+  Box 3. Blocking to address phylogenetic correlation
+  To show the use of phylogenetic blocking, we simulate a simple trait-environment relationship (body mass versus lati-
+  tude) with residual variation structured by phylogenetic distance, then cross-validate regression predictions using three
+  approaches: a random k-fold, a k-fold blocked in phylogenetic distance, and a leave-one-out approach with buffering
+  by phylogenetic distance. We also use these cross-validations for model selection, as well as considering model selection
+  based on AIC of a standard regression (LM) and a geographic least squares regression (GLS).
+      Trait-environment data were random environmental observations (latitudes between 0 and 90) for 50 hypothetical
+  species with a phylogeny created by a standard birth-death process. Body mass response was calculated from a quadratic
+  (3 parameter) function, to which we added phylogenetically structured error by sampling from a multivariate normal
+  distribution with phylogenetic distance as covariance (Fig. B3.1a–b). Semivariograms indicated that residual autocor-
+  relation did not extend beyond ∼0.5 units of phylogenetic distance.
+      Model selection was between eight regressions of increasing complexity (i.e. increasing polynomial order), based
+  on minimum AIC for the LM and GLS resubstitution approaches or based on minimum root mean squared error
+  (RMSE) for the cross-validations. Three cross-validation approaches were considered. First, we ran 5- and 10-fold
+  cross-validations with data assigned to folds randomly. Second, we ran blocked 5- and 10-fold cross-validations with
+  folds defined by hierarchical clustering of the phylogenetic distances (Fig. B3.1b). Last, we implemented a phylogeneti-
+  cally independent leave-one-out cross-validation, in which each data point was withheld in turn for model testing and
+  the remaining data used for model training, with the exception of data within a predetermined buffer of phylogenetic
+  distance (either 0.00, 0.25, 0.50, 0.75 or 1.00 phylogenetic distance units) around the withheld point. The entire data
+  building and cross-validation simulation process was repeated 100 times. Extended methods and complete results are
+  provided in Supplementary material Appendix 4.
+      For model selection (Fig. B3.3c), the GLS was the best model selection tool of any approach (correct structure in
+  60% of the simulations), while the blocked cross-validations and buffered leave-one-out approaches also performed
+  well. The LM, the random cross-validations, and the unbuffered leave-one-out were the worst (correct structure in
+  12–18% of simulations), more often choosing overly complex models. For error estimates, blocked and leave-one-out
+  cross-validations resulted in both median RMSE and ranges of RMSE better-approximating the true errors in the data
+  generating model, while both the LM and GLS resubstitution as well as the random cross-validations and leave-one-out
+  cross-validations with smaller buffers gave optimistic error estimates (Fig. B3.1d). Only the five-fold blocked cross-
+  validation and the leave-one-out with the largest buffer size (1.0) resulted in RMSE values higher than those of the true
+  model (i.e. overly-pessimistic validations).
+      Generally speaking, GLS reduced overfitting in model selection compared to the non-independent approaches (i.e.
+  LM, random cross-validations, and leave-one-out cross-validations with smaller buffer sizes). However, error estimates
+  for GLS, while an improvement on the non-independent approaches, were still optimistic. The block cross-validations
+  and leave-one-out cross-validations with sufficiently large buffers provided the best combination of model selection and
+  reliable error estimation.
+      Complete R scripts for this simulation are provided in Supplementary material Appendix 6.
+
+                                                                                                                 (Continued)
+920
+Box 3. (Continued)
+
+                                 (a)
+                                            50
+
+
+
+
+                                Body mass
+                                            25
+
+
+
+
+                                             0
+                                                  0                   30                          60                        90
+                                                                                     Latitude
+
+
+                                 (b)                                  Random Blocked Model
+                                                                       folds  folds residuals
+                                                                                                                  Residuals
+                                                                                                                      High +
+
+
+                                                                                                                      Low
+
+
+                                                                                                                      High -
+
+
+
+                                 (c)
+                                     Resubstitution (LM)
+                                 Resubstitution (GLS)
+                                             Random (k=10)
+                                                 Random (k=5)
+                                              Blocked (k=10)
+                                                  Blocked (k=5)
+                                                  LOO (b=0.50)
+                                                  LOO (b=1.00)
+                                                                  2   3          4       5        6       7       8         9
+                                                                           Number of model parameters
+
+                                 (d)
+                                            0.4                                                     Resubstitution (LM)
+                                                                                                   Resubstitution (GLS)
+                                            0.3                                                        Random (k=10)
+                                                                                                        Random (k=5)
+                                            0.2
+                                Density
+
+
+
+
+                                                                                                       Blocked (k=10)
+                                                                                                        Blocked (k=5)
+                                            0.1                                                           LOO (b=0.5)
+                                                                                                          LOO (b=1.0)
+                                            0.0
+
+
+
+                                                   0              5         10               15            20             25
+                                                                                      RMSE
+ Figure B3.1. Blocking in phylogenetic space. (a) Sample regression (grey line) showing the simulated relationship between a species
+ trait (body mass) and the environment (latitude) with phylogenetically structured correlation in the residuals, conforming to the
+ assumptions of a PGLS model. Shapes represent random cross-validation folds and colours represent blocked cross-validation folds.
+ (b) Sample phylogenetic tree in which 25 tips (species) are assigned to cross-validation folds randomly or assigned to folds by
+ hypothetical clades based on phylogenetic distance. Autocorrelation in the phylogenetic structure can be visualised as simulated trait
+ residuals structured by genetic distance in the tree. (c) Violin plot showing the distribution of model complexity (number of parameters
+ in the selected model) for each cross-validation approach across the simulations. The number of parameters in the true data generating
+ model (3 parameters) is shaded in grey. (d) Results of the phylogenetic blocking simulation showing distributions of RMSE in trait
+ predictions from the resubstitution, from both the random and blocked cross-validations (with the number of folds, k, shown in
+ brackets), and from the buffered leave-one-out (LOO) cross-validation (with the buffer size, b, shown in brackets). The shaded grey
+ area represents the 5th to 95 percentile range of the true model RMSE. Horizontal bars below the plot show the 5th to 95th percentile
+ range of the RMSE for each approach.
+
+
+
+                                                                                                                                       921
+  Box 4. Blocking for extrapolation
+  We examined the effect of blocking in environment on cross-validation, in a typical species distribution modelling
+  approach for Douglas-fir Pseudotsuga menziesii habitats in western North America. Species presence–absence records
+  were paired with climate data from the 1961–1990 period and divided into groups for k-fold cross-validation using
+  several data splitting approaches: random splits, splits in geographic space, splits in predictor space, as well as data
+  resubstitution (no splitting). Geographic splits were implemented with a two-fold checkerboard pattern across spatial
+  grids of varying size. We also implemented a buffered leave-one-out cross-validation with buffer radii of 100, 500, 1000
+  and 1500 km (Box 1).
+      Correlograms indicated that residual autocorrelation was virtually non-existent past distances of ∼220 km. Modelling
+  was done with Random Forest (Breiman 2001) and models were evaluated on predictions to all folds using AUC.
+  Extrapolation was quantified by 1) calculating the Euclidean distance across all principal component predictors from
+  each point in the withheld fold back to each point in the model training data, 2) for each withheld point, calculating
+  the first percentile distance, and 3) calculating the average of the first percentile distances from all points in the withheld
+  data. See Supplementary material Appendix 5 for detailed methods and results.
+      Both spatial and environmental blocking induce extrapolation between folds (Fig. B4.1a). The largest spatial blocks
+  (e.g. 1  2 blocking) and the coarsest environmental blocks (e.g. 2-group cluster analysis or splitting only in PC1) result
+  in both the largest environmental distances and the lowest estimates of predictive accuracy (AUC), with the effect being
+  much stronger for spatial blocks than for purely environmental blocks (Fig. B4.1a). There is a small but visible decrease
+  in AUC for environmental blocks relative to spatial blocks at the same geographic distance, suggesting a cumulative
+  effect on predictive accuracy when spatial and environmental extrapolation are combined (Fig. B4.1b). The buffered
+  leave-one-out approach both minimises extrapolation and increases predictive accuracy relative to other methods at
+  similar geographic distances.
+      While the effect of spatial autocorrelation may account for decreasing accuracy at distances up to ∼220 km, it
+  cannot explain the continued decrease in AUC at much larger distances. Also, with only a moderate effect on accuracy,
+  environmental extrapolation requirements are also unlikely to be the cause of this decrease. More likely, across larger
+  spatial blocks, the underlying spatial structure changes (e.g. competition regimes, disease presences, changes in local
+  adaptations of genetic populations, etc.). While some of this structure may be overfit with spatially autocorrelated
+  predictors, this overfit is likely to break down across space, thus reducing model predictive accuracy in new regions
+  (i.e. into alternative blocks). This overfit also hides these effects from our measurements of spatial autocorrelation, as
+  correlograms or semivariograms were built using residuals from a full data model that could be overfit to the complete
+  spatial structure.
+      In summary, while purely environmental splits force extrapolation, they are unlikely to account for spatial
+  autocorrelation or structural overfitting because blocks may be spatially intertwined. Further, smaller spatial blocks,
+  even those that seemingly account for residual autocorrelation, may be insufficiently large to account for structural
+  overfitting.
+      Complete R scripts and data for this case study are provided in Supplementary material Appendix 6.
+         (a)                                                                         (b)
+               1.0                                                                         1.0           r = –0.997
+                           r = –0.995
+
+
+               0.9                                               r = –0.996                0.9
+
+
+
+                                                                                                                                          r = –0.945
+               0.8                                                                         0.8   r = –0.976
+         AUC
+
+
+
+
+                                                                                     AUC
+
+
+
+
+               0.7                       r = –0.949                                        0.7
+                                                                                                                r = –0.978
+                       r=
+                      –0.852
+               0.6                                                                         0.6
+
+
+
+               0.5                                                                         0.5
+
+                     0.0           0.2           0.4             0.6          0.8                0      250       500    750       1000      1250      1500
+                                  Environmental distance                                                   Geographic distance (km)
+
+                       Resubstitution         Random splitting         Environmental blocking        Spatial blocking        Buffered leave-one-out
+
+  Figure B4.1. Model prediction accuracy (AUC) as function of the minimum (a) environmental distance and (b) minimum
+  geographic distance between training and test data in various k-fold blocking approaches. While relationships are drawn as linear,
+  the theoretical minimum AUC is 0.5 (for a random model).
+
+
+
+922
+cross-validation with a large number of folds might be com-       Extrapolation errors are difficult to estimate because no data
+putationally intensive, there is no conceptual barrier to it so   exist in the domain to which the model is predicting. In such
+long as validation data meet the assumptions of indepen-          cases, we may consider cross-validation strategies that try to
+dence. That said, with small values of k, resulting in limited    simulate model extrapolation: splitting training and testing
+model training data (‘data limits’ in Fig. 2a), bias in cross-    data so that the domain of predictor combinations in both
+validation folds may become problematic, so the value of          sets is not overlapping. To sensibly interpret the results, we
+k may depend strongly on the overall data quantity (Hastie        require some measure of dissimilarity in predictor space, a
+et al. 2009). The recycling of training data is, of course,       metric not completely straightforward to quantify. Models
+maximised in leave-one-out approaches, which are also the         may include numerous predictors, some of which are auto-
+most computationally intensive, requiring a new model to          correlated and not all of which are equally important to every
+be fitted for each point in the data.                             species. The simplest metrics of dissimilarity are comparisons
+    When leave-one-out approaches or k-fold approaches            of individual variable ranges (Capinha et al. 2012, Anderson
+with numerous folds are not feasible or not desired, assign-      2013) that, while identifying extreme values in single variable
+ments of numerous blocks to fewer folds can be imple-             dimensions, do not identify new arrangements of variable
+mented in ways that ensure a greater variability of predictors    combinations. A more comprehensive approach involves
+are represented in each fold (Fig. 2b). While random assign-      measuring multivariate distances across standardised vari-
+ment of blocks to folds might result in good representation       ables (Williams et al. 2001, Elith et al. 2006, Roberts and
+of predictor space in all folds, other approaches may bet-        Hamann 2012b, Mesgaran et al. 2014) or principal compo-
+ter ensure this. For example, blocks can be systematically        nents (Broennimann et al. 2012, Eiserhardt et al. 2013; Box
+assigned to folds in checkerboard or repeating patterns to        4) or measurements to multivariate convex hulls around data
+distribute them evenly across the data (Fig. 2b, ‘systematic’).   clouds (Cornwell et al. 2006).
+A more directed approach could also be to divide predic-              There are limited examples of cross-validations imple-
+tors manually between folds (e.g. manually distribute blocks      mented with data splits directly in predictor space
+with similar values for key environmental values between          (Supplementary material Appendix 1 Table A1.2) and most
+folds). For more complex predictor space (i.e. more vari-         are a byproduct of spatial data splitting (Fløjgaard et al.
+ables), random fold assignments can be repeated many              2009, Roberts and Hamann 2012a, Wenger and Olden
+times, measuring predictor dissimilarity between folds for        2012). While Newbold et al. (2015) and Stephens et al.
+each iteration, then choosing the optimal assignment result-      (2016) used biome delineations to block, these are also
+ing in lowest dissimilarity between folds (Fig. 2f, ‘optimised    inferred extrapolations based on predefined spatial groups.
+random’). This approach, of course, only ensures that pre-        Many assessments of model extrapolation fall under tests
+dictor space in each fold will be equally different and not       of the ‘transferability’ or ‘generalisability’ of a specific habi-
+necessarily different in the same way. We note that whilst        tat model (Thomas and Bovee 1993, Leftwich et al. 1997,
+this is called ‘block’ cross-validation, the implication is not   Schröder and Richter 2000, Chee and Elith 2012, Schibalski
+that the divisions need to be rectangular. For instance, blocks   et al. 2014). While these studies evaluate model perfor-
+might be based on sampling units themselves (Buston and           mances, they seldom quantify extrapolation requirements
+Elith 2011), Box 2, or on distinct geographic features such as    or analyse links between predictive performance decline and
+river catchments (Chee and Elith 2012) or mountain ranges         dissimilarity between training and prediction data. To date,
+(Bulluck et al. 2006).                                            while some ecological studies have linked decreases in predic-
+                                                                  tive accuracy to measures of data dissimilarity (Capinha et al.
+                                                                  2012), only few have attempted to systematically quantify
+Deliberately inducing extrapolation                               such patterns (Thuiller et al. 2004, Heikkinen et al. 2012,
+                                                                  Roberts and Hamann 2012a, Bahn and McGill 2013), all
+In practice, modellers are often not only interested in the       of which expectedly found decreased prediction accuracy
+accuracy of their model predictions within the domain             with increased dissimilarity between training and testing
+for which data exists (interpolation), but also beyond this       data. In these comparative studies, extrapolation was always
+domain (extrapolation). The need for such estimates is            a byproduct of spatial blocking. Of course, such validations
+apparent in applications such as species habitat projections      assume that assessments of transferability in space to differ-
+under future climate change, for which the prediction data        ent predictor space can mimic assessments of transferability
+is likely to contain no-analogue predictor space, i.e. condi-     in time to different predictor space (Blois et al. 2013), but
+tions not observed within the training data (Williams and         see (Schröder and Richter 2000).
+Jackson 2007). Such extrapolation requirements are rela-
+tively straightforward to identify and measure via compari-
+sons of training and prediction data, such as by examining        How should blocks in predictor space be constructed?
+individual variable ranges or by measurements of multivari-
+ate distances such as the MESS maps in Maxent and related         A key challenge to blocking in predictor space for cross-
+procedures (Elith et al. 2010, Zurell et al. 2012, Mesgaran       validation is to decide how folds should be defined to inform
+et al. 2014).                                                     the predictive objectives of the model. The intuitive approach
+    The key question for model extrapolation then is not          may be to measure the dissimilarity between training and
+whether a model is still ‘valid’ when applied to new data         prediction data, then define blocks in such a way that the
+(it almost certainly is not), but rather to what degree the       extrapolation requirements within the cross-validation are
+violation of assumptions undermines predictive accuracy.          as similar as possible in magnitude and direction to those
+
+
+                                                                                                                               923
+(a)                                                                                                    are common tools in economics (Ohlson and Zhang 1999),
+                                                                                                       and meteorology (Foley et al. 2012) but have also recently
+                                             SMALL                                                     been considered in ecology (Petchey et al. 2015; Fig. 3b).
+      Autocorrelation                        BLOCKS                             Data
+       requirements                                                            limits                  While this approach does not require any ad hoc calculation
+                                                                                                       of dissimilarity, it is more computationally intensive in that
+                                         Block size
+                                        sweet-spot
+                                                                                                       dissimilarity measures and cross-validations must be under-
+                           LARGE                                     MEDIUM                            taken for many blocking structures to determine the range
+                           BLOCKS                                    BLOCKS                            of model performance.
+                                                                                                          To our knowledge, there are no examples in the literature
+                                       Computational
+                                                                                                       of cross-validations using blocks purely defined in predictor
+                                          limits                                                       space. In Box 4, we offer a species distribution modelling case
+                                                                                                       study for North American Douglas-fir, in which we compare
+                                                                                                       cross-validations based on random splitting, spatial block-
+(b)       Variable 1                        Variable 2                          Unique
+                                                                                                       ing, and environmental blocking. Our results demonstrate
+                                                                                                       that blocking purely in environment will decrease perceived
+                                                                       57 58 59 60 61 62 63 64
+                                                                       49 50 51 52 53 54 55 56
+                                                                                                       model accuracy in cross-validations, but that estimates may
+                                                                       41 42 43 44 45 46 47 48         remain optimistic if underlying correlation structures are not
+                                                                       33 34 35 36 37 38 39 40
+                                                                       25 26 27 28 29 30 31 32
+                                                                                                       addressed.
+                                                                       17 18 19 20 21 22 23 24
+                                                                       9 10 11 12 13 14 15 16
+                                                                       1   2   3   4   5   6   7   8
+                                                                                                       Guidance: how to block
+          Contiguous                        Systematic                 Optimised random
+                                                                                                       In this section, we suggest a workflow for cross-validation
+  3   3    3   3   4   4   4   4   4    1    2   3   4   1   2   3     4   4   2   2   4   3   3   1
+  3   3    3   3   4   4   4   4   3    4    1   2   3   4   1   2     1   2   1   2   4   4   1   1
+                                                                                                       to clarify when and how to implement different data
+  3   3    3   3   4   4   4   4   2    3    4   1   2   3   4   1     3   2   2   4   1   4   2   4   splitting strategies. The focus of this workflow is not on
+  3
+  1
+      3
+      1
+           3
+           1
+               3
+               1
+                   4
+                   2
+                       4
+                       2
+                           4
+                           2
+                               4
+                               2
+                                   1
+                                   4
+                                        2
+                                        1
+                                             3
+                                             2
+                                                 4
+                                                 3
+                                                     1
+                                                     4
+                                                         2
+                                                         1
+                                                             3
+                                                             2
+                                                                 4
+                                                                 3
+                                                                       2
+                                                                       3
+                                                                           3
+                                                                           1
+                                                                               3
+                                                                               4
+                                                                                   1
+                                                                                   3
+                                                                                       2
+                                                                                       3
+                                                                                           2
+                                                                                           4
+                                                                                               4
+                                                                                               3
+                                                                                                   3
+                                                                                                   2
+                                                                                                       providing a fixed recipe for blocking, but rather on high-
+  1   1    1   1   2   2   2   2   3    4    1   2   3   4   1   2     2   1   4   1   3   3   2   3   lighting the questions a researcher should ask in this con-
+  1   1    1   1   2   2   2   2   2    3    4   1   2   3   4   1     3   2   3   2   3   4   1   2   text. The exact answers to these questions are necessarily
+  1   1    1   1   2   2   2   2   1    2    3   4   1   2   3   4     4   4   1   1   3   1   1   4
+                                                                                                       dependent on modelling objectives, data structures, com-
+                                                                                                       putational capabilities, as well as the desire for conserva-
+Figure 2. Approaches for choosing appropriate block sizes to
+minimise extrapolation. (a) The tradeoffs in block size selection                                      tism in assessments of model forecast errors in the context
+between addressing residual autocorrelation requirements and                                           of their results. We have discussed these implications and
+working within the data and computational limits. (b) Sample fold                                      tradeoffs above.
+assignments of hypothetical spatial blocks for cross-validation,
+which result in different levels of representation of predictor space
+based on combinations of two environmental variables (Variable 1                                       Step 1. Assess dependence structures in the data
+and Variable 2). When feasible, all blocks may be assigned to their
+own fold for cross-validation (Unique). When fewer folds than                                          Determine the dependence structure in the raw data (temporal/
+blocks are used, grouping contiguous blocks together will result in                                    spatial/phylogenetic autocorrelation using autocorrelation
+high dissimilarity between folds (Contiguous), except in very                                          plots, variograms, or correlograms; quantify variance con-
+homogeneous environments. Both systematic assignment of folds                                          tribution in nested data using intercept-only mixed effect
+(Systematic) and repeated random assignment with the final assign-
+                                                                                                       models). This serves as rough guidance on the scale of block-
+ment based on minimum dissimilarity (Optimised random) can
+ensure lower dissimilarity between folds. While this figure shows                                      ing (at least as many units as the range of autocorrelation;
+a spatial example, similar approaches could be used for other                                          at least at the most variable hierarchical level). It should be
+correlation structures.                                                                                emphasised here that, while modellers are most often con-
+                                                                                                       cerned with autocorrelation in model residuals, dependence
+                                                                                                       structures in this step are assessed on raw data, as this is
+for the predictions. In k-fold approaches, where every fold is                                         where overfitting of predictor variables may occur.
+used exactly once for testing, this becomes a zero-sum game
+where the more one fold resembles the objective extrapo-
+lation, the more the others do not! In these cases, tests of                                           Step 2. Determine prediction objectives
+predictions to particular folds may be more informative in
+the context of extrapolation than the overall error estimate                                           Will the model predict into new dependence structures
+across all folds.                                                                                      (spaces, times, groups, etc.), or into new predictor space, or
+    Alternatively, cross-validations could be run several times                                        both? While extrapolation in predictor space, time, and geo-
+with spatial or other structured blocks defined in a variety                                           graphic space may be straightforward to quantify (Box 1, 4),
+of sizes and/or orientations. This approach produces a range                                           changes in hierarchical structure may necessitate more delib-
+of validation statistics from the cross-validations rather than                                        eration. For example, while some determinations of what
+just a single value (Fig. 3a). From this range, it may be pos-                                         constitutes a new ‘group’ of individuals may be obvious, oth-
+sible to define a limit, either in spatial block size or variable                                      ers may be more nuanced (e.g. herds with non-overlapping
+dissimilarity, at which the model no longer produces useful                                            ranges vs. individuals in the same herd that move largely
+predictions. Such extrapolation limits, or ‘forecast horizons’,                                        independently, Box 2).
+
+
+924
+                         (a)                                             (b)
+                            Good                                           Good
+
+
+                                                                                                              Performance
+
+
+
+
+                             Performance
+
+
+
+
+                                                                            Performance
+                                                                                                               threshold
+
+
+                                                                                            Forecast
+                                                                                            horizon
+
+                              Poor                                           Poor
+
+
+                                                         Dissimilarity                                  Dissimilarity
+                                           Increasing:                                    Increasing:
+                                                         Block size                                     Block size
+
+
+Figure 3. (a) Conceptual figure demonstrating the expected relationship between extrapolation requirements (either from dissimilarity
+between model training and prediction data or from blocking in cross-validation) and model accuracy, where accuracy generally decreases
+while dissimilarity increases. (b) Conceptual figure of a ‘forecast horizon’ (blue dashed line), based on repeated cross-validation with differ-
+ently sized blocks, resulting from the drawing of a model performance threshold (dashed grey line). Because extrapolation requirements
+may vary at a given prediction performance threshold (e.g. across folds), the forecast horizon may include a range of values (blue shading).
+Extrapolations beyond the horizon would be considered too unreliable to be useful (adapted from Petchey et al. 2015).
+
+
+Step 3. Block according to objectives and structure                               from the blocked cross-validation methods should
+                                                                                  be used. This approach favours final prediction qual-
+When predictions will be made into new dependence struc-                          ity over perfect accuracy of error estimates. It has the
+tures, blocks should be drawn so that similar structural                          advantage of using all the data and thus likely being
+conditions are grouped together (e.g. spatial blocks when                         the best predictor, particularly for smaller datasets.
+predicting to new sites; time-slice blocks of similar duration                    It has the disadvantage that the error estimates from
+as the one predicting to; herds as blocks when predicting to                      the cross-validation no longer apply perfectly to the
+a new herd; clades defined at the same phylogenetic branch-                       predictions, as they were made with slightly different
+ing depth as the clade to predict to; Box 1, Box 2, Box 3                         models. However it would be safe to assume that the
+for examples). Blocks can also be designed or arranged (or                        error estimates are conservative (i.e. the final model
+fold assignments or cross-validation methods can be chosen)                       should perform better), so this may not be a major
+to either minimise extrapolation or to emulate the extrap-                        disadvantage.
+olation required between the training and prediction data                      2) All the individual models from the cross-validation
+(Box 4).                                                                          can be preserved and predictions from all models can
+                                                                                  be combined (Hastie et al. 2009). For example, in a
+                                                                                  k-fold approach, k different models are fitted, each
+Step 4. Perform the cross-validation                                              describing a slightly different combination of training
+                                                                                  data. Predictions on the new data can be made with
+Cross-validations may be performed for model comparison
+                                                                                  each of the k models, then averaged. This approach
+(and thus selection), error estimation, or both. There can
+                                                                                  has the advantage of preserving the direct relationship
+be many blocks within each fold of a cross-validation. For
+                                                                                  between the models and the error estimates (i.e. the
+example, if the block size of a spatial data set is 100  100
+                                                                                  ‘final models’ are exactly those evaluated) as well as
+km, then the entire study region of Canada can be checker-
+                                                                                  offering a variance for each prediction in the training
+boarded and a random set of blocks is assigned to each fold.
+                                                                                  data. On the downside, predictions are always made
+Or, if within a herd, subgroups of ungulates with similar
+                                                                                  by models fitted with incomplete training data, com-
+movement exist, these may serve as blocks and be assigned
+                                                                                  promising the sufficiency principle (i.e. that all pos-
+to fold across herds.
+                                                                                  sible information has been gleaned from the data) in
+                                                                                  the same way bagging does.
+Step 5. Make ‘final’ predictions
+
+The analyst essentially has two choices of how to determine               Challenges and limitations
+a ‘final model’ or make ‘final predictions’. Both have distinct
+                                                                          While block cross-validation may helpful in situations with
+advantages and disadvantages:
+                                                                          non-independent data, there are several instances in which
+   1) All the available training data can be used to fit a new            spatial, temporal, phylogenetic, or blocking in predictor
+      model with which to make a single set of final predic-              space may not be fruitful. This section aims at raising aware-
+      tions (Kuhn and Johnson 2013). As the error estimates               ness of these problems and of the general limitations that
+      from such a model are invalid, error estimates derived              prediction may face.
+
+
+                                                                                                                                           925
+    When data are scarce, cross-validation approaches that              (such as in count or presence–absence data) it affects all
+require models to be trained with further subset data may               estimates.
+not be feasible. Similarly, even when data are numerous but                 Possible solutions for selecting evaluation blocks when
+only cover small spatial or temporal ranges, achieving inde-            data sampling is irregular or unbalanced could be: 1) non-
+pendence between training and test data by blocking may                 gridded but consistently shaped blocks (e.g. pie-slices,
+not be possible. For example, if spatial autocorrelation per-           Fig. 4e), 2) stratified blocks with similar mean/prevalence
+sists at distances larger than half the spatial extent of the data,     (Elith et al. 2008, who suggest a blocking strategy with
+achieving independence in folds will be impossible no matter            equal number of occupied sites per block, Bahn and McGill
+how spatial blocks are structured. This may also be the case            2013), 3) grouped sets of blocks (e.g. checkerboards; Box
+for animal telemetry data when individuals move as a unified            1, 4) to ensure coverage of both presence–absence, and 4)
+group. In such cases, no plethora of data records from within           buffered leave-one-out approaches (Bahn 2009, Telford
+the same group will accommodate effective cross-validation              and Birks 2009, Le Rest et al. 2014; Box 1, 4). It should be
+for predictions to new independent individuals. This is more            noted, however, when using non-regular spatial block shapes
+likely to occur within opportunistically collected data, than           and arrangements, blocks may address autocorrelation
+in data collected in systematic surveys.                                inconsistently.
+    Irregular sampling may lead to data clusters in space,                  Last, in new predictor space, we might also encounter
+time or along other correlation structures, which may lead              changes in relationships among covariates (changing corre-
+to difficulties in defining effective regular blocks (Fig. 4a).         lation structures) or among species interactions themselves
+In such cases, the models fit on training data may encounter            (Fielding and Bell 1997). This can be particularly problem-
+highly variable sample sizes and prevalence rates, resulting            atic when predicting over larger time scales, enabling evolu-
+in artificially large error estimates. One solution may be to           tionary changes to violate assumptions of niche conservatism
+use irregularly arranged but similarly sized blocks (Fithian            (Maguire et al. 2015). Both situations, potentially undetect-
+et al. 2015; Fig. 4b) or irregularly shaped blocks (Lieske and          able by the modeller, can result in a loss of predictive power
+Bender 2011; Fig. 4c).                                                  (Austin 2002) and are not, unfortunately, addressed through
+    Similarly, even when sampling coverage is unbiased and              blocking in cross-validation.
+regular, in presence–absence data, prevalence of occur-
+rences may be highly unbalanced (Fig. 4d), leading to
+blocks entirely lacking either presences or absences (e.g.              Final thoughts
+withholding the centre square in Fig. 4d for validation).
+Unbalanced mean values of the response can also make                    In this review and synthesis, we have discussed the role
+cross-validation problematic if, for example, one tries to              of block cross-validation for better estimating prediction
+validate predictions using a block with only absence loca-              errors. It addresses prediction optimism, arising from non-
+tions (Fig. 4d). While this may primarily be a presence–                independent hold-out or from overfitting data dependence
+absence design problem, similar arrangements may appear                 with covariates. We did not, however, attempt to address
+in continuous response data. For example, in analyses                   the effect of this overfitting on parameter estimation, or on
+with linear link functions, unequal means only affect esti-             model selection. These topics would benefit from further
+mates of the intercept, but for non-linear link functions               exploration.
+
+
+                      (a)                             (b)                              (c)
+
+
+
+
+                      (d)                             (e)                              (f)
+
+
+
+
+                                               Species presence            Species absence
+
+Figure 4. Conceptual illustrations of challenges for block cross-validation in space. Data may be (a) highly unbalanced in distribution of
+samples, which can be addressed through (b) irregular spacing of blocks of consistent size and shape, or (c) irregularly shaped blocks. Data
+may also be (d) highly unbalanced in prevalence (number of presences versus absences), which can be addressed through (e–f ) non-gridded
+blocks and/or irregularly shaped blocks.
+
+
+926
+    Statistical models in ecology are used not just to describe       tion models (Box 2) was funded by the Alberta Conservation Asso-
+the present state of natural systems, but also to predict             ciation (ACA – Grant Eligible Conservation Fund; grants to SC
+their change or development over time. Such models are                and MSB), the Natural Sciences and Engineering Research Council
+fairly simple to create and have thus become ubiquitous               of Canada (NSERC CRD; grants to MSB and postdoctoral fellow-
+                                                                      ship to SC), and Shell Canada limited. The funders had no role in
+in all areas of ecological research. To determine whether             study design, data collection and analysis, decision to publish, or
+these statistical simplifications of ecological systems are           preparation of the manuscript.
+useful, we need effective model validation procedures that            Author contributions – All authors conceived the idea for this study.
+produce reliable error estimates. Unfortunately, many                 DRR, FH, CFD, SC and VB designed the study, and DRR, SC and
+popular evaluation and cross-validation approaches may                VB carried out the simulations and analyses. The initial draft was
+result in erroneous and misleading assessments of model               written by DRR. All authors contributed comments and improve-
+performance, either due to known and detectable issues of             ments to the manuscript.­­­
+non-independence (e.g. residual autocorrelation) or due to
+more clandestine issues (e.g. structural parameterisation via
+covariates).                                                          References
+    While developing a single-best approach to model vali-
+dation applicable to all situations is impossible, informed           Amesbury, M. J. et al. 2013. Statistical testing of a new testate
+choices may be guided by simple tests of dependence struc-                amoeba-based transfer function for water-table depth recon-
+tures and extrapolation demands. Parametric measures of                   struction on ombrotrophic peatlands in northeastern Canada
+model fit or cross-validations with random data splits only               and Maine, United States. – J. Quat. Sci. 28: 27–39.
+provide reliable error estimates for model predictions in very        Anderson, R. P. 2013. A framework for using niche models to
+                                                                          estimate impacts of climate change on species distributions.
+specific cases where critical assumptions of independence                 – Ann. N. Y. Acad. Sci. 1297: 8–28.
+and non-extrapolation are met. Such situations are rare in            Araújo, M. B. et al. 2005. Validation of species-climate impact
+ecology and, as our simulations and case studies illustrate,              models under climate change. – Global Change Biol. 11:
+can be very difficult to identify ad hoc.                                 1504–1513.
+    In cases where the assumption of independence is com-             Arlot, S. and Celisse, A. 2010. A survey of cross-validation proce-
+promised or where model extrapolation is likely, cross-                   dures for model selection. – Stat. Surv. 4: 40–79.
+validations with non-random blocks, carefully chosen in               Austin, M. P. 2002. Spatial prediction of species distribution: an
+light of modelling objectives, can offer more reliable error              interface between ecological theory and statistical modelling.
+                                                                          – Ecol. Modell. 157: 101–118.
+estimates. The price of slightly conservative model valida-           Bahn, V. 2009. A new method for evaluating species distribution
+tion (e.g. using a blocked approach when not necessary) is                models. – 94th Ecol. Soc. Am. Ann. Meeting.
+small compared to the unwarranted confidence in model                 Bahn, V. and McGill, B. J. 2007. Can niche-based distribution
+predictions one might have with random cross-validation                   models outperform spatial interpolation? – Global Ecol.
+(or with no cross-validation at all). By overestimating pre-              Biogeogr. 16: 733–742.
+dictive confidence, ecological modellers fail to adequately           Bahn, V. and McGill, B. J. 2013. Testing the predictive performance
+incorporate uncertainty into conservation and manage-                     of distribution models. – Oikos 122: 321–331.
+ment decision-making and, more critically, sacrifice scien-           Bergmeir, C. and Benitez, J. M. 2012. On the use of cross-
+                                                                          validation for time series predictor evaluation. – Inf. Sci.
+tific credibility when a high proportion of such prognoses                191: 192–213.
+end up being wrong.                                                   Bjørnstad, O. N. and Grenfell, B. T. 2001. Noisy clockwork: time
+                                                                          series analysis of population fluctuations in animals. – Science
+                                                                          293: 638–643.
+Data deposition                                                       Blois, J. L. et al. 2013. Space can substitute for time in predicting
+                                                                          climate-change effects on biodiversity. – Proc. Natl Acad. Sci.
+Data available from the Dryad Digital Repository: < http://               USA 110: 9374–9379.
+dx.doi.org/10.5061/dryad.737gk > (Roberts et al. 2017).               Boyce, M. S. et al. 2002. Evaluating resource selection functions.
+                                                                          – Ecol. Modell. 157: 281–300.
+                                                                      Breiman, L. 2001. Random forests. – Machine Learning 45:
+Acknowledgements – We thank the German Science Foundation                 5–32.
+(DFG) for funding the workshop ‘Model averaging in Ecology’,          Breslow, N. E. and Clayton, D. G. 1993. Approximate inference
+held in Freiburg 2–6 March 2015 (DO 786/9-1), where the ideas             in generalized linear mixed models. – J. Am. Stat. Ass. 88:
+included in this manuscript were developed. We thank Lara Budic           9–25.
+for consultation and R code for phylogenetic trees and are grateful   Brockwell, P. J. and Davis, R. A. 1996. Introduction to time series
+to all those who made their data available.                               and forecasting. – Springer.
+Funding – DRR is supported by the Alexander von Humboldt              Broennimann, O. et al. 2012. Measuring ecological niche overlap
+Foundation through the German Federal Ministry of Education               from occurrence and spatial environmental data. – Global Ecol.
+and Research. BS is supported by the German Science Foundation            Biogeogr. 21: 481–497.
+(grant no. SCHR1000/6-2). CFD acknowledges additional fund-           Bulluck, L. et al. 2006. Spatial and temporal variations in species
+ing by the DFG (DO786/10-1). DIW and JE are supported by                  occurrence rate affect the accuracy of occurrence models.
+Australian Research Council Future Fellowships (grant no.                 – Global Ecol. Biogeogr. 15: 27–38.
+FT120100501 and FT0991640). GGA is the recipient of a                 Burman, P. et al. 1994. A cross-validatory method for dependent
+Discovery Early Career Research Award from the Australian                 data. – Biometrika 81: 351–358.
+Research Council (project DE160100904). The work of JJLM was          Buston, P. M. and Elith, J. 2011. Determinants of reproductive
+supported by the Australian Research Council Discovery Project            success in dominant pairs of clownfish: a boosted regression
+DP160101003. Collection of data used to build elk resource selec-         tree analysis. – J. Anim. Ecol. 80: 528–538.
+
+
+                                                                                                                                      927
+Capinha, C. et al. 2012. Predicting the impact of climate change         Kuhn, I. 2007. Incorporating spatial autocorrelation may invert
+    on the invasive decapods of the Iberian inland waters: an assess-        observed patterns. – Divers. Distrib. 13: 66–69.
+    ment of reliability. – Biol. Invas. 14: 1737–1751.                   Kuhn, M. and Johnson, K. 2013. Applied predictive modeling.
+Chee, Y. E. and Elith, J. 2012. Spatial data for modelling and               – Springer.
+    management of freshwater ecosystems. – Int. J. Geogr. Inf. Sci.      Larimore, W. E. and Mehra, R. K. 1985. The problem of overfitting
+    26: 2123–2140.                                                           data. – Byte 10: 167–178.
+Coe, P. K. et al. 2011. Validation of elk resource selection models      Le Rest, K. et al. 2014. Spatial leave-one-out cross-validation for
+    with spatially independent data. – J. Wildl. Manage. 75:                 variable selection in the presence of spatial autocorrelation.
+    159–170.                                                                 – Global Ecol. Biogeogr. 23: 811–820.
+Cornwell, W. K. et al. 2006. A trait-based test for habitat filtering:   Leftwich, K. N. et al. 1997. Factors influencing behavior and
+    convex hull volume. – Ecology 87: 1465–1471.                             transferability of habitat models for a benthic stream fish.
+Cressie, N. 1993. Statistics for spatial data. – Wiley.                      – Trans. Am. Fish. Soc. 126: 725–734.
+Dormann, C. F. et al. 2007. Methods to account for spatial               Legendre, P. 1993. Spatial autocorrelation – trouble or new
+    autocorrelation in the analysis of species distributional data: a        paradigm. – Ecology 74: 1659–1673.
+    review. – Ecography 30: 609–628.                                     Legendre, P. and Fortin, M. J. 1989. Spatial pattern and ecological
+Eiserhardt, W. L. et al. 2013. Dispersal and niche evolution jointly         analysis. – Vegetatio 80: 107–138.
+    shape the geographic turnover of phylogenetic clades across          Lele, S. R. et al. 2013. Selection, use, choice and occupancy:
+    continents. – Sci. Rep. UK 3: 1164.                                      clarifying concepts in resource selection studies. – J. Anim.
+Elith, J. and Graham, C. H. 2009. Do they? How do they? WHY                  Ecol. 82: 1183–1191.
+    do they differ? On finding reasons for differing performances        Lieske, D. J. and Bender, D. J. 2011. A robust test of spatial
+    of species distribution models. – Ecography 32: 66–77.                   predictive models: geographic cross-validation. – J. Environ.
+Elith, J. et al. 2006. Novel methods improve prediction of                   Inf. 17: 91–101.
+    species’ distributions from occurrence data. – Ecography 29:         Lundberg, P. et al. 2000. Population variability in space and time.
+    129–151.                                                                 – Trends Ecol. Evol. 15: 460–464.
+Elith, J. et al. 2008. A working guide to boosted regression trees.      Mackey, B. G. and Lindenmayer, D. B. 2001. Towards a hierarchical
+    – J. Anim. Ecol. 77: 802–813.                                            framework for modelling the spatial distribution of animals.
+Elith, J. et al. 2010. The art of modelling range-shifting species.          – J. Biogeogr. 28: 1147–1166.
+    – Meth. Ecol Evol 1: 330–342.                                        Maguire, K. C. et al. 2015. Modeling species and community
+Felsenstein, J. 1985. Phylogenies and the comparative method.                responses to past, present, and future episodes of climatic
+    – Am. Nat. 125: 1–15.                                                    and ecological change. – Annu. Rev. Ecol. Evol. Syst. 46:
+Fielding, A. H. and Bell, J. F. 1997. A review of methods for the            343–368.
+    assessment of prediction errors in conservation presence/            Mankin, J. B. et al. 1977. The importance of validation in ecosystem
+    absence models. – Environ. Conserv. 24: 38–49.                           analysis. – In: Innis, G. (ed.), New directions in the analysis of
+Fithian, W. et al. 2015. Bias correction in species distribution             ecological systems. Part I. The Society for Computer Simulation,
+    models: pooling survey and collection data for multiple species.         pp. 63–71.
+    – Meth. Ecol. Evol. 6: 424–438.                                      Manly, B. F. J. et al. 2002. Resource selection by animals: statistical
+Fløjgaard, C. et al. 2009. Ice age distributions of European small           design and analysis for field studies. – Kluwer.
+    mammals: insights from species distribution modelling. – J.          Mesgaran, M. B. et al. 2014. Here be dragons: a tool for quantify-
+    Biogeogr. 36: 1152–1163.                                                 ing novelty due to covariate range and correlation change when
+Foley, A. M. et al. 2012. Current methods and advances in                    projecting species distribution models. – Divers. Distrib. 20:
+    forecasting of wind power generation. – Renew. Energ. 37:                1147–1159.
+    1–8.                                                                 Miller, J. et al. 2007. Incorporating spatial dependence in predic-
+Fotheringham, A. S. et al. 2002. Geographically weighted regression:         tive vegetation models. – Ecol. Modell. 202: 225–242.
+    the analysis of spatially varying relationships. – Wiley.            Mosteller, F. and Tukey, J. W. 1977. Data analysis and regression:
+Grafen, A. 1989. The phylogenetic regression. – Phil. Trans. R. Soc.         a second course in statistics. – Addison Wesley.
+    B 326: 119–157.                                                      Newbold, T. et al. 2015. Global effects of land use on local terrestrial
+Harvey, P. H. and Pagel, M. D. 1991. The comparative method in               biodiversity. – Nature 520: 45–50.
+    evolutionary biology. – Oxford Univ. Press.                          Ohlson, J. A. and Zhang, X. J. 1999. On the theory of
+Hastie, T. et al. 2009. The elements of statistical learning: data           forecast horizon in equity valuation. – J. Accounting Res. 37:
+    mining, inference and prediction. – Springer.                            437–449.
+Hawkins, D. M. 2004. The problem of overfitting. – J. Chem. Inf.         Olden, J. D. et al. 2002. Predictive models of fish species
+    Comp. Sci. 44: 1–12.                                                     distributions: a note on proper validation and chance
+Heikkinen, R. K. et al. 2012. Does the interpolation accuracy of             predictions. – Trans. Am. Fish. Soc. 131: 329–336.
+    species distribution models come at the expense of transferabil-     Otis, D. L. and White, G. C. 1999. Autocorrelation of location
+    ity? – Ecography 35: 276–288.                                            estimates and the analysis of radiotracking data. – J. Wildl.
+Ives, A. R. and Zhu, J. 2006. Statistics for correlated data: phylog-        Manage. 63: 1039–1044.
+    enies, space and time. – Ecol. Appl. 16: 20–32.                      Pearson, R. G. 2006. Climate change and the migration capacity
+Kennard, R. W. and Stone, L. A. 1969. Computer aided design of               of species. – Trends Ecol. Evol. 21: 111–113.
+    experiments. – Technometrics 11: 137–148.                            Petchey, O. L. et al. 2015. The ecological forecast horizon,
+Koenig, W. D. 1999. Spatial autocorrelation of ecological phenom-            and examples of its uses and determinants. – Ecol. Lett. 18:
+    ena. – Trends Ecol. Evol. 14: 22–26.                                     597–611.
+Kohavi, R. 1995. A study of cross-validation and bootstrap for           Picard, R. R. and Cook, R. D. 1984. Cross-validation of regression-
+    accuracy estimation and model selection. – 14th Int. Joint               models. – J. Am. Stat. Ass. 79: 575–583.
+    Conf. on Artifical Intelligence. Morgan Kaufmann Publ., San          Power, M. 1993. The predictive validation of ecological and
+    Francisco, CA, USA, pp. 1137–1143.                                       environmental-models. – Ecol. Modell. 68: 33–50.
+Koper, N. and Manseau, M. 2009. Generalized estimating equations         Racine, J. 2000. Consistent cross-validatory model-selection for
+    and generalized linear mixed-effects models for modelling                dependent data: hv-block cross-validation. – J. Econometrics
+    resource selection. – J. Appl. Ecol. 46: 590–599.                        99: 39–61.
+
+
+928
+Radosavljevic, A. and Anderson, R. P. 2014. Making better                Sumpter, D. J. T. 2006. The principles of collective animal
+    MAXENT models of species distributions: complexity,                      behaviour. – Phil. Trans. R. Soc. B 361: 5–22.
+    overfitting and evaluation. – J. Biogeogr. 41: 629–643.              Telford, R. J. and Birks, H. J. B. 2009. Evaluation of transfer
+Reineking, B. and Schröder, B. 2003. Computer-intensive methods              functions in spatially structured environments. – Quat. Sci.
+    in the analysis of species–habitat relationships. – In: Breckling,       Rev. 28: 1309–1316.
+    B. et al. (eds), Gene Bits und Ökosysteme: Implikationen neuer       Telford, R. J. et al. 2004. Biases in the estimation of transfer
+    Technologien für die ökologische Theorie. Peter Lang,                    function prediction errors. – Paleoceanography 19:
+    pp. 165–182.                                                             PA4014.
+Revell, L. J. 2010. Phylogenetic signal and linear regression on         Thomas, J. A. and Bovee, K. D. 1993. Application and testing of
+    species data. – Meth. Ecol. Evol. 1: 319–329.                            a procedure to evaluate transferability of habitat suitability
+Roberts, D. R. and Hamann, A. 2012a. Method selection for                    criteria. – River Res. Appl. 8: 285–294.
+    species distribution modelling: are temporally or spatially          Thuiller, W. et al. 2004. Effects of restricting environmental range
+    independent evaluations necessary? – Ecography 35: 792–802.              of data to project current and future species distributions.
+Roberts, D. R. and Hamann, A. 2012b. Predicting potential climate            – Ecography 27: 165–172.
+    change impacts with bioclimate envelope models: a palaeoeco-         Trachsel, M. and Telford, R. J. 2016. Technical note: estimating
+    logical perspective. – Global Ecol. Biogeogr. 21: 121–133.               unbiased transfer-function performances in spatially structured
+Roberts, D. R. et al. 2016. Data from: Cross-validation strategies           environments. – Climate Past 12: 1215–1223.
+    for data with temporal, spatial, hierarchical, or phylogenetic       Veloz, S. D. 2009. Spatially autocorrelated sampling falsely inflates
+    structure. – Dryad Digital Repository, < http://dx.doi.                  measures of accuracy for presence-only niche models. – J.
+    org/10.5061/dryad.737gk >.                                               Biogeogr. 36: 2290–2299.
+Rooney, S. M. et al. 1998. Autocorrelated data in telemetry studies:     Verbyla, D. L. and Litvaitis, J. A. 1989. Resampling methods for
+    time to independence and the problem of behavioural effects.             evaluating classification accuracy of wildlife habitat models.
+    – Mamm. Rev. 28: 89–98.                                                  – Environ. Manage. 13: 783–787.
+Rue, H. et al. 2009. Approximate Bayesian inference for latent           Wenger, S. J. and Olden, J. D. 2012. Assessing transferability of
+    Gaussian models by using integrated nested Laplace                       ecological models: an underappreciated aspect of statistical
+    approximations. – J. R. Stat. Soc. B 71: 319–392.                        validation. – Meth. Ecol. Evol. 3: 260–267.
+Rykiel, E. J. 1996. Testing ecological models: the meaning of            Wiens, T. S. et al. 2008. Three way k-fold cross-validation
+    validation. – Ecol. Modell. 90: 229–244.                                 of resource selection functions. – Ecol. Modell. 212:
+Schibalski, A. et al. 2014. Climate change shifts environmental              244–255.
+    space and limits transferability of treeline models. – Ecography     Williams, J. W. and Jackson, S. T. 2007. Novel climates, no-analog
+    37: 321–335.                                                             communities and ecological surprises. – Front. Ecol. Environ.
+Schröder, B. and Richter, O. 2000. Are habitat models transferable           5: 475–482.
+    in space and time? – J. Nat. Conserv. 8: 195–205.                    Williams, J. W. et al. 2001. Dissimilarity analyses of late-Quaternary
+Shao, J. 1993. Linear-model selection by cross-validation. – J. Am.          vegetation and climate in eastern North America. – Ecology
+    Stat. Ass. 88: 486–494.                                                  82: 3346–3362.
+Snee, R. D. 1977. Validation of regression-models – methods and          Wu, J. G. and David, J. L. 2002. A spatially explicit hierarchical
+    examples. – Technometrics 19: 415–428.                                   approach to modeling complex ecological systems: theory and
+Stephens, P. A. et al. 2016. Consistent response of bird populations         applications. – Ecol. Modell. 153: 7–26.
+    to climate change on two continents. – Science 352: 84–87.           Zurell, D. et al. 2012. Predicting to new environments: tools for
+Stone, M. 1974. Cross-validatory choice and assessment of statistical        visualizing model behaviour and impacts on mapped
+    predictions. – J. R. Stat. Soc. B 36: 111–147.                           distributions. – Divers. Distrib. 18: 628–634.
+
+
+
+Supplementary material (Appendix ecog-02881 at < www.
+ecography.org/appendix/ecog-02881 >). Appendix 1: sup-
+plementary tables. Appendix 2: spatial blocking (Box 1),
+extended methods and detailed results. Appendix 3: block-
+ing by individual or group (Box 2), extended methods and
+detailed results. Appendix 4: blocking to address phyloge-
+netic correlation (Box 3), extended methods and detailed
+results. Appendix 5: blocking for extrapolation (Box 4),
+extended methods and detailed results. Appendix 6: R scripts
+and applicable data for the simulations and case studies.­
+
+
+
+
+                                                                                                                                          929
+

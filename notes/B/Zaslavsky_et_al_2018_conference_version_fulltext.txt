@@ -1,0 +1,509 @@
+UC Merced
+Proceedings of the Annual Meeting of the Cognitive Science
+Society
+
+Title
+Color naming reflects both perceptual structure and communicative need
+
+Permalink
+https://escholarship.org/uc/item/8p67769q
+
+Journal
+Proceedings of the Annual Meeting of the Cognitive Science Society, 40(0)
+
+Authors
+Zaslavsky, Noga
+Kemp, Charles
+Tishby, Naftali
+et al.
+
+Publication Date
+2018
+
+
+
+
+ eScholarship.org                                Powered by the California Digital Library
+                                                                 University of California
+       Color naming reflects both perceptual structure and communicative need
+                                    Noga Zaslavsky1,4 (noga.zaslavsky@mail.huji.ac.il)
+                                           Charles Kemp2 (ckemp@cmu.edu)
+                                         Naftali Tishby1,3 (tishby@cs.huji.ac.il)
+                                       Terry Regier4,5 (terry.regier@berkeley.edu)
+            1 Edmond and Lily Safra Centre for Brain Sciences, The Hebrew University, Jerusalem 9190401, Israel
+                      2 Department of Psychology, Carnegie Mellon University, Pittsburgh, PA 15213 USA
+        3 The Benin School of Computer Science and Engineering, The Hebrew University, Jerusalem 9190401, Israel
+       4 Department of Linguistics and 5 Cognitive Science Program, University of California, Berkeley, CA 94720 USA
+
+
+
+
+                            Abstract                                      Here, we engage this argument, and present results that
+                                                                       suggest a somewhat different conclusion. We first present the
+  Gibson et al. (2017) argued that color naming is shaped by           core of Gibson et al.’s argument in detail, and replicate their
+  patterns of communicative need. In support of this claim, they
+  showed that color naming systems across languages support            findings. We then consider an alternative explanation of their
+  more precise communication about warm colors than cool col-          findings, and show that greater communicative precision for
+  ors, and that the objects we talk about tend to be warm-colored      warm than for cool colors, and greater need for warm colors,
+  rather than cool-colored. Here, we present new analyses that
+  alter this picture. We show that greater communicative preci-        may both be explained by perceptual structure, without any
+  sion for warm than for cool colors, and greater communicative        additional communicative preference for warm colors. We
+  need, may both be explained by perceptual structure. How-            next present a novel information-theoretic analysis of the link
+  ever, using an information-theoretic analysis, we also show
+  that color naming across languages bears signs of communica-         between need and communicative precision, and we use that
+  tive need beyond what would be predicted by perceptual struc-        analysis to infer need from color naming data. On that ba-
+  ture alone. We conclude that color naming is shaped both by          sis, we show that color naming across languages bears signs
+  perceptual structure, as has traditionally been argued, and by
+  patterns of communicative need, as argued by Gibson et al. –         of communicative need beyond what would be predicted by
+  although for reasons other than those they advanced.                 perceptual structure alone. We conclude that color naming is
+  Keywords: information theory; color naming; categorization.          shaped both by perceptual structure, as has traditionally been
+                                                                       argued, and by patterns of communicative need, as argued by
+                        Introduction                                   Gibson et al. — although our reasons for implicating need are
+                                                                       different from theirs.
+Languages vary widely in the ways they partition colors into
+categories. At the same time, this variation is constrained, and              The argument of Gibson et al. (2017)
+similar color naming systems are often seen in unrelated lan-
+guages (e.g. Berlin & Kay, 1969; Lindsey & Brown, 2006).               Gibson et al. found that across languages warm colors tend to
+The forces that give rise to this constrained variation have           be communicated more precisely than cool colors. They also
+long been debated, and it is often held that a major role is           found that the objects we talk about tend to be warm-colored
+played by perceptual structure (e.g. Kay & McDaniel, 1978).            rather than cool-colored, and in that sense warm colors have
+A variant of this view emphasizes in addition the importance           higher communicative need. They concluded that the warm-
+of communicative forces, and argues that languages divide              cool asymmetry in communicative precision across languages
+perceptual color space into categories in ways that support ef-        “reflects colors of universal usefulness” and that the principle
+ficient communication (Jameson & D’Andrade, 1997; Regier               of color use “governs how color categories come about” (p.
+et al., 2007; Baddeley & Attewell, 2009; Regier et al., 2015;          10785). They presented this idea as an alternative to pro-
+Lindsey et al., 2015).                                                 posals based on perceptual salience (p. 10785). Below we
+   Recently, Gibson et al. (2017) suggested an even greater            present the data they considered, and their definitions of com-
+role for communicative forces. They proposed that cross-               municative precision and communicative need, which inform
+language commonalities in color naming may reflect a hu-               our own analyses.
+man need to refer to particular colors more than others, and           Data. Gibson et al. based their analysis primarily on color
+presented this hypothesis as an alternative to one based on            naming data from the World Color Survey (WCS: Cook, Kay,
+perceptual salience (p. 10785). They showed that color nam-            & Regier, 2005). The WCS dataset contains color naming
+ing systems across languages support more precise commu-               data from 110 languages of non-industrialized societies. In
+nication about warm colors than cool colors, and that the ob-          the WCS, native speakers of each language were asked to
+jects we talk about tend to be warm-colored rather than cool-          provide a name for each of 330 color chips. Gibson et al.
+colored — suggesting that color naming systems may have                analyzed naming data for the subset of 80 color chips shown
+adapted to a general human need to communicate preferen-               in Figure 1, for all WCS languages and also for three lan-
+tially about warm colors.                                              guages for which they collected data: English, Spanish, and
+
+
+                                                                    1248
+                                                                  A.
+                                                                         1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39
+Tsimané. For each language l, each color term w in l, and           B
+                                                                     C
+each color chip c, they estimated the color naming distribu-         D
+                                                                     E
+tion pl (w|c) as the proportion of speakers of l who used w          F
+
+rather than some other term to name c.
+                                                                     G
+                                                                     H
+                                                                     I
+
+Communicative need. A need distribution, reflecting how
+                                                                  B.
+often a given color c is used in communication (Regier et al.,    Figure 1: The 80 color chips analyzed by Gibson et al. (2017),
+2015), can be naturally considered a prior distribution p(c)      represented in the standard WCS palette. White spaces indi-
+over colors. Gibson et al. considered two priors: a uniform       cate WCS chips that were
+                                                                                         80   excluded from the analysis. The
+prior, and a “salience-weighted prior” (p. 27 of SI). In the      achromatic WCS color60chipsL were also excluded.            80
+
+salience-weighted prior, the probability of each color was de-                                                     40                                                                   60
+
+termined by the proportion of times that color appeared in                                                         20                                                                   40
+                                                                                                                 100
+a foreground object, rather than in the background, in their              50 25
+                                                                                                            50
+                                                                                                                                            50
+                                                                                                                                              25
+                                                                                                                                                   0                              50
+                                                                                                                                                                                    20
+                                                                                                                        80
+study of natural images. This prior was based on the assump-                        0 25
+                                                                                         50        50
+                                                                                                        0    b
+                                                                                                                             L
+                                                                                                                                            a          25
+                                                                                                                                                         50   100
+                                                                                                                                                                     50
+                                                                                                                                                                              0
+                                                                                                                                                                                   80
+                                                                                a                                       60                                                b
+tion that foreground objects are more likely to be talked about                                                         40                                                         60
+than are backgrounds. This salience-weighted prior exhibits                                                             20                                                         40
+greater probability mass for warm colors than for cool colors                                                50
+                                                                                                                100
+                                                                                                               75
+                                                                                                                                   60
+                                                                                                                                     40
+                                                                                                                                       20
+                                                                                                                                                                                   20
+
+(see Figure 4C).                                                            40 20
+                                                                                     0 20               0
+                                                                                                       25
+                                                                                                            25
+                                                                                                                  b                  a
+                                                                                                                                            0
+                                                                                                                                                20
+                                                                                                                                                  40              50 25
+                                                                                                                                                                          0   25 50
+
+                                                                                 a        40 60      50                                                  100 75       b
+Communicative precision. Gibson et al. considered the
+expected surprisal of a given color c, with respect to a color    Figure 2: The 80 color chips of Figure 1, represented in
+naming distribution p(w|c) and a prior p(c), defined by           CIELAB color space. L⇤ corresponds to lightness, and hue
+                                                                  and saturation are represented in polar coordinates in the or-
+               S(c) =    Â p(w|c) log p(c|w) ,             (1)
+                                                                  thogonal plane defined by a⇤ and b⇤ . The irregular distribu-
+                          w
+                                                                  tion of these colors reflects a perceptual asymmetry between
+where p(c|w) is obtained by applying Bayes’ rule:                 warm and cool colors.
+                                p(w|c)p(c)
+                 p(c|w) =                        .         (2)    fact this perceptual structure has been used to explain patterns
+                              Âc0 p(w|c0 )p(c0 )
+                                                                  of color naming across languages (Jameson & D’Andrade,
+Lower values of S(c) correspond to higher communicative           1997; Regier et al., 2007, 2015; Zaslavsky et al., under revi-
+precision for a given color c. Gibson et al. found that           sion). We wished to understand whether the structure of per-
+across languages S(c) tends to be lower for warm colors           ceptual color space could also explain the asymmetry in pre-
+(reds/yellows) than for cool colors (blues/greens), when eval-    cision documented by Gibson et al., or that in need, or both –
+uated either with the uniform prior or with the salience-         a possibility acknowledged by Gibson et al. (p. 10789).
+weighted prior. We replicated these results on very similar          To test whether perceptual structure accounts for the warm-
+data (the WCS+ dataset; see below) for both priors, as shown      cool precision asymmetry, we considered a set of hypothetical
+in Figure 3A and Figure 3B.                                       color naming systems that were derived solely from the struc-
+   Notice that S(c) depends both on the prior p(c) and on the     ture of color space, without any additional element of com-
+naming system p(w|c), and thus these results are an outcome       municative need. We began with the color naming data of the
+of the combination of need and language. Here we further          WCS, supplemented by data for English (Lindsey & Brown,
+explore the nature of this combination in two ways: first by      2014); we call this joint dataset WCS+. We considered the
+using the same priors as Gibson et al. while considering new      same 80 chips used by Gibson et al. Then for each actual lan-
+hypothetical color naming data, and second by keeping the         guage l, we constructed a corresponding hypothetical system
+color naming data fixed and considering new priors.               by clustering the 80 color chips into kl categories, using the
+                                                                  k-means algorithm with respect to the Euclidean distance be-
+          The role of perceptual structure                        tween colors in CIELAB space. We took kl to be the number
+The crux of Gibson et al.’s argument is that the warm-cool        of color terms in language l for which at least two speakers
+asymmetry in precision may reflect the warm-cool asymme-          used that term to name the same color chip. In an attempt to
+try in need. Another possibility, however, is that both asym-     avoid local optima, we ran the k-means algorithm 30 times
+metries may be produced by a common underlying cause, per-        for each language and retained the best solution. This proce-
+haps perceptual in nature. Figure 2 re-plots the 80 colors from   dure yielded a set of artificial color naming systems that are
+Figure 1 in CIELAB color space, in which the Euclidean dis-       comparable in number of terms to those in our cross-language
+tance between nearby colors corresponds roughly to their per-     data but are determined only by the structure of perceptual
+ceptual dissimilarity (Brainard, 2003; but see also Komarova      color space, with no additional element of need.
+& Jameson, 2013). This visualization shows that there exist          The lower panels of Figure 3 show that these k-means sys-
+potentially relevant perceptual asymmetries of color — and in     tems exhibit a warm-cool surprisal asymmetry broadly simi-
+
+
+                                                              1249
+                                      A.   Uniform         B. Salience-weighted             and cool colors by excluding the chips in rows ‘B’ and ‘I’
+                                                                                            in Figure 1A, which correspond roughly to light and dark.
+                                                                                            These results suggest that the warm-cool precision asymme-
+                                                                                            try found for actual languages under Gibson et al.’s priors
+languages, sorted by E[S(c)]
+
+
+
+
+                                                                                            may to some extent reflect perceptual structure.
+                                                                                               Perceptual structure may also explain the pattern of color
+                                                                                            use or need that Gibson et al. reported and captured in their
+                                                                                            salience-weighted prior itself, according to which foreground
+                                                                                            objects (as opposed to their backgrounds) are more likely to
+                                                                                            be warm-colored rather than cool-colored. We found that
+                                                                                            their salience-weighted prior is correlated (r = 0.49, p <
+                                                                                            0.0001) with the distance of each chip from central gray in
+                                                                                            CIELAB space,1 suggesting that the salience-weighted prior
+                                     low             high low                     high      reflects how “un-gray” and thus perceptually salient different
+                                      C.                   D.                               colors are. It is possible that useful objects are often saliently
+                                                                                            (warmly) colored so as to attract human attention.
+                                                                                               Taken together, these results suggest a possible percep-
+k-means systems, sorted by E[S(c)]
+
+
+
+
+                                                                                            tual common cause for both of the qualitative asymmetries in
+                                                                                            communicative precision and communicative need that Gib-
+                                                                                            son et al. documented. However these results still leave open
+                                                                                            the possibility that color naming across languages may be
+                                                                                            shaped by an element of need beyond what is predicted by
+                                                                                            perceptual structure. In the following sections we demon-
+                                                                                            strate an information-theoretic link between communicative
+                                                                                            need and precision, and use it to address this open question.
+
+                                                                                                     Information-theoretic link between
+                                     low             high low                     high
+                                                                                                            need and precision
+
+Figure 3: A-B. Replication of the results reported by Gibson                                When viewing language in information-theoretic terms, one
+et al. (2017) for the uniform prior and salience-weighted                                   often considers a communication channel between a speaker
+prior. Across languages, warm colors have lower expected                                    and a listener (e.g. Plotkin & Nowak, 2000; Baddeley &
+surprisal than cool colors. C-D. Analogous analyses in                                      Attewell, 2009; Gibson et al., 2013). However, this is not
+which each language’s color naming system was replaced                                      the only potentially relevant channel. From an information-
+by a hypothetical color naming system obtained by k-means                                   theoretic perspective, any conditional distribution can be in-
+clustering of the color chips represented in CIELAB space.                                  terpreted as a channel (Cover & Thomas, 2006), and in the
+These perceptually-derived hypothetical systems also exhibit                                present treatment, the lexicon is captured by the conditional
+a warm-cool surprisal asymmetry.                                                            distribution p(w|c), which specifies the probability of using a
+                                                                                            color term w for a given color c. Therefore the lexicon itself
+                                                                                            can be seen as a channel, and one may explore the capacity
+                                                                                            of that channel — that is, the maximal amount of information
+lar to that in the actual languages, both with the uniform prior
+                                                                                            about color that can be conveyed by that lexicon.
+(Figure 3C) and with the salience-weighted prior (Figure 3D).
+In support of this qualitative observation, with the salience-                                 Formally, the input to this channel is a color c, taken from
+weighted prior, we found a strong correlation (r = 0.73,                                    a set C of colors, and the output is a word w, taken from a set
+p < 0.0001) between S(c) averaged across actual languages                                   W of possible words. Here we define C to be the 80 color
+and S(c) averaged across the corresponding k-means systems.                                 chips shown in Figure 1, and W to be an arbitrary set of K
+With the uniform prior, although an overall warm-cool asym-                                 words, where K is determined by the number of color terms in
+metry is visually apparent, there is also a clear discrepancy                               the language. Shannon’s channel coding theorem (Shannon,
+between the actual languages and the k-means systems: light                                 1948) states that the maximal number of bits on average that
+colors tend to have relatively low surprisal in the actual lan-                             can be transmitted per channel use is determined by the chan-
+guages, but high surprisal in the k-means systems. In this                                  nel capacity, which is defined as the maximal mutual infor-
+case we did not find a significant correlation between average
+                                                                                                1 We took central gray to be located at the midpoint between the
+surprisal across actual and k-means systems when consider-
+                                                                                            CIELAB coordinates for the two achromatic chips that are most in-
+ing all color chips, but we did find a significant correlation                              termediate between black and white in the WCS palette, namely E0
+(r = 0.57, p < 0.0001) when focusing specifically on warm                                   and F0 (not shown in Figure 1).
+
+
+
+                                                                                         1250
+mation between the input and output, namely by                                         A. WCS-CAP
+
+                         max I(W ;C) ,                         (3)              0.05
+
+
+
+
+                                                                         p(c)
+                          p(c)
+                                                                                0.00
+
+where the maximization is over all possible choices of p(c),
+                                                                                       B. KM-CAP
+and the mutual information is                                                   0.02
+                                                                                0.01
+                                             p(c|w)
+
+
+
+
+                                                                         p(c)
+             I(W ;C) = Â p(c)p(w|c) log             .          (4)              0.00
+                        c,w                   p(c)
+                                                                                       C. Salience-weighted
+   A distribution p(c) over C that attains the channel capacity,                0.02
+i.e. a maximizer of equation (3), is called a capacity-achieving
+
+
+
+
+                                                                         p(c)
+prior (CAP). In our case, since C and W are finite sets, a                      0.00
+capacity-achieving prior can be found via the Blahut-Arimoto
+algorithm (Blahut, 1972; Arimoto, 1972). This algorithm is
+based on the fact that by differentiating equation (4) with re-       Figure 4: Inferred (A: WCS-CAP, B: KM-CAP) and directly
+spect to p(c) we get the following necessary and sufficient2          measured (C: salience-weighted) priors. Chips along the x-
+condition for optimality:                                             axis are rank ordered according to p(c). Dashed line corre-
+                                                                      sponds to a uniform prior. KM-CAP and salience-weighted
+                      p(c) µ exp( S(c)) .                      (5)    exhibit a warm-cool asymmetry, whereas WCS-CAP exhibits
+                                                                      a weaker tendency for warm colors and the two most needed
+We find it interesting that while Blahut and Arimoto derived          colors according to this prior correspond to light and dark.
+the expression for S(c) from the capacity achieving principle,
+the same expression has been used for different reasons by
+Gibson et al. and others (e.g. Piantadosi et al., 2011). Note         data. Concretely, given a color naming system, this principle
+that equation (5) defines a self-consistent condition for opti-       allows us to infer what the accompanying need distribution
+mality, because S(c) also depends on the prior. By taking the         or prior should be in order to maximize the precision of the
+log on both sides of equation (5) we get that a prior is a CAP        given lexicon.
+if and only if it satisfies                                              We considered three different priors, and assessed their ef-
+                                                                      fects in analyses of a single dataset, WCS+. We inferred a
+                     log p(c) = S(c) + log Z ,                 (6)    capacity-achieving prior from the WCS+ data itself (WCS-
+                                                                      CAP, Figure 4A): this is an idealized prior that is implicit in
+where Z is the normalization factor of equation (5).                  these actual color naming systems. We similarly inferred a
+   Thus, need and communicative precision are linked                  capacity-achieving prior from the artificial naming data ex-
+through the capacity achieving principle. Specifically, for           plored above that are derived from k-means clustering (KM-
+a capacity-achieving prior, i.e. a prior p(c) that maximizes          CAP, Figure 4B): this is an idealized prior implicit in these
+the information about color that is conveyed by a given lex-          artificial systems that are based on perceptual structure alone.
+icon, we should see a simple linear relationship, with slope          In each case, following Zaslavsky et al. (under revision), we
+1, between log p(c) and the expected surprisal (or com-               evaluated the CAP pl (c) for each language l (real or artificial)
+municative imprecision) S(c). Notice that the link between            with respect to its color naming distribution pl (w|c), and av-
+p(c) and S(c) in equation (6) implies that, ideally, patterns in      eraged together these language-specific priors in order to in-
+p(c) would be mirrored in S(c), and thus the link is consis-          fer a universal need distribution.3 That is, we defined
+tent with Gibson et al.’s findings. However this link makes a
+stronger claim in that it specifies more precisely what the re-                                               1 L
+lation between need and precision should be, and does so on                                          p(c) =     Â pl (c) ,
+                                                                                                              L l=1
+                                                                                                                                   (7)
+theoretically motivated grounds. In the next section we use
+this information-theoretic link to present new evidence that          where L = 111 is the number of languages in the WCS+
+color naming across languages may indeed reflect universal            dataset.
+patterns of communicative need, as well as perceptual struc-             For comparison with these inferred priors, we also consid-
+ture.                                                                 ered the salience-weighted prior of Gibson et al. (Figure 4C),
+                                                                      which is not inferred but is instead grounded directly in the
+          Inferring need from naming data                             frequency with which colors appear in foreground objects vs.
+The capacity achieving principle provides a basis for inferring       backgrounds in natural images. For each of these three pri-
+a theoretically-motivated need distribution from color naming         ors — WCS-CAP, KM-CAP, and salience-weighted — we
+   2 This follows from the concavity of I(W ;C) in p(c). For more        3 We leave for later investigation the interesting question of
+detail see Theorem 2.7.4 and section 8.2 in (Cover & Thomas, 2006).   language-specific need influences.
+
+
+
+                                                                  1251
+                      A.         WCS-CAP                                       ence of a very clean linear relation for WCS-CAP reassures
+                                                                               us that by averaging the language-specific CAPs, we inferred
+               6.0                                                             a universal need distribution largely consistent with equa-
+                                                                               tion (6).4 It is perhaps more surprising that the warm-cool
+Average S(c)
+
+
+
+
+                                                                               asymmetry vanishes under this well-motivated prior, given
+
+
+
+
+                                                       languages
+               4.0
+                                                                               that it has persisted under others (recall Figure 3). The ab-
+                                                                               sence of the warm-cool surprisal asymmetry under WCS-
+               2.0                                                             CAP demonstrates the sensitivity of this asymmetry to the
+                                                                               assumed prior. At the same time, the lack of a clear linear re-
+                     2.0          4.5        7.0               low   high
+                                                                               lation between log p(c) and average S(c) under KM-CAP
+                                                                               suggests that this prior is not well-suited for precise commu-
+                      B.         KM-CAP                                        nication using the naturally occurring color naming systems
+                                                                               of the WCS+ dataset. KM-CAP is ultimately derived from
+                                                                               perceptual structure, whereas WCS-CAP is derived from the
+               3.5
+Average S(c)
+
+
+
+
+                                                                               actual WCS+ languages, and both priors are derived using
+                                                       languages
+
+
+
+
+                                                                               the same principle. Thus, the difference between them, seen
+               3.0                                                             in Figures 4 and 5, can be attributed to features in the WCS+
+                                                                               data that are not simply a reflection of perceptual structure.
+                                                                                   With this by way of stage-setting, consider now the re-
+               2.5
+                                                                               sults for the salience-weighted prior. It exhibits a warm-cool
+                       4.0          4.5        5.0             low   high      surprisal asymmetry on the WCS+ data (in fact, this panel
+                                                                               simply replicates Figure 3B), and also exhibits a roughly
+                      C. Salience-weighted                                     linear relation between log p(c) and average S(c), with
+               4.5
+                                                                               slope close to 1 (r = 0.83, p < 0.0001). This linear rela-
+                                                                               tion is significant for two reasons. First, the fact that this
+Average S(c)
+
+
+
+
+                                                                               relation is found for the salience-weighted prior but not for
+                                                       languages
+
+
+
+
+               3.5
+                                                                               the perceptually-based KM-CAP suggests that the salience-
+                                                                               weighted prior (like WCS-CAP) exhibits signs of need be-
+                                                                               yond what is predicted by perceptual structure. Second, this
+               2.5                                                             roughly linear relation demonstrates an information-theoretic
+                                                                               fit between cross-language color naming data and this prior,
+                             4          5          6           low   high      which was independently empirically obtained by Gibson et
+                                  log p(c)                                     al.
+
+                                                                                                        Discussion
+Figure 5: Comparison between the priors of Figure 4. Left
+panels: Scatterplots of log p(c) vs. average S(c) across lan-                  As stated in their title, Gibson et al. (2017) argued that “color
+guages. Right panels: Surprisal patterns for each prior, anal-                 naming across languages reflects color use.” They presented
+ogous to Figure 3. See text for interpretation.                                this claim as an alternative to accounts of color naming based
+                                                                               on perceptual salience. In support of this claim, they pre-
+                                                                               sented evidence of a warm-cool asymmetry in communica-
+entered it as p(c) into equation (2), and then used equation                   tive need and a corresponding asymmetry in communicative
+(1) to obtain the expected surprisal S(c) for each language                    precision in color naming across languages — suggesting that
+in the WCS+ data given that prior. We then assessed each                       color naming systems may have adapted to a universal human
+prior in two ways: first by asking whether we obtain the CAP-                  tendency to communicate preferentially about warm colors.
+predicted linear relationship between log p(c) and S(c), and                   Here, we have cast this argument in a new light. We have
+second by sorting chips by S(c) and asking whether we ob-                      shown that both qualitative asymmetries may be alternatively
+serve the warm-cool surprisal asymmetry reported by Gibson                     explained by a common cause: the structure of perceptual
+et al. and also seen in our Figure 3.                                          color space. Therefore, these two asymmetries are not an
+                                                                               unambiguous sign that color naming reflects communicative
+   The results are shown in Figure 5. Comparing first just the
+                                                                               need.
+two inferred priors, WCS-CAP and KM-CAP, we see that the
+linear relation between log p(c) and average S(c) is disso-                       However, by invoking an information-theoretic principle
+ciable from the warm-cool surprisal asymmetry: WCS-CAP                         that links need and precision, we have also presented a dif-
+shows a linear relation but not a clear warm-cool asymme-                         4 By substituting WCS-CAP into equation (6) we introduced a
+try, whereas KM-CAP shows a clear warm-cool asymmetry                          non-linearity because the language-specific CAPs are averaged in-
+but not a clear linear relation (r = 0.32, p < 0.01). The pres-                side the log. In principle, this could have violated equation (6).
+
+
+
+                                                                            1252
+ferent form of evidence that color naming does in fact bear         Cover, T., & Thomas, J. (2006). Elements of information
+traces of universal patterns of communicative need beyond             theory (2nd edition). Hoboken, NJ: Wiley-Interscience.
+what perceptual factors would predict. Thus, we agree with          Gibson, E., Futrell, R., Jara-Ettinger, J., Mahowald, K.,
+Gibson et al. that communicative preferences appear to have           Bergen, L., Ratnasingam, S., . . . Conway, B. R. (2017).
+left their imprint on color naming systems in the world’s lan-        Color naming across languages reflects color use. Proceed-
+guages (see also Kemp & Regier, 2012 for a similar argument           ings of the National Academy of Sciences, 114(40), 10785-
+concerning kin terminologies). However, we differ with Gib-           10790.
+son et al. in two respects: first, we reach this conclusion on      Gibson, E., Piantadosi, S. T., Brink, K., Bergen, L., Lim, E.,
+different grounds, and second, we find that communicative             & Saxe, R. (2013). A noisy-channel account of crosslin-
+need may operate in concert with, rather than as an alterna-          guistic word-order variation. Psychological Science, 24(7),
+tive to, perceptual structure as a determinant of color naming.       1079-1088.
+   More broadly, there is also another possible connection          Jameson, K., & D’Andrade, R. G. (1997). It’s not really
+between perceptual structure and need. Although we have               red, green, yellow, blue: An inquiry into perceptual color
+treated these two as independent factors, it may be the case          space. In C. L. Hardin & L. Maffi (Eds.), Color categories
+that the structure of perceptual color space is itself adapted        in thought and language (pp. 295–319). Cambridge Uni-
+to the statistics of natural scenes (Shepard, 1994), and is in        versity Press.
+that sense influenced by need. Even in this case, however, the      Kay, P., & McDaniel, C. K. (1978). The linguistic signifi-
+picture is not entirely straightforward. There is an important        cance of the meanings of basic color terms. Language, 54,
+distinction in principle, and thus at least possibly in practice,     610-646.
+between the frequency with which particular colors appear in        Kemp, C., & Regier, T. (2012). Kinship categories across lan-
+the world, and the frequency with which they must be com-             guages reflect general communicative principles. Science,
+municated. It seems likely that our perceptual systems may            336(6084), 1049–1054.
+have adapted to the former, and our languages to the latter.        Komarova, N. L., & Jameson, K. A. (2013). A quantitative
+                                                                      theory of human color choices. PLOS One, 8(2), e55986.
+                   Acknowledgments                                  Lindsey, D. T., & Brown, A. M. (2006). Universality of color
+We thank Bevil Conway and Ted Gibson for kindly sharing               names. Proceedings of the National Academy of Sciences,
+their salience-weighted prior with us, Delwin Lindsey and             103(44), 16608-16613.
+Angela Brown for kindly sharing their English color naming          Lindsey, D. T., & Brown, A. M. (2014). The color lexicon of
+data with us, and Joshua Abbott for helpful discussions. This         American English. Journal of Vision, 14(2), 17.
+study was supported by the Gatsby Charitable Foundation             Lindsey, D. T., Brown, A. M., Brainard, D. H., & Apicella,
+(N.Z. and N.T.) and DTRA award HDTRA11710042 (T.R.).                  C. L. (2015). Hunter-gatherer color naming provides new
+Part of this work was done while N.Z. and N.T. were visiting          insight into the evolution of color terms. Current Biology,
+the Simons Institute for the Theory of Computing.                     25(18), 2441–2446.
+                                                                    Piantadosi, S. T., Tily, H., & Gibson, E. (2011). Word lengths
+                         References                                   are optimized for efficient communication. Proceedings of
+Arimoto, S. (1972). An algorithm for computing the capacity           the National Academy of Sciences, 108(9), 3526-3529.
+  of arbitrary discrete memoryless channels. IEEE Transac-          Plotkin, J. B., & Nowak, M. A. (2000). Language evolution
+  tions on Information Theory, 18(1), 14-20.                          and information theory. Journal of Theoretical Biology,
+Baddeley, R., & Attewell, D. (2009). The relationship be-             205(1), 147–159.
+  tween language and the environment: Information theory            Regier, T., Kay, P., & Khetarpal, N. (2007). Color naming
+  shows why we have only three lightness terms. Psycholog-            reflects optimal partitions of color space. Proceedings of
+  ical Science, 20(9), 1100-1107.                                     the National Academy of Sciences, 104(4), 1436-1441.
+Berlin, B., & Kay, P. (1969). Basic color terms: Their univer-      Regier, T., Kemp, C., & Kay, P. (2015). Word mean-
+  sality and evolution. Berkeley and Los Angeles: University          ings across languages support efficient communication. In
+  of California Press.                                                B. MacWhinney & W. O’Grady (Eds.), The handbook of
+Blahut, R. E. (1972). Computation of channel capacity and             language emergence (pp. 237–263). Hoboken, NJ: Wiley-
+  rate-distortion functions. IEEE Transactions on Informa-            Blackwell.
+  tion Theory, 18(4), 460-473.                                      Shannon, C. (1948). A mathematical theory of communica-
+Brainard, D. H. (2003). Color appearance and color differ-            tion. Bell System Technical Journal, 27.
+  ence specification. In S. K. Shevell (Ed.), The science of        Shepard, R. N. (1994). Perceptual-cognitive universals as
+  color: Second edition (pp. 191–216). Elsevier.                      reflections of the world. Psychonomic Bulletin & Review,
+Cook, R. S., Kay, P., & Regier, T. (2005). The World                  1(1), 2–28.
+  Color Survey database: History and use. In I. H. Cohen            Zaslavsky, N., Kemp, C., Regier, T., & Tishby, N. (under
+  & C. Lefebvre (Eds.), Handbook of categorization in cog-            revision). Efficient compression in color naming and its
+  nitive science (pp. 223–242). Elsevier.                             evolution.
+
+
+
+                                                                1253
+

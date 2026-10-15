@@ -1,0 +1,639 @@
+                                               MIT Open Access Articles
+
+                                Color naming across languages reflects color use
+
+   The MIT Faculty has made this article openly available. Please share how this access benefits you. Your story matters.
+
+
+
+Citation: Gibson, Edward et al. “Color Naming Across Languages Reflects Color Use.” Proceedings of the National Academy of
+Sciences 114, 40 (September 2017): 10785–10790 © 2017 National Academy of Sciences
+
+Published Version: https://doi.org/10.1073/PNAS.1619666114
+
+Publisher: National Academy of Sciences (U.S.)
+
+Permanent Link: http://hdl.handle.net/1721.1/114985
+
+Version: Final published version
+
+Terms of use: Article is made available in accordance with the publisher's policy and may be subject to US copyright law. Please
+refer to the publisher's site for terms of use.
+Color naming across languages reflects color use
+Edward Gibsona,2, Richard Futrella, Julian Jara-Ettingera,1, Kyle Mahowalda, Leon Bergena,
+Sivalogeswaran Ratnasingamb, Mitchell Gibsona, Steven T. Piantadosic, and Bevil R. Conwayb,2
+a
+ Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge, MA 02139; bLaboratory of Sensorimotor Research,
+National Eye Institute and National Institute of Mental Health, National Institutes of Health, Bethesda, MD 20892; and cDepartment of Brain and Cognitive
+Sciences, University of Rochester, Rochester, NY 14627
+
+Edited by Dale Purves, Duke University, Durham, NC, and approved August 15, 2017 (received for review November 30, 2016)
+
+What determines how languages categorize colors? We analyzed                   paradigm on separate participants, where participants were
+results of the World Color Survey (WCS) of 110 languages to show               constrained to only say the most common terms we obtained in
+that despite gross differences across languages, communication of              the free-choice paradigm. We conducted experiments in three
+chromatic chips is always better for warm colors (yellows/reds) than           groups: the Tsimane’ people, an indigenous nonindustrialized
+cool colors (blues/greens). We present an analysis of color statistics in      Amazonian group consisting of about 6,000 people from low-
+a large databank of natural images curated by human observers for              land Bolivia who live by farming, hunting, and foraging for sub-
+salient objects and show that objects tend to have warm rather than            sistence (14); English speakers in the United States; and Bolivian-
+cool colors. These results suggest that the cross-linguistic similarity in     Spanish speakers in Bolivia, neighboring the Tsimane’. Tsimane’ is
+color-naming efficiency reflects colors of universal usefulness and            one of two languages in an isolate language family (Mosetenan).
+provide an account of a principle (color use) that governs how color           Although there is trade with local Bolivian towns, most of the
+categories come about. We show that potential methodological                   Tsimane’ participants have limited knowledge of Spanish. To the
+issues with the WCS do not corrupt information-theoretic analyses,             extent that the communities have organized schooling, education is
+
+
+
+
+                                                                                                                                                                                    PSYCHOLOGICAL AND
+                                                                               conducted in Tsimane’.
+
+
+
+
+                                                                                                                                                                                    COGNITIVE SCIENCES
+by collecting original data using two extreme versions of the color-
+                                                                                  We analyzed our data using information theory, building on
+naming task, in three groups: the Tsimane’, a remote Amazonian
+                                                                               work that suggests that color naming can be better understood
+hunter-gatherer isolate; Bolivian-Spanish speakers; and English
+                                                                               by considering informativeness rather than opponent-process
+speakers. These data also enabled us to test another prediction
+                                                                               theory (3, 11, 15). This analysis can be understood in terms of a
+of the color-usefulness hypothesis: that differences in color cat-             communication game (16–18). Imagine that a speaker has a
+egorization between languages are caused by differences in                     particular color chip c in mind and uses a word w to indicate it.
+overall usefulness of color to a culture. In support, we found that            The listener has to correctly guess c, given w. On each trial, the
+color naming among Tsimane’ had relatively low communicative                   listener guesses that c is among a set of the chips; the listener
+efficiency, and the Tsimane’ were less likely to use color terms               can pick a set of any size and is told “yes” or “no.” The average
+when describing familiar objects. Color-naming among Tsimane’                  number of guesses an optimal listener would take to home in on
+was boosted when naming artificially colored objects compared                  the exact color chip provides a measure of the listener’s average
+with natural objects, suggesting that industrialization promotes               surprisal (S, measured in bits; Eq. 1), a quantitative metric of
+color usefulness.                                                              communication efficiency. The surprisal score for each color c
+                                                                               is computed by summing together a score for each word w that
+                    |
+color categorization information theory   | color cognition |                  might have been used to label c, which is calculated by multi-
+                     |
+Whorfian hypothesis basic color terms                                          plying P(wjc) by −log(P(cjw), the listener’s surprisal that w
+
+
+T   he question of color-naming systems has long been caught in
+    the cross-fire between universality and cultural relativism.
+Cross-cultural studies of color naming appear to indicate that
+                                                                                   Significance
+
+                                                                                   The number of color terms varies drastically across languages.
+color categories are universal (1–3). However, the variability in                  Yet despite these differences, certain terms (e.g., red) are
+color category boundaries among languages (4), and the lack of                     prevalent, which has been attributed to perceptual salience.
+consensus of the forces that drive purported universal color                       This work provides evidence for an alternative hypothesis:
+categories (5, 6), promotes the idea that color categories are not                 The use of color terms depends on communicative needs.
+universal, but shaped by culture (7). Here, we focus on two color                  Across languages, from the hunter-gatherer Tsimane’ people
+categories, WARM and COOL, which are not part of the ca-                           of the Amazon to students in Boston, warm colors are com-
+nonical set of “basic” categories proposed by Berlin and Kay                       municated more efficiently than cool colors. This cross-linguistic
+but which nonetheless may be fundamental (8, 9), and which                         pattern reflects the color statistics of the world: Objects (what
+might relate to the basic white/black categories occupying the                     we talk about) are typically warm-colored, and backgrounds
+first stage in the Berlin/Kay hierarchy. Are WARM and                              are cool-colored. Communicative needs also explain why the
+COOL universal categories, and if so, why? Here we address                         number of color terms varies across languages: Cultures vary
+these questions by collecting an extensive original dataset in                     in how useful color is. Industrialization, which creates ob-
+three cultures and leveraging an information-theoretic analysis                    jects distinguishable solely based on color, increases color
+that has been useful in uncovering the structure of communica-                     usefulness.
+tion systems (10, 11).
+   The World Color Survey (WCS) provides extensive data on                     Author contributions: E.G., S.T.P., and B.R.C. designed research; E.G., R.F., J.J.-E., S.R., M.G.,
+                                                                               and B.R.C. performed research; E.G., R.F., J.J.-E., K.M., L.B., S.R., and B.R.C. analyzed data;
+color naming by 110 language groups (www1.icsi.berkeley.edu/                   and E.G. and B.R.C. wrote the paper.
+wcs/data.html). However, the WCS instructions are complex, and
+                                                                               The authors declare no conflict of interest.
+different WCS researchers likely adopted different methods (SI
+                                                                               This article is a PNAS Direct Submission.
+Appendix, section 1 and, Figs. S1 and S2), possibly undermining
+the validity of the WCS data (12, 13). To evaluate this possibility,           Freely available online through the PNAS open access option.
+                                                                               1
+we obtained extensive color-labeling data using two extreme                     Present address: Department of Psychology, Yale University, New Haven, CT 06520.
+versions of how the WCS instructions might have been imple-                    2
+                                                                                To whom correspondence may be addressed. Email: bevil@nih.gov or egibson@mit.edu.
+mented: a “free-choice” paradigm that placed no restrictions                   This article contains supporting information online at www.pnas.org/lookup/suppl/doi:10.
+on how participants could name colors, and a “fixed-choice”                    1073/pnas.1619666114/-/DCSupplemental.
+
+
+
+www.pnas.org/cgi/doi/10.1073/pnas.1619666114                                                      PNAS | October 3, 2017 | vol. 114 | no. 40 | 10785–10790
+would label c. We estimate P(cjw) via Bayes Theorem assuming                     Tsimane’ (N=58)
+a uniform prior on P(c).                                                     A
+                                                                             B                        18
+                            X                                                C
+                                         1                                   D
+                    SðcÞ =   PðwjcÞlog        .                       [1]    E                                  1417
+                           w
+                                       PðcjwÞ                                F     63
+                                                                             G
+                                                                             H               24                                         27
+The novelty of our analysis is to define communicative efficiency
+about a particular color chip, relative to the set of color chips, so that         1    2 3       4   5 6   7    8 9 10 11 12 13 14 15 16 17 18 19 20
+we have an information-theoretic measure—average surprisal—that                  Bolivian Spanish (N=20)
+allows us to rank the colors for their relative communicative effi-          A
+ciency within a language. To compare color communication effi-               B                        47
+                                                                             C
+ciency across languages, we follow others (3, 11) in estimating the          D     25
+overall informativeness of the color system of each language by              E          65                                       48
+                                                                             F     91
+averaging the average surprisal across the chips (Eq. 2; see SI              G
+Appendix, section 3 for a worked-out example):                               H               44                                       56 51
+                                                                                                                       38
+                            X                                                      1    2 3       4   5 6   7    8 9 10 11 12 13 14 15 16 17 18 19 20
+                                 PðcÞSðcÞ.                             [2]
+                                                                                 English (N=31)
+                              c
+                                                                             A
+                                                                             B                        59
+                                                                             C                                                                              .25
+Results                                                                      D                                                                      34
+                                                                                                                                                             .5
+                                                                             E          45                      62               31
+Color Naming. In our first analysis, we determined the most fre-             F    100                                                                       .75
+quently used (modal) term for each color chip. Identifying modal             G                                                                31
+                                                                             H               45                                                              1
+terms within a language provides an objective way to relate one
+language to another, but modal terms are not a good measure of                     1    2 3       4   5 6   7    8 9 10 11 12 13 14 15 16 17 18 19 20
+the sophistication of a language because they do not account for
+the variability in term use within a population. Compared with               Fig. 1. The Amazonian Tsimane’ people show large individual differences in
+                                                                             color naming, but at the population level, similar color categories to those
+Bolivian-Spanish and English speakers, the Tsimane’ speakers
+                                                                             observed among Bolivian-Spanish and English speakers. Color naming of
+showed much greater variability in what color terms were used for
+                                                                             80 chips evenly sampling the Munsell array, presented singly in random se-
+all chromatic chips except red. Participants also showed high                quence under controlled lighting, in Tsimane’, Spanish-speakers in neighboring
+consensus in labeling black and white chips; we did not solicit              San Borja (Bolivia), and English-speaking students near Boston (see SI Appendix,
+responses for other achromatic Munsell chips, although some of               Table S2 for the key relating the axes to Munsell chip designations). Color of
+the 80 colored chips were labeled using terms glossed as “black” or          each diamond corresponds to the modal color for the chip (see SI Appendix,
+“white.” Diamond sizes in Fig. 1 show the fraction of participants           Table S3 for the key matching the color with the terms in each language). Di-
+who reported the modal term for the chip at each location in the             amond size shows the fraction of people who gave the modal response. All
+color array in the free-choice task; diamonds are smaller, on av-            participants showed 100% consistency for black and white chips: negro, blanco
+erage, in Tsimane’ compared with English and Bolivian-Spanish,               (Bolivian-Spanish); tsincus, jaibas (Tsimane’). The location of the numbers over-
+indicating higher variability in color-term use among the Tsimane’           lying the plot indicate the color chips in the 160-chip Munsell array that were
+(individual-participant results are shown in SI Appendix, Figs. S3–          most frequently selected as the best example of the subset of modal color terms
+S5; SI Appendix, Table S3 shows the key which links the color of             queried (SI Appendix, Table S4). The numbers are the percentage of respon-
+                                                                             dents who made the given selection. Note that two modal color terms in
+the diamonds to the modal color terms). Across the 80 chips, the
+                                                                             Tsimane’, yushñus and shandyes, correspond to the same chip (E8). English
+Tsimane’ had eight modal color terms whereas English had 10 and                          _
+                                                                             speakers were    asked about red, green, yellow, blue, orange, brown, pur-
+Bolivian-Spanish had 11 (SI Appendix, Table S3). Despite differ-             ple, and pink. Bolivian-Spanish speakers were asked about rojo, verde,
+ences in variability of term use among the languages, modal term             amarillo, azul, celeste, anaranjado, morado, cafe, and rosa. Tsimane’ were
+assignments resulted in a generally similar partitioning of the color        asked about jäinäs (∼red), yushñus (∼blue), shandyes (∼green), itsidyeisi
+space across all three languages we studied (similar results were            (∼purple), cafedyeisi (∼brown),   _ and chames (∼yellow). Data are from the
+obtained using the fixed-choice version of the task; SI Appendix,            free-choice version of the task (n = 58 Tsimane’, 20 Bolivian-Spanish, 31
+Fig. S6). These results show that, at the population level, all three        English); data from the fixed-choice version of the task, conducted in
+languages have a comparable representation of color space. The               separate participants (n = 41 Tsimane’, 25 Bolivian-Spanish, 29 English),
+results for the Tsimane’ people mirror observations made in the              yielded similar results (SI Appendix, Fig. S6).
+Hadzane of Tanzania, another indigenous community previously
+thought to have limited color knowledge, but now known to
+possess a rich color lexicon distributed across the population (3).          color words they associated with the objects (1.06 bits); uncertainty
+                                                                             was comparable between English (0.33 bits) and Bolivian-Spanish
+Objects from Memory. We were concerned that the higher vari-                 (0.30 bits) [in paired t tests between the entropy scores per object,
+ability among the Tsimane’ might reflect unfamiliarity with the              the Tsimane’-English comparison is t(15) = −2.88, P = 0.01; the
+Munsell cards. To test this possibility, we asked the participants           Tsimane’-Spanish comparison is t(15) = −3.16, P = 0.006; the
+to tell us what color word they associated with familiar objects (a          English-Spanish comparison is t(16) = −0.16, P = 0.9]. This differ-
+test of memory color). Given each object (O), we determined the              ence was driven predominantly by objects whose color names have
+uncertainty (H, simple entropy) over color words (W) that were               generally low agreement among Tsimane’ as assessed in the color-
+used to refer to that object (Eq. 3).                                        chip naming experiment (yellow, orange, green, blue, brown), but
+                          X                                                  high agreement among English and Bolivian-Spanish speakers
+             HðW jOÞ = −      PðWi jOÞlogðPðWi jOÞÞ.           [3]           (Fig. 2). Objects such as blood, hair, and teeth whose colors fall
+                               i                                             in high-consensus color categories in Tsimane’ (glossed red, black,
+                                                                             and white) were associated with low uncertainty (all Tsimane’
+Eq. 3 quantifies across people in the culture the consistency of the         speakers have black hair). The relatively large variability in mem-
+color label for a given object. Although the objects were selected           ory colors associated with familiar objects among the Tsimane’
+because each has a characteristic color and is familiar to Tsimane’          corroborates the conclusions drawn from the naming of color
+speakers, Tsimane’ on average had higher uncertainty over the                chips. Additional control experiments assessing reaction times
+
+10786 | www.pnas.org/cgi/doi/10.1073/pnas.1619666114                                                                                               Gibson et al.
+                     3        Tsimane’ (N=99)                                                                                               low surprisal of red and yellow, compared with the higher sur-
+                              Spanish (N=55)                                                                                                prisal of blue and green, recalls the smaller individual differences
+Entropy, color label (bits)
+
+
+
+                              English (N=29)                                                                                                in unique hue settings for red and yellow compared with blue and
+                                                                                                                                            green (21). These results add to a growing body of research sug-
+                                                                                                                                            gesting that the unique hues might not be as special as widely
+                                                                                                                                            thought (6, 22, 23). Instead, the results suggest that warm colors
+                                                                                                                                            (reds, yellows) are associated with higher communicative effi-
+                                                                                                                                            ciency compared with cool colors (blues, greens).
+
+                                                                                                                                            Analysis of Average Surprisal Values Within Each Language. The pat-
+                     0                                                                                                                      tern of average surprisal values (the variations in gray shown in SI
+                              hair
+
+                                     blood
+
+                                             teeth
+
+                                                     tomato
+
+                                                              cloud
+
+                                                                      banana
+
+                                                                                grass
+
+                                                                                        fire
+
+                                                                                               rice
+
+                                                                                                      banana
+
+                                                                                                               sky
+
+                                                                                                                     corn
+
+                                                                                                                            carrot
+
+                                                                                                                                     dirt
+                                                                       unripe
+
+
+                                                                                                                                            Appendix, Fig. S8) was consistent across the three languages.
+                                                                                                                                            Consistent with this impression, the rank-ordered sequence of
+                                                                                                                                            color chips was similar across the three languages (Fig. 3B;
+Fig. 2. Variability of color labels (entropy, Eq. 3) for familiar objects, ordered                                                          Spearman rank correlation, between Bolivian-Spanish and English
+by Tsimane’ results. On average, Tsimane’ has higher entropy over color words                                                               ρ = 0.87; between Bolivian-Spanish and Tsimane’ ρ = 0.51; be-
+for a particular object (1.06 bits, compared with English, 0.33 bits, and Bolivian-                                                         tween English and Tsimane’ ρ = 0.53; Table S5; SI Appendix,
+Spanish, 0.30 bits).                                                                                                                        section 6 and Fig. S12). The ordering forms a striking pattern that
+                                                                                                                                            is not determined by the unique hues or the focal colors. Warm-
+                                                                                                                                            colored chips (red, pink, orange, yellow, brown) across Tsimane’,
+further supports the conclusion that participants were fully en-                                                                            English, and Bolivian-Spanish showed relatively low average sur-
+gaged in the various tasks (SI Appendix, section 2 and Fig. S7).                                                                            prisal, whereas cooler colors (blues, greens) showed higher average
+                                                                                                                                            surprisal. The rank ordering is also not explained by Berlin and
+Similar Results for Free-Choice vs. Fixed-Choice Versions of Color-                                                                         Kay’s proposed order of acquisition (1), which has blue and green
+
+
+
+
+                                                                                                                                                                                                                                                                                             PSYCHOLOGICAL AND
+                                                                                                                                                                                                                                                                                             COGNITIVE SCIENCES
+Naming Task. Returning to the analyses of the color-chip naming                                                                             arising before pink, orange, and brown. Our results suggest that
+tasks, the higher color-naming variability among the Tsimane’                                                                               despite overall gross differences in the communication efficiency
+speakers, compared with English and Bolivian-Spanish speakers, is                                                                           across languages, among chromatic chips, warm colors are always
+reflected in higher average surprisal for all color chips, using either                                                                     the easiest to communicate precisely. Remarkably, we found that
+open (SI Appendix, section 3 and Fig. S8) or fixed versions of the                                                                          this relationship was true across the entire WCS of 110 languages
+task. Averaging across color chips (Eq. 2), the Tsimane’ color                                                                              (Fig. 4 and SI Appendix, section 7 and Fig. S13). These results
+system (4.88 bits) was shown to be less informative than that of                                                                            provide an explanation for the universal distinction between warm
+English (3.80 bits) or Bolivian-Spanish (3.86 bits) (free-choice                                                                            and cool colors: Warm colors are always associated with higher
+task). Unsurprisingly, the average number of color words pro-                                                                               communicative efficiency compared with cool colors. Together the
+duced in each population during the fixed-choice task was lower                                                                             results suggest two complementary conclusions: All languages, even
+than in the free-choice version (Fig. 3A). Remarkably, the overall                                                                          those with very few consensus color terms, have a comprehensive
+informativeness of a language was very similar for the two versions
+of the task (Fig. 3A and SI Appendix, section 4 and Figs. S9–S11;
+the tasks were performed in separate sessions, with different
+people, about a year apart). Furthermore, Spearman correlations                                                                                                                                  ( , ) (fixed, free)
+                                                                                                                                             A                                                  Tsimane’ (N=41, 58)      B
+of the rank-ordered sequence of color chips (ordered by increasing                                                                                                                               Spanish (N=25, 20)
+                                                                                                                                            Communication efficiency (bits)
+
+
+
+
+average surprisal) for each version of the task were high (Tsimane’:                                                                                                          6                   English (N=29, 31)                                6
+                                                                                                                                                                                                                         Average Surprisal (bits)
+
+ρ = 0.71; Bolivian-Spanish: ρ = 0.90; English: ρ = 0.92). These                                                                                                                                                                                             Tsimane’
+results come as a relief, allaying widespread concerns about the
+methodology of the WCS, and licensing further information-
+theoretic analyses of the WCS data (12, 13).                                                                                                                                                                                                        4
+
+
+Focal Color Analyses and Unique Hues. In separate experiments, for                                                                                                                                                                                                      Spanish
+several frequently used color terms in each language, subjects                                                                                                                                                                                      2
+were asked to indicate which color chip was the best represen-                                                                                                                4
+tative of the color term. Such “focal” colors can be reasonably
+predicted by statistical models that identify the most representative                                                                                                             2                                  6                                  1 Color chips (rank-ordered) 80
+                                                                                                                                                                                      Number of color words (bits)                                      low surprisal       high surprisal
+color chip given each speaker’s color-naming data (19). The contours
+in Fig. S8 show the probability density of color samples chosen                                                                             Fig. 3. Communication efficiency of color naming, across languages and
+for red, green, blue, yellow (English); rojo, verde, azul, amarillo                                                                         among color chips. (A) Communication efficiency for each language of the
+(Bolivian-Spanish); jainas, shandyes, yushñus, chamus (Tsimane’)                                                                            WCS (open symbols), Tsimane’ (black symbols), Bolivian-Spanish (dark gray
+(SI Appendix, section 5 and Table S4    _ provides the chip desig-                                                                          symbols), and English (light gray symbols), as a function of number of unique
+nations for the most frequently chosen chip for each focal color).                                                                          color words used by the population of participants tested in each language.
+The contours tend to cover a broader area of the array for Tsimane’                                                                         The two data sets collected in Tsimane’, Bolivian-Spanish, and Tsimane’ show
+speakers compared with English or Bolivian-Spanish speakers, con-                                                                           that variability in experimental methods have little impact on assessments of
+sistent with the results of the other color-naming experiments                                                                              communicative efficiency of color naming, licensing the use of the WCS data
+showing that the Tsimane’ are more variable in the color terms                                                                              for further analysis. Circles show data from experiments in which participants
+they use (Fig. 1). The contours in SI Appendix, Fig. S8 are for                                                                             were constrained to use a fixed vocabulary of basic color terms; squares show
+                                                                                                                                            data where participants were free to use any term. Number of participants
+colors that correspond to the “unique hues,” which have long
+                                                                                                                                            stated as (N=fixed choice, free choice). Communicative efficiency for each
+been postulated to be psychological primary colors (20): The                                                                                language was computed using Eq. 2. (B) Color chips rank-ordered by their
+unique hues are considered to be “irreducible” primaries which                                                                              average surprisal (computed using Eq. 1) for Tsimane’ and Bolivian-Spanish
+cannot be described using any more primitive labels (unlike “or-                                                                            (pattern for English overlaps Spanish, omitted for clarity). SI Appendix, Table
+ange,” which some consider yellowish red). Given their purported                                                                            S5 provides the chip identity in rank order. The asterisks represent focal colors
+primary status, one might have hypothesized that these colors                                                                               determined as described in Fig. 2. The sequences of colors in each population
+would be associated with relatively low average surprisal. Contrary                                                                         are highly correlated (Spearman rank correlation between Bolivian-Spanish
+to this prediction, we found that only the red and yellow focal                                                                             and English, ρ = 0.87; between Bolivian-Spanish and Tsimane’, ρ = 0.51; and
+colors had low surprisal across all three languages. The relatively                                                                         between English and Tsimane’, ρ = 0.53).
+
+
+Gibson et al.                                                                                                                                                                                      PNAS | October 3, 2017 | vol. 114 | no. 40 | 10787
+English                                                                                                                                    These results support the hypothesis that usefulness is the rea-
+Spanish                                                                                                                                son why languages acquire a color name. The relatively low com-
+                                                                                                                                       municative efficiency of color naming among Tsimane’ suggests that
+                                                                                                                                       color is simply not that useful for this population. The Tsimane’ have
+Languages, rank-ordered by average communication efficiency
+
+
+
+
+                                                                                                                                       little exposure to artificial (industrialized) objects. Industrialization
+                                                                                                                                       has greatly expanded the gamut and color stability of objects.
+                                                                                                                                       One idea is that exposure to artificially colored objects promotes
+                                                                                                                                       the usefulness of color for object identification, which is hy-
+                                                                                                                                       pothesized to promote greater precision in color language (33,
+                                                                                                                                       34). To test this idea, we performed a contrastive-labeling task
+                                                                                                                                       (35) (SI Appendix, section 9). Eight pairs of objects, familiar to
+                                                                                                                                       Tsimane’ and English, were used in the experiment, four pairs of
+                                                                                                                                       natural objects and four pairs of artificial objects. Participants
+                                                                                                                                       were first presented with one object and were asked to name it.
+                                                                                                                                       Then they were presented with the second object of the same
+                                                                                                                                       type and asked to name it (Fig. 6A). Tsimane’ were much less
+                                                              Tsimane’
+
+
+
+
+                                                                                                                                       likely to use a color term (Fig. 6B). But a mixed-effect logistic
+                                                                                                                                       regression showed a main effect of object class among the
+                                                                                                                                       Tsimane’: They were more likely to use a color word when
+                                                                                                                                       naming artificial compared with natural objects (β = 3.59, z =
+                                                                                                                                       4.00, P < 0.0001), which is consistent with the idea that in-
+                                                                                                                                       dustrialization promotes color-naming efficiency.
+                                                                                                                                       Discussion
+                                                                         1               Color chips (rank-ordered)               80   The debate on the origins of color categories pits the hypothesis
+                                                                         low surprisal                                high surprisal   that color-naming systems emerge from universal underlying
+Fig. 4. Color chips rank-ordered by their average surprisal (computed using
+                                                                                                                                       principles determined innately against the view that culture de-
+Eq. 1) for all languages in the WCS, and the three languages tested here.
+                                                                                                                                       termines color categories; it is often implied that only one or the
+Each row shows data for a given language, and the languages are ordered                                                                other of these theories is correct. Our results favor a reconcili-
+according to their overall communication efficiency (Eq. 2).                                                                           ation of these ideas through the the efficient-communication
+                                                                                                                                       hypothesis (11), which states that categories reflect a tradeoff
+                                                                                                                                       between informativeness of the terms and their number (10).
+color lexicon distributed across the population; however, all lan-                                                                     Cultures across the globe show common patterns in color nam-
+guages, even those with a very sophisticated color language, pri-                                                                      ing, and even languages with few high consensus color terms
+oritize the same set of (warm) colors.                                                                                                 appear to have a complete color lexicon distributed across the
+                                                                                                                                       population, as shown by Lindsey et al. (3) for the Hadza of
+The colors of objects versus backgrounds. The discovery that warm
+colors are more precisely communicated compared with cool
+colors is a finding that emerges from the information-theoretic                                                                                                                  0.8
+analysis. However, what determines this universal asymmetry in
+communicative efficiency between warm and cool colors? We
+                                                                                                                                                Foreground color (Probability)
+
+
+
+
+hypothesized that the ordering of chips by average surprisal
+arises because of the color statistics associated with salient ob-                                                                                                               0.6
+jects, in contrast to their indistinct backgrounds. Natural scenes
+typically do not show an equal representation of colors. Instead,
+warm colors (yellow/orange/red) and cool colors (blue/green) are
+overrepresented (24–26), regardless of season or ecosystem (27),                                                                                                                 0.4
+and primary visual cortex is adapted to these statistics (28, 29).
+Attempts have been made to relate the chromatic statistics of a
+small sample of natural images to color categories (30), but it is
+not clear whether objects are representative of natural images in                                                                                                                0.2
+general. To fill this gap in knowledge, we analyzed the colors of
+objects identified by independent observers in a dataset of
+20,000 photographs; this dataset was curated by Microsoft from
+over 200,000 photographs for the purpose of depicting salient                                                                                                                     0
+objects (31). We discovered that pixel colors for the objects were                                                                                                                     1           Color chips (rank-ordered)        80
+more often within the red/yellow/orange (“warm”) range, compared                                                                                                                        low surprisal                     high surprisal
+with backgrounds, which were typically blue/green (“cool”). More-
+over, the likelihood that a color would be found in an object was                                                                      Fig. 5. The color statistics of objects predict the average surprisal of colors.
+negatively correlated with its average surprisal in the three lan-                                                                     Objects in the Microsoft Research Asia database of 20,000 photographs were
+guages we studied (Fig. 5 and SI Appendix, section 8 and Fig. S14)                                                                     identified by human observers who were blind to the purpose of our study
+and the 110 languages of the WCS. These results suggest that what                                                                      (31). The colors of the pixels in the images were binned into the 80 colors
+                                                                                                                                       defined by the Munsell chips used in the behavioral experiments (across the
+determines the universal patterns across the diversity of languages
+                                                                                                                                       images there were 9.2 × 108 object pixels and 1.54 × 109 background pixels). The
+is the consistent link between warm colors and behaviorally relevant
+                                                                                                                                       y axis shows the [(number of pixels of given color in objects)/(number of pixels
+items—salient objects—in the environment. We confirmed these                                                                           of given color in objects + number of pixels of given color in backgrounds)];
+conclusions in an analysis of spectral measurements obtained from                                                                      the color chip ranking is that obtained for the Tsimane’. Error bars are SE. The
+objects with and without behavioral relevance to trichromatic pri-                                                                     three languages were not significantly different from each other (English:
+mates (32). We found that behaviorally relevant objects (such as                                                                       slope = −0.0064, ρ = −0.57, P value = 3 × 10−8; Bolivian-Spanish: slope =
+fruit eaten by the animals) tended to have colors associated with                                                                      −0.0049, ρ = −0.44, P value = 5 × 10−4; Tsimane’: slope = −0.0054, ρ = −0.49,
+lower average surprisal (SI Appendix and Fig. S15).                                                                                    P value = 5 × 10−6).
+
+
+10788 | www.pnas.org/cgi/doi/10.1073/pnas.1619666114                                                                                                                                                                                Gibson et al.
+ A                                   B 100                                                                                  task (Fig. 6) provide direct support for the idea that the pre-
+                                                                           2nd                 English (N=29)               dominance of artificially colored objects in Western cultures promotes
+                                                                           1st                Tsimane’ (N=28)               the usefulness of color and, consequently, increases color-naming
+                                                                                                                            efficiency. The number of color terms used by Tsimane’ individ-
+
+
+
+
+                                          Use of color word (%)
+                                                                                                                            uals and the efficiency of color-term use increased with more ex-
+                                                                                                                            posure to Bolivian-Spanish (SI Appendix, section 10, Fig. S16, and
+        what is this?                                                                                                       Table S6), suggesting a mechanism for cultural transmission.
+                                                                                                                               The present results confirm, for the Tsimane’, prior work showing
+                                                                                                                            that language groups with relatively few consensus color categories
+     tim
+
+
+
+
+                                                                                                                            nonetheless possess a large repertoire of color categories distributed
+        e
+
+
+
+
+                                                                                                                            across the population (3). The forces that give rise to the parti-
+                   what is this?                                                                                            tioning of color space into color categories more refined than warm/
+                                                                                                                            cool remain unclear, but our work promotes the idea the main
+                                                 0                                                                          driving force is the extent to which color categories are behaviorally
+                                                                  banana
+                                                                            tomato
+                                                                                      apple
+
+                                                                                     pepper
+
+
+                                                                                               cup
+                                                                                                     basket
+                                                                                                              rope
+                                                                                                                     comb
+                                                                                                                            relevant. Contributions to behavioral relevance may depend on
+
+                                                                                      bell
+                                                                                                                            stimulus saturation (38) and reflect efficient partitioning of the ir-
+                                                                           Natural                   Artificial             regularities in perceptual color space (2, 15). Relative lightness must
+                                                                                                                            also be important in establishing behavioral relevance. Black was
+Fig. 6. The Tsimane’ use color terms less frequently than English speakers.                                                 communicated among the Tsimane’ with high efficiency, which
+(A) Contrastive-labeling paradigm, adapted to assess use of color terms in nor-                                             replicates prior work showing that black and white are named re-
+mal communication. (B) Percent of trials in which participants used a color word                                            liably across all languages. The efficient communication of black is
+to describe objects presented in sequential pairs. Members of each pair were                                                consistent with our overall hypothesis, that color categories reflect
+identical except for color (e.g., green banana/yellow banana). Tsimane’ speakers                                            usefulness: Blacks are prevalent in natural images, and retinal
+were less likely to use a color word (mixed effect logistic regression, β = −5.23,                                          processing favors darks over lights (39).
+
+
+
+
+                                                                                                                                                                                                                 PSYCHOLOGICAL AND
+                                                                                                                                                                                                                 COGNITIVE SCIENCES
+z = −5.48, P < 0.0001). Among Tsimane’, a mixed-effect logistic regression shows a                                             Color processing depends upon an extensive network of brain
+main effect of artificiality (β = 3.59, z = 4.00, P < 0.0001) and presentation order (β =                                   regions that process retinal signals (40), culminating in the highest
+1.57, z = 3.09, P < 0.01) with no interaction (β = 0.91, z = 1.19, P = 0.23). Among                                         levels of processing, in frontal cortex (41). The present report lever-
+English, we find a main effect of presentation order (β = 1.53, z = 4.00, P < 0.001).
+                                                                                                                            ages color language as perhaps the best readout of this machinery as it
+                                                                                                                            pertains to behavior to uncover the forces behind the most funda-
+                                                                                                                            mental color categorization, warm versus cool. Finally, we wonder to
+Africa and by us in the Tsimane’ of South America. These                                                                    what extent the fundamental asymmetry in usefulness associated
+common patterns across cultures suggest some universal con-                                                                 with warm colors versus cool colors underlies their emotional
+straint on color naming, but the variability in communicative                                                               valence (42), as indicated by the warm/cool terminology itself.
+efficiency about color terms across cultures suggests that culture
+plays a role too. According to the communication-efficiency                                                                 Methods
+hypothesis, if a culture has little need for many high-consensus                                                            All experimental procedures were approved by Massachusetts Institute of Tech-
+color categories, it is simpler in that communication system not                                                            nology’s Committee on the Use of Humans as Experimental Subjects. Informed
+to have them. We show that all cultures around the world favor                                                              consent was obtained from all participants, as required by the Committee.
+communication about warm colors over cool colors, and that this
+phenomenon reflects a universal feature of natural scenes: Ob-                                                              Color-Naming Munsell Chips. Participants were presented with each of
+jects defined by human observers tend to be warm colored while                                                              80 colored chips evenly sampling the standard Munsell array of colors (SI
+backgrounds tend to be cool colored. These results provide ev-                                                              Appendix, Table S2) in a different random order for each participant under
+idence that usefulness is the reason for the addition of color                                                              controlled lighting conditions using a light box (nine phosphor broadband
+terms (36, 37). For example, there simply are not that many                                                                 D50 color-viewing system, model PDV-e, GTI Graphic Technology, Inc.). Each
+natural blue objects, which may explain why many languages                                                                  participant initially took a test of normal color vision (43). All participants
+acquire the term “blue” relatively late (this left Homer scram-                                                             that failed this task (∼5% of participants) were excluded from further study.
+bling to come up with an alternative description for the sea:                                                               The task was performed indoors. For Tsimane’ speakers, we assessed their
+                                                                                                                            knowledge of Spanish using a short questionnaire of very common words.
+“wine-dark” instead of “blue”; ref. 34). That many if not all
+                                                                                                                            Most participants did not know all of these words, suggesting a poor knowl-
+“basic” color terms derive, historically, from the names of objects                                                         edge of Spanish for most (see SI Appendix, section 1 for more information).
+we care about (or cared about) provides yet another clue that
+usefulness is the principal force that drives color categorization.                                                         Free-Choice Version. The instructions for this task were as follows: We want
+Consider “orange.” Our results suggest that the color statistics of                                                         to know the words for colors in English/Spanish/Tsimane’. So we want you
+natural objects establish the relative salience of different colors                                                         to tell us the colors of these cards. Tell us what other English/Spanish/Tsi-
+and the informativeness of the associated terms. But we recog-                                                              mane’ speakers would typically call these cards. (Fixed-choice version of the
+nize that it is possible that the causal relationship is the inverse:                                                       task: There are 11 choices: black, white, red, green, blue, purple, brown,
+that important natural objects acquired warm coloring to exploit                                                            yellow, orange, pink, gray. Choose the closest color word.) See SI Appendix,
+the salience of these colors to trichromatic primates, for example                                                          section 1 for the Tsimane’ and Spanish translations, with color terms from
+to attract primates to assist in seed dispersal (32).                                                                       Spanish/Tsimane’ for the fixed-choice version in SI Appendix, Table S3.
+   Although all languages appear to possess a fundamental dis-                                                              Fifty-eight Tsimane’-speaking adults (mean age: 33.2 y; SD: 12.8 y; range
+tinction between warm and cool colors, the large variance of                                                                16–78; 38 females); 20 Spanish-speaking adults (mean age: 29.0 y; 9.1 SD: years;
+average surprisal values across languages suggests that the av-                                                             range 18–55; 11 females); and 31 English-speaking adults (mean age: 37.1 y;
+                                                                                                                            11.6 SD: years; range 21–58; 10 females) completed this task. From the com-
+erage usefulness of color varies among language groups. Our
+                                                                                                                            plete list of terms used in the population, we determined for each chip the
+results on object/color associations support this hypothesis by
+                                                                                                                            term that was used most often (the modal term). Across the chips, we tallied
+showing that many objects that are common in both Tsimane’                                                                  the set of unique modal terms, and removed from the list any modal terms
+and US cultures have a diagnostic color term in English but not                                                             that were only used for one chip, thus omitting maracayeisi in Tsimane’ (a
+in Tsimane’. These results support the idea that color is not as                                                            color chip on which jäinäs, glossed red, was a close second), and fuschia and
+useful for Tsimane’ as it is for English and Bolivian-Spanish,                                                              piel (“skin color”) in Bolivian Spanish. This set of terms provides an estimate of
+consistent with findings in other non-Western groups (36). The                                                              the basic color terms in the population (SI Appendix, Table S3).
+Tsimane’ have an extensive botanical vocabulary (14), which might
+obviate the need for color terms in their culture, which is heavily                                                         Fixed-Choice Version. Forty-one Tsimane’ adults (mean age: 38.9 y; SD: 17.6 y;
+dependent on natural objects. Our results in a contrastive-naming                                                           range 18–74; 24 females); 25 Spanish adults (mean age: 25.7 y; 9.1 SD: years;
+
+
+Gibson et al.                                                                                                                                      PNAS | October 3, 2017 | vol. 114 | no. 40 | 10789
+range 18–55; 13 females); and 29 English adults (mean age: 26.0 y; 8.9 SD: years;             Spontaneous Use of Color in a Contrastive-Labeling Task. A subset of the
+range 18–55; 14 females) took part, where participants were given a fixed set of              participants who participated in the other experiments also took part in a
+color labels to choose from for each color chip: the modal terms discovered in                contrastive-labeling experiment; some people took part only in the
+the free-choice version. We also included black/negro, white/blanco/gray/gris in              contrastive-labeling experiment and not in the Munsell-chip color-naming
+the English/Spanish tasks, because they are regarded as basic color terms.                    experiment. n = 28 Tsimane’ adults (mean age: 30.9 y; SD: 17.8 y; range
+                                                                                              18–90; 23 females) and 29 English participants (mean age: 35.5 y; SD: 11.0 y;
+Focal Colors. Following the Munsell-chip color naming experiment, each                        range 21–58; nine females). Eight pairs of objects were obtained for naming,
+participant (n = 99 Tsimane’; 55 Spanish; 29 English) was then presented with                 including four pairs of fruits and vegetables: a ripe (yellow) banana and an
+a standard 160-chip Munsell array of colors (illuminated by the lightbox) and                 unripe (green) banana; a ripe (red) tomato and an unripe (green) tomato; a
+was asked to point out the best example of several color words (“focal”                       red apple and a green apple; a red bell pepper and a green bell pepper; and
+colors). English speakers were asked about red, green, yellow, blue, orange,                  four pairs of artifact objects: a red and a yellow cup; a red and a blue comb;
+brown, purple, and pink. Spanish speakers were asked about rojo, verde,                       a red and a yellow piece of rope; and a red and a green small basket. All of
+amarillo, azul, celeste, anaranjado, morado, cafe, and rosa. For Tsimane’, in                 the pairs of objects were identical except for their colors. Our method was
+the free-choice version of the task, we asked about the colors that the par-                  an adaptation of the method used by Sedivy (35). Participants were first
+ticipant produced. For the fixed-choice version, we asked about jäinäs (∼red),                presented with one object and were asked to name the object. Then the
+yushñus (∼blue), shandyes (∼green), itsidyeisi (∼purple), cafedyeisi (∼brown),                second object of the same type was presented for naming. Each participant
+and chames (∼yellow). The chips most often selected as focal colors for all of                named all eight pairs of objects consecutively in this fashion. There were
+the terms probed are given in SI Appendix, Table S4. To show the population                   four different random orders of presentation. The experimenter/translator
+results and evaluate the possible privilege of the unique hues, we computed                   transcribed what was said.
+the probability density function for each of the four unique hues over the grid
+space. The contours in Fig. 2 show the probability that a given color word was                ACKNOWLEDGMENTS. We thank Ricardo Godoy and Tomas Huanca for lo-
+                                                                                              gistical help; Dino Nate Añez and Salomon Hiza Nate for help translating
+used for each color chip on the basis of our empirical data.
+                                                                                              and running the task; Rashida Khudiyeva and Isabel Rayas for helping
+                                                                                              with the timing of the reaction times for the color and object naming;
+Color-Naming Objects from Memory. Following the preceding two tasks, each                     Serena Eastman and Theodros Haile who helped segmenting images for
+participant (n = 99 Tsimane’; 55 Spanish; 29 English) was read a list of items                the natural-scene analysis; and Evelina Fedorenko, Alexander Rehding,
+that have typical colors, and was asked what color each item was in their                     Roger Levy, Caroline Jones, Joshua Green, and Neir Eshel for comments
+experience. Each of the items had a conventional color in Tsimane’ culture,                   on the manuscript. The work was supported by NIH Grant R01EY023322
+usually the same as that in North American culture: a cloud (white/gray), dirt                (to B.R.C.), NSF IOS Program Award 1353571 (to B.R.C.) and Linguistics
+                                                                                              Program Award 1534318 (to E.G.), and the Intramural Research Program
+(brown), grass (green), hair (black), teeth (white), rice (white), an unripe                  of the NIH (National Eye Institute/National Institute of Mental Health).
+banana (green), a ripe banana (yellow), the sky (blue), corn (yellow), yucca                  Additional support was provided by University of Rochester start-up
+for eating (white), the outer husk of yucca (brown), blood (red), fire (orange/               funding (to S.T.P.) and the Wellesley College Undergraduate Research
+yellow), a carrot (orange), and a ripe tomato (red).                                          Summer Program.
+
+
+ 1. Berlin B, Kay P (1969) Basic Color Terms: Their Universality and Evolution (Univ of       22. Bosten JM, Lawrance-Owen AJ (2014) No difference in variability of unique hue se-
+    California Press, Berkeley, CA).                                                              lections and binary hue selections. J Opt Soc Am A Opt Image Sci Vis 31:A357–A364.
+ 2. Regier T, Kay P, Khetarpal N (2007) Color naming reflects optimal partitions of color     23. Wool LE, et al. (2015) Salience of unique hues and implications for color theory. J Vis
+    space. Proc Natl Acad Sci USA 104:1436–1441.                                                  15:10.
+ 3. Lindsey DT, Brown AM, Brainard DH, Apicella CL (2015) Hunter-gatherer color naming        24. Vrhel MJ, Gerson R, Iwan LS (1994) Measurement and analysis of object reflectance
+    provides new insight into the evolution of color terms. Curr Biol 25:2441–2446.               spectra. Color Res Appl 19:4–9.
+ 4. Roberson D, Davidoff J, Davies IR, Shapiro LR (2005) Color categories: Evidence for the   25. Nascimento SM, Ferreira FP, Foster DH (2002) Statistics of spatial cone-excitation ra-
+    cultural relativity hypothesis. Cognit Psychol 50:378–411.                                    tios in natural scenes. J Opt Soc Am A Opt Image Sci Vis 19:1484–1490.
+ 5. Valberg A (2001) Unique hues: An old problem for a new generation. Vision Res 41:         26. Webster MA, Mollon JD (1997) Adaptation and the color statistics of natural images.
+    1645–1657.                                                                                    Vision Res 37:3283–3298.
+ 6. Bohon KS, Hermann KL, Hansen T, Conway BR (2016) Representation of perceptual             27. Webster MA, Mizokami Y, Webster SM (2007) Seasonal variations in the color sta-
+    color space in macaque posterior inferior temporal cortex (the V4 complex). eNeuro            tistics of natural images. Network 18:213–233.
+    3:1–28.                                                                                   28. Conway BR (2001) Spatial structure of cone inputs to color cells in alert macaque
+ 7. Roberson D, Hanley JR (2007) Color vision: Color categories vary with language after          primary visual cortex (V-1). J Neurosci 21:2768–2783.
+    all. Curr Biol 17:R605–R607.                                                              29. Conway BR (2014) Color signals through dorsal and ventral visual pathways. Vis
+ 8. Lindsey DT, Brown AM (2006) Universality of color names. Proc Natl Acad Sci USA 103:          Neurosci 31:197–209.
+    16608–16613.                                                                              30. Yendrikhovskij SN (2001) Computing color categories from statistics of natural im-
+ 9. Holmes KJ, Regier T (2017) Categorical perception beyond the basic level: The case of
+                                                                                                  ages. J Imaging Sci Technol 45:409–441.
+    warm and cool colors. Cogn Sci 41:1135–1147.
+                                                                                              31. Liu T, et al. (2011) Learning to detect a salient object. IEEE Trans Pattern Anal Mach
+10. Piantadosi ST, Tily H, Gibson E (2011) Word lengths are optimized for efficient
+                                                                                                  Intell 33:353–367.
+    communication. Proc Natl Acad Sci USA 108:3526–3529.
+                                                                                              32. Regan BC, et al. (2001) Fruits, foliage and the evolution of primate colour vision.
+11. Regier T, Kemp C, Kay P (2015) Word meanings across languages support efficient
+                                                                                                  Philos Trans R Soc Lond B Biol Sci 356:229–283.
+    communication. The Handbook of Language Emergence, eds MacWhinney B,
+                                                                                              33. Kay P, Maffi L (1999) Color appearance and the emergence and evolution of basic
+    O’Grady W (Wiley-Blackwell, Hoboken, NJ), pp 237–263.
+                                                                                                  color lexicons. Am Anthropol 101:743–760.
+12. Lucy JA (1997) The linguistics of “color”. Color Categories in Thought and Language,
+                                                                                              34. Deutscher G (2010) Through the Language Glass: Why the World Looks Different in
+    eds Hardin CL, Maffi L (Cambridge Univ Press, Cambridge, UK), pp 320–346.
+                                                                                                  Other Languages (Metropolitan Books, New York).
+13. Saunders BA, van Brakel J (1997) Are there nontrivial constraints on colour catego-
+                                                                                              35. Sedivy JC (2003) Pragmatic versus form-based accounts of referential contrast: Evi-
+    rization? Behav Brain Sci 20:167–179, discussion 179–228.
+                                                                                                  dence for effects of informativity expectations. J Psycholinguist Res 32:3–23.
+14. Leonard WR, et al. (2015) The Tsimane’ Amazonian Panel Study (TAPS): Nine years
+                                                                                              36. Kuschel R, Monberg T (1974) ‘We don’t talk much about colour here’: A study of
+    (2002-2010) of annual data available to the public. Econ Hum Biol 19:51–61.
+15. Jameson K, D’Andrade RG (1997) It’s not really red, green, yellow, blue: An inquiry           colour semantics on Bellona Island. Man (Lond) 9:213–242.
+    into perceptual color space. Hardin and Maffi Color Categories in Thought and             37. Levinson SC (2000) Yélî Dnye and the theory of basic color terms. J Linguist Anthropol
+    Language (Univ of Cambridge Press, Cambridge, UK), pp 295–319.                                10:3–55.
+16. Lantz D, Stefflre V (1964) Language and cognition revisited. J Abnorm Psychol 69:         38. Witzel C (2016) New insights into the evolution of color terms or an effect of satu-
+    472–481.                                                                                      ration? Iperception 7:2041669516662040.
+17. Steels L, Belpaeme T (2005) Coordinating perceptually grounded categories through         39. Ratliff CP, Borghuis BG, Kao YH, Sterling P, Balasubramanian V (2010) Retina is
+    language: A case study for colour. Behav Brain Sci 28:469–489, discussion 489–529.            structured to process an excess of darkness in natural scenes. Proc Natl Acad Sci USA
+18. Baddeley R, Attewell D (2009) The relationship between language and the environ-              107:17368–17373.
+    ment: Information theory shows why we have only three lightness terms. Psychol Sci        40. Lafer-Sousa R, Conway BR (2013) Parallel, multi-stage processing of colors, faces and
+    20:1100–1107.                                                                                 shapes in macaque inferior temporal cortex. Nat Neurosci 16:1870–1878.
+19. Abbott JT, Griffiths TL, Regier T (2016) Focal colors across languages are represen-      41. Bird CM, Berens SC, Horner AJ, Franklin A (2014) Categorical encoding of color in the
+    tative members of color categories. Proc Natl Acad Sci USA 113:11178–11183.                   brain. Proc Natl Acad Sci USA 111:4590–4595.
+20. Hering E Outlines of a Theory of the Light Sense, trans Hurvich LM, Jameson D (1964)      42. Palmer SE, Schloss KB, Sammartino J (2013) Visual aesthetics and human preference.
+    (Harvard Univ Press, Cambridge, MA).                                                          Annu Rev Psychol 64:77–107.
+21. Webster MA, Miyahara E, Malkoc G, Raker VE (2000) Variations in normal color vision.      43. Neitz M, Neitz J (2001) A new mass screening test for color-vision deficiencies in
+    II. Unique hues. J Opt Soc Am A Opt Image Sci Vis 17:1545–1555.                               children. Color Res Appl 26:S239–S249.
+
+
+
+10790 | www.pnas.org/cgi/doi/10.1073/pnas.1619666114                                                                                                                      Gibson et al.
+

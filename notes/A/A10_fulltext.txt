@@ -1,0 +1,976 @@
+    A Phylogenetic Analysis of the Evolution of
+    Austronesian Sibling Terminologies
+    Author(s): Fiona M. Jordan
+    Source: Human Biology, 83(2):297-321. 2011.
+    Published By: Wayne State University Press
+    DOI: 10.3378/027.083.0209
+    URL: http://www.bioone.org/doi/full/10.3378/027.083.0209
+
+
+
+    BioOne (www.bioone.org) is an electronic aggregator of bioscience
+    research content, and the online home to over 160 journals and books
+    published by not-for-profit societies, associations, museums, institutions,
+    and presses.
+    Your use of this PDF, the BioOne Web site, and all posted and associated
+    content indicates your acceptance of BioOne’s Terms of Use, available at
+    www.bioone.org/page/terms_of_use.
+    Usage of BioOne content is strictly limited to personal, educational, and
+    non-commercial use. Commercial inquiries or rights and permissions
+    requests should be directed to the individual publisher as copyright holder.
+
+
+
+
+BioOne sees sustainable scholarly publishing as an inherently collaborative enterprise connecting authors,
+nonprofit publishers, academic institutions, research libraries, and research funders in the common goal of
+maximizing access to critical research.
+A Phylogenetic Analysis of the Evolution of Austronesian
+Sibling Terminologies
+
+FIONA M. JORDAN1
+
+
+
+       Abstract Social structure in human societies is underpinned by the variable
+       expression of ideas about relatedness between different types of kin. We
+       express these ideas through language in our kin terminology: to delineate
+       who is kin and who is not, and to attach meanings to the types of kin labels
+       associated with different individuals. Cross-culturally, there is a regular and
+       restricted range of patterned variation in kin terminologies, and to date, our
+       understanding of this diversity has been hampered by inadequate techniques
+       for dealing with the hierarchical relatedness of languages (Galton’s Prob-
+       lem). Here I use maximum-likelihood and Bayesian phylogenetic compara-
+       tive methods to begin to tease apart the processes underlying the evolution
+       of kin terminologies in the Austronesian language family, focusing on terms
+       for siblings. I infer (1) the probable ancestral states and (2) evolutionary
+       models of change for the semantic distinctions of relative age (older/younger
+       sibling) and relative sex (same-sex/opposite-sex). Analyses show that early
+       Austronesian languages contained the relative-age, but not the relative-sex
+       distinction; the latter was reconstructed firmly only for the ancestor of
+       Eastern Malayo-Polynesian languages. Both distinctions were best charac-
+       terized by evolutionary models where the gains and losses of the semantic
+       distinctions were equally likely. A multi-state model of change examined
+       how the relative-sex distinction could be elaborated and found that some
+       transitions in kin terms were not possible: jumps from absence to heavily
+       elaborated were very unlikely, as was piece-wise dismantling of elaborate
+       distinctions. Cultural ideas about what types of kin distinctions are important
+       can be embedded in the semantics of language; using a phylogenetic
+       evolutionary framework we can understand how those distinctions in
+       meaning change through time.
+
+Social structure in human societies is underpinned by the variable expression of
+ideas about relatedness between kin. Notions of marriageability, determination of
+group membership, rules of residence and reciprocal obligations, and theories
+of child-rearing influence much of how human communities have structured their
+interactions. Anthropologists have long noted that while on the surface there is
+
+       1
+         Evolutionary Processes in Language and Culture, Max Planck Institute for Psycholinguistics, PB 310,
+Nijmegen 6500 AH, The Netherlands.
+
+       Human Biology, April 2011, v. 83, no. 2, pp. 297–321.
+       Copyright © 2011 Wayne State University Press, Detroit, Michigan 48201-1309
+
+       KEY WORDS: KIN TERMS, LANGUAGE, AUSTRONESIAN, PHYLOGENETIC COMPARATIVE
+METHOD, CULTURAL EVOLUTION.
+298 / JORDAN
+
+a great deal of cross-cultural diversity in kinship systems, this diversity does not
+span the entirety of the variety that could exist (Nerlove and Romney 1967). This
+makes evolutionary sense, as kinship systems provide the environment in which
+humans mate, produce, and rear offspring, thus necessitating strong selective
+pressures against systems that might create non-adaptive environments. Humans
+are also cooperative breeders (Hrdy 2009), and so individuals within a group
+must coordinate their expectations and actions with respect to kin.
+       One of the most important ways we coordinate these expectations is by
+using language: first to delineate who is kin and who is not, and then second to
+attach meanings to the types of kin labels associated with different individuals
+(e.g., “mother”) or classes of individuals (e.g., “cousin”). Within a language, the
+set of terms that comprise these kin relationships is called a kinship terminology.
+These terms vary between languages, as do lexical items generally, according to
+ancestor-descendant relationships; the more closely related two languages are,
+the more likely they are to share cognate forms. Thus in the Indo-European
+language family, the English word “sister,” Dutch “zuster,” German
+“Schwester,” and Italian “sorella” are all derived from a common source and all
+denote a female sibling.
+       Closely related languages are also likely to share similar meanings for their
+terms, and the closer the relationship, the more likely it may be that meanings
+coincide. However, and like some other classes of words, kin terms have the
+property that meaning can be extended. That is, while in a language the word for
+“mother” may have some primary referent of the female parent, it may also
+extend to cover other female relatives of the ascending generation such as
+mother’s sister. These patterns of extension vary cross-linguistically—some
+languages may have ten different terms to describe a set of kin, while others may
+have 40 (Fox 1994)— but there is a regular and restricted range of patterned
+variation. This paper will address the broad question of how these cultural
+meanings and linguistic forms evolve in the domain of kinship.
+
+Comparative Studies of Kinship. Historically, the study of kin terminologies
+is foundational in anthropology (Morgan 1871), as is kinship more generally. The
+cross-cultural study of kinship was in effect abandoned or delegitimized by
+the last generation of anthropological scholars concerned with postmodernist
+qualms regarding relativity, comparison, and “biologizing” (Colleran and
+Mace 2011; D’Andrade 2000). This left the study of kin terminologies largely
+to linguists and cognitive anthropologists (e.g., Lounsbury 1987; Wierzbicka
+1987), often scholars promoting increasingly algebraic approaches (e.g.,
+Kronenfeld 2001; Read 2001, 2007) who have made the field forbidding to
+the non-specialist. During this period, the emergence of modern evolutionary
+anthropology (see e.g., Dunbar and Barrett 2007; Laland and Brown 2002)
+has put Darwinian kinship center-stage through the investigation of topics
+such as parental investment and inclusive fitness maximization, but these
+                          Phylogenetic Analysis of Sibling Terminologies / 299
+
+studies have rightly had the individual as the locus of investigation and are
+often not explicitly cross-cultural in design.
+       One strand of modern evolutionary anthropology has turned a lens back on
+comparative studies of kinship: cultural phylogenetics. By using the phylogenetic
+methods used by evolutionary biologists interested in cross-species diversity
+(Harvey and Pagel 1991), this approach seeks to understand evolutionary
+processes that produce patterned variation in culture (Gray et al. 2007; Mace and
+Holden 2005). In anthropology, the historical nonindependence of related
+populations has been recognized as a crucial difficulty for comparative analysis
+since Galton (Tylor 1889), but the statistical techniques used for comparative
+analysis of hierarchically related taxa in biology have only been adopted by
+cultural researchers in the last 15 years (Lipo et al. 2006; Mace et al. 2005; Mace
+and Pagel 1994). Recent studies have used phylogenetic tree- and network-
+building methods on language data to investigate the population histories of
+major language families such as Austronesian (Gray et al. 2009), Bantu (Holden
+2002; Rexova et al. 2006), Indo-European (Gray and Atkinson 2003), Chinese
+(Ben Hamed 2005) and Semitic (Kitchen et al. 2009). These methods have also
+been used to study cultural transmission in aspects of material culture (e.g.,
+Jordan and Shennan 2009; Tehrani and Collard 2009).
+       Once constructed, these phylogenies can then be used as principled
+controls for the evolutionary history of populations, a scaffolding on which to test
+cross-cultural hypotheses. Comparative techniques can test hypotheses about
+correlated change (e.g., the coevolution of pastoralism and patrilineality in
+the Bantu [Holden and Mace 2003], or marriage forms and payments in
+Indo-European [Fortunato and Mace, 2009]). The methods can reconstruct
+ancestral states of culture (e.g., matrilocal residence in ancestral Austronesian
+societies [Jordan et al. 2009]), they can infer relative rates of cultural change
+(e.g., in different parts of the lexicon [Pagel et al. 2007]), and can be used to
+investigate patterns of descent and exchange—as seen in work on material
+culture traditions in Iranian textiles (Collard et al. 2006; Tehrani and Collard
+2009).
+       Notably, kinship has been the focus of much phylogenetic comparative
+work. Kinship sits at an unparalleled nexus of biology, culture, and language.
+Concerned on one level with the regulation of human reproduction—the
+“basic facts of life” (Fox 1967)— kinship is more than biology, as cross-
+culturally the structure, rights, and obligations of these social relationships
+show variable mapping onto genealogy; similarly, diversity in kinship
+structure is mediated through and expressed in language. How these elements
+come together to create the observed patterns of human cultural variation is
+an open question.
+       Here I use comparative phylogenetic methods to begin to tease apart the
+processes underlying the evolution of kin terminologies. The paper presents an
+analysis of the types of distinctions made in Austronesian terms for siblings, by
+reconstructing the probable ancestral states of distinctions based on relative age,
+300 / JORDAN
+
+Table 1. Examples of Austronesian Sibling Terminologies and the Distinctions Made
+by Meanings
+
+Language           Term       Meaning                      Distinctions
+Toba Batak         haha       Older same-sex sibling       Relative age, relative sex
+                   a␩gi       Younger same-sex sibling     Relative age, relative sex
+                   i-boto     Opposite-sex sibling         Relative sex
+Malagasy           ralahavy   Man’s brother                Relative sex, sex of speaker
+                   rahavavy   Woman’s sister               Relative sex, sex of speaker
+                   anadahy    Man’s sister                 Relative sex, sex of speaker
+                   anabavy    Woman’s brother              Relative sex, sex of speaker
+Ponape             riei       Sibling                      None
+Source: Blust (1994).
+
+
+relative sex, and sex of speaker. Siblings here are formally defined as offspring,
+or persons recognized as such, of the same parent(s). Sibling terminologies,
+concerned as they are with the immediate relatives in ego’s own generation, are
+a useful partial set of all possible kin with which to strategically investigate
+evolutionary processes, because they can vary within otherwise equivalent
+systems whose structure (outside of the sibling set) may reflect aspects of
+marriageabillity or lineal group membership (cf Levi-Strauss 1969; Radcliffe-
+Brown 1952). Table 1 contains examples of sibling terms in Austronesian
+languages that demonstrate these distinctions. It should be noted that the familiar
+“sex of referent only” form in English (i.e., two terms comprising “brother,”
+“sister” only) is barely attested in Austronesian.
+       These distinctions have been widely considered salient in the kinship
+terminology literature since Kroeber (1909; see also Parkin 1997), and are part
+of a constrained set of considerations including group membership (e.g.,
+male/female, in-/out-group), genealogical distance (e.g., older/younger, levels of
+generation), and social rank that Jones (2003, 2010) has described as candidates
+for a species-typical, flexibly generative psychology of kinship. Though these
+ideas are largely untested, theoretically they derive from evolutionarily relevant
+considerations such as kin selection, the likelihood of altruistic behavior, and
+aspects of our primate heritage: they can thus be considered a highly appropriate
+starting point from a Darwinian perspective. However, these start points do not
+wed us to any particular biological or genealogical perspective on kinship;
+kinship is everywhere an “ideology of human relationships” (Stone 2000) where
+simple genetic relatedness is only part of the picture.
+
+The Austronesian Context. The sibling terminologies analyzed here are
+drawn from data on the Austronesian (AN) languages of the Pacific, collected
+together by Dziebel (2009). This language family is spread across the Pacific
+from Taiwan to Polynesia, excluding Australia and most of New Guinea and
+surrounding islands (see Figure 1). Archaeological and linguistic work has
+reached a broad consensus that Austronesian dispersal began around 5500 BP
+from Taiwan, with a corresponding ancestral speech community, Proto
+                                Phylogenetic Analysis of Sibling Terminologies / 301
+
+
+
+
+Figure 1.   Map of the Pacific showing the location of the 208 languages used in the analyses. (a) The
+            distribution of languages with a relative age distinction (present ⫽ black circles, absent ⫽
+            grey circles). (b) The distribution of languages with a relative sex distinction (present ⫽
+            black circles, absent ⫽ grey circles).
+
+
+Austronesian (PAN) (Diamond and Bellwood 2003); entry into the Philip-
+pines and island Southeast Asia began around c. 4500 BP (Pawley 2002). This
+branching coincides with Proto Malayo-Polynesian (PMP), and then another
+later branching of Proto Oceanic (POC) around 3500 BP, associated with the
+archaeological “Lapita Cultural Complex” and the dispersal of Austronesian
+peoples into the previously uninhabited regions of Remote Oceania such as
+Polynesia (Green 2003; Kirch and Green 2001). Austronesian societies vary
+in ways representative of worldwide diversity in kinship (Fox 1994; Lane
+1961). Murdock (1968) found Malayo-Polynesian languages to be of particu-
+lar note in their complexity: his “Type F: Melanesian” class was the only type
+302 / JORDAN
+
+to be further divided into four subtypes. This diversity, combined with
+well-established models of population history, provides a useful regional case
+to test hypotheses.
+       Linguists and anthropologists have debated the nature of Austronesian kin
+terminologies for many years, often focusing on sibling terms (Blust 1980, 1994;
+Epling et al. 1973; Firth 1936; Fox et al. 1995; Marshall 1983, 1984; Murdock
+1968; Van Wouden 1935, 1968). Here I briefly describe two points from this
+literature that inform the analyses below: the concept of an evolutionary model
+of change, and linguistic inferences about ancestral states. Epling et al. (1973)
+and Marshall (1984), drawing on Murdock (1968) and Nerlove and Romney
+(1967), used typological schemes to classify patterns of sibling terms. Thus,
+languages that had a single term “sibling” were one type, while languages with
+two terms denoting “older sibling” and “younger sibling” constituted another
+type, regardless of historical relationship. Both Epling et al. and Marshall
+proposed sequential models of change in these structural types as a way of
+explaining the diversity of sibling classifications in Polynesian and Oceanic
+respectively. Both authors also suggested that appropriate models of change were
+those in which binary distinctions (e.g., male/female) were added or removed to
+a type (e.g., older sibling/younger sibling) to create the next pattern in the
+sequence (e.g., older brother/older sister/younger sibling). However, these
+sequential models weighted all changes as equally probable and thus enforced
+stepwise increments in the distinctions—“jumps” were not possible. Lin-
+guists will be familiar with this “types and distinctions” contrast as similar to
+“paradigms and features”; that is, whether the locus of evolutionary investi-
+gation is more correctly at a system or a component level. This is an
+unanswered question with kinship: to date, no investigation has considered
+models of evolutionary change that track how the semantic distinctions in kin
+terms change separately from each other. By using statistical inference
+techniques to reconstruct the evolution of the distinctions from the ground up,
+we can then later assess whether they have independent trajectories of
+change, or if they are linked by dependencies— bound coevolutionarily to one
+another, and/or to other aspects of language and culture.
+       In terms of ancestral states, sibling terms for early Austronesian speech
+communities have been well-reconstructed by the (linguistic) comparative
+method for some time. Milke (1938) reconstructed four terms for Proto Oceanic:
+*tansi, “younger same-sex sibling,” *kaka “older same-sex sibling,” *mwane
+“woman’s brother,” and *papine, “man’s sister.” Blust (1980, 1994) recon-
+structed four terms for Proto Malayo-Polynesian: *ñaRa, “woman’s brother,”
+*betaw “man’s sister,” *kaka “older sibling,” and *hua(n)ji, “younger sibling,”
+with the last two possibly restricted to same-sex siblings only. The inference then
+is that PMP made a relative age and a relative sex distinction based on the sex
+of the speaker, and that this was carried through to POC. Fox (1994) notes
+however that different typologies or meaning sets can be extracted from the same
+                                   Phylogenetic Analysis of Sibling Terminologies / 303
+
+sets of lexical forms reconstructed for PMP1; furthermore, historical linguistics
+has no accepted statistical basis for assigning meaning to reconstructed forms.
+Thus, phylogenetic techniques can be used to effect when the historical linguistic
+approach may not be sufficient to robustly reconstruct the semantics underlying
+kin classification.
+
+The Present Study. Here I show how phylogenetic comparative methods can
+reconstruct ancestral states of sibling patterns in kin terminology. The units to be
+reconstructed are the distinctions in meaning: the presence or absence of (1)
+relative age and (2) relative sex. I infer the probability of these distinctions at
+three main nodes of interest representing important ancestral speech communities
+(PAN, PMP, POC) and a further six other ancestral nodes. Evolutionary models
+of transition (gains and losses) in these distinctions are derived. To test the idea
+of sequential models of change in kin terms more specifically I examine the
+elaboration and reduction of the opposite-sex distinction. Epling et al. and
+Marshall both assert that single-step changes are most likely; the idea is implicit
+in other “lattice” models (e.g., Hage 2001). The prediction is that an opposite-sex
+distinction (i.e., having one term for opposite-sex siblings and another for
+same-sex siblings) could evolve from a situation where the distinction was
+absent. Further, the opposite-sex term could then be elaborated by the sex of
+speaker, i.e., it could be split into a term for “woman’s brother” and “man’s
+sister.” However, how often languages then collapse this elaboration back into
+the single term, or skip straight from absence of the distinction to a two-term
+system, is unknown. Multistate evolutionary models can quantitatively address
+the likelihood of these transitions on a phylogeny.
+
+
+Methods
+Phylogenetic Trees. A posterior distribution (i.e., a probability sample) of
+1,000 language trees was derived from a phylogenetic analysis of the Austrone-
+sian Basic Vocabulary Database (ABVD) described in Greenhill et al. (2008).
+The ABVD consists of the cognate sets of a 210-item word-list from more than
+600 Austronesian languages. Cognate words are those which can be shown to
+share a common ancestor by virtue of both similar form and meaning, and are
+judged as such using the Comparative Method of historical linguistics (different
+from phylogenetic comparative methods). Each item of basic vocabulary was
+represented by a number of cognate sets, and set membership was scored for
+presence or absence for each language, then coded into a binary matrix for the
+phylogenetic analysis. The kin terms analyzed below are not part of the basic
+vocabulary used in building the lexical trees themselves.
+
+         1
+           Fox (1994, p. 138 –9) describes two different configurations of meaning for the reconstructed PMP kin
+terminology vocabulary. The relevant sibling terms are *kaka/aka and *huaji; in the first configuration they can
+refer to older and younger sibling, respectively, in the second configuration, to older same-sex and younger
+same-sex, with two extra forms for “brother” and “sister.”
+304 / JORDAN
+
+            a
+
+
+
+
+Figure 2.   Ancestral state reconstructions of the relative age (a) and relative sex (b) distinction in
+            Austronesian sibling terms. The 50% majority rule consensus phylogeny summarizes the
+            sample of 1,000 trees for 208 Austronesian languages. Language font indicates the presence
+            (sans-serif) or absence (italic) of the age/sex distinction. Reconstructed nodes are shown by
+            circles coloured (presence ⫽ black, absence ⫽ grey) according to the dominant ancestral
+                                Phylogenetic Analysis of Sibling Terminologies / 305
+
+
+
+
+Figure 2.   (continued) state reconstruction with the combined posterior probability inside, and lettered
+            to correspond to the distributions in Figures 3 and 4. Filled circles indicate combined
+            probabilities ⬎ .7, unfilled indicate combined probabilities between .5 and .7. Values below
+            each node indicate the node’s phylogenetic posterior probability. Linguistic subgroupings
+            are indicated by white bars crossing branches. Abbreviations: MP, Malayo-Polynesian;
+            SHWNG, South Halmahera-West New Guinea.
+306 / JORDAN
+
+
+            b
+
+
+
+
+Figure 2.       (continued)
+                          Phylogenetic Analysis of Sibling Terminologies / 307
+
+
+
+
+Figure 2.   (continued)
+
+
+
+     The posterior distribution of trees was inferred from these data using
+Bayesian Markov-chain Monte Carlo (MCMC) methods (Huelsenbeck et al.
+2001; Yang and Rannala 1997). This approach makes it possible to account for
+308 / JORDAN
+
+Table 2. Coding Schema for Comparative Analyses
+
+Aspect                           Description
+Relative sex                     1 ⫽ Language contains terms that distinguish same-sex from
+                                   opposite-sex siblings
+                                 0 ⫽ No same-opposite distinction
+Relative age                     1 ⫽ Language contains terms that distinguish older and younger
+                                   siblings
+                                 0 ⫽ No older-younger distinction
+Elaboration of cross-siblingsa   2 ⫽ Language has separate terms denoting the opposite-sex
+                                   sibling for each sex (e.g. Woman’s brother, man’s sister)
+                                 1 ⫽ Language has a single term for opposite-sex sibling, used
+                                   by both sexes
+                                 0 ⫽ No same-opposite distinction
+a. n ⫽ 180. Languages with intermediate distinctions (e.g., term for “woman’s brother” only)
+   were not used in this analysis; a model with five states failed to converge on consistent
+   likelihood estimates.
+
+
+
+the effect of uncertainty in the phylogenetic tree model representing population
+history, a nontrivial consideration in the study of cultural traits because a single
+branching tree is unlikely to accurately represent human population history
+(Boyd et al. 1997). The languages (n ⫽ 400), the trees, and their properties are
+described more fully in Gray et al. (2009). Retaining those taxa for which
+corresponding kin term data exists (n ⫽ 208), a sample of 1,000 trees was used
+for the comparative analyses below. In this sample, properties of the trees such
+as branching patterns and branch lengths were represented in proportion to their
+likelihood. A majority-rules consensus tree was computed in APE Version 2.6
+(Paradis et al. 2004) and summarizes the sample visually (see Figure 2), but the
+comparative analyses were performed over all 1,000 trees.
+
+Kin Terminologies. Data were taken from Dziebel’s (2009) worldwide sheets
+of kin terminologies available at http://kinshipstudies.org/?page_id⫽20. I
+matched languages from the ABVD to languages in this data set on the basis of
+language name and reference source, obtaining a final sample of 208 languages
+on the phylogenies with sibling terminology data. Languages were coded under
+the schemes described in Table 2. Terms were coded without in-depth linguistic
+analysis, but here the investigation is confined to the evolution of age and sex
+distinctions expressed in the sibling terms themselves, rather than in the language
+at large, so forms which are made up of morphemes with age- or sex-related
+meanings are treated the same as other forms. I note here that the analyses
+concentrate on the distinctions in meaning: the investigation of coevolution in
+forms and meanings (the traditional purvey of historical linguistics) is a future
+study. In Table 2, the “elaboration of opposite-sex distinctions” scheme was
+included as a way to test a general hypothesis about kin-term evolution.
+      The maps in Figure 1 show the distribution and location of the 208 languages,
+coded for (1) the relative age distinction and (2) relative sex distinction.
+                           Phylogenetic Analysis of Sibling Terminologies / 309
+
+Comparative Analyses.             To analyze the evolution of the sibling term
+distinctions I used the phylogenetic comparative method Multistate implemented
+in the BayesTraits package from http://www.evolution.rdg.ac.uk/BayesTraits
+(Pagel 1999b; Pagel and Meade 2006; Pagel et al. 2004). This package can be
+used to conduct both maximum-likelihood (ML) and Bayesian analyses. ML
+analyses were performed initially to explore the data and to assess the range of
+the model parameters for further Bayesian analyses.
+       Bayesian approaches to phylogenetic analysis are increasingly preferred in
+evolutionary biology because, given the data and a set of phylogenetic trees, the
+methods allow for the estimation of posterior probability distributions of
+parameters of interest. In other words, they estimate distributions of the ancestral
+state probabilities at internal nodes, and the rates of change in traits, rather than
+single values of these parameters. The posterior probability of a parameter value
+is a quantity proportional to its likelihood of having produced the observed data
+and represents the probability of the parameter value given the data and the
+model of trait evolution (Lewis 2001; Ronquist 2004). Because posterior
+probabilities cannot feasibly be computed analytically, posterior probability
+distributions are inferred using an MCMC sampling algorithm. This distribu-
+tional approach provides information about the degree of statistical uncertainty in
+the cultural trait reconstructions. Crucially, the estimation of parameters over a
+probability sample of trees yields estimates that are not dependent on any specific
+phylogenetic hypothesis. Finally, parameters can be estimated over different
+models of trait evolution, and this then yields estimates that are not dependent on
+any specific model of how the traits have evolved.
+       Given the comparative data and tree sample, BayesMultistate uses a
+continuous-time Markov model to describe the evolution of the trait of interest along
+the branches of a phylogeny. Under this model, the trait describing (for example) a
+relative age distinction in sibling terms can switch repeatedly between its two states
+of 0 ⫽ absence and 1 ⫽ presence in any of the branches of a tree. Two rate
+parameters, with rate mathematically denoted as q, specify the rate of change from
+one state to another: the transition between 0 and 1 is denoted q01, and that between
+1 and 0 as q10. These rates define the probabilities of each of these changes and
+therefore both the character states at internal nodes on a tree and the overall
+likelihood of the data (Pagel 1994, 1999b). The Bayesian MCMC implementation of
+Multistate estimates the posterior probability distributions of rate parameters and
+ancestral character states (Pagel and Meade 2006; Pagel et al. 2004). The MCMC
+chain explores parameter space widely, randomly modifying these parameters and
+trying them out on the sample of trees over consecutive iterations. While the chain
+attempts to maximize the likelihood, it also accepts less-likely combinations of
+parameters at a frequency proportional to their likelihood. After an initial period of
+“burn-in,” the chain reaches stationarity, wandering around a mean likelihood value
+and accepting the parameter hypotheses into the posterior distribution. This distri-
+bution then contains combinations of parameters such that those with higher support
+are sampled to a greater extent.
+310 / JORDAN
+
+       “Reversible-jump” mode was used to additionally estimate the posterior
+probability distribution of all the possible models of trait evolution specified by
+the two rate parameters (Pagel and Meade 2006). Let us suppose that we obtain
+a value of 5 for q01 and 7 for q10. By then setting these two rates to be equal to
+each other, and re-running our analysis, we can test whether they are indeed
+equivalent by comparing the new likelihood score to the old. The reversible-jump
+procedure outputs a model string describing these equivalences in the rate
+parameters for us, such that rates are assigned to equivalence classes (denoted by
+ordered integers) or a “zero bin” depicted by Z. For example, the model string
+“01” assigns q01 to a rate class (0) and q10 to a class (1): these two rates are
+therefore “significantly” different. Another model string “Z0” indicates that rate
+q01 is set to zero while q10 takes a non-zero value. For analyses with more than
+two states, the reversible-jump procedure can reduce the complexities of the
+underlying model of evolution to tractable dimensions, so it was used here in the
+three-state analysis of the elaboration of opposite-sex sibling terms.
+       For each of the sibling term coding schemes three MCMC chains were run for
+109 iterations. Transition-rate parameters and ancestral state estimates were recorded
+from the chain into the posterior distribution every 10,000 generations to reduce
+autocorrelation between iterations. Burn-in was determined empirically by examin-
+ing a plot of the likelihood against the iteration in Tracer (Rambaut and Drummond
+2007), and a posterior of 5 ⫻ 105 samples was taken from the stationary part of the
+chain. The harmonic mean of the likelihoods in the MCMC chain was used to
+estimate the marginal likelihood of the posterior (Nylander et al. 2004), and the chain
+with the median marginal likelihood was used for further analyses. In
+Bayesian phylogenetic analysis one can specify “priors,” that is, knowledge
+that is independent of the data. Often the investigator has no knowledge
+about, for example, what values are likely for the parameters in the
+evolutionary model, so a solution is to draw these values from a wide
+distribution. I compared the marginal likelihood of chains using both uniform
+“flat” and exponential distributions for priors; both were equivalent and
+produced posteriors that contained the ML solutions, but chains using an
+exponential prior (with a mean taken from a distribution on the interval 0 –10)
+reached convergence more quickly and were used for that reason alone.
+       To estimate ancestral states, the means of the posterior probability distribution
+of ancestral states at specified internal nodes tree are combined with the posterior
+probability of each node on the phylogeny; this is denoted as p(node) and represents
+the probability that the node exists. For example, for a specific node BayesMultistate
+may return a posterior probability distribution with a mean of 0.8 for the presence of
+a relative age distinction; this is denoted p(Age ⱍ node). If the node is present in all
+trees (i.e., p[node] ⫽ 1.00), we accept the 0.8 value as the posterior probability of
+the age distinction at that node. However, if the node is only present in 60% of
+the trees (i.e., p[node] ⫽ 0.60), we report the “combined probability” for the
+relative age distinction, p(Age) ⫽ p(Age ⱍ node) * p(node) ⫽ 0.8 * 0.6 ⫽ 0.48.
+A value of 0.7 for the combined probabilities represents an acceptable value of
+                                Phylogenetic Analysis of Sibling Terminologies / 311
+
+
+
+
+Figure 3.   Posterior probability distributions of reconstructed ancestral states for the presence of the
+            relative age distinction. Each distribution is lettered according to the corresponding major
+            node in Figure 2a. Abbreviations as for Figure 2.
+
+
+
+certainty for an ancestral state at a node (M. Pagel, personal communication).
+Node values are reported as means ⫾ SD, and marginal likelihoods are reported
+with the 95% highest probability density (HPD) range (i.e., the range within
+which 95% of the posterior distribution falls).
+
+
+
+Results
+Ancestral States. Ancestral state reconstructions (means) derived from the
+Bayesian MCMC analysis of relative age and relative sex distinctions are shown
+at the appropriate nodes on the phylogenies in Figure 2. The histograms in Figure
+3 (relative age) and Figure 4 (relative sex) show the probability distributions at
+each node for the presence and absence of the two distinctions, demonstrating the
+312 / JORDAN
+
+
+
+
+Figure 4.   Posterior probability distributions of reconstructed ancestral states for the presence of the
+            relative sex distinction. Each distribution is lettered according to the corresponding major
+            node in Figure 2b. Abbreviations as for Figure 2.
+
+
+
+variable degree of robustness in the mean estimates shown in Figure 2. The three
+figures should be read in conjunction.
+
+Relative Age. The mean marginal likelihood was ⫺116.01 (95% HPD ⫽
+⫺118.5 to ⫺111.6). The relative age distinction is securely reconstructed as
+present for the root, PAN (p(Age ⱍ node A) ⫽ p(Age) ⫽ 0.98 ⫾ 0.02), and
+throughout most of the high-order nodes reconstructed here. Phylogenetic uncer-
+tainty in node E means that the age distinction cannot be reliably reconstructed here,
+though the reconstruction itself has p(Age ⱍ node E) ⫽ .92 ⫾ .07 in the trees that have
+the node. The pattern here implies that languages without the relative-age distinction
+are likely to be later recurrent losses (such as in Micronesian, and some Central
+Malayo-Polynesian languages). An exception is Proto Central Pacific (node I: Fiji,
+Rotuma, and Polynesian), where p(Age ⱍ node I) ⫽ p(Age) ⫽ 0.27 ⫾ 0.26.
+                            Phylogenetic Analysis of Sibling Terminologies / 313
+
+Relative Sex. The mean marginal likelihood was ⫺96.5 (⫺96.8 to ⫺96.6
+95% HPD). The relative sex distinction is not reconstructed for PAN
+(p(Sex ⱍ node A) ⫽ p(Age) ⫽ 0.02 ⫾ 0.02), PMP, node L (ancestral to a large
+group of Greater Central Philippines languages), or node M. The relative sex
+distinction begins to appear reliably between nodes M and N, though both
+phylogenetic and character uncertainty in node N makes the exact dynamic
+unclear, p(Sex ⱍ node N) ⫽ .69 * .74 ⫽ .51. It is then present in all other
+estimated nodes, becoming unambiguously present through the family into the
+Oceanic languages e.g., POC p(Sex ⱍ node Q) ⫽ p(Sex) ⫽ 0.99 ⫾ 0.00.
+
+
+Models of Change
+
+Relative Age. ML estimates of the transition rate parameters over the 1,000
+trees ranged between 1.00 and 1.19 for q01 (the gain of the age distinction) and
+.37 and .44 for q10 (the loss of the age distinction) with no overlap, indicating a
+model where the gain of the distinction was more than twice as frequent as its
+loss. However, the Bayesian analysis found that rates of gain and loss in the
+relative age distinction were virtually identical: q01 ⫽ .30 (.14 – .63 95% HPD)
+and q10 ⫽ .25 (.14 – .37 95% HPD). Bayesian inferences are independent from
+any one particular phylogenetic hypothesis, so it would appear that the different
+gain/loss estimates under ML are attributable to differences in tree topologies and
+(most likely) branch lengths. The reversible-jump procedure, which integrates
+out over the models themselves (that is, it reduces the “numbers” in the transition
+rates to qualitative “classes”), also supported a model of equal gains and losses:
+q01 ⫽ q10, and these models accounted for 87% of all models visited in the chain.
+Models where gains were greater than losses (i.e., q01 ⬎ q10) comprised the vast
+majority of other models, and had a higher overall likelihood (⫺112.8 compared
+to ⫺116.5), but as mentioned, were apparently dependent on the particular
+phylogenetic hypothesis.
+
+Relative Sex. ML estimates of the transition rate parameters over the 1,000 trees
+ranged between .35 and .46 for q01 (gain of the sex distinction) and .30 and .35 for
+q10 (loss of the sex distinction), with no overlap, indicating that the gain of the
+distinction was (just) more frequent than loss. However, the Bayesian analysis again
+found that rates of gain and loss in the relative sex distinction were virtually identical:
+q01 ⫽ .18 (.12 – .26 95% HPD) and q10 ⫽ .19 (.12 – .26 95% HPD). Here the
+reversible-jump procedure supported the model of equal gains and losses: q01 ⫽ q10,
+and these models accounted for over 99% of all models visited in the chain. We can
+thus be certain, independent of the tree topology, branch lengths, and absolute rates
+of change, that equal gains and losses are appropriate for these data.
+
+Elaboration of Opposite-Sex Sibling Terms. The flow diagrams in Figure 5
+show a summary of (1) the maximum-likelihood solutions and (2) the most-
+visited models found by reversible-jump Bayesian MCMC. The ML summary is
+314 / JORDAN
+
+
+
+
+Figure 5.   Models of evolution describing the elaboration of the opposite-sex sibling term. (a) The
+            ranges of the ML solutions for each transition, found over 1,000 trees. (b) The most-visited
+            model using RJ MCMC. The asterisked state indicates the root reconstruction. See text for
+            details.
+
+
+annotated with the ranges of the transition-rate parameters for each possible
+change. The Bayesian summary depicts the top three models, which together
+comprise more than 70% of all models visited by the RJ MCMC chain. The first
+accounted for 33% of the MCMC chains (i.e., it was the most-visited model): this
+model has equal rates for all transitions except for q21, (a change from two terms
+“woman’s brother”/“man’s sister” back to a single term “opposite-sex sibling”)
+which is set to zero. The second most-visited model, accounting for 25% of the
+total, proposed equal rates for all transitions, while the third (13%) assigned q02
+(from no distinction, to the two-term system) to the zero bin and set all others to
+equal.
+       These analyses suggest that the most likely evolutionary pathway was
+one where Austronesian languages started with no relative-sex distinction in
+PAN (as above), gained the single term “opposite-sex sibling,” and then this
+was elaborated into two terms “woman’s brother”/“man’s sister” in a number
+of linguistic subgroups. Jumps from the absence of the distinction to the
+two-term situation (q02) were rare and often zero; the collapse of “woman’s
+brother”/“man’s sister” back to the single “opposite-sex sibling” term (q21)
+were all zero under ML, and rare in the Bayesian analysis. Both analyses also
+show high rates of loss of any form of the opposite-sex distinction overall
+                          Phylogenetic Analysis of Sibling Terminologies / 315
+
+(i.e., q20 and q10). When all models are considered, those where q21 is in the
+zero bin have a higher marginal likelihood than those where it has a non-zero
+rate, providing support for the hypothesis that collapses of an elaborated term
+are rare.
+
+Discussion
+       Using phylogenetic comparative methods, I inferred the ancestral states of
+two important distinctions found in Austronesian sibling terms: relative age and
+relative sex. The age distinction was reconstructed for the earliest nodes of the
+tree, indicating that languages without the distinction lost it later, while the sex
+distinction could only be reconstructed firmly to the ancestor of Eastern
+Malayo-Polynesian languages: here, PAN, PMP and some early Philippine (node
+L) speech communities did not have this distinction. Both distinctions could be
+adequately described by a model of change in which gains and losses were
+equally likely.
+       In the past, the study of kin term semantics has either been within a
+typological framework, which carries an inherent amount of arbitrariness in the
+creation of type-sets (e.g., “Iroquois cousin terminologies”) and/or approached
+with the tools of componential analysis, which uses distinctions like those used
+here in the service of describing meaning by formal logic, without any diachronic
+considerations of the evolutionary processes of change. The models of change
+used here trace the independent histories of the age- and sex- distinctions, and do
+not rely on typologies. Further, they are independent of any particular phyloge-
+netic hypothesis about prehistory. Because they are integrated over the range of
+statistically plausible linguistic relationships that the data supports, they thus
+incorporate uncertainty in a similar fashion to network models of ethnolinguistic
+relatedness. Phylogenetic (tree) and character (sibling term distinction) uncer-
+tainty can be separated, so for the subset of trees that do have a particular node
+(such as node E/N) relative age can be securely reconstructed whereas the
+presence of relative sex is ambiguous: these nodes can then be targets for further
+in-depth lexical analysis.
+       The reconstructions for the relative age distinction agree with the lexical-
+semantic reconstructions from historical linguistics that posit relative age
+(younger sibling/older sibling) for PMP and POC (Blust 1994), and those from
+comparative ethnography that infer the same for ancestral Philippines (Kroeber
+1919). However, the phylogenetic reconstructions of relative sex do not agree
+with historical linguistic reconstructions for PMP: they are robustly absent in the
+former but present by the latter method. A possible explanation for this may be
+the large number of Formosan and Western Malayo-Polynesian languages that
+lack the relative sex distinction in meaning but (in the WMP case) contain
+occasional reflexes of a PMP sibling term. Arbitrating this conflict, and the
+similar case for Proto Central Pacific relative age (see Figure 2a, node I), will
+require a word–meaning coevolutionary approach, where we test how the
+reconstructed distinctions are coupled to the evolutionary trajectories of the
+316 / JORDAN
+
+lexical forms. Thus, future work will require historical linguistic analysis to
+judge the cognacy of the lexical forms, using the linguistic comparative method
+(LCM). This is crucial: those authors who took a solely structural approach to
+Oceanic sibling term systems (Epling et al. 1973; Marshall 1984) were criticized
+for their dismissal of the lexical evidence and the logic of the LCM (see the
+comments to Marshall, 1984 by Blust, Clark, and Chowning).
+       One tenet of the LCM is that convergence (independent innovation) of the
+same forms with the same meanings in different languages is vastly improbable:
+explanations based on inheritance or borrowing (i.e., transmission) are preferable
+in such cases. Phylogenetic coevolutionary analyses can test how lexical forms
+are yoked together with semantic distinctions: we will be able to identify when
+independent gains of a distinction in different languages should be invoked as
+explanation, or when transmission with frequent loss is preferred. We shall also
+be able to test meaning—meaning coevolution, that is, whether semantic changes
+become so tightly coupled they happen in lockstep. For example, it may be that
+a change in lexical form for a sibling term packages together two or more aspects
+of meaning, so (e.g.) age and sex distinctions become transmitted as a single unit.
+However, the merit of the initial approach taken here is that by treating the
+distinctions as the unit of analyses, against the background of the linguistic
+phylogeny, we are afforded insight into the loss and gain of the meanings
+themselves independent of the lexical items used.
+       The model of change underlying the elaboration of the opposite-sex
+distinction suggests that some transitions in kin terms are not possible. Jumps
+from no distinction to two terms for opposite sex siblings based on sex of speaker
+are very unlikely. Once gained, the two terms are also unlikely to collapse back
+into the single term for opposite-sex sibling. The evolutionary schematic of
+Epling et al. (1973) proposed that any sibling terminology type could be derived
+iteratively from another through “a process of making new binary distinctions
+and/or removing old ones” (p. 1602); the model here supports the first assertion
+but not the second. Blust (1994) suggested that the loss of distinctions will occur
+more frequently than their gain, especially if correlated with cognate forms, but
+the model in Figure 5 supports the idea that while losses of a distinction
+altogether are likely, piece-wise dismantling are not. Repeating these analyses
+and the extensions described above in other language families for which
+phylogenies are available (Indo-European and Bantu) will reveal whether the
+underlying models of change are lineage-specific or more general, cf work on
+post-marital residence patterns comparing Austronesian and Indo-European
+(Fortunato and Jordan 2010).
+Perspectives. One of the oldest debates in anthropology concerns the extent to
+which changes in kin terms reflect changes in the social structure of the language
+community—Rivers (1914) “functional” view—versus Kroeber’s (1909) state-
+ment that kin terms reflected only psychological and linguistic systems and were
+not correlated with ecological or social-structural pressures. Revisiting kin term
+systems armed with the investigative tools of evolutionary biology means that we
+                           Phylogenetic Analysis of Sibling Terminologies / 317
+
+may make some headway on this debate. If as Rivers asserted, and Murdock
+(1949, 1968) later tabulated considerable cross-cultural data in support of, there
+are consistent relationships between social structure and kin term systems, we
+shall now be able to test these hypotheses with adequate control for Galton’s
+Problem. Many implicational universals in anthropology, for instance that of
+“Type F” relative-age sibling terms and the presence of descent groups (Murdock
+1968), rest on simple association data that do not control for evolutionary history.
+Extrapolation from these associations back into the past in support of claims that
+pre-historical communities had some or other form of social structure (Blust
+1980; Ehret 2008) can thus shape ideas (possibly erroneously) about past
+population movements and the interpretation of human genetic biogeography
+(Wilkins and Marlowe 2006).
+       Unlike earlier work, no inference about population history is or should be
+made from the kin terms themselves. Multiple distinct transmission pathways
+may characterize the members of any set of cultural and/or linguistic features
+(Boyd et al. 1997), and methods exist to quantify the degree to which those
+histories overlap, usually by partitioning data (Matthews et al.) or examining the
+congruence between trees produced from different data set (Page 2003; Tehrani
+et al. 2010). However, because kin terms constitute internally correlated systems,
+building phylogenies from these data is problematic. Instead, by tracking the
+semantic distinctions on core vocabulary phylogenies, we may be confident that
+similar dynamics of linguistic transmission encompass both “trait” and “tree.”
+Furthermore, we can quantify the phylogenetic signal (Ives and Garland 2009;
+Pagel 1999a) in aspects of social structure (e.g., descent groups, marriage
+patterns) to ascertain the overlap in transmission pathways between culture and
+language (Mace and Jordan 2011).
+       Finally, an understanding of the evolution of kin terminologies carries
+implications beyond anthropology for cognitive science (Jones 2010). For
+example, the distinctions commonly found in sibling terminologies have psy-
+chological import: linguistic semantic categories such as age and sex can
+influence nonlinguistic processing in judgment, production, and memory (Ang-
+goro and Gentner 2003), thus potentially speaking to the debate in the cognitive
+sciences as to the degree to which language and thought are related (Gumperz
+and Levinson 1991). Witkowski (1972) remarked that the size, complexity, and
+coverage of the 1,000⫹ kin terminologies known to science were a “precious
+resource” for the strategic study of semantic change. Combined with the
+Darwinian realities of relatedness, group membership, and reciprocity that they
+filter, kin terms provide a unique focus for understanding the evolution of
+cultural and linguistic diversity (Jordan and Dunn 2010).
+
+Acknowledgments I thank the members of EPLC and the Language and Cognition
+Group at the Max Planck Institute for Psycholinguistics, as well as three anonymous
+referees, for their useful comments; Russell Gray, Simon Greenhill, and Robert Blust for
+318 / JORDAN
+
+making the Austronesian phylogenies available; and German Dziebel for providing the kin
+term data. This research was supported by the Max Planck Society.
+
+
+Received 1 April 2010; revision accepted for publication 28 July 2010.
+
+
+Literature Cited
+Anggoro, F., and D. Gentner. 2003. Sex and seniority: The effects of linguistic categories on conceptual
+        judgments and memory. In Proceedings of the Twenty-Fifth Annual Conference of the Cognitive
+        Science Society. R. Alterman and D. Kirsh, eds. Boston, MA: Lawrence Erlbaum.
+Ben Hamed, M. 2005. Neighbour-nets portray the Chinese dialect continuum and the linguistic legacy
+        of China’s demic history. Proc. Royal Soc. B Biol. Sci. 272:1015–1022.
+Blust, R. 1980. Early Austronesian social organization: The evidence of language. Curr. Anthropol.
+        21:205–247.
+Blust, R. 1994. Austronesian sibling terms and culture history. In Austronesian Terminologies:
+        Continuity and Change, Pacific Linguistics, A. Pawley and M. D. Ross, eds. Canberra,
+        Australia: Australian National University Press; 31–72.
+Boyd, R., M. Borgerhoff-Mulder, W. H. Durham et al. 1997. Are cultural phylogenies possible? In
+        Human By Nature: Between Biology and the Social Sciences. Hillsdale, NJ: Lawrence
+        Erlbaum. 355–386.
+Collard, M., S. J. Shennan, and J. J. Tehrani. 2006. Branching, blending, and the evolution of
+        cultural similarities and differences among human populations. Evol. Hum. Behav.
+        27:169 –184.
+Colleran, H., and R. Mace. 2011. Contrasts and conflicts in anthropology and archaeology: The
+        evolutionary/interpretive dichotomy in human behavioural research. In Darwinian Archae-
+        ologies: A Discussion, E. Cochrane and A. Gardner, eds. Walnut Creek, CA: Leftcoast Press.
+D’Andrade, R. 2000. The sad story of anthropology 1950 –1999. Cross-Cultural Research
+        34:219 –232.
+Diamond, J., and P. Bellwood. 2003. Farmers and their languages: The first expansions. Science
+        300:597– 603.
+Dunbar, R. I. M., and L. Barrett, eds. 2007. Oxford Handbook of Evolutionary Psychology. Oxford,
+        U.K.: Oxford University Press.
+Dziebel, G. V. 2009. Kinship studies. http://kinshipstudies.org. Accessed 07/04/2009.
+Ehret, C. 2008. Reconstructing ancient kinship in Africa. In Early Human Kinship: From Sex to
+        Social Reproduction, N. J. Allen, H. Callan, R. I. Dunbar, and W. James, eds. Oxford, U.K.:
+        Blackwell; 200 –231.
+Epling, P., J. Kirk, and J. P. Boyd. 1973. Genetic relations of Polynesian sibling terminologies. Am.
+        Anthropol. 75:1596 –1625.
+Firth, R. 1936. We, the Tikopia. London, U.K.: Allen and Unwin.
+Fortunato, L., and F. M. Jordan. 2010. Your place or mine? A phylogenetic comparative analysis of
+        postmarital residence in Indo-European and Austronesian societies. Phil. Trans. R. Soc. Lond.
+        B. 365:3913–3922.
+Fortunato, L., and R. Mace. 2009. Testing functional hypotheses about cross-cultural variation: A
+        maximum-likelihood comparative analysis of Indo-European marriage practices. In Pattern
+        and Process in Cultural Evolution, S. J. Shennan, ed. Berkely, CA: University of California
+        Press; 235–249.
+Fox, J. J. 1994. Who’s who in Ego’s generation: Probing the semantics of Malayo-Polynesian kinship
+        classification. In Austronesian Terminologies: Continuity and change, Pacific linguistics, A.
+        Pawley and M. D. Ross, eds. Canberra, Australia: Australian National University Press;
+        127–140.
+                                 Phylogenetic Analysis of Sibling Terminologies / 319
+
+Fox, J. J., P. Bellwood, J. J. Fox et al. 1995. Austronesian societies and their transformations. In The
+        Austronesians: Historical and Comparative Perspectives. Canberra, Australia: Australian
+        National University Press.
+Fox, R. 1967. Kinship and Marriage. Harmondsworth, Middlesex, U.K.: Penguin.
+Gray, R. D., and Q. D. Atkinson. 2003. Language-tree divergence times support the Anatolian theory
+        of Indo-European origin. Nature. 426:435– 439.
+Gray, R. D., A. J. Drummond, and S. J. Greenhill. 2009. Language phylogenies reveal expansion
+        pulses and pauses in Pacific settlement. Science 323:479 – 483.
+Gray, R. D., S. J. Greenhill, and R. M. Ross. 2007. The pleasures and perils of Darwinizing culture
+        (with phylogenies). Biological Theory 2:360 –375.
+Green, R. C. 2003. The Lapita horizon and traditions—Signature for one set of oceanic migrations.
+        In Pacific Archaeology: Assessments and Prospects: Proceedings of the International
+        Conference for the 50th Anniversary of the first Lapita Excavation, Koné, Nouméa 2002. C.
+        Sand, ed., 95–120.
+Greenhill, S. J., R. Blust, and R. D. Gray. 2008. The Austronesian basic vocabulary database: From
+        bioinformatics to lexomics. Evol. Bioinform. 4:271–283.
+Gumperz, J. J., and S. C. Levinson. 1991. Rethinking linguistic relativity. Curr. Anthropol.
+        32:613– 623.
+Hage, P. 2001. Marking theory and kinship analysis: Cross-cultural and historical applications.
+        Anthropological Theory 1:197–211.
+Harvey, P. H., and M. D. Pagel. 1991. The Comparative Method in Evolutionary Biology. New York,
+        NY: Oxford University Press.
+Holden, C. J. 2002. Bantu language trees reflect the spread of farming across sub-Saharan Africa: a
+        maximum-parsimony analysis. Proc. Royal Soc. Lond. B Biol. Sci. 269:793–799.
+Holden, C. J., and R. Mace. 2003. Spread of cattle led to the loss of matrilineal descent in Africa: A
+        coevolutionary analysis. Proc. Royal Soc. Lond. B Biol. Sci. 270:2425–2433.
+Hrdy, S. B. 2009. Mothers and Others: The Evolutionary Origins of Mutual Understanding.
+        Cambridge, MA: Harvard University Press.
+Huelsenbeck, J. P., F. Ronquist, R. Nielsen et al. 2001. Bayesian inference of phylogeny and its
+        impact on evolutionary biology. Science 294:2310 –2314.
+Ives, A. R., and T. Garland, Jr. 2009. Phylogenetic logistic regression for binary dependent variables.
+        Syst. Biol. syp074.
+Jones, D. 2003. The generative psychology of kinship: Part 1. Cognitive universals and evolutionary
+        psychology. Evol. Hum. Behav. 24:303–319.
+Jones, D. 2010. Human kinship, from conceptual structure to grammar. Behav. Brain Sci. 33:367– 416.
+Jordan, F. M., and M. Dunn. 2010. Kin term diversity is the result of multilevel, historical processes.
+        Behav. Brain Sci. 33:388.
+Jordan, F. M., R. D. Gray, S. J. Greenhill et al. 2009. Matrilocal residence is ancestral in Austronesian
+        societies. Proc. Royal Soc. Lond. B Biol. Sci. 276:1957–1964.
+Jordan, P., and S. Shennan. 2009. Diversity in hunter-gatherer technological traditions: Mapping
+        trajectories of cultural “descent with modification” in northeast California. J. Anthropol.
+        Archaeol. 28:342–365.
+Kirch, P. V., and R. C. Green. 2001. Hawaiiki, Ancestral Polynesia: An Essay in Historical
+        Reconstruction. Cambridge, U.K.: Cambridge University Press.
+Kitchen, A., C. Ehret, S. Assefa et al. 2009. Bayesian phylogenetic analysis of Semitic languages
+        identifies an Early Bronze Age origin of Semitic in the Near East. Proc. Royal Soc. Lond. B
+        Biol. Sci. 276:2703–2710.
+Kroeber, A. L. 1909. Classificatory systems of relationship. The Journal of the Royal Anthropological
+        Institute of Great Britain and Ireland 39:77– 84.
+Kroeber, A. L. 1919. Peoples of the Philippines. New York, NY: American Museum Press.
+Kronenfeld, D. B. 2001. Introduction: The uses of formal analysis re cognitive and social issues.
+        Anthropological Theory. 1:147–172.
+320 / JORDAN
+
+Laland, K. N., and G. N. Brown. 2002. Sense & Nonsense: Evolutionary Perspectives on Human
+       Behaviour. Oxford, U.K.: Oxford University Press.
+Lane, R. B. 1961. A Reconsideration of Malayo-Polynesian social organization. American Anthro-
+       pologist 63:711–720.
+Levi-Strauss, C. 1969. The Elementary Structures of Kinship. Boston, MA: Beacon Press.
+Lewis, P. O. 2001. Phylogenetic systematics turns over a new leaf. Trends in Ecology & Evolution
+       16:30 –37.
+Lipo, C. P., M. J. O’Brien, M. Collard, and S. Shennan, eds. 2006. Mapping our Ancestors:
+       Phylogenetic Approaches in Anthropology and Prehistory. New York, NY: Aldine.
+Lounsbury, F. G. 1987. The structural analysis of kinship semantics. In Cognitive Anthropology, S.
+       Tyler, ed. Long Grove, IL: Waveland Press. 193–211
+Mace, R., and C. J. Holden. 2005. A phylogenetic approach to cultural evolution. Trends Ecol. Evol.
+       20:116 –121.
+Mace, R., C. J. Holden, and S. Shennan, eds. 2005. The Evolution of Cultural Diversity: A
+       Phylogenetic Approach. London, U.K.: Left Coast Press & Berg.
+Mace, R., and F. M. Jordan. 2011. Macro-evolutionary studies of cultural diversity: A review of
+       empirical studies of cultural transmission and cultural adaptation. Proc. Royal Soc. Lond. B
+       Biol. Sci. 366:402– 411.
+Mace, R., and M. Pagel. 1994. The comparative method in anthropology. Curr. Anthropol.
+       35:549 –564.
+Marshall, M. 1983. Siblingship in Oceania: Studies in the Meaning of Kin Relations. ASAO
+       monograph. Lanham, MD and London: University Press of America.
+Marshall, M. 1984. Structural patterns of sibling classification in Island Oceania: Implications for
+       culture history. Curr. Anthropol. 25:597– 637.
+Matthews, L., J. J. Tehrani, F. M. Jordan et al. In press. Testing for divergent transmission histories
+       among cultural characters: A study using Bayesian phylogenetic methods and Iranian Tribal
+       textile data. PLoS One.
+Milke, W. 1938. Die Bennunnungen der Geschwister in den austronesischen Sprachen Ozeaniens.
+       Zeitschrift für Ethnologie. 70:51– 66.
+Morgan, L. H. 1871. Systems of Consanguinity and Affinity in the Human Family: Contributions to
+       Knowledge. Washington, DC: Smithsonian Institution.
+Murdock, G. P. 1949. Social Structure. New York, NY: MacMillan.
+Murdock, G. P. 1968. Patterns of sibling terminology. Ethnology 7:1–24.
+Nerlove, S., and S. K. Romney. 1967. Sibling terminology and cross-sex behavior. Am. Anthropol.
+       69:179 –187.
+Nylander, J. A. A., F. Ronquist, J. P. Huelsenbeck et al. 2004. Bayesian phylogenetic analysis of
+       combined data. Syst. Biol. 53:47– 67.
+Page, R. D. M., ed. 2003. Tangled Trees: Phylogeny, Cospeciation, and Coevolution. Chicago, IL:
+       University of Chicago Press.
+Pagel, M. 1994. Detecting correlated evolution on phylogenies: A general method for the
+       comparative-analysis of discrete characters. Proc. Royal Soc. Lond. B Biol. Sci. 255:37– 45.
+Pagel, M. 1999a. Inferring the historical patterns of biological evolution. Nature 401:877– 884.
+Pagel, M. 1999b. The maximum likelihood approach to reconstructing ancestral character states of
+       discrete characters on phylogenies. Syst. Biol. 48:612– 622.
+Pagel, M., Q. D. Atkinson, and A. Meade. 2007. Frequency of word-use predicts rates of lexical
+       evolution throughout Indo-European history. Nature 449:717–720.
+Pagel, M., and A. Meade. 2006. Bayesian analysis of correlated evolution of discrete characters by
+       reversible-jump Markov chain Monte Carlo. Am. Nat. 167:808 – 825.
+Pagel, M., A. Meade, and D. Barker. 2004. Bayesian estimation of ancestral character states on
+       phylogenies. Syst. Biol. 53:673– 684.
+Paradis, E., J. Claude, and K. Strimmer. 2004. APE: Analyses of phylogenetics and evolution in R
+       language. Bioinformatics 20:289 –290.
+Parkin, R. 1997. Kinship: An Introduction to the Basic Concepts. Oxford, U.K.: Blackwell.
+                                Phylogenetic Analysis of Sibling Terminologies / 321
+
+Pawley, A. 2002. The Austronesian dispersal: Languages, technologies and people. In Examining the
+       Farming/Language Dispersal Hypothesis, P. Bellwood and C. Renfrew, eds. Cambridge,
+       U.K.: McDonald Institute for Archaeological Research; 251–274.
+Radcliffe-Brown, A. R. 1952. Structure and Function in Primitive Society. London, U.K.: Cohen &
+       West.
+Rambaut, A., and A. J. Drummond. 2007. Tracer, v 1.4, available from http://beast.bio.ed.ac.uk/Tracer.
+Read, D. W. 2001. Formal analysis of kinship terminologies and its relationship to what constitutes
+       kinship. Anthropological Theory. 1:239 –267.
+Read, D.W. 2007. Kinship theory: A paradigm shift. Ethnology 46:329 –365.
+Rexova, K., Y. Bastin, and D. Frynta. 2006. Cladistic analysis of Bantu languages: A new tree based
+       on combined lexical and grammatical data. Naturwissenschaften 93:189 –194.
+Rivers, W. H. R. 1914. Kinship and Social Organisation. London, U.K.: Constable and Co.
+Ronquist, F. 2004. Bayesian inference of character evolution. Trends Ecol. Evol. 19:475– 481.
+Stone, L. 2000. Kinship and Gender: An Introduction, 2nd edition. Boulder, CO: Westview Press.
+Tehrani, J. J., and M. Collard. 2009. On the relationship between inter-individual cultural
+       transmission and population-level cultural diversity: A case study of weaving in Iranian tribal
+       populations. Evol. Hum. Behav. 30:286 –300.
+Tehrani, J. J., M. Collard, and S. Shennan. 2010. The cophylogeny of populations and cultures:
+       Reconstructing the evolution of Iranian tribal craft traditions using trees and jungles. Proc.
+       Royal Soc. Lond. B Biol. Sci. 365:3865–3874.
+Tylor, E. B. 1889. On a method of investigating the development of institutions applied to laws of
+       marriage and descent. J. Royal Anthropol. Inst. 18:245–386.
+Van Wouden, F. A. E. 1935 [1968]. Types of Social Structure in Eastern Indonesia. The Hague,
+       Netherlands: Nijhoff.
+Wierzbicka, A. 1987. Kinship semantics: Lexical universals as a key to psychological reality.
+       Anthropological Linguistics 29:131–156.
+Wilkins, J. F., and F. Marlowe. 2006. Sex-biased migration in humans: What should we expect from
+       genetic data. Bioessays 28:290 –300.
+Witkowski, S. 1972. Guttman scaling of semantic distinctions. In Kinship Studies in the Morgan
+       Centennial Year, P. Reining, ed. Washington, D.C.: The Anthropological Society of
+       Washington; 167–188.
+Yang, Z. H., and B. Rannala. 1997. Bayesian phylogenetic inference using DNA sequences: A
+       Markov chain Monte Carlo method. Mol. Biol. Evol. 14:717–724.
+

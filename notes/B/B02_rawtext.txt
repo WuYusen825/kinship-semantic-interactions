@@ -1,0 +1,897 @@
+UC Merced
+Proceedings of the Annual Meeting of the Cognitive Science
+Society
+Title
+Efficient communication drives the semantic structure of kinship terminology
+Permalink
+https://escholarship.org/uc/item/1fg7b7hn
+Journal
+Proceedings of the Annual Meeting of the Cognitive Science Society, 47(0)
+Authors
+Hallam, Maisy
+Kirby, Simon
+Jordan, Fiona
+et al.
+Publication Date
+2025
+Copyright Information
+This work is made available under the terms of a Creative Commons Attribution License,
+available at https://creativecommons.org/licenses/by/4.0/
+Peer reviewed
+eScholarship.org Powered by the California Digital Library
+University of California
+Efficient communication drives
+the semantic structure of kinship terminology
+Maisy Hallam (maisy.hallam@ed.ac.uk)
+Centre for Language Evolution
+University of Edinburgh, UK
+Simon Kirby
+Centre for Language Evolution
+University of Edinburgh, UK
+Fiona Jordan
+Department of Anthropology and Archaeology
+University of Bristol, UK
+Kenny Smith
+Centre for Language Evolution
+University of Edinburgh, UK
+Abstract
+Semantic distinctions are encoded variably in kinship ter-
+minology, the set of words that denotes family members.
+Nonetheless, it has been suggested that kinship terminology,
+like other linguistic domains, is constrained by opposing pres-
+sures to be simple yet expressive. Here, we use this insight to
+explore how the meaning space for kinship is structured cross-
+linguistically. Under the assumption that kinship systems
+map forms to meanings in a compressible, structure-preserving
+manner, we designed a metric for identifying which semantic
+features are most important for distinguishing individuals in a
+kinship system. For 1229 kinship systems, we calculated the
+correlation between semantic similarity (the weighted sum of
+shared semantic features between individuals) and wordform
+similarity (the edit similarity between terms). We then identi-
+fied the optimal weight for each semantic feature in each lan-
+guage, confirming that kinship systems vary in which semantic
+features they encode, and that the features themselves vary in
+the extent to which they are encoded. Additionally, we iden-
+tified that semantic features are encoded hierarchically; more
+simple and more informative features are weighted highest in
+general. By identifying this constraint on the distribution of
+forms and meanings in kinship terminology, our results pro-
+vide new insights on how kin terms are structured for efficient
+communication.
+Keywords: kinship terminology; semantic structure; efficient
+communication
+Introduction
+Kin terms, the words we use to denote our family members,
+differ cross-linguistically in the semantic distinctions they en-
+code (Murdock, 1949; Greenberg, 1990; Nerlove & Rom-
+ney, 1967; Kemp & Regier, 2012). To illustrate: an English
+speaker uses the kin terms brother and sister to denote their
+siblings, making a distinction on the basis of gender. An In-
+donesian speaker, on the other hand, distinguishes siblings
+by their relative age: kakak ‘older sibling’ and adik ‘younger
+sibling’. And a Hindi speaker encodes both gender and rela-
+tive age among their siblings, distinguishing dı̄dı̄ ‘older sister’
+from behna ‘younger sister’ and bhaiya ‘older brother’ from
+chot
+.ā bhāı̄ ‘younger brother’. Meanwhile, Hawaiian speak-
+ers extend their sibling terminology to collateral kin, using
+kaikuahine to group female siblings with female cousins and
+kaikua’ana to group male siblings with male cousins.
+The potential variation in kin terms is vast, but it has been
+argued that – as in other linguistic domains – there are con-
+straints on this variation. A recent influential approach has
+characterised constraints on kinship terminology in terms of
+efficient communication (Kemp & Regier, 2012; Kemp, Xu,
+& Regier, 2018): systems of kinship terminology optimally
+balance opposing pressures for simplicity and informativity.
+For a given level of communicative precision, the meanings
+of kin terms are as compressible as possible, and for a given
+level of compression they are as precise as possible. Kinship
+systems that fail to trade-off these pressures efficiently are
+unattested. Here, we expand on this idea that kinship systems
+are structured for efficient communication, exploring how se-
+mantic features are encoded in kinship terminology.
+One way that language achieves compressibility is by map-
+ping similar meanings to similar forms; the mapping between
+form and meaning is structure-preserving, or topographic
+(Brighton & Kirby, 2006). In the general lexicon, we see
+that more similar meanings are more likely to be co-lexified
+(i.e., referred to by the same wordform: Xu, Liu, & Regier,
+2020), and there is also a subtle tendency for words with sim-
+ilar meanings to have similar forms (Monaghan et al., 2014;
+Dautriche et al., 2017). Experimental work suggests that peo-
+ple prefer to co-lexify similar meanings unless this is detri-
+mental to communication (for instance, if two similar mean-
+ings need to be distinguished frequently: Karjus et al., 2021).
+We can see this in practice if we compare kinship systems.
+In English, we co-lexify the highly similar concepts ‘older
+brother’ and ‘younger brother’, while in Indonesian this dis-
+tinction is preserved. Languages are also topographic at the
+morphosyntactic level, where we see compositional structure
+– a pervasive tendency of languages where the meaning of
+complex expressions is composed of the meanings of parts of
+the expression. Compositionality ensures that similar mean-
+ings map to similar forms, since shared elements of mean-
+ing will map to shared elements of form (Kirby, Cornish, &
+Smith, 2008; Kirby, Tamariz, Cornish, & Smith, 2015). Kin
+terms are often compositional; in English, the term grandson
+is composed of the morphemes grand, shared with grandpar-
+ent and indicating a similar genealogical distance from the
+speaker, and son, indicating a male descendent.
+Here, we use this insight about the expected relationship
+between meaning and form to explore how the meaning
+space for kinship is structured cross-linguistically. We ex-
+plore whether kinship operates similarly to other linguistic
+domains, such that there universal tendencies in the encod-
+ing of particular semantics, or whether languages are free to
+elaborate any semantic feature at the expense of any other (as
+seems to be the case for encoding of sensory perception: Ma-
+5831
+In D. Barner, N.R. Bramley, A. Ruggeri and C.M. Walker (Eds.), Proceedings of the 47th Annual Conference of the Cognitive Science
+Society ©2025 the author(s). This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY).
+eB
+yBD
+yB
+M F
+MM MF FF
+FM
+eZ
+yZ
+MeB
+MyB
+MeZ
+MyZ
+FeB
+FyB
+FeZ
+FyZ
+eZD eZS
+yZD yZS yBS
+eBD eBS
+D S
+DD DS SS
+SD
+MeZD MeZS
+MyZD MyZS
+MeBD MeBS
+MyBD MyBS
+FeZD FeZS
+FyZD FyZS
+FeBD FyBD
+FyBD FyBS
+EGO
+Figure 1: A schematic of the kin types we included in our analysis, organised in a family tree structure. ‘Ego’, at the centre,
+represents the reference individual. Shorter branch length indicates elder individuals, longer branch length indicates younger.
+Relative age is variably encoded, so only some kin types are marked for the elder/younger distinction. Kin types are given in
+shorthand: e.g. ‘M’ = mother, ‘FyB’ = father’s younger brother, ‘eZ’ = elder sister, ‘DS’ = daughter’s son, etc. Colours indicate
+kin types in the same generation for clarity.
+jid et al., 2018). We report a metric for extracting the extent
+to which kinship terms encode particular semantic features,
+based on the assumption that kinship terminology will reflect
+semantics in a topographic manner, and we apply the metric
+to a large cross-linguistic database of kinship terminology.
+We find that languages indeed differ in the extent to which
+they encode semantic features, and that the semantic features
+themselves differ in the extent to which they are encoded. We
+identify a common structuring hierarchy for kin term seman-
+tics, and we suggest that this hierarchy emerges in response
+to pressures for kin terms to be simple and informative.
+Measuring topographicity in the mapping from
+form to meaning in kin terms
+Our metric assumes that kinship terminology is topographic,
+i.e. similar meanings will map to similar forms. We measure
+topographicity as the correlation between semantic similarity
+and form similarity. In order to determine which semantic
+features are encoded by a particular language, we ask: in this
+language, which features contribute to producing the maxi-
+mal correlation between forms and meanings? In the follow-
+ing section, we describe our measures of semantic similarity
+and form similarity, and how we manipulated semantic simi-
+larity to produce the maximal correlation between these two
+measures.
+Methodology
+Data We used data from Kinbank, a database of kinship ter-
+minology spanning 1229 languages across 21 language fami-
+lies (Passmore et al., 2023). The database uses an etic frame-
+work for the definitions of kin terms – i.e., each kin term is
+associated with an objective, language-independent meaning.
+These meanings code a number of defining features for each
+type of relative, such as their gender, their connecting rela-
+tive, or their age relative to another individual. For example,
+in English, the kin term uncle is associated with four etic defi-
+nitions: ‘mother’s elder brother’, ‘mother’s younger brother’,
+‘father’s elder brother’, and ‘father’s younger brother’. We
+do not make these distinctions terminologically in English,
+but they are nonetheless distinctions that are encoded in kin-
+ship terminology in other languages (for instance in Myene,
+which uses the terms ngw’onèró, ngw’erumbe, rer’onèró and
+rer’erumbe respectively). Henceforth, we refer to these etic
+definitions as kin types.
+For our analysis, we looked at kin types spanning five gen-
+erations, from grandparents to grandchildren. To keep the
+meaning space within a reasonable scope, we only looked at
+consanguineal (blood-related) kin, not affinal kin (related by
+marriage). Figure 1 gives a schematic of the kin types we
+included in our analysis.
+Measuring semantic similarity We built a feature matrix
+for every individual in the tree in Figure 1, looking at six
+features compiled from the anthropological literature on kin-
+ship (Goodenough, 1956; Murdock, 1949; Greenberg, 2005):
+Generation, Gender, Lineality, Gender of Connecting Rela-
+tive (GCR), Relative Age, and Speaker Gender. The coding
+scheme for each feature is given in Table 1.
+To measure the semantic similarity between two individ-
+uals, we compared their feature matrices. For each feature
+fi in the set of features F we assigned a similarity score for
+individuals x and y based on their similarity for that feature.
+The pair could differ on the feature ( fi(x,y) = −1) or share
+the feature (fi(x,y) = 1). If one or both individuals in the pair
+had an NA value for the feature fi, fi(x,y) = 0.
+The semantic similarity between two individuals is then a
+weighted sum of the by-feature similarities:
+5832
+Table 1: Coding scheme for semantic similarity.
+Feature Description Possible values
+Generation
+Which generation relative belongs to.
+(e.g. G0 = Ego’s generation, G+1 = Ego’s parents’ generation).
+G+2, G+1, G0, G-1, G-2
+Gender Gender of relative. woman, man
+Lineality
+Whether relative is in Ego’s direct lineage.
+(e.g. grandparents, parents, children or grandchildren).
+lineal, collateral
+Gender of
+connecting relative (GCR)
+Gender of the individual who links Ego with relative
+(e.g. maternal aunt is linked by mother).
+NA values are assigned to Ego’s direct descendents, as they are not linked by another relative.
+woman, man, NA
+Relative age
+Whether relative is elder or younger relative to their counterpart.
+(e.g. elder brother vs younger brother)
+NA values are assigned when there is no counterpart with whom to compare relative age, e.g. grandparents.
+elder, younger, NA
+Speaker gender Gender of Ego, the person using the term. woman, man
+Sem(x,y) ≡ ∑
+i∈F
+fi(x,y)wi (1)
+where wi is a weight between 0 and 1, such that ∑i∈F wi =
+1. These weights determine the relative importance of sim-
+ilarity on a given semantic feature in determining similarity
+between individuals in the kinship system as a whole. If all
+semantic features were treated equally, wn = 1/|F|. But if, for
+example, Gender had a higher weight, that would mean that
+individuals of the same gender were considered more simi-
+lar than individuals differing in gender. Or, if Gender had
+weight of 0, that would indicate that similarity or difference
+in gender did not contribute to similarity between individu-
+als. We searched for values of these weights that maximise
+the topographicity of kinship systems; i.e. they maximise the
+correlation between semantic similarity and form similarity.
+Measuring form similarity We used normalised Leven-
+shtein edit distance (Levenshtein, 1965) to measure the sim-
+ilarity between pairs of kin terms (the number of single-
+letter insertions, deletions, or replacements needed to turn one
+string into another, proportional to the length of the longer
+string). To make this a similarity measure, we took form sim-
+ilarity to be 1− the edit distance value for each pair, i.e. the
+proportion of the two strings that is the same.
+Measuring topographicity Following e.g. Kirby et al.
+(2008) and Monaghan et al. (2014), we measure the topo-
+graphicity of a kinship system by calculating the correlation
+between semantic similarity and form similarity. For all pairs
+of kin types in Figure 1, we compute the pairwise semantic
+similarities and the pairwise form similarities, and calculate
+the correlation between the resulting distribution of seman-
+tic similarities and form similarities. This tells us the extent
+to which similar meanings map to similar forms – we search
+for the weights on each semantic feature that maximise this
+correlation.
+Finding optimal feature weights by language Different
+semantic features presumably contribute different amounts
+to the mapping between form and meaning in different lan-
+guages. For each language in our dataset, we searched for
+the semantic feature weights which resulted in maximally to-
+pographic form-meaning mappings. For a given language,
+what measure of semantic similarity would produce the most
+structure-preserving relationship between meaning and form?
+We used a Gradient Descent algorithm to optimise our se-
+mantic similarity measure to a particular language1. In our
+case, the function we want to optimise is our topographic-
+ity metric: we are searching for the maximum correlation
+between all pairwise semantic similarities and all pairwise
+form similarities. Our parameters are the relative weight each
+feature contributes to semantic similarity. By updating the
+weights on each semantic feature, our algorithm searches for
+the semantic similarities that correlate best with the form sim-
+ilarities distribution for each language2.
+The algorithm starts with a random set of parameter values,
+and finishes when no single change to the parameter settings
+will improve the correlation between form and meaning, leav-
+ing us with a set of optimal parameter values on each feature
+for each language – optimal in the sense that they are the most
+informative about which features matter to determine which
+individuals share all or part of their form. Higher weights in-
+dicate that sharing that feature is highly correlated with shar-
+ing parts of form, and lower weights indicate that sharing that
+feature has little or no impact on sharing form.
+Results
+Our results are dependent on the assumption that kin terms
+are topographic, so first we confirm that there is indeed a
+robust correlation between meanings and forms. Figure 2
+(top) displays the distribution of correlations between seman-
+tic similarity and edit similarity across all kinship systems,
+before and after we optimised their semantic similarity met-
+ric. A Kolmogorov-Smirnov test confirmed that correlations
+are reliably greater after optimisation (D = 0.68, p < 0.01).
+Additionally, a Monte Carlo analysis (following e.g. Kirby
+et al., 2008) established that the correlations we observe be-
+tween form and meaning are more robust than we would
+expect under the null assumption that the mapping between
+1Gradient descent was implemented using the
+optimize.minimize function from the Python scipy pack-
+age, with parameters method = L-BFGS-B and bounds = (0,1).
+2Since gradient descent searches for the lowest possible function
+output, but we want the highest possible correlation, we minimised
+the negative of the correlation.
+5833
+0
+250
+500
+750
+1000
+−1.0 −0.5 0.0 0.5 1.0
+Correlation between form and meaning
+count
+0
+20
+40
+60
+0 20 40 60
+Correlation between form and meaning (z−transformed)
+count
+Figure 2: Top: Correlations between meaning and form
+when all semantic features are treated equally (grey) and
+after optimising the semantic similarity measure (green).
+Lines indicate mean correlation values. After optimisa-
+tion, correlations range [0.2, 1] with a mean of 0.58. Bot-
+tom: Z-transformed correlations after optimisation. Dot-
+ted lines indicate significance thresholds (1.96 standard
+deviations; p < 0.05).
+Gender of
+speaker
+Relative age
+Gender of conn−
+ecting relative
+Lineality
+Gender
+Generation
+0.00 0.25 0.50 0.75 1.00
+Weight value
+Semantic
+feature
+Figure 3: Distribution of weights for each semantic fea-
+ture, in order of descending median value. Generation is
+weighted much higher than all other features, and never
+receives a weight of 0. Other than Generation, features
+are variably encoded, with Relative Age and Speaker
+Gender the most often weighted 0.
+forms and meanings is random and unstructured. For each
+language in our dataset, we compared the veridical correla-
+tion to a Monte Carlo sample created by permuting which kin
+terms are associated with which meanings. Figure 2 (bottom)
+shows z-scores generated by comparing the veridical corre-
+lation with 1000 such permutations: 99% of correlations are
+significantly larger than we would expect if there were no re-
+lationship between form and meaning.
+Having shown that the correlation between form and mean-
+ing is robust, we turn to our main predictions. We expected
+that kinship systems would vary in which semantic features
+they encode, but that there may be common tendencies that
+hold across languages.
+Our results corroborate that kinship systems vary in the dis-
+tinctions they encode terminologically. Figure 4 shows the
+optimal weights on each feature for a sample of languages in
+our dataset. The weights for English are as expected. Genera-
+tion has the highest weight, reflecting the fact that individuals
+are likely to share a term if they are in the same generation
+(but not otherwise). Lineality is second, capturing the re-use
+of the morphemes grand-, son, daughter, mother and father
+for individuals in Ego’s direct lineage. Last is Gender, as
+because individuals who share a term often share a gender
+(e.g. mother’s sister and father’s sister are both aunt), but
+the weight is small since overall, sharing a gender is not a
+reliable indicator of form similarity in English (e.g. mother
+and daughter both denote women but share no part of their
+form). The remaining features receive a weight of 0, as they
+do not contribute to kin term distinctions in English. Looking
+across the other languages in Figure 4, features show vari-
+ability in their weighting. Generation is often weighted much
+higher than the other features, though not exclusively – e.g.
+for Seki, GCR is the highest weighted feature. After Genera-
+tion, the order of weights varies more; in English the second
+ranked feature is Lineality, but in Hawaiian it is Gender.
+We also confirm that there is by-feature variation in en-
+coding. Figure 3 shows the distribution of weights by fea-
+ture across the languages in our sample, reflecting substantial
+variation between features, but clear universal trends in the
+distribution of weights. Generation is the only feature that al-
+ways receives a non-zero weighting, while all other features
+are commonly weighted 0 (though Gender less commonly
+than the others). In other words, Generation is invariably en-
+coded in kinship terminology, while the remaining features
+may or may not be encoded. To support this observation
+there is variation in feature weights, we fit a mixed effects
+beta regression predicting the effect of semantic feature (sum-
+coded) on weight with random intercepts for language and
+language family. Model comparison to a null model without
+the fixed effect for feature indicated that semantic features
+differ systematically in the their weights, i.e. the degree to
+which they are encoded terminologically across the languages
+in our sample (χ2 = 6287.3,d f = 5, p < 0.001).
+Features vary in the extent to which they are encoded, but
+is there a reliable hierarchy between the weightings across
+languages? We fit a second beta regression model, again pre-
+dicting weight by semantic feature with random intercepts
+for language and language family, but this time using suc-
+cessive differences contrast coding to compare each level of
+the semantic feature factor with the next. This allowed us
+to investigate incremental changes in weights across the fea-
+tures. Factor levels were arranged in descending order by
+their median value, such that e.g. Generation (median = 0.59)
+was compared against Gender (median = 0.10) and Gender
+against Lineality (median = 0.09) – full model output and
+contrasts are given in Table 2. The model revealed a sig-
+5834
+Myene
+(Atlantic−Congo)
+Nepali
+(Indo−European)
+Nimboran
+(Nimboranic)
+Seki
+(Atlantic−Congo)
+Selkup
+(Uralic)
+Yansi
+(Atlantic−Congo)
+English
+(Indo−European)
+German
+(Indo−European)
+Hawaiian
+(Austronesian)
+Hindi
+(Indo−European)
+Indonesian
+(Austronesian)
+Maori
+(Austronesian)
+g
+e
+n
+e
+g
+e
+n
+d
+.
+l
+i
+n
+e
+.
+g
+c
+r
+a
+g
+e
+s
+p
+e
+a
+k
+.
+g
+e
+n
+e
+g
+e
+n
+d
+.
+l
+i
+n
+e
+.
+g
+c
+r
+a
+g
+e
+s
+p
+e
+a
+k
+.
+g
+e
+n
+e
+g
+e
+n
+d
+.
+l
+i
+n
+e
+.
+g
+c
+r
+a
+g
+e
+s
+p
+e
+a
+k
+.
+g
+e
+n
+e
+g
+e
+n
+d
+.
+l
+i
+n
+e
+.
+g
+c
+r
+a
+g
+e
+s
+p
+e
+a
+k
+.
+g
+e
+n
+e
+g
+e
+n
+d
+.
+l
+i
+n
+e
+.
+g
+c
+r
+a
+g
+e
+s
+p
+e
+a
+k
+.
+g
+e
+n
+e
+g
+e
+n
+d
+.
+l
+i
+n
+e
+.
+g
+c
+r
+a
+g
+e
+s
+p
+e
+a
+k
+.
+0.0
+0.2
+0.4
+0.6
+0.0
+0.2
+0.4
+0.6
+Semantic feature
+Weight
+value
+Generation Gender Lineality
+Gender of conn−
+ecting relative
+Relative age
+Gender of
+speaker
+Figure 4: Final parameter values for a sample of languages in our dataset. Generation is weighted very highly in many
+languages, there is variation in the extent to which other features are encoded.
+nificant decrease in weight between each pair of successive
+contrasts, suggesting that there is a reliable cross-linguistic
+hierarchy in the encoding of semantic features. However, ef-
+fect sizes vary considerably: the difference between Gener-
+ation and Gender is the largest (b = -2.13). The differences
+between Gender and Lineality (b = -0.47, and Lineality and
+GCR (b = -0.45) are comparatively smaller. Then there is a
+larger difference between GCR and Relative Age (b = -0.68)
+and a smaller difference between Relative Age and Speaker
+Gender (b = -0.20). Variation in effect size suggests that the
+hierarchy is more robust for some features than others. Gen-
+eration is reliably the top ranked, but the relative order of
+Gender, Lineality, and GCR is more likely to vary between
+languages. Relative Age and Speaker Gender are reliably
+weighted lower than all other features, but may vary in order
+between themselves. Based on this analysis, we propose the
+following cross-linguistic hierarchy: Generation – {Gender,
+Lineality, GCR} – {Relative Age, Speaker Gender}, where
+curly brackets indicate multiple features are similarly likely
+to be encoded.
+Discussion
+We have presented a new method for measuring how different
+semantic features are reflected in the mapping between form
+and meaning. Cross-linguistically, we have identified that
+features are encoded hierarchically, with a strong tendency
+for Generation to be encoded, followed by Gender, Lineal-
+ity or GCR, and Relative Age and Speaker Gender the least
+likely. We now discuss how these results align with an ac-
+count of kinship variation as constrained by efficient commu-
+nication, and propose efficient communication as the mecha-
+nism underlying the hierarchy we have identified.
+Efficient communication about kin
+Our results contribute to a growing body of work on how
+communicative efficiency constrains variation in kinship ter-
+minology. Kemp and Regier (2012) identified that systems
+of kinship terminology are designed for efficient communi-
+cation: they achieve an optimal trade-off between simplicity
+and informativeness, balancing precise expression of mean-
+ings with compression. Their approach focused on balancing
+the length of the grammar that generates kin term meanings
+against the degree of expression of those meanings given the
+frequency with which particular kin need to be distinguished
+in communication.
+Here, we have approached their claim about efficiency
+from another angle. Firstly, by looking at topographic map-
+pings between kin term forms and meanings (rather than tak-
+ing the word as the primary unit of distinction), we have been
+able to look at lexical and sub-lexical regularities in the way
+that the kin term meaning space is structured — to our knowl-
+edge sub-lexical regularities have not previously been consid-
+ered as a source of compression in kinship terminology.
+Additionally, our measure of kin term semantics focuses
+on feature distinctions between individuals rather than the
+minimum description length measure employed by Kemp and
+Regier (2012). While their measure permits an understanding
+of how recursion is employed in kin term semantics, our mea-
+sure offers a language-specific way to measure the commu-
+nicative importance of particular distinctions — by assuming
+that kinship systems are topographic, we are able to extract
+inferences about their semantics from the terminology itself.
+Both approaches are needed for a complete perspective on
+how kin term semantics are structured.
+Finally, by measuring semantic similarity between individ-
+uals as a matrix of shared semantic features, we have been
+able to draw cross-linguistic generalisations about the way
+that the meaning space is structured. The semantic hierarchy
+we have identified here is one way in which kinship systems
+are constrained in their variation; below we offer insight on
+how this variation is a joint adaptation to pressures for sim-
+plicity and expressivity imposed during the transmission of
+language.
+5835
+Table 2: Beta regression model estimates predicting weight by semantic feature using successive differences coding.
+Predictor b (log-odds) se z p 95% CIs (log-odds)
+Gender - Generation -2.12535 0.03942 -53.92 <0.001 (-2.17643, -2.07427)
+Lineality - Gender -0.47488 0.04154 -11.43 <0.001 (-0.55630, -0.39326)
+Gender of Connecting Relative - Lineality -0.44978 -0.04277 -10.52 <0.001 (-0.53361, -0.36596)
+Relative Age - Gender of Connecting Relative -0.68180 0.04322 -15.78 <0.001 (-0.76651, -0.59709)
+Speaker Gender - Relative Age -0.19795 0.04312 -4.59 <0.001 (-0.28247,-0.11343)
+Category structure vs category informativeness
+We assume that constraints on language variation are not ran-
+dom, but rather reflect evolutionary adaptations to the trans-
+mission of language. Structures that are easily learned and
+useful for communicating proliferate (Kirby et al., 2008,
+2015; Smith, 2022). We therefore suggest that the relative
+ordering of features represents a trade-off between how easy
+a feature is to learn and the amount of information that the
+feature provides about the referent.
+Some features require knowledge of a single individual,
+like Generation, Gender, or Speaker Gender. These features
+are intrinsic to the individual – they encode information about
+a single individual, either the referent or the speaker. On the
+other hand, features like Lineality, GCR, or relative are rela-
+tional: they require knowledge about another individual. For
+example, to identify the GCR value of an individual requires
+that you also know the Gender value of the relative who con-
+nects you. In short, intrinsic features are simple, but relational
+features are comparatively more complex: learning relational
+features requires an extra level of abstraction, and requires
+that you have more knowledge about other individuals in the
+kinship system.
+Evidence from children’s kin term acquisition emphasises
+that intrinsic features are easier to learn. Children commonly
+misinterpret kin terms by associating them with intrinsic fea-
+tures rather than relational ones; they preferentially choose
+that a grandfather is any kindly old man, rather than specif-
+ically the father of their parent (Keil & Batterman, 1984).
+Additionally, children are prone to overextending intrinsic
+features, and will make errors like overextending the term
+brother to boys in general (Blythe et al., 2020). These er-
+rors suggest that children are tuned in to intrinsic features of
+the individual, which means distinctions of Generation and
+Gender are easier for them to learn. And once they establish
+intrinsic features to be distinctive, they are likely to extend
+them to other kin. Overgeneralisation could lead to a feature
+distinction being used more prolifically within the kinship
+paradigm - thereby ending up not just more frequent cross-
+linguistically, but also weighted more strongly.
+However, the pressure for categories to be simple is mod-
+ulated by a pressure for them to be informative, favouring
+encoding distinctions that are communicatively relevant, and
+underspecifying on communicatively less-important dimen-
+sions (Kirby et al., 2015; Silvey, Kirby, & Smith, 2015; Win-
+ters, Kirby, & Smith, 2018). This can operate at two levels:
+the amount of information encoded by the feature, and how
+important that information is to communicative success. Gen-
+eration is a highly informative feature; by encoding Genera-
+tion terminologically, you narrow down the possible referent
+of a kin term to a single generation of kin out of five. By com-
+parison, encoding Gender, Lineality or GCR only narrows the
+space by half: the referent is either a man or a woman, in your
+direct lineage or not, or connected by a man or a woman. Rel-
+ative Age narrows the space of possible meanings even less,
+as only some kin have a relative age value. Speaker Gender
+does not narrow the possibilities at all, because it only en-
+codes information about the speaker, not the referent.
+However, different languages still encode features to a
+varying extent, likely because the communicative necessity
+of features varies cross-culturally. It is commonly proposed
+that our kin terms can provide an important marker of who
+is involved in kin-based social practices (Jones, 2010; Mur-
+dock, 1949). For example, the Diné (Navajo) are a matrilin-
+eal society, and as a consequence inheritance is passed down
+through women (Witherspoon, 1975); accordingly, Navajo
+makes fine-grained distinctions by GCR, and further distin-
+guishes by Gender and Relative Age in female-connected rel-
+atives only. As a result, Navajo kinship system distinguishes
+with high precision the individuals from whom you will in-
+herit, and the individuals who will inherit from you.
+We therefore propose that there are competing pressures
+imposed on the categorisation of kin between (a) the ease of
+learning feature distinctions that are intrinsic to a single indi-
+vidual and therefore require no abstraction and (b) the expres-
+sive power of distinctions that are culturally important, even
+if they are more complex.
+Conclusion
+We have presented a new measure for extracting the extent
+to which semantic features are encoded in kinship terminol-
+ogy cross-linguistically by employing assumptions about to-
+pographicity in form-meaning mappings. We found that lan-
+guages vary in the features they encode, and the features
+themselves vary in the extent to which they tend to be en-
+coded. Nonetheless, there is a clear hierarchy in which fea-
+tures are likely to be encoded cross-linguistically. We suggest
+that the hierarchy reflects a trade-off between a preference for
+kin terms to encode simpler features, but also to encode as
+much information as possible. Our findings contribute to the
+growing canon on how kinship terminology is structured for
+efficient communication.
+5836
+Acknowledgments
+MH gratefully acknowledges funding from the Economic and
+Social Research Council (ES/P000681/1).
+References
+Blythe, J., Tunmuck, J., Mitchell, A., & Racz, P. (2020).
+Acquiring the lexicon and grammar of universal kinship.
+Language, 96, 661-695.
+Brighton, H., & Kirby, S. (2006). Understanding linguis-
+tic evolution by visualizing the emergence of topographic
+mappings. Artificial Life, 12(2), 229-242.
+Dautriche, I., Mahowald, K., Gibson, E., & Pianta-
+dosi, S. T. (2017). Wordform similarity increases
+with semantic similarity: An analysis of 100 lan-
+guages. Cognitive Science, 41(8), 2149-2169. doi:
+https://doi.org/10.1111/cogs.12453
+Goodenough, W. H. (1956). Componential analysis and the
+study of meaning. Language, 32, 195-216.
+Greenberg, J. H. (1990). On language: selected writings of
+Joseph Greenberg. In Universals of kinship terminology:
+their nature and the problem of their explanation. Stanford:
+Stanford University Press.
+Greenberg, J. H. (2005). Language Universals: With Special
+Reference to Feature Hierarchies. In (chap. Universals of
+kinship terminology). De Gruyter.
+Jones, D. (2010). The generative psychology of kinship part
+1. cognitive universals and evolutionary psychology. Evo-
+lution and Human Behaviour, 24, 303-319.
+Karjus, A., Blythe, R. A., Kirby, S., Wang, T., & Smith,
+K. (2021). Conceptual similarity and communicative need
+shape colexification: An experimental study. , 45(9).
+Keil, F. C., & Batterman, N. (1984). A characteristic-to-
+defining shift in the development of word meaning. Journal
+of verbal learning and behaviour, 23(2), 221-236.
+Kemp, C., & Regier, T. (2012). Kinship categories
+across languages reflect general communicative principles.
+, 336(6084), 1049–1054.
+Kemp, C., Xu, Y., & Regier, T. (2018). Semantic typology
+and efficient communication. , 4(1), 109–128.
+Kirby, S., Cornish, H., & Smith, K. (2008). Cumulative cul-
+tural evolution in the laboratory: An experimental approach
+to the origins of structure in human language. PNAS,
+105(31), 10681-10686.
+Kirby, S., Tamariz, M., Cornish, H., & Smith, K. (2015).
+Compression and communication in the cultural evolution
+of linguistic structure. , 141, 87–102.
+Levenshtein, V. I. (1965). Binary codes capable of correcting
+deletions, insertions, and reversals. Soviet physics. Dok-
+lady, 10, 707-710.
+Majid, A., Roberts, S. G., Cilissen, L., Emmorey, K., Nicode-
+mus, B., O’Grady, L., ... Levinson, S. C. (2018). Differen-
+tial coding of perception in the world’s languages. Proceed-
+ings of the National Academy of Sciences, 115(45), 11369-
+11376.
+Monaghan, P., Shillcock, R. C., Christiansen, M. H., & Kirby,
+S. (2014). How arbitrary is language? Phil. Trans. Roy.
+Soc. B. Biological Sciences, 369(1651), 20130229.
+Murdock, G. P. (1949). Social structure. New York: Macmil-
+lan.
+Nerlove, S., & Romney, A. K. (1967). Sibling terminology
+and cross-sex behaviour. , 69(2), 179-187.
+Passmore, S., Barth, W., Greenhill, S. J., Quinn, K., Sheard,
+C., Argyriou, P., ... Jordan, F. M. (2023). Kinbank: A
+global database of kinship terminology. , 18(5), e0283218.
+Silvey, C., Kirby, S., & Smith, K. (2015). Word meanings
+evolve to selectively preserve distinctions on salient dimen-
+sions. , 39(1), 212–226.
+Smith, K. (2022). How language learning and language use
+create linguistic structure. Current Directions in Psycho-
+logical Science, 31(2), 177-186.
+Winters, J., Kirby, S., & Smith, K. (2018). Contextual pre-
+dictability shapes signal autonomy. Cognition, 176, 15-30.
+doi: https://doi.org/10.1016/j.cognition.2018.03.002
+Witherspoon, G. (1975). Navajo kinship and marriage. Uni-
+versity of Chicago Press.
+Xu, Y., Liu, E., & Regier, T. (2020). Numeral systems
+across languages support efficient communication: From
+approximate numerosity to recursion. Open Mind: Dis-
+coveries in Cognitive Science, 4, 57 - 70. Retrieved from
+https://api.semanticscholar.org/CorpusID:13474060
+5837
+

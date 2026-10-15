@@ -1,0 +1,368 @@
+{
+  "primary_pairs": 26292,
+  "primary_languages": 939,
+  "primary_genealogical_groups": 125,
+  "each_language_28_pairs": true,
+  "each_language_seven_patterns_four_pairs": true,
+  "observed_patterns": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110",
+    "111"
+  ],
+  "duplicate_unordered_pairs": 0,
+  "raw_overlap_mismatches": 0,
+  "feature_bit_mismatches": 0,
+  "relative_sex_bit_mismatches": 0,
+  "genealogy_mapping_mismatches": [],
+  "source_support_cross_tab": {
+    "supported_no_missing": 8326,
+    "unsupported_with_missing": 62,
+    "unsupported_no_missing": 24,
+    "supported_with_missing": 0
+  },
+  "condition_checks": [
+    {
+      "variant": "primary",
+      "cv_grouping": "family",
+      "pairs": 26292,
+      "languages": 939,
+      "genealogical_groups": 125,
+      "leaking_group_count": 0,
+      "leaking_language_count": 0,
+      "all_probabilities_finite_and_inside_unit_interval": true,
+      "predictions_match_all_variant_input_pairs": true,
+      "five_test_folds_present": true,
+      "saved_language_score_rows_matched": true,
+      "reproduced_comparisons": {
+        "raw": {
+          "language_equal_gain": 0.004423456085005581,
+          "fixed_prediction_family_cluster_interval": [
+            -0.0005099248921372375,
+            0.00820478977572559
+          ]
+        },
+        "classical": {
+          "language_equal_gain": 0.0018427770841605753,
+          "fixed_prediction_family_cluster_interval": [
+            -0.0006035471597976911,
+            0.006119784026667304
+          ]
+        },
+        "classical_over_raw": {
+          "language_equal_gain": 0.002580679000845005,
+          "fixed_prediction_family_cluster_interval": [
+            -0.004826402129619606,
+            0.00811630000122036
+          ]
+        }
+      }
+    },
+    {
+      "variant": "coverage75",
+      "cv_grouping": "family",
+      "pairs": 27258,
+      "languages": 997,
+      "genealogical_groups": 132,
+      "leaking_group_count": 0,
+      "leaking_language_count": 0,
+      "all_probabilities_finite_and_inside_unit_interval": true,
+      "predictions_match_all_variant_input_pairs": true,
+      "five_test_folds_present": true,
+      "saved_language_score_rows_matched": true,
+      "reproduced_comparisons": {
+        "raw": {
+          "language_equal_gain": 0.00476532922504597,
+          "fixed_prediction_family_cluster_interval": [
+            -0.00010824677376032963,
+            0.008337033238428198
+          ]
+        },
+        "classical": {
+          "language_equal_gain": 0.002290602196588194,
+          "fixed_prediction_family_cluster_interval": [
+            -0.0001784434536112087,
+            0.006472212010817456
+          ]
+        },
+        "classical_over_raw": {
+          "language_equal_gain": 0.0024747270284577755,
+          "fixed_prediction_family_cluster_interval": [
+            -0.004616035406862878,
+            0.0076423028753604344
+          ]
+        }
+      }
+    },
+    {
+      "variant": "equal_sets",
+      "cv_grouping": "family",
+      "pairs": 26292,
+      "languages": 939,
+      "genealogical_groups": 125,
+      "leaking_group_count": 0,
+      "leaking_language_count": 0,
+      "all_probabilities_finite_and_inside_unit_interval": true,
+      "predictions_match_all_variant_input_pairs": true,
+      "five_test_folds_present": true,
+      "saved_language_score_rows_matched": true,
+      "reproduced_comparisons": {
+        "raw": {
+          "language_equal_gain": 0.0026820164957451226,
+          "fixed_prediction_family_cluster_interval": [
+            -0.002045901424582225,
+            0.006596929231578601
+          ]
+        },
+        "classical": {
+          "language_equal_gain": -0.001972108917918128,
+          "fixed_prediction_family_cluster_interval": [
+            -0.0052374523949269905,
+            0.0027014921470575833
+          ]
+        },
+        "classical_over_raw": {
+          "language_equal_gain": 0.004654125413663251,
+          "fixed_prediction_family_cluster_interval": [
+            -0.0035772230579096246,
+            0.01087876118233329
+          ]
+        }
+      }
+    },
+    {
+      "variant": "singleton_only",
+      "cv_grouping": "family",
+      "pairs": 17500,
+      "languages": 625,
+      "genealogical_groups": 108,
+      "leaking_group_count": 0,
+      "leaking_language_count": 0,
+      "all_probabilities_finite_and_inside_unit_interval": true,
+      "predictions_match_all_variant_input_pairs": true,
+      "five_test_folds_present": true,
+      "saved_language_score_rows_matched": true,
+      "reproduced_comparisons": {
+        "raw": {
+          "language_equal_gain": 0.0033518338215689056,
+          "fixed_prediction_family_cluster_interval": [
+            -0.002486154568677004,
+            0.007487685821034098
+          ]
+        },
+        "classical": {
+          "language_equal_gain": -0.003427423226147053,
+          "fixed_prediction_family_cluster_interval": [
+            -0.0066006554410141605,
+            0.0012993575812668828
+          ]
+        },
+        "classical_over_raw": {
+          "language_equal_gain": 0.006779257047715958,
+          "fixed_prediction_family_cluster_interval": [
+            -0.00273885204636132,
+            0.013237536475907204
+          ]
+        }
+      }
+    },
+    {
+      "variant": "single_source",
+      "cv_grouping": "family",
+      "pairs": 25508,
+      "languages": 911,
+      "genealogical_groups": 122,
+      "leaking_group_count": 0,
+      "leaking_language_count": 0,
+      "all_probabilities_finite_and_inside_unit_interval": true,
+      "predictions_match_all_variant_input_pairs": true,
+      "five_test_folds_present": true,
+      "saved_language_score_rows_matched": true,
+      "reproduced_comparisons": {
+        "raw": {
+          "language_equal_gain": 0.004301814308916644,
+          "fixed_prediction_family_cluster_interval": [
+            -0.0012727378823020983,
+            0.008328478161958437
+          ]
+        },
+        "classical": {
+          "language_equal_gain": 0.001293851939188956,
+          "fixed_prediction_family_cluster_interval": [
+            -0.0010748712162446405,
+            0.005592848849676112
+          ]
+        },
+        "classical_over_raw": {
+          "language_equal_gain": 0.003007962369727688,
+          "fixed_prediction_family_cluster_interval": [
+            -0.00502066125567582,
+            0.0086071133630742
+          ]
+        }
+      }
+    },
+    {
+      "variant": "C0.1",
+      "cv_grouping": "family",
+      "pairs": 26292,
+      "languages": 939,
+      "genealogical_groups": 125,
+      "leaking_group_count": 0,
+      "leaking_language_count": 0,
+      "all_probabilities_finite_and_inside_unit_interval": true,
+      "predictions_match_all_variant_input_pairs": true,
+      "five_test_folds_present": true,
+      "saved_language_score_rows_matched": true,
+      "reproduced_comparisons": {
+        "raw": {
+          "language_equal_gain": -0.000601466829990571,
+          "fixed_prediction_family_cluster_interval": [
+            -0.004086558064621162,
+            0.0044988737466089565
+          ]
+        },
+        "classical": {
+          "language_equal_gain": 0.0009824981673535527,
+          "fixed_prediction_family_cluster_interval": [
+            -0.0023718295993567927,
+            0.005483016639483905
+          ]
+        },
+        "classical_over_raw": {
+          "language_equal_gain": -0.0015839649973441237,
+          "fixed_prediction_family_cluster_interval": [
+            -0.003697718176871824,
+            0.0019626043807251217
+          ]
+        }
+      }
+    },
+    {
+      "variant": "C10",
+      "cv_grouping": "family",
+      "pairs": 26292,
+      "languages": 939,
+      "genealogical_groups": 125,
+      "leaking_group_count": 0,
+      "leaking_language_count": 0,
+      "all_probabilities_finite_and_inside_unit_interval": true,
+      "predictions_match_all_variant_input_pairs": true,
+      "five_test_folds_present": true,
+      "saved_language_score_rows_matched": true,
+      "reproduced_comparisons": {
+        "raw": {
+          "language_equal_gain": 0.010026879245617805,
+          "fixed_prediction_family_cluster_interval": [
+            0.0003590429814473193,
+            0.017341170528845123
+          ]
+        },
+        "classical": {
+          "language_equal_gain": 0.007135083969947444,
+          "fixed_prediction_family_cluster_interval": [
+            0.0028925454669035933,
+            0.010126147462811897
+          ]
+        },
+        "classical_over_raw": {
+          "language_equal_gain": 0.002891795275670363,
+          "fixed_prediction_family_cluster_interval": [
+            -0.005284258856671562,
+            0.009101589410552446
+          ]
+        }
+      }
+    },
+    {
+      "variant": "unpenalized",
+      "cv_grouping": "family",
+      "pairs": 26292,
+      "languages": 939,
+      "genealogical_groups": 125,
+      "leaking_group_count": 0,
+      "leaking_language_count": 0,
+      "all_probabilities_finite_and_inside_unit_interval": true,
+      "predictions_match_all_variant_input_pairs": true,
+      "five_test_folds_present": true,
+      "saved_language_score_rows_matched": true,
+      "reproduced_comparisons": {
+        "raw": {
+          "language_equal_gain": 0.010436521788008626,
+          "fixed_prediction_family_cluster_interval": [
+            6.317014082575747e-05,
+            0.018156142114711914
+          ]
+        },
+        "classical": {
+          "language_equal_gain": 0.007533680610238091,
+          "fixed_prediction_family_cluster_interval": [
+            0.0027127325133292275,
+            0.01082892060377848
+          ]
+        },
+        "classical_over_raw": {
+          "language_equal_gain": 0.002902841177770535,
+          "fixed_prediction_family_cluster_interval": [
+            -0.005348112736611958,
+            0.009168384667668556
+          ]
+        }
+      }
+    },
+    {
+      "variant": "primary",
+      "cv_grouping": "language",
+      "pairs": 26292,
+      "languages": 939,
+      "genealogical_groups": 125,
+      "leaking_group_count": 0,
+      "leaking_language_count": 0,
+      "all_probabilities_finite_and_inside_unit_interval": true,
+      "predictions_match_all_variant_input_pairs": true,
+      "five_test_folds_present": true,
+      "saved_language_score_rows_matched": true,
+      "reproduced_comparisons": {
+        "raw": {
+          "language_equal_gain": 0.009031528049951417,
+          "fixed_prediction_family_cluster_interval": [
+            0.0013393870107132264,
+            0.015255703049006017
+          ]
+        },
+        "classical": {
+          "language_equal_gain": 0.0015475441116773244,
+          "fixed_prediction_family_cluster_interval": [
+            -0.0013777169435918147,
+            0.006196315980671708
+          ]
+        },
+        "classical_over_raw": {
+          "language_equal_gain": 0.0074839839382740934,
+          "fixed_prediction_family_cluster_interval": [
+            -0.003361564739808949,
+            0.016330505647180187
+          ]
+        }
+      }
+    }
+  ],
+  "maximum_aggregate_metric_error": 2.220446049250313e-16,
+  "maximum_saved_dyad_loss_error": 4.440892098500626e-15,
+  "maximum_saved_language_score_error": 8.881784197001252e-16,
+  "maximum_cluster_interval_error": 3.903127820947816e-17,
+  "maximum_saved_cell_rate_error": 5.551115123125783e-17,
+  "mle_oof_vs_training_cell_rates_max_error": 1.111574691181616e-07,
+  "mle_fullfit_vs_observed_cell_rates_max_error": 1.152669681925289e-09,
+  "fit_count": 135,
+  "all_saved_fit_statuses_converged": true,
+  "all_saved_fit_ranks_correct": true,
+  "analysis_script_matches_provenance": true,
+  "passed": true,
+  "verification_time_utc": "2026-10-15T04:23:24.542156+00:00",
+  "verification_script_sha256": "d3009f546dbd6f11ec1de4993686ca8984178d21bd44da8478ff0ccb0b4b8176",
+  "scope": "原始主样本重建及已保存折外预测的独立数值核验；未重训模型，谱系簇区间保持固定预测与固定分折的条件解释。"
+}

@@ -1,0 +1,79 @@
+执行 primary：939 语言，26292 类别对
+执行 coverage75：997 语言，27258 类别对
+执行 equal_sets：939 语言，26292 类别对
+执行 singleton_only：625 语言，17500 类别对
+执行 single_source：911 语言，25508 类别对
+执行 C0.1：939 语言，26292 类别对
+执行 C10：939 语言，26292 类别对
+执行 unpenalized：939 语言，26292 类别对
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1170: UserWarning: Setting penalty=None will ignore the C and l1_ratio parameters
+  warnings.warn(
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1170: UserWarning: Setting penalty=None will ignore the C and l1_ratio parameters
+  warnings.warn(
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1170: UserWarning: Setting penalty=None will ignore the C and l1_ratio parameters
+  warnings.warn(
+{
+  "variant": "primary",
+  "cv_grouping": "family",
+  "C": 1,
+  "languages": 939,
+  "family_groups": 125,
+  "pairs": 26292,
+  "shared_form_prevalence": 0.3199452304883615,
+  "language_equal_logloss": {
+    "raw_additive": 0.5810488878419937,
+    "classical_additive": 0.5784682088411487,
+    "pairwise": 0.576625431756988
+  },
+  "pair_equal_logloss": {
+    "raw_additive": 0.5810488878419936,
+    "classical_additive": 0.5784682088411486,
+    "pairwise": 0.5766254317569881
+  },
+  "language_equal_brier": {
+    "raw_additive": 0.19294261982320124,
+    "classical_additive": 0.19261309324253142,
+    "pairwise": 0.19183479402468329
+  },
+  "comparisons": {
+    "raw": {
+      "language_equal_gain": 0.004423456085005574,
+      "family_cluster_bootstrap_95ci": [
+        -0.0005099248921372266,
+        0.008204789775725568
+      ],
+      "family_equal_gain": 0.00939336975637993,
+      "largest_family": "aust1307",
+      "largest_family_languages": 296,
+      "gain_excluding_largest_family_fixed_predictions": 0.0023261159143628204,
+      "families_with_positive_gain": 53,
+      "families_with_negative_gain": 72
+    },
+    "classical": {
+      "language_equal_gain": 0.0018427770841605978,
+      "family_cluster_bootstrap_95ci": [
+        -0.0006035471597976721,
+        0.006119784026667319
+      ],
+      "family_equal_gain": 0.0023149019605050117,
+      "largest_family": "aust1307",
+      "largest_family_languages": 296,
+      "gain_excluding_largest_family_fixed_predictions": 0.0038622294809595044,
+      "families_with_positive_gain": 71,
+      "families_with_negative_gain": 54
+    },
+    "classical_over_raw": {
+      "language_equal_gain": 0.0025806790008449762,
+      "family_cluster_bootstrap_95ci": [
+        -0.004826402129619612,
+        0.008116300001220322
+      ],
+      "family_equal_gain": 0.007078467795874917,
+      "largest_family": "aust1307",
+      "largest_family_languages": 296,
+      "gain_excluding_largest_family_fixed_predictions": -0.0015361135665966843,
+      "families_with_positive_gain": 41,
+      "families_with_negative_gain": 84
+    }
+  }
+}

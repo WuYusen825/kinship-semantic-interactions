@@ -1,0 +1,1845 @@
+               Predictive structure emerges during
+            generalisation of kin terms to new referents
+            Maisy Hallama , Fiona M. Jordanb , Simon Kirbya , Kenny Smitha
+   a
+       Centre for Language Evolution, University of Edinburgh, 3 Charles Street, Edinburgh, EH8
+                                  9AD, Scotland, United Kingdom
+         b
+           Department of Anthropology and Archaeology, University of Bristol, 43 Woodland
+                         Road, Bristol, BS8 1UU, England, United Kingdom
+
+
+
+
+Abstract
+
+   Despite crosslinguistic diversity in how kin relations map to terminology,
+there are constraints on which kin may be categorised together. But what are the
+constraints on kin term variation, and where do they come from? One proposed
+constraint is internal co-selection — an evolutionary process where terminolog-
+ical changes in one generation of kin co-occur with parallel changes in other
+generations. This results in kin terms which are predictable on the basis of other
+kin terms, a property we call predictive structure. To determine the strength of
+this constraint, we measured the predictive structure of systems of kinship termi-
+nology from 1135 languages. We found that kinship systems exhibit a significant
+degree of predictive structure, and we argue that its prevalence reflects a pressure
+for simplicity. We expected that this pressure would be imposed during the gen-
+eralisation of known kin terms to new referents, and we tested this claim using
+an artificial kin term generalisation task. Our results suggest that generalisation
+of kin terms does indeed favour predictive structure, but that people’s preference
+for predictive structure faces interference from other pressures to distinguish kin
+by features like gender.
+
+
+                                                                                  January 16, 2025
+ 1
+
+
+     Keywords: kinship terminology, efficient communication, language evolution
+
+
+ 2   1. Introduction
+
+ 3      When we acquire language, we learn how words map to objects or states
+ 4   of affairs in the world around us. In doing so, we determine what the plausi-
+ 5   ble semantic contrasts are in our language. Different languages reach different
+ 6   solutions to this problem of categorisation, as we know from cross-linguistic in-
+ 7   vestigations of semantic domains such as colour (Berlin & Kay, 1969; Regier et al.,
+ 8   2007), number (Greenberg, 1978; Y. Xu et al., 2020), spatial relations (Levinson &
+ 9   Meira, 2003; Majid et al., 2004; Khetarpal et al., 2009), and the focus of this paper,
+10   kinship (Murdock, 1949; Greenberg, 1966, 1990; Kemp & Regier, 2012). Consider
+11   the English kin term uncle, for example. An English speaker can use uncle to re-
+12   fer to any of their parents’ male siblings, while a Hindi speaker has three distinct
+13   terms for the same group of kin: māmā ‘mother’s brother’, tāū ‘father’s older
+14   brother’, and cācā ‘father’s younger brother’. Meanwhile, in Hawaiian, the term
+15   makuakane includes all of the male siblings of both parents and also one’s own
+16   father. In spite of surface variation in the way kin are partitioned across differ-
+17   ent languages, the extent of the possible variation is highly constrained. Some
+18   theoretically possible patterns are never attested at all. There is no language,
+19   for instance, with a single term for grandfathers and brothers, or for nieces and
+20   grandsons. In this paper, we address the extent of these constraints on kinship
+21   variation, and propose a mechanism by which they emerge and persist.
+
+
+
+
+                                               2
+22   1.1. Proposed constraints on variation
+
+23      Anthropologists have sought to explain the pattern of constrained variation
+24   with a small set of featural constraints such as gender distinctions, generational
+25   distinctions, or relative age (seniority) distinctions (Kroeber, 1909; Fox, 1979),
+26   and a more recent body of work situates these featural constraints in a hierar-
+27   chical framework (Hage, 1999; Jones, 2010). Perhaps we cannot have ‘niece’ and
+28   ‘grandson’ mapped to a single term simply because they differ along dimensions
+29   of generation and gender? While tempting, such a solution cannot capture the
+30   scope of the variation in distinctive features we see cross-linguistically. For in-
+31   stance, Omaha categorises kin together from different generations with the term
+32   e-nä’-hä, meaning ‘father’, ‘father’s brother’, and ‘father’s brother’s son’. In In-
+33   donesian, the term kakak, meaning ‘older brother’ and ‘older sister’, categorises
+34   kin of varying genders together. Furthermore, kinship systems rarely make the
+35   same distinctions across the entire paradigm: in English, our grandparents, par-
+36   ents, siblings, children and grandchildren are all distinguished by gender, but not
+37   our cousins. And even if we were satisfied by the descriptive power of a feature-
+38   based explanation, we would still lack an explanatory account of the mechanisms
+39   that give rise to the variation we observe in kinship terminologies.
+40      Elsewhere in the cognitive sciences, the pattern of constrained variation in
+41   kinship systems has been explained using principles of efficient communication
+42   (Kemp & Regier, 2012; Kemp et al., 2018). Systems of kinship terminology are
+43   constrained by an optimal trade off between opposing pressures to be simple
+44   and expressive; systems that fail to trade off these pressures efficiently are unat-
+45   tested. Kinship terminology systems are simpler if they have fewer terms and
+46   if these terms have simple, compressible meanings - disjunctive categories like
+
+
+                                               3
+47   ‘a sibling who is older than you or male’ are dispreferred compared to contigu-
+48   ous categories like ‘sibling who is older than you and male’ (Nerlove & Romney,
+49   1967). On the other hand, kinship terminology systems are more expressive if
+50   the probability of correctly interpreting the intended referent of a kin term is
+51   maximised. This means that expressive kinship systems have more terms that
+52   each denote fewer individuals, and high frequency referents have more precise
+53   terms, reducing the chance of a term being misunderstood. This account explains
+54   why we have a wide range of surface variation, but also defines clear boundaries
+55   on the extent of that variation: for a given level of communicative precision kin-
+56   ship terminology systems are as compressible as possible, and for a given level
+57   of compression they are as precise as possible. In short, we shouldn’t expect to
+58   find kinship systems that are both complex and highly ambiguous.
+59      Here we seek to understand the scope of diversity in kinship terminology
+60   systems from an evolutionary perspective, in tandem with the mechanisms that
+61   give rise to that diversity — an under-researched yet rich union between lan-
+62   guage, culture and cognition (for a review, see Mitchell & Jordan, 2021). Con-
+63   straints on language variation are not random. They reflect adaptations to the
+64   cultural transmission of language, such that simpler structures that are more
+65   learnable and expressive structures that are more useful for communicating pro-
+66   liferate (Kirby et al., 2008; Kirby et al., 2015; Smith, 2022). We can reformulate
+67   the trade-off between simplicity and expressivity in semantic category systems
+68   as a joint adaptation to language learning and communication (Carr et al., 2020).
+69   Indeed, crosslinguistic constraints on colour terminology have been associated
+70   with biases imposed during cultural transmission (J. Xu et al., 2013), and cultural
+71   transmission should similarly be the process by which kinship terminology is
+
+
+                                             4
+72   optimised for efficient communication (Kemp & Regier, 2012). Previous work
+73   offers some insight on the role of learning and communication in the design of
+74   kin terms: child language acquisition studies find that semantically simpler kin
+75   terms like father and brother, which require understanding only a single rela-
+76   tion, are learned earlier than those like uncle, which requires additionally that a
+77   child understands both father and brother (Haviland & Clark, 1974). Experimen-
+78   tal work finds that simpler kinship systems (where kin are categorised by shared
+79   features) are more learnable by adults in the lab than those where kin terms are
+80   shared by less similar individuals (Smith et al., 2020). Additionally, corpus work
+81   shows that kinship terms are optimised for the communication needs of individ-
+82   uals, reflecting the relative frequencies with which particular kin are referenced
+83   (Anand & Regier, 2023).
+
+84   1.2. Internal co-selection
+
+85      What common features might we then expect systems of kinship terminol-
+86   ogy to have, if they are constrained by opposing pressures to be simple and
+87   expressive? One proposed structural constraint on kinship systems is internal
+88   co-selection (Passmore et al., 2021): a process of kin term change where new dis-
+89   tinctions or mergers in one part of the kinship system are followed by parallel
+90   changes in another part of the system. Figure 1 displays an example of this pro-
+91   cess. If a merger between the meanings ‘father’ and ‘uncle’ results in a single
+92   term funcle for both referents, we might find ourselves in the confusing situa-
+93   tion where sometimes the child of a funcle is called our brother and sometimes
+94   they are called our cousin. Choosing the appropriate term becomes a difficult
+95   task, since we cannot rely on our knowledge of other kin terms to arrive at the
+96   correct term. We should therefore expect a second merger between brother and
+
+                                             5
+       uncle           father              funcle            funcle                funcle          funcle
+
+
+
+
+      cousin      brother   you            cousin     brother     you             brousin    brousin    you
+
+
+
+      Figure 1: An example of internal co-selection. The system on the left undergoes a merger, such
+      that the previously unique terms father and uncle collapse to a single term funcle which can be
+      used for both referents. Under the internal co-selection hypothesis, we expect a parallel merger
+      in the terms for their children, as it is no longer clear when the child of a funcle should be a brother
+      or a cousin. By merging these two terms to a single term brousin, we remove this complexity from
+      the kinship system (at the cost of reduced expressivity).
+
+
+97    cousin to a single category brousin. Then, the child of a funcle is always called a
+98    brousin, and we can rest easy knowing that we do not have to remember com-
+99    plex information about what our funcle’s child is called under what particular
+100   circumstances.
+101       If kinship systems evolve via linked sets of changes, then we get constraints
+102   on possible relationships within our kinship system ‘for free’: if we have a single
+103   term for fathers and uncles, the terms for their children cannot vary arbitrarily,
+104   but also become constrained to a single term. We refer to this property as the
+105   predictive structure of the kinship system. The more accurately you can pre-
+106   dict terms for individuals in one generation (e.g. sibling and cousin terms) from
+107   terms for individuals in another generation (e.g. terms for parents, aunts and un-
+108   cles), the more predictive structure the system has. We propose that predictive
+
+
+                                                         6
+109   structure is one method by which kinship terminologies optimise for efficient
+110   communication, as predictive structure facilitates greater simplicity. Predictive
+111   kinship terminologies are more compressible, since each kin term can be defined
+112   with respect to other terms (e.g. we use our understanding of the term funcle to
+113   define the term brousin).
+114      If internal co-selection is a driving force in the evolution of kinship terminol-
+115   ogy, predictive structure should be common in systems of kinship terminology
+116   cross-linguistically. However, Passmore et al. (2021) did not find consistent evi-
+117   dence that kinship systems are structured predictively – at least, not in the ways
+118   presumed by common organisational typologies for kinship systems (Murdock,
+119   1949). In Sections 2 – 3, we extend their study using an alternative, information-
+120   theoretic measure of predictive structure in order to robustly test the prediction
+121   that kinship terminology systems are structured predictively. We present the
+122   broadest typological analysis of the structure of kinship systems to date, find-
+123   ing that the world’s kinship systems are structured more predictively than we
+124   would expect by chance (if there were no evolutionary pressures imposing this
+125   structure). By offering a common structural principle that underlies simplicity
+126   in kinship systems, we support the claim that kinship systems are optimised for
+127   efficient communication.
+128      What then would be the mechanism that facilitates internal co-selection as
+129   a process of kin term evolution? Why would kin terms evolve via linked sets of
+130   changes? Inspired by explanations for predictive structure in other domains such
+131   morphological paradigms (Ackerman & Malouf, 2013; Johnson et al., 2021), we
+132   propose that pressures imposed during cultural transmission incentivise predic-
+133   tive structure. Individuals faced with incomplete input when learning kin terms
+
+
+                                              7
+134   will predict unknown terms from their existing knowledge: the children of fun-
+135   cles sharing a term seems a likely hypothesis, so upon hearing that one funcle’s
+136   child is a brousin, the learner extends that term to children of all funcles, regular-
+137   ising the paradigm. In light of the paucity of experimental approaches in kinship
+138   studies, we offer an empirical test of whether the generalisation process presup-
+139   posed by the internal co-selection hypothesis does indeed give rise to predictive
+140   structure. In Section 4 we present the results of an artificial language generali-
+141   sation task, showing that predictive structure emerges during generalisation of
+142   known kin terms to new referents.
+
+
+143   2. Study 1: How common is predictive structure?
+
+144      If kinship terminology evolves by internal co-selection, we would expect that
+145   kinship terms in one part of the system will be predictive of other parts of the
+146   system. We test this claim by comparing kinship terms across two generations:
+147   one’s siblings and cousins (Ego’s generation or G0) and one’s parents and their
+148   siblings (Ego’s parents’ generation or G+1). Previous work has not found con-
+149   sistent evidence that kinship systems exhibit predictive structure (Passmore et
+150   al., 2021), but here we conduct a more robust test using a larger quantity of data
+151   from a greater variety of languages, and using a richer measure of predictive
+152   structure.
+153      Passmore et al. (2021) measure predictive structure using a binary measure
+154   inferred from the typology for kinship systems put forward by Murdock (1949),
+155   which classifies kinship systems into six categories depending on the way a lan-
+156   guage distributes kin terms for cousins. In their study, if the organisation of
+157   kin at G+1 is classified the same as kin at G0, then that kinship system scores
+
+
+                                                8
+158   1 (predictive structure). If the two categories differ, the language scores 0 (no
+159   predictive structure). However, this measure assumes that the ideal state for
+160   kinship systems following the internal co-selection process is one of Murdock’s
+161   six types, which do not necessarily exhibit predictive structure. Additionally, a
+162   binary measure cannot capture the extent to which a system exhibits predictive
+163   structure given other constraints, such as the number of terms or what other
+164   distinctions are made.
+165      Furthermore, while Murdock’s typology is still commonly used in kinship
+166   research as a measure of kin term variation (Cronk et al., 2019; Trautmann &
+167   Whiteley, 2012) or to infer social kin organisation (Schulz et al., 2019), it is in-
+168   creasingly perceived as an inadequate and outdated description of global kinship
+169   variation (Passmore & Jordan, 2020). Indeed, Passmore et al. (2021) suggest that
+170   their inconclusive result reflects that the typology fails to accurately capture the
+171   extent of global variation.
+172      Here, we use a new information-theoretic measure for predictive structure.
+173   We calculate predictive structure as the mutual information between kin terms,
+174   and use Monte Carlo methods to compare each kinship system to a null baseline,
+175   to measure the extent to which systems exhibit predictive structure relative to
+176   the predictive structure we would expect to occur by chance in such a system.
+
+177   2.1. Data
+
+178      Our data on the world’s kinship systems comes from Kinbank (Passmore et
+179   al., 2023), a database of kinship terminology in 1215 languages across 21 major
+180   language families. Kinbank contains terms for relatives spanning five genera-
+181   tions from grandchildren to grandparents.
+182      For our analysis, we look only at kin terms for individuals in G0 including
+
+                                               9
+183   siblings (elder and younger) and parents’ siblings’ children, and in G+1 including
+184   parents and parents’ siblings (elder and younger). Taking into account gender,
+185   this leaves us with a total of 60 types of relative across both generations.
+186      Limiting our analysis to two generations aligns with Passmore et al.’s (2021)
+187   claim about internal co-selection, which only considers the evolutionary link
+188   between G0 and G+1. Additionally, these relationships are the most reliably doc-
+189   umented across the dataset, which allowed us to maximise the size of our data
+190   sample. When data was missing, we calculated the predictive structure of the
+191   terminology that was available, providing there was at least one term listed for
+192   a person in each generation. This criterion left us with data from 1135 kinship
+193   systems for our analysis.
+194      In cases where more than one term was recorded for a given relative, we took
+195   the first listed term for our analysis. If two or more alternative spellings were
+196   recorded for a kin term, we took the first listed spelling.
+
+197   2.2. Measuring predictive structure
+
+198      For our analysis, we needed a robust measure of predictive structure and a
+199   baseline model against which to compare natural languages. The baseline should
+200   capture our expectations under the null hypothesis - i.e. that if there were no
+201   evolutionary pressure for predictive structure, kinship terminologies would not
+202   be structured in this manner.
+
+203   Mutual information. We measure predictive structure in information theoretic
+204   terms, as the mutual information between generations of kin terms. Between
+205   two terms, mutual information tells us how much information we can obtain
+206   about a term T0 from observing a term T1 . If we sum over all pairs (T0 , T1 ) with
+
+
+                                              10
+             ny inento         ongundwe          mama            ise        isenkati          isento
+
+
+
+
+                                                 mukuru        mukuru
+        omwana     omwana ny inento ny inarumi                          mwhiwha mwhiwha munyanya munyanya
+
+
+
+
+      Figure 2: The kinship system of Nyoro. All terms are given relative to Ego, represented by the
+      grey square. Circles represent women, triangles represent men. Colours indicate a unique kin
+      term. Nyoro has a high degree of predictive structure: terms for Ego’s siblings and cousins are
+      uniquely specified by terms for Ego’s parents and parents’ siblings (nuncles). For instance, the
+      child of a ny intento is always a omwana, never one of the other possible terms for a cousin. Note
+      that Nyoro exhibits generational skewing, so the term ny inento can refer both to a mother’s
+      sister and a mother’s brother’s daughter. Nonetheless, it exhibits predictive structure as parent
+      terms and child terms are uniquely paired.
+
+
+207   T0 in G0 and T1 in G+1, we get a single score for each language that tells us how
+208   well we can predict the terms in G0 knowing only the terms in G+1 (and vice-
+209   versa). The mutual information I between two generations G0 and G+1 is given
+210   by:
+
+
+                                  I(G0 ; G+1 ) ≡ H(G0 ) − H(G0 |G+1 )                                  (1)
+
+211         where H(G0 ) is the entropy (in bits) over all kin terms in Ego’s generation
+212   and H(G0 |G+1 ) is the conditional entropy over all kin terms in Ego’s genera-
+213   tion given the terms in Ego’s parents’ generation. H(G0 ) = 0 if a language
+214   uses a single term for all relatives in G0. Higher entropy values reflect a greater
+
+
+                                                          11
+215   number of terms, particularly if the distribution of terms is relatively uniform.
+216   H(G0 |G+1 ) = 0 if the kin terms for relatives in G0 are completely predictable by
+217   knowing the term for each relative’s parent in G+1. For a given number of distinct
+218   terms, M I(G0 ; G+1 ) is maximised when every term in G0 is uniquely specified
+219   by a term in G+1, as seen in Nyoro (Figure 2). M I(G0 ; G+1 ) is minimised when
+220   there is no way to reliably predict a term in the variable generation, i.e. when
+221   there is no variation in G0 terms. In reality, most languages sit between these
+222   extremes, but we predict that they will nonetheless have greater mutual infor-
+223   mation than we would expect if their kin terms were distributed across the space
+224   of possible referents in the absence of any pressure for predictive structure.
+
+225   A baseline with no bias for predictive structure. We used Monte Carlo techniques
+226   to test whether given level of predictive structure is likely to arise by chance,
+227   comparing each language’s true mutual information score to a null baseline with
+228   no bias for predictive structure, but with all other features of the language held
+229   constant. For each language, we generated baseline kinship systems by generat-
+230   ing random permutations of the kin terms in G0, randomising which kin terms
+231   were associated with which referents, and thereby breaking any predictive bonds
+232   between terms in G0 and terms in G+1 while preserving the number of terms in
+233   each generation. Figure 3b exemplifies this manipulation for the Kurdish kinship
+234   system.
+235      For each of the 1135 natural kinship systems in our dataset, we generated
+236   1000 such permutations and measured the mutual information of each permu-
+237   tation. We compared the resulting distribution of theoretically possible mutual
+238   information values to the mutual information of the veridical kinship system.
+239   We calculated a z-score for each language using the mean and standard devia-
+
+                                              12
+                         veridical
+
+
+                             pur            khal        daik         baok        pur                mam
+                   (a)
+
+
+
+                         purza purza khaloaza khaloaza khusk          bra    purza purza amoaza amoaza
+
+                         shuffled
+
+
+                             pur            khal        daik         baok        pur                mam
+
+                   (b)
+
+
+
+                         khaloaza khusk amoaza purza
+                                                       amoaza        purza   purza khaloaza   bra     purza
+
+
+
+
+      Figure 3: (a) The kinship system of Kurdish. Tree conventions as in Figure 2. Kurdish has a high
+      degree of predictive structure, but these kin terms are also compositional: e.g. pur and purza
+      share part of their form. (b) An example permutation of Kurdish. This hypothetical kinship
+      system has low predictive structure: there is no reliable way to predict what a child will be called
+      on the basis of what their parent is called. Before, the child of a pur was a purza; now the child
+      of a pur might be amoaza, bra, purza or khusk.
+
+
+240   tion of the baseline distribution, indicating how extreme the observed predictive
+241   structure is relative to what would be expected if there were no bias for predic-
+242   tive structure. We classified a kinship system as having a significant degree of
+243   predictive structure if it had higher MI than 95% of its permutations (i.e. a sig-
+244   nificance threshold of p = 0.05), measured as a mutual information value more
+245   than 1.96 standard deviations from the baseline mean (z > 1.96).
+
+
+
+
+                                                                13
+                  30
+
+
+                  20
+          count
+
+
+
+
+                  10
+
+
+                  0
+                       −1.96   0   1.96    5             10            15            20
+                                      Mutual information (z−transformed)
+
+
+      Figure 4: Distribution of mutual information z-scores for all languages in our dataset. Red bars
+      indicate languages with significant mutual information values (p < 0.05). Dashed line shows
+      z = 0. The vast majority of languages exhibit a significant degree of predictive structure, with
+      the majority beating their baseline by an extremely large margin of > 5 standard deviations.
+
+
+246   2.3. Results
+
+247       We expected that natural systems of kinship terminology would exhibit a
+248   high degree of predictive structure, following the prediction from Passmore et al.
+249   (2021) that kin terms evolve via a linked set of changes. In terms of our measure,
+250   we expected that natural languages will have greater mutual information than
+251   95% of their permutations.
+252       Comparing the mutual information score for each natural language to the dis-
+253   tribution of mutual information scores in its bespoke baseline, we found that the
+254   vast majority of languages in our dataset (87.5%) had significantly higher mutual
+255   information scores than their null baselines (see Figure 4). Only two (0.02%) lan-
+256   guages had mutual information values significantly lower than their baseline; the
+257   remaining 12.5% of languages’ mutual information was in the range we would ex-
+258   pect by chance if there were no bias for predictive structure (−1.96 < z < 1.96).
+259       Figure 5 shows the results for a sample of languages in our dataset. For al-
+
+                                                    14
+                          Aché (Tupian)              Comanche (Uto−Aztecan)                English (Indo−European)              Fijian (Austronesian)
+         10.0
+          7.5                       z = 2.26                              z = 1.53                        z = 15.24                           z = 7.53
+          5.0
+          2.5
+          0.0
+                      Hindi (Indo−European)               Irish (Indo−European)               Japanese (Japonic)           Kankanaey (Austronesian)
+         10.0
+          7.5                       z = 10.28                            z = 12.96                        z = 14.16                           z = 14.82
+          5.0
+          2.5
+          0.0
+
+
+
+
+     y
+                        Karitiana (Tupian)               Kurdish (Indo−European)       Sundanese (Austronesian)                Tsonga (Atlantic−Congo)
+         10.0
+          7.5                       z = 1.56                              z = 16.6                        z = 13.28                           z = 12.04
+          5.0
+          2.5
+
+
+
+
+15
+          0.0
+                         Turkish (Turkic)            Yami Tao (Austronesian)         Yindjibarndi (Pama−Nyungan)          Yugambeh (Pama−Nyungan)
+         10.0
+          7.5                       z = 12.93                            z = 10.35                        z = 5.72                            z = 14.19
+          5.0
+          2.5
+          0.0
+                0.0     0.5   1.0   1.5      2.0   0.0      0.5   1.0    1.5   2.0   0.0     0.5    1.0   1.5      2.0   0.0      0.5   1.0   1.5   2.0
+                                                                        Mutual information (bits)
+
+
+     Figure 5: Range of mutual information values for a sample of languages in our dataset. Distributions represent the baseline mutual
+     information from each of the 1000 permutations of each system; dotted lines represent the mutual information of the veridical kinship
+     system. Labels give the z-score for each language - z greater than 1.96 indicates a significant degree of mutual information. In almost all
+     cases, the true mutual information values far exceeds the bulk of the baseline distribution, indicating that systems of kinship terminology
+     are structured more predictively than expected if there was no bias for predictive structure.
+260   most all of these languages mutual information values for the natural languages
+261   were significantly higher than the baseline distribution, and often by a consider-
+262   able margin, with many languages surpassing more than five standard deviations
+263   from their baseline mean.
+
+264   2.4. Discussion
+
+265      In accordance with our hypothesis, we found that kinship systems have much
+266   greater predictive structure than we would expect if there were no bias for predic-
+267   tive structure. Compared to randomly permuted baselines, we found that natural
+268   kinship systems exhibit vastly more structure; there is often not a single per-
+269   mutation out of 1000 that approaches the true mutual information value. This
+270   confirms quantitatively that natural language kin terms are not randomly allo-
+271   cated to referents, and further suggests that systematic predictive structure is a
+272   near-universal property of kinship systems.
+273      We found some languages whose mutual information was not significantly
+274   different from their permuted counterparts. Our analysis was very conservative,
+275   and we included languages that had as few as a single term in each generation
+276   recorded in Kinbank. Languages whose mutual information fell within the set of
+277   values in the baseline were often those with incomplete kin term data (see Ap-
+278   pendix 1), resulting in baselines with only a handful of possible permutations. We
+279   expect that had the data been complete, the baselines for these languages would
+280   have been more variable, and that their veridical mutual information would likely
+281   be more different from chance than we see here.
+282      Our results contrast with the findings from Passmore et al. (2021), who did not
+283   find consistent evidence that kinship systems evolve by internal co-selection. By
+284   measuring predictive structure as the mutual information between two genera-
+
+                                              16
+285   tions of kin terms, we were able to show the extent to which a particular kinship
+286   system exhibits predictive structure, while Passmore et al.’s (2021) measure was
+287   binary - either kin terms were predictive or they were not. By comparing our
+288   results to a null distribution, we were able to measure for each language how
+289   extreme the degree of predictive structure was. Additionally, we used a larger
+290   quantity of data from a greater variety of languages. We are confident that the
+291   results we have presented here are a stronger test of predictive structure.
+
+
+292   3. Study 2: is predictive structure due to compositionality?
+
+293      An alternative explanation for our findings in Section 2 could be that high
+294   mutual information is a by-product of compositionality, the pervasive feature of
+295   languages whereby the meaning of an expression is composed of the meanings of
+296   parts of that expression. It is not uncommon for kin terms to be compositional:
+297   morphologically transparent such that parts of their form are associated with
+298   parts of their meaning. For instance, Kurdish khal ‘father’s brother’ and khaloaza
+299   ‘father’s brother’s child’ share part of their form, such that khal indicates which
+300   branch of the family tree these kin belong to - i.e. the father’s brother’s branch
+301   (see Figure 3a). Additionally, -oaza indicates that an individual is a child, and
+302   is also present in the other cousin terms pur-za and am-oaza. Labels which are
+303   compositional in this way inevitably have a high degree of predictive structure.
+304      Compositionality has itself been argued to be in part a product of pressures
+305   for efficient communication (Kirby et al., 2015). Could the predictive structure
+306   we see in Section 2 be due entirely to compositionality? If so, it would no longer
+307   be clear that predictive structure emerges due to a specific pressure for kin terms
+308   in G+1 to uniquely specify kin terms in G0 - instead, this could be a side effect
+
+
+                                              17
+309   of a more general preference for compositional structure in language.
+310      Many of the kinship systems we see that have high mutual information rel-
+311   ative to their baselines do not have clearly compositional kin terms - e.g. Nyoro
+312   in Figure 2, and of those in Figure 5, English, Fijian, Turkish, Kankanyaey, Yami,
+313   and Yugambeh have no clear compositional structure. But in order to more rig-
+314   orously rule out the possibility that high mutual information is merely compo-
+315   sitionality in disguise, in this section we measure the compositionality between
+316   terms denoting a parent and child pair (e.g. uncle and cousin in English) across
+317   our sample of kinship systems, and compare this to the measure of predictive
+318   structure for each language as computed in Section 2.
+
+319   3.1. Data
+
+320      The data used in this analysis are identical to those described in Section 2.1.
+
+321   3.2. Measuring compositionality
+
+322      As a proxy for compositional structure between parent and child kin terms,
+323   we measured the normalised Levenshtein distance (Levenshtein, 1965) between
+324   pairs of terms: the number of single-letter insertions, deletions, or replacements
+325   needed to turn one string into another, proportional to the length of the longer
+326   string. For instance, the number of changes required to change the term uncle
+327   into the term cousin is 6, as none of the letters are in the same position and one
+328   letter must be added. The length of the longer word cousin is 6, so the normalised
+329   edit distance between these terms is 1. In other words, this is the highest possible
+330   edit distance between a pair of words. To take an example from a language that
+331   does exhibit compositionality, consider Kurdish pur ‘mother’s sister’ compared
+332   to purza ‘mother’s sister’s daughter’ - the normalized edit distance between these
+
+
+                                              18
+333   terms is 0.4. The smaller the normalised edit distance, the more similar the two
+334   strings, with zero indicating that the strings are identical. In a kinship system
+335   that is compositional in the same way as Kurdish, with terms for offspring being
+336   related to terms for their parents, the edit distance between parent and child
+337   terms will tend to be low.
+338       We computed the average edit distance between all pairs of parent and child
+339   terms. As in Section 2, we built null baselines for each kinship system by permut-
+340   ing which G0 terms were associated with which referents and measured the new
+341   average edit distance across the new set of parent-child pairs generated by this
+342   process, calculating z-scores for the edit distance of the true kinship system with
+343   respect to this random baseline. Kinship systems were considered significantly
+344   compositional if the true edit distance was smaller than 95% of its permutations,
+345   i.e. a z-score less than 1.96.
+
+346   3.3. Results
+
+347       Figure 6 shows the average edit distance z-score for each natural language.
+348   We found that languages tend not to have a significant degree of compositionality
+349   with respect to their null baselines; 50% of languages are non-compositional,
+350   while only 30% of languages have a significantly low average edit distance (i.e.
+351   are highly compositional). Given that extreme values of predictive structure are
+352   much more common (87.5%), this suggests that predictive structure is not merely
+353   an artifact of compositionality.
+354       Additionally, we also found that 20% of kinship systems have edit distances
+355   that are significantly greater than those in the baseline, meaning that the labels
+356   for corresponding pairs of G+1 and G0 kin (i.e., parents and their children) are
+357   less similar to each other than they are to other kinship terms in the system.
+
+                                              19
+                  40
+
+                  30
+          count
+
+
+
+                  20
+
+                  10
+
+                  0
+                       −10                   −5           −1.96    0      1.96           5
+                                   Average edit distance (z−transformed)
+
+
+      Figure 6: Distribution of average edit distance z-scores for all languages in our dataset. Since
+      compositional systems have lower edit distances, negative z-scores indicate greater composition-
+      ality (the average distance between terms in the system is less than chance). Red bars indicate
+      languages whose average edit distance beats a significance threshold of p < 0.05; grey bars in-
+      dicate languages which do not have significant average edit distance. Dotted line shows z = 0.
+      A large proportion of languages (50%) are not compositional, while predictive structure is more
+      common (87.5%), suggesting that it is possible to have a high degree of predictive structure with-
+      out compositionality in kin term forms.
+
+
+358   Our edit distance measure is highly specific to the cross-generational predictive
+359   structure we identified in Study 1, only measuring the similarity between terms
+360   for a parent and their offspring. However, this is not the only manner in which
+361   languages encode meaningful information in kin terms. For instance, Figure 8
+362   shows the kinship system from Andi, where the kin terms for ‘brother’ and ‘fa-
+363   ther’s brother’ share a chunk of their form, -woc̄i. This morpheme encodes a
+364   meaning like ‘this person is a male sibling’. Because of this similarity in form,
+365   our edit distance measure would give a higher score to Andi if the term woc̄i was
+366   used for ‘father’s brother’s son’.
+367       To confirm that predictive structure is not associated solely with composi-
+
+
+
+                                                     20
+                                 5                                         5
+       Average edit distance
+         (z−transformed)
+
+
+
+                                 0                                         0
+
+
+
+                               −5                                        −5
+
+
+
+                               −10                                       −10
+
+                                     0          1         2          3         0      5    10   15      20
+                                                                                   Mutual information
+                                         Mutual information (bits)
+                                                                                    (z−transformed)
+
+
+      Figure 7: Left: Relationship between z-transformed average normalised edit distance and mu-
+      tual information. There is a small inverse effect: as edit distance decreases (i.e. terms are more
+      similar), mutual information increases. Right: Relationship between z-transformed average nor-
+      malised edit distance and z-transformed mutual information. Dashed lines indicate significance
+      thresholds. Extremely low edit distance is not correlated with extremely high mutual informa-
+      tion, suggesting that predictive structure is not driven by compositionality.
+
+
+368   tionality, we compared the z-transformed average edit distance between parent-
+369   child terms with the mutual information score for each language. 30% of lan-
+370   guages in our sample have significantly lower average edit distance than chance,
+371   while 50% are at chance. Compositionality is not as common as predictive struc-
+372   ture, but it is still prolific cross-linguistically. Figure 7 depicts the relationship
+373   between these variables: as kin terms become more compositional, predictive
+374   structure increases, as we expected. However, more crucially we found that
+375   among the 50% of kinship systems who have edit distance values that are in-
+376   distinguishable from the baseline, 73% have mutual information values that dif-
+
+                                                                 21
+                                    ima          ila             iluƛi yoc̄i
+
+
+
+
+                                               woc̄i           wacʔal wacʔal
+                                                       mičʼi
+                                                       woc̄i
+
+
+      Figure 8: Truncated kinship system for Andi (Nakh-Daghestanian) including terms for parents,
+      male siblings (elder and younger), father’s brother, and father’s brother’s children. Tree conven-
+      tions as in Figure 2. Longer lines indicate younger siblings, shorter lines indicate older siblings.
+      Andi has extremely high average edit distance according to our measure because terms that share
+      parts of their form are not parent-child pairs: iluňi woc̄i ‘father’s brother’ shares a chunk of its
+      form with woc̄i ‘elder brother’ compared to wacPal ‘cousin’.
+
+
+377   fer significantly from the baseline, suggesting that predictive structure need not
+378   co-occur with compositionality.
+379       Importantly, the majority of systems with significantly high edit distance val-
+380   ues nevertheless still have significantly high mutual information values (87.5%).
+381   For instance, Andi has a edit distance z-score of 5.98, and a mutual information z-
+382   score of 12.87 (p < 0.001), further supporting our claim that predictive structure
+383   is not merely reflective of compositionality.
+
+384   3.4. Discussion
+385       While predictive structure and compositionality are intrinsically related, our
+386   results suggest that predictive structure is not contingent on kin terms being
+387   compositional and can arise of its own accord. We also find that extremely high
+388   edit distance values can correspond with extremely high mutual information val-
+
+                                                       22
+389   ues. This suggests not only that predictive structure and compositionality need
+390   not co-occur, but also that they may interact to impose multiple kinds of struc-
+391   ture on a kinship system simultaneously: predictive structure allows us to pre-
+392   dict who is the descendant of whom, while compositionality encodes information
+393   about the shared features of individuals.
+
+
+394   4. Study 3: does predictive structure emerge during generalisation?
+
+395      What mechanisms give rise to the emergence of predictive structure in kin-
+396   ship terminology? Typological universals are evidence that language reaches
+397   “stable engineering solutions” that satisfy the demands of the processes of lan-
+398   guage learning and use by which languages are transmitted (Evans & Levinson,
+399   2009). Indeed, typologically common structural properties of language such as
+400   noun-dependency ordering, (Culbertson et al., 2012; Culbertson, Schouwstra,
+401   & Kirby, 2020), harmonic ordering of phrasal heads (Culbertson, Franck, et al.,
+402   2020), and conditioned variation more generally (Hudson Kam & Newport, 2009;
+403   Smith & Wonnacott, 2010) have been shown to emerge by the imposition of cog-
+404   nitive biases associated with language learning. The typological prevalence of
+405   predictive structure in kinship terminology suggests a pressure for this structure
+406   that we argue is also imposed during learning.
+407      Where might this pressure come from? We draw a parallel with the predic-
+408   tive structure of morphological paradigms (e.g. the organisation of tense or case
+409   inflections within a language), which vary their complexity along two dimen-
+410   sions: the number of different surface forms in the paradigm, and the predic-
+411   tive structure of the paradigm – how reliably you can predict a form from other
+412   cells in the paradigm (Ackerman & Malouf, 2013; Johnson et al., 2021). Acker-
+
+
+                                             23
+413   man and Malouf (2013) note that while variability in surface forms seems to be
+414   quite unconstrained cross-linguistically, predictive structure seems to be much
+415   more constrained — even morphological paradigms with a great deal of super-
+416   ficial complexity are structured predictively, just as we find with paradigms of
+417   kinship terminology. Experimental work has shown that predictive structure
+418   licenses reliable generalisations about novel forms (Johnson, 2021); people are
+419   more likely to correctly infer the form for an unknown cell if it can be predicted
+420   using knowledge from another part of the paradigm.
+421      Predictive structure in kinship terminology may be a consequence of this
+422   same generalisation process. If learners use their existing knowledge of kin terms
+423   to generalise to the terms for other kin, those forms are likely to be predictive of
+424   one another. For instance, when the funcle merger occurs (Figure 1), the brousin
+425   merger follows it because we take our existing information about funcles and
+426   generalise that category structure to their children, inferring that they too should
+427   be categorised together. The second merger takes hold because, when faced with
+428   incomplete input, learners will extend the terms they have learned on the basis of
+429   their existing knowledge - i.e. they will assume that the term brousin applies to all
+430   children of funcles. In short, kin terms evolve to suit the kinds of generalisations
+431   we are likely to make during the process of kin term acquisition.
+432      To test whether predictive structure emerges during generalisation, we ran an
+433   artificial language experiment where participants generalised known kin terms
+434   to novel referents, taking inspiration from similar experiments where partici-
+435   pants learn to generalise novel words in a hierarchical meaning space (e.g. F. Xu
+436   & Tenenbaum, 2007). Participants were shown family trees with some members
+437   labelled with a kin term and some left unlabelled. Their task was to assign a kin
+
+
+                                               24
+             aunt                  uncle           mother        father           aunt             uncle
+
+
+
+
+                                                          YOU
+
+                                                 sister            brother
+       cousin   cousin         cousin   cousin                               cousin   cousin   cousin cousin
+
+
+
+      Figure 9: Example family tree diagram from our experiment, labelled here with English kin
+      terms for clarity. Each tree comprised two generations of kin, including a mother, father, mater-
+      nal/paternal aunt, maternal/paternal uncle in G+1 and a male sibling, female sibling, and a male
+      and female child for each nuncle in G0. Participants saw a new tree with new characters in each
+      of their eight trials.
+
+
+438   term to each of the unlabelled referents. This paradigm let us test whether par-
+439   ticipants have a preference for predictive structure when generalising kin terms
+440   as we expected, or whether they generalise according to some other information,
+441   or whether they assign new terms haphazardly.
+
+442   4.1. Methods
+
+443   4.1.1. Participants
+444       We recruited 40 participants from Prolific. Participants were self-reported
+445   native speakers of English resident either in the United Kingdom or the United
+446   States who had an approval rating of over 98% over all completed studies. We
+447   excluded three participants who failed at least two of eight attention checks,
+448   leaving 37 participants. The median completion time for the experiment was ap-
+449   proximately 16 minutes, and participants were paid £2.86 for their participation.
+
+
+                                                            25
+       System        Description                          Distinction                 Tree structure
+
+       Type I        All parents’ siblings share a term   None                         A   A           A   A
+
+
+
+
+       Type IIside                                        Side of the family           A   A           B   B
+                     Parents’ siblings are categorised
+       Type IIgen         into two groups of two          Gender                       A   B           A   B
+
+
+
+
+       Type IIopp                                         Opposite gender to parent   A    B           B   A
+
+
+
+
+       Type IIIfb                                         Father’s brother distinct    B   B           B   A
+                     Parents’ siblings are categorised
+       Type IIIfz          into a group of three          Father’s sister distinct     B   B           A   B
+
+
+                            and a group of one
+       Type IIImb                                         Mother’s brother distinct   B    A           B   B
+
+
+
+
+       Type IIImz                                         Mother’s sister distinct     A   B           B   B
+
+
+
+
+      Table 1: In each trial, participants saw one of eight different kinship systems. Kinship systems
+      varied by which distinctions were present among G+1 kin. Type I systems have all parents’
+      siblings categorised together with a single label. Type II systems have them categorised into two
+      groups of two on the basis of gender (brothers vs sisters), side of the family (mother’s siblings
+      vs father’s siblings), or relative to the connecting parent’s gender (mother’s brother and father’s
+      sister vs mother’s sister and father’s brother). Type III systems have them categorised into a
+      group of three and a group of one (all combinations).
+
+
+450   4.1.2. Design
+451       We provided participants with a number of kin terms in artificial languages.
+452   Their task was to generalise from these known kin terms to new referents, using
+453   the distinctions made amongst parents and nuncle terms to infer distinctions
+454   amongst siblings and cousins.
+455       In each trial, we presented participants with family tree diagrams comprising
+456   two generations of kin (see Figure 9). The family trees were populated with illus-
+
+
+                                                          26
+457   trated characters designed to share visual similarities; closely related kin shared
+458   features such as hair colour, hair style, and skin tone. All family trees were ori-
+459   ented with the parents and parents’ siblings at the top with their children posi-
+460   tioned beneath them. Participants were encouraged to imagine themselves at the
+461   centre of the tree; the word ‘YOU’ was written beneath the parents and between
+462   the siblings to indicate how they should imagine themselves to be related to ev-
+463   eryone else in the tree. To avoid effects associated with the position of different
+464   relatives on screen, we varied the left-to-right order of men and women in the
+465   tree between participants, as well as whether the mother and father appeared on
+466   the right- or the left-hand side.
+467          ‘Known’ kin terms were given beneath the corresponding characters in the
+468   tree (see Figure 10). In each trial, participants were given all labels for G+1 kin,
+469   and also shown at least two labels in G0 so they could generalise these labels
+470   to the remaining unlabelled kin. The given G0 labels were randomly assigned
+471   in a way that was consistent with a high degree of predictive structure, but still
+472   left the remaining distinctions open to interpretation. We gave participants four
+473   labels to choose from for the remaining kin. Two of these label choices matched
+474   the provided G0 labels, and two were novel.1 Participants could use as many or
+475   as few of the four labels as they liked.
+476          Participants completed eight trials, each with a different underlying kinship
+
+         1
+             We gave participants a choice of four labels after finding in a pilot version of the study that
+      participants provided with only two labels commonly used those labels to distinguish gender
+      only. With four labels, people did not have to choose between competing preferences: it was
+      possible to distinguish gender as well as maximising the predictive structure of the system if
+      they chose to.
+
+
+
+                                                        27
+477   system that differently distinguished parents’ siblings.2 These can be divided into
+478   three types on the basis of distinctions made among parents’ siblings, given in
+479   Table 1. Varying the distinctions in the input ensured that our findings about pre-
+480   dictive generalisation would be robust across different patterns of surface varia-
+481   tion in kin term categorisation.
+482          We designed eight sets of artificial kinship terms, so that participants would
+483   see different kin terms associated with each of the eight system types (see Table
+484   2). These were generated by randomly concatenating syllables from a randomly
+485   selected inventory for each of the eight systems. Diacritics were added to each
+486   language to further distinguish each set of kin terms. Each set of kin terms was
+487   randomly paired with one of the eight system types at the start of the exper-
+488   iment, and the terms were randomly assigned to each category of relative; no
+489   two participants saw the same terms in the same orientation.
+
+490   4.1.3. Procedure
+491          The experiment was implemented with jsPsych (de Leeuw et al., 2023), and
+492   ran online in participants’ web browsers.
+493          In the task instructions, participants were told they were helping with a lan-
+494   guage documentation task, where intuitions about kinship terminology were
+495   needed to fill gaps in the vocabulary records of newly documented languages.
+496   They were told they would have to use the known terms in each language to in-
+
+         2
+             The labels assigned to parents’ siblings varied for each system, but parent terms always
+      uniquely distinguished ‘mother’ and ‘father’. This was done partially because it is cross-
+      linguistically common for parental terms to be distinct, and primarily to avoid confusion for
+      our English speaking participants who would not be used to parent terms being polysemous.
+
+
+
+
+                                                     28
+       Language name     Labels
+       Zolawengı̈        kı̈my, qı̈ru, bokokohı̈, zuvewu, mewaqı̈fe, morı̈ky, ryvı̈ri, lobowaby, bybı̈, hı̈laki
+       Pukepapu          kawuka, goviku, lawolu, popingi, wupu, ngapapu, powisunge, lepego, luge, pygele
+       Øwar              aqinudød, øqoç, aweh, orinoçim, iciqusem, iqur, ømenad, adeçim, emøyeç, uquçun
+       Aluwut            azuf, egezalat, ozatof, otev, ulywaf, idanuluf, agivud, ilug, etupol, awupav
+       Khêvkkêf        kvurddåh, rhymsvåd, rhåv, ktot, tsåvvses, svik, ktåvrhus, smêvskêv, vrêd, sfêvdok
+       Vpižodvipe       vbāžo, rbāranžā, nžodo, pžicā, žbodu,vropcāre, vruži, ngcāžo, byure, cžunge
+       Tuuquhaı̈bö      šı̈ı̈nö, cöahido, šaaqaude, nuubö, töeqo, tuumı̈hu, yaöpe, beiguumu, canšuehu, möı̈tu
+       ăonuu            taobyo, nyumuo, goozăi, qăo, niuhiê, baumiă, gêă, huanăa, nyumuo, hyonăo
+
+      Table 2: Artificial label sets generated for this experiment. Participants saw different labels in
+      each of their eight trials. In-keeping with the task framing that they were helping with language
+      documentation in eight under-research languages, they were given the name of each artificial
+      language. Labels for known kin were randomly chosen from the pool for each language, as were
+      the labels participants could select from.
+
+
+497   fer what the missing terms were likely to be, and that they would have a choice
+498   of four terms for each gap.
+499       At the start of the experiment, all participants watched a short tutorial of
+500   how to interpret a family tree. Participants were asked to imagine themselves at
+501   the centre of the diagram, and characters appeared in a tree structure alongside
+502   a prompt describing their relationship in English; e.g. “This is your mother”. Af-
+503   ter completing the tutorial, participants moved on to the eight critical trials of
+504   the experiment, one for each system type. Each critical trial had an observation
+505   phase, where participants were exposed to the known kin terms for each lan-
+506   guage, and a selection phase, where participants had to label novel referents in
+507   the family tree (Figure 10).
+508       In the observation phase, we introduced participants to the known kin terms
+509   one at a time: we showed them all the terms for G+1 relatives, and two labels
+
+
+                                                             29
+      Observation trials x10
+
+
+
+
+          wupu        wupu      kawuka   lawolu           popingi
+
+
+
+                                    YOU
+                                          lepego
+                                                                                                                Selection trials x6
+                        In this language, your father’s
+                        brother is called your popingi.
+
+                                                               wupu       wupu      kawuka       lawolu     popingi     popingi
+
+
+
+                                                                                           YOU
+                                                                                  lepego           lepego
+                                                                      lawolu                                          pygele
+
+                                                                             In this language, what would
+                                                                         you call your mother’s sister’s son?
+
+                                                                pygele           luge                lawolu           goviku
+
+
+
+
+      Figure 10: Left: Example observation trial for ‘father’s brother’. Participants saw each of the
+      10 known kin terms appear in the tree with a prompt telling them the term for that relative
+      in an artificial language. Right: Example selection trial for ‘mother’s sister’s son’. Kin who
+      were labelled in the observation trial remained labelled. One by one, the six remaining kin were
+      highlighted and participants were prompted to choose the label that best fit that referent. Once
+      all kin were labelled, participants could choose to move on to the next trial.
+
+
+510   for G0 relatives. The term would appear underneath a character with a prompt,
+511   e.g. “Your mother’s brother is called your popingi”. We chose to use English kin
+512   terms in the prompt to ensure participants understood that the label was a kin
+513   term and not a name.3 Each term remained on screen beneath its referent after
+
+         3
+             We do not expect English kin terms in the prompts to have primed any English-like be-
+      haviour. The nature of the task means that using an English-like categorisation is not actually
+      possible: where sibling terms are given, they are not gender-distinct. And due to the given G0
+      labels, cousins must be categorised into at least two groups.
+
+
+
+
+                                                             30
+514   it was introduced, and participants could progress to the next term by clicking
+515   ‘Next’.
+516      Once all the known terms had been presented, the selection phase began.
+517   One by one, the unlabelled kin in the tree were highlighted and a prompt would
+518   appear, e.g. “In this language, what would you call your mother’s sister’s son?”
+519   Participants could then choose from four labels what they thought the best fit-
+520   ting kin term was for the referent. After their selection, that label would appear
+521   beneath the referent, and a new referent would be highlighted. They continued
+522   in this way until all kin were labelled, at which point they were asked to confirm
+523   their choices to move on to the next trial. Kin were highlighted for selection
+524   in a random order; this reduced the risk of any linear ordering effects and en-
+525   couraged participants to pay attention to which person was being highlighted
+526   and how they were related to other individuals in the tree. Participants could
+527   undo their responses at any time, allowing them to backtrack on earlier labelling
+528   decisions, but they could not change the labels that were given to them origi-
+529   nally. Once per trial, an already labelled individual would be highlighted and the
+530   participant was asked to correctly select their label as an attention check.
+
+531   4.2. Results
+
+532      Our hypothesis was that participants’ generalisations would result in kin-
+533   ship systems with a high degree of predictive structure. We analysed the results
+534   from this study in two ways. First, we looked at participants’ generalisation
+535   choices relative to the expectations under our hypothesis. Second, we measured
+536   the mutual information of participants’ output languages and compared this to a
+537   simulated baseline distribution, analogous to the analysis of the typological data
+538   in Section 2. We also conducted some exploratory analysis to investigate which
+
+                                              31
+         predictive generalisations   1.00                           1.00
+
+                                      0.75                           0.75
+              Proportion of
+
+
+
+
+                                      0.50                           0.50
+
+                                      0.25                           0.25
+
+                                      0.00                           0.00
+                                                                             None    Non−Gender   Gender
+                                             All participants               Distinctions amongst G+1 kin
+
+
+
+      Figure 11: Proportion of predictive generalisations made by participants across all eight trials
+      (left) and grouped by distinctions in the input (right). Black dots indicate group means, error
+      bars indicate 95% confidence intervals. Generalising predictively is extremely common. How-
+      ever, ‘clusters’ of responses at 0.4 and 0.7 indicate that there may be other factors influencing
+      participants’ generalisations. Participants make fewer predictive generalisations when there is
+      a gender distinction in their input compared to when there are no distinctions, or distinctions
+      made on some other basis (e.g. side of the family).
+
+
+539   kin are most frequently categorised together, and to test whether participants’
+540   responses were influenced by the distinctions made in their input.
+
+541   4.2.1. Generalisation gives rise to predictive structure
+542          For each label a participant assigned to a referent, we coded whether or not
+543   that generalisation was predictive or not — 1 if it increased the predictive struc-
+544   ture of the system overall, 0 if it did not. This allowed us to measure how many
+545   generalisations from known kin terms to a new referent reflected a preferences
+546   for predictive structure. Figure 11 suggests that across the board, participants
+547   were very likely to generalise a known term in a way that increased predictive
+
+
+
+
+                                                                32
+548   structure. We performed an intercept-only mixed effects logistic regression4 , pre-
+549   dicting predictive generalisations with an intercept and by-participant and by-
+550   system random intercepts, revealing that participants generalised predictively
+551   significantly more often than we would expect if they did not have a preference
+552   for maximising predictive structure (b = 1.27, SE = 0.24, p < 0.001).
+553          But what were participants doing when they were not generalising predic-
+554   tively? Participants were highly systematic: in Figure 11 we see distinct ‘bands’
+555   of responses, which indicate that many participants generalised in the same way.
+556   This tendency is particularly strong in systems that distinguish parents’ siblings
+557   by gender (Type IIgen and Type IIopp ), where only 23% and 29% of participants
+558   produce significantly predictive systems, respectively. Indeed, Figure 11 (right)
+559   suggests that participants are more likely to generalise predictively when there
+560   are no distinctions or non-gender based distinctions amongst G+1 kin, but have
+561   a much lower proportion of predictive structure where there are gender distinc-
+562   tions.
+563          Do distinctions in the input affect generalisation behaviour? We fit a second
+564   mixed effects logistic regression, predicting whether or not a generalisation was
+565   predictive based on a fixed effect of distinction type (No Distinctions, Gender Dis-
+566   tinctions, Non-Gender Distinctions) and by-participant random intercepts and
+567   random slopes for distinction type. Pairwise comparison between levels of the
+568   model revealed that participants were significantly less likely to generalise pre-
+569   dictively when they saw Gender Distinctions compared to No Distinctions (b =
+570   -1.676, SE = 0.208, p < 0.001) or Non-Gender Distinctions (b = -0.929, SE =
+
+         4
+             All models reported in this paper were run in R (R Core Team, 2024) using the packages
+      lme4 (Bates et al., 2015) and lmerTest (Kuznetsova et al., 2017).
+
+
+                                                    33
+                             Type I            Type IIside             Type IIgen            Type IIopp
+
+               10
+
+               5
+
+               0
+       count
+
+
+
+
+                         Type IIIfb            Type IIImb              Type IIIfz            Type IIImz
+
+               10
+
+               5
+
+               0
+                    −2   0       2    4   −2   0     2       4    −2   0     2      4   −2   0     2      4
+                                          Mutual information (z−transformed)
+
+
+      Figure 12: Distribution of mutual information z-scores for each system type (see Table 4.1.2). Red
+      bars indicate participants who beat a significance threshold of p < 0.05. Dashed line shows z =
+      0. Participants produced kinship systems with an extremely high degree of predictive structure
+      for all systems; note that 100% of participants who produced significant mutual information
+      values produced the maximum possible mutual information for that system type. Performance
+      is better for some systems (e.g. Type I) than others (e.g. Type IIgen or Type IIopp ), but participants
+      never produce systems with significantly lower mutual information than the baseline.
+
+
+571   0.134, p < 0.001). However, participants were also more likely to generalise pre-
+572   dictively when they saw No Distinctions compared to Non-Gender Distinctions,
+573   albeit with a smaller effect (b = 0.746, SE = 0.194, p < 0.001). .
+574       By analogy with the typological results described in Section 2.3, we also anal-
+575   ysed the mutual information of the kinship systems produced by our partici-
+576   pants. We expected that participants would produce kinship systems with higher
+577   mutual information than chance, indicating a preference for kinship terms with
+578   greater predictive structure. We compared each participants’ responses to a null
+
+
+                                                             34
+579   baseline generated by the same method described in Section 2.2 for the typolog-
+580   ical data: each participant’s responses were permuted 1000 times, randomising
+581   which kin terms were associated with which referents. Figure 12 shows each par-
+582   ticipants’ z-transformed mutual information with respect to their bespoke base-
+583   line. Across all eight system types, 38% of participant-generated kinship systems
+584   have more extreme mutual information than expected under permutation (i.e.
+585   z > 1.96).5 In addition, all 38% of the significant systems achieved the max-
+586   imum possible mutual information for their respective system type, indicating
+587   that participants had a preference to structure kinship systems predictively.
+588          The large number of participant-generated kinship systems that have ex-
+589   tremely high mutual information supports our hypothesis that generalisation
+590   facilitates predictive structure in kinship terminology systems. But in the next
+591   section, we explore further how participants’ approach to categorising kin varied
+592   depending on the distinctions made in their input.
+
+593   4.2.2. Patterns of categorisation
+594          Participants’ responses were highly systematic, but they did not always gen-
+595   erate kinship systems with a high degree of predictive structure. So, what kinds
+596   of distinctions were participants making when they were not generalising pre-
+597   dictively?
+598          Figure 13 represents the frequency with which referents were categorised
+
+         5
+             This result may look less extreme than the typological data in Section 2, but it was harder to
+      beat the baseline in this context: the kinship systems in this experiment had a maximum of 10
+      terms covering 16 possible meanings, and participants’ choices could only affect the distribution
+      of terms in G0. As a result, there were far fewer unique permutations for a given system than for
+      the typological data.
+
+
+                                                        35
+                  Type I        Type IIside     Type IIgen       Type IIopp      Type IIIfb      Type IIIfz      Type IIImb      Type IIImz
+             z
+         mzs
+         mzd
+         mbs
+         mbd
+           fzs
+          fzd
+          fbs
+          fbd
+             b
+
+                  Type I        Type IIside     Type IIgen       Type IIopp      Type IIIfb      Type IIIfz      Type IIImb      Type IIImz
+             z
+         mzs
+         mzd
+         mbs
+         mbd
+           fzs
+          fzd
+          fbs
+          fbd
+             b
+
+
+
+
+                     z
+                                  z
+                                                  z
+                                                                  z
+                                                                                  z
+                                                                                                  z
+                                                                                                                  z
+                                                                                                                                  z
+
+
+
+
+                     b
+                                  b
+                                                  b
+                                                                  b
+                                                                                  b
+                                                                                                  b
+                                                                                                                  b
+                                                                                                                                  b
+
+
+
+
+                   fzs
+                                fzs
+                                                fzs
+                                                                fzs
+                                                                                fzs
+                                                                                                fzs
+                                                                                                                fzs
+                                                                                                                                fzs
+
+
+
+
+                  fbs
+                               fbs
+                                               fbs
+                                                               fbs
+                                                                               fbs
+                                                                                               fbs
+                                                                                                               fbs
+                                                                                                                               fbs
+
+
+
+
+                  fzd
+                               fzd
+                                               fzd
+                                                               fzd
+                                                                               fzd
+                                                                                               fzd
+                                                                                                               fzd
+                                                                                                                               fzd
+
+
+
+
+                  fbd
+                               fbd
+                                               fbd
+                                                               fbd
+                                                                               fbd
+                                                                                               fbd
+                                                                                                               fbd
+                                                                                                                               fbd
+
+
+
+
+                 mzs
+                              mzs
+                                              mzs
+                                                              mzs
+                                                                              mzs
+                                                                                              mzs
+                                                                                                              mzs
+                                                                                                                              mzs
+
+
+
+
+                 mbs
+                              mbs
+                                              mbs
+                                                              mbs
+                                                                              mbs
+                                                                                              mbs
+                                                                                                              mbs
+                                                                                                                              mbs
+
+
+
+
+                 mzd
+                              mzd
+                                              mzd
+                                                              mzd
+                                                                              mzd
+                                                                                              mzd
+                                                                                                              mzd
+                                                                                                                              mzd
+
+
+
+
+                 mbd
+                              mbd
+                                              mbd
+                                                              mbd
+                                                                              mbd
+                                                                                              mbd
+                                                                                                              mbd
+                                                                                                                              mbd
+
+
+
+
+36
+     Figure 13: Frequency with which each pair of referents were categorised together for each system type. Top row: Participants’ responses;
+     Bottom row: ideal categorisation given maximally predictive structure. Each cell represents two referents, indicated on the axes - e.g.
+     MZS = mother’s sister’s son, FBD = father’s brother’s daughter. Red axis text indicates female referents, blue axis text indicates male
+     referents. Darker cells indicate that a greater proportion of participants gave two referents the same label. Diagonals are black, as each
+     individual is always categorised with themselves. Similarities between the participants’ responses (top row) and the ideal categorisations
+     under our hypothesis (bottom row) indicate closer adherence to predictive structure, while deviations indicate that participants often
+     generalised in a different way. These figures show that participants have a strong tendency to encode predictive structure, but the
+     overlayed checkerboard pattern suggests that gender distinctions are also a strong driver of participant behaviour.
+                                            A   A                 B           B
+                                     (a)
+
+                                           C D C D            E       F   E       F
+
+
+
+                                            A   B                 A           B
+                                     (b)
+
+                                           C D C D            C D C D
+
+
+
+                                            A   A                 A           B
+                                     (c)
+
+                                           C C D D            E       E   F       F
+
+
+
+
+      Figure 14: Schematics of participant responses across three system types. Tree conventions as
+      in Figure 2. (a) A maximally predictive Type IIside system that also encodes gender among G0
+      kin. (b) A non- predictive Type IIgen system that only encodes gender among G0 kin. (c) A non-
+      predictive Type IIIfb system that treats each branch of cousins as a discrete unit.
+
+
+599   together by our participants for each system, compared with the expected fre-
+600   quency assuming a preference for predictive structure. The greater the resem-
+601   blance between each pair of plots, the more participants are producing predictive
+602   kinship systems. Participants produce predictive structure more consistently for
+603   some system types (e.g. Type I) than others (e.g. Type IIopp ), corroborating our
+604   earlier results.
+605       Across all systems, we see a strong preference to distinguish referents by gen-
+606   der. Referents are ordered male-female on the axes in Figure 13, so the ‘checker-
+607   board’ appearance of the participants’ responses indicates a preference to give
+608   separate terms to male and female referents. It was possible for participants to
+609   introduce a gender distinction and maximise predictive structure. We can see
+610   this behaviour in the plots for Type I and Type IIside where the participants’ re-
+
+
+                                                      37
+611   sponses map closely to our expectations with the addition of the checkerboard
+612   pattern. Figure 14a gives an example of a participant response that maximises
+613   predictive structure and encodes gender.
+614      However, the preference for gender distinctions overwhelms the preference
+615   for predictive structure in Type IIgen and Type IIopp systems. The ideal pattern has
+616   not emerged in the participants’ responses, but the checkboard pattern is clear.
+617   Why would this occur? These systems encode gender distinctions among G+1
+618   kin. The gender distinctions made in the input for these systems may have en-
+619   couraged some participants to introduce gender distinctions in G0 at the expense
+620   of predictive structure. Figure 14b gives an example of a participant response that
+621   encodes gender, but does not have predictive structure.
+622      The input data does not always condition participant response in a straight-
+623   forward way. For Type IIIfb systems, father’s brother was distinguished from all
+624   other nuncles. While the participant plot for Type IIIfb looks similar to the ideal
+625   plot, we see a pattern of darker cells on the diagonal. This suggests that partic-
+626   ipants prefer to treat each branch of the tree as discrete - each pair of cousins
+627   has a unique term (see Figure 14c) - rather than using the predictive solution of
+628   distinguishing father’s brother’s children from the other cousins.
+629      The categorisation frequencies presented in Figure 13 suggest that the distinc-
+630   tions made in the input affect the distinctions participants will make. Predictive
+631   structure is one possible outcome of generalisation, but feature-based solutions
+632   like gender or lineage are also available.
+
+633   4.2.3. Influence from gender distinctions in the given G0 labels
+634      Our participants show a strong tendency to encode gender distinctions whether
+635   they are present in the G+1 terms or not. What else could be encouraging par-
+
+                                              38
+636   ticipants to introduce gender distinctions?
+637      Other than system type, the only part of the input that varied were the given
+638   G0 terms. These were randomly assigned per trial, so the gender of their ref-
+639   erents varied between trials. With five possible female referents and five male,
+640   it was equally likely a participant saw two labelled G0 individuals of the same
+641   gender or of different genders in any given trial. When they saw two labelled
+642   G0 individuals of opposite genders, they may have interpreted this as evidence
+643   that the kinship system distinguishes individuals by gender, encouraging them
+644   to introduce gender distinctions.
+645      We fit a mixed effects regression with fixed effects for whether or not par-
+646   ticipants generalised predictively and whether or not participants saw gender-
+647   distinct labelled G0 individuals. This analysis indicated a marginal tendency for
+648   participants to make fewer predictive generalisations when they saw gender dis-
+649   tinctions in G0, but the effect was not significant (b = -0.2348, SE = 0.12, p =
+650   0.062) indicating that gender distinction between the G0 individuals does not
+651   sway participants towards gender-based generalisation, unlike gender distinc-
+652   tions between the G+1 individuals. In the general discussion we consider extra-
+653   linguistic reasons why participants might prefer to encode gender.
+
+654   4.3. Discussion
+
+655      We found that participants are sensitive to predictive structure when gen-
+656   eralising kinship terms to novel referents, and often produce kinship systems
+657   with a significant degree of predictive structure. These results are consistent
+658   with the typological prevalence of predictive structure in kinship systems that
+659   we reported in Section 2, suggesting that this universal emerged due to a prefer-
+660   ence for predictive structure imposed during the generalisation of known kinship
+
+                                             39
+661   terms to unknown referents. Predictive structure is more prevalent in the world
+662   than in our experiment, but the miniature kinship systems used in our experi-
+663   ment have considerably fewer degrees of freedom than natural kinship systems.
+664   The fact that participants frequently generate kinship systems with the maxi-
+665   mum possible mutual information is therefore extremely unlikely if there were
+666   no preference for predictive structure.
+667      However, participants did not always maximise predictive structure during
+668   this task; they also have a preference to distinguish kin by means of gender
+669   or lineage. In our exploratory analysis we found that participants’ responses
+670   could vary depending on the distinctions made in their input: gender distinc-
+671   tions amongst G+1 kin inspired generalisation of terms to same-gender individ-
+672   uals, while gender distinctions amongst G0 kin did not have this effect. While
+673   it is possible to have both gender distinctions and predictive structure, partici-
+674   pants’ behaviour suggests that the bias for maximising predictive structure can
+675   be outweighed in the presence of evidence for a different kind of categorisation.
+
+
+676   5. General discussion
+
+677      In this paper we set out to identify structural constraints on kin term diversity
+678   and the mechanisms that give rise to those constraints, in line with claims that
+679   kinship terminology systems are optimised for efficient communication (Kemp
+680   & Regier, 2012). Previous work has addressed either kin term diversity or mecha-
+681   nisms, but not both — by suggesting constraints that cannot explain the entirety
+682   of the cross-linguistic variation we can observe and why it emerged (Fox, 1979;
+683   Greenberg, 1990; Jones, 2010), or by offering mechanistic explanations based
+684   on experimental data obtained using artificial kinship systems that are quite re-
+
+
+                                                40
+685   moved from what variation in natural language kinship systems actually looks
+686   like (Smith et al., 2020). Here, we have married these two approaches. We con-
+687   ducted the largest-scale typological study of kinship terminology to date and
+688   have shown that systems of kinship terminology near-universally exhibit pre-
+689   dictive structure. Following this, we have shown that participants in the lab
+690   have a preference for predictive structure when generalising from known kin
+691   terms to new referents. We suggest that the prevalence of predictive structure
+692   cross-linguistically can be attributed to this preference.
+
+693   Efficiency and kinship. Our results support the claim that systems of kinship ter-
+694   minology are optimised for efficient communication (Kemp & Regier, 2012). The
+695   constraint for predictive structure permits a lot of surface variation in the number
+696   of terms and what distinctions they make, while constraining the space of pos-
+697   sible systems to those which are predictive. In Kemp and Regier’s (2012) model,
+698   simplicity is partly measured by the compressibility of kin term definitions. We
+699   argue that predictive structure reflects a pressure for kinship systems to be sim-
+700   ple, as kin terms are more compressible under predictive structure: to go back to
+701   the example in Figure 1, we can recursively use our definition for funcle ‘father
+702   and his male sibling’ to generate our definition for brousin ‘the child of a funcle’.
+703   In other words, predictive structure facilitates simplicity and is orthogonal to ex-
+704   pressivity - kin term meanings are simpler for being predictive, and so the cost
+705   of having more expressive, granular terms is reduced.
+706      Simpler, more compressible linguistic structures are associated with ease of
+707   learning, while more expressive structures are associated with pressure to encode
+708   distinctions (Kirby et al., 2015). We propose that predictive structure emerges
+709   during generalisation: part of the language learning process where some knowl-
+
+                                               41
+710   edge of the system is available (and learned), but some innovation is still required
+711   (Holtz, 2024). When the learner is faced with an inductive problem, generalising
+712   from known terms to new referents who have not yet been assigned a kin term in
+713   the mental lexicon, they do not innovate at random but use their existing knowl-
+714   edge of the system to label the new referent in a systematic way. The internal
+715   co-selection process of kin term evolution (Passmore et al., 2021) is facilitated by
+716   this process of generalisation: kinship systems evolve to be more generalisable.
+
+717   Emergence of feature distinctions. In our experiment, generalisation did not al-
+718   ways yield predictive structure. Our participants often generalised other prop-
+719   erties of the system, such as whether it encoded distinctions by gender or by
+720   lineage. Our exploratory analysis suggests that in some cases, gender distinc-
+721   tions in the input kin terms increase the chances of participants encoding gender
+722   distinctions between the novel referents. Elsewhere, feature distinctions emerge
+723   without a clear priming effect from the input. This suggests there may be several
+724   biases influencing participants’ behaviour at this task: one that encourages pro-
+725   ducing kinship systems with predictive structure and one that encourages the
+726   repetition of feature distinctions. These are not by definition at odds with one
+727   another: we see many participants produce kinship systems with both predic-
+728   tive structure and gender distinctions. Future work could explore how feature
+729   distinctions and predictive structure interact in the cross-linguistic data.
+730      Innovating distinctions by gender was also common when there were no
+731   gender distinctions elsewhere in the system (other than between mother and fa-
+732   ther). What could encourage this behaviour? Our participants are native English
+733   speakers, which could explain their willingness to encode gender distinctions
+734   due to the brother/sister and aunt/uncle distinction in English. However, English
+
+                                              42
+735   does not have a gender distinction for cousins, and yet many of our participants
+736   distinguished parents’ siblings children by gender.
+737      There are a number of extralinguistic reasons why our participants may have
+738   introduced additional distinctions not present in their input. Kin term distinc-
+739   tions in the native language are deeply ingrained to the extent that they modulate
+740   performance at cognitive tasks and affect what features of individuals are salient
+741   (Anggoro & Gentner, 2003). The characters in our experiment are varied in ap-
+742   pearance and look most similar to their immediate relatives, but gender may be
+743   the most salient visual characteristic by which to distinguish individuals (at least
+744   for our participants). Additionally, models of social discrimination suggest that
+745   social categories like gender (and ultimately, gender bias) emerge robustly with
+746   minimal pressure to do so (O’Connor, 2019), suggesting that distinguishing in-
+747   dividuals by gender may be a readily available hypothesis when faced with this
+748   task. Some participants also introduced a branch distinction, grouping each pair
+749   of cousins together as a discrete unit, particularly for Type III systems. These
+750   are indicated by visual characteristics like hair or skin colour, which may also
+751   be salient visual cues for our participants. Additionally, native English speak-
+752   ers are used to bilateral systems of descent, where you perceive yourself to be
+753   related equally to your mother and father’s sides of the family. They are more
+754   familiar with symmetry rather than lineage as a structuring element of kinship
+755   terms: in English, distinctions are symmetrical on each side of the family tree.
+756   This may have made our participants reluctant to introduce asymmetrical dis-
+757   tinctions (where e.g. mother’s siblings and their children are distinguished at a
+758   finer grain than father’s siblings and their children), even where this would be
+759   the most predictive solution for Type III systems. It is possible that respondents
+
+
+                                              43
+760   from unilateral societies (e.g., Hindi speakers, who have additional distinctions
+761   between father’s siblings compared to mother’s siblings) might respond differ-
+762   ently.
+763      However, culturally-motivated biases and visual cues do not form the entire
+764   basis of participants’ behaviour, as predictive structure is not culturally moti-
+765   vated nor visually salient, yet it frequently emerges.
+
+766   Kinship terminology and social behaviour. In this paper we have treated kinship
+767   terminology primarily as a linguistic phenomenon, and predictive structure as a
+768   universal shaped entirely by biases associated with language transmission. We
+769   have shown that structural properties of kinship are associated with efficient
+770   communication, but the social dimension of kinship is also relevant to how we
+771   communicate about kin. Therefore, it is important to point out that measures of
+772   communicative efficiency for kinship do take into account that the need to refer
+773   to particular kin varies cross-culturally (Kemp & Regier, 2012).
+774      Within anthropology, it has long been accepted that patterns of kinship ter-
+775   minology reflect patterns of social structure, and that this is a driving force in kin
+776   term variation (Murdock, 1949). For instance, tolerance to cross-cousin marriage
+777   may be associated with terminology that distinguishes marriageable kin from
+778   non-marriageable kin (Viveiros de Castro, 1998). Recently, with the availability
+779   of large cross-linguistic datasets, we see that correlations between kin term or-
+780   ganisation and social practice may be confined to particular language families
+781   or regions, and may not be as robust as previously thought (Passmore & Jordan,
+782   2020; Passmore et al., 2023). Nonetheless, even if the link between terminology
+783   and behaviour is not straightforward, future work should consider the interplay
+784   between efficient communication and social practice, by taking advantage of the
+
+                                               44
+785   large linguistic and cultural datasets now available to inform cognitive scientific
+786   models. Accounts of kin term organisation should be aware of how kin distinc-
+787   tions are shaped by the repeated imposition of culturally-motivated communica-
+788   tive need, determining how often we communicate about particular individuals,
+789   who we perceive to be similar, and what distinctions we need to make.
+790      That said, our experimental design offers a new paradigm for robustly testing
+791   claims about kin term diversity that are removed from participants’ own cultural
+792   frames of reference. Artificial language experiments in general allow us to test
+793   linguistic claims in a language- and culture-neutral way. In introducing this task
+794   framing, we hope to provide a new avenue for testing claims about kinship and
+795   cognition, particularly in the light of new contributions to cognitive science that
+796   use kinship terminology as case study to develop models of lexical acquisition
+797   and semantic refinement (e.g. Mollica & Piantadosi, 2022; Markham et al., 2024).
+
+
+798   6. Conclusion
+
+799      In this paper, we presented a large-scale typological analysis of kinship termi-
+800   nology, showing that the world’s languages exhibit an extreme degree of predic-
+801   tive structure between generations of kin terms. We also conducted an artificial
+802   language experiment, finding that participants often generalise known kin terms
+803   to new referents in a way that maximises predictive structure. We suggest that
+804   the cross-linguistic tendency for kinship systems to have predictive structure
+805   emerges due to pressures imposed during cultural transmission: when individ-
+806   uals are faced with incomplete input when learning kin terms, they will predict
+807   the remaining kin terms based on their existing knowledge, resulting in highly
+808   structured systems.
+
+
+                                              45
+809   References
+
+810   Ackerman, F., & Malouf, R. (2013). Morphological organization: The low condi-
+811          tional entropy conjecture. Language, 89(3), 429–464. https://doi.org/10.
+812          1353/lan.2013.0054
+813   Anand, G., & Regier, T. (2023). Kinship terminologies reflect culture-specific com-
+814          municative need: Evidence from Hindi and English.
+815   Anggoro, F., & Gentner, D. (2003). Sex and seniority: The effects of linguistic cat-
+816          egories on conceptual judgments and memory. Proceedings of the Twenty-
+817          Fifth Annual Conference of the Cognitive Science Society, 6.
+818   Bates, D., Mächler, M., Bolker, B., & Walker, S. (2015). Fitting linear mixed-effects
+819          models using lme4. Journal of Statistical Software, 67(1), 1–48. https://doi.
+820          org/10.18637/jss.v067.i01
+821   Berlin, B., & Kay, P. (1969). Basic color terms. University of California Press.
+822   Carr, J. W., Smith, K., Culbertson, J., & Kirby, S. (2020). Simplicity and infor-
+823          mativeness in semantic category systems. Cognition, 202, 104289. https:
+824          //doi.org/10.1016/j.cognition.2020.104289
+825   Cronk, L., Steklis, D., Steklis, N., Olmo R. van den Akker, & Aktipis, A. (2019).
+826          Kin terms and fitness interdependence. Evolution and Human Behaviour,
+827          40, 281–291.
+828   Culbertson, J., Franck, J., Braquet, G., M Barrera Navarro, & Arnon, I. (2020). A
+829          learning bias for word order harmony: Evidence from speakers of non-
+830          harmonic languages. Cognition, 204.
+831   Culbertson, J., Schouwstra, M., & Kirby, S. (2020). From the world to word order:
+832          Deriving biases in noun phrase order from statistical properties of the
+833          world. Language, 96(3), 696–717. https://doi.org/10.1353/lan.2020.0045
+
+                                               46
+834   Culbertson, J., Smolensky, P., & Legendre, G. (2012). Learning biases predict a
+835          word order universal. Cognition, 122(3), 306–329. https://doi.org/https:
+836          //doi.org/10.1016/j.cognition.2011.10.017
+837   de Leeuw, J. R., Gilbert, R. A., & Luchterhandt, B. (2023). Jspsych: Enabling an
+838          open-source collaborative ecosystem of behavioral experiments. Journal
+839          of Open Source Software, 8(85), 5351.
+840   Evans, N., & Levinson, S. C. (2009). The myth of language universals: Language
+841          diversity and its importance for cognitive science. Behavioral and Brain
+842          Sciences, 32(5), 429–448. https://doi.org/10.1017/S0140525X0999094X
+843   Fox, R. (1979). Evolutionary biology and human social behaviour: An anthropo-
+844          logical perspective. Duxbury.
+845   Greenberg, J. H. (1966). Language universals, with special reference to feature hi-
+846          erarchies. Mouton.
+847   Greenberg, J. H. (1978). Universals of human language, volume 3: Word structure.
+848          Stanford University Press.
+849   Greenberg, J. H. (1990). On language: Selected writings of joseph greenberg. Stan-
+850          ford University Press.
+851   Hage, P. (1999). Linguistic evidence for primogeniture and ranking in proto-
+852          oceanic society. Oceanic Linguistics, 38, 366–375.
+853   Haviland, S. E., & Clark, E. V. (1974). ‘this man’s father is my father’s son’: A
+854          study of the acquisition of english kin terms. Journal of Child Language,
+855          1(1), 23–47. https://doi.org/10.1017/S0305000900000064
+856   Holtz, A. (2024). Cognitive biases in competition: Innovation and the evolution of
+857          language structure [Doctoral dissertation, The University of Edinburgh].
+
+
+
+
+                                              47
+858   Hudson Kam, C. L., & Newport, E. L. (2009). Getting it right by getting it wrong:
+859           When learners change languages. Cognitive Psychology, 59(1), 30–66.
+860   Johnson, T. (2021). Predictive structure and the learnability of inflectional paradigms:
+861           Investigating whether low i-complexity benefits human learners and neural
+862           networks [Doctoral dissertation, The University of Edinburgh].
+863   Johnson, T., Gao, K., Smith, K., Rabagliati, H., & Culbertson, J. (2021). Investi-
+864           gating the effects of i-complexity and e-complexity on the learnability of
+865           morphological systems.
+866   Jones, D. (2010). The generative psychology of kinship part 1. cognitive universals
+867           and evolutionary psychology. Evolution and Human Behaviour, 24, 303–
+868           319.
+869   Kemp, C., & Regier, T. (2012). Kinship categories across languages reflect general
+870           communicative principles. Science, 336(6084), 1049–1054. https://doi.org/
+871           10.1126/science.1218811
+872   Kemp, C., Xu, Y., & Regier, T. (2018). Semantic typology and efficient communi-
+873           cation. Annual Review of Linguistics, 4(1), 109–128. https : / / doi . org / 10 .
+874           1146/annurev-linguistics-011817-045406
+875   Khetarpal, N., Majid, A., & Regier, T. (2009). Spatial terms reflect near-optimal
+876           spatial categories. Proceedings of the Annual Meeting of the Cognitive Sci-
+877           ence Society, 2396–2401.
+878   Kirby, S., Cornish, H., & Smith, K. (2008). Cumulative cultural evolution in the
+879           laboratory: An experimental approach to the origins of structure in hu-
+880           man language. PNAS, 105(31), 10681–10686.
+
+
+
+
+                                                 48
+881   Kirby, S., Tamariz, M., Cornish, H., & Smith, K. (2015). Compression and commu-
+882          nication in the cultural evolution of linguistic structure. Cognition, 141,
+883          87–102. https://doi.org/10.1016/j.cognition.2015.03.016
+884   Kroeber, A. L. (1909). Classificatory systems of relationship. Journal of the Royal
+885          Anthropological Institute, 39, 77–84.
+886   Kuznetsova, A., Brockhoff, P. B., & Christensen, R. H. B. (2017). lmerTest package:
+887          Tests in linear mixed effects models. Journal of Statistical Software, 82(13),
+888          1–26. https://doi.org/10.18637/jss.v082.i13
+889   Levenshtein, V. I. (1965). Binary codes capable of correcting deletions, inser-
+890          tions, and reversals. Soviet physics. Doklady, 10, 707–710. https : / / api .
+891          semanticscholar.org/CorpusID:60827152
+892   Levinson, S., & Meira, S. (2003). ‘natural concepts’ in the spatial topological do-
+893          main - adpositional meanings in crosslinguistic perspective: An exercise
+894          in semantic topology. Language, 79(3), 485–516.
+895   Majid, A., Bowerman, M., Kita, S., Haun, D. B. M., & Levinson, S. C. (2004). Can
+896          language restructure cognition: The case for space. TRENDS in Cognitive
+897          Sciennce, 8(3), 108–114.
+898   Markham, E., Rabagliati, H., & Bramley, N. R. (2024). Slow mapping words as
+899          incremental meaning refinement. Proceedings of the Annual Meeting of
+900          the Cognitive Science Society, 46, 3672–3678.
+901   Mitchell, A., & Jordan, F. M. (2021). The ontogeny of kinship categorization. Jour-
+902          nal of Cognition and Culture, 21, 152–177.
+903   Mollica, F., & Piantadosi, S. (2022). Logical word learning: The case of kinship.
+904          Psychonomic Bulletin and Review, 29, 766–799.
+905   Murdock, G. P. (1949). Social structure. Macmillan.
+
+
+                                              49
+906   Nerlove, S., & Romney, A. K. (1967). Sibling terminology and cross-sex behaviour.
+907          American Anthropologist, 69(2), 179–187.
+908   O’Connor, C. (2019). The origins of unfairness: Social categories and cultural evo-
+909          lution. Oxford University Press.
+910   Passmore, S., & Jordan, F. M. (2020). No universals in the cultural evolution of
+911          kinship terminology. Evolutionary Human Sciences, 2(42), 1–14.
+912   Passmore, S., Barth, W., Greenhill, S. J., Quinn, K., Sheard, C., Argyriou, P., Bir-
+913          chall, J., Bowern, C., Calladine, J., Deb, A., Diederen, A., Metsäranta, N. P.,
+914          Araujo, L. H., Schembri, R., Hickey-Hall, J., Honkola, T., Mitchell, A., Poole,
+915          L., Rácz, P. M., . . . Jordan, F. M. (2023). Kinbank: A global database of kin-
+916          ship terminology (D. Redhead, Ed.). PLOS ONE, 18(5), e0283218. https :
+917          //doi.org/10.1371/journal.pone.0283218
+918   Passmore, S., Barth, W., Quinn, K., Greenhill, S. J., Evans, N., & Jordan, F. M.
+919          (2021). Kin against kin: Internal co-selection and the coherence of kinship
+920          typologies. Biological Theory, 16(3), 176–193. https : / / doi . org / 10 . 1007 /
+921          s13752-021-00379-6
+922   R Core Team. (2024). R: A language and environment for statistical computing. R
+923          Foundation for Statistical Computing. Vienna, Austria. https://www.R-
+924          project.org/
+925   Regier, T., Kay, P., & Khetarpal, N. (2007). Color naming reflects optimal par-
+926          titions of color space. Proceedings of the National Academy of Sciences,
+927          104(4), 1436–1441. https://doi.org/10.1073/pnas.0610341104
+928   Schulz, J. F., Bahrami-Rad, D., Beauchamp, J. P., & Henrich, J. (2019). The church,
+929          intensive kinship, and global psychological variation. Science, 366, 707.
+
+
+
+
+                                                50
+930   Smith, K. (2022). How language learning and language use create linguistic struc-
+931          ture. Current Directions in Psychological Science, 31(2), 177–186.
+932   Smith, K., Frank, S., Rolando, S., Kirby, S., & Loy, J. E. (2020). Simple kinship
+933          systems are more learnable. Proceedings of the Annual Meeting of the Cog-
+934          nitive Science Society, 7.
+935   Smith, K., & Wonnacott, E. (2010). Eliminating unpredictable variation through
+936          iterated learning. Cognition, 116(3), 444–449.
+937   Trautmann, T. R., & Whiteley, P. M. (2012). Crow-omaha: New light on a classic
+938          problem of kinship analysis. University of Arizona Press.
+939   Viveiros de Castro, E. (1998). Transformations of kinship. Smithsonian Institution
+940          Press.
+941   Xu, F., & Tenenbaum, J. B. (2007). Word learning as bayesian inference. Psycholog-
+942          ical Review, 114(2), 245–272. https://doi.org/10.1037/0033-295X.114.2.245
+943   Xu, J., Dowman, M., & Griffiths, T. L. (2013). Cultural transmission results in con-
+944          vergence towards colour term universals. Proceedings of the Royal Society
+945          B: Biological Sciences, 280(1758), 20123073. https://doi.org/10.1098/rspb.
+946          2012.3073
+947   Xu, Y., Liu, E., & Regier, T. (2020). Numeral systems across languages support ef-
+948          ficient communication: From approximate numerosity to recursion. Open
+949          Mind: Discoveries in Cognitive Science, 4, 57–70. https://api.semanticscholar.
+950          org/CorpusID:13474060
+
+
+
+
+                                              51
+951   Appendix A. Data quality affects mutual information score
+
+
+                                           60
+                   available in database
+                   Number of relatives
+
+
+
+
+                                           40
+
+
+
+
+                                           20
+
+
+
+
+                                                        Yes                   No
+                                                Significant degree of mutual information?
+
+
+      Figure A.15: Amount of data available in Kinbank for languages which had extreme values of
+      mutual information when compared to their baseline (significance threshold p < 0.05). The
+      maximum number of relatives who could be listed in the database was 60 (across G0 and G+1).
+      On the whole, languages with insignificant values had less data available, suggesting that this
+      may have been in part an artefact of data quality.
+
+
+952       Some languages in our sample had non-significant degrees of mutual infor-
+953   mation than we would expect if there were no preference for predictive structure.
+954   Here, we show that this is largely a problem with data quality. Not all languages
+955   in Kinbank have complete data for the G+1 and G0 relatives we used for this
+956   analysis. If a language is missing data, then not only is its veridical mutual infor-
+957   mation value limited (as more data results in a larger value), but also its baseline
+958   will be composed of fewer permutations, making it harder for the veridical value
+959   to surpass the baseline. Figure A.15 shows that languages whose mutual infor-
+
+
+                                                               52
+960   mation score was not significant (i.e. a z-score less than 1.96 and greater than
+961   -1.96) tended to have fewer relatives in their dataset. The maximum number of
+962   relatives was 60.
+
+
+
+
+                                            53
+

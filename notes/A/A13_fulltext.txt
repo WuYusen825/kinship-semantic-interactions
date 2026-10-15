@@ -1,0 +1,834 @@
+                                                          RESEARCH ARTICLE
+
+
+                                                          A Phylogenetic Comparative Study of Bantu
+                                                          Kinship Terminology Finds Limited Support
+                                                          for Its Co-Evolution with Social Organisation
+                                                          Myrtille Guillon*, Ruth Mace
+                                                          Human Evolutionary Ecology Group, Department of Anthropology, University College London, London,
+                                                          United Kingdom
+
+                                                          * myrtilleguillon@gmail.com
+
+
+
+
+                                                          Abstract
+                                                          The classification of kin into structured groups is a diverse phenomenon which is ubiquitous
+                                                          in human culture. For populations which are organized into large agropastoral groupings of
+                                                          sedentary residence but not governed within the context of a centralised state, such as our
+    OPEN ACCESS
+                                                          study sample of 83 historical Bantu-speaking groups of sub-Saharan Africa, cultural kinship
+                                                          norms guide all aspects of everyday life and social organization. Such rules operate in part
+Citation: Guillon M, Mace R (2016) A Phylogenetic
+Comparative Study of Bantu Kinship Terminology            through the use of differing terminological referential systems of familial organization.
+Finds Limited Support for Its Co-Evolution with Social    Although the cross-cultural study of kinship terminology was foundational in Anthropology,
+Organisation. PLoS ONE 11(3): e0147920.                   few modern studies have made use of statistical advances to further our sparse understand-
+doi:10.1371/journal.pone.0147920
+                                                          ing of the structuring and diversification of terminological systems of kinship over time. In
+Editor: Art F. Y. Poon, British Columbia Centre for       this study we use Bayesian Markov Chain Monte Carlo methods of phylogenetic compari-
+Excellence in HIV/AIDS, CANADA
+                                                          son to investigate the evolution of Bantu kinship terminology and reconstruct the ancestral
+Received: March 16, 2015                                  state and diversification of cousin terminology in this family of sub-Saharan ethnolinguistic
+Accepted: January 11, 2016                                groups. Using a phylogenetic tree of Bantu languages, we then test the prominent hypothe-
+Published: March 23, 2016                                 sis that structured variation in systems of cousin terminology has co-evolved alongside
+                                                          adaptive change in patterns of descent organization, as well as rules of residence. We find
+Copyright: © 2016 Guillon, Mace. This is an open
+access article distributed under the terms of the         limited support for this hypothesis, and argue that the shaping of systems of kinship termi-
+Creative Commons Attribution License, which permits       nology is a multifactorial process, concluding with possible avenues of future research.
+unrestricted use, distribution, and reproduction in any
+medium, provided the original author and source are
+credited.
+
+Data Availability Statement: The tree used in the
+study is the one presented in [Currie T, Meade A,
+Guillon M and Mace R (2013) Cultural                      Introduction
+phylogeography of the Bantu Languages of sub-
+Saharan Africa. Proceedings of the Royal Society of
+                                                          Kinship and Anthropology
+London B Biological Sciences 280: 20130695.DOI:           Human kinship, consisting of networks which group individuals as relatives, is a feature of
+10.1098/rspb.2013.0695.] All methods of tree building     social organization which is globally recognized, and given importance to [1]. Kinship is not to
+can be consulted there. The ethnographic data
+                                                          be conflated with biological relatedness, as it has long been acknowledged that different cul-
+mapped onto the tree is all from the Ethnographic
+Atlas [Murdock, G (1967) Ethnographic Atlas: A
+                                                          tures ascribe variable social importance to different kin types, in a way which does not neces-
+Summary. The University of Pittsburgh, Pittsburgh.        sarily reflect degrees of genetic similarity. In the words of Wagner, “the essence of kinship is
+http://www.jstor.org/stable/3772751], variables 11, 27    interpretation of genealogy, rather than genealogy itself” [2]. The cross-cultural study of this
+
+
+
+PLOS ONE | DOI:10.1371/journal.pone.0147920 March 23, 2016                                                                                                   1 / 15
+                                                                                               A Phylogenetic Comparative Study of Bantu Kinship Terminology
+
+
+
+and 43 were used, as detailed in the methods section   phenomenon has been of interest since the foundation of Anthropology in the nineteenth cen-
+of the manuscript.                                     tury [3, 4]. Following his ethnographic study of the matrilineal Iroquois, Morgan realized that
+Funding: European Research Council AdG 249347.         the Western approach to kinship organization was not universal, and began collecting ethno-
+The funders had no role in study design, data          graphic data to investigate this variation. He theorized that the cultural diversity of kinship sys-
+collection and analysis, decision to publish, or       tems observed throughout the world was explained by a process of ‘unilinear evolutionism’,
+preparation of the manuscript.
+                                                       with different groups falling along a single scale of social evolution that ranged from ‘primitive’
+Competing Interests: The authors have declared         to ‘civilised’ [3, 5]. Influenced by his admiration for the field of philology, Morgan utilized data
+that no competing interests exist.                     on kinship terminology—which are the terms used to refer to and describe one’s kin group
+                                                       members—and suggested that these could provide insight into the diversity of human social
+                                                       structure [3]. He began the gradual process of classifying kin terminologies into typologies
+                                                       based on common features, separating those which distinguished between lineal kin (direct
+                                                       ancestors and descendants) and collateral kin (siblings and cousins) and those that do not. He
+                                                       identified groups which make the distinction as using descriptive terminology (referring to one
+                                                       or few relatives), while those that do not were said to use a more primitive classificatory termi-
+                                                       nology, which grouped together a large number of relatives into one category [3]. Although
+                                                       these early, and somewhat Lamarckian, evolutionary theoretical frameworks have long been
+                                                       discredited [6], that is not to say that evolutionary forces have had no influence in shaping the
+                                                       kinship system diversity which is found throughout the world. We now know that evolution
+                                                       does not operate in a unilineal fashion, and that there are no necessary pathways to ‘progress’,
+                                                       but rather that cultural variation in social organization is caused by adaptation to differing
+                                                       environmental pressures, each of equal appropriateness according to local constraints. After
+                                                       all, cultural concepts of kinship underlie the organization of activities which are vital to evolu-
+                                                       tionary success; such as the finding of a mate, the caring for offspring and the production of
+                                                       food [7]. Given that these crucial behaviours are constrained by the structural organization of
+                                                       kinship, evolutionary theory would predict strong selective pressure influencing such structure,
+                                                       and favouring the survival over time of kinship systems that produce adaptive structuring. In
+                                                       accordance with this hypothesis, it has been observed that although there is extensive variation
+                                                       in kinship terminology across the world, there are nowhere near as many forms as could logi-
+                                                       cally be thought of, and there is patterning in the variation found [8].
+                                                           Although Morgan was working within an invalid framework, he made a vital contribution
+                                                       to the study of kinship terminology diversity, by beginning the classification of systems for a
+                                                       comparative approach, and suggesting that these groupings were informative for the categori-
+                                                       sation of variation found in other aspects of social structuring [3]. In a famous study published
+                                                       in 1909, Alfred Kroeber reasoned, “It is apparent that what we should try to deal with is not the
+                                                       hundreds or thousands of slightly varying relationships that are expressed or can be expressed
+                                                       by the various languages of man, but the principles or categories of relationship which underlie
+                                                       these” [9]. Kroeber identified eight such categories of distinction; generational, differentiation
+                                                       between collateral and lineal relationship, within-generation age, sex of the relative, sex of the
+                                                       speaker, sex of the connecting relative (known as ‘bifurcation’), the differentiation of consan-
+                                                       guineal and affinal kin and the differentiation between living and dead kin. He concluded his
+                                                       seminal paper by suggesting that kinship terminology was primarily a psychological and lin-
+                                                       guistic phenomenon, and as such should not be used for sociological interpretation without
+                                                       extreme caution [9]. By the 1950s, most anthropologists agreed that kinship terminology was
+                                                       shaped by local social structure, at least to some degree ([10], See S1 File). An influential view
+                                                       of the time is that of Radcliffe-Brown, who was a student of W.H.R.Rivers, and argued that the
+                                                       function of kin terms was to act as a guide for interpersonal conduct, with different social
+                                                       duties or obligations being ascribed to terminologically-defined kin categories [11].
+                                                           Despite this limited consensus, there was no theory for the social determination of kinship
+                                                       terminology which was unified nor widely accepted [12], although several factors of influence
+
+
+
+PLOS ONE | DOI:10.1371/journal.pone.0147920 March 23, 2016                                                                                            2 / 15
+                                                                                           A Phylogenetic Comparative Study of Bantu Kinship Terminology
+
+
+
+
+Fig 1. Classic typologies of kinship terminology. The six typologies created by Murdock, and how kin is referred to in relation to ego in each system.
+doi:10.1371/journal.pone.0147920.g001
+
+
+                                               had been suggested throughout the preceding decades. Customs of preferential marriage were
+                                               often argued to influence certain structural aspects of kin term variation, such as the suggestion
+                                               that sororal polygyny might minimize the importance of the collaterality distinction, and
+                                               encourage terminology of the bifurcate merging type [13, 14]. The other main type of social
+                                               factor which was often suggested was that of the composition of local kin groups, such as the
+                                               presence of moieties [15], or matrilineal versus patrilineal groupings [16, 17]. It is around this
+                                               time that Murdock published ‘Social Structure’, which represents a massive forward leap in the
+                                               cross-cultural study of kinship. Murdock combined a synthesis of findings from psychology,
+                                               sociology and anthropology with his extensive collection of global cultural data to advance his
+                                               own theory of human social evolution [18]. Building on the work of Spier, who had suggested
+                                               the use of cousin terminology typologies for cross-cultural comparison [19]; Murdock created
+                                               six typologies which encompass the global variation of cousin terminology [18]. These typolo-
+                                               gies are known as Hawaiian, Eskimo, Iroquois, Omaha, Crow and Sudanese ([18], see Fig 1).
+                                                  Murdock also refined Kroeber and Lowie’s concept of categories of distinction. He reasoned
+                                               that generation, sex, affinity, collaterality, bifurcation and polarity were the six main distinc-
+                                               tions, as the linguistic non-recognition of either one of these produces classificatory, as
+                                               opposed to descriptive, terms [18]. Within-generation age, speaker’s sex and the differentiation
+                                               between living or dead relatives are subsidiary categories, which make classificatory terms less
+                                               inclusive and descriptive terms more specific when they are linguistically recognised [18].
+                                               Together, these categories represent all the principles used by humans to linguistically delineate
+                                               between kin, and whether they are recognised or not is likely to give insight into what is driving
+                                               the structural variation of kinship terminology [18]. Murdock formulated over thirty hypothe-
+                                               ses about the relationship of kinship terminology and social structure, which he tested cross-
+                                               culturally using a bivariate statistical method, and a combination of Lowie’s four typologies,
+                                               categories of fundamental distinction and the six cousin typologies. Murdock found that kin-
+                                               ship terminology structure was primarily determined by three different aspects of social
+
+
+
+PLOS ONE | DOI:10.1371/journal.pone.0147920 March 23, 2016                                                                                               3 / 15
+                                                                                A Phylogenetic Comparative Study of Bantu Kinship Terminology
+
+
+
+                                         organization which can have opposing influences; rules of descent, group norms concerning
+                                         marriage and rules of residence after marriage—in order of respective importance [18]. Many
+                                         of his findings were replicated in the only cross-cultural study which has attempted to do so,
+                                         using a multivariate statistical method which allows for the graphical visualization of associa-
+                                         tions between categorical variables, known as optimal scaling [20].
+                                             Since the 1970s, a variety of factors have complicated the anthropological study of kinship,
+                                         and led to the falling out of favour of its cross-cultural study. One historical complication of
+                                         major relevance here is that of Galton’s problem. Upon the presentation of Tylor’s comparative
+                                         research on the diversity of kinship systems found across cultures, Galton pointed out that
+                                         closely related human populations could not be treated as being statistically independent from
+                                         one another, as they may share traits through common inheritance from a recent ancestor
+                                         [15]. Due to this fact, comparative studies in anthropology have not traditionally been able to
+                                         reliably distinguish between genuine instances of parallel cultural evolution, and those groups
+                                         which resemble each other because of shared descent [21].
+
+
+                                         Modern approaches to the cross-cultural study of kinship
+                                         Modern evolutionary anthropology does not posit that cultural evolution is unilinear, or even
+                                         that there are any necessary evolutionary pathways for cultural change. Rather, it seeks to
+                                         understand human behavioural variation as a maximisation of inclusive fitness according to
+                                         varying environmental constraints, with kinship organization being a crucial influence [22,
+                                         23]. The sub-field of human behavioural ecology in particular, highlights the fact that evolution
+                                         is not progressive, as it sees cultural diversity in social organization being shaped through adap-
+                                         tation to differing environmental and social pressures, each form being of equal validity
+                                         according to local constraints. Kinship organization displays much diversity across cultures,
+                                         but a small number of core principles underpin this range, and allow the categorisation of all
+                                         human kinship into a manageable number of groupings. First, the principle of descent refers to
+                                         the way in which groups trace their ancestry and determines group membership of kin [1].
+                                         Descent may be unilineal, and trace ancestry exclusively through the maternal line (matriline-
+                                         ality), exclusively through the paternal line (patrilineality) or equally through both lines (bila-
+                                         terality) [18]. Alternatively, descent can be ambilineal, meaning that individuals can align
+                                         themselves with either paternal or maternal kin depending on their choice [24]. Second are
+                                         rules of residence after marriage; these may be matrilocal (the couple resides with the wife’s
+                                         kin), patrilocal (the couples resides with the husband’s kin), neolocal (the couple resides in a
+                                         nuclear family unit away from either kin group) or duolocal (husband and wife live apart, each
+                                         with their respective kin group) [18]. A third crucial principle is that of group-level marriage
+                                         norms, as human populations may be either predominantly monogamous (where one man is
+                                         married to only one woman), polygynous (where one man has several wives) or polyandrous
+                                         (where one woman has several husbands) [18]. These categories can of course be broken down
+                                         further by considering for example; rules of endogamy and exogamy in kin groups, preferential
+                                         marriage customs (eg cross-cousin marriage, sororal polygyny), or rules of exchange at mar-
+                                         riage (dowry or bridewealth). The field of human behavioural ecology has in part focused on
+                                         how these principles interact together and with ecological pressures, mainly through individ-
+                                         ual-level analyses, but any attempt at testing these hypotheses cross-culturally would be ham-
+                                         pered by Galton’s problem.
+                                             The emergence of cultural phylogenetics, has represented a significant advance in the cross-
+                                         cultural study of kinship. Through the adaptation of phylogenetic statistical methods devel-
+                                         oped in evolutionary biology for the comparative study of hierarchically related species, it has
+                                         become possible to test hypotheses about human cultural evolution while accounting for
+
+
+
+PLOS ONE | DOI:10.1371/journal.pone.0147920 March 23, 2016                                                                             4 / 15
+                                                                                A Phylogenetic Comparative Study of Bantu Kinship Terminology
+
+
+
+                                         Galton’s problem [21, 25]. As suggested by Mace and Pagel in their seminal article, integrating
+                                         phylogeny into comparative analyses allows for the detection of independent instances of cul-
+                                         tural change, unlike previous attempts at solving the problem [21]. This crucial development
+                                         has resulted in the flourishing of a new field, in which testing hypotheses about the evolution of
+                                         kinship diversity has had an important place. Holden and Mace [26, 25] investigated the long
+                                         suggested association between cattle-keeping and patrilineal descent [27], and found that in
+                                         Bantu-speaking populations the adoption of cows as a means of subsistence usually resulted in
+                                         a switch to patrilineality, and that once cattle-keeping was present in a group it became very
+                                         unlikely to become matrilineal. Fortunato and colleagues tested the widely accepted hypothesis
+                                         that bridewealth systems of marriage exchange were ancestral to systems of dowry [28], and
+                                         found the opposite to be true in Indo-European groups. Jordan [29] investigated the ancestral
+                                         Austronesian rules of residence after marriage, showing that the earliest speakers of this family
+                                         of languages were matrilocal. Fortunato and Jordan [30] reconstructed the past forms of mari-
+                                         tal residence, and the rates of change between these different forms of residence rules in Aus-
+                                         tronesian and Indo-European groups.
+                                             Studies in this vein have not only revisited kinship but enlightened the study of such varied
+                                         topics as the evolution of political complexity [31] and how it has interacted with processes of
+                                         social stratification [32], of the relationship between sex ratio at birth and markers of life his-
+                                         tory pace [25], the associations between sexual dimorphism and subsistence strategies [33] and
+                                         the co-evolution of pastoralism and lactose tolerance [34]. But in order to reliably test these
+                                         hypotheses, the first step is to construct accurate phylogenetic trees, the most appropriate
+                                         being the phylogenies of language families in the case of cultural evolution [21]. These linguis-
+                                         tic phylogenies act as an underlying model of population history, by statistically inputting the
+                                         historical relatedness of groups into the analysis, based on the relationship between compara-
+                                         tive elements of core lexical vocabulary [35]. In the past fifteen years these methods have pro-
+                                         duced phylogenies for at least three major language families; Austronesian [36, 37], Indo-
+                                         European [38] and Bantu [39, 40]. These phylogenies have been considered to be realistic mod-
+                                         els of population history by archaeologists, linguists and historians [41], and have permitted to
+                                         formally and independently test between different scenarios of population expansion [36, 38,
+                                         40, 42].
+                                             The transition from a hunting and gathering lifestyle, to that of agricultural food produc-
+                                         tion, characterised by sedentarisation and an increased population size and density, would
+                                         have necessitated important adjustments in kinship organization [43]. For those small-scale
+                                         agricultural societies which are not ordered at a state level, such as our study sample of histori-
+                                         cal Bantu populations, the majority of everyday social activities and the structuring of coopera-
+                                         tive networks are regulated through the functional organization of kin [1, 43]. In particular, if
+                                         we take on Radcliffe-Brown’s assertion that terminological variation in kinship has the func-
+                                         tion of delimiting kin categories in the context of social obligations, understanding this transi-
+                                         tional restructuring would inform us about the evolution of kinship as the earliest institution of
+                                         human cooperative behaviour. One study has employed phylogenetic comparative methods to
+                                         investigate the evolution of kinship terminology, reconstructing the ancestral state and model-
+                                         ling the semantic evolution of Austronesian sibling terminology [7]. However, no study has
+                                         used these methods to explore the relationship between variation in kinship terminology and
+                                         principles of social structuring, an attempt which will be made in the present study.
+
+
+                                         Study population
+                                         The Bantu languages represent one of the biggest linguistic families in the world, numbering
+                                         over five hundred and spanning across the whole of sub-Saharan Africa [40]. The origin of this
+
+
+
+PLOS ONE | DOI:10.1371/journal.pone.0147920 March 23, 2016                                                                             5 / 15
+                                                                                A Phylogenetic Comparative Study of Bantu Kinship Terminology
+
+
+
+                                         group has been traced to the Benue valley of eastern Nigeria, around 5000 years ago [44].
+                                         Archaeological, linguistic and genetic approaches have all indicated that Bantu speakers dis-
+                                         persed and expanded throughout sub-Saharan Africa, a process which has been dated as begin-
+                                         ning between 3000 and 5000 years ago, departing from the Nigerian-Cameroon border area
+                                         [45–47]. Today, it is in this geographical area that the languages most closely related to Narrow
+                                         Bantu are found [48]. It has been hypothesized that the Bantu population expansion, like sev-
+                                         eral others throughout the globe, was spurred by the spread of agriculture [49]. The adoption
+                                         of a food-producing strategy would have allowed Bantu populations to thrive and expand into
+                                         areas occupied by hunter-gatherers, displacing or assimilating these groups in the process [49].
+                                         Proto-Bantu groups are thought to have been largely dependent on hunting, gathering and the
+                                         cultivation of yams, and that the eventual adoption of cereal crops coupled with metallurgy is
+                                         what fuelled the expansion of Bantu speakers [50]. Vansina [50] suggests that Proto-Bantu
+                                         society had a bilateral descent and bi-local residence system that was adaptive for expanding
+                                         populations. He argues, based on linguistic reconstruction, such as the proto-Bantu word for
+                                         ‘house’ being gender neutral, that residence was ambilocal [51]. Hunting required co-operation
+                                         and mobility, and would be best served by males having a choice about their residence rather
+                                         than being constrained by unilocality [50]. Only in the eighteenth or nineteenth century, due
+                                         to increased wealth and the disorder faced by some Bantu-speaking people, did unilineal
+                                         descent and residence patterns begin to emerge, it is suggested [50]. Another theory proposes a
+                                         unilineal descent and unilocal residence system in the ancestral Bantu population [52]. Hage
+                                         and Marck argue, based on the linguistic reconstruction of kin terms, that the early Bantu
+                                         speakers were in fact matrilocal and matriline, and dispute the gender neutrality of the proto-
+                                         word for ‘house’.
+                                             The study of Bantu languages has interested scholars from a variety of disciplines, and a
+                                         number of attempts have been made to phylogenetically infer the relatedness structure of these
+                                         ethnolinguistic groups. Most notably, Bastin and colleagues used distance methods to assess
+                                         levels of similarity between comparative wordlists of 542 languages [53]. The lexical data col-
+                                         lected for this study are a near-complete sample of Bantu languages, and use meanings which
+                                         are relatively insensitive to borrowing. The data quality is therefore exceptionally good, but the
+                                         study could not yield any conclusive inference about the historical relationships between lan-
+                                         guages, due to the nature of the phylogenetic method used. Distance-based techniques, like lex-
+                                         icostatistics, cannot differentiate between cultural retentions and cultural innovations, and
+                                         they inherently assume a constant rate of evolutionary change, which is problematic when try-
+                                         ing to make assessments of historical relationships [54, 55]. In a series of studies, Holden and
+                                         colleagues used a sub-sample of these data published in the Bastin et al study, selected for the
+                                         purposes of cross-cultural analysis, and applied character-based methods of phylogenetic infer-
+                                         ence [39, 56, 57]. Character-based methods, such as maximum parsimony, maximum likeli-
+                                         hood and Bayesian Markov chain Monte Carlo, are a significant improvement, as they use
+                                         cognate change for phylogenetic inference, rather than overall distance [58]. Similarly, Rexova
+                                         et al combined a sub-sample of the lexical data from Bastin et al with grammatical data, and
+                                         applied character-based techniques of inference [58]. Although these studies made useful find-
+                                         ings, they are limited by some issues. In both cases, the methods used constrained the sample
+                                         size dramatically, meaning that the majority of the lexical data from the Bastin et al study could
+                                         not be used, and we know that a relatively small sample size can reduce the performance of
+                                         phylogenetic methods [59]. Also, both of these sub-samples contained relatively few groups
+                                         from the Northwest and rainforest, groups which are key to understanding the early diversifi-
+                                         cation and expansion process due to their proximity to the Bantu homeland.
+                                             Taking on the lessons learned from these previous studies, a new Bantu phylogeny was pub-
+                                         lished [40]. This study has produced the most accurate Bantu tree to date, through a number of
+
+
+
+PLOS ONE | DOI:10.1371/journal.pone.0147920 March 23, 2016                                                                             6 / 15
+                                                                                A Phylogenetic Comparative Study of Bantu Kinship Terminology
+
+
+
+                                         key improvements in design. First, the phylogeny is based on the full sample of data available
+                                         from Bastin and colleagues’ study, meaning that it has a large sample size and even linguistic
+                                         data sampling across the whole of the Bantu-speaking area, including those near the homeland.
+                                         Second, the phylogeny was inferred using a method which allows for linguistic rates of change
+                                         to vary, because it has long been suspected, and recently been shown empirically, that language
+                                         does not evolve at a single rate [60, 61, 62]. Third, the study used Bayesian Markov Chain
+                                         Monte Carlo methods of inference to produce a sample of five hundred phylogenetic trees
+                                         [40]. These methods are a dramatic improvement over other character-based methods because
+                                         they explicitly incorporate uncertainty in tree topology, as no one tree is likely to represent a
+                                         true historical model [25]. The sample of trees produced in this study will be used here in our
+                                         attempt to apply phylogenetic comparative methods to the co-evolution of kinship terminology
+                                         and social structure.
+
+
+                                         Hypotheses and Study Design
+                                         The creation of kinship terminology typologies has been useful in identifying the broad struc-
+                                         tural differences between types, and has led to the observation that societies in opposite parts
+                                         of the world have independently come up with comparable cultural concepts of kinship organi-
+                                         zation, as we would theoretically expect from a standpoint of modern evolutionary theory.
+                                         Although there has never been consensus regarding the causality which underlies the shaping
+                                         of the different typologies, there are suggested associations which have repeatedly been found
+                                         and become partially accepted through time. These following associations consist of the linking
+                                         of a terminology typology with a system of descent, a likely evolutionary association as these
+                                         systems represent distinct strategies for the organization of kin into groups of ancestry, and dif-
+                                         ferent grouping strategies result in distinct roles for the same genealogical kin across descent
+                                         systems, which may be reflected in the structuring of kinship terminological diversity. Hawai-
+                                         ian systems are thought to be mostly found in groups which trace their descent ambilineally, as
+                                         this type of descent appears to require a more flexible—hence simplified—terminology [63].
+                                         Iroquois type terminology is thought to be associated with groups which practice unilineal
+                                         descent organization, as this would require the bifurcate emphasis which is characteristic of
+                                         these terminologies [64]. Omaha systems, with their descriptive terms for paternal kin con-
+                                         trasting classificatory terms for maternal kin, are thought to be associated with groups which
+                                         have a strong patrilineal influence in their social organization [64]. Inversely, Crow systems are
+                                         thought to be found in groups with a strong matrilineal influence on overall social organization
+                                         [64]. As with any cultural phylogenetics study, before proceeding to the testing of co-evolution-
+                                         ary hypotheses, it is crucially important to visualize the data on the phylogeny, as this key step
+                                         should inform and guide further investigation. Here, we present a graphical representation of
+                                         the reconstructed evolution of Bantu kinship terminology across time, complete with ancestral
+                                         terminological states at the root and historical nodes of the tree.
+                                             In this series of analyses, we then use cultural phylogenetic methods to formally test these
+                                         long-held hypotheses about the co-evolution of kinship terminology diversity and systems of
+                                         descent, and make use of the recent improvements in Bantu phylogeny to test these hypotheses
+                                         in sub-Saharan African ethnolinguistic groups. Our research questions are:
+                                          1. Has Iroquois terminology co-evolved with unilineal descent among Bantu groups?
+                                          2. Has Hawaiian terminology co-evolved with ambilineal descent among the Bantu?
+                                          3. Has Omaha terminology co-evolved with patrilineal descent in Bantu groups?
+                                          4. Has Crow terminology co-evolved with matrilineal descent in the Bantu?
+
+
+
+PLOS ONE | DOI:10.1371/journal.pone.0147920 March 23, 2016                                                                             7 / 15
+                                                                                 A Phylogenetic Comparative Study of Bantu Kinship Terminology
+
+
+
+                                           We then test the hypothesis that kinship terminology has co-evolved with local rules of resi-
+                                         dence, asking:
+                                          5. Has Iroquois terminology co-evolved with rules of unilocal residence among the Bantu?
+                                          6. Has Hawaiian terminology co-evolved with rules of ambilocal residence in Bantu groups?
+                                          7. Has Omaha terminology co-evolved with rules of patrilocal residence among the Bantu?
+                                          8. Has Crow terminology co-evolved with rules of matrilocal residence among the Bantu?
+
+
+
+                                         Methods
+                                         Reconstructed evolution of Bantu kinship terminology across time
+                                         Ancestral state reconstructions of kinship terminology were carried out using the Multistate
+                                         feature of BayesTraits (available from http://www.evolution.reading.ac.uk/BayesTraitsV2Beta.
+                                         html). The full sample of 500 Bantu phylogenies ([45], refer here for the tree-building method-
+                                         ological details) and all groups which could be reliably matched between the linguistic popula-
+                                         tions present on the tree and Bantu populations from the Ethnographic Atlas were used
+                                         (N = 120). Refer to appendix of [45] for ethnolinguistic matching list. The results were then
+                                         summarised into a full consensus tree using the program BayesTrees, and coded for graphical
+                                         representation using the Ape package in R. All analyses were run using Bayesian Markov
+                                         Chain Monte Carlo methods.
+                                            In order to find the posterior probability distributions of states at ancestral nodes across the
+                                         phylogenies an RJ MCMC analysis was run with the additional use of the addNode command
+                                         in Bayes Traits, which reports the posterior probability of trait states at each internal node on
+                                         the phylogenetic tree [65]. The ancestral state reported for each node of the tree is the com-
+                                         bined posterior probability of each state at that node with the posterior probability that the
+                                         node itself exists in the tree, and is plotted on the consensus tree.
+
+
+                                         Co-evolutionary hypotheses testing
+                                         To test these hypotheses, we are using the Ethnographic Atlas [66, 67], which contains global
+                                         data on cousin terminology (variable 27), categorising societies under one of the six Murdock
+                                         typologies, as well as global data on descent practices (variable 43), and rules of residence after
+                                         marriage (variable 11). In order to employ phylogenetic comparative methods, we use a
+                                         recently published Bayesian sample of 500 phylogenetic trees, informing our analysis of the
+                                         structure of relatedness between 542 Bantu languages of sub-Saharan Africa [40]. The sample
+                                         is therefore restricted to Bantu ethnolinguistic groups which contain data for cousin terminol-
+                                         ogy in the Ethnographic Atlas, and could reliably be matched to linguistic data used to infer the
+                                         phylogenetic trees [53], resulting in a total of 83 populations. According to Murdock’s Ethno-
+                                         graphic Atlas, across our Bantu sample, the variation found is as follows: 15 groups use Hawai-
+                                         ian terminology, 51 groups use Iroquois terminology, 9 groups use Omaha terminology, 5
+                                         groups use Crow terminology, 2 groups use Sudanese terminology and 1 group is classified as
+                                         ‘mixed’. All analyses were carried out in the Discrete implementation of BayesTraits, using
+                                         Bayesian Markov Chain Monte Carlo methods with RJHP (exponential at interval 0 to 4). The
+                                         analysis produces two models of cultural evolution, one in which the two binary cultural traits
+                                         evolve independently along the phylogenetic branches (independent change model), and one
+                                         in which the probability of change in one trait is dependent upon the state of the other trait
+                                         (dependent change model) [68]. The method produces a set of parameter values (representing
+
+
+
+PLOS ONE | DOI:10.1371/journal.pone.0147920 March 23, 2016                                                                              8 / 15
+                                                                                        A Phylogenetic Comparative Study of Bantu Kinship Terminology
+
+
+
+                                              the rates of character change) which make the observed data most likely, given the model of
+                                              population history [68]. The likelihood of the two models—which indicate how well the model
+                                              fits the data—can then be compared, if the dependent model is a statistically significant
+                                              improvement over the independent model, the results provide support for co-evolution
+                                              between the traits of interest [68].
+
+
+                                              Results
+                                              We find only very weak support for the commonly held assumption that systems of kinship
+                                              terminology, as traditionally classified, are co-evolving with patterns of descent organization.
+                                              Mapping out the within-Bantu variation in terminological systems (Fig 2) helps us see that
+                                              there is some differential clustering across the phylogenetic tree, with the northwest and equa-
+                                              torial West Bantu groups showing more homogeneity and a prevalence of Iroquois-type sys-
+                                              tems, while in contrast, the southeast East Bantu, central Bantu and Savannah West Bantu
+                                              show more heterogeneity and perhaps some specialisation into the more strictly patrilineal uni-
+                                              lineal system, Omaha, or the mirror matrilineal system, Crow. But when we test this hypothesis
+                                              of association, that the variation of terminological systems may be associated with local rules of
+                                              descent organization, we find either no evidence or only weak evidence for co-evolutionary
+                                              relationships (Tables 1, 2 and 3).
+                                                  The strongest association found was between Hawaiian-like terminological systems and
+                                              ambilineal systems of descent. This could represent an older, Proto-Bantu specialisation into
+                                              flexible systems of kinship organization and communication upon the African agricultural
+
+
+
+
+Fig 2. Ancestral state reconstruction of Bantu kinship terminology. Bantu phylogenetic consensus tree with a state reconstruction of kinship
+terminological systems, with the mean probability of state illustrated in pie charts at each node of the tree.
+doi:10.1371/journal.pone.0147920.g002
+
+
+
+
+PLOS ONE | DOI:10.1371/journal.pone.0147920 March 23, 2016                                                                                     9 / 15
+                                                                                         A Phylogenetic Comparative Study of Bantu Kinship Terminology
+
+
+
+                                              Table 1. Bayes Factor Interpretation, adapted from [69].
+
+                                              Log Bayes Factor                                                                         Interpretation
+                                                       <2                                                                              Weak evidence
+                                                       >2                                                                             Positive evidence
+                                                      5–10                                                                            Strong evidence
+                                                      >10                                                                           Very strong evidence
+
+                                              Table for interpretation of Bayes Factor analysis, adapted from [69]. Log BF = 2(log[harmonic mean
+                                              (complex model)])–log [harmonic mean(simple model)].
+
+                                              doi:10.1371/journal.pone.0147920.t001
+
+
+                                              transition, whereby groups could easily become larger or assimilate groups of hunter-gatherers
+                                              without encountering organizational issues in managing people and their duties within a hier-
+                                              archical class system.
+                                                  In contrast, when testing the relationship between kinship terminological systems and rules
+                                              of residence after marriage, the strongest association we find is that between Omaha kinship
+                                              terminology and patrilocal rules of residence after marriage (Table 3). This result that most lan-
+                                              guage grouping do not show the predicted associations, and those that do are not the same for
+                                              descent and for residence is surprising, as rules of descent and residence tend to be very closely
+                                              interlinked.
+                                                  At the root of the Bantu tree, we find strongest support for a Hawaiian ancestral state of kin-
+                                              ship terminological organization, although other states are also possible. Of the varying
+                                              hypotheses about what form of social organisation is at the root of the Bantu tree, this suggest
+                                              support for Hage’s hypothesis that it is bilateral, but there is also some support for Iroqouis at
+
+Table 2. Kinship Terminology and Descent Rule Co-Evolution.
+
+     Association                                Independent Model                             Dependent Model                              Bayes Factor
+ Iroquois + Unilineal                                  -86.384                                      -85.542                                0.358 (±0.009)
+Hawaiian + Ambilineal                                  -53.869                                      -46.825                                3.048 (±0.011)
+ Omaha + Patrilineal                                   -95.195                                      -93.244                                0.841 (±0.007)
+  Crow + Matrilineal                                   -74.832                                      -74.346                                0.215 (±0.003)
+
+The Likelihoods of the independent and dependent model for four cases of the possible co-evolution of kinship terminological systems and rules of
+descent, tested using Discrete. Statistcial support for the dependent model being signiﬁcanty more likely than the independent model is measured by a
+Bayes Factor.
+
+doi:10.1371/journal.pone.0147920.t002
+
+
+
+Table 3. Kinship Terminology and Residential Rule Co-Evolution.
+
+     Association                               Independent Model                              Dependent Model                              Bayes Factor
+ Iroquois + Unilocal                                  -79.699                                      -79.258                                 0.191 (±0.016)
+Hawaiian + Ambilocal                                  -68.622                                      -68.127                                 0.215 (±0.003)
+ Omaha + Patrilocal                                   -91.157                                      -87.289                                 1.680 (±0.002)
+  Crow + Matrilocal                                   -71.248                                      -70.324                                 0.401 (±0.004)
+
+The likelihood of the dependent and independent models for four cases of the possible co-evolution of kinship terminological systems and rules of
+residence, tested using Discrete. Statistical support for the dependent model being signiﬁcantly more likely than the independent model is measured by a
+Bayes Factor.
+
+doi:10.1371/journal.pone.0147920.t003
+
+
+
+
+PLOS ONE | DOI:10.1371/journal.pone.0147920 March 23, 2016                                                                                          10 / 15
+                                                                                  A Phylogenetic Comparative Study of Bantu Kinship Terminology
+
+
+
+                                         the root. If Hawaiian is a language system flexible enough to have co-evolved in any lineal sys-
+                                         tem, this is potentially compatible with either Vansina’s idea that it is matrilineal, or patrilineal,
+                                         as Opie et al [70] suggest using the same tree sample and a similar methodology to that used
+                                         here. However, our general finding that the correlation is low between terminology and social
+                                         organisation suggests caution in attributing ancestral social structures on the grounds of Mur-
+                                         doch’s kinship terminology only.
+
+
+                                         Discussion
+                                         Iroquois-like systems are not only the most common across the Bantu tree, but also widespread
+                                         across the whole of the Sub-Saharan African continent. Iroquois terminology is more flexible
+                                         than the matrilineal Crow and patrilineal Omaha systems. Iroquois systems are strongly associ-
+                                         ated with unilineal descent in Africa, used by both predominantly matrilineal and predomi-
+                                         nantly patrilineal groups. But there is no evidence from this study that unilineality and
+                                         Iroquois co-evolve. It may be that Iroquois and unilineality are both so common in the Bantu
+                                         tree that there is not enough variation in the tree to show co-evolution.
+                                             Generally the speed of evolution of descent may be faster than that of linguistic change in
+                                         kinship terminologies. This was originally proposed by Murdock [18], with the idea that resi-
+                                         dence rules were first to change, triggering changes in descent, and followed significantly later
+                                         by changes in kinship terminology. Certainly Currie et al [40] suggest the Bantu moved in and
+                                         out of the forest on many occasions and Opie et al [70] show how kinship changed many times
+                                         over the course of 6000 years, and Currie and Mace [71] show that the rate of evolution in kin-
+                                         ship terminology is a little slower than other variables relating to social organisation. The costs
+                                         and benefits of changing social organisation are lower than linguistic change, then language
+                                         thus not necessarily tracking ecological and social change on similar time scales.
+                                             As Murdock first pointed out in Social Structure [18], the reconstruction of these evolution-
+                                         ary dynamics is being muddied by a problem of multifactorialism, whereby several very closely
+                                         associated variables are influencing the shaping of the terminological system, but with differ-
+                                         ent, and sometimes opposite influences (eg. sororal vs non-sororal polygyny). It is possible that
+                                         Bantu populations adopted unilineal descent during the agricultural expansion, with certain
+                                         groups further specializing in unilineal descent whilst adopting Crow or Omaha systems, but
+                                         this hypothesis needs to be tested on a larger scale, perhaps across different family trees.
+                                         Indeed, although Iroquois-like systems are strongly associated with unilineality in Africa and
+                                         North America, they seem associated with bilateral cross-cousin marriage in Australian
+                                         hunter-gatherers, such as the Kariera system, and perhaps also in South American native popu-
+                                         lations. This observation begs the cross-cultural question of whether Iroquois like systems
+                                         evolved as a response to the spread of unilineal descent, or perhaps instead with practices of
+                                         cross-cousin marriage in kinship groups of bilateral descent (such as ambilineal systems). This
+                                         and our results also raise the broader question of whether Murdock’s original classification
+                                         indeed captures the important aspects of social organisation that he supposed.
+                                             Despite the active agency of humans in shaping their history and cultural institutions, and
+                                         the dramatically differing environmental conditions under which human populations have
+                                         thrived, human cultural evolution can be studied and modelled according to general principles
+                                         of neo-Darwinian evolutionary theory and behavioural ecology [72, 73]. A recently published
+                                         study showed that the evolution of cultural traits related to social structuring occurred at com-
+                                         parable rates in speakers of the Bantu language family to populations of island Southeast Asia
+                                         and the Pacific [71]. Although humans display very high behavioural flexibility relative to
+                                         other species, and have culturally adapted to help buffer environmental risk, we are still subject
+                                         to the general energetic and environmental constraints that all species face [73]. The Bantu
+
+
+
+PLOS ONE | DOI:10.1371/journal.pone.0147920 March 23, 2016                                                                              11 / 15
+                                                                                A Phylogenetic Comparative Study of Bantu Kinship Terminology
+
+
+
+                                         represent a remarkably cohesive and closely related linguistic group, and as sub-Saharan
+                                         Africa is highly ecologically diverse, we can expect vast differences in the cultural adaptation
+                                         over time of groups which inhabit the Ituri rainforest, the African Great Lake area, and the
+                                         savannah or desert, as the expansion took place. Kinship organization is a key aspect of
+                                         human culture, bearing massive influence on the survival of small-scale populations. Amongst
+                                         the historical Bantu chiefdoms that make up the sample of this study, kinship rules and social
+                                         law were one and the same. In fact, kinship laws were so well respected that they have been
+                                         found to be reflected in the genetic patterning of sub-Saharan African populations, with cul-
+                                         tural rules showing to be a good predictor for explaining genetic variation across clan groups
+                                         [74].
+                                            In the transition to farming, populations who were moving towards a more agricultural and
+                                         sedentary lifestyle, but were not organized at a state level. Having a large family and following
+                                         became synonymous with the accumulation of local power and dominance status [43]. Unlike
+                                         the hunting and gathering groups native to the African continent, Bantu ethnolinguistic groups
+                                         are not socially egalitarian, but rather represent the cultural adoption and spread of more
+                                         socially stratified communities, and the competitive rise of African kingdoms and nation states,
+                                         such as the Bunyoro or Baganda empires of the past, in present day Uganda. As such, we can
+                                         look to these populations as representing a transition in human social organization. With the
+                                         introduction of intense stratification, likely came the reshaping of rules of human cooperation,
+                                         a behavioural aspect of human groups thought key to our adaptive spread and success.
+                                         Although much of the evolution of human cooperative behaviour remains theoretically chal-
+                                         lenging to model, it has become clear that dominance and prestige opportunities are closely
+                                         associated with the cultural adoption and spread of human rules of cooperation and punish-
+                                         ment [75].
+                                            Many of these practices were interrupted and reformed by the influence of European colo-
+                                         nial forces, making it difficult to reconstruct an accurate portrayal of native Bantu cultural evo-
+                                         lution using historical sources alone. Nonetheless, phylogenetic comparative methods open up
+                                         the possibility for the 'virtual archaeology' of cultural components which would be impossible
+                                         to accurately model using more traditional, non-computational, anthropological or historical
+                                         methods. We can therefore hope that these methods can help gradually disentangle these com-
+                                         plicating factors, with the aim of reconstructing relatively objective models of African cultural
+                                         evolution, and how these relationships compare across different language families.
+
+
+                                         Supporting Information
+                                         S1 File. Additional Detail.
+                                         (DOCX)
+
+
+                                         Acknowledgments
+                                         We would like to thank Kit Opie, Tom Currie and the Human Evolutionary Ecology Group for
+                                         their help and advice. Myrtille Guillon would like to thank Fiona Jordan, Charles Nunn and
+                                         the rest of Anthrotree’11 for their guidance.
+
+
+                                         Author Contributions
+                                         Conceived and designed the experiments: MG RM. Performed the experiments: MG. Analyzed
+                                         the data: MG. Contributed reagents/materials/analysis tools: MG RM. Wrote the paper: MG
+                                         RM.
+
+
+
+PLOS ONE | DOI:10.1371/journal.pone.0147920 March 23, 2016                                                                            12 / 15
+                                                                                     A Phylogenetic Comparative Study of Bantu Kinship Terminology
+
+
+
+                                         References
+                                          1.   Keesing R. Kin Groups and Social Structure. Holt, Rinehart and Winston, USA; 1975.
+                                          2.   Wagner R. Incest and identity: a critique and theory on the subject of exogamy and incest prohibition.
+                                               Man 1972: 601–613.
+                                          3.   Morgan L H. Systems of consanguinity and affinity of the human family. Smithsonian Institution, Ghent
+                                               University; 1871.
+                                          4.   Tylor E. Primitive Culture: Researches Into the Development of Mythology, Philosophy, Religion, Art,
+                                               and Custom. J. Murray, University of Michigan; 1871.
+                                          5.   Morgan LH. Ancient Society. MacMillan & Company, London; 1877.
+                                          6.   Barnard A. History and theory in anthropology. Cambridge University Press, Cambridge; 2000.
+                                          7.   Jordan F. A phylogenetic analysis of the evolution of Austronesian sibling terminologies. Human Biol-
+                                               ogy 2011; 83(2): 297–321. doi: 10.3378/027.083.0209 PMID: 21615291
+                                          8.   Nerlove S, Romney A. Sibling terminology and cross-sex behaviour. American Anthropologist 1967; 69
+                                               (2): 179–187.
+                                          9.   Kroeber A. Classificatory systems of relationship. Journal Royal Anthropological Institute 1909; 39: 77–
+                                               84.
+                                         10.   Service E. Kinship terminology and evolution. American Anthropologist 1960; 62(5): 747–763.
+                                         11.   Radcliffe-Brown AR. The study of kinship systems. In Structure and Function in Primitive Society.
+                                               Glencoe; The Free Press; 1952.pp.49–89.
+                                         12.   White LA. The Evolution of Culture. McGraw-Hill, New York; 1959.
+                                         13.   Sapir E. Terms of Relationship and the Levirate. American Anthropologist 1916; 18(3), 327–337.
+                                         14.   Köhler W. Psychological remarks on some questions of anthropology.The American Journal of Psy-
+                                               chology 1937; 50(1/4), 271–288.
+                                         15.   Tylor E. On a method of investigating the development of institutions applied to laws of marriage and
+                                               descent. Journal Royal Anthropological Institute 1889; 18: 245–386.
+                                         16.   Lowie RH. Culture and Ethnology. Kessinger Publishing, USA; 1917.
+                                         17.   White LA. A problem in kinship terminology. American Anthropologist 1939; 41: 566–573.
+                                         18.   Murdock G. Social Structure. Free Press, University of Michigan; 1949.
+                                         19.   Spier L. The Distribution of Kinship Systems in North America. University of Washington Press, USA;
+                                               1925.
+                                         20.   Whiting JWM. A reanalysis of Murdock’s model for social structure based on optimal scaling. Cross-
+                                               Cultural Research 1988; 22: 23–40.
+                                         21.   Mace R, Pagel M. The comparative method in anthropology. Current Anthropology 1994; 35: 549–564.
+                                         22.   Laland KN, Brown GR. Sense and Nonsense. Oxford University Press, Oxford; 2002.
+                                         23.   Dunbar RIM, Barrett L. Oxford Handbook of Evolutionary Psychology. Oxford University Press,
+                                               Oxford; 2007.
+                                         24.   Coult A. Role allocation, position structuring, and ambilineal descent. American Anthropologist 1964;
+                                               66: 29–40.
+                                         25.   Mace R, Holden CJ. A phylogenetic approach to cultural evolution. Trends Ecol. Evol. 2005; 20: 116–
+                                               121. PMID: 16701354
+                                         26.   Holden C, Mace R. Spread of cattle led to the loss of matrilineal descent in Africa: A coevolutionary
+                                               analysis. Proceedings of the Royal Society of London B Biological Sciences 2003; 270:2425–2433.
+                                         27.   Aberle DF. Matrilineal descent in cross-cultural perspective. In Matrilineal kinship. eds Schneider D. M.
+                                               & Gough K.. Berkeley, CA: University of California Press; 1961. Pp.655–727
+                                         28.   Jackson GB, Romney AK. Historical inference from cross-cultural data: the case of dowry. Ethos 1973;
+                                               1: 517–520.
+                                         29.   Jordan F, Gray RD, Greenhill SJ, Mace R. Matrilocal residence is ancestral in Austronesian societies.
+                                               Proceedings of the Royal Society B-Biological Sciences 2009; 276(1664): 1957–1964.
+                                         30.   Fortunato L, Jordan F. Your place or mine? A phylogenetic comparative analysis of marital residence in
+                                               Indo-European and Austronesian societies. Phil Trans R Soc B 2010; 365: 3913–3922. doi: 10.1098/
+                                               rstb.2010.0017 PMID: 21041215
+                                         31.   Currie TE, Greenhill SJ, Gray RD, Hasegawa T, Mace R. Rise and fall of political complexity in island
+                                               South-East Asia and the Pacific. Nature 2010; 467: 801–804. doi: 10.1038/nature09461 PMID:
+                                               20944739
+
+
+
+
+PLOS ONE | DOI:10.1371/journal.pone.0147920 March 23, 2016                                                                                       13 / 15
+                                                                                     A Phylogenetic Comparative Study of Bantu Kinship Terminology
+
+
+
+                                         32.   Currie TE, Mace R. Mode and Tempo in the Evolution of Socio-Political Organization: Reconciling ‘Dar-
+                                               winian’and ‘Spencerian’Evolutionary Approaches in Anthropology. Philosophical Transactions of the
+                                               Royal Society B. 2011; 366: 1108–1117.
+                                         33.   Holden C, Mace R. Sexual dimorphism in stature and women's work: A phylogenetic cross-cultural
+                                               analysis. American Journal of Physical Anthropology 1999; 110(1), 27–45. PMID: 10490466
+                                         34.   Holden C, Mace R. Pastoralism and the evolution of lactase persistence Leonard W.R., Crawford M.H.
+                                               (Eds.), in Human Biology of Pastoral Populations, Cambridge University Press, Cambridge; 2002. pp.
+                                               280–307.
+                                         35.   Mace R, Jordan F. Macro-evolutionary studies of cultural diversity: A review of empirical studies of cul-
+                                               tural transmission and cultural adaptation. Proc. Royal Soc. Lond. B Biol. Sci. 2011; 366:402–411.
+                                         36.   Gray RD, Jordan FM. Language trees support the express-train sequence of Austronesian expansion.
+                                               Nature 2000; 405(6790), 1052–1055. PMID: 10890445
+                                         37.   Gray R, Drummond AJ, Greenhill SJ. Language Phylogenies Reveal Expansion Pulses and Pauses in
+                                               Pacific Settlement. Science 2009; 323(5913): 479–483. doi: 10.1126/science.1166858 PMID:
+                                               19164742
+                                         38.   Gray R, Atkinson Q. Language-tree divergence times support the Anatolian theory of Indo-European
+                                               origin. Nature 2003; 426: 435–439. PMID: 14647380
+                                         39.   Holden CJ. Bantu language trees reflect the spread of farming across sub-Saharan Africa: a maximum-
+                                               parsimony analysis. Proc. R. Soc. Lond. B 2002; 269: 793–799.
+                                         40.   Currie TE, Meade A, Guillon M, Mace R. Cultural phylogeography of the Bantu Languages of sub-
+                                               Saharan Africa. Proceedings of the Royal Society of London B Biological Sciences 2013; 280:
+                                               20130695.
+                                         41.   Mace R, Holden C, Shennan S. The Evolution of Cultural Diversity: A Phylogenetic Approach. London,
+                                               U.K.: Left Coast Press & Berg; 2005.
+                                         42.   Grollemund R, Branford S, Bostoen K, Meade A, Venditti C, Pagel M. Bantu expansion shows that habi-
+                                               tat alters the route and pace of human dispersals. Proceedings of the National Academy of Sciences
+                                               2015; 201503793.
+                                         43.   Harrell S. Human Families. Westview Press, USA; 1998.
+                                         44.   Greenberg JH. The Languages of Africa. Bloomington: Indiana University Press; 1963.
+                                         45.   Ehret C. Bantu expansions: re-envisioning a central problem of early African history. The International
+                                               Journal of African Historical Studies 2001; 34(1), 5–41.
+                                         46.   Phillipson DW. African archaeology. Cambridge University Press, Cambridge; 2005.
+                                         47.   Huffman TN. Handbook to the Iron Age: the archaeology of pre-colonial farming societies in southern
+                                               Africa. Univ of Natal Pr.; 2007.
+                                         48.   Hombert JM, Hyman LM. Bantu historical linguistics: Theoretical and empirical perspectives. CSLI
+                                               Publications, Stanford; 1999.
+                                         49.   Diamond J, Bellwood P. Farmers and their languages: the first expansions. Science 2003; 300: 597–
+                                               603. PMID: 12714734
+                                         50.   Vansina J. Paths in the Rainforest. Madison: University of Wisconsin Press; 1990.
+                                         51.   Vansina J. New linguistic evidence and the Bantu expansion. Journal of African History 1995; 36
+                                               (2):173–195.
+                                         52.   Hage P, Marck J. Proto-Bantu descent groups. Kinship, Language, and Prehistory: Per Hage and the
+                                               Renaissance in Kinship Studies, eds Jones D & Bojka M. The University of Utah Press, Salt Lake City;
+                                               2011.
+                                         53.   Bastin Y, Coupez A, Mann M. Continuity and divergence in the Bantu languages: perspectives from a
+                                               lexicostatistic study. Musee Royal de l’Afrique Centrale, University of Michigan; 1999.
+                                         54.   Steel MA, Hendy MD, Penny D. Loss of information in genetic distances. Nature 1988; 336(6195), 118.
+                                               PMID: 3185733
+                                         55.   Blust R. Why lexicostatistics doesn't work: the ‘universal constant’ hypothesis and the Austronesian
+                                               languages. In Time depth in historical linguistics. eds Renfrew C, McMahon A, Trask RL. Cambridge,
+                                               UK: McDonald Institute for Achaeological Research; 2000. pp.311–331.
+                                         56.   Holden CJ, Meade A, Pagel M. Comparison of maximum parsimony and Bayesian Bantu language
+                                               trees. in The Evolution of Cultural Diversity: a Phylogenetic Approach. Edited by Mace R., Holden C.,
+                                               and Shennan S.. Walnut Creek, CA: Left Coast Press; 2005. pp.53–65.
+                                         57.   Holden CJ, Gray RD. Rapid radiation, borrowing and dialect continua in the Bantu languages. in Phylo-
+                                               genetic Methods and the Prehistory of Languages. Forster P & Renfrew C (eds) Short Run Press, UK;
+                                               2006. pp.19–33.
+
+
+
+
+PLOS ONE | DOI:10.1371/journal.pone.0147920 March 23, 2016                                                                                        14 / 15
+                                                                                       A Phylogenetic Comparative Study of Bantu Kinship Terminology
+
+
+
+                                         58.   Rexová K, Bastin Y, Frynta D. Cladistic analysis of Bantu languages: a new tree based on combined
+                                               lexical and grammatical data. Naturwissenschaften 2006; 93(4), 189–194. PMID: 16514514
+                                         59.   Zwickl DJ, Hillis DM. Increased taxon sampling greatly reduces phylogenetic error. Systematic Biology
+                                               2002; 51(4), 588–598. PMID: 12228001
+                                         60.   McMahon A, McMahon R. Language classification by numbers. Oxford University Press, Oxford;
+                                               2005.
+                                         61.   Atkinson QD, Meade A, Venditti C, Greenhill SJ, Pagel M. Languages evolve in punctuational bursts.
+                                               Science 2008; 319: 588. doi: 10.1126/science.1149683 PMID: 18239118
+                                         62.   Greenhill SJ, Atkinson QD, Meade A, Gray RD. The shape and tempo of language evolution. Proceed-
+                                               ings of the Royal Society B: Biological Sciences 2010; 277(1693), 2443–2450. doi: 10.1098/rspb.
+                                               2010.0051 PMID: 20375050
+                                         63.   Murdock G. Social Structure in Southeast Asia. Wenner-Grenn Foundation, Chicago; 1960.
+                                         64.   Murdock G. Africa: Its Peoples and their Culture History. McGraw-Hill Book Co, New York; 1959.
+                                         65.   Pagel MD, Meade A, Barker D. Bayesian estimation of ancestral character states on phylogenies. Sys-
+                                               tematic Biology 2004; 53(5):673–684 PMID: 15545248
+                                         66.   Murdock G. Ethnographic Atlas: A Summary. The University of Pittsburgh, Pittsburgh; 1967.
+                                         67.   Gray P. Ethnographic Atlas Codebook. World Cultures 1998; 10(1): 86–136.
+                                         68.   Pagel M. Detecting correlated evolution on phylogenies: a general method for the comparative analysis
+                                               of discrete characters. Proceedings of the Royal Society B Biological Sciences 1994; 255(1342): 37–
+                                               45.
+                                         69.   Pagel M & Meade A (2006) Bayesian analysis of correlated evolution of discrete characters by revers-
+                                               ible-jump Markov Chain Monte Carlo. The American Naturalist 167(6): 808–825. doi: 10.1086/503444
+                                               PMID: 16685633
+                                         70.   Opie C, Shultz S, Atkinson QD, Currie T, Mace R. Phylogenetic reconstruction of Bantu kinship chal-
+                                               lenges Main Sequence Theory of human social evolution. PNAS 2014; 111(49).
+                                         71.   Currie T, Mace R. Evolution of cultural traits occurs at similar relative rates in different world regions.
+                                               Proceedings of the Royal Society B 2014; 281: 20141622. doi: 10.1098/rspb.2014.1622 PMID:
+                                               25297866
+                                         72.   Mace R. Human behavioural ecology and its evil twin. Behavioural Ecology 2014, 25th anniversary
+                                               essays.
+                                         73.   Migliano A, Guillon M. The effects of mortality, subsistence and ecology on human adult height and
+                                               implications for Homo evolution. Current Anthropology 2012; 53(S6): S359–S368.
+                                         74.   Sanchez-Fadeev H, Pijpe J, van Bodegom D, van der Hulle T, van der Gaag KJ, Eriksson UK, Spear T,
+                                               Westendorp RG, de Knijff P. Ancestral stories of Ghanaian Bimoba reflect millennia-old genetic line-
+                                               ages. PLoS One 2013, 8(6): e65690. doi: 10.1371/journal.pone.0065690 PMID: 23776528
+                                         75.   Gordon DS, Madden JR, Lea SE. Both loved and feared: third party punishers are viewed as formidable
+                                               and likeable, but these reputational benefits may only be open to dominant individuals. PloS One 2014
+                                               9(10): e110045. doi: 10.1371/journal.pone.0110045 PMID: 25347781
+
+
+
+
+PLOS ONE | DOI:10.1371/journal.pone.0147920 March 23, 2016                                                                                            15 / 15
+
