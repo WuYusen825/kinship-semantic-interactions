@@ -70,3 +70,11 @@
 - 独立agent未参与正文、估计实现或映射修改，仅写review；第五轮实际复跑781处数字与负向自测、53引用/37附页逐行对应、42来源准入及最终实物变更复核，通过论文和研究材料范围验收，无待返修项。第四轮未完成状态作为历史保留，F01–F05在第五轮闭环。
 - 最后一次正文修改仅B16证据强度，实际PDF第14页目视通过，其余17页与前版像素一致；Markdown到DOCX去空白16451字符完全一致，DOCX到PDF6269汉字顺序一致。最终artifact四文件哈希与当前实物相同。
 - 三GLMM未收敛、P3/P6未支持、P5真实语义未知及未执行后续研究均保留；通过的是修改计划下证据一致和论文交付要求，不将这些未成功项目改记成功。最终远程提交/PR/镜像与ZIP核验随后实际记录。
+
+## 2026-10-15：最终稿提交、PR及payload同步
+
+- 最终稿与数字/引文核验、第四/第五轮报告实际提交`04254e0c8fe4b0891854b3b504acb30ff24c5f94`，已推送；GitHub实际PR head也核对为该SHA。
+- 对该payload的600个Git跟踪文件执行copy2至`/workspace/kinship_research`，逐文件SHA-256不匹配为0，实际记录见revision_delivery_sync.json。
+- 首次完整ZIP为600文件、177.8 MiB，testzip通过。交付元数据加入后将按相同命令重建ZIP及manifest；最终归档SHA与整分支同步收据另存工作区，避免把自含清单的哈希写成递归依赖。
+- gh的GraphQL创建PR返回401；保留已推送成果，改用已连接GitHub的结构化create_pull_request成功建立草稿PR #2： https://github.com/WuYusen825/kinship-semantic-interactions/pull/2 。实际base为`claude/finish-forum-paper-rio1ke`，head为`codex/major-revision`，draft=true；未合并。
+- 当前日志及同步报告本身属于随后交付元数据提交，payload证书不把它们冒称为早已核验的600文件内容。最终整分支、远程及归档证书在这些文件定稿后另行实际生成。

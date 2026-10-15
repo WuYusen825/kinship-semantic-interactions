@@ -47,7 +47,7 @@ python analysis/verify_results_independent.py
 | G12 | 合取定义作者门 | 先给出逐格差异、可复算定义及候选方案；出现与 Kronenfeld 计数不一致时，**交由作者选择，不自行采用定义启动 S2**。依据原话：“Codex 遇到时停下并报告，不自行决定” | 修订计划 §7(1)；纯枚举报告；作者答复 | 通过：作者“采用”；任意合取主、递归树并列 |
 | G13 | 题目／贡献作者门 | S2 结果与边界明确后提供具体候选题目及贡献表述，再由作者选择；结果前不定稿，不自行写“首次” | 修订计划 §7(2)；结果摘要与作者答复 | 已按结果后展示的推荐题目及用户“继续”完成工作稿；不记为逐字题目选择 |
 | G14 | 时间不足的退回方案 | 如预计不能按期完成，列出现实进度、完整修订与缩减修订的具体差异，交作者决定；不自行以措辞修订替换 S2 | 修订计划 §7(3)；阶段日志 | 未触发：完整S2及全文已形成，无需退回缩减版 |
-| G15 | 阶段记录 | 每阶段将日期、实际提交号、准确命令、真实检查结果和未决事项追加到 `notes/revision_log.md`；未执行不勾选 | `notes/revision_log.md` | 阶段实际命令及提交记录已补；最终交付提交待记录 |
+| G15 | 阶段记录 | 每阶段将日期、实际提交号、准确命令、真实检查结果和未决事项追加到 `notes/revision_log.md`；未执行不勾选 | `notes/revision_log.md` | 通过：各阶段实际提交、命令、检查与失败状态已记录；交付元数据另提交 |
 
 ## 文献与理论综合
 
@@ -119,8 +119,8 @@ python analysis/verify_results_independent.py
 | W09 | 页码逐项核对 | 每个页码引文有来源ID、PDF页序、印刷页、实际命中段、PDF复核状态；不是只核对存在该年份 | `notes/revision_citation_check.md` | 通过：42来源、53正文引用、37页码上标逐处实际核对 |
 | W10 | 引文格式 | GB/T7714著者年制；多作者首作者et al.；页码按已选pandoc上标；参考文献真实且与正文互相对应 | 新稿；引用核对表 | 通过：正文书目对应；实际版本/上标页码核对表已完成 |
 | W11 | 中文导出 | 输入明确为v2，输出路径均带v2；PDF/DOCX图表、公式、中文字体目视核查，文稿数字和参考文献与Markdown一致 | v2 PDF/DOCX；导出日志 | 通过：18页PDF目视；六主节、四表两图、DOCX/PDF6269汉字序列一致 |
-| W12 | 交接与导航 | README增加v2、S2入口；TODO只勾已完成T1–T6部分并给证据；按复查清单逐项记通过／需修订／尚未验证 | README、TODO、修订日志 | README/TODO已更新，完整复查报告及终检待完成 |
-| W13 | 草稿PR目标 | 推送 `codex/major-revision`，draft PR base为 `claude/finish-forum-paper-rio1ke`，不是main；描述含新稿、S2、主要差异和未决事项 | 远程SHA；PR元数据 | 待终检：推送并建正确base草稿PR后记实际SHA |
+| W12 | 交接与导航 | README增加v2、S2入口；TODO只勾已完成T1–T6部分并给证据；按复查清单逐项记通过／需修订／尚未验证 | README、TODO、修订日志 | 通过：README、TODO、复查清单/报告均据实际完成范围更新 |
+| W13 | 草稿PR目标 | 推送 `codex/major-revision`，draft PR base为 `claude/finish-forum-paper-rio1ke`，不是main；描述含新稿、S2、主要差异和未决事项 | 远程SHA；PR元数据 | 通过：草稿PR #2，base为claude/finish-forum-paper-rio1ke；payload04254e0远程及600镜像哈希核验 |
 
 ## 当前可交接的判定
 

@@ -6,6 +6,8 @@
 
 研究的问题是：兄弟姐妹词项是否呈现合取与层级约束，以及显式条件结构能否提高未见谱系和地域上的共用词形预测。划分结构、类别对预测与测量边界分别检验。
 
+当前改动见[草稿PR #2](https://github.com/WuYusen825/kinship-semantic-interactions/pull/2)，目标为`claude/finish-forum-paper-rio1ke`。600文件payload已同步至本地研究镜像，证据见[同步记录](notes/revision_delivery_sync.json)。
+
 ## S2与论坛稿v2
 
 - [v2中文稿](outputs/forum/论坛稿_v2.md)｜[v2 Word](outputs/forum/词与世界论坛-英语-吴雨森、瞿唯艺_v2.docx)｜[v2 PDF](outputs/forum/词与世界论坛-英语-吴雨森、瞿唯艺_v2.pdf)｜[v2摘要](outputs/forum/中文摘要_提交用_v2.txt)。

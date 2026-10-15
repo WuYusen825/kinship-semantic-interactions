@@ -61,6 +61,6 @@
 - [x] 预定20字段审查与结果后25补审分开，去重43系统；未新增语义标注。
 - [x] v2中文标题主题字体漏显已修，六主节在18页PDF存在；Word统计为LibreOffice更新的兼容统计，不冒称Microsoft Word实际运行。见revision_artifact_check.json。
 - [x] 最终781处数字零误差、42来源/53引用/37附页主表完整；第五轮独立终审通过，见round5报告。交付记录另按实际PR/镜像核对。
-- [ ] 正确base草稿PR、最终远程SHA、研究镜像逐文件哈希及ZIP testzip终检。
+- [x] 草稿PR #2的base正确，payload04254e0远程SHA及600镜像文件逐一相符，ZIP testzip通过；最终交付元数据整分支收据另存工作区。
 
 上述勾选的文献文件/页数/SHA技术检查由本轮实际validator支持；只表示其明确核验范围。Morgan全书关系表、所有OCR和音标的人工逐字校订仍未完成，不勾选其总项。
