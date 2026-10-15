@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Thomas Brochhagen</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+
+			<!-- ICONS
+ 			 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+ 			 <link rel="stylesheet" href="stylesheets/ionicons.min.css">
+ 			 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+ 			 <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">		</head>
+		<body>
+			<a name="top"></a>
+			<nav>
+    			<ul>
+        			<li><a href="/">Home</a></li>
+        			<li><a href="#research">Research</a></li>
+					<li><a href='#resources'>Resources</a></li>
+        			<li><a href='#lab'>Lab</a></li>
+		        	<li><a href="#about">About</a></li>
+    			</ul>
+			</nav>
+			<div class="container">
+
+			<div class="blurb">
+  <br>
+  <figure>
+    <img src="content/img/portrait.png" alt="Thomas Brochhagen">
+    <figcaption> 
+      <p>
+        Thomas Brochhagen
+      <br>
+        <a class="smaller" href="https://www.upf.edu" target="_blank">Universitat Pompeu Fabra</a>
+
+        <table>
+          <tr>
+            <td> <a class="icon" style="font-size:12px;" href="mailto:thomas.brochhagen@upf.edu" target="_top"><i class="fa-solid fa-envelope fa-3x" aria-hidden="true"></i></a></td>
+            <td><a class="icon" style="font-size:12px;" href="https://scholar.google.nl/citations?user=UzxJ_XwAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar-square ai-3x"></i></a></td>
+            <td><a class="icon" style="font-size:12px;" href="https://github.com/brochhagen" target="_blank"><i class="fa-brands fa-square-github fa-3x"></i></a></td>
+            <td><a class="icon" style="font-size:12px;" href="https://osf.io/v2tk5/" target="_blank"><i class="ai ai-osf-square ai-3x"></i></a></td>
+          </tr>
+        </table>
+      </p>
+    </figcaption>
+  </figure>
+	<p>
+    My research asks why languages are the way they are, how they came to be this way, and what this tells us about their users. I study language evolution and change in humans, non-human animals, and machines.
+    <br><br>
+    I'm a tenure-track professor & Ramón y Cajal fellow at the <a href='https://www.upf.edu' target='_blank'>Universitat Pompeu Fabra</a> in Barcelona, Spain. You can reach me via email at firstname.lastname@upf.edu (English, German, Spanish, or Catalan). 
+	</p>
+</div><!-- /.blurb -->
+
+  <p align=right>
+    <a class="icon" style="font-size:0.9em" href='#top'><i class="fa-solid fa-arrow-up" aria-hidden="true"> top</i></a>
+  </p>
+<hr>
+
+
+<h2><a name="research" class="anchor"><span class="octicon octicon-link"></span></a>Research</h2>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='https://www.nature.com/articles/s41562-026-02488-3' target="_blank">The interaction of meaning similarity and confusability explains regularity in form-meaning mappings at and below the word level</a>
+  <br>
+  <span class="paper-meta">Thomas Brochhagen, Xixian Liao, Jamie Wright & Carmen Saldana. 2026. Nature Human Behaviour. DOI: 10.1038/s41562-026-02488-3</span>
+  <br>
+  <span class="paper-links">
+    <a href='https://osf.io/preprints/psyarxiv/vh5td_v2' target='_blank'>[pre-print]</a>
+    <a href='https://osf.io/qzaxk/' target='_blank'>[code repository]</a>
+    <a href="https://www.nature.com/articles/s41562-026-02493-6" target="_blank">[Commentary by B. Beekhuizen]</a>
+  </span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='https://aclanthology.org/2026.computel-1.7.pdf' target='_blank'>AvarLab: An Integrated Digital Ecosystem for Avar, a Morphologically Rich Low-Resource Language</a>
+  <br>
+  <span class="paper-meta">Kebed Zagidov & Thomas Brochhagen. 2026. Ninth workshop on the use of computational methods in the study of endangered languages (ComputEL-9). DOI: 10.18653/v1/2026.computel-1.7</span>
+  <br>
+  <span class="paper-links">
+    <a href='https://avarlab.upf.edu/' target='_blank'>[code repository]</a>
+  </span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-robot" title="machines"></i> <i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='https://linguamatica.com/index.php/linguamatica/en/article/view/497/565' target='_blank'>Norma, ús i interferència: biaixos lingüístics en els models de llenguatge en català</a>
+  <br>
+  <span class="paper-meta">Mireia Almena Rodríguez & Thomas Brochhagen. 2026. Linguamática. DOI: 10.21814/lm.18.1.497</span>
+  <br>
+  <span class="paper-links">
+    <a href='https://github.com/mireia-almena/NormaUsiInterferencia' target='_blank'>[code repository]</a>
+    <a href='https://brochhagen.github.io/content/ms/normaus.pdf' target='_blank'>[PDF (CAT)]</a>
+  </span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='https://onlinelibrary.wiley.com/doi/10.1111/cogs.70145' target='_blank'>Assessing Pressures Shaping Natural Language Lexica</a>
+  <br>
+  <span class="paper-meta">Jeanne Bruneau--Bongard, Emmanuel Chemla & Thomas Brochhagen. 2025. Cognitive Science. DOI: 10.1111/cogs.70145</span>
+  <br>
+  <span class="paper-links">
+    <a href='https://brochhagen.github.io/content/ms/assessing-preprint.pdf' target='_blank'>[pre-print]</a>
+    <a href='https://osf.io/f2eg5/overview?view_only=ebd346fda90d45ddb47cff1df0b8e748' target='_blank'>[code repository]</a>
+  </span>
+</p>
+
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-paw" title="non-human animals"></i></span>
+  <a href='https://www.science.org/doi/10.1126/science.adv1170#elettersSection' target='_blank'>The plus and minus of bonobo call combinations</a>
+  <br>
+  <span class="paper-meta">Emmanuel Chemla, Thomas Brochhagen & Shane Steinert-Threlkeld. 2025. Science eLetter</span>
+  <br>
+  <span class="paper-links">
+    <a href='https://github.com/emmanuelchemla/callsfromfeatures/' target='_blank'>[code repository]</a>
+    <a href='https://ling.auf.net/lingbuzz/009780' target='_blank'>[PDF (lingbuzz)]</a>
+  </span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='https://muse.jhu.edu/article/969615' target='_blank'>The role of referent predictability in pronoun production: Insights from a Bayesian meta-analysis</a>
+  <br>
+  <span class="paper-meta">Xixian Liao, Thomas Brochhagen, Gemma Boleda & Laia Mayol. 2025. Language. DOI: 10.1353/lan.2025.a969615</span>
+  <br>
+  <span class="paper-links">
+    <a href='https://lingbuzz.net/lingbuzz/009164' target='_blank'>[pre-print]</a>
+    <a href='https://osf.io/qyahc/' target='_blank'>[code repository]</a>
+  </span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i> <i class="fa-solid fa-robot" title="machines"></i></span>
+  <a href='https://doi.org/10.7203/metode.15.27692' target='_blank'>Language evolution in silico: from large-scale data to artificial agents creating languages from scratch</a>
+  <br>
+  <span class="paper-meta">Thomas Brochhagen. 2025. Mètode Science Studies Journal. DOI: 10.7203/metode.15.27692</span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='https://www.science.org/stoken/author-tokens/ST-1336/full' target='_blank'>From language development to language evolution: A unified view of human lexical creativity</a>
+  <br>
+  <span class="paper-meta">Thomas Brochhagen, Gemma Boleda, Eleonora Gualdoni & Yang Xu. 2023. Science. DOI: 10.1126/science.ade7981</span>
+  <br>
+  <span class="paper-links">
+    <a href='https://brochhagen.github.io/content/ms/accepted-lexical-creativity.pdf' target='_blank'>[pre-print]</a>
+    <a href='https://www.science.org/doi/suppl/10.1126/science.ade7981/suppl_file/science.ade7981_sm.pdf' target='_blank'>[supplementary material]</a>
+    <a href='https://doi.org/10.17605/OSF.IO/ZKGU3' target='_blank'>[code repository]</a>
+    <a href='https://doi.org/10.1126/science.adj2154' target='_blank'>[commentary by S.J. Greenhill]</a>
+  </span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='https://authors.elsevier.com/sd/article/S0749-596X(23)00058-X' target='_blank'>What's in a name? A large-scale computational study on how competition between names affects naming variation</a>
+  <br>
+  <span class="paper-meta">Eleonora Gualdoni, Thomas Brochhagen, Andreas Mädebach & Gemma Boleda. 2023. Journal of Memory and Language. DOI: 10.1016/j.jml.2023.104459</span>
+  <br>
+  <span class="paper-links">
+    <a href='https://osf.io/s7h9f/' target='_blank'>[code repository]</a>
+    <a href='https://colab.research.google.com/drive/1o63vmYlVNTcp7RIvzP4cpijKwLkhJdZs?usp=sharing' target='_blank'>[demo 1]</a>
+    <a href='https://colab.research.google.com/drive/18r7UuVTGMZJ1ay4bmM0HaVe3WICwctuY?usp=sharing' target='_blank'>[demo 2]</a>
+  </span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='https://www.frontiersin.org/articles/10.3389/fcomm.2023.1136338/full' target='_blank'>A computational analysis of crosslinguistic regularity in semantic change</a>
+  <br>
+  <span class="paper-meta">Olivia Fugikawa, Oliver Hayman, Raymond Liu, Lei Yu, Thomas Brochhagen & Yang Xu. 2023. Frontiers in Communication. DOI: 10.3389/fcomm.2023.1136338</span>
+  <br>
+  <span class="paper-links">
+    <a href='https://www.cs.toronto.edu/~yangxu/fugikawa_et_al_2023_crosslinguistic_regularity_in_semantic_change_supp.pdf' target='_blank'>[supplementary material]</a>
+    <a href='https://github.com/o-fugi/regularity-semantic-change' target='_blank'>[code repository]</a>
+  </span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-robot" title="machines"></i></span>
+  <a href='https://osf.io/tmqwu/' target='_blank'>Influence of Centrality on Communication Protocols in Communities of Deep Neural Agents</a>
+  <br>
+  <span class="paper-meta">Jeanne Bruneau--Bongard & Thomas Brochhagen. 2023. Pre-registration.</span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='https://authors.elsevier.com/sd/article/S0010-0277(22)00167-6' target='_blank'>When do languages use the same word for different meanings? The Goldilocks principle in colexification</a>
+  <br>
+  <span class="paper-meta">Thomas Brochhagen & Gemma Boleda. 2022. Cognition. DOI: 10.1016/j.cognition.2022.105179</span>
+  <br>
+  <span class="paper-links">
+    <a href='https://psyarxiv.com/efs4p/' target='_blank'>[pre-print]</a>
+    <a href='https://osf.io/eqa6r/' target='_blank'>[supplementary material]</a>
+    <a href='https://osf.io/hjvm5/' target='_blank'>[code repository]</a>
+    <a href='https://www.youtube.com/watch?v=6XP5pGv4RG8' target='_blank'>[video (45 minutes)]</a>
+  </span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='https://escholarship.org/content/qt84b4q2vm/qt84b4q2vm.pdf?t=rdmf5w' target='_blank'>Metonymy as a Universal Cognitive Phenomenon: Evidence from Multilingual Lexicons</a>
+  <br>
+  <span class="paper-meta">Temuulen Khishigsuren, Gábor Bella, Thomas Brochhagen, Daariimaa Marav, Fausto Giunchiglia & Khuyagbaatar Batsuren. 2022. Proceedings of the 44th Annual Conference of the Cognitive Science Society (CogSci 2022)</span>
+  <br>
+  <span class="paper-links">
+    <a href='https://o389sd-temuulenkh.shinyapps.io/colexification-explorer/' target='_blank'>[Data visualization]</a>
+    <a href='https://github.com/kbatsuren/UniMet' target='_blank'>[repository]</a>
+    <a href='https://www.youtube.com/watch?v=SM4r46mga3c' target='_blank'>[video (5 minutes)]</a>
+  </span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='https://escholarship.org/content/qt5404p9t6/qt5404p9t6.pdf?t=rdmekf' target='_blank'>Woman or tennis player? Visual typicality and lexical frequency affect variation in object naming</a>
+  <br>
+  <span class="paper-meta">Eleonora Gualdoni, Thomas Brochhagen, Andreas Mädebach & Gemma Boleda. 2022. Proceedings of the 44th Annual Conference of the Cognitive Science Society (CogSci 2022)</span>
+  <br>
+  <span class="paper-links">
+    <a href='https://osf.io/q72ne/' target='_blank'>[repository]</a>
+  </span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='https://scholarworks.umass.edu/scil/vol5/iss1/26/' target='_blank'>Horse or pony? Visual typicality and lexical frequency affect variability in object naming</a>
+  <br>
+  <span class="paper-meta">Eleonora Gualdoni, Thomas Brochhagen, Andreas Mädebach & Gemma Boleda. 2022. Proceedings of the Society for Computation in Linguistics (SCiL 2022). Vol. 5, Article 26</span>
+  <br>
+  <span class="paper-links">
+    <a href='https://www.youtube.com/watch?v=UPFr91cjm8Y' target='_blank'>[video (15 minutes)]</a>
+  </span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='https://scholarworks.umass.edu/scil/vol5/iss1/21/' target='_blank'>The interaction between cognitive ease and informativeness shapes the lexicons of natural languages</a>
+  <br>
+  <span class="paper-meta">Thomas Brochhagen & Gemma Boleda. 2022. Proceedings of the Society for Computation in Linguistics (SCiL 2022). Vol. 5, Article 21</span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='https://dx.doi.org/10.1007/s42113-021-00099-x' target='_blank'>Brief at the risk of being misunderstood: Consolidating population- and individual-level tendencies</a>
+  <br>
+  <span class="paper-meta">Thomas Brochhagen. 2021. Computational Brain & Behavior. DOI: 10.1007/s42113-021-00099-x</span>
+  <br>
+  <span class="paper-links">
+    <a href='https://osf.io/7m9np/' target='_blank'>[code repository]</a>
+    <a href='https://rdcu.be/ceF1r' target='_blank'>[view-only version]</a>
+    <a href='https://brochhagen.github.io/content/ms/accepted-manuscript-cobb.pdf'>[pre-print]</a>
+  </span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='https://www.oxfordbibliographies.com/view/document/obo-9780199772810/obo-9780199772810-0277.xml' target='_blank'>Game Theory in Pragmatics</a>
+  <br>
+  <span class="paper-meta">Thomas Brochhagen. 2021. Oxford Bibliographies in Linguistics. Ed. Mark Aronoff. New York: Oxford University Press. DOI: 10.1093/obo/9780199772810-0277</span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i> <i class="fa-solid fa-robot" title="machines"></i></span>
+  <a href='https://cognitivesciencesociety.org/cogsci20/papers/0319/0319.pdf' target='_blank'>Modeling word interpretation with deep language models: The interaction between expectations and lexical information</a>
+  <br>
+  <span class="paper-meta">Laura Aina, Thomas Brochhagen & Gemma Boleda. 2020. Proceedings of the 42th Annual Conference of the Cognitive Science Society (CogSci 2020)</span>
+  <br>
+  <span class="paper-links">
+    <a href='https://github.com/amore-upf/exp_lex_interpretation' target='_blank'>[code repository]</a>
+  </span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-robot" title="machines"></i></span>
+  <a href='https://cognitivesciencesociety.org/cogsci20/papers/0479/0479.pdf' target='_blank'>Deep daxes: Mutual exclusivity arises through both learning biases and pragmatic strategies in neural networks</a>
+  <br>
+  <span class="paper-meta">Kristina Gulordava, Thomas Brochhagen & Gemma Boleda. 2020. Proceedings of the 42th Annual Conference of the Cognitive Science Society (CogSci 2020)</span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='https://doi.org/10.1007/978-3-030-50200-3_16' target='_blank'>Extremes are typical. A game theoretical derivation</a>
+  <br>
+  <span class="paper-meta">Robert van Rooij & Thomas Brochhagen. 2020. Language, Cognition, and Mind, vol. 7, p. 351-363. DOI: 10.1007/978-3-030-50200-3_16</span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='https://onlinelibrary.wiley.com/doi/epdf/10.1111/cogs.12681' target='_blank'>Coevolution of Lexical Meaning and Pragmatic Use</a>
+  <br>
+  <span class="paper-meta">Thomas Brochhagen, Michael Franke & Robert van Rooij. 2018. Cognitive Science. DOI: 10.1111/cogs.12681</span>
+  <br>
+  <span class="paper-links">
+    <a href='https://github.com/brochhagen/coevo' target='_blank'>[code repository]</a>
+  </span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='http://hdl.handle.net/11245.1/98f3027a-544b-4bf4-8a1c-b0b58f71ccc6' target='_blank'>Signaling under uncertainty</a>
+  <br>
+  <span class="paper-meta">Thomas Brochhagen. 2018. PhD Thesis, University of Amsterdam</span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='https://doi.org/10.1093/bjps/axx058' target='_blank'>Signalling under Uncertainty: Interpretative Alignment without a Common Prior</a>
+  <br>
+  <span class="paper-meta">Thomas Brochhagen. 2017. The British Journal for the Philosophy of Science. DOI: 10.1093/bjps/axx058</span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='https://cogsci.mindmodeling.org/2017/papers/0327/index.html' target='_blank'>Effects of transmission perturbation in the cultural evolution of language</a>
+  <br>
+  <span class="paper-meta">Thomas Brochhagen & Michael Franke. 2017. Proceedings of the 39th Annual Conference of the Cognitive Science Society (CogSci 2017), pp. 1678-1683</span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='https://cogsci.mindmodeling.org/2016/papers/0362/index.html' target='_blank'>Learning biases may prevent lexicalization of pragmatic inferences: a case study combining iterated (Bayesian) learning and functional selection</a>
+  <br>
+  <span class="paper-meta">Thomas Brochhagen, Michael Franke & Robert van Rooij. 2016. Proceedings of the 38th Annual Conference of the Cognitive Science Society (CogSci 2016), pp. 2081-2086</span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='http://www.emnlp2015.org/proceedings/CogACLL/pdf/CogACLL11.pdf' target='_blank'>Improving Coordination on Novel Meaning through Context and Semantic Structure</a>
+  <br>
+  <span class="paper-meta">Thomas Brochhagen. 2015. Proceedings of the Sixth Workshop on Cognitive Aspects of Computational Language Learning (CogACLL 2015), ACL, pp 74-82</span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='https://cogsci.mindmodeling.org/2015/papers/0059/index.html' target='_blank'>Minimal Requirements for Productive Compositional Signaling</a>
+  <br>
+  <span class="paper-meta">Thomas Brochhagen. 2015. Proceedings of the 37th Annual Conference of the Cognitive Science Society (CogSci 2015), pp. 285-290</span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='http://dx.doi.org/10.3765/salt.v23i0.2662' target='_blank'>Diagnosing Truth, Interactive Sincerity, and Depictive Sincerity</a>
+  <br>
+  <span class="paper-meta">Elizabeth Coppock & Thomas Brochhagen. 2013. Proceedings of Semantics and Linguistic Theory 23 (SALT 23), pp. 358-375. DOI: 10.3765/salt.v23i0.2662</span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='http://dx.doi.org/10.3765/sp.6.3' target='_blank'>Raising and Resolving Issues with Scalar Modifiers</a>
+  <br>
+  <span class="paper-meta">Elizabeth Coppock & Thomas Brochhagen. 2013. Semantics and Pragmatics, Volume 6, Article 3, pp. 1-57. DOI: 10.3765/sp.6.3</span>
+</p>
+
+<p>
+  <span class="paper-icons"><i class="fa-solid fa-person" title="humans"></i></span>
+  <a href='http://www.linguisticsociety.org/files/3521-6819-1-SM.pdf' target='_blank'>Only, At Least, At Most, More and Less</a>
+  <br>
+  <span class="paper-meta">Thomas Brochhagen & Elizabeth Coppock. 2013. 87th annual LSA meeting</span>
+</p>
+
+  <p align=right>
+    <a class="icon" style="font-size:0.9em" href='#top'><i class="fa-solid fa-arrow-up" aria-hidden="true"> top</i></a>
+  </p>
+
+<hr>
+
+
+<h2><a name='resources' class='resources'></a>Resources</h2>
+<p>
+This is for standalone resources. See <a href='#research'>Research</a> for code and data from concrete studies. Please get in touch if you encounter any issue.
+</p>
+
+<p>
+<ul>
+  <li style="font-size: 19px;">
+    <a href='https://avarlab.upf.edu/' target='_blank'>AvarLab (https://avarlab.upf.edu/)</a> is an open-source platform for <a href='https://glottolog.org/resource/languoid/id/avar1256' target='_blank'>Avar (avar1256)</a>, including a dictionary, a corpus, and NLP tools.
+  </li>
+</ul>
+</p>
+  <p align=right>
+    <a class="icon" style="font-size:0.9em" href='#top'><i class="fa-solid fa-arrow-up" aria-hidden="true"> top</i></a>
+  </p>
+
+<hr>
+
+<h2><a name='lab' class='lab'></a>Lab</h2>
+
+<p>
+PhD researchers I currently (co-)supervise:
+<ul>
+  <li style="font-size: 19px;">
+  <a href='#lab'>Yulia Yakubenkova</a> studies ecological and social drivers of vocal learning (with Dan Dediu)
+  </li>
+  <li style="font-size: 19px;">
+  <a href='https://jbruneaubongard.notion.site/' target='_blank'>Jeanne Bruneau-–Bongard</a> studies evolution and regularity in meaning (with Emmanuel Chemla)
+</li>
+  <li style="font-size: 19px;">
+    <a href='https://martagcasado.github.io/' target='_blank'>Marta Garcia-Casado</a> studies semantic change through language models (with Elisenda Bernal)
+  </li>
+  <li style="font-size: 19px;">
+    <a href='#lab'>Kebed Zagidov</a> studies & develops language resources for Avar
+  </li>
+  <li style="font-size: 19px;">
+    <a href='https://ecesuurker.github.io/' target='_blank'>Ecesu Ürker</a> studies language change and evolution (with Gemma Boleda)
+  </li>
+</ul>
+</p>
+  <p align=right>
+    <a class="icon" style="font-size:0.9em" href='#top'><i class="fa-solid fa-arrow-up" aria-hidden="true"> top</i></a>
+  </p>
+
+<hr>
+
+
+<h2><a name="about" class="about"></a>About</h2>
+  <p>
+    Since 2022, I'm a tenure-track professor at the <a href='https://www.upf.edu' target='_blank'>Universitat Pompeu Fabra</a>'s <a href='https://www.upf.edu/web/traduccio' target='_blank'>Department of Translation and Language Sciences</a>, where I'm a principal investigator in the <a href="https://www.upf.edu/web/colt" target='_blank'>Computational Linguistics and Linguistic Theory</a> group. Starting 2025 I'm also a <a href='https://en.wikipedia.org/wiki/Ram%C3%B3n_y_Cajal_(scholarship)' target='_blank'>Ramón y Cajal fellow</a>. 
+  </p>
+  <p>
+    In between 2019 and 2022, I was a postdoctoral researcher in the European Research Council project <a href='https://www.upf.edu/web/amore' target='_blank'>AMORE</a>, <i>A Distributional Model of Reference to Entities</i>, also at the Universitat Pompeu Fabra. From 2014 to 2018, I conducted doctoral research at the <a href="http://www.illc.uva.nl/" target='_blank'>Institute for Logic, Language and Computation</a> in Amsterdam. Within this period, I also spent time at the <a href="http://www.cisa.inf.ed.ac.uk/" target='_blank'>Artificial Intelligence and its Applications Institute</a> in Edinburgh and the <a href='https://www.csl.sony.fr/' target='_blank'>Sony Computer Science Laboratory</a> in Paris. My PhD research fellowship was awarded through <i>ESSENCE</i>, a Marie Sk&#0322odowska-Curie Initial Training Network on the <i>Evolution of Shared Semantics in Computational Environments</i>. Before moving to Amsterdam, I received a bachelor's and a master's in linguistics from the <a href="http://www.isi.hhu.de/en/departments/department-of-general-linguistics.html" target='_blank'>University of Düsseldorf</a>. From 2011 to 2014, I was also a research assistant in the <a href="http://www.sfb991.uni-duesseldorf.de/en/the-structure-of-representations-in-language-cognition-and-science/" target='_blank'>CRC 991</a> (Project B01: <em>Verb frames at the syntax-semantics interface</em>).
+  </p>
+  <p>
+    My name is pronounced [tʰɔmas bʁɔːχhagn] per Ripuarian pronounciation, or [toˈmas broxagen], per Chilean pronounciation. Feel free to mix, match, and create your own variant.
+  </p>
+
+  <p align=right>
+    <a class="icon" style="font-size:0.9em" href='#top'><i class="fa-solid fa-arrow-up" aria-hidden="true"> top</i></a>
+  </p>
+
+
+
+			</div><!-- /.container -->
+			<footer>
+    			<ul>
+				<li> Get in touch: </li>
+        			<li><a class="icon" style="font-size:12px;" href="mailto:thomasbrochhagen@gmail.com" target="_top"><i class="fa-solid fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+			        <li><a class="icon" style="font-size:12px;" href="https://scholar.google.nl/citations?user=UzxJ_XwAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a></li>
+				<li><a class="icon" style="font-size:12px;" href="https://github.com/brochhagen" target="_blank"><i class="fa-brands fa-square-github fa-2x"></i></a></li>
+			</ul>
+			</footer>
+		</body>
+	</html>

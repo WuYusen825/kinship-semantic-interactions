@@ -469,7 +469,7 @@
     ],
     "pdf_url": "https://www.researchgate.net/profile/T-Florian-Jaeger/publication/229079011_Mixed_effect_models_for_genetic_and_areal_dependencies_in_linguistic_typology/links/0912f500d7d933761e000000/Mixed-effect-models-for-genetic-and-areal-dependencies-in-linguistic-typology.pdf",
     "pdf_path": "literature/C/C08_Jaeger_2011_Mixed_effect_models_for_genetic_and_areal_dependencies_in_linguistic_typology.pdf",
-    "access_level": "full_text_pdf",
+    "access_level": "partial_pdf",
     "fulltext_path": "literature/C/C08_Jaeger_2011_Mixed_effect_models_for_genetic_and_areal_dependencies_in_linguistic_typology.txt",
     "pdf_sha256": "06b322baf9dfcf2a742e867d235c8187f5e5a81b86794bbb0b497980038367b1",
     "checked_on": "2026-10-14",
@@ -487,19 +487,26 @@
         "locator": "第285页概述；第290—296页地域控制讨论"
       }
     ],
-    "notes": "作者在ResearchGate公开上传的39页作者副本；该评论文章无独立摘要，不将开头正文误标为abstract。",
+    "notes": [
+      "作者在ResearchGate公开上传的39页作者副本；该评论文章无独立摘要，不将开头正文误标为abstract。",
+      "2026-10-15独立完整性复查：39页作者副本仅含印刷281–319，首页篇幅281–320，缺末页320参考文献；公开来源补全未成功。当前新版引用准入排除，旧稿保留历史范围。详见notes/revision_c08_completeness.md。"
+    ],
     "metadata_source": "notes/C/C08_crossref.json",
-    "citation_status": "included_fulltext",
-    "formal_counted": true,
-    "eligible_formal_read": true,
-    "eligible_read": true,
+    "citation_status": "excluded_incomplete_pdf",
+    "formal_counted": false,
+    "eligible_formal_read": false,
+    "eligible_read": false,
     "supplementary_preview": false,
     "txt_path": "literature/C/C08_Jaeger_2011_Mixed_effect_models_for_genetic_and_areal_dependencies_in_linguistic_typology.txt",
     "sha256": "06b322baf9dfcf2a742e867d235c8187f5e5a81b86794bbb0b497980038367b1",
     "pdf_magic_validated": true,
     "title_author_verified": true,
     "txt_sha256": "358dab7a7ca306e627567a31c302853794d38c87895a7f4728233f774abc6b1e",
-    "text_conversion_report": "literature/pdf_text_conversion_report.json"
+    "text_conversion_report": "literature/pdf_text_conversion_report.json",
+    "pdf_complete": false,
+    "pdf_completeness_status": "missing_printed_page_320",
+    "available_printed_pages": "281–319",
+    "printed_page_range_on_pdf_title": "281–320"
   },
   {
     "id": "C09",

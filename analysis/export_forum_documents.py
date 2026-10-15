@@ -5,7 +5,7 @@
 投稿 Word 使用宋体／黑体／Times New Roman，PDF 另以 Noto CJK 排版，二者正文相同。
 """
 from pathlib import Path
-import copy, re, shutil, subprocess, tempfile
+import argparse, copy, re, shutil, subprocess, tempfile
 from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
@@ -143,23 +143,31 @@ def format_docx(path, serif, sans, kai):
     d.save(path)
 
 def main():
+    parser = argparse.ArgumentParser(description='导出指定论坛稿，保留旧稿产物。')
+    parser.add_argument('--input', type=Path, default=SOURCE)
+    parser.add_argument('--suffix', default=None, help='输出文件后缀，v2 输入默认使用 _v2。')
+    args = parser.parse_args()
+    source = args.input.resolve()
+    suffix = args.suffix if args.suffix is not None else ('_v2' if source.stem.endswith('_v2') else '')
+    name = NAME + suffix
+    destination = source.parent
     with tempfile.TemporaryDirectory() as tmp:
         raw = Path(tmp)/'raw.docx'
-        subprocess.run(['pandoc', str(SOURCE), '-o', str(raw), '--resource-path', str(FORUM)], check=True, cwd=FORUM)
-        word = FORUM/(NAME+'.docx')
+        subprocess.run(['pandoc', str(source), '-o', str(raw), '--resource-path', str(destination)], check=True, cwd=destination)
+        word = destination/(name+'.docx')
         shutil.copy(raw, word)
         format_docx(word, '宋体', '黑体', '楷体')
-        pdf_docx = Path(tmp)/(NAME+'.docx')
+        pdf_docx = Path(tmp)/(name+'.docx')
         shutil.copy(raw, pdf_docx)
         format_docx(pdf_docx, 'Noto Serif CJK SC', 'Noto Sans CJK SC', 'Noto Serif CJK SC')
         subprocess.run(['soffice','--headless','--convert-to','pdf','--outdir',tmp,str(pdf_docx)], check=True, capture_output=True)
-        shutil.copy(Path(tmp)/(NAME+'.pdf'), FORUM/(NAME+'.pdf'))
-    text = SOURCE.read_text()
+        shutil.copy(Path(tmp)/(name+'.pdf'), destination/(name+'.pdf'))
+    text = source.read_text()
     abstract = text.split('**摘要：** ')[1].split('\n\n')[0].strip()
     keywords = text.split('**关键词：** ')[1].split('\n\n')[0].strip()
     han = len(re.findall(r'[一-鿿]', abstract))
-    (FORUM/'中文摘要_提交用.txt').write_text(f'{abstract}\n\n关键词：{keywords}\n')
-    print(f'Word：{word.name}；PDF：{NAME}.pdf；摘要汉字数 {han}')
+    (destination/('中文摘要_提交用'+suffix+'.txt')).write_text(f'{abstract}\n\n关键词：{keywords}\n')
+    print(f'Word：{word.name}；PDF：{name}.pdf；摘要汉字数 {han}')
 
 if __name__ == '__main__':
     main()

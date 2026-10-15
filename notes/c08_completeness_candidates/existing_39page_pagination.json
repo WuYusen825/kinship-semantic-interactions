@@ -1,0 +1,236 @@
+[
+  {
+    "pdf_page": 1,
+    "expected_printed_page": 281,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                      AUTHOR’S COPY | AUTORENEXEMPLAR                            Mixed effect models for genetic and areal                             dependencies in linguistic typology                       T. FLORIAN JAEGER, PETER GRAFF, WILLIAM CROFT, and                                         "
+  },
+  {
+    "pdf_page": 2,
+    "expected_printed_page": 282,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                  AUTHOR’S COPY | AUTORENEXEMPLAR     282     T. Florian Jaeger et al.  Atkinson (WALS has since then been updated, see below). That is, Atkinson fits his model 2,560-times, each time assuming a different origin of language. In order to reflect likely migration routes, distances from"
+  },
+  {
+    "pdf_page": 3,
+    "expected_printed_page": 283,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                    AUTHOR’S COPY | AUTORENEXEMPLAR                      Mixed effect models for genetic and areal dependencies              283  has a Type I error larger than 0). We begin with an overview of the statistical issues we address in this commentary.  1.2. Overview of the issues address"
+  },
+  {
+    "pdf_page": 4,
+    "expected_printed_page": 284,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                   AUTHOR’S COPY | AUTORENEXEMPLAR     284     T. Florian Jaeger et al.     Figure 2. Illustration of Simpson’s paradox based on simulated data. Here, a fail- ure to take into account the grouping structure of the data (pseudo language families, indicated by different colors) would r"
+  },
+  {
+    "pdf_page": 5,
+    "expected_printed_page": 285,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                  AUTHOR’S COPY | AUTORENEXEMPLAR                     Mixed effect models for genetic and areal dependencies        285     To test whether the distance from the origin effect holds once genetic group- ing structure is accounted for, Atkinson presents several auxiliary analyses in th"
+  },
+  {
+    "pdf_page": 6,
+    "expected_printed_page": 286,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                   AUTHOR’S COPY | AUTORENEXEMPLAR     286     T. Florian Jaeger et al.     In order to make our assessment of the approach taken by Atkinson accessi- ble to a broader audience of quantitative typologists, we begin by providing a brief introduction to mixed models. We then examine ho"
+  },
+  {
+    "pdf_page": 7,
+    "expected_printed_page": 287,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                     AUTHOR’S COPY | AUTORENEXEMPLAR                      Mixed effect models for genetic and areal dependencies                     287  (E2)     NormalizedPhonologicalDiversityi =          α+          βPopulationSize ∗ log(xi, PopulationSize ) +          βDistance ∗ xi, Distance + "
+  },
+  {
+    "pdf_page": 8,
+    "expected_printed_page": 288,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                  AUTHOR’S COPY | AUTORENEXEMPLAR     288    T. Florian Jaeger et al.  (E3)     NormalizedPhonologicalDiversityi =          αJ,K,M +          βPopulationSize ∗ log(xi, PopulationSize ) +          βDistance ∗ xi, Distance +          βPopulationSize:Distance ∗ log(xi, PopulationSize ) "
+  },
+  {
+    "pdf_page": 9,
+    "expected_printed_page": 289,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                      AUTHOR’S COPY | AUTORENEXEMPLAR                        Mixed effect models for genetic and areal dependencies                       289  ture is taken into account. That is, does the distance effect hold globally given all the idiosyncratic differences in the slope between lang"
+  },
+  {
+    "pdf_page": 10,
+    "expected_printed_page": 290,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                 AUTHOR’S COPY | AUTORENEXEMPLAR     290    T. Florian Jaeger et al.  (reducing the chance of spurious effects) and more power to detect real ef- fects. Mixed models hence promise to be a particularly useful tool for quan- titative typological research, as typological research freque"
+  },
+  {
+    "pdf_page": 11,
+    "expected_printed_page": 291,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                      AUTHOR’S COPY | AUTORENEXEMPLAR                        Mixed effect models for genetic and areal dependencies                      291  Table 1. Coefficient estimates, Standard error estimates, and p-values for the predictors in the mixed model described in Equation (E3). P-val"
+  },
+  {
+    "pdf_page": 12,
+    "expected_printed_page": 292,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                     AUTHOR’S COPY | AUTORENEXEMPLAR     292     T. Florian Jaeger et al.  nificant for any combination of the three grouping factors being included as random intercepts (family, subfamily, and genus).  3.2. Assumptions of linear mixed effect models Linear mixed models share several "
+  },
+  {
+    "pdf_page": 13,
+    "expected_printed_page": 293,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                    AUTHOR’S COPY | AUTORENEXEMPLAR                      Mixed effect models for genetic and areal dependencies             293               (A)                             (B)                              (C) Figure 3. Diagnostic plots for the model described in Equation (E3). The "
+  },
+  {
+    "pdf_page": 14,
+    "expected_printed_page": 294,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                       AUTHOR’S COPY | AUTORENEXEMPLAR     294       T. Florian Jaeger et al.     The ability of mixed models to efficiently control for shared properties be- tween languages that are members of the same language family, subfamily, or genus is based on the assumption that these diffe"
+  },
+  {
+    "pdf_page": 15,
+    "expected_printed_page": 295,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                     AUTHOR’S COPY | AUTORENEXEMPLAR                       Mixed effect models for genetic and areal dependencies                  295                 (A)                              (B)                               (C) Figure 4. Quantile to quantile plot of random intercepts by (A"
+  },
+  {
+    "pdf_page": 16,
+    "expected_printed_page": 296,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                      AUTHOR’S COPY | AUTORENEXEMPLAR     296       T. Florian Jaeger et al.  effect is observed for Niger-Congo, Nilo-Saharan, and Afro-Asiatic languages (all located on the African continent), a comparably strong opposite trend is observed for Indo-European, Sino-Tibetan, and Austr"
+  },
+  {
+    "pdf_page": 17,
+    "expected_printed_page": 297,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                    AUTHOR’S COPY | AUTORENEXEMPLAR                      Mixed effect models for genetic and areal dependencies               297                                                (A)                                                (B) Figure 5. (A) Distribution of the nine largest langu"
+  },
+  {
+    "pdf_page": 18,
+    "expected_printed_page": 298,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                    AUTHOR’S COPY | AUTORENEXEMPLAR     298     T. Florian Jaeger et al.  we might not find the same trend for all groups. Especially, for smaller groups, such as language families that are represented by only a few languages in the sample, we would not expect the trend to hold withi"
+  },
+  {
+    "pdf_page": 19,
+    "expected_printed_page": 299,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                    AUTHOR’S COPY | AUTORENEXEMPLAR                      Mixed effect models for genetic and areal dependencies                    299  or we try to exclude language families with too few languages in the sample. The first approach is more desirable but beyond the scope of this comme"
+  },
+  {
+    "pdf_page": 20,
+    "expected_printed_page": 300,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                    AUTHOR’S COPY | AUTORENEXEMPLAR     300      T. Florian Jaeger et al.  Table 2. Results of linear mixed model with the maximal random effect structure justified for language family based on exclusion of language families with less than k languages in the sample (* = significant; "
+  },
+  {
+    "pdf_page": 21,
+    "expected_printed_page": 301,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                  AUTHOR’S COPY | AUTORENEXEMPLAR                    Mixed effect models for genetic and areal dependencies        301  fects. Still, recent studies provide evidence that language contact co-determines typological distributions over and above genealogical relations (Cysouw (in press)"
+  },
+  {
+    "pdf_page": 22,
+    "expected_printed_page": 302,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                    AUTHOR’S COPY | AUTORENEXEMPLAR     302     T. Florian Jaeger et al.  ventions for stepwise model comparison, the criterion for excluding a random intercept was set to pχ 2 > .1; the criterion for including an intercept was set to                         Δ pχ 2 < .05. The result "
+  },
+  {
+    "pdf_page": 23,
+    "expected_printed_page": 303,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                       AUTHOR’S COPY | AUTORENEXEMPLAR                        Mixed effect models for genetic and areal dependencies               303  alternative and perhaps more principled way to account for language contact based on geographical distance.   Table 3. Coefficient estimates, standa"
+  },
+  {
+    "pdf_page": 24,
+    "expected_printed_page": 304,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                     AUTHOR’S COPY | AUTORENEXEMPLAR     304    T. Florian Jaeger et al.  4.3. Modelling language contact as a function of migration distance The goal of this section is to develop a simple measure of the average phono- logical diversity of a language’s neighbors. This measure can th"
+  },
+  {
+    "pdf_page": 25,
+    "expected_printed_page": 305,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                       AUTHOR’S COPY | AUTORENEXEMPLAR                        Mixed effect models for genetic and areal dependencies                          305     Figure 7. Quality of fit of a model as in Equation (E3), updated to also include a pre- dictor for the weighted areal normalized phono"
+  },
+  {
+    "pdf_page": 26,
+    "expected_printed_page": 306,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                   AUTHOR’S COPY | AUTORENEXEMPLAR     306     T. Florian Jaeger et al.                       (A)                                              (B) Figure 8. Illustration of weighted influence of the phonological diversity of neighboring languages on Albanian (A) and Hindi (B). The we"
+  },
+  {
+    "pdf_page": 27,
+    "expected_printed_page": 307,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                    AUTHOR’S COPY | AUTORENEXEMPLAR                      Mixed effect models for genetic and areal dependencies              307  Table 4. Coefficient estimates, standard error estimates, and p-values for the listed pre- dictors in a linear mixed model with random by-family and by-co"
+  },
+  {
+    "pdf_page": 28,
+    "expected_printed_page": 308,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                     AUTHOR’S COPY | AUTORENEXEMPLAR     308     T. Florian Jaeger et al.  5. Re-visiting the search for the origin of language We repeated the procedure employed in Atkinson to determine the best single origin of language with the updated model we have developed. We extracted all 2,"
+  },
+  {
+    "pdf_page": 29,
+    "expected_printed_page": 309,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                    AUTHOR’S COPY | AUTORENEXEMPLAR                      Mixed effect models for genetic and areal dependencies              309     Figure 9. Model quality depending on hypothesized point of language origin. Better fits correspond to higher improvements in terms of the model’s devia"
+  },
+  {
+    "pdf_page": 30,
+    "expected_printed_page": 310,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                 AUTHOR’S COPY | AUTORENEXEMPLAR     310    T. Florian Jaeger et al.  6. Summary and remaining issues  Atkinson (2011) set out to test the serial founder account, which, he argues, predicts that the diversity of the phonological inventory decreases with increas- ing distance from the"
+  },
+  {
+    "pdf_page": 31,
+    "expected_printed_page": 311,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                      AUTHOR’S COPY | AUTORENEXEMPLAR                        Mixed effect models for genetic and areal dependencies                         311  the levels of the grouping factors will be represented by only one language. This makes it difficult to assess whether the residuals of the"
+  },
+  {
+    "pdf_page": 32,
+    "expected_printed_page": 312,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                  AUTHOR’S COPY | AUTORENEXEMPLAR     312    T. Florian Jaeger et al.  Atkinson’s conclusion (see Figures 9 and 10): all models providing support to Atkinson’s conclusion cluster in the same region (Southwest Africa), which also is a likely candidate for the origin of language based "
+  },
+  {
+    "pdf_page": 33,
+    "expected_printed_page": 313,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                      AUTHOR’S COPY | AUTORENEXEMPLAR                        Mixed effect models for genetic and areal dependencies                      313  no support for the serial founder model from the distribution of phonological diversity across languages.  Received: 14 June 2011             "
+  },
+  {
+    "pdf_page": 34,
+    "expected_printed_page": 314,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                   AUTHOR’S COPY | AUTORENEXEMPLAR     314     T. Florian Jaeger et al.     Figure A-1. Shrinkage illustrated for the random intercepts by language family. Solid circles represent the means across languages in a family (both in terms of phonological diversity and the distance from th"
+  },
+  {
+    "pdf_page": 35,
+    "expected_printed_page": 315,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                   AUTHOR’S COPY | AUTORENEXEMPLAR                     Mixed effect models for genetic and areal dependencies            315     Figure B-1. Standardized residuals by continent. There are only mild signs of het- eroscedasticity (the residuals are not identically distributed between g"
+  },
+  {
+    "pdf_page": 36,
+    "expected_printed_page": 316,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                   AUTHOR’S COPY | AUTORENEXEMPLAR     316     T. Florian Jaeger et al.     Figure B-2. Standardized residuals by combination of continent and language family. Only families with at least 4 languages are included. There are signs of heteroscedas- ticity (the residuals are not identic"
+  },
+  {
+    "pdf_page": 37,
+    "expected_printed_page": 317,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                   AUTHOR’S COPY | AUTORENEXEMPLAR                     Mixed effect models for genetic and areal dependencies           317     Figure C-1. Heatmap of the 10,000 simulation runs for each of the simulated subsets of the data. The number at the top of each panel indicates the minimum n"
+  },
+  {
+    "pdf_page": 38,
+    "expected_printed_page": 318,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                     AUTHOR’S COPY | AUTORENEXEMPLAR     318      T. Florian Jaeger et al.     Figure D-1. Correlation matrix of genealogical and geographic effects on normalized phoneme diversity. For all 504 languages in the sample, the average by-family, by- subfamily, by-genus, by-continent, by-"
+  },
+  {
+    "pdf_page": 39,
+    "expected_printed_page": 319,
+    "printed_page_found_in_header": true,
+    "header_excerpt": "                      AUTHOR’S COPY | AUTORENEXEMPLAR                        Mixed effect models for genetic and areal dependencies                      319  Croft, William, Tanmoy Bhattacharya, Dave Kleinschmidt, D. Eric Smith & T. Florian Jaeger.      2011. Greenbergian universals, diachrony and s"
+  }
+]
