@@ -31,3 +31,6 @@
 - 独立代理实际复跑22项纯测试，核对实时纯枚举JSON，并对4140个划分的P5树存在性、计数和见证作完整复核，均通过；实际文献validator通过51项完整来源、57份PDF/TXT、399相对链接。
 - 54项旧analysis/旧稿清单中，只有导出接口与文献核验两项维护脚本变化；其余核心冻结/S1/旧稿保持原内容。源码与文献维护语法检查通过。
 - 准备材料将保存为可审阅的分支快照；本快照不是S2运行前协议冻结，不建立新实测结论或声称v2已经完成。作者合取定义仍待选择；结果之后的题目/贡献作者门也继续保留。
+
+- 准备快照实际提交：`621c6d346a4d4a24dde7156bcf42666671d357af`（`Prepare reviewed revision materials pending author definition choice`），已推送`origin/codex/major-revision`。`git ls-remote origin refs/heads/codex/major-revision`核对一致。该提交含明确标草案的protocol，不是正式pre-run冻结。
+- 本地研究镜像`/workspace/kinship_research`已同步此准备快照的533个Git跟踪文件，逐文件SHA-256差异为0，记录见`revision_preparation_sync.json`。本记录及日志随后一并同步；完整论文、S2实测与最终草稿PR仍未完成。
