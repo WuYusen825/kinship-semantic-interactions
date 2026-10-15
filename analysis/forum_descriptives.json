@@ -1,0 +1,480 @@
+{
+  "note": "事后描述统计，读取冻结输出生成；不重新拟合模型，不改变 results.json。",
+  "languages": 939,
+  "distinct_28_pair_vectors": 111,
+  "distinct_seven_cell_signatures": 79,
+  "cell_determined_languages": 557,
+  "cell_determined_share": 0.5931842385516507,
+  "named_types": [
+    {
+      "type": "不作区分：一个词形覆盖全部八类",
+      "signature": {
+        "001": 4,
+        "010": 4,
+        "011": 4,
+        "100": 4,
+        "101": 4,
+        "110": 4,
+        "111": 4
+      },
+      "languages": 60,
+      "share": 0.06389776357827476
+    },
+    {
+      "type": "只区分所指者性别（英语型）",
+      "signature": {
+        "001": 4,
+        "010": 4,
+        "011": 4,
+        "100": 0,
+        "101": 0,
+        "110": 0,
+        "111": 0
+      },
+      "languages": 91,
+      "share": 0.09691160809371673
+    },
+    {
+      "type": "区分所指者性别与相对年龄（日语、普通话型）",
+      "signature": {
+        "001": 4,
+        "010": 0,
+        "011": 0,
+        "100": 0,
+        "101": 0,
+        "110": 0,
+        "111": 0
+      },
+      "languages": 222,
+      "share": 0.2364217252396166
+    },
+    {
+      "type": "只区分相对年龄",
+      "signature": {
+        "001": 4,
+        "010": 0,
+        "011": 0,
+        "100": 4,
+        "101": 4,
+        "110": 0,
+        "111": 0
+      },
+      "languages": 115,
+      "share": 0.12247071352502663
+    },
+    {
+      "type": "只区分同性／异性兄弟姐妹",
+      "signature": {
+        "001": 0,
+        "010": 4,
+        "011": 0,
+        "100": 0,
+        "101": 4,
+        "110": 0,
+        "111": 4
+      },
+      "languages": 48,
+      "share": 0.051118210862619806
+    },
+    {
+      "type": "八类各不相同",
+      "signature": {
+        "001": 0,
+        "010": 0,
+        "011": 0,
+        "100": 0,
+        "101": 0,
+        "110": 0,
+        "111": 0
+      },
+      "languages": 4,
+      "share": 0.004259850905218318
+    }
+  ],
+  "secondary_distinctions": {
+    "sex_distinguished_for_elder_only": {
+      "languages": 84,
+      "families": 29,
+      "top_families": [
+        [
+          "Pama-Nyungan",
+          33
+        ],
+        [
+          "Algic",
+          12
+        ],
+        [
+          "Austronesian",
+          4
+        ]
+      ]
+    },
+    "age_distinguished_for_brothers_only": {
+      "languages": 24,
+      "families": 14,
+      "top_families": [
+        [
+          "Atlantic-Congo",
+          5
+        ],
+        [
+          "Pama-Nyungan",
+          4
+        ],
+        [
+          "Austronesian",
+          3
+        ]
+      ]
+    },
+    "age_distinguished_for_sisters_only": {
+      "languages": 9,
+      "families": 4,
+      "top_families": [
+        [
+          "Pama-Nyungan",
+          4
+        ],
+        [
+          "Indo-European",
+          3
+        ],
+        [
+          "Dravidian",
+          1
+        ]
+      ]
+    },
+    "sex_distinguished_for_younger_only": {
+      "languages": 12,
+      "families": 8,
+      "top_families": [
+        [
+          "Nakh-Daghestanian",
+          2
+        ],
+        [
+          "Arawakan",
+          2
+        ],
+        [
+          "Atlantic-Congo",
+          2
+        ]
+      ]
+    }
+  },
+  "forum_languages": [
+    {
+      "language": "英语",
+      "Language_ID": "p_englishstan1293",
+      "Name": "English",
+      "family": "Indo-European",
+      "forms": {
+        "meB": [
+          "ˈbɹʌðə"
+        ],
+        "myB": [
+          "ˈbɹʌðə"
+        ],
+        "meZ": [
+          "sĭs'tər"
+        ],
+        "myZ": [
+          "sĭs'tər"
+        ],
+        "feB": [
+          "ˈbɹʌðə"
+        ],
+        "fyB": [
+          "ˈbɹʌðə"
+        ],
+        "feZ": [
+          "sĭs'tər"
+        ],
+        "fyZ": [
+          "sĭs'tər"
+        ]
+      },
+      "shared_pairs_by_cell": {
+        "001": 4,
+        "010": 4,
+        "011": 4,
+        "100": 0,
+        "101": 0,
+        "110": 0,
+        "111": 0
+      },
+      "type": "只区分所指者性别（英语型）"
+    },
+    {
+      "language": "法语",
+      "Language_ID": "v_standardfrenchstan1290",
+      "Name": "French",
+      "family": "Indo-European",
+      "forms": {
+        "meB": [
+          "ainé"
+        ],
+        "myB": [
+          "frère"
+        ],
+        "meZ": [
+          "ainée"
+        ],
+        "myZ": [
+          "soeur"
+        ],
+        "feB": [
+          "ainé"
+        ],
+        "fyB": [
+          "frère"
+        ],
+        "feZ": [
+          "ainée"
+        ],
+        "fyZ": [
+          "soeur"
+        ]
+      },
+      "shared_pairs_by_cell": {
+        "001": 4,
+        "010": 0,
+        "011": 0,
+        "100": 0,
+        "101": 0,
+        "110": 0,
+        "111": 0
+      },
+      "type": "区分所指者性别与相对年龄（日语、普通话型）"
+    },
+    {
+      "language": "德语",
+      "Language_ID": "p_germanstan1295",
+      "Name": "German",
+      "family": "Indo-European",
+      "forms": {
+        "meB": [
+          "bʀuːdɐ"
+        ],
+        "myB": [
+          "bʀuːdɐ"
+        ],
+        "meZ": [
+          "ˈʃvɛstɐ"
+        ],
+        "myZ": [
+          "ˈʃvɛstɐ"
+        ],
+        "feB": [
+          "bʀuːdɐ"
+        ],
+        "fyB": [
+          "bʀuːdɐ"
+        ],
+        "feZ": [
+          "ˈʃvɛstɐ"
+        ],
+        "fyZ": [
+          "ˈʃvɛstɐ"
+        ]
+      },
+      "shared_pairs_by_cell": {
+        "001": 4,
+        "010": 4,
+        "011": 4,
+        "100": 0,
+        "101": 0,
+        "110": 0,
+        "111": 0
+      },
+      "type": "只区分所指者性别（英语型）"
+    },
+    {
+      "language": "日语",
+      "Language_ID": "v_japanesenucl1643",
+      "Name": "Japanese",
+      "family": "Japonic",
+      "forms": {
+        "meB": [
+          "ani"
+        ],
+        "myB": [
+          "otōto"
+        ],
+        "meZ": [
+          "ane"
+        ],
+        "myZ": [
+          "imōto"
+        ],
+        "feB": [
+          "ani"
+        ],
+        "fyB": [
+          "otōto"
+        ],
+        "feZ": [
+          "ane"
+        ],
+        "fyZ": [
+          "imōto"
+        ]
+      },
+      "shared_pairs_by_cell": {
+        "001": 4,
+        "010": 0,
+        "011": 0,
+        "100": 0,
+        "101": 0,
+        "110": 0,
+        "111": 0
+      },
+      "type": "区分所指者性别与相对年龄（日语、普通话型）"
+    },
+    {
+      "language": "俄语",
+      "Language_ID": "p_russianruss1263a",
+      "Name": "Russian",
+      "family": "Indo-European",
+      "forms": {
+        "meB": [
+          "брат"
+        ],
+        "myB": [
+          "брат"
+        ],
+        "meZ": [
+          "сестра"
+        ],
+        "myZ": [
+          "сестра"
+        ],
+        "feB": [
+          "брат"
+        ],
+        "fyB": [
+          "брат"
+        ],
+        "feZ": [
+          "сестра"
+        ],
+        "fyZ": [
+          "сестра"
+        ]
+      },
+      "shared_pairs_by_cell": {
+        "001": 4,
+        "010": 4,
+        "011": 4,
+        "100": 0,
+        "101": 0,
+        "110": 0,
+        "111": 0
+      },
+      "type": "只区分所指者性别（英语型）"
+    },
+    {
+      "language": "西班牙语",
+      "Language_ID": "v_standardspanishstan1288",
+      "Name": "Spanish",
+      "family": "Indo-European",
+      "forms": {
+        "meB": [
+          "hermano mayor"
+        ],
+        "myB": [
+          "hermano menor"
+        ],
+        "meZ": [
+          "hermana mayor"
+        ],
+        "myZ": [
+          "hermana menor"
+        ],
+        "feB": [
+          "hermano mayor"
+        ],
+        "fyB": [
+          "hermano menor"
+        ],
+        "feZ": [
+          "hermana mayor"
+        ],
+        "fyZ": [
+          "hermana menor"
+        ]
+      },
+      "shared_pairs_by_cell": {
+        "001": 4,
+        "010": 0,
+        "011": 0,
+        "100": 0,
+        "101": 0,
+        "110": 0,
+        "111": 0
+      },
+      "type": "区分所指者性别与相对年龄（日语、普通话型）"
+    },
+    {
+      "language": "普通话",
+      "Language_ID": "v_mandarinchinamand1415",
+      "Name": "Mandarin Chinese",
+      "family": "Sino-Tibetan",
+      "forms": {
+        "meB": [
+          "ge ge"
+        ],
+        "myB": [
+          "di di"
+        ],
+        "meZ": [
+          "jie jie"
+        ],
+        "myZ": [
+          "mei mei"
+        ],
+        "feB": [
+          "ge ge"
+        ],
+        "fyB": [
+          "di di"
+        ],
+        "feZ": [
+          "jie jie"
+        ],
+        "fyZ": [
+          "mei mei"
+        ]
+      },
+      "shared_pairs_by_cell": {
+        "001": 4,
+        "010": 0,
+        "011": 0,
+        "100": 0,
+        "101": 0,
+        "110": 0,
+        "111": 0
+      },
+      "type": "区分所指者性别与相对年龄（日语、普通话型）"
+    }
+  ],
+  "multiword_forms": {
+    "forms_total": 9830,
+    "forms_with_space": 960,
+    "systems_with_space_form": 179
+  },
+  "classical_over_raw_primary": {
+    "gain": 0.0025806790008449762,
+    "ci95": [
+      -0.004826402129619612,
+      0.008116300001220322
+    ],
+    "families_positive": 41,
+    "families_negative": 84,
+    "gain_excluding_largest_family": -0.0015361135665966843,
+    "share_of_raw_to_pairwise_gain": 0.5834078492590539
+  }
+}
