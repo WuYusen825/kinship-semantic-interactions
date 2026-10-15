@@ -1,0 +1,430 @@
+{
+  "checked_utc": "2026-10-15T17:37:35.034789+00:00",
+  "passed": true,
+  "manuscript_sha256": "d5e4c09b6adfd361af74ade6d2c4ef263553bd4ef6905ac1aa4077792e8eeb35",
+  "scope": "正文为第一节起至结论末；含节标题、表格、图题；排除摘要、数据代码说明、参考文献",
+  "body_han_with_tables_captions_headings": 5919,
+  "body_prose_han_excluding_tables_captions_headings": 5520,
+  "abstract_han": 232,
+  "references": 42,
+  "figures": 2,
+  "tables": 4,
+  "word_count_method": "LibreOffice打开DOCX后转ODT读取刷新document-statistic；全稿统计写回DOCX的Word扩展属性。环境无Microsoft Word，未声称运行其专有计数器。",
+  "body_word_compatible_statistics": {
+    "table-count": 4,
+    "image-count": 2,
+    "object-count": 0,
+    "page-count": 1,
+    "paragraph-count": 135,
+    "word-count": 7151,
+    "character-count": 8996,
+    "non-whitespace-character-count": 8857
+  },
+  "full_docx_statistics": {
+    "table-count": 4,
+    "image-count": 2,
+    "object-count": 0,
+    "page-count": 1,
+    "paragraph-count": 185,
+    "word-count": 8526,
+    "character-count": 17529,
+    "non-whitespace-character-count": 16451
+  },
+  "actual_pdf_pages": 18,
+  "docx_pdf_han_sequence_equal": true,
+  "docx_pdf_han_characters": 6269,
+  "all_six_main_headings_in_pdf": true,
+  "pagination_note": "ODT导入统计中的page-count为缓存值，不作实际页数使用，也不写回Word页数属性；实际页数由最终PDF读取。",
+  "frozen_baseline_files": [
+    {
+      "path": "analysis/README.md",
+      "baseline_sha256": "ff84742c8d06603cd2d9afac88557df9f00e0f9ffa583c573d4c900e8a8f633b",
+      "actual_sha256": "ff84742c8d06603cd2d9afac88557df9f00e0f9ffa583c573d4c900e8a8f633b",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/analysis_report.md",
+      "baseline_sha256": "103cdcc2fba05e20b350950abd9954f3a89052240b2cf96990dc056e320dc8c7",
+      "actual_sha256": "103cdcc2fba05e20b350950abd9954f3a89052240b2cf96990dc056e320dc8c7",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/analyze.py",
+      "baseline_sha256": "efcf44fe788b63af24fa5827fdc26e0938fee2df3ec4ff4d6a311fb90210332f",
+      "actual_sha256": "efcf44fe788b63af24fa5827fdc26e0938fee2df3ec4ff4d6a311fb90210332f",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/audit.py",
+      "baseline_sha256": "5758aedc5565a8bc036f8f1fda785a9a3927f1b61251b1c26b8f11c777c69cb5",
+      "actual_sha256": "5758aedc5565a8bc036f8f1fda785a9a3927f1b61251b1c26b8f11c777c69cb5",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/build_documents.py",
+      "baseline_sha256": "e860bb36ce26a281896f782f9e23616bde6c2a0070f739bc7bf516831e300963",
+      "actual_sha256": "e860bb36ce26a281896f782f9e23616bde6c2a0070f739bc7bf516831e300963",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/category_forms_primary.csv",
+      "baseline_sha256": "c5e9d9f49cf0cb523568ddab54d2644483e009bcceb93cd6398868e55a5caa65",
+      "actual_sha256": "c5e9d9f49cf0cb523568ddab54d2644483e009bcceb93cd6398868e55a5caa65",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/convert_literature_pdf_to_txt.py",
+      "baseline_sha256": "84d70815f387d99e600ec3cd45c522c68869827b4530df46db5c2638ac447125",
+      "actual_sha256": "84d70815f387d99e600ec3cd45c522c68869827b4530df46db5c2638ac447125",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/cv_coefficients.csv",
+      "baseline_sha256": "33723c5f3df24e027b314a0c0260e5c8bd821b3960cec4b1c2196cade1b919b9",
+      "actual_sha256": "33723c5f3df24e027b314a0c0260e5c8bd821b3960cec4b1c2196cade1b919b9",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/cv_fit_diagnostics.csv",
+      "baseline_sha256": "499e9c5dbdb3f23909e27fb8f15c0ab41e0b7cd2b7b554b0f5a0ddf24ff69b13",
+      "actual_sha256": "499e9c5dbdb3f23909e27fb8f15c0ab41e0b7cd2b7b554b0f5a0ddf24ff69b13",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/excluded_genealogy.csv",
+      "baseline_sha256": "44fedb081bca94c43574b467bbe910b291a703465fcecb7ebd766a80b0c847cc",
+      "actual_sha256": "44fedb081bca94c43574b467bbe910b291a703465fcecb7ebd766a80b0c847cc",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/execution.log",
+      "baseline_sha256": "8f06066249ed4b0e54b929ac57b36877efa357b6ed0645c9889e840dfabe40c8",
+      "actual_sha256": "8f06066249ed4b0e54b929ac57b36877efa357b6ed0645c9889e840dfabe40c8",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/export_documents.py",
+      "baseline_sha256": "16037f0c8e1d7287a1923c757831e0872570562efad31681412c1eedaa64d883",
+      "actual_sha256": "16037f0c8e1d7287a1923c757831e0872570562efad31681412c1eedaa64d883",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/export_forum_documents.py",
+      "baseline_sha256": "3e4a1b854b481bb0160d8ee2ec6b37ce00c25f6251e9b35a23cac37eff7d2948",
+      "actual_sha256": "02a0d85fecc0a327da875631ad8f4ba6323fd6d09a08a0e37b987d991160a390",
+      "unchanged": false,
+      "maintenance_exception": "计划授权指定输入与v2导出接口"
+    },
+    {
+      "path": "analysis/extension_descriptive_summary.csv",
+      "baseline_sha256": "7496f0fc5a124ea75f5251f70ea9b7d5e40b55f8bb3675ccb50235e82cc90ce3",
+      "actual_sha256": "7496f0fc5a124ea75f5251f70ea9b7d5e40b55f8bb3675ccb50235e82cc90ce3",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/extension_pairs_descriptive.csv",
+      "baseline_sha256": "a48aa1d15b299741fc428e6799064ca78dafee335658ebccaa5ccd686ee44f4b",
+      "actual_sha256": "a48aa1d15b299741fc428e6799064ca78dafee335658ebccaa5ccd686ee44f4b",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/fetch_data.py",
+      "baseline_sha256": "d6cecc73c4a13430ae6cb12d9686870677c739b782d7176fbee6ebe23361f699",
+      "actual_sha256": "d6cecc73c4a13430ae6cb12d9686870677c739b782d7176fbee6ebe23361f699",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/forum_descriptives.json",
+      "baseline_sha256": "b4fdb778b2d056b53b971e0bfceaaf6f8c902dad06ff84304533d33d0197d8d8",
+      "actual_sha256": "b4fdb778b2d056b53b971e0bfceaaf6f8c902dad06ff84304533d33d0197d8d8",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/forum_descriptives.py",
+      "baseline_sha256": "2bfc2fc48859d7ab03efba552774230fc8a42da0de634428e6cb0465bdd7b85a",
+      "actual_sha256": "2bfc2fc48859d7ab03efba552774230fc8a42da0de634428e6cb0465bdd7b85a",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/fullfit_coefficients.csv",
+      "baseline_sha256": "67341e3655cd9a22e602e94ff7aa3279d3542ebebea67128aa7f94481a0d85c2",
+      "actual_sha256": "67341e3655cd9a22e602e94ff7aa3279d3542ebebea67128aa7f94481a0d85c2",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/language_oof_scores.csv",
+      "baseline_sha256": "4fcf41a548eaab2367dee230c3c58e641523b77e45a7c431cbbd0bf71cbd5c65",
+      "actual_sha256": "4fcf41a548eaab2367dee230c3c58e641523b77e45a7c431cbbd0bf71cbd5c65",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/oof_predictions.csv",
+      "baseline_sha256": "f19e8c546da2a0beea743ae18472674021d5f2198e79fa3e09d53780845611d7",
+      "actual_sha256": "f19e8c546da2a0beea743ae18472674021d5f2198e79fa3e09d53780845611d7",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/package_deliverables.py",
+      "baseline_sha256": "8e936df83b5250e7dfa56c5657e3797f4b7300b385473a9415b70ae123c5ff42",
+      "actual_sha256": "d63cd5ecfbf69d8b427a04ed86d3c10d736540966f805f23cbafe1bd2fc8ab47",
+      "unchanged": false,
+      "maintenance_exception": "资料包动态统计51完整来源、57源PDF，避免写死旧数量"
+    },
+    {
+      "path": "analysis/pairs_C0.1.csv",
+      "baseline_sha256": "47e676a8fe2e988a40a45a5dd558f61cfa85b4f1a528a6a7bf4153d8e128dfbf",
+      "actual_sha256": "47e676a8fe2e988a40a45a5dd558f61cfa85b4f1a528a6a7bf4153d8e128dfbf",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/pairs_C10.csv",
+      "baseline_sha256": "47e676a8fe2e988a40a45a5dd558f61cfa85b4f1a528a6a7bf4153d8e128dfbf",
+      "actual_sha256": "47e676a8fe2e988a40a45a5dd558f61cfa85b4f1a528a6a7bf4153d8e128dfbf",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/pairs_coverage75.csv",
+      "baseline_sha256": "b409203003c59c3587bca439abf7249bc0a1150f434efbc41784d795697d69b5",
+      "actual_sha256": "b409203003c59c3587bca439abf7249bc0a1150f434efbc41784d795697d69b5",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/pairs_equal_sets.csv",
+      "baseline_sha256": "81c028fcf08ea22f341318b9f79790547eecc24b0440614ef9161cbf73e29c18",
+      "actual_sha256": "81c028fcf08ea22f341318b9f79790547eecc24b0440614ef9161cbf73e29c18",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/pairs_primary.csv",
+      "baseline_sha256": "47e676a8fe2e988a40a45a5dd558f61cfa85b4f1a528a6a7bf4153d8e128dfbf",
+      "actual_sha256": "47e676a8fe2e988a40a45a5dd558f61cfa85b4f1a528a6a7bf4153d8e128dfbf",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/pairs_single_source.csv",
+      "baseline_sha256": "b3745fe0e61e7ad04ea05ab975a972c36743f516088d52bcb2fbf68f2bd6a675",
+      "actual_sha256": "b3745fe0e61e7ad04ea05ab975a972c36743f516088d52bcb2fbf68f2bd6a675",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/pairs_singleton_only.csv",
+      "baseline_sha256": "3b2692550dcabe1ca965d932eb10dd6fb29771110255983389b4a781df1c91a7",
+      "actual_sha256": "3b2692550dcabe1ca965d932eb10dd6fb29771110255983389b4a781df1c91a7",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/pairs_unpenalized.csv",
+      "baseline_sha256": "47e676a8fe2e988a40a45a5dd558f61cfa85b4f1a528a6a7bf4153d8e128dfbf",
+      "actual_sha256": "47e676a8fe2e988a40a45a5dd558f61cfa85b4f1a528a6a7bf4153d8e128dfbf",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/preferred_sources.csv",
+      "baseline_sha256": "bdbb6f8c4321351f81c5d541af11999d0589ae83c8371009b8208d527a94cf69",
+      "actual_sha256": "bdbb6f8c4321351f81c5d541af11999d0589ae83c8371009b8208d527a94cf69",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/protocol_addendum_before_outcomes.md",
+      "baseline_sha256": "fed46af328996ddd7bf7f758908f8e0cb1f1d4396f6a7b0a6432092a9e5cbddf",
+      "actual_sha256": "fed46af328996ddd7bf7f758908f8e0cb1f1d4396f6a7b0a6432092a9e5cbddf",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/protocol_frozen.md",
+      "baseline_sha256": "94abdcb52dffc6fedb917bab53448e25fbeec2ff1e64eda58d561a8da2cdadb3",
+      "actual_sha256": "94abdcb52dffc6fedb917bab53448e25fbeec2ff1e64eda58d561a8da2cdadb3",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/provenance.json",
+      "baseline_sha256": "7ec9a639666b5a8749330084529594cb859cfcd763af28f40fa4274dbc32f437",
+      "actual_sha256": "7ec9a639666b5a8749330084529594cb859cfcd763af28f40fa4274dbc32f437",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/requirements.txt",
+      "baseline_sha256": "9ec82eabd11d4edb2ad4fa3483de5f0330aa06ea7a57c6beb2800417f9a44262",
+      "actual_sha256": "9ec82eabd11d4edb2ad4fa3483de5f0330aa06ea7a57c6beb2800417f9a44262",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/requirements_text.txt",
+      "baseline_sha256": "aade9116a68e72edfe379d4d22703192c60ef9735eba971db27ad15ae91a3188",
+      "actual_sha256": "aade9116a68e72edfe379d4d22703192c60ef9735eba971db27ad15ae91a3188",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/results.json",
+      "baseline_sha256": "a715b5b6c0d585cec26c636c629c04ae620baddf78f8c7cbb48d338dc2784dd1",
+      "actual_sha256": "a715b5b6c0d585cec26c636c629c04ae620baddf78f8c7cbb48d338dc2784dd1",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/robustness_gain.png",
+      "baseline_sha256": "b46c599c08ab5d30e78e0fc184d6e95d9465b66bd6488cbd5d28521eeb40ead2",
+      "actual_sha256": "b46c599c08ab5d30e78e0fc184d6e95d9465b66bd6488cbd5d28521eeb40ead2",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/robustness_gain.svg",
+      "baseline_sha256": "38cf80da26708dddc870345ba192493aa365458cd51b94ff4e64199198949933",
+      "actual_sha256": "38cf80da26708dddc870345ba192493aa365458cd51b94ff4e64199198949933",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/selected_languages_structural.csv",
+      "baseline_sha256": "ffc162e1ab5562b36dd74f336d2e32b1c8ba03ccfd497ed8a8b53ef460484370",
+      "actual_sha256": "ffc162e1ab5562b36dd74f336d2e32b1c8ba03ccfd497ed8a8b53ef460484370",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/seven_cell_fit.png",
+      "baseline_sha256": "cf7dcf696fe096b51d0cd9bf1d48461c8d6544e6c4aecb7d5df97ef55935126c",
+      "actual_sha256": "cf7dcf696fe096b51d0cd9bf1d48461c8d6544e6c4aecb7d5df97ef55935126c",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/seven_cell_fit.svg",
+      "baseline_sha256": "52fb64d2e12972d08c2712b803323cb9242956c2f7738d08cee291d8a5983780",
+      "actual_sha256": "52fb64d2e12972d08c2712b803323cb9242956c2f7738d08cee291d8a5983780",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/seven_cell_probabilities.csv",
+      "baseline_sha256": "6914ada19dec6b9d3bcb29db9d9cd8c57af616ce9c3eecf27639f12f7fb899e3",
+      "actual_sha256": "6914ada19dec6b9d3bcb29db9d9cd8c57af616ce9c3eecf27639f12f7fb899e3",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/sibling_records_selected.csv",
+      "baseline_sha256": "4eb071082617760c8ba0a6c621eb9b04421d704a8687544d0d88437ccb2d2a59",
+      "actual_sha256": "4eb071082617760c8ba0a6c621eb9b04421d704a8687544d0d88437ccb2d2a59",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/structural_audit.json",
+      "baseline_sha256": "326f5058c3d0d49fc517482052fca6dae873f2970874a3b22c8fa6dbf8f4a17a",
+      "actual_sha256": "326f5058c3d0d49fc517482052fca6dae873f2970874a3b22c8fa6dbf8f4a17a",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/supplementary_s1/protocol_s1.md",
+      "baseline_sha256": "3937ef2c55cfd4406da01f51974cbf16d26e40cd3923de9567643f95c71023c1",
+      "actual_sha256": "3937ef2c55cfd4406da01f51974cbf16d26e40cd3923de9567643f95c71023c1",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/supplementary_s1/run_s1.py",
+      "baseline_sha256": "8babad5eea93b1af008567de970fd0f0bcd1b5aa0d0985c50c686846bf74c064",
+      "actual_sha256": "8babad5eea93b1af008567de970fd0f0bcd1b5aa0d0985c50c686846bf74c064",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/supplementary_s1/s1_fold_selection.csv",
+      "baseline_sha256": "b6c76b2414fe82fc4bc31ee8f886e5dfb89ce022dc1a984e36962071acc16368",
+      "actual_sha256": "b6c76b2414fe82fc4bc31ee8f886e5dfb89ce022dc1a984e36962071acc16368",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/supplementary_s1/s1_language_scores.csv",
+      "baseline_sha256": "70ae2422af3a8c15fe19ef5143320020ae36b4d22e7d925cf065def09ace192b",
+      "actual_sha256": "70ae2422af3a8c15fe19ef5143320020ae36b4d22e7d925cf065def09ace192b",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/supplementary_s1/s1_report.md",
+      "baseline_sha256": "0ca8ef734edd8a46e3f7df6cb55faaa590ac520e327c86281fec4269b81c6a0a",
+      "actual_sha256": "0ca8ef734edd8a46e3f7df6cb55faaa590ac520e327c86281fec4269b81c6a0a",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/supplementary_s1/s1_results.json",
+      "baseline_sha256": "98b23250460a7695dcbcca6dd3d3146746de7b3abce382eb66835330e69f53e9",
+      "actual_sha256": "98b23250460a7695dcbcca6dd3d3146746de7b3abce382eb66835330e69f53e9",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/supplementary_s1/s1_run.log",
+      "baseline_sha256": "d6e3c312d230e57c2eccd3796cb36c92980bfa493593893848557514c40cc7e8",
+      "actual_sha256": "d6e3c312d230e57c2eccd3796cb36c92980bfa493593893848557514c40cc7e8",
+      "unchanged": true,
+      "maintenance_exception": null
+    },
+    {
+      "path": "analysis/validate_literature_update.py",
+      "baseline_sha256": "27824ba63fe1c1d82892099c6f93f6aa2a2bfb502bbf08064fce8096a245dd8b",
+      "actual_sha256": "427027809136ec72e6cf23e8cc95b3677997ab2c5102d8adac2387985aba85eb",
+      "unchanged": false,
+      "maintenance_exception": "新文献D组、完整性排除及动态数量核验"
+    },
+    {
+      "path": "analysis/verify_results_independent.py",
+      "baseline_sha256": "d3009f546dbd6f11ec1de4993686ca8984178d21bd44da8478ff0ccb0b4b8176",
+      "actual_sha256": "d3009f546dbd6f11ec1de4993686ca8984178d21bd44da8478ff0ccb0b4b8176",
+      "unchanged": true,
+      "maintenance_exception": null
+    }
+  ],
+  "unchanged_count": 51,
+  "maintenance_exceptions": {
+    "analysis/export_forum_documents.py": "计划授权指定输入与v2导出接口",
+    "analysis/validate_literature_update.py": "新文献D组、完整性排除及动态数量核验",
+    "analysis/package_deliverables.py": "资料包动态统计51完整来源、57源PDF，避免写死旧数量"
+  },
+  "artifacts_sha256": {
+    "outputs/forum/论坛稿_v2.md": "d5e4c09b6adfd361af74ade6d2c4ef263553bd4ef6905ac1aa4077792e8eeb35",
+    "outputs/forum/词与世界论坛-英语-吴雨森、瞿唯艺_v2.docx": "6814323b0f885b187fb2832e1eebfbf74c8aa0444943e76c46186c1216da890b",
+    "outputs/forum/词与世界论坛-英语-吴雨森、瞿唯艺_v2.pdf": "c37680e29cb0578ef1df9f0125a120e550e604cbeb32541a0f4167e2a59a9afb",
+    "outputs/forum/中文摘要_提交用_v2.txt": "dcecad263b9ff03c46374f77b8314c67ff10762fe143a42a0b18c0b6348f9482"
+  }
+}

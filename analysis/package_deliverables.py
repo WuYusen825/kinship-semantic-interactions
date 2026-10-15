@@ -17,7 +17,12 @@ for folder in ['outputs','literature','analysis','notes']:
   files.append(p)
 files=sorted(set(files))
 assert all(p.exists() for p in files)
-manifest={'资料包说明':'46项正式全文文献、51个源PDF及对应TXT；2项无全文资料不引用，早期版本和补充文件不重复计数。','files':[]}
+records=json.loads((ROOT/'outputs/文献登记表.json').read_text())
+formal=sum(r.get('citation_status')=='included_fulltext' for r in records)
+incomplete=[r['id'] for r in records if r.get('citation_status')=='excluded_incomplete_pdf']
+pdf_count=sum(1 for _ in (ROOT/'literature').rglob('*.pdf'))
+manifest={'资料包说明':f'{formal}项完整全文来源、{pdf_count}个源PDF及对应TXT；A02、A05无全文，'+(','.join(incomplete) or '无')+'为不完整副本，均不进入新版引用；早期版本和补充文件不重复计数。',
+          '完整全文来源数':formal,'源PDF数':pdf_count,'不完整副本排除':incomplete,'files':[]}
 for p in files:
  manifest['files'].append({'path':str(p.relative_to(ROOT)),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
 m=ROOT/'outputs/资料包文件清单.json';m.write_text(json.dumps(manifest,ensure_ascii=False,indent=2));files.append(m)

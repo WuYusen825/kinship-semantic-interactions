@@ -2,11 +2,28 @@
 
 本仓库保存已经执行的公开数据库分析、当前中文研究工作稿、文献全文和可复现结果，并提供后续研究与复查交接。
 
-大修准备位于`codex/major-revision`。现有[验收矩阵](notes/revision_acceptance_matrix.md)、[文献综合矩阵](outputs/文献综合矩阵.md)、[理论约束对照](outputs/理论约束对照表.md)、[新颖性核查](outputs/理论新颖性核查.md)、[测量复核](outputs/数据测量复核.md)及[合取定义决策说明](analysis/supplementary_s2/structural_theory.md)。合取定义依作者修改计划等待选择；S2协议仍是草案，尚未运行实测，也未形成v2论文。[两轮独立评审中的第二轮报告](notes/review/independent_revision_review_round2.md)认为准备材料可接受；整体修订尚未完成，S2与v2仍须后续独立验收。以下统计表仍属于保留的冻结分析。
+大修分支为`codex/major-revision`。S2最终协议于实测前单独提交（`6ba7afb`）；它写于原结果已知之后，属于事后补充分析。旧稿、冻结结果和S1保留。v2已完成并通过第五轮独立复查，逐处数字、引文及独立全稿核查记录单列；以下提供新分析与历史分析的独立入口。
 
-研究的问题是：所指者性别、相对年龄和参照者性别的独立贡献，能否预测两个兄弟姐妹类别是否共享词形？加入传统“同性／异性兄弟姐妹”特征之后，进一步的组合项还能带来多少跨语系预测增益？
+研究的问题是：兄弟姐妹词项是否呈现合取与层级约束，以及显式条件结构能否提高未见谱系和地域上的共用词形预测。划分结构、类别对预测与测量边界分别检验。
 
-## 研究与主要结果
+## S2与论坛稿v2
+
+- [v2中文稿](outputs/forum/论坛稿_v2.md)｜[v2 Word](outputs/forum/词与世界论坛-英语-吴雨森、瞿唯艺_v2.docx)｜[v2 PDF](outputs/forum/词与世界论坛-英语-吴雨森、瞿唯艺_v2.pdf)｜[v2摘要](outputs/forum/中文摘要_提交用_v2.txt)。
+- [运行前协议](analysis/supplementary_s2/protocol_s2.md)｜[S2报告](analysis/supplementary_s2/s2_report.md)｜[完整结果JSON](analysis/supplementary_s2/s2_results.json)。
+- [全部420项交叉比较](analysis/supplementary_s2/s2_crossed_comparisons.csv)｜[交叉敏感性图](analysis/supplementary_s2/s2_multiverse_forest.png)｜[逐系统分数](analysis/supplementary_s2/s2_language_scores.csv)。
+- [数字逐处核验](notes/manuscript_number_check.json)｜[引文页码核对](notes/revision_citation_check.md)｜[导出与冻结核验](notes/revision_artifact_check.json)。
+- [文献综合矩阵](outputs/文献综合矩阵.md)｜[理论约束](outputs/理论约束对照表.md)｜[测量复核](outputs/数据测量复核.md)｜[独立S2审计](notes/review/independent_revision_review_round3.md)｜[最终整稿复审](notes/review/independent_revision_review_round5.md)。
+
+主样本仍为939个系统、125个谱系组。625个单词形系统中，主四特征定义下有22个非合取系统；年长侧与同性侧的次级区分方向得到支持，男性侧方向未通过调整后的检验。条件模型相对原始加性有正增益，相对七差异单元交互模型的区间包含零；未见地域验证没有支持其优势。
+
+| 主语系留出、无惩罚、谱系等权 | 对数损失增益 | 固定折外预测的谱系自助95%区间 |
+|---|---:|---|
+| 条件模型相对原始加性 | 0.0145 | [0.0076, 0.0219] |
+| 条件模型相对七单元交互 | 0.0018 | [-0.0005, 0.0039] |
+
+20组测量×估计×权重条件、三种验证及5000次系数重拟合均保存。地域缺失30个系统，地域验证和GLMM使用909个已知地域系统；三个GLMM均未达到预定收敛标准，保留失败诊断，不作稳定的模型化不确定性推断。其余预测和结构结论不使用这些失败近似后验。
+
+## 原冻结分析：C=1历史参照
 
 主样本包含 **939个语言记录系统、125个谱系组、26,292个无序类别对**。研究以Kinbank词形记录为基础，使用Glottolog官方分类整组留出语系，比较三个模型：
 
@@ -31,7 +48,7 @@
 
 当前可用的正式全文文献为 **51项独立学术著作，全部具有PDF全文和同名TXT**。A02、A05仍无全文；独立复查另发现C08副本缺末页320，公开源未能补齐，暂排除新版引用。旧稿保留历史文献范围。文献库共保存 **57个源PDF及57个TXT**；额外5个文件是早期版本或补充材料，不重复计数。
 
-2026年10月15日大修准备新增6项共形研究全文，D03、D05使用完整作者稿，版本单列；既有研究计划和旧论文保留原来的46项文献范围。
+2026年10月15日大修准备新增6项共词化研究全文，D03、D05使用完整作者稿，版本单列；既有研究计划和旧论文保留原来的46项文献范围。
 
 2026年10月15日收到用户补充8份PDF，已核对题名、作者与版本，并统一命名为“编号_第一作者_年份_题名”。B03与C12现以正式期刊PDF为主要依据；旧预印本、工作论文保留在`earlier_versions/`。其余作者稿和在线先行版本按登记表明确说明。
 
@@ -53,7 +70,7 @@ TXT保留PDF文件页序；扫描或低文本页已尝试OCR。图表、公式�
 - **结构化书目：** [CSV](outputs/文献登记表.csv)｜[JSON](outputs/文献登记表.json)。
 - [复现说明](analysis/README.md)：数据版本、运行环境、输出字段和核验方法。
 
-`literature/`按A亲属研究、B语义范畴与效率、C统计与数据方法保存PDF和登记表；`data/`保存锁定版本的必要原始表；`analysis/`保存脚本、协议、配对数据、折外预测与图表；`notes/`保存摘要、阅读证据和独立核验记录。
+`literature/`按A亲属研究、B语义范畴与效率、C统计与数据方法、D共词化研究保存PDF和登记表；`data/`保存锁定版本的必要原始表；`analysis/`保存脚本、协议、配对数据、折外预测与图表；`notes/`保存摘要、阅读证据和独立核验记录。
 
 ## Claude交接
 
@@ -61,17 +78,25 @@ TXT保留PDF文件页序；扫描或低文本页已尝试OCR。图表、公式�
 - [待完成清单](CLAUDE_TODO.md)：理论约束、创新定位、后续估计设计与成稿任务。
 - [复查清单](CLAUDE_REVIEW_CHECKLIST.md)：文献、OCR、模型、数值、文件及同步检查。
 
-本轮不改动2026年10月14日的冻结统计结果；新增全文用于更新证据与后续研究设计。
+2026年10月14日的冻结统计结果保持原内容；新增全文用于v2论证，S2另存并已实际执行。
 
 ## 复现
 
 ```bash
-git clone https://github.com/WuYusen825/kinship-semantic-interactions.git
+git clone --branch codex/major-revision https://github.com/WuYusen825/kinship-semantic-interactions.git
 cd kinship-semantic-interactions
 ```
 
 
-使用Python 3.12，在仓库根目录运行：
+使用Python 3.12，S2复现方式见[目录说明](analysis/supplementary_s2/README.md)。在独立克隆的仓库根目录运行：
+
+```bash
+python -m pip install -r analysis/supplementary_s2/requirements.txt
+python analysis/supplementary_s2/test_partitions.py
+python analysis/supplementary_s2/run_s2.py --phase all
+```
+
+以下命令用于重建原冻结分析，会写入历史结果目录；需要执行时请使用另一个独立克隆：
 
 ```bash
 python -m pip install -r analysis/requirements.txt
@@ -104,8 +129,7 @@ python analysis/verify_results_independent.py
 ```bash
 python -m pip install -r analysis/requirements_text.txt
 python analysis/convert_literature_pdf_to_txt.py --workers 3 --dpi 200
-python analysis/build_documents.py
 python analysis/validate_literature_update.py
 ```
 
-转换脚本仅生成TXT和质量报告，不改写PDF。源码、引用和材料校验的当前结果见[本轮更新核验](outputs/本轮文献更新核验.json)。PDF／Word排版说明见`analysis/export_documents.py`，还需Pandoc、XeLaTeX和中文字体。
+转换脚本仅生成TXT和质量报告，不改写PDF。旧`build_documents.py`会重建旧稿，本次v2使用`export_forum_documents.py --input outputs/forum/论坛稿_v2.md`。源码、引用和材料校验的当前结果见[本轮更新核验](outputs/本轮文献更新核验.json)。PDF／Word排版说明见`analysis/export_documents.py`，还需Pandoc、XeLaTeX和中文字体。

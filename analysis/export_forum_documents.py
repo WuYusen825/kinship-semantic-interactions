@@ -23,6 +23,10 @@ def set_fonts(style, east, latin='Times New Roman', size=None, bold=None):
     fonts = rpr.find(qn('w:rFonts'))
     if fonts is None:
         fonts = OxmlElement('w:rFonts'); rpr.append(fonts)
+    # Pandoc模板的主题字体会覆盖显式东亚字体，导致LibreOffice漏掉中文标题。
+    for attr in list(fonts.attrib):
+        if 'theme' in attr.lower():
+            del fonts.attrib[attr]
     for attr in ['w:ascii','w:hAnsi','w:cs']:
         fonts.set(qn(attr), latin)
     fonts.set(qn('w:eastAsia'), east)
