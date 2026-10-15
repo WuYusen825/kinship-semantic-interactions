@@ -14,6 +14,8 @@ def build(name):
         r=subprocess.run(cmd,cwd=OUT,capture_output=True,text=True)
         (OUT/(name+('.pdf' if '--pdf-engine=xelatex' in cmd else '.docx')+'_排版日志.txt')).write_text(r.stderr)
         if r.returncode:raise RuntimeError(name+'\n'+r.stderr)
+    text_export=subprocess.run(['pdftotext','-layout',str(OUT/(name+'.pdf')),str(OUT/(name+'.txt'))],capture_output=True,text=True)
+    if text_export.returncode:raise RuntimeError(name+' TXT export failed: '+text_export.stderr)
     if name in names[:2]:
         path=OUT/(name+'.docx');d=Document(path)
         for style in d.styles:

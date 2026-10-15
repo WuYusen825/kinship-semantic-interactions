@@ -1,0 +1,1054 @@
+# PDF全文文本（UTF-8）
+来源PDF：literature/A/A18_Passmore_2021_Kin_Against_Kin_Internal_Co_selection_and_the_Coherence_of_Kinship_Typologies.pdf
+原PDF SHA-256：642fb6d06c0b673d141cad5554d9b445e73e2389e7f04b8186011a4794507481
+页码表示PDF文件页序，不自动等同于期刊印刷页码。Native为原文本层，OCR为扫描或低文字页识别；表格、音标、公式与OCR仍须对照PDF。
+
+===== PDF PAGE 0001 / 0018 | Native =====
+Biological Theory (2021) 16:176–193
+https://doi.org/10.1007/s13752-021-00379-6
+
+    THEMATIC ISSUE ARTICLE: EVOLUTION OF KINSHIP SYSTEMS
+
+
+
+Kin Against Kin: Internal Co‐selection and the Coherence of Kinship
+Typologies
+Sam Passmore1 · Wolfgang Barth2                  · Kyla Quinn2       · Simon J. Greenhill2,3   · Nicholas Evans2     ·
+Fiona M. Jordan1
+
+Received: 4 December 2020 / Accepted: 12 April 2021 / Published online: 7 June 2021
+© The Author(s) 2021
+
+
+Abstract
+Across the world people in different societies structure their family relationships in many different ways. These relationships
+become encoded in their languages as kinship terminology, a word set that maps variably onto a vast genealogical grid of
+kinship categories, each of which could in principle vary independently. But the observed diversity of kinship terminology
+is considerably smaller than the enormous theoretical design space. For the past century anthropologists have captured this
+variation in typological schemes with only a small number of model system types. Whether those types exhibit the internal
+co-selection of parts implicit in their use is an outstanding question, as is the sufficiency of typologies in capturing variation
+as a whole. We interrogate the coherence of classic kinship typologies using modern statistical approaches and systematic
+data from a new database, Kinbank. We first survey the canonical types and their assumed patterns of internal and external
+co-selection, then present two data-driven approaches to assess internal coherence. Our first analysis reveals that across
+parents’ and ego’s (one’s own) generation, typology has limited predictive value: knowing the system in one generation
+does not reliably predict the other. Though we detect limited co-selection between generations, “disharmonic” systems are
+equally common. Second, we represent structural diversity with a novel multidimensional approach we term kinship space.
+This approach reveals, for ego’s generation, some broad patterning consistent with the canonical typology, but diversity
+(and mixed systems) is considerably higher than classical typologies suggest. Our results strongly challenge the descriptive
+adequacy of the set of canonical kinship types.
+
+Keywords Anthropology · Cross-cultural kinship · Linguistics · Semantic systems · Typology
+
+
+Introduction                                                                in English).1 The kinship system of any language can thus be
+                                                                            seen as a particular matrix of equivalences or “syncretisms”
+In the languages of all societies, the vast number of logically             demonstrating which kin types use identical or similar terms,
+distinguishable kin types (e.g., categories such as father’s                and which are differentiated. The taken-for-granted nature of
+younger sister, father’s older sister, mother’s younger sister,             how we use language means that the conflation of such cat-
+mother’s older sister) are mapped onto a smaller and more                   egories seem obvious to speakers of the language that uses
+tractable set of kin terms (e.g., aunt for all the above terms              them (here English, for aunt), but counterintuitive to those
+                                                                            whose own languages offer different conceptual cuts (e.g.,
+                                                                            the Australian language Kayardild, which would reserve the
+* Fiona M. Jordan                                                           term marrkathu for father’s sisters but group mother’s sisters
+  fiona.jordan@bristol.ac.uk
+                                                                            with one’s mother, as ngamathu (Evans 2011)). Linguists
+1
+     Department of Anthropology and Archaeology, University                 and anthropologists must thus move between the language-
+     of Bristol, Bristol, UK                                                internal conceptual groupings that seem obvious to their
+2
+     ARC Centre of Excellence for the Dynamics of Language                  speakers (aunt; marrkathu), generally called emic in the
+     (CoEDL), Australian National University, Canberra, ACT​,               literature, and the finer language-independent categories
+     Australia
+3
+     Department of Linguistic and Cultural Evolution, Max
+                                                                            1
+     Planck Institute for the Science of Human History, Jena,                 Useful papers surveying this topic are Dole (1969) and Hage
+     Germany                                                                (2001).
+
+
+13
+Vol:.(1234567890)
+
+===== PDF PAGE 0002 / 0018 | Native =====
+Kin Against Kin: Internal Co‐selection and the Coherence of Kinship Typologies﻿	                                                                  177
+
+
+(e.g., “father’s older sister”)2 which form an etic grid against               anthropological puzzle for decades. Situated at a nexus of
+which language-specific categories can be calibrated. Kin                      language, cognition, and social reproduction, kinship sys-
+types are etic; kin terms are emic, and the cross-linguistic                   tems offer a multifaceted domain through which to explore
+study of kinship terminology focuses on the different ways                     cognitive and cultural evolution.
+languages map their kin terms onto the universally-definable                      Since the pioneering work of Morgan (1871) and Fison
+etic grid to produce kinship systems.                                          and Howitt (Gardner and McConvell 2015) in the 19th cen-
+    Notably, the enormous design space of possible kinship                     tury, scholars have worked to establish an encompassing
+systems is thinly populated amongst vast empty spaces. The                     typology of kinship systems for the languages of the world.
+pioneering study of sibling terms by Nerlove and Romney                        By compiling large sets of terms, across many languages,
+(1967) found that among 4,140 possible sibling term sys-                       for hundreds of kin types (over 260 in Morgan’s case), these
+tems,3 only 15 systems occurred more than twice in their                       researchers discerned recurrent patterns in which different
+sample of 245 languages, and these 15 occupied 95.5% of                        parts of the system appear to correlate. This led to the classic
+the sample; moreover, there were only 23 systems altogether                    typologies of the early to mid-20th century (see the “Classic
+within their sample. Once we move from sibling terms to                        Typologies of Kinship” section), which assigned languages
+parents, uncles and aunts, cousins, grandkin, and in-laws,                     to a canonical “system” (e.g., Iroquois/Dravidian,5 Eskimo,6
+the number of possible systems rapidly climbs into unim-                       Hawaiian) on the basis of diagnostic syncretisms and distinc-
+aginably large numbers.4 The same pattern holds: there are                     tions in one crucial subset of the terms (typically siblings
+a strikingly limited number of attested systems with respect                   and/or parents and nuncles7). Important questions of exter-
+to those that are logically possible. Some of these unat-                      nal co-selection between particular systems and other social
+tested possibilities, it has been argued, are due to trade-offs                phenomena, could then be pursued empirically: for example,
+between simplicity and informativeness (Kemp and Regier                        whether the presence of cross-cousin marriage is correlated
+2012; Kemp et al. 2018). These can take the form of mark-                      with Dravidian or Iroquois kinship systems (Godelier et al.
+edness constraints, favoring the greater elaboration of terms                  1998). Recurrent and reliably identifiable systems of social
+for nearer rather than more distant kin, or a preference for                   and cultural organization make human diversity tractable
+conjunctive characterizations (“elder AND male referent,                       to cross-cultural analysis, and typologies of (e.g.) subsist-
+i.e., elder brother”) over disjunctive ones (“elder OR male                    ence, political organization, and color naming have allowed
+referent,” i.e., brother (younger or older) or older sister)                   researchers to ask broad questions about cultural change and
+(Greenberg 1966). However, studies like these only identify                    statistical regularities. Logically however, the validity of the
+some of the constraints on attested systems, and we focus                      answers depends on the coherence and operationalizability
+here on a further potential constraint—the consistency of                      of the systems themselves, which we can only evaluate once
+where distinctions or mergers are made—as a selector on                        we have good data on how far kin types really do cohere
+why so few systems populate the enormous design space.                         across the whole system of terminology, as well as across
+We will term this internal co-selection since it implies that                  a broad and phylogenetically well-balanced sample of lan-
+a design feature of one part of the system (say, the treatment                 guages. While we are certainly not the first to suggest that
+of uncle terms) has selective consequences for another part                    subsystems will vary independently (e.g., D’Andrade 1971;
+of the kin system (say, the treatment of cousin terms): there                  Murdock 1970), we here advocate a root-and-branch review
+is co-selection, by hypothesis, between different syncretisms                  of these types, capitalizing on new data aggregation and
+within the overall system. Understanding the constraints on                    computational methods, with the goal of a more accurate
+these semantic systems of social life, how they emerge and                     and flexible description of how we carve up the social world.
+change, and why we see some but not others, has been an                           The aim of this article is the first step in this endeavor: to
+                                                                               evaluate whether systems of kinship terminology do in fact
+                                                                               exhibit the terminological coherence that the classic typolo-
+2
+  For brevity, we use the following abbreviations for the rest of              gies presume. We draw on a large global sample of 1,107
+the article: B = brother, D = daughter, e = elder, f = female refer-
+ent, F = father, G = sibling, m = male referent, M = mother, S = son,
+y = younger, X = cross, Z = sister, // = parallel. These are chained
+together as appropriate, e.g., MB for “mother’s brother.”                      5
+                                                                                  Morgan, whose interest in kinship began with various Iroquoian
+3
+  Nerlove and Romney considered eight possible kin types, defined              languages, used the term Iroquois for this type, but subsequent inves-
+by the three-way binary matrix “sex of referent” versus “sex of ego”           tigators have often used the term Dravidian for what is essentially the
+versus “referent older or younger than ego.” Some further distinctions         same system. See the second section.
+                                                                               6
+are possible but are rare. The figure of 4140 is the Bell number for 8            We apologize to those Inuit peoples who find this term offensive.
+(the number of ways a set of 8 cells can be partitioned into groups).          We regretfully retain this term here simply because it is the one that
+4
+  The authors’ database gives terms for 98 kin types (still just a sub-        articulates with the literature, and we advocate for an alternative.
+                                                                               7
+set of all possible kin terms–it excludes, e.g., great-uncles and great-          For brevity, we adopt the widespread term “nuncle” for “uncle or
+aunts) and the Bell number for these 98 terms is 5.55 × ­10112.                aunt” (any sibling of a parent).
+
+
+                                                                                                                                         13
+
+===== PDF PAGE 0003 / 0018 | Native =====
+178                                                                                                                      S. Passmore et al.
+
+languages and 988 kin types, enabling us to answer the ques-              F padre ≠ FB zio = MB zio, M madre ≠ MZ zia = FZ zia
+tion of coherence in an empirically grounded way. The size
+of our dataset allows rare systems to surface and be counted,
+                                                                          FS = MS fratello ≠ FBS cugino = FZS cugino
+and we combat sampling issues due to regional or histori-
+cal autocorrelation by sampling extensively across language                  = MZS cugino = MBS cugino
+families/areas as well as intensively within. The sample also
+                                                                             Exactly comparable changes have occurred between Old
+provides key data for explicitly characterizing how internal
+                                                                          Russian and modern Russian. Data like this suggest linked
+co-selection actually works, by inviting the consideration
+                                                                          transitions between tightly integrated systems, though
+of statistical regularities over strict universals. Finally, the
+                                                                          remain agnostic as to timing and mechanism. The Italian/
+synchronic patterning of the kin term “design space” can
+                                                                          Russian example illustrates what we term the “internal co-
+provide clues as to which elements are linked, and which are
+                                                                          selection hypothesis”: that changes in systems of kinship ter-
+not, in their evolution as linguistic and conceptual systems.
+                                                                          minology involved linked sets of changes between different
+   We can illustrate the connection between synchronic
+                                                                          parts of the system; furthermore, that internal co-selection
+typology (the set of currently attested states) and internal
+                                                                          can be detected in synchronic records of a broad sample of
+co-selection in the following way. If the diversity of systems
+                                                                          languages by the relative lack of “mixed” system types, and
+worldwide is restricted as a result of many design elements
+                                                                          the predominance, near or universal, of “harmonic” types
+necessarily co-occurring, then transformations between
+                                                                          such as those implied by the classic typologies.
+systems will tend to proceed in bundles of interconnected
+                                                                             On the other hand, if our global sample attests substantial
+changes, such as correlated changes in the parental genera-
+                                                                          numbers of what classic treatments would have regarded as
+tion and sibling/cousin terms.
+                                                                          many “mixed” types, then diversity will be much greater.
+   Consider the transition from Latin and Old Russian to
+                                                                          On this account, changes between systems may be much
+their descendants Italian and modern Russian. Both exhibit
+                                                                          more piecemeal, since a change in the range of one term
+linked changes in the ­G+1 (parental) and ­G0 (ego/sibling)
+                                                                          may only have weak (or no) consequences for other parts
+generations from a consistent “Sudanese” system in Latin
+                                                                          of the system. Whether or not the classic types are robust
+and Old Russian to a consistent “Eskimo” system in Ital-
+                                                                          is not merely a matter for kinship scholars. These essential-
+ian and modern Russian (“Sudanese” and “Eskimo” are
+                                                                          izing types remain vibrant in pedagogical literature (e.g.,
+explained in more detail in the “Classic Typologies of Kin-
+                                                                          Stone 2013; Parkin 1997) and have had new use as predic-
+ship” section).
+                                                                          tor variables in recent cross-cultural work in, for example,
+   Thus, Latin distinguished six main types of G   ­ +1 consan-
+                                                                          economics and psychology. Our goal here is an explicit and
+guineal kin:
+                                                                          data-driven account of system coherence that is accessible
+F pater ≠ FB patruus ≠ MB avunculus                                       beyond a narrow audience, allowing the design space of kin-
+                                                                          ship to be freshly considered with 21st century tools.
+M mater ≠ MZ matertera ≠ FZ amita                                            The rest of the article is structured as follows. In the
+                                                                          “Classic Typologies of Kinship” section we review the
+and likewise distinguished the children of each of these                  main typologies of kinship, their predictions, and some
+(except of one’s F and M, since these are simply one’s sib-               of the problems they have faced empirically. In the “Our
+lings), here shown for male kin:                                          Database” section we introduce our database. We test
+                                                                          coherence with two approaches, focusing on key kin types
+FS = MS frater ≠ FBS frater patruelis
+                                                                          defined by sibling, cousin, parent, and nuncle terms. In the
+                                                                          “Testing Typological Cohesion: Clearing the Ground with
+≠ MBS filius avunculi ≠ MZS filius consobrinus ≠ FZS amitinus
+                                                                          New Data” section we use our large dataset to evaluate the
+   Its descendant Italian, on the other hand (as for other                empirical adequacy of classic claims about system coher-
+modern Romance languages descended from Latin), has                       ence, to clear ground and establish a descriptive baseline.
+merged the two uncle terms, and the two aunt terms, but kept              In the “Testing Typological Cohesion: Introducing New
+them distinct from the parent terms, as in the structurally-              Methods” section we evaluate the same claims using a new
+identical English system:                                                 computational method, applying multi-dimensional scal-
+                                                                          ing to see how neatly the classical categories cleave apart.
+                                                                          This method holds great promise for identifying data-driven
+                                                                          clusters in the kinship system design space. We conclude in
+8
+  This is the “basic expanded” figure. The addition of some other less    the “Conclusions on the Internal Coherence of Canonical
+common terms in some languages in our database, such as “born on          Types” section by evaluating the extent of coherence across
+the same day,” “co-wife,” etc., expands this figure to 473, but we have   the different parts of terminological systems, what causal
+less comprehensive cross-linguistic data on this larger set.
+
+
+13
+
+===== PDF PAGE 0004 / 0018 | Native =====
+Kin Against Kin: Internal Co‐selection and the Coherence of Kinship Typologies﻿	                                                                 179
+
+mechanisms best account for the data we have examined, and                     Hawaiian
+what future steps are needed for understanding the shape of
+kinship systems.                                                               The canonical Hawaiian kinship system terminologically
+                                                                               divides kin by generation and gender. This results in four
+                                                                               terms that can be represented by the following rules:9
+Classic Typologies of Kinship
+                                                                               F = FB = MB
+The most notable typology of the mid-20th century was
+designed to capture variation in cousin organization, and                      M = FZ = MZ
+is often used as the primary description of a language’s
+terminology (Murdock 1949; Dole 1972). Each type was                           B = FBS = MBS = FZS = MZS
+named after a society that exemplified each system: Eskimo,
+Hawaiian, Dravidian, Sudanese, Crow, and Omaha. The                            Z = FBD = MBD = FZD = MZD
+declaration of a universal set of cousin systems led scholars                     These rules generally represent the cultural kin-categories
+to extend these to broader kin-terminologies based on per-                     of a male in the generation above, a female in the generation
+ceived patterns of internal and external co-selection. Canoni-                 above, a male in my generation, and a female in my genera-
+cal kinship terminologies (typologies) describing relatives                    tion. The syncretisms across parents and parent’s siblings
+in one’s nuclear family, as well as parents’ siblings, and par-                (male and female) in G ­ +1 are often echoed by syncretisms
+ents’ siblings’ children, were the culmination of work from                    in the G 0
+                                                                                      ­ generation between siblings and parents’ siblings’
+Kroeber, Lowie, and Murdock who identified and applied the                                               ­ +1 women are terminologically
+                                                                               children. That is, if all G
+principles of collaterality and bifurcation to derive the first                equivalent, then it seems natural that we should also see
+four of the systems listed above (Kroeber 1909; Lowie 1928;                    the syncretism reflected in their children. It is important
+Murdock 1949; Godelier 2012). Crow and Omaha systems                           to emphasize that organization in G  ­ +1 does not cause the
+are then further derived with the addition of generational                     organization in G  0
+                                                                                                ­ (or vice versa), but merely that there is
+skewing, where a kin term can be used across generations                       a process of co-selection in terms of a natural fit between
+(e.g., one calls one’s “mother’s brother’s son” by the term                    terminological systems in the two generations.
+for one’s “mother’s brother”). As ethnographic knowledge
+increased in scope, the inevitable result was that these six                   Eskimo
+types failed to capture the full design space. Murdock himself
+worked with codes that acknowledged differences in ego and                     Eskimo terminologies distinguish lineal family members
+parent generations (1970); subsequent debates have raged                       (up and down the direct line of descent), from collateral kin
+about types, subtypes, and exceptions (e.g., Iroquoian types,                  (off to the side of this direct line), and collapse kin terms
+Kariera types, Dravidian subtypes) (Romney and Epling                          for collateral kin (e.g., the two types of uncles [FB, MB]
+1958; Lounsbury and Goodenough 1964; Godelier et al.                           and aunts [FZ, MZ]). Within ­G0 and G   ­ 1 this system results
+1998). This debate has led some kinship theorists to call for a                in seven (as in English, which does not distinguish cousins
+typological rethink (Kronenfeld 2004, 2006), or to propose an                  by sex) or eight terms (taking French, Spanish, or Italian as
+alternative generative focus on kinship terminologies (Jones                   an example).
+2010; Read 2013), although no one approach has gained the
+traction still held by the classic typology (e.g., Cronk et al.                F ≠ FB = MB
+2019). Despite these developments, it is useful to begin with
+the major types in terms of ego’s (­ G0) and the parental (­ G+1)              M ≠ FZ = MZ
+generations, making the simple assumption that the termi-
+nologies in these two generations are mutually consistent.
+
+
+                                                                               9
+                                                                                 An interesting outgrowth of the kinship literature parametrized the
+                                                                               typologies by proposing axiomatizations of different kinship systems
+                                                                               as different sets of merging rules (or “equivalence rules”) by Louns-
+                                                                               bury (1964, 1965; Scheffler 1978), which are essentially polysemic
+                                                                               extensions that can apply recursively at indefinite distance from ego.
+                                                                               One way of summarizing the findings of this article is that counter to
+                                                                               the Lounsbury/Scheffler approach, rules of equivalence cannot auto-
+                                                                               matically be combined in a generative way: rather than simply allow-
+                                                                               ing them to interact, in many languages they form small, potentially
+                                                                               isolated pockets of equivalence that require local statements.
+
+
+                                                                                                                                         13
+
+===== PDF PAGE 0005 / 0018 | Native =====
+180                                                                                                               S. Passmore et al.
+
+
+B ≠ MZS = MBS = FZS = FBS = MZD                                   kinship terminology; we do not pursue this further, since to
+            = MBD = FZD = FBD ≠ Z                                 systematically bring in affinal terms is beyond the scope of
+                                                                  this article.
+  or
+B ≠ MZS = MBS = FZS = FBS                                         Sudanese Systems
+
+                                                                  A canonical Sudanese system distinguishes all structural
+Z ≠ MZD = MBD = FZD = FBD
+                                                                  positions in the parents’ generation (i.e., siblings on each
+   These rules distinguish nuclear family members from            side have their own term), and the cousin terms track these
+other relatives and ignore lineal distinctions in parent’s sib-   distinctions. Such systems thus eliminate all syncretisms
+lings and their children. The cultural importance of nuclear      relevant to the major typologies.
+families has often been considered an external selective
+                                                                  F ≠ FB ≠ MB
+force on this type, but there is sizable variance in the social
+organization of societies using this system (Hughes 1958). In
+a similar vein to Hawaiian systems, we can see co-selection       M ≠ MZ ≠ FZ
+as accounting for the “harmony” between the G    ­ +1 and G­ +0
+generations, since the lineal versus collateral distinction in    B ≠ FBS ≠ MZS ≠ FZS ≠ MBS
+the parents’ generation is propagated into a similar distinc-
+tion (between siblings and cousins) in ego’s generation.          Z ≠ FBD ≠ MZD ≠ FZD ≠ MBD
+
+                                                                     Murdock (1967, 1970) distinguished between Sudanese
+Dravidian Systems                                                 and Descriptive types, which are structurally the same but
+                                                                  differ in whether the terms are internally analyzable. Danish,
+Dravidian systems are distinguished from the previous
+                                                                  for example, would be considered a Descriptive type in the
+two types by introducing crossness. This is where parent’s
+                                                                  parents’ generation, since FB is farbror (far “father,” bror
+opposite-sex siblings (“cross”) are terminologically differ-
+                                                                  “brother”), MB is morbror (mor “mother”), and FZ and MZ
+ent to their same-sex siblings (“parallel”). Internal co-selec-
+                                                                  are the only slightly less transparent faster and moster (com-
+tion then predicts the similar cross-sex pattern seen in the
+                                                                  bining fa < far and mo < mor with -ster < søster “sister”). We
+descending generation, although we will see counterexam-
+                                                                  set aside this distinction here, because (a) we consider the
+ples in “Testing Typological Cohesion: Clearing the Ground
+                                                                  question of how far terms can be morphologically broken
+with New Data” section, in both directions. A canonical Dra-
+                                                                  down to be independent of the semantic structure of the
+vidian system is described with the following rules:
+                                                                  system, (b) formal resemblances can be found in kinship
+F = FB ≠ MB                                                       systems of all types (from totally to partially compositional),
+                                                                  not just Sudanese, and (c) we can use separate methods (out-
+M = MZ ≠ FZ                                                       lined in section “Testing Typological Cohesion: Introducing
+                                                                  New Methods”) to factor in formal lexical similarity should
+                                                                  we wish to go beyond a “same versus different” judgment.
+B = FBS = MZS ≠ FZS = MBS
+
+Z = FBD = MZD ≠ FZD = MBD                                         Crow/Omaha
+   Dravidian systems are closely linked to cross-cousin mar-
+                                                                  The previous four systems are defined by syncretisms (or
+riage practices (Lounsbury 1964), and previous analysis by
+                                                                  lack of syncretisms) within generations. Crow and Omaha
+Désveaux and Selz (1998) used logical inference predicated
+                                                                  systems are defined by their syncretisms across genera-
+on the practice of cross-cousin marriage to infer the structure
+                                                                  tions, often called generational skewing, where certain
+of a Dravidian terminology. In both Australia and southern
+                                                                  cousins ­(G0) are terminologically equated with certain nun-
+India, for example, a widespread conjunction of marriage
+                                                                  cles ­(G+1). These systems are effectively mirror opposites:
+prescriptions and kinship terminology combines cross-
+                                                                  Omaha systems skew along patrilineages, and Crow systems
+cousin marriage (e.g., between a man and his FZD) with a
+                                                                  skew along matrilineages. This is highlighted in the sec-
+terminological syncretism between the consanguineal term
+                                                                  ond rule for Omaha, and the first rule for Crow, below; the
+FZ and the affinal term WM—since, if the marriage rules are
+                                                                  “skewing” syncretisms are shown in bold.
+followed, one’s father’s sister IS one’s wife’s mother. This is
+a nice example of evidenced external co-selection between
+a marriage rule and a particular syncretism in the system of
+
+13
+
+===== PDF PAGE 0006 / 0018 | Native =====
+Kin Against Kin: Internal Co‐selection and the Coherence of Kinship Typologies﻿	                                                          181
+
+   Omaha                                                                       The Classic Typology: Recap
+F = FB ≠ MB = MBS
+                                                                               Our exposition in this section has focused on the classic
+                                                                               canonical systems. Amongst kinship typologists there has
+M = MZ = MBD ≠ FZ                                                              been a steady multiplication of system types and subtypes,
+                                                                               many of which surround the intensively-studied cross/par-
+B = MZS = FBS ≠ FZS                                                            allel distinction (Godelier et al. 1998). The Dravidian type
+                                                                               (above) and Iroquois type, both of which are identical in
+Z = MZD = FBD ≠ FZD                                                            ­ +1 and G
+                                                                               G         ­ 0, but differ when more distant relations and affi-
+                                                                                nal terms are taken into account, make different predictions
+   Crow                                                                         about the external co-selection of cross-cousin marriage
+F = FB = FZS ≠ MB                                                               (Trautmann 1981). Likewise, debate continues on whether
+                                                                                the increasing number of subtypes requires a typological
+M = MZ ≠ FZ = FZD                                                               rethink, or can be accommodated by treating the awkward
+                                                                                cases as transitional terminologies (Kronenfeld 2006; Gode-
+                                                                                lier 2012).
+B = FBS = MZS ≠ MBS
+                                                                                   From here we explore a radically different approach,
+                                                                               which abandons the assumption of definitional coherence
+Z = FBD = MZD ≠ MBD                                                            between different patterns of syncretism, and systems them-
+    The skewing illustrated here is restricted to ­G0 and ­G+1                 selves. Our start point is to acknowledge the large design
+and these rules represent a typical Omaha or Crow system,                      space—that any combination of syncretisms is possible
+though there are languages that propagate the skewing right                    between any kin types. Using computational methods, we
+down the generations of a matriline or patriline. The nature                   can take a data-driven approach that incorporates all kin
+of skewing in each of these systems has been noted as a                        terms, rather than selecting particular focal kin types to rep-
+result of external co-selection by strong patrilineal and mat-                 resent a whole language system. Recurrent patterns like the
+rilineal descent norms. For example, in the Omaha system,                      canonical systems above certainly do occur, but so do many
+both one’s MB and one’s MBS are “male members of one’s                         other combinations, and these can be explored and charac-
+mother’s patriclan.”                                                           terized without the need to start with, or shoehorn them into,
+    Two types of definitional problems beset the assignment                    existing typologies.
+of a system to Crow or Omaha types: cross-generational
+equivalences can involve other-generation pairs beyond the
+classic nuncle/cousin syncretisms of Crow/Omaha types.                         Our Database
+Cross-generational equivalences can involve other-genera-
+tion pairs beyond ­G0 and ­G+1 generations, e.g., every sec-                   Languages
+ond generation in a matriline (Levinson 2006), or between
+nephews/nieces and grandchildren (Italian nipote), in neither                  The Kinbank database contains 1,107 languages, with data
+case involving ­G0. Similarly, syncretisms may fall within                     on about 98 kin types for most languages and 473 different
+the ­G0 and ­G+1 generations, but involve siblings rather                      kin types for which data is given in at least some languages.
+than cousins, as with the Maya-Mopan (Guatemala) rule                          Our kin types cover relatives from ­G−2 and ­G+2, including
+eB = FyB ≠ FeB = PF ; this syncretism is attributed to                         collateral kin and their affines. The database holds a global
+cultural roles in provisioning for children (Danziger 1993).                   sample of languages from 21 language families, with strong
+    We do not treat Crow and Omaha systems separately for                      representation from large language families (e.g., Austro-
+the purposes of this article. This is because they are defined                 nesian (375), Atlantic-Congo (117), Pama-Nyungan (104),
+by syncretisms across generations, but do not exhibit dis-                     and Indo-European (104)) but equally broad coverage of all
+tinctive characteristics in their behavior within generations,                 regions and smaller families; it is therefore useful for both
+so that for the purposes of looking at how far there are cor-                  global and within-language family analysis. Data were col-
+relations between the within-generation syncretisms in our                     lected from the ethnographic and linguistic literature and/
+two chosen generations ­(G0 and G  ­ +1) any cross-generational                or from native speakers (see Passmore et al. (in prep.) for
+skewing is irrelevant. Thus, we code both Crow and Omaha                       details).
+systems as Dravidian, in both generations, since in each of
+them F = FB ≠ MB, and B = MZS = FBS ≠ FZS.
+
+
+
+
+                                                                                                                                   13
+
+===== PDF PAGE 0007 / 0018 | Native =====
+182                                                                                                                                 S. Passmore et al.
+
+
+Kin Types                                                                       relative are nicely set up to define it as “child of an uncle or
+                                                                                aunt” and are neither too broad and imprecise, nor too narrow
+The kin types broadly cover: parents, siblings, children, chil-                 and precise, nor—worst of all—merge and diverge according
+dren’s children, sibling’s children, parent’s siblings, parent’s                to a different pattern.13 Terms for the linking relative would
+sibling’s children, and parent’s parents. All kin types include                 be too imprecise if, Hawaiian-style, we had just a single word
+specification of the sex of speaker, and within G­ 0 and G
+                                                         ­ +1 we                funcle taking in fathers and all uncles: defining cousin as
+additionally account for relative age, and relative age of the                  “child of a funcle” wouldn’t work because some children of
+linking relative (e.g., the FeBD of a woman). Affinal terms                     funcles would be my siblings and some would be my cous-
+are also systematically collected for the partners of ego, of                   ins. And a Sudanese type system would be too precise, if we
+parent’s siblings, of ego’s siblings, and ego’s children, with                  can render funcle for father’s brother and muncle for mother’s
+additional relationships added when available.10                                brother, as well as faunts for father’s sisters and maunts for
+   The database is a collaborative result of three overlap-                     mother’s sisters—we would then have to define cousins as the
+ping but separately-funded projects,11 and thus presented an                    children of uncles, muncles, funcles, aunts, faunts, or maunts.
+opportunity to assess sources of data interpretation error by                   Do not worry if you are confused–that is the whole point. It is
+determining intercoder reliability. All teams collected kin                     hard to reason about terminology in applying the native terms
+terms on the same 44 languages (from the same or different                      if systems mix and match the layout of their mapping of kin
+sources). Using a vector-comparison approach (explained                         terms onto types between generations.
+in the “Testing Typological Cohesion: Introducing New                               The commonsense insight, that it is sensible for systems
+Methods” section) we calculated the structural similarities                     of kinship terminology to be logically harmonic across dif-
+on each teams’ complete set of kin terms sets to be 0.8. See                    ferent subsystems, was responsible for the types discussed in
+Passmore et al. (in prep.) for further details. For the analyses                section two in the first place, and has been recently explored
+in the next two sections we used subsets of the full database                   in new ways with cognitive modelling by Kemp and Regier
+as coverage allowed.                                                            (2012). It underlies the fact that some of the most influential
+                                                                                kinship typologies (Lowie 1928; Kirchhoff 1932) were based
+                                                                                on terms in the ­G+1 generation, while others (Murdock 1949)
+Testing Typological Cohesion: Clearing                                          were based on G ­ 0, yet they reached essentially the same types.
+the Ground with New Data                                                            Despite mounting ethnographic counterexamples (see
+                                                                                Pans (1967) and Murdock (1970) for a more nuanced
+Underlying the kinship typology approaches in the “Classic                      view), these convenient and intuitively neat typologies
+Typologies of Kinship” section, above, is the assumption that                   have endured as shorthand for decades, particularly in the
+kinship systems (like other systems beloved by structuralist                    pedagogical realm. Kinship specialists have made admirable
+linguistics) are “systems where everything holds together.”12                   attempts at interrogating their consistency, but for the most
+This is an appealing and sensible idea: to formulate a concept                  part start with these types, usually adding new mixed pat-
+like cousin in English, it helps that our terms for the linking                 terns to account for variation. It is not, however, possible for
+                                                                                a human brain to systematically compute the vast combina-
+10
+   A full list of parameters is available at https://​github.​com/​kinba​nk/​   torial possibilities presented by even a small set of kinship
+kinba​nk/​blob/​master/​kinba​nk/​cldf/​param​eters.​csv
+11
+                                                                                types and terms to cover them. With our large global dataset,
+   VARIKIN, Museu Paraense Emilio Goeldi, and PARABANK
+(which in turn is part of the Glottobank consortium). VARIKIN was               and greater computational power, we have the opportunity
+primarily built by researchers at the University of Bristol, particularly       to test these internal correlations robustly. We outline two
+Passmore and Jordan, with MPEG data collection by Joshua Birchall,              methods to examine internal co-selection.
+Luis Henrique Oliveira, and Fiona Jordan; Parabank has primarily                    Our first method uses partial informativeness as a crite-
+been built by researchers based at the ARC Centre of Excellence for
+the Dynamics of Language, particularly Barth, Evans, Greenhill, and             rion: what does knowing about one part of the system pro-
+Quinn.                                                                          vide us in knowing about another part? The kinship catego-
+12
+   In linguistics the classic line “un système où tout se tient” has been       ries are compared as a unit independent of the actual term
+employed for over a century, variously attributed to Saussure and               used14 and we confine ourselves to terms for the parents’
+Meillet. See Koerner (1997) on the complex paper trail of this attribu-
+tion.
+13
+   A variation on the everything-holds-together scenario was pro-
+posed by D’Andrade (1971, p. 74), who modulates it by allowing new
+                                                                                14
+distinctions to first take hold in the + 1 generation, and then spread to          Murdock (1968) tested an idea by Pans (1967) that the kinship sys-
+the + 0 generation, but never the other way round. This will add in,            tem emerges from within the terminological system itself. He com-
+with relatively low occurrence, “transitional” types in which the dis-          pared cousin and sibling subsets and found only a weak correlation
+tinction has entered the + 1 generation without yet entering the 0 gen-         mostly due to languages that spell out the biological relation in the
+eration, but never the reverse case in which the 0 generation makes             terminology, e.g., Danish (see above). Therefore, we do not consider
+the distinction but this is not found in the + 1 generation.                    term-internal structure in our study.
+
+
+13
+
+===== PDF PAGE 0008 / 0018 | Native =====
+Kin Against Kin: Internal Co‐selection and the Coherence of Kinship Typologies﻿	                                                                  183
+
+                                                                               generation, and this combination occurs 13 more times
+                                                                               in Murdock’s (1949) sample (Dole 1969). This gives us a
+                                                                               two-way classification for each of our 571 languages, one at
+                                                                               each of the two generational levels. In principle this gives
+                                                                               us sixteen possibilities as the two four-way distinctions are
+                                                                               crossed. If there is complete coherence across systems, only
+                                                                               four of the sixteen cells should be filled, namely those along
+                                                                               the diagonal, and they should be harmonic, in the sense of
+                                                                               being of the same type in both generations. If anything goes,
+                                                                               and there is no relation between the patterning of G  ­ 0 or ­G+1
+                                                                                terms, all sixteen cells should be equally populated. Figure 1
+                                                                                shows our results.
+                                                                                    Two striking features emerge. First, all but two cells are
+                                                                                filled by at least some languages. Straight away, we can see
+                                                                                that the data does not support strict system coherence: far
+                                                                                from it. Only Hawaiian ­G+1/Dravidian ­G0, and Hawaiian
+                                                                               ­G+1/Sudanese ­G0, are not represented in our sample. If a
+                                                                               system merges parents and nuncles, Sudanese or Dravidian-
+                                                                               style partitions of the sibling/cousin space are precluded. But
+Fig. 1  Patterning of kinship terms across G ­ +1 and ­G0 in 571 lan-
+                                                                               of the 16 possible combinations, only those two are heav-
+guages from a global sample. Each cell contains the number of lan-             ily constrained. We then ask: what combinations are most
+guages with that particular combination of classic kinship system fea-         common?
+          ­ +1 and G
+tures for G        ­ 0 and is shaded for density (darker = combination              Systems do display some harmony. While the diagonal
+is more frequent in the sample)
+                                                                               contains three of the most populated cells, as predicted
+                                                                               by strong internal co-selection (Eskimo/Eskimo (ranked
+and ego’s generations, making some simplifying assump-                         1st), Sudanese/Sudanese (ranked 2nd), Dravidian/Dravid-
+tions to deal with the potentially complicating effects of finer               ian (ranked 4th)), the Hawaiian/Hawaiian combination has
+terminological splits. Thus, if a system distinguishes father’s                only 15/573 languages (ranked 10th). Overall, the diagonal
+older brother from father’s younger brother, we just exam-                     accounts for only half (52.7%) of all the data, while off-
+ine the father’s older brother term in comparisons with the                    diagonal cells are at 10–15 times the frequency that Mur-
+father or mother’s brother term. Likewise, for cousins, we                     dock (1949) found. Non-harmonic cells well-attested in our
+only included the comparison brother: male cousin (and, if                     data are Sudanese ­G+1/Eskimo ­G0, Sudanese ­G+1/Dravidian
+relative age enters the picture, using “older” as the default).                 ­G0, and Dravidian G ­ +1/ Sudanese G­ 0, and these are present
+Note that a rather similar technique to assess how far the                      at appreciable frequencies. This suggests that between-gen-
+types in the ­G+1 and ­G0 generations correlate, by construct-                  eration informativeness is variable, and type-dependent.15
+ing a two-dimensional array, and then seeing how many
+languages populate each cell in the total space, was carried
+                                                                               15
+out by D’Andrade (1971). He found a far lower degree of                            Charles Kemp (personal communication, 2021) draws on Green-
+dimensional independence than we do, probably reflecting                       berg (1966) to construct a concrete prediction. Systems can be
+                                                                               arranged in a connected network with the most complicated (Suda-
+his smaller dataset.                                                           nese) at one end, and the least (Hawaiian) at the other, with the pos-
+   For each language, we then categorize the terms in each                     sibility of transitioning between Sudanese and Hawaiian mediated
+of these two generations using the basic four-way classifica-                  by either the Eskimo or the Dravidian path, but not both. This would
+tion set out in the “Classic Typologies of Kinship” section.                   then predict a possibility matrix in which intermediate systems exhib-
+                                                                               iting features from two neighboring points could exist, but not others.
+For example, English would be categorized as “Eskimo” in                       In other words, Eskimo and Dravidian can both be reached by neu-
+both parents’ and ego’s generation, Latin as “Sudanese” at                     tralizing some of the Sudanese distinctions, but are mutually incom-
+both levels, and Kayardild as “Dravidian” at both genera-                      patible. This generates a 4 × 4 matrix permitting (+ 1 types given
+tional levels. Kuikuru (Brazil), however, contains “Hawai-                     first) Esk/Haw, Esk/Esk, Haw/Haw, Drav/Drav, Drav/Haw, Sud/Sud,
+                                                                               Sud/Drav/Sud/Hawaiian. This proposal does in fact correlate broadly
+ian” in ego’s generation, and “Iroquois” in the parental                       with the distribution of our sample, except that Dravidian/Sudanese
+                                                                               (37 instances), one of the purportedly impossible types, is in fact
+                                                                               more common than some of the purportedly possible types, such as
+                                                                               Eskimo/Hawaiian (24), Hawaiian/Hawaiian (15), Dravidian/Hawaiian
+                                                                               (28), and Sudanese/Hawaiian (35). We also find other types predicted
+                                                                               not to occur on this account, namely Eskimo/Sudanese (11), Eskimo/
+                                                                               Dravidian (2), Hawaiian/Eskimo (3) and Dravidian/Eskimo (15).
+
+
+                                                                                                                                         13
+
+===== PDF PAGE 0009 / 0018 | Native =====
+184                                                                                                                            S. Passmore et al.
+
+    While for each classic “type” knowing the pattern in                 consistency, as a cognitive and/or cultural driver, may be just
+­G+1 is informative for ­G0 and vice versa, the effect is not            one of many low-level selective forces favoring one pattern
+ equally strong for all types. Knowing ­G0 works moderately              of syncretism (at system level) over another.
+well for Eskimo and Sudanese (both 62% harmonic), and
+Dravidian (56%), but for Hawaiian G    ­ 0 gives very little pre-
+dictive power (15%). From the other direction, knowing ­G+1              Testing Typological Cohesion: Introducing
+ neatly predicts the harmonic state for Eskimo (80%) and                 New Methods
+ Hawaiian (83%), but much less so for Dravidian (44%) and
+ Sudanese ­G0 (35%). Furthermore, predicting the most likely             In this section we build on the finding that internal consist-
+ non-harmonic combination is not only type-dependent, but                ency, using the classic typology of systems, is limited. We
+ generation-dependent: the non-harmonic types that Dravid-               explore the cross-linguistic variation in G  ­ 0 terms using a
+ ian ­G0 is informative on are not the same as what Dravid-              method that allows fine-grained characterization from the
+ ian ­G+1 is informative on. We use Cramer’s V statistic to              bottom-up. Recall from the “Classic Typologies of Kinship”
+quantify the degree of intergenerational correlation between             section that the classic typology was designed to categorize
+kinship systems (0 = no correlation, 1 = perfect correlation),           the organization of cousin/sibling terms, and while kinship
+and obtain 0.395, at the high end of moderate. Coupling                  specialists have long acknowledged that the systems are ide-
+between system types across generations is present, but this             alized (and that languages are not exact replicates of these
+internal co-selection is not strong or deterministic.16                  systems), very little work has explored the extent and impli-
+    To test whether our global results might be distorted by             cations of this variation.
+ language-family or macroregional bias, we compiled com-                    Here we aim to shift thinking from strict canonical sys-
+ parable diagrams for the main language families (Fig. 2) and            tems to probabilistic clouds, using vector-based representa-
+ regions (Fig. 3) in our database. As anthropologists have               tions of the ­G0 space. On this view of kinship, we can think
+ observed, many families either have one (e.g., Sudanese in              of languages varying within a continuous space where close-
+ Algic and Atlantic Congo, Eskimo in Austronesian) or two                ness indicates similarity and distance indicates difference.
+ dominant types (e.g., Eskimo and Sudanese in Indo-Euro-                 We demonstrate this with a simplified example. Consider
+ pean), reflecting some degree of conservatism and phyloge-              the kin terms in ­G0 for two languages with different systems
+ netic signal at the family level (Passmore and Jordan 2020).            (Fig. 4). For each language, we compare each kin type to
+ This is not universal: some families (Pama-Nyungan) and                 every other type, and note the presence (= 1) or absence
+ macro-regions (Eurasia, South America) have their most                  (= 0) of a syncretism, i.e., the same term is used for that
+ populous patterns in cells that are disharmonic between ­G0             pair of relatives. With this approach, we create an exhaus-
+ and ­G+1. Our finding above is that there is (at best) a moder-         tive binary vector representing the patterns of syncretism for
+ate harmonic correlation between term systems across the                 each language–and for the canonical systems themselves. We
+two generations; however, this only emerges when we pool                 can then compare languages via their vectors to assess the
+our global data, and is not evident in the data from any one             similarities and differences in patterns of syncretisms. Two
+family. The large Austronesian family is especially illustra-            languages with the exact same kinship system will match at
+tive here: it explores the design space to almost the same               each position in the vector, and the sum of matches divided
+degree as the worldwide sample (in the sense of only three               by the total number of pairs gives a measure of structural
+empty cells) but has a less pronounced diagonal, indicating              similarity, where a score of 1 will indicate an exact struc-
+weaker correlations between terms in the two generations.                tural match.17 In our analysis below we take a step further
+    With this first test of internal cohesion, our data suggest          to use string information from each kin term to give partial
+that the classic typologies have limited predictive value                matches, rather than binary all-or-nothing matches. Com-
+when it comes to the co-selection between the generational               putationally, we can then use this information with dimen-
+subsystems of parents’ and ego’s generation. Harmonic cor-               sion-reduction methods, and represent the position of each
+relations are indeed present, but these are weak, and some               language in a multidimensional space.
+disharmonic conjunctions are equally frequent. Internal                     Since we can define vectors for each of the canonical sys-
+                                                                         tems, the distance of any language from these vectors indi-
+                                                                         cates how well it fits to the classic typology. By representing
+16
+   A reviewer suggests that our findings might simply replicate those    languages as taking a position in a graded kinship space, we
+of D’Andrade (1971). However, there are substantial differences          open up important and previously intractable questions. Are
+between our findings and his, probably reflecting our much larger
+sample. Most importantly, where he found that “rarely, ... i.e. five
+times in 678 cases, or less than 1% of the time” (p. 64) a distinction
+occurs in G­ 0 without the same distinction in G
+                                               ­ +1, whereas we find     17
+                                                                           We used this approach to test for inter-rater reliability in the “Our
+this for 12.2% of the cases, i.e., 77/631.                               Database” section.
+
+
+13
+
+===== PDF PAGE 0010 / 0018 | Native =====
+Kin Against Kin: Internal Co‐selection and the Coherence of Kinship Typologies﻿	    185
+
+
+
+
+                                           ­ +1 and ­G0, by language family
+Fig. 2  Patterning of kinship terms across G
+
+
+
+
+                                                                                   13
+
+===== PDF PAGE 0011 / 0018 | Native =====
+186                                                                                                                              S. Passmore et al.
+
+
+
+
+                                           ­ +1 and ­G0, by macro-region. Oceania includes New Guinea and the islands of the Pacific
+Fig. 3  Patterning of kinship terms across G
+
+
+
+
+13
+
+===== PDF PAGE 0012 / 0018 | Native =====
+Kin Against Kin: Internal Co‐selection and the Coherence of Kinship Typologies﻿	                                                         187
+
+Fig. 4  Representation of kin-
+ship terminology systems as
+a binary string; differences in
+binary strings then represented
+in multidimensional space. a
+­ 0 for canonical Eskimo and
+G
+Iroquois with same hues show-
+ing the same terms are used for
+those relatives. b Each term is
+compared to each: same terms
+are scored as 1, different as 0.
+c Binary strings obtained for
+each language (string length is
+780 for the comparisons in our
+study). d Dimension-reduction
+techniques used to represent
+languages in space; closer sys-
+tems are more similar in their
+patterns of syncretism
+
+
+
+
+some systems more variable (more of a fuzzy cloud) than                        orders of magnitude larger. The exponentially expanded
+others (a tight cluster)? Do systems occupy distinct positions                 space introduces significant computational and theoretical
+in space or do some overlap? And perhaps most importantly,                     difficulties, so instead of replicating Nerlove and Romney
+do the systems that have dominated kinship discourse accu-                     exactly we turn to Whiting et al. (1988), who used a multi-
+rately represent key clusters in kinship space?                                variate and multidimensional scaling approach to represent
+   To answer these questions, we draw inspiration on logic                     observed kinship syncretisms. Their aim was to test Mur-
+and methodology from the earlier kinship analysts Nerlove                      dock’s (1949) proposals of external co-selection, i.e., that
+and Romney (1967) and Whiting et al. (1988). As outlined                       social structure and linguistic syncretisms cluster in similar
+in the first section, the former calculated the design space                   ways, and to evaluate how distinct the clusters were in space.
+for sibling terms to have 4140 possible types, of which only                   Here, we use powerful dimensionality reduction techniques
+15 occurred with any frequency.18 We expand the analysis                       alongside clustering approaches to create a graded kinship
+of ­G0 to include parent’s siblings’ children (cousins), but                   space, allowing the bottom-up assessment of existing sys-
+these additional 16 relationships19 create a design space 13                   tems and their variation.
+
+18
+                                                                               Creating the Kinship Space
+   Kinbank’s larger sample contains a higher number of any-attested
+sibling types (116), of which four were more common than Nerlove
+and Romney’s 8th and 9th commonest. Broader sampling (more, and                Our dataset is the subset of Kinbank languages with speci-
+more diverse, languages) and a long-tale distribution would account            fication for all siblings and parents’ siblings’ children kin
+for this difference.                                                           types, and a corresponding entry in the Ethnographic Atlas
+19
+   The figure of 16 is obtained by multiplying the four incidences of          (Murdock 1967) for canonical system (N = 306). Account-
+nuncles (MB, FB, MZ, FZ) times their children of both sexes (male
+and female) times seniority. Some languages calculate seniority                ing for relative age and sex of speaker, this is 40 possible
+through the linking relative (e.g., FeBS versus FyBS), others through          relationships. To apply clustering and dimensionality reduc-
+the relative age of ego and the referent (a FBS who is older/younger           tion techniques, we first compared these terms to obtain a
+than ego), but since no language appears to use both principles, and           numeric structural vector as described in Fig. 4. For each
+most sources are imprecise about which (if any) of these two criteria
+operates, we have simply conflated these two principles into “junior/          language, a 40 × 40 pairwise comparison represented the
+senior,” leaving the criteria unspecified.                                     syncretism structure of the sibling/cousin terminology. Each
+
+
+                                                                                                                                  13
+
+===== PDF PAGE 0013 / 0018 | Native =====
+188                                                                                                                                S. Passmore et al.
+
+                          ­ 0 identified from the data by HDBSCAN
+Table 1  Cluster-types in G
+Cluster N    Syncretisms                                            Description                                                Canonical system
+
+A       69 [B FBS MZS], [Z FBD MZD], [FZC MBC]                      Syncretisms by gender for siblings and parallel cous-      Cross-parallel
+                                                                     ins, cross-cousin term
+B       51 eB, yB, eZ, yZ, [FBC FZC MBC MZC]                        Relative age and gendered sibling terms; single cousin     Eskimo
+                                                                     term
+C       35 e//, eX, y//, yX                                                                                             ­ 0
+                                                                    Relative age and relative gender distinction across G      Hawaiian
+D       21 B, Z, [FBS FZS MBS MZS], [FBD FZD MBD MZD]               Gendered sibling terms; gendered cousin terms              Eskimo
+E       20 eB, yB, eZ, yZ,                                          Relative age and gendered sibling terms; gendered          Eskimo
+           [FBS FZS MBS MZS] [FBD FZD MBD MZD]                       cousin terms
+F       19 e[B Z FBC FZC MBC MZC]                                   Elder and younger terms across ­G0                         Hawaiian
+           y[B Z FBC FZC MBC MZC]
+G       19 //[G FBC MZC], X[G FBC MZC], [FZC MBC]                   Relative gender distinction for siblings and parallel      Cross-parallel
+                                                                     cousins; cross-cousin term
+H       11 eG, yG, [FBC MZC], [FZC MBC]                             Relative age sibling terms; parallel cousin term; cross-   Cross-parallel
+                                                                     cousin term
+I       10 B, Z, FBC, FZC, MBC, MZC                                 Gendered sibling terms; unique term for children of        Sudanese
+                                                                     each parent’s sibling
+Outlier 51 –                                                        Outlier                                                    –
+
+Types are ordered by frequency of occurrence (N = 306). The Syncretisms column shows kin types using the same term in brackets; verbally
+described in Description column. Canonical System lists the nearest canonical match for the cluster-type
+
+
+pair of terms was compared using Optimal String Alignment               (which influences how conservative clusters are) we mini-
+(OSA; a restricted Damerau-Levenshtein distance (Dam-                   mized the number of outlier languages. We then extract
+erau 1964; Levenshtein 1966)). This method compares let-                the top 100 features representing those cluster-types using
+ters and gives a value between 0 and 1 for each comparison              random forests (McInnes et al. 2017; McInnes and Healy
+between two terms. A 1 indicates the terms are exactly the              2017). HDBSCAN has the added advantage of automati-
+same, while 0 indicates that no letters overlapped between              cally detecting outliers, circumventing inappropriate
+the terms: thus, the English pair FBC (cousin) versus FZC               forcing of languages into cluster-types, and highlighting
+(cousin) would score 1, the terms for MZ (aunt) and M                   languages where kinship organization is truly irregular.
+(mother) would score 0, while the Italian pair FBS (cugino)             Reducing our features also minimizes the amount of noise
+and FBD (cugina) would score 0.83. OSA distance allowed                 in the kinship space and makes the dataset more suitable to
+us to minimize the impact of grammatical features denot-                the dimensionality reduction technique that we use to visu-
+ing, e.g., gender. For example, Spanish cousin terms are                alize the space. Here we use the nonlinear dimensionality
+primo (masc.) and prima (fem.); a simple binary compari-                reduction technique UMAP (uniform manifold approxi-
+son would assign this pair a score of 0, but would conceal              mation and projection). This technique is computation-
+the fact that the underlying semantic structure is the same             ally expensive but is designed to maintain the relationship
+(cousin in both cases) except for the gender suffix o/a. To             between points that are far away from each other, allowing
+create the structural vector for a language, we turn the matrix         us to make inferences on the amount of change that needs
+of pairwise comparisons into a single row. This process is              to occur for systems to transform into one another (McI-
+repeated for each language, resulting in a matrix where rows            nnes et al. 2018). Once the point clouds are represented
+represent languages, and columns represent term compari-                in kinship space, we can examine the extent of variation
+sons (features).                                                        in clusters, and compare them to the canonical typology.
+   The distance between each row of the matrix is a func-
+tion of how similar the structure of each language kinship
+terminology is (lower distances = more similar systems).                Interpreting the Kinship Space
+Since the number of dimensions in our resultant matrix is
+high (780 features), we use a technique called HDBSCAN                  This analysis has two main outputs, cluster-types identified
+(hierarchical density-based spatial clustering of applica-              using HDBSCAN (Table 1), and the visualization of kin-
+tions with noise) that identifies key clusters in the kinship           ship space derived from UMAP (Fig. 5a, b). We interpret
+space (given in Table 1). We set two parameters in the                  results with reference to canonical Eskimo, Hawaiian, and
+HDBSCAN algorithm: The first was minimum cluster size                   Sudanese systems. We introduce a combination category
+which we conservatively set to 10, and for min_samples                  Cross-parallel for Omaha, Crow, Iroquoian, and Dravidian
+
+
+13
+
+===== PDF PAGE 0014 / 0018 | Native =====
+Kin Against Kin: Internal Co‐selection and the Coherence of Kinship Typologies﻿	                                                              189
+
+
+
+
+Fig. 5  a Kinship space as derived by UMAP. Each point indicates a             (“congregations”). b As for (a), except colors represent each lan-
+language, and the color indicates the identified cluster using HDB-            guage’s canonical classification in the Ethnographic Atlas (Murdock
+SCAN (Table 1). Distance between points indicates similarity.                  1967). Gray points do not have Atlas data
+Dashed arcs indicate the region of highest density for canonical types
+
+                                                                                                                                      13
+
+===== PDF PAGE 0015 / 0018 | Native =====
+190                                                                                                                S. Passmore et al.
+
+systems, because they are distinguished from each other by         Fig. 5b), all types are present, and Cross-parallel/Sudanese
+syncretisms with ­G+1 terms and here we only consider ­G0.         types are found in all other congregations. At a finer grain of
+                                                                   analysis, we find only 42% of languages have symmetrical
+Cluster Identification                                             cross-parallel distinctions, indicating further internal varia-
+                                                                   tion beyond that represented here.
+HDBSCAN categorizes 255 of the 306 languages (83.3%)
+into one of eight cluster-types, which map to Eskimo (3            Hawaiian
+clusters), Hawaiian (2), Cross-parallel (3), and Sudanese
+(1), while 51 are classified as outliers (Table 1). The data       The Hawaiian space is structured into two key subspaces,
+therefore display significant structure.                           which are defined by the presence (cluster C, bottom left
+   Structure is also seen in the UMAP representation of kin-       of Fig. 5a) or absence (cluster F, bottom center) of relative
+ship space (Fig. 5). Not all regions are populated, and large      gender rules. Hawaiian exemplars are defined by the syn-
+congregations are observed. The congregations are mostly           cretism of sibling kin terms with all cousins. Our kinship
+comprised of one or two cluster-types, and broadly map to          space shows this system exists, but the internal variation is
+the same canonical system, but there is significant fuzziness.     significantly demarcated: these distinct types make dramati-
+Figure 5 shows that outliers traverse the center of the space      cally different predictions of co-selection across generations.
+and reach into each cluster, but notably do not lie far-flung      Figure 5b shows that these categories are almost exclusively
+from the main congregations. We discuss each region of             populated with languages coded in the Ethnographic Atlas
+space, and cluster-types within, in turn.                          as Hawaiian (blue points), but within the Atlas Hawaiian
+                                                                   system languages are also distributed widely in all other
+Eskimo                                                             congregations.
+                                                                      A number of languages sit at the central crossroads, par-
+This congregation (Fig. 5a, top left and center) pulls in all      ticularly between the Eskimo and Hawaiian congregations.
+three cluster-types matched to Eskimo (Table 1) but internal       These languages exhibit a mix of systems, such as Chepang
+groups are not exclusively defined. Cluster-types B and E          which has Eskimo organization in ­G0 relatives older than
+represent distinct sibling organizations (gender, gender and       ego, but Hawaiian-styled organization for younger siblings;
+relative age), recapitulating two of the most common types         or their sibling and cousin terms are augmentations of each
+found by Nerlove and Romney (1967). Gendered cousin                other, such as Modern Greek (Z: adelphi; FBD: exadelphi).
+terms (clusters D and E) are distributed towards the mid-          This suggests the approach accurately represents similarity.
+dle of the space, while single-cousin terms (cluster B) are           In sum, although the kinship space is structured, the
+tightly packed at the edge. Figure 5b shows that canonical         principles driving the structure are not exceptionless, since
+Eskimo systems in the Ethnographic Atlas (green points)            we observe cross-parallel languages that only partially col-
+overwhelmingly sit in the broad Eskimo congregation, with          lapse parallel relatives, and Eskimo-style languages with
+only one language in another region of space.                      Hawaiian-style tendencies. Rather than retaining stringent
+                                                                   prototype-based typologies, a more fruitful approach may
+Cross‐parallel and Sudanese                                        invoke principles that categorize kinship systems as sets of
+                                                                   violable preferences, an idea that has previously been pro-
+The common feature of this congregation (Fig. 5a, top right)       posed by Jones (2010) in an optimality theoretic account.
+is predictably the presence of crossness in various forms.         On this probabilistic view of kinship categorization, systems
+The identifiable subtypes of this space are defined by relative    need not be symmetric, a problem that has long puzzled the-
+gender (i.e., sex-of-speaker) distinctions (cluster G), relative   orists (Hage 2001). While symmetric systems are observed,
+age for siblings (cluster H), and if siblings and parallel cous-   and often used as exemplars, many languages deviate from
+ins receive the same term(s) (cluster A and G); Sudanese           symmetry in order to designate terms for individuals, rela-
+(cluster I) languages are distributed towards the center of the    tionships, or groups of people that have particular cultural
+kinship space. Within languages comprising each identified         significance.
+subtype, the rules applied to siblings appear to be reliably          To return to the questions we posed. Canonical systems
+and symmetrically applied to parallel cousins, suggesting          are significantly more variable in kinship space than a
+internal co-selection: e.g., if siblings have a relative age       strictly coherent model would predict (Fig. 5b), and while
+distinction, so do parallel cousins. The cross-parallel con-       the cluster-types derived by HDBSCAN sit neatly in con-
+gregation spreads over a large region, surrounded by empty         gregations, none occupy exclusive positions in space. We
+space, and with only a narrow neck of contact to other con-        can discern congregations, but they share a central axis
+gregations. While it is largely populated by canonical Cross-      where types overlap. Exploring kinship space in this man-
+parallel types from the Ethnographic Atlas (blue points in         ner demonstrates that the canonical systems conceal internal
+
+
+13
+
+===== PDF PAGE 0016 / 0018 | Native =====
+Kin Against Kin: Internal Co‐selection and the Coherence of Kinship Typologies﻿	                                                          191
+
+variation along axes still to be well characterized, and this                  effects are weak enough to permit many mixed systems to
+is all discerned with kin term data from a single generation,                  evolve and persist. Recent research provides some evidence
+­ 0. Our data-driven computational approach can reveal more
+ G                                                                             for this, showing that more distant kinterms (MB, FZ, MBD,
+complex variants—not by endlessly modifying prior typolo-                      etc.) get replaced at a faster rate than closer kinterms (M, B,
+gies into a Copernican system, or consigning variation to                      Z, etc.) (Rácz et al. 2019a).
+mixed or transitional forms—but rather by accounting for                          In the previous section we showed that even within a gen-
+all of the possible dimensions represented by a set of kinship                 eration ­(G0), diversity is much higher than canonical typolo-
+terms from the bottom up. Modelling kinship space in this                      gies presume. Here, we observe clustering of broad systems
+way, where distance maps to similarity, can also sharpen                       in kinship space (Eskimo, Hawaiian, Cross-parallel), but
+our predictions on diachronic change in kinship systems; if                    detect non-distinct subtypes within each of these clusters.
+the central zone in Fig. 5 is a transitional hub, drilling into                Substantial overlap exists in the central zone of kinship
+the system characteristics may shed light on regularities in                   space, suggesting that graded variation is a characteristic
+cultural evolution.                                                            feature of kinship terminology, not a marginal source of
+                                                                               error.
+                                                                                  We make one important caveat for these analyses: for
+Conclusions: On the Internal Coherence                                         computational reasons we have treated languages as inde-
+of Canonical Types                                                             pendent, but shared ancestry will produce some autocorre-
+                                                                               lation. Kinship terminology demonstrates reasonably high
+Godelier (Godelier et al. 1998, p. 392) remarked that, “there                  phylogenetic signal (Rácz et al. 2019a, b; Passmore and
+are very few kinship systems in the world. All... are variants                   Jordan 2020) and low borrowing (Haspelmath and Tadmor
+of fewer than ten.” Our analyses, using a large global dataset                 2009; Honkola and Jordan 2021), suggesting that closely
+and new computational approaches, strongly challenge the                       related languages are likely to have the same structural
+descriptive adequacy of the limited set of canonical kinship                   organization. Nonindependence of languages means we
+systems. If there are “very few” systems, they are certainly                   may overrepresent some structural systems; this is most
+not (only) those classic exemplars of Hawaiian, Dravidian,                     likely to affect clustering methods because frequency will
+et al.; the co-selectional bonds between different parts of                    determine the visibility of a subtype. We thus advise cau-
+those systems turn out to be much weaker than assumed.                         tion in making inferences (and have not done so here)
+Post hoc, the reasoning appears simple: classification on the                  about the relative importance of the kinship types we
+basis of a small set of kin types (for example, G  ­ 0) gives a                detect.
+design space small enough that a few types engulf most eth-                       The greater empirical reach of large cultural and linguis-
+nographic variation. Include just one more set of kin types                    tic databases (e.g., Kirby et al. 2016), combined with com-
+(here, ­G+1) and both the design space and the number of                       putational tools that can test hypotheses and infer patterns
+types that populate it increase exponentially. This is already                 over enormous dimensional complexity, reveal a much
+bad news for the canonical systems, but once we consider                       more heterogenous picture than the elegant typologies
+that our analyses only used severely pruned subsets of all                     of 20th century anthropology gifted us. We should view
+possible kin terms this means that the actual patterning is                    this challenge positively. Kinship terminology studies fell
+likely to be substantially more complex (Passmore 2020),                       from favor because of their abstractness from ethnographic
+potentially much more than even Godelier’s generous “vari-                     nuance. We hope that bottom-up, data-driven approaches
+ants of fewer than ten.”                                                       exploring kinship space may yet close this gap, combining
+   Our first analysis (in the “Testing Typological Cohe-                       the systematic semantic patterning produced by cognitive
+sion: Clearing the Ground with New Data” section, above)                       and learning constraints on the one hand, and a (hopefully
+showed that internal co-selection—specifically, termino-                       tractable) handful of culturally variable and cross-cutting
+logical coherence between generations—is not strongly                          preferences for dimensions such as gender, age, or cross-
+evident in the data. Correlations are only moderate, and one                   ness on the other.
+generation is at best mildly predictive of another. Kinship                       To advance the project, we close by suggesting two
+paradigms are thus less integrated than has generally been                     strands for further work on internal co-selection in kinship
+believed. Rather, diverse cultural, cognitive, and evolution-                  systems. First, if we are to really understand how transitions
+ary forces will act in a dispersed way across the cells of                     work, from one kinship type to another, we need far more
+the kinship paradigm, producing a wider range of systems                       careful diachronic studies than we now have. For example,
+than encompassed by classic typologies. But this systema-                      as far as we can determine, there are no philological stud-
+ticity still begs our attention because clearly, not all kinship               ies of the relative timing of change in ­G0 and ­G+1 terms in
+systems are possible: changes in one part of the system do                     Latin and Old Russian (switching from Sudanese to Eskimo
+have some stochastic effect on changes in other parts, but the                 systems), and of when and for how long there was a period
+
+
+                                                                                                                                   13
+
+===== PDF PAGE 0017 / 0018 | Native =====
+192                                                                                                                                        S. Passmore et al.
+
+of typological inconsistency, i.e., a Sudanese pattern in one                      References
+generation with an Eskimo pattern in the other. The question
+of where changes start to take place in kinship terminolo-                         Cronk L, Steklis D, Steklis N, van den Akker OR, Aktipis A (2019) Kin
+gies, and how they propagate throughout the system, remains                            terms and fitness interdependence. Evol Hum Behav 40:281–291.
+                                                                                       https://​doi.​org/​10.​1016/j.​evolh​umbeh​av.​2018.​12.​004
+underexplored.                                                                     D’Andrade RG (1971) Procedures for predicting kinship terminology
+   Second, both at the level of language description, and in                           from features of social organisation. In: Kay P (ed) Explorations
+our own programmatic representation in our databases, we                               in mathematical anthropology. MIT Press, Cambridge, pp 60–75
+need to squarely confront the existence of variation in the                        Damerau FJ (1964) A technique for computer detection and correction
+                                                                                       of spelling errors. Commun ACM 7:171–176. https://​doi.​org/​10.​
+denotational range of kin terms. That is, the existence of dif-                        1145/​363958.​363994
+ferent semantic ranges for the same terms among different                          Danziger E (1993) What might mother mean? The acquisition of kin-
+speakers, or even the same speaker in different contexts: it                           ship vocabulary in Mopan Maya. In: Clark VE (ed) Proceedings
+is only when we find systems exhibiting variable seman-                                of the twenty-fifth annual child language research forum. Center
+                                                                                       for the study of language and information, Stanford, pp 227–234
+tic systems that we see the smoking gun of change in pro-                          Désveaux E, Selz M (1998) Dravidian nomenclature as an expression
+gress.20 Detailed sociolinguistic and elicitation studies, and                         of ego-centered dualism. In: Godelier M, Trautmann TR, Tjon Sie
+naturalistic corpora are the gold standard here, across a wide                         Fat F (eds) Transformations of kinship. Smithsonian Institution
+range of languages. While kinship was the earliest domain                              Press, Washington, pp 150–167
+                                                                                   Dole GE (1969) Generation kinship nomenclature as an adaptation to
+of anthropological study, we still have much to learn: armed                           endogamy. Southwest J Anthropol 25:105–123. https://d​ oi.o​ rg/1​ 0.​
+with a realistic account of variation, we can progress.                                1086/​soutj​anth.​25.2.​36291​97
+                                                                                   Dole GE (1972) Developmental sequences of kinship patterns. In:
+Acknowledgments Enormous thanks to all who have contributed data                       Reining P (ed) Kinship studies in the Morgan centennial year.
+and time to the Kinbank project, particularly Catherine Sheard, Joshua                 Anthropological Society of Washington, DC
+Birchall, and Luis Henrique Oliveira. We are grateful to the organizers            Evans ND (2011) A grammar of Kayardild: with historical-comparative
+and participants of the “Revisiting the Evolution of Kinship” meeting                  notes on Tangkic. De Gruyter Mouton, New York
+for stimulating feedback, and to Kim Sterelny for his encouragement                Gardner H, McConvell P (2015) Southern anthropology: a history of
+and patience. This work was supported by the European Research                         Fison and Howitt’s ‘Kamilaroi and Kurnai.’ Palgrave Macmillan,
+Council (Starting Grant VARIKIN ERC-Stg-639291), the Leverhulme                        New York
+Trust (International Partnership Mobility Grant 160281), and the Aus-              Godelier M (2012) The metamorphoses of kinship. Verso Books, New
+tralian Research Council Center of Excellence for the Dynamics of                      York
+Language (Grant CE140100041).                                                      Godelier M, Trautmann TR, Tjon Sie Fat F (eds) (1998) Transforma-
+                                                                                       tions of kinship. Smithsonian Institution Press, Washington
+Data Availability All data used in this project is taken from Kinbank              Greenberg J (1966) Language universals. Mouton, The Hague
+(https://​excd.​org/​resea​rch-​activ​ities/​kinba​nk/). Further details on Kin-   Hage P (2001) Marking theory and kinship analysis: cross-cultural and
+bank access and availability will be available in Passmore et al. (in                  historical applications. Anthropol Theory 1:197–211. https://​doi.​
+prep.).                                                                                org/​10.​1177/​14634​99601​00100​203
+                                                                                   Haspelmath M, Tadmor U (eds) (2009) Loanwords in the world’s lan-
+                                                                                       guages: a comparative handbook. De Gruyter Mouton, Berlin
+Open Access This article is licensed under a Creative Commons Attri-               Honkola T, Jordan F (2021) Kinship term borrowing. Paper presented
+bution 4.0 International License, which permits use, sharing, adapta-                  at the European human behaviour & evolution association confer-
+tion, distribution and reproduction in any medium or format, as long                   ence, Krakow, Poland (online), 24–27 March 2021
+as you give appropriate credit to the original author(s) and the source,           Hughes CC (1958) An Eskimo deviant from the “Eskimo” type of
+provide a link to the Creative Commons licence, and indicate if changes                social organization. Am Anthropol 60:1140–1147
+were made. The images or other third party material in this article are            Jones D (2010) Human kinship, from conceptual structure to gram-
+included in the article’s Creative Commons licence, unless indicated                   mar. Behav Brain Sci 33:367–381. https://​doi.​org/​10.​1017/​S0140​
+otherwise in a credit line to the material. If material is not included in             525X1​00008​90
+the article’s Creative Commons licence and your intended use is not                Kemp C, Regier T (2012) Kinship categories across languages reflect
+permitted by statutory regulation or exceeds the permitted use, you will               general communicative principles. Science 336:1049–1054.
+need to obtain permission directly from the copyright holder. To view a                https://​doi.​org/​10.​1126/​scien​ce.​12188​11
+copy of this licence, visit http://​creat​iveco​mmons.​org/​licen​ses/​by/4.​0/.   Kemp C, Xu Y, Regier T (2018) Semantic typology and efficient com-
+                                                                                       munication. Annu Rev Linguist 4:109–128. https://​doi.​org/​10.​
+                                                                                       1146/​annur​ev-​lingu​istics-​011817-​045406
+                                                                                   Kirby KR, Gray RD, Greenhill SJ, Jordan FM, Gomes-Ng S, Bibiko
+                                                                                       H-J et al (2016) D-PLACE: a global database of cultural, linguis-
+                                                                                       tic and environmental diversity. PLOS ONE 11:e0158391. https://​
+                                                                                       doi.​org/​10.​1371/​journ​al.​pone.​01583​91
+                                                                                   Kirchhoff P (1932) Verwandtschaftsbezeichnungen und Verwandten-
+                                                                                       heirat. Z Ethnol 64:41–72
+20
+                                                                                   Koerner EFK (1997) Notes on the history of the concept of language
+   See Marley (2020) for an exemplary study showing how much var-                      as a system ‘ou tout se tient.’ Linguist Atl 19:1–20
+iability can coexist in the kinship systems even of small languages –              Kroeber AL (1909) Classificatory systems of relationship. J R Anthro-
+for the Bininj Kunwok language of Northern Australia (< 2000 speak-                    pol Inst Gt Br Irel 39:77–84. https://​doi.​org/​10.​2307/​28432​84
+ers) she identifies six patterns of terminology for grandparents and
+great-nuncles, for example.
+
+
+13
+
+===== PDF PAGE 0018 / 0018 | Native =====
+Kin Against Kin: Internal Co‐selection and the Coherence of Kinship Typologies﻿	                                                                        193
+
+Kronenfeld DB (2004) Definitions of cross versus parallel: Implica-            Pans A (1967) Verwantschapsklassificeringen van Nieuw Guinea:
+    tions for a new typology (an appreciation of A. Kimball Romney).                Een grondslag voor de theorie-vorming over het verschijnsel
+    Cross-Cult Res 38:249–269. https://​doi.​org/​10.​1177/​10693​97104​            verwantschapsklassifiering. Unpublished thesis, University of
+    264276                                                                          Amsterdam
+Kronenfeld DB (2006) Issues in the classification of kinship terminolo-        Parkin R (1997) Kinship: an introduction to the basic concepts. Wiley-
+    gies: toward a new typology. Anthropos 101:203–219                              Blackwell, Oxford
+Levenshtein VI (1966) Binary codes capable of correcting deletions,            Passmore S (2020) Quantitative approaches to kinship terminology
+    insertions, and reversals. Sov Phys Dokl 10(8):707–710                          evolution. Unpublished PhD Thesis, University of Bristol
+Levinson SC (2006) Matrilineal clans and kin terms on Rossel Island.           Passmore S, Jordan FM (2020) No universals in the cultural evolution
+    Anthropol Linguist 48:1–43                                                      of kinship terminology. Evol Hum Sci. https://​doi.​org/​10.​1017/​
+Lounsbury FG (1964) The structural analysis of kinship semantics. In:               ehs.​2020.​41
+    Hunt HG (ed) Proceedings of the ninth international congress of            Rácz P, Passmore S, Sheard C, Jordan FM (2019a) Usage frequency
+    linguistics. Mouton, The Hague, pp 1073–1093                                    and lexical class determine the evolution of kinship terms in Indo-
+Lounsbury FG, Goodenough WH (1964) A formal account of the                          European. R. Soc Open Sci 6:191385. https://​doi.​org/​10.​1098/​
+    Crow-and Omaha-type kinship terminologies in explorations in                    rsos.​191385
+    cultural anthropology. In: Goodenough WH (ed) Essays in honour             Rácz P, Passmore S, Jordan FM (2019b) Social practice and shared
+    of George Peter Murdock. McGraw-Hill, New York, pp 351–393                      history, not social scale, structure cross-cultural complexity in kin-
+Lowie RH (1928) A note on relationship terminologies. Am Anthropol                  ship systems. Top Cognit Sci. https://​doi.​org/​10.​1111/​tops.​12430
+    30:263–267. https://​doi.​org/​10.​1525/​aa.​1928.​30.2.​02a00​060         Read DW (2013) A new approach to forming a typology of kinship
+Marley A (2020) Kundangkudjikaberrk: variation and change in Bininj                 terminology systems: from Morgan and Murdock to the pre-
+    Kunwok, a Gunwinyguan language of Northern Australia. PhD                       sent. Struct Dyn 6(1). https://​escho​larsh​ip.​org/​uc/​item/​0ss6j​8sh.
+    Thesis, Australian National University                                          Accessed 4 Dec 2020
+McInnes L, Healy J (2017) Accelerated hierarchical density based clus-         Romney AK, Epling PJ (1958) A simplified model of Kariera kinship.
+    tering. In: 2017 IEEE International Conference on Data Mining                   Am Anthropol 60:59–74. https://​doi.​org/​10.​1525/​aa.​1958.​60.1.​
+    Workshops (ICDMW), pp 33–42                                                     02a00​070
+McInnes L, Healy J, Astels S (2017) hdbscan: Hierarchical density-             Scheffler HW (1978) Australian kin classification. Cambridge Univer-
+    based clustering. J Open Source Soft. https://​doi.​org/​10.​21105/​            sity Press, Cambridge
+    joss.​00205                                                                Stone L (2013) Kinship and gender. 4th edn. Routledge, New York
+McInnes L, Healy J, Saul N, Grossberger L (2018) UMAP: uniform                 Trautmann TR (1981) Dravidian kinship. Cambridge University Press,
+    manifold approximation and projection. J Open Source Soft 3:861                 Cambridge
+Morgan LH (1871) Systems of consanguinity and affinity of the human            Whiting JWM, Burton ML, Romney AK, Moore CC, White DR (1988)
+    family. Smithsonian Institution, Washington                                     A reanalysis of Murdock’s model for social structure based on
+Murdock GP (1949) Social structure. Macmillan Co, New York                          optimal scaling. Behav Sci Res 22(1–4):23–40. https://​doi.​org/​
+Murdock GP (1967) Ethnographic atlas. University of Pittsburgh Press,               10.​1177/​10693​97188​02200​104
+    Pittsburgh
+Murdock GP (1968) Patterns of sibling terminology. Ethnology 7:1.              Publisher’s Note Springer Nature remains neutral with regard to
+    https://​doi.​org/​10.​2307/​37728​05                                      jurisdictional claims in published maps and institutional affiliations.
+Murdock GP (1970) Kin term patterns and their distribution. Ethnology
+    9:165–208. https://​doi.​org/​10.​2307/​37727​82
+Nerlove S, Romney AK (1967) Sibling terminology and cross-sex
+    behavior. Am Anthropol 69:179–187
+
+
+
+
+                                                                                                                                               13

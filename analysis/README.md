@@ -33,3 +33,9 @@ python analyze.py
 脚本已断言：各折训练／测试 Glottocode 与谱系组不重叠、每个预测有效、主设计保持秩、七单元饱和最大似然恢复实际共享率。独立设计审计另从原始词形重建所有主结果，并验证全部九组损失、Brier score、语言权重和 bootstrap 区间。具体审计见相邻 `../notes/design_audit.md`。
 
 可直接使用的中文图为 `seven_cell_fit.png/svg`、`robustness_gain.png/svg`。
+
+## 2026年10月15日文献更新
+
+本轮未修改冻结的数据、analyze.py、results.json和数值结论。新增PDF、TXT、引用和交接任务见根目录README、CLAUDE_TODO.md与CLAUDE_REVIEW_CHECKLIST.md。
+
+文献维护命令：`python convert_literature_pdf_to_txt.py --workers 3 --dpi 200`、`python build_documents.py`、`python validate_literature_update.py`。文本工具依赖见requirements_text.txt；转换还需Poppler、Tesseract和英语模型。

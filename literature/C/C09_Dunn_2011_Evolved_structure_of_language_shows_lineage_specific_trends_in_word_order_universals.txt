@@ -1,0 +1,369 @@
+# PDF全文文本（UTF-8）
+来源PDF：literature/C/C09_Dunn_2011_Evolved_structure_of_language_shows_lineage_specific_trends_in_word_order_universals.pdf
+原PDF SHA-256：9e6ca84243e561942a267188081933d0ad39169e05d4357833ef542a8a99046c
+页码表示PDF文件页序，不自动等同于期刊印刷页码。Native为原文本层，OCR为扫描或低文字页识别；表格、音标、公式与OCR仍须对照PDF。
+
+===== PDF PAGE 0001 / 0004 | Native =====
+LETTER                                                                                                                                                               doi:10.1038/nature09923
+
+
+
+
+Evolved structure of language shows lineage-specific
+trends in word-order universals
+Michael Dunn1,2, Simon J. Greenhill3,4, Stephen C. Levinson1,2 & Russell D. Gray3
+
+
+Languages vary widely but not without limit. The central goal of                                      after the noun, whereas dominant object–verb ordering predicts post-
+linguistics is to describe the diversity of human languages and                                       positions, relative clauses and genitives before the noun4. One general
+explain the constraints on that diversity. Generative linguists fol-                                  explanation for these observations is that languages tend to be consist-
+lowing Chomsky have claimed that linguistic diversity must be                                         ent (‘harmonic’) in their order of the most important element or ‘head’
+constrained by innate parameters that are set as a child learns a                                     of a phrase relative to its ‘complement’ or ‘modifier’3, and so if the verb
+language1,2. In contrast, other linguists following Greenberg have                                    is first before its object, the adposition (here preposition) precedes the
+claimed that there are statistical tendencies for co-occurrence of                                    noun, while if the verb is last after its object, the adposition follows the
+traits reflecting universal systems biases3–5, rather than absolute                                   noun (a ‘postposition’). Other functionally motivated explanations
+constraints or parametric variation. Here we use computational                                        emphasize consistent direction of branching within the syntactic struc-
+phylogenetic methods to address the nature of constraints on                                          ture of a sentence9 or information structure and processing efficiency5.
+linguistic diversity in an evolutionary framework6. First, contrary                                       To demonstrate that these correlations reflect underlying cognitive
+to the generative account of parameter setting, we show that the                                      or systems biases, the languages must be sampled in a way that controls
+evolution of only a few word-order features of languages are                                          for features linked only by direct inheritance from a common
+strongly correlated. Second, contrary to the Greenbergian general-                                    ancestor10. However, efforts to obtain a statistically independent sample
+izations, we show that most observed functional dependencies                                          of languages confront several practical problems. First, our knowledge
+between traits are lineage-specific rather than universal tendencies.                                 of language relationships is incomplete: specialists disagree about high-
+These findings support the view that—at least with respect to word                                    level groupings of languages and many languages are only tentatively
+order—cultural evolution is the primary factor that determines                                        assigned to language families. Second, a few large language families
+linguistic structure, with the current state of a linguistic system                                   contain the bulk of global linguistic variation, making sampling purely
+shaping and constraining future states.                                                               from unrelated languages impractical. Some balance of related, unre-
+   Human language is unique amongst animal communication sys-                                         lated and areally distributed languages has usually been aimed for in
+tems not only for its structural complexity but also for its diversity at                             practice11,12.
+every level of structure and meaning. There are about 7,000 extant                                        The approach we adopt here controls for shared inheritance by
+languages, some with just a dozen contrastive sounds, others with more                                examining correlation in the evolution of traits within well-established
+than 100, some with complex patterns of word formation, others with                                   family trees13. Drawing on the powerful methods developed in evolu-
+simple words only, some with the verb at the beginning of the sentence,                               tionary biology, we can then track correlated changes during the his-
+some in the middle, and some at the end. Understanding this diversity                                 torical processes of language evolution as languages split and diversify.
+and the systematic constraints on it is the central goal of linguistics. The                          Large language families, a problem for the sampling method described
+generative approach to linguistic variation has held that linguistic                                  above, now become an essential resource, because they permit the
+diversity can be explained by changes in parameter settings. Each of                                  identification of coupling between character state changes over long time
+these parameters controls a number of specific linguistic traits. For                                 periods. We selected four large language families for which quantitative
+example, the setting ‘heads first’ will cause a language both to place                                phylogenies are available: Austronesian (with about 1,268 languages14
+verbs before objects (‘kick the ball’), and prepositions before nouns                                 and a time depth of about 5,200 years15), Indo-European (about 449
+(‘into the goal’)1,7. According to this account, language change occurs                               languages14, time depth of about 8,700 years16), Bantu (about 668 or
+when child learners simplify or regularize by choosing parameter set-                                 522 for Narrow Bantu17, time depth about 4,000 years18) and Uto-
+tings other than those of the parental generation. Across a few genera-                               Aztecan (about 61 languages19, time-depth about 5,000 years20).
+tions such changes might work through a population, effecting                                         Between them these language families encompass well over a third of
+language change across all the associated traits. Language change                                     the world’s approximately 7,000 languages. We focused our analyses on
+should therefore be relatively fast, and the traits set by one parameter                              the ‘word-order universals’ because these are the most frequently cited
+must co-vary8.                                                                                        exemplary candidates for strongly correlated linguistic features, with
+   In contrast, the statistical approach adopted by Greenbergian linguists                            plausible motivations for interdependencies rooted in prominent formal
+samples languages to find empirically co-occurring traits. These co-                                  and functional theories of grammar.
+occurring traits are expected to be statistical tendencies attributable to                                To test the extent of functional dependencies between word-order
+universal cognitive or systems biases. Among the most robust of these                                 variables, we used a Bayesian phylogenetic method implemented in the
+tendencies are the so-called ‘‘word-order universals’’3 linking the order                             software BayesTraits21. For eight word-order features we compared
+of elements in a clause. Dryer has tested these generalizations on a                                  correlated and uncorrelated evolutionary models. Thus, for each pair
+worldwide sample of 625 languages and finds evidence for some of these                                of features, we calculated the likelihood that the observed states of the
+expected linkages between word orders9. According to Dryer’s reformu-                                 characters were the result of the two features evolving independently,
+lation of the word-order universals, dominant verb–object ordering                                    and compared this to the likelihood that the observed states were the
+correlates with prepositions, as well as relative clauses and genitives                               result of coupled evolutionary change. This likelihood calculation was
+1
+ Max Planck Institute for Psycholinguistics, Post Office Box 310, 6500 AH Nijmegen, The Netherlands. 2Donders Institute for Brain, Cognition and Behaviour, Radboud University Nijmegen, Kapittelweg 29,
+6525 EN Nijmegen, The Netherlands. 3Department of Psychology, University of Auckland, Auckland 1142, New Zealand. 4Computational Evolution Group, University of Auckland, Auckland 1142, New
+Zealand.
+
+
+                                                                                                                                            5 M AY 2 0 1 1 | VO L 4 7 3 | N AT U R E | 7 9
+                                                           ©2011 Macmillan Publishers Limited. All rights reserved
+
+===== PDF PAGE 0002 / 0004 | Native =====
+ RESEARCH LETTER
+
+
+     Indo-European                                                          Austronesian
+                                                                                                                       ● Sediq
+                 ● Hittite                                                                                               ● SquliqAtayal
+                                    ● Tocharian A                                                                        ● CiuliAtayal
+                                    ● Tocharian B                                                             ● Siraya
+                                            ● Armenian Mod                                                   ● Rukai
+                                                            ● Albanian G                                              ● Tsou
+                                             ● AncientGreek                                         ● Paiwan
+                                                     ● Greek Mod                                                     ● Bajo
+                                          ● Latin                                                              ● WBukidnonManobo
+                                                      ● Rumanian List                                                   ● TboliTagabili
+                                                     ● Sardinian C                                            ● BikolNagaCity
+                                                    ● Catalan                                                 ●  Mamanwa
+                                                    ● Portuguese ST                                          ● Cebuano
+                                                  ● Spanish                                                     ● Kapampangan
+                                                ● Italian                                                    ● Ilokano
+                                                   ● Ladin                                                         ● Agta
+                                                  ● Walloon                                                                 ● Pangasinan
+                                                  ● Provencal                                                          ● BontokGuinaang
+                                                 ● French                                                              ● IfugaoBatad
+                                           ● Gothic                                                                                   ● Palauan
+                                           ● Old Norse                                                                    ● MerinaMalagasy
+                                            ● Swedish List                                                           ● TimugonMurut
+                                            ● Danish                                                            ● Lampung
+                                             ● Riksmal                                                                ● TobaBatak
+                                            ● Icelandic ST                                                         ● Sunda
+                                             ● Faroese                                                        ● Iban
+                                          ● Old English                                                       ● Minangkabau
+                                               ● English ST                                                ● MalayBahasaIndonesia
+                                              ● Luxembourgish                                              ● Indonesian
+                                              ● Pennsylvania Dutch                                                ● Wolio
+                                            ● German ST                                                              ● Popalia
+                                             ● Dutch List                                                            ● Wuna
+                                              ● Afrikaans                                                             ● MunaKatobuTongkuno D
+                                               ● Flemish                                                                     ● Chamorro
+                                                  ● Frisian                                                           ● Nias
+                                                              ● Irish B                                                 ● Lamaholot
+                                                              ● Scots Gaelic                                         ● Manggarai
+                                                          ● Welsh N                                                    ● Ngadha
+                                                               ● Cornish                                                ● ESUmbuRatuNggai D
+                                                            ● Breton ST                                                    ● ESLewa D
+                                                   ● Lithuanian ST                                                            ● Kambera
+                                                      ●  Latvian                                                            ● ESKamberaSouthern D
+                                          ● Old Church Slavonic                                                         ● BuruNamroleBay
+                                             ● Polish                                                                   ● Letinese
+                                               ● Russian                                                                                      ● KasiraIrahutu
+                                                 ● Byelorussian                                                           ● Paulohi
+                                                 ● Ukrainian                                                                  ● Alune
+                                             ● Czech                                                                        ●  MurnatenAlune
+                                              ● Slovak                                                                                     ● Giman
+                                            ● Lusatian L                                                                                 ● Mor
+                                             ● Lusatian U                                                                                        ● AmbaiYapen
+                                                ● Slovenian                                                                    ● Lou
+                                              ● Serbocroatian                                                                   ● Loniu
+                                                  ● Bulgarian                                                                    ● Kairiru
+                                                ● Macedonian                                                                     ● Manam
+                                                                   ● Kurdish                                                     ● Motu
+                                                                           ● Afghan                                                            ● Mekeo
+                                                                             ● Waziri                                                   ● Gapapaiwa
+                                                           ● Persian List                                                                      ● Kilivila
+                                                            ● Tadzik                                                                       ● Saliba
+                                                                    ● Baluchi                                                               ● Bwaidoga
+                                                                                 ● Ossetic                                              ● Dobuan
+                                                                          ● Wakhi                                                 ● Lakalai
+                                                                 ● Kashmiri                                                               ● Maututu
+                                                                           ● Singhalese                                             ● NakanaiBileki D
+                                                                    ● Nepali List                                                    ● Maleu
+                                                                        ● Bihari                                                 ● Kove
+                                                                         ● Bengali                                                                               ● Sengseng
+                                                                          ● Oriya                                                                               ● Mouk
+                                                                                         ● Assamese                                                        ● Aria
+                                                                             ● Marathi                                                              ● Teanu
+                                                                         ● Gujarati                                                              ● Buma
+                                                                                      ● Sindhi                                         ● Kwaio
+                                                                                ●   Marwari                                  ● Nggela
+                                                                    ● Hindi                                                         ● Vitu
+                                                                        ● Urdu                                                            ● Siar
+    Bantu                                                                 ● Panjabi ST                                                               ● Kuanua
+                                      ● Tiv 802                          ● Lahdna                                                           ● Nalik
+                                           ● MongoNkundo C611                                                                               ● TungagTungakLavongai
+                                          ● Mongo C613                                                                                     ● Tigak
+                                       ● Doko C40D                                                                                                  ● Kokota
+                                                  ● Bira D322                                                                                                      ● Sisingga
+                                               ● Ndonga R22                                                                                                   ● Babatana
+                                                 ● Lwena K141                                                                                        ● Banoni
+                                                           ● Ndembu K221                                                                         ● Teop
+                                        ● Luba L33                                                                                          ● Nissan
+                                                                 ● Rwanda J611                                                               ● NehanHape
+                                                                       ● Hima J13                                                       ● Iaai
+                                                                      ● Haya J22H                                                                             ● Dehu
+                                                                             ● Gikuyu E51                                                                 ● SakaoPortOlry
+                                                                ● Kaguru G12                                                    ● PaameseSouth
+                                                                    ● Hadimu G43c                                                   ● Nguna
+                                                                         ● Makwa P311                                              ● SyeErromangan
+                                                              ● Nyanja N31a                                                          ● AnejomAneityum
+                                                             ● Cewa N31b                                                            ● Lenakel
+                                                                 ● Shona S10                                                                 ● Kiribati
+                                                                                                                                            ● Kusaie
+                                                                                     ● Ngoni S45                              ● Mokilese
+    Uto-Aztecan                                                                    ● Zulu S42                                         ● Ponapean
+                                              ● Hopi                                   ● Xhosa S41                                ● Woleai
+                                                                                   ● Luiseno                                   ● PuloAnnan
+                                                                  ● Cahuilla                                                    ● Puluwatese
+                                                                     ● NorthernPaiute                                           ● Woleaian
+                                                                      ● Mono                                                  ● FijianBau
+                                                                        ● Comanche                                                       ● Rotuman
+                                                                        ● Chemehuevi                                            ● Tongan
+                                                                          ● SouthernUte                                          ● Samoan
+                                                                                                                                ● Niue
+                                                                     ● SouthernPaiute                                         ● FutunaEast
+                                ● NorthernTepehuan                                                                             ● FutunaWest
+                                             ●  SoutheasternTepehuan                                                                 ● Futuna
+                                         ● PapagoPima                                                                           ● Tokelau
+                                                        ● Cora                                                                           ● RapanuiEasterIsland
+                                                                               ●   AztecTetelcingo                                          ● TahitianModern
+                                                                           ● Pipil                                                       ● Maori
+                                   ● Yaqui                                                                                                ● Hawaiian
+                                               ● Tarahumara
+                                        ● Guarijio
+                                       ● Eudeve
+                                               ● Opata
+
+Figure 1 | Two word-order features plotted onto maximum clade credibility               object–verb. Red-red indicates preposition, verb–object. Red-blue indicates
+trees of the four language families. Squares represent order of adposition and          preposition, object–verb. Blue-red indicates postposition, verb–object. Black
+noun; circles represent order of verb and object. The tree sample underlying            indicates polymorphic states.
+this tree is generated from lexical data16,22. Blue-blue indicates postposition,
+
+8 0 | N AT U R E | VO L 4 7 3 | 5 M AY 2 0 1 1
+                                                    ©2011 Macmillan Publishers Limited. All rights reserved
+
+===== PDF PAGE 0003 / 0004 | Native =====
+                                                                                                                                                    LETTER RESEARCH
+
+conducted over a posterior probability distribution of phyloge-                            Contrary to the first expectation, we found no pairs of word-order
+netic trees constructed using basic vocabulary data from each of the                    features that were strongly dependent in all language families. Only
+language families: 79 Indo-European languages16,22, 130 Austronesian                    two of these predicted dependencies were found in more than one
+languages15,23, 66 Bantu languages24 and 26 Uto-Aztecan languages (R.                   language family: a dependency between adposition–noun and verb–
+Ross & R.D.G., manuscript in preparation). Information on word-                         object order was found in Austronesian and Indo-European, and a
+order typology was derived partly from the World Atlas of Language                      dependency between genitive–noun order and object–verb order was
+Structure database25 and expanded with additional coding from gram-                     found in Indo-European and Uto-Aztecan.
+matical descriptions (Supplementary Information section 1.3 and 2).                        Contrary to the second prediction, we found eight strong depend-
+As an illustration, the states of two of these features mapped against a                encies between members of the dependent set and members of the
+summary of the posterior tree samples for all four language families are                independent set, including two that occurred in two language families.
+shown in Fig. 1. In this case, visual inspection shows that these char-                 The evolution of adjective–noun order and relative-clause–noun order
+acters appear to be linked in some families. However, the Bayesian                      is correlated within both Austronesian (BF 5 5.33) and Uto-Aztecan
+phylogenetic approach allows us to assess this formally by quantifying                  (BF 5 5.02), and the demonstrative–noun, object–verb features are
+the relative fits of dependent and independent models of character                      correlated in Bantu (BF 5 5.24) and Indo-European (BF 5 7.55).
+evolution across all trees in the posterior probability distribution.                   Many dependencies are unique to just one language family; for
+This method incorporates the uncertainty in the estimates of the tree                   example, only Uto-Aztecan shows strongly coupled (BF 5 13.57)
+topology, the rates of change and the branch lengths. The extent to                     changes between subject and object ordering with respect to the verb,
+which a dependent model of evolution provides a superior explanation                    only Indo-European shows strongly coupled (BF 5 21.23) changes
+of the variation of word-order features to an independent model is                      between adjective and genitive ordering, and only Austronesian shows
+measured using Bayes factors (BF) calculated from the marginal like-                    strongly coupled (BF 5 18.26) changes between numeral–noun and
+lihoods over the posterior tree distribution. BF . 5 are conventionally                 genitive–noun orders. These family-specific linkages suggest that
+taken as strong evidence that the dependent model is preferred over                     evolutionary processes of language diversification explore alternative
+the independent model13,26.                                                             ways to construct coherent language systems unfettered by tight uni-
+   The results of the BayesTraits analysis of correlated trait evolution are            versal constraints. They also demonstrate the power of phylogenetic
+summarized in Fig. 2. These differ considerably from the expectations                   methods to reveal structural linkages that could not be detected by
+derived from both universal approaches. The Greenbergian approach                       cross-linguistic sampling.
+suggests robust tendencies towards linkages due to intrinsic system                        The lineage-specificity of these dependencies is striking. There is a
+biases, while the generative approach assumes these will be ‘hard’ sys-                 poor correspondence between dependencies across the families, and
+tems constraints set by discrete choices over a small innate parameter                  even where we find dependencies shared across language families, the
+set1,27. Instead, our major finding is that, although there are linkages                phylogenetic analyses show family-specific evolutionary processes at
+or dependencies between word-order characters within language                           work. Take, for example, the dependency between object–verb and
+families, these are largely lineage-specific, that is, they do not hold                 adposition–noun orders shared by two of the language families.
+across language families in the way the two universals approaches                       Examination of the transition probabilities between linked states
+predict.                                                                                reveals that different patterns of change are responsible for the
+   Dryer’s study of the Greenberg word-order universals4 across a                       observed linkage in each language family, as shown in Fig. 3. Here
+world-wide sample of related and unrelated languages found a set of                     changes in the Austronesian family funnel evolving systems towards a
+dependent word-order relations that show correlations with the order                    single solution, while Indo-European shunts changes towards two
+of verb and object, and another set of word-order relations that were                   solutions. Thus similarities in word-order dependencies may hide
+independent of this. We extracted from his analyses two predictions                     underlying differences in how these linkages come about, which once
+of strong tendencies across all languages. First, all the word-order                    again reflect lineage-specific processes.
+relations in the dependent set should be correlated: these are verb–                       If the central goal of linguistic theory is to understand constraints on
+object order, adposition–noun order, genitive–noun order, relative-                     linguistic variation and language change, then the methods outlined
+clause–noun order. Second, no dependencies are expected between                         here promise systematic insights of a kind only possible with the recent
+the dependent set and the independent set (including demonstrative–                     development of phylogenetic methods and large linguistic databases.
+noun, numeral–noun, adjective–noun and subject–verb orders).                            As more large linguistic databases become available28, the approach
+
+             Numeral     Genitive                    Numeral           Genitive                      Numeral     Genitive                          Numeral     Genitive
+              –noun       –noun                       –noun             –noun                         –noun       –noun                             –noun       –noun
+
+
+ Subject                      Adposition   Subject                         Adposition    Subject                     Adposition        Subject                       Adposition
+  –verb                         –noun       –verb                            –noun        –verb                        –noun            –verb                          –noun
+
+
+
+ Adjective                      Object     Adjective                         Object      Adjective                      Object         Adjective                     Object
+  –noun                         –verb       –noun                            –verb        –noun                         –verb           –noun                        –verb
+
+
+
+      Demonstrative       Relative              Demonstrative        Relative                 Demonstrative       Relative                  Demonstrative       Relative
+         –noun          clause–noun                –noun           clause–noun                   –noun          clause–noun                    –noun          clause–noun
+
+               Austronesian                                    Bantu                                    Indo-European                                  Uto-Aztecan
+
+Figure 2 | Summary of evolutionary dependencies in word order for four                  shaded area. However, only two dependencies (object–verb order and
+language families. All pairs of characters where the phylogenetic analyses              adposition–noun order; and object–verb order and genitive–noun order) are
+detect a strong dependency (defined as BF § 5) are shown with line width                found in more than one language family, and no dependencies were found
+proportional to BF values (indicating a range from 5.01 to 21.23, see                   involving relative-clause order and any of the other three features. Of the other
+Supplementary Information section 3). In the case of the Bantu language                 thirteen strongly supported dependencies, nine were unexpected (no
+family, four invariant features (indicated in grey) were excluded from the              prediction was made about feature pairs outside the blue area). Most of these 19
+analyses. Following Dryer’s reformulation of Greenberg’s word-order                     dependencies occur in only one language family (three occur in two families,
+universals, we expected dependencies between all the features in the blue               and one in three families).
+
+                                                                                                                            5 M AY 2 0 1 1 | VO L 4 7 3 | N AT U R E | 8 1
+                                                 ©2011 Macmillan Publishers Limited. All rights reserved
+
+===== PDF PAGE 0004 / 0004 | Native =====
+ RESEARCH LETTER
+
+                                                Postposition,                                                          Postposition,
+                       Austronesian                                                         Indo-European
+                                                verb–object                                                            verb–object
+
+
+
+
+                         Postposition,                                 Preposition,            Postposition,                                   Preposition,
+                         object–verb                                   verb–object             object–verb                                     verb–object
+
+
+
+
+                                                Preposition,                                                           Preposition,
+                                                object–verb                                                            object–verb
+
+Figure 3 | The transition probabilities between states leading to object–verb               figure (postposition, object–verb; and preposition, verb–object) are
+and adposition–noun alignments in Austronesian and Indo-European.                           Greenberg’s ‘harmonic’ or stable word orders. Nevertheless, each language
+Data were taken from the model most frequently selected in the analyses;                    family shows tendencies for specific directions and probabilities of state
+probability is indicated by line weight. The state pairs across the midline of each         transitions.
+
+developed here could be used to explore the dependency relationships                        16. Gray, R. D. & Atkinson, Q. D. Language-tree divergence times support the Anatolian
+                                                                                                theory of Indo-European origin. Nature 426, 435–439 (2003).
+between a wide range of linguistic features. Nearly all branches of                         17. Guthrie, M. Comparative Bantu Vol. 2 (Gregg International, 1971).
+linguistic theory have predicted such dependencies. Here we have                            18. Diamond, J. & Bellwood, P. Farmers and their languages: the first expansions.
+examined the paradigm example (word-order universals) of the                                    Science 300, 597–603 (2003).
+                                                                                            19. Campbell, L. American Indian Languages: The Historical Linguistics of Native America
+Greenbergian approach, taken also by the Chomskyan approach as                                  133–138 (Oxford University Press, 1997).
+‘‘descriptive generalizations that should be derived from principles of                     20. Kemp, B. M. et al. Evaluating the farming/language dispersal hypothesis with
+UG [Universal Grammar]’’.1,27 What the current analyses unexpectedly                            genetic variation exhibited by populations in the Southwest and Mesoamerica.
+                                                                                                Proc. Natl Acad. Sci. USA 107, 6759–6764 (2010).
+reveal is that systematic linkages of traits are likely to be the rare excep-               21. Pagel, M. & Meade, A. Bayesian analysis of correlated evolution of discrete
+tion rather than the rule. Linguistic diversity does not seem to be tightly                     characters by reversible-jump Markov chain Monte Carlo. Am. Nat. 167, 808–825
+constrained by universal cognitive factors specialized for language29.                          (2006).
+Instead, it is the product of cultural evolution, canalized by the systems                  22. Dyen, I., Kruskal, J. B. & Black, P. An Indo-European classification, a lexicostatistical
+                                                                                                experiment. Trans. Am. Phil. Soc. 82, 1–132 (1992).
+that have evolved during diversification, so that future states lie in an                   23. Greenhill, S. J., Blust, R. & Gray, R. D. The Austronesian basic vocabulary database:
+evolutionary landscape with channels and basins of attraction that are                          from bioinformatics to lexomics. Evol. Bioinform. 4, 271–283 (2008).
+specific to linguistic lineages.                                                            24. Holden, C. J. Bantu language trees reflect the spread of farming across sub-
+                                                                                                Saharan Africa: a maximum-parsimony analysis. Proc. R. Soc. Lond. B 269,
+                                                                                                793–799 (2002).
+Received 10 June 2009; accepted 8 February 2011.
+                                                                                            25. Haspelmath, M., Dryer, M. S., Gil, D. & Comrie, B. The World Atlas of Language
+Published online 13 April 2011.                                                                 Structures Online (Max Planck Digital Library, 2008).
+                                                                                            26. Raftery, A. Approximate Bayes factors and accounting for model uncertainty in
+1.  Baker, M. The Atoms of Language (Basic Books, 2001).                                        generalised linear models. Biometrika 83, 251–266 (1996).
+2.  Chomsky, N. Lectures on Government and Binding (Foris, 1981).                           27. Cela-Conde, C. & Marty, G. Noam Chomsky’s minimalist program and the
+3.  Greenberg, J. H. in Universals of Grammar (ed. Joseph H. Greenberg) 73–113 (MIT             philosophy of mind. An interview. Syntax 1, 19–36 (1998).
+    Press, 1963).                                                                           28. Reesink, G., Singer, R. & Dunn, M. Explaining the linguistic diversity of Sahul using
+4. Dryer, M. in Language Typology and Syntactic Description Vol. I Clause Structure 2nd         population models. PLoS Biol. 7, e1000241 (2009).
+    edn (ed. Shopen, T.) 61–131 (Cambridge University Press, 2007).                         29. Evans, N. & Levinson, S. C. The myth of language universals: language diversity and
+5. Hawkins, J. A. in Language Universals (eds Christiansen, M. H., Collins, C. & Edelman,       its importance for cognitive science. Behav. Brain Sci. 32, 429–492 (2009).
+    S.) 54–78 (Oxford University Press, 2009).
+6. Croft, W. Evolutionary linguistics. Annu. Rev. Anthropol. 37, 219–234 (2008).            Supplementary Information is linked to the online version of the paper at
+7. Chomsky, N. Knowledge of Language: its Nature, Origin and Use (Praeger, 1986).           www.nature.com/nature.
+8. Lightfoot, D. W. The child’s trigger experience—degree-0 learnability. Behav. Brain
+    Sci. 12, 321–334 (1989).                                                                Acknowledgements We thank M. Liberman for comments on our initial results and
+9. Dryer, M. S. The Greenbergian word order correlations. Language 68, 81–138               F. Jordan and G. Reesink for comments on drafts of this paper. L. Campbell, J. Hill,
+    (1992).                                                                                 W. Miller and R. Ross provided and coded the Uto-Aztecan lexical data.
+10. Mace, R. & Pagel, M. The comparative method in anthropology. Curr. Anthropol. 35,       Author Contributions R.D.G. and M.D. conceived and designed the study. S.J.G., R.D.G.
+    549–564 (1994).                                                                         and M.D. provided lexical data and phylogenetic trees. M.D. coded word-order data, and
+11. Bakker, P. in Oxford Handbook of Linguistic Typology (ed. Song, J. J.) (Oxford          conducted the phylogenetic comparative analyses with S.J.G. All authors were involved
+    University Press, 2010).                                                                in discussion and interpretation of the results. All authors contributed to the writing
+12. Cysouw, M. in Quantative Linguistics: An International Handbook (eds Altmann, G.,       with S.C.L. and M.D. having leading roles; M.D., R.D.G. and S.J.G. produced the
+    Köhler, R. & Piotrowski, R.) 554–578 (Mouton de Gruyter, 2005).                        Supplementary Information.
+13. Pagel, M., Meade, A. & Barker, D. Bayesian estimation of ancestral character states
+    on phylogenies. Syst. Biol. 53, 673–684 (2004).                                         Author Information Reprints and permissions information is available at
+14. Gordon, R. G. J. Ethnologue: Languages of the World 15th edn (SIL International,        www.nature.com/reprints. The authors declare no competing financial interests.
+    2005).                                                                                  Readers are welcome to comment on the online version of this article at
+15. Gray, R. D., Drummond, A. J. & Greenhill, S. J. Language phylogenies reveal             www.nature.com/nature. Correspondence and requests for materials should be
+    expansion pulses and pauses in Pacific settlement. Science 323, 479–483 (2009).         addressed to M.D. (michael.dunn@mpi.nl).
+
+
+
+
+8 2 | N AT U R E | VO L 4 7 3 | 5 M AY 2 0 1 1
+                                                        ©2011 Macmillan Publishers Limited. All rights reserved

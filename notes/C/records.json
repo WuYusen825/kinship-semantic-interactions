@@ -1,0 +1,814 @@
+[
+  {
+    "id": "C01",
+    "doi": "10.1016/j.jml.2007.11.007",
+    "download_attempts": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2613284/pdf/nihms81944.pdf",
+        "status": "HTTP 200; not PDF; unknown"
+      },
+      {
+        "url": "https://garstats.wordpress.com/wp-content/uploads/2016/08/jaeger-jml-2008.pdf",
+        "status": "HTTP 200; valid PDF; 390849 bytes"
+      },
+      {
+        "url": "https://garstats.wordpress.com/wp-content/uploads/2016/08/jaeger-jml-2008.pdf",
+        "status": "HTTP 200; valid PDF; title and authors verified; 390849 bytes"
+      }
+    ],
+    "title": "Categorical data analysis: Away from ANOVAs (transformation or not) and towards logit mixed models",
+    "authors": [
+      "T. Florian Jaeger"
+    ],
+    "year": 2008,
+    "venue": "Journal of Memory and Language",
+    "url": "https://doi.org/10.1016/j.jml.2007.11.007",
+    "volume": "59",
+    "issue": "4",
+    "pages": "434-446",
+    "pdf_url": "https://garstats.wordpress.com/wp-content/uploads/2016/08/jaeger-jml-2008.pdf",
+    "pdf_path": "literature/C/C01_Jaeger_2008_Categorical_data_analysis_Away_from_ANOVAs_transformation_or_not_and_towards_logit_mixed.pdf",
+    "access_level": "full_text_pdf",
+    "fulltext_path": "literature/C/C01_Jaeger_2008_Categorical_data_analysis_Away_from_ANOVAs_transformation_or_not_and_towards_logit_mixed.txt",
+    "pdf_sha256": "f1c0c44a6a4cbd7f91dc7b2d772a364edd9f7a763fd5e1fe4fe59a74c388beb0",
+    "checked_on": "2026-10-14",
+    "abstract_path": null,
+    "abstract_url": null,
+    "summary_zh": "本文比较比例数据的方差分析、逻辑回归和混合逻辑回归，展示比例变换仍可能造成误导性主效应或交互，并说明二元结果的建模尺度。",
+    "relevance_zh": "将共享词形编码为二元结果，明确加性是在 logit 尺度上定义；语言内重复配对需要相应的依赖处理。",
+    "evidence_claims": [
+      {
+        "claim_zh": "二元结果适合逻辑回归；混合逻辑回归能联合处理交叉的分组差异。",
+        "locator": "第434页摘要；第442—443页，Mixed logit models"
+      },
+      {
+        "claim_zh": "对比例直接作方差分析，即使使用反正弦平方根变换，也可能得到与逻辑模型不同的交互结论。",
+        "locator": "第438—440页，例示数据与ANOVA比较"
+      }
+    ],
+    "notes": "",
+    "metadata_source": "notes/C/C01_crossref.json",
+    "citation_status": "included_fulltext",
+    "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
+    "supplementary_preview": false,
+    "txt_path": "literature/C/C01_Jaeger_2008_Categorical_data_analysis_Away_from_ANOVAs_transformation_or_not_and_towards_logit_mixed.txt",
+    "sha256": "f1c0c44a6a4cbd7f91dc7b2d772a364edd9f7a763fd5e1fe4fe59a74c388beb0",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "ed79bd4cabb8e9b0a895b9d8b67140d85a2ca10418859c7072f9ac3a9b756ed4",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
+  },
+  {
+    "id": "C02",
+    "doi": "10.1016/j.jml.2012.11.001",
+    "download_attempts": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3881361/pdf/nihms-524979.pdf",
+        "status": "HTTP 200; not PDF; unknown"
+      },
+      {
+        "url": "https://www.mit.edu/~rplevy/papers/barr-etal-2013-jml.pdf",
+        "status": "HTTP 200; valid PDF; title and authors verified; 1334168 bytes"
+      }
+    ],
+    "title": "Random effects structure for confirmatory hypothesis testing: Keep it maximal",
+    "authors": [
+      "Dale J. Barr",
+      "Roger Levy",
+      "Christoph Scheepers",
+      "Harry J. Tily"
+    ],
+    "year": 2013,
+    "venue": "Journal of Memory and Language",
+    "url": "https://doi.org/10.1016/j.jml.2012.11.001",
+    "volume": "68",
+    "issue": "3",
+    "pages": "255-278",
+    "pdf_url": "https://www.mit.edu/~rplevy/papers/barr-etal-2013-jml.pdf",
+    "pdf_path": "literature/C/C02_Barr_2013_Random_effects_structure_for_confirmatory_hypothesis_testing_Keep_it_maximal.pdf",
+    "access_level": "full_text_pdf",
+    "fulltext_path": "literature/C/C02_Barr_2013_Random_effects_structure_for_confirmatory_hypothesis_testing_Keep_it_maximal.txt",
+    "pdf_sha256": "3a427f32943e5387bcb39d77ba42a9e2b4c2f85232b821c0ea7e044dd7396904",
+    "checked_on": "2026-10-14",
+    "abstract_path": null,
+    "abstract_url": null,
+    "summary_zh": "利用模拟讨论确认性检验的随机效应结构与推广范围，强调由研究设计支持的随机斜率，而不仅是随机截距。",
+    "relevance_zh": "语系之间可能存在特征效应差异，不能把语系随机截距等同于对所有谱系依赖的完整处理；本研究可用语系分层与留语系验证检验可推广性。",
+    "evidence_claims": [
+      {
+        "claim_zh": "随机效应结构表达抽样单位之间的差异及研究结论的推广假设。",
+        "locator": "第255页摘要；第257—260页，模型结构与随机斜率"
+      },
+      {
+        "claim_zh": "在其模拟的重复测量设计中，忽略存在的随机斜率会提高第一类错误率。",
+        "locator": "第257页研究发现概述；第260—262页"
+      }
+    ],
+    "notes": "",
+    "metadata_source": "notes/C/C02_crossref.json",
+    "citation_status": "included_fulltext",
+    "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
+    "supplementary_preview": false,
+    "txt_path": "literature/C/C02_Barr_2013_Random_effects_structure_for_confirmatory_hypothesis_testing_Keep_it_maximal.txt",
+    "sha256": "3a427f32943e5387bcb39d77ba42a9e2b4c2f85232b821c0ea7e044dd7396904",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "a62bb0192ad8612dd3b9d959ad23070bed36ed4c8a4d2176b14bd95ade59bc50",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
+  },
+  {
+    "id": "C03",
+    "doi": "10.18637/jss.v067.i01",
+    "download_attempts": [
+      {
+        "url": "https://www.jstatsoft.org/article/view/v067i01/v67i01.pdf",
+        "status": "HTTP 200; valid PDF; 865814 bytes; pdftotext exit 0"
+      },
+      {
+        "url": "https://www.jstatsoft.org/article/view/v067i01/v67i01.pdf",
+        "status": "HTTP 200; valid PDF; title and authors verified; 865814 bytes"
+      }
+    ],
+    "title": "Fitting Linear Mixed-Effects Models Using lme4",
+    "authors": [
+      "Douglas Bates",
+      "Martin Mächler",
+      "Benjamin M. Bolker",
+      "Steven C. Walker"
+    ],
+    "year": 2015,
+    "venue": "Journal of Statistical Software",
+    "url": "https://doi.org/10.18637/jss.v067.i01",
+    "volume": "67",
+    "issue": "1",
+    "pages": null,
+    "abstract_path": "notes/C/C03_abstract.txt",
+    "abstract_url": "https://doi.org/10.18637/jss.v067.i01",
+    "pdf_url": "https://www.jstatsoft.org/article/view/v067i01/v67i01.pdf",
+    "pdf_path": "literature/C/C03_Bates_2015_Fitting_Linear_Mixed_Effects_Models_Using_lme4.pdf",
+    "access_level": "full_text_pdf",
+    "fulltext_path": "literature/C/C03_Bates_2015_Fitting_Linear_Mixed_Effects_Models_Using_lme4.txt",
+    "pdf_sha256": "a9ae8934fbe46ac4c3a6d333a75c2c815f9d2ed7725d7613ddce1d5a5244bbff",
+    "checked_on": "2026-10-14",
+    "summary_zh": "介绍 lme4 中线性混合模型的公式表示、最大似然及限制最大似然估计、稀疏矩阵计算与优化。",
+    "relevance_zh": "为计划中的层级模型提供实现与诊断背景；若实际采用Python惩罚逻辑回归，不将该论文列作已执行软件的依据。",
+    "evidence_claims": [
+      {
+        "claim_zh": "lme4 用公式联合指定固定与随机效应；本文详细阐述的是线性混合模型。",
+        "locator": "第1页摘要与引言；第2页说明广义和非线性模型将另文讨论"
+      },
+      {
+        "claim_zh": "模型参数化和优化需容许随机效应协方差出现奇异或边界情形。",
+        "locator": "第13页式10；第18页；第24—25页优化讨论"
+      }
+    ],
+    "notes": "作者姓名按PDF首页核对，使用Benjamin M. Bolker、Steven C. Walker，而非Crossref简写Ben、Steve。",
+    "metadata_source": "notes/C/C03_crossref.json",
+    "citation_status": "included_fulltext",
+    "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
+    "supplementary_preview": false,
+    "txt_path": "literature/C/C03_Bates_2015_Fitting_Linear_Mixed_Effects_Models_Using_lme4.txt",
+    "sha256": "a9ae8934fbe46ac4c3a6d333a75c2c815f9d2ed7725d7613ddce1d5a5244bbff",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "8fb1d77e7f9bebc00de51e6f4b9533514246ee42e9159a1ebbe118ad02fe71a3",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
+  },
+  {
+    "id": "C04",
+    "doi": "10.1111/ecog.02881",
+    "download_attempts": [
+      {
+        "url": "https://www.wsl.ch/fileadmin/user_upload/WSL/Mitarbeitende/wohlgemu/Roberts_et_al_2017_Ecography.pdf",
+        "status": "HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://www.researchgate.net/profile/David-Roberts-52/publication/311523792_Cross-validation_strategies_for_data_with_temporal_spatial_hierarchical_or_phylogenetic_structure/links/5cae1607a6fdcc1d498af333/Cross-validation-strategies-for-data-with-temporal-spatial-hierarchical-or-phylogenetic-structure.pdf",
+        "status": "HTTP 200; valid PDF; 1124647 bytes"
+      },
+      {
+        "url": "https://www.biometrie.uni-freiburg.de/mitarbeiter/dormann/roberts-et-al-2017-ecography.pdf/at_download/file",
+        "status": "HTTP 200; valid PDF; title and authors verified; 811805 bytes"
+      }
+    ],
+    "title": "Cross‐validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure",
+    "authors": [
+      "David R. Roberts",
+      "Volker Bahn",
+      "Simone Ciuti",
+      "Mark S. Boyce",
+      "Jane Elith",
+      "Gurutzeta Guillera‐Arroita",
+      "Severin Hauenstein",
+      "José J. Lahoz‐Monfort",
+      "Boris Schröder",
+      "Wilfried Thuiller",
+      "David I. Warton",
+      "Brendan A. Wintle",
+      "Florian Hartig",
+      "Carsten F. Dormann"
+    ],
+    "year": 2017,
+    "venue": "Ecography",
+    "url": "https://doi.org/10.1111/ecog.02881",
+    "volume": "40",
+    "issue": "8",
+    "pages": "913-929",
+    "abstract_path": "notes/C/C04_abstract.txt",
+    "abstract_url": "https://api.crossref.org/works/10.1111/ecog.02881",
+    "pdf_url": "https://www.biometrie.uni-freiburg.de/mitarbeiter/dormann/roberts-et-al-2017-ecography.pdf/at_download/file",
+    "pdf_path": "literature/C/C04_Roberts_2017_Crossvalidation_strategies_for_data_with_temporal_spatial_hierarchical_or_phylogenetic_s.pdf",
+    "access_level": "full_text_pdf",
+    "fulltext_path": "literature/C/C04_Roberts_2017_Crossvalidation_strategies_for_data_with_temporal_spatial_hierarchical_or_phylogenetic_s.txt",
+    "pdf_sha256": "77f836a01a52fbca9ab5a6b8b4292121d8d896b04eb66fbf351358fec208c1f4",
+    "checked_on": "2026-10-14",
+    "summary_zh": "综述有时间、空间、层级或系统发育结构的数据验证方法，并以模拟和案例比较随机与分块交叉验证。",
+    "relevance_zh": "主要结果按语系整组留出、至少按语言整组留出；与训练语系相关的新语言预测和全新语系预测属于不同推广目标。",
+    "evidence_claims": [
+      {
+        "claim_zh": "忽略依赖结构的随机交叉验证常低估预测误差，使用混合模型也不自动解决这一问题。",
+        "locator": "第913页摘要；第914页；第915页，分块验证讨论"
+      },
+      {
+        "claim_zh": "分块方式应对应推广目标，并检查其是否引入预测变量范围的外推。",
+        "locator": "第913页摘要；第914页表1；第925—927页讨论"
+      }
+    ],
+    "notes": "参考文献年份采用正式卷期2017；2016为接受稿上线年份。最终PDF采用作者所在大学提供的公开文件。",
+    "metadata_source": "notes/C/C04_crossref.json",
+    "citation_status": "included_fulltext",
+    "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
+    "supplementary_preview": false,
+    "txt_path": "literature/C/C04_Roberts_2017_Crossvalidation_strategies_for_data_with_temporal_spatial_hierarchical_or_phylogenetic_s.txt",
+    "sha256": "77f836a01a52fbca9ab5a6b8b4292121d8d896b04eb66fbf351358fec208c1f4",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "81ff4b6c0484649120700df9f0e0b406f30adbd6137751c1a97266bd2e22ca4f",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
+  },
+  {
+    "id": "C05",
+    "doi": "10.1214/08-AOAS191",
+    "download_attempts": [
+      {
+        "url": "https://www.stat.columbia.edu/~gelman/research/published/priors.pdf",
+        "status": "HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://projecteuclid.org/journals/annals-of-applied-statistics/volume-2/issue-4/A-weakly-informative-default-prior-distribution-for-logistic-and-other/10.1214/08-AOAS191.pdf",
+        "status": "HTTP 200; not PDF; unknown"
+      },
+      {
+        "url": "https://arxiv.org/pdf/0901.4011",
+        "status": "HTTP 200; valid PDF; 434508 bytes; pdftotext exit 0"
+      },
+      {
+        "url": "https://arxiv.org/pdf/0901.4011",
+        "status": "HTTP 200; valid PDF; title and authors verified; 434508 bytes"
+      }
+    ],
+    "title": "A weakly informative default prior distribution for logistic and other regression models",
+    "authors": [
+      "Andrew Gelman",
+      "Aleks Jakulin",
+      "Maria Grazia Pittau",
+      "Yu-Sung Su"
+    ],
+    "year": 2008,
+    "venue": "The Annals of Applied Statistics",
+    "url": "https://doi.org/10.1214/08-aoas191",
+    "volume": "2",
+    "issue": "4",
+    "pages": "1360-1383",
+    "abstract_path": "notes/C/C05_abstract.txt",
+    "abstract_url": "https://api.crossref.org/works/10.1214/08-AOAS191",
+    "pdf_url": "https://arxiv.org/pdf/0901.4011",
+    "pdf_path": "literature/C/C05_Gelman_2008_A_weakly_informative_default_prior_distribution_for_logistic_and_other_regression_models.pdf",
+    "access_level": "full_text_pdf",
+    "fulltext_path": "literature/C/C05_Gelman_2008_A_weakly_informative_default_prior_distribution_for_logistic_and_other_regression_models.txt",
+    "pdf_sha256": "41c99a11cbe5bb3a6d012644b2326f87f92a49a21409c08d61ef394d9e0db5a9",
+    "checked_on": "2026-10-14",
+    "summary_zh": "提出缩放预测变量后对逻辑回归系数使用弱信息 Student-t 先验，默认Cauchy先验能够稳定稀疏或分离数据中的估计，并收缩高阶交互。",
+    "relevance_zh": "记录分离和稀疏单元；预先固定正则化策略，对主效应和交互模型采用相同训练程序。Cauchy先验与L2惩罚是不同估计方法。",
+    "evidence_claims": [
+      {
+        "claim_zh": "完全分离会使普通逻辑回归估计不稳定；合适的弱信息先验可产生稳定的正则化估计。",
+        "locator": "期刊第1360—1362页；arXiv重印PDF第1—3页"
+      },
+      {
+        "claim_zh": "论文默认建议非二元变量先缩放到均值0、标准差0.5，再使用中心0、尺度2.5的Cauchy先验。",
+        "locator": "期刊第1360页摘要；重印PDF第1页"
+      }
+    ],
+    "notes": "公开PDF为arXiv存档的期刊重印版；正文分页与期刊版可能不同，证据定位同时注明两个版本。",
+    "metadata_source": "notes/C/C05_crossref.json",
+    "citation_status": "included_fulltext",
+    "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
+    "supplementary_preview": false,
+    "txt_path": "literature/C/C05_Gelman_2008_A_weakly_informative_default_prior_distribution_for_logistic_and_other_regression_models.txt",
+    "sha256": "41c99a11cbe5bb3a6d012644b2326f87f92a49a21409c08d61ef394d9e0db5a9",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "3f8bd2e4b59343e79116359a343d8a0f904ba5b721467bd5d36cd9ce6c744ee7",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
+  },
+  {
+    "id": "C06",
+    "doi": "10.1093/biomet/80.1.27",
+    "download_attempts": [
+      {
+        "url": "https://academic.oup.com/biomet/article-pdf/80/1/27/616333/80-1-27.pdf",
+        "status": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://www2.stat.duke.edu/~sschmid/Courses/Stat376/Papers/GibbsFieldEst/BiasReductionMLE.pdf",
+        "status": "HTTP 200; valid PDF; 1207278 bytes"
+      },
+      {
+        "url": "https://www2.stat.duke.edu/~sschmid/Courses/Stat376/Papers/GibbsFieldEst/BiasReductionMLE.pdf",
+        "status": "HTTP 200; valid PDF; title and authors verified; 1207278 bytes"
+      }
+    ],
+    "title": "Bias reduction of maximum likelihood estimates",
+    "authors": [
+      "David Firth"
+    ],
+    "year": 1993,
+    "venue": "Biometrika",
+    "url": "https://doi.org/10.1093/biomet/80.1.27",
+    "volume": "80",
+    "issue": "1",
+    "pages": "27-38",
+    "abstract_path": "notes/C/C06_abstract.txt",
+    "abstract_url": "https://doi.org/10.1093/biomet/80.1.27",
+    "pdf_url": "https://www2.stat.duke.edu/~sschmid/Courses/Stat376/Papers/GibbsFieldEst/BiasReductionMLE.pdf",
+    "pdf_path": "literature/C/C06_Firth_1993_Bias_reduction_of_maximum_likelihood_estimates.pdf",
+    "access_level": "full_text_pdf",
+    "fulltext_path": "literature/C/C06_Firth_1993_Bias_reduction_of_maximum_likelihood_estimates.txt",
+    "pdf_sha256": "a121647bd7af4171af1fb7fd348b09311cd8fe8f6e418b8bb9b1f9e140ff4d94",
+    "checked_on": "2026-10-14",
+    "summary_zh": "在一般参数模型中修改得分方程以去除最大似然估计的一阶渐近偏差；在规范参数化指数族中，对应Jeffreys先验惩罚。",
+    "relevance_zh": "将Firth偏差减少列为稀疏逻辑模型的备选估计方法，明确其与L2正则化及贝叶斯弱信息先验的区别。",
+    "evidence_claims": [
+      {
+        "claim_zh": "修改得分函数可去除最大似然估计的一阶偏差；规范指数族中的调整可写成Jeffreys先验惩罚。",
+        "locator": "第27页Summary；第28页Introduction，OCR已核查"
+      },
+      {
+        "claim_zh": "作者针对小中样本中最大似然估计可能为无穷大的情形，发展不依赖原估计有限性的调整。",
+        "locator": "第28页Introduction，OCR已核查"
+      }
+    ],
+    "notes": "扫描PDF；已对题名、作者、摘要及所引用页作OCR核查。",
+    "metadata_source": "notes/C/C06_crossref.json",
+    "citation_status": "included_fulltext",
+    "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
+    "supplementary_preview": false,
+    "txt_path": "literature/C/C06_Firth_1993_Bias_reduction_of_maximum_likelihood_estimates.txt",
+    "sha256": "a121647bd7af4171af1fb7fd348b09311cd8fe8f6e418b8bb9b1f9e140ff4d94",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "3be6e0bb17c2d760f4392730a880544388c5c147d22fb1684b1b36c857a0a121",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
+  },
+  {
+    "id": "C07",
+    "doi": "10.1111/j.2517-6161.1995.tb02031.x",
+    "download_attempts": [
+      {
+        "url": "https://www.math.tau.ac.il/~ybenja/MyPapers/benjamini_hochberg1995.pdf",
+        "status": "HTTP 200; valid PDF; 1358125 bytes; pdftotext exit 0"
+      },
+      {
+        "url": "https://www.math.tau.ac.il/~ybenja/MyPapers/benjamini_hochberg1995.pdf",
+        "status": "HTTP 200; valid PDF; title and authors verified; 1358125 bytes"
+      }
+    ],
+    "title": "Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing",
+    "authors": [
+      "Yoav Benjamini",
+      "Yosef Hochberg"
+    ],
+    "year": 1995,
+    "venue": "Journal of the Royal Statistical Society Series B: Statistical Methodology",
+    "url": "https://doi.org/10.1111/j.2517-6161.1995.tb02031.x",
+    "volume": "57",
+    "issue": "1",
+    "pages": "289-300",
+    "abstract_path": "notes/C/C07_abstract.txt",
+    "abstract_url": "https://api.crossref.org/works/10.1111/j.2517-6161.1995.tb02031.x",
+    "pdf_url": "https://www.math.tau.ac.il/~ybenja/MyPapers/benjamini_hochberg1995.pdf",
+    "pdf_path": "literature/C/C07_Benjamini_1995_Controlling_the_False_Discovery_Rate_A_Practical_and_Powerful_Approach_to_Multiple_Testi.pdf",
+    "access_level": "full_text_pdf",
+    "fulltext_path": "literature/C/C07_Benjamini_1995_Controlling_the_False_Discovery_Rate_A_Practical_and_Powerful_Approach_to_Multiple_Testi.txt",
+    "pdf_sha256": "f3f7e2352a941403e812b7b5afee6094c9a31002d725dfcc25fc60ca3c240eab",
+    "checked_on": "2026-10-14",
+    "summary_zh": "将错误发现率定义为被拒绝假设中错误拒绝比例的期望，提出控制该率的逐步程序，并讨论其功效。",
+    "relevance_zh": "只对预先列出的探索性系数族报告多重检验校正，同时保留效应量和区间；本研究依赖检验的适用条件须单独评估。",
+    "evidence_claims": [
+      {
+        "claim_zh": "错误发现率衡量被拒绝假设中错误拒绝比例的期望。",
+        "locator": "第289页Summary，扫描PDF第2页，OCR已核查"
+      },
+      {
+        "claim_zh": "原论文给出的控制证明以独立检验统计量为条件。",
+        "locator": "第289页Summary，扫描PDF第2页，OCR已核查"
+      }
+    ],
+    "notes": "扫描PDF；已对题名、作者、摘要及所引用页作OCR核查。",
+    "metadata_source": "notes/C/C07_crossref.json",
+    "citation_status": "included_fulltext",
+    "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
+    "supplementary_preview": false,
+    "txt_path": "literature/C/C07_Benjamini_1995_Controlling_the_False_Discovery_Rate_A_Practical_and_Powerful_Approach_to_Multiple_Testi.txt",
+    "sha256": "f3f7e2352a941403e812b7b5afee6094c9a31002d725dfcc25fc60ca3c240eab",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "53e0306adb3ae47d5328c6397031a8e0983ce803a202a192c8d757f0fdf9c3a5",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
+  },
+  {
+    "id": "C08",
+    "doi": "10.1515/lity.2011.021",
+    "title": "Mixed effect models for genetic and areal dependencies in linguistic typology",
+    "authors": [
+      "T. Florian Jaeger",
+      "Peter Graff",
+      "William Croft",
+      "Daniel Pontillo"
+    ],
+    "year": 2011,
+    "venue": "Linguistic Typology",
+    "url": "https://doi.org/10.1515/lity.2011.021",
+    "volume": "15",
+    "issue": "2",
+    "pages": "281–320",
+    "download_attempts": [
+      {
+        "url": "https://www.degruyterbrill.com/document/doi/10.1515/lity.2011.021/pdf",
+        "status": "HTTP 202; empty response; not PDF"
+      },
+      {
+        "url": "https://www.researchgate.net/profile/T-Florian-Jaeger/publication/229079011_Mixed_effect_models_for_genetic_and_areal_dependencies_in_linguistic_typology/links/0912f500d7d933761e000000/Mixed-effect-models-for-genetic-and-areal-dependencies-in-linguistic-typology.pdf",
+        "status": "HTTP 200; valid PDF; title and authors verified; 5829116 bytes"
+      }
+    ],
+    "pdf_url": "https://www.researchgate.net/profile/T-Florian-Jaeger/publication/229079011_Mixed_effect_models_for_genetic_and_areal_dependencies_in_linguistic_typology/links/0912f500d7d933761e000000/Mixed-effect-models-for-genetic-and-areal-dependencies-in-linguistic-typology.pdf",
+    "pdf_path": "literature/C/C08_Jaeger_2011_Mixed_effect_models_for_genetic_and_areal_dependencies_in_linguistic_typology.pdf",
+    "access_level": "full_text_pdf",
+    "fulltext_path": "literature/C/C08_Jaeger_2011_Mixed_effect_models_for_genetic_and_areal_dependencies_in_linguistic_typology.txt",
+    "pdf_sha256": "06b322baf9dfcf2a742e867d235c8187f5e5a81b86794bbb0b497980038367b1",
+    "checked_on": "2026-10-14",
+    "abstract_path": null,
+    "abstract_url": null,
+    "summary_zh": "以跨语言音系多样性研究为案例，介绍混合模型控制语系、次级谱系和地域关系，并讨论随机斜率、稀疏抽样和模型选择带来的推断问题。",
+    "relevance_zh": "直接支撑语系与地域依赖控制；在语系内和语系间分别检查效应，并用整组验证评估可推广性。",
+    "evidence_claims": [
+      {
+        "claim_zh": "语系随机截距能够处理部分谱系相关，但语系间效应斜率差异需要进一步建模或检验。",
+        "locator": "第285页；第287—289页，式E3与后续讨论"
+      },
+      {
+        "claim_zh": "作者展示如何扩展混合模型以纳入语言接触和地域依赖。",
+        "locator": "第285页概述；第290—296页地域控制讨论"
+      }
+    ],
+    "notes": "作者在ResearchGate公开上传的39页作者副本；该评论文章无独立摘要，不将开头正文误标为abstract。",
+    "metadata_source": "notes/C/C08_crossref.json",
+    "citation_status": "included_fulltext",
+    "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
+    "supplementary_preview": false,
+    "txt_path": "literature/C/C08_Jaeger_2011_Mixed_effect_models_for_genetic_and_areal_dependencies_in_linguistic_typology.txt",
+    "sha256": "06b322baf9dfcf2a742e867d235c8187f5e5a81b86794bbb0b497980038367b1",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "358dab7a7ca306e627567a31c302853794d38c87895a7f4728233f774abc6b1e",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
+  },
+  {
+    "id": "C09",
+    "doi": "10.1038/nature09923",
+    "download_attempts": [
+      {
+        "url": "https://www.mpi.nl/publications/escidoc-63501/fulltext",
+        "status": "HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://www.nature.com/articles/nature09923.pdf",
+        "status": "HTTP 200; not PDF; unknown"
+      },
+      {
+        "url": "https://openresearch-repository.anu.edu.au/bitstreams/746e07c7-f3ce-4d36-ba57-b3ce235321a8/download",
+        "status": "HTTP 200; not PDF; 310044 bytes"
+      },
+      {
+        "url": "https://pure.mpg.de/rest/items/item_95245_23/component/file_894565/content",
+        "status": "HTTP 200; valid PDF; title and authors verified; 267561 bytes"
+      }
+    ],
+    "title": "Evolved structure of language shows lineage-specific trends in word-order universals",
+    "authors": [
+      "Michael Dunn",
+      "Simon J. Greenhill",
+      "Stephen C. Levinson",
+      "Russell D. Gray"
+    ],
+    "year": 2011,
+    "venue": "Nature",
+    "url": "https://doi.org/10.1038/nature09923",
+    "volume": "473",
+    "issue": "7345",
+    "pages": "79-82",
+    "pdf_url": "https://pure.mpg.de/rest/items/item_95245_23/component/file_894565/content",
+    "pdf_path": "literature/C/C09_Dunn_2011_Evolved_structure_of_language_shows_lineage_specific_trends_in_word_order_universals.pdf",
+    "access_level": "full_text_pdf",
+    "fulltext_path": "literature/C/C09_Dunn_2011_Evolved_structure_of_language_shows_lineage_specific_trends_in_word_order_universals.txt",
+    "pdf_sha256": "9e6ca84243e561942a267188081933d0ad39169e05d4357833ef542a8a99046c",
+    "checked_on": "2026-10-14",
+    "abstract_path": "notes/C/C09_abstract.txt",
+    "abstract_url": "https://pubmed.ncbi.nlm.nih.gov/21490599/",
+    "summary_zh": "在四个有可用谱系树的大语系中，用系统发育方法比较语序特征的独立与依赖演化，指出所观察到的特征依赖具有谱系差异。",
+    "relevance_zh": "将语系层面的异质性作为亲属语义交互的解释维度；语序研究结论提供方法参照，不作为亲属称谓交互的直接证据。",
+    "evidence_claims": [
+      {
+        "claim_zh": "论文在所研究的语序特征中发现许多依赖关系具有谱系特异性。",
+        "locator": "第79页摘要；第81—82页结果与讨论"
+      },
+      {
+        "claim_zh": "共同继承会影响类型学相关的解释；本文通过语系内演化比较处理共同祖先的影响。",
+        "locator": "第79页正文；补充材料S1与S1.4"
+      }
+    ],
+    "notes": "MPI官方页面公开提供论文及补充材料；主文为file_894565，补充材料为file_852605，已按内容核查。额外保存补充材料C09_supplement.pdf，不额外计文献数量。",
+    "metadata_source": "notes/C/C09_crossref.json",
+    "citation_status": "included_fulltext",
+    "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
+    "supplementary_preview": false,
+    "txt_path": "literature/C/C09_Dunn_2011_Evolved_structure_of_language_shows_lineage_specific_trends_in_word_order_universals.txt",
+    "sha256": "9e6ca84243e561942a267188081933d0ad39169e05d4357833ef542a8a99046c",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "1a322f02569d33bffa5274548c2db7e32cd06e32d851dccc05c7aea739f3db17",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
+  },
+  {
+    "id": "C10",
+    "doi": "10.1371/journal.pone.0158391",
+    "download_attempts": [
+      {
+        "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0158391&type=printable",
+        "status": "HTTP 200; valid PDF; 1535596 bytes; pdftotext exit 0"
+      },
+      {
+        "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0158391&type=printable",
+        "status": "HTTP 200; valid PDF; title and authors verified; 1535596 bytes"
+      }
+    ],
+    "title": "D-PLACE: A Global Database of Cultural, Linguistic and Environmental Diversity",
+    "authors": [
+      "Kathryn R. Kirby",
+      "Russell D. Gray",
+      "Simon J. Greenhill",
+      "Fiona M. Jordan",
+      "Stephanie Gomes-Ng",
+      "Hans-Jörg Bibiko",
+      "Damián E. Blasi",
+      "Carlos A. Botero",
+      "Claire Bowern",
+      "Carol R. Ember",
+      "Dan Leehr",
+      "Bobbi S. Low",
+      "Joe McCarter",
+      "William Divale",
+      "Michael C. Gavin"
+    ],
+    "year": 2016,
+    "venue": "PLOS ONE",
+    "url": "https://doi.org/10.1371/journal.pone.0158391",
+    "volume": "11",
+    "issue": "7",
+    "pages": "e0158391",
+    "abstract_path": "notes/C/C10_abstract.txt",
+    "abstract_url": "https://doi.org/10.1371/journal.pone.0158391",
+    "pdf_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0158391&type=printable",
+    "pdf_path": "literature/C/C10_Kirby_2016_D_PLACE_A_Global_Database_of_Cultural_Linguistic_and_Environmental_Diversity.pdf",
+    "access_level": "full_text_pdf",
+    "fulltext_path": "literature/C/C10_Kirby_2016_D_PLACE_A_Global_Database_of_Cultural_Linguistic_and_Environmental_Diversity.txt",
+    "pdf_sha256": "aae18152fc050114f09df02059f7f4601ca25cbd7e114b1f99ea774eb258dbe1",
+    "checked_on": "2026-10-14",
+    "summary_zh": "D-PLACE联结文化变量、语言分类与谱系树、地理位置及环境数据，支持检验文化多样性的历史与空间结构。",
+    "relevance_zh": "为语系与地域信息的连接和非独立性控制提供数据库方法背景；社会/文化附加变量只在明确可对应的扩展分析中使用。",
+    "evidence_claims": [
+      {
+        "claim_zh": "文化组之间的空间与谱系非独立性分别关联Tobler规律和Galton问题。",
+        "locator": "PDF第2页，引言"
+      },
+      {
+        "claim_zh": "数据库通过语言分类、谱系树和地理坐标把不同类型数据联系起来。",
+        "locator": "PDF第3页图1；第8—10页，Language classifications and phylogenies"
+      }
+    ],
+    "notes": "",
+    "metadata_source": "notes/C/C10_crossref.json",
+    "citation_status": "included_fulltext",
+    "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
+    "supplementary_preview": false,
+    "txt_path": "literature/C/C10_Kirby_2016_D_PLACE_A_Global_Database_of_Cultural_Linguistic_and_Environmental_Diversity.txt",
+    "sha256": "aae18152fc050114f09df02059f7f4601ca25cbd7e114b1f99ea774eb258dbe1",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "993b8546a8861bddd2f7df7a3ee209051093b21de3103bf384030bee3e143a1c",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
+  },
+  {
+    "id": "C11",
+    "doi": "10.1038/sdata.2018.205",
+    "download_attempts": [
+      {
+        "url": "https://www.nature.com/articles/sdata2018205.pdf",
+        "status": "HTTP 200; valid PDF; 1041160 bytes; pdftotext exit 0"
+      },
+      {
+        "url": "https://www.nature.com/articles/sdata2018205.pdf",
+        "status": "HTTP 200; valid PDF; title and authors verified; 1041160 bytes"
+      }
+    ],
+    "title": "Cross-Linguistic Data Formats, advancing data sharing and re-use in comparative linguistics",
+    "authors": [
+      "Robert Forkel",
+      "Johann-Mattis List",
+      "Simon J. Greenhill",
+      "Christoph Rzymski",
+      "Sebastian Bank",
+      "Michael Cysouw",
+      "Harald Hammarström",
+      "Martin Haspelmath",
+      "Gereon A. Kaiping",
+      "Russell D. Gray"
+    ],
+    "year": 2018,
+    "venue": "Scientific Data",
+    "url": "https://doi.org/10.1038/sdata.2018.205",
+    "volume": "5",
+    "issue": "1",
+    "pages": null,
+    "abstract_path": "notes/C/C11_abstract.txt",
+    "abstract_url": "https://api.crossref.org/works/10.1038/sdata.2018.205",
+    "pdf_url": "https://www.nature.com/articles/sdata2018205.pdf",
+    "pdf_path": "literature/C/C11_Forkel_2018_Cross_Linguistic_Data_Formats_advancing_data_sharing_and_re_use_in_comparative_linguisti.pdf",
+    "access_level": "full_text_pdf",
+    "fulltext_path": "literature/C/C11_Forkel_2018_Cross_Linguistic_Data_Formats_advancing_data_sharing_and_re_use_in_comparative_linguisti.txt",
+    "pdf_sha256": "be1420d6b2c8919c1a517f28532ef6cdcef1f1ddae9306b10be2474595e63066",
+    "checked_on": "2026-10-14",
+    "summary_zh": "CLDF规定可机器读取的跨语言数据结构，以语言、比较概念、观测值和来源为核心对象，并用CSVW元数据描述表间关系。",
+    "relevance_zh": "保留Kinbank的语言、关系类别、词形与来源标识；冻结数据版本并保存可复现的表格、元数据和原始来源，减少跨语言合并误配。",
+    "evidence_claims": [
+      {
+        "claim_zh": "CLDF区分语言、参数/比较概念、值和来源，支持显式描述表格关系。",
+        "locator": "PDF第3—5页，数据模型与The CLDF Specification；图2"
+      },
+      {
+        "claim_zh": "标准目录标识符能够连接Glottolog语言标识与Concepticon概念标识。",
+        "locator": "PDF第6页，数据标识与目录连接讨论"
+      }
+    ],
+    "notes": "",
+    "metadata_source": "notes/C/C11_crossref.json",
+    "article_number": "180205",
+    "citation_status": "included_fulltext",
+    "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
+    "supplementary_preview": false,
+    "txt_path": "literature/C/C11_Forkel_2018_Cross_Linguistic_Data_Formats_advancing_data_sharing_and_re_use_in_comparative_linguisti.txt",
+    "sha256": "be1420d6b2c8919c1a517f28532ef6cdcef1f1ddae9306b10be2474595e63066",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "c25a34fa98e90798af9c824ad3a52040e5c22a96dc730c6f8ccd82249605bd46",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
+  },
+  {
+    "id": "C12",
+    "doi": "10.1162/rest.90.3.414",
+    "download_attempts": [
+      {
+        "url": "https://cameron.econ.ucdavis.edu/research/Cameron_Gelbach_Miller_2008.pdf",
+        "status": "HTTP Error 404: Not Found"
+      },
+      {
+        "url": "http://www.mitpressjournals.org/doi/pdf/10.1162/rest.90.3.414",
+        "status": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://cameron.econ.ucdavis.edu/research/cluster_10-6.pdf",
+        "status": "HTTP 200; valid PDF; 374536 bytes; rejected: different title (Robust Inference with Clustered Data, 2010)"
+      },
+      {
+        "url": "https://direct.mit.edu/rest/article-pdf/90/3/414/1614600/rest.90.3.414.pdf",
+        "status": "HTTP 403; published PDF unavailable"
+      },
+      {
+        "url": "https://www.nber.org/papers/t0344.pdf",
+        "status": "HTTP 200; valid PDF; title and authors verified; 379396 bytes"
+      },
+      {
+        "url": "user-upload:5-rest.90.3.414.pdf",
+        "status": "2026-10-15 用户提供；PDF题名与出版版本核验通过"
+      }
+    ],
+    "title": "Bootstrap-Based Improvements for Inference with Clustered Errors",
+    "authors": [
+      "A. Colin Cameron",
+      "Jonah B. Gelbach",
+      "Douglas L. Miller"
+    ],
+    "year": 2008,
+    "venue": "Review of Economics and Statistics",
+    "url": "https://doi.org/10.1162/rest.90.3.414",
+    "volume": "90",
+    "issue": "3",
+    "pages": "414-427",
+    "abstract_path": "notes/C/C12_abstract.txt",
+    "abstract_url": "https://doi.org/10.1162/rest.90.3.414",
+    "pdf_url": null,
+    "pdf_path": "literature/C/C12_Cameron_2008_Bootstrap_Based_Improvements_for_Inference_with_Clustered_Errors.pdf",
+    "access_level": "fulltext_published_pdf",
+    "fulltext_path": "literature/C/C12_Cameron_2008_Bootstrap_Based_Improvements_for_Inference_with_Clustered_Errors.txt",
+    "pdf_sha256": "c797dbf81593ec98aae2b21e3b97efcceab01ce586d3c6c3bacd3a4231ea3ada",
+    "checked_on": "2026-10-14",
+    "summary_zh": "正式期刊版讨论聚类误差下的bootstrap推断，比较pairs、residual及wild cluster方案，重点考察有限聚类数下的bootstrap-t。",
+    "relevance_zh": "支持整组重抽样的结构原则；其OLS及bootstrap-t结果不直接证明本项目固定折外损失差百分位区间的有限样本性质。",
+    "evidence_claims": [
+      {
+        "claim_zh": "pairs cluster bootstrap从原样本中整组、有放回抽取聚类。",
+        "locator": "正式PDF第3页，印刷第416页，§III.A Pairs Cluster Bootstrap-se and Bootstrap-t。"
+      },
+      {
+        "claim_zh": "论文的主要目标包含对小聚类数下bootstrap-t推断的比较。",
+        "locator": "正式PDF第1页，印刷第414页，Abstract及Introduction。"
+      }
+    ],
+    "notes": [
+      "2026年10月15日由用户提供正式论文PDF，已核对题名、作者和出版信息。"
+    ],
+    "metadata_source": "notes/C/C12_crossref.json",
+    "citation_status": "included_fulltext",
+    "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
+    "supplementary_preview": false,
+    "earlier_pdf_path": "literature/C/earlier_versions/C12_Cameron_Gelbach_Miller_2007_NBER_Working_Paper.pdf",
+    "access_history": [
+      {
+        "date": "2026-10-14",
+        "state": {
+          "access_level": "full_text_pdf",
+          "pdf_path": "literature/C/C12.pdf",
+          "notes": "正式书目为2008年Review of Economics and Statistics论文；下载的是同题同作者NBER Technical Working Paper344（2007年9月）对应工作论文，不能称为已获得2008年排版全文。正式版下载失败。",
+          "evidence_claims": [
+            {
+              "claim_zh": "整组pairs cluster bootstrap重抽样整个聚类，保持聚类内部的相关结构。",
+              "locator": "所下载NBER2007工作论文第12页，PDF第14页，§3.1"
+            },
+            {
+              "claim_zh": "少量聚类会影响常规聚类稳健推断的表现，论文比较bootstrap修正。",
+              "locator": "工作论文第2—4页，PDF第4—6页；正式版摘要"
+            }
+          ]
+        }
+      }
+    ],
+    "pdf_version": "version_of_record",
+    "pdf_source": "user_uploaded",
+    "source_filename": "5-rest.90.3.414.pdf",
+    "user_supplied_on": "2026-10-15",
+    "material_type": "journal_article",
+    "read_scope": "已核对全文文件并定向核查与本研究有关段落；不宣称逐页精读。",
+    "txt_path": "literature/C/C12_Cameron_2008_Bootstrap_Based_Improvements_for_Inference_with_Clustered_Errors.txt",
+    "sha256": "c797dbf81593ec98aae2b21e3b97efcceab01ce586d3c6c3bacd3a4231ea3ada",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "2d9ca1fa8a2ecad6e79a450d53b6af6e6f6e097b73c32663cf1c5a72f33fb36b",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
+  }
+]

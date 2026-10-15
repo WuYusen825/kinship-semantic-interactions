@@ -1,3 +1,9 @@
+# PDF全文文本（UTF-8）
+来源PDF：literature/B/B06_Zaslavsky_2018_Efficient_compression_in_color_naming_and_its_evolution.pdf
+原PDF SHA-256：aff18dfbaefd528e9c3cb57dd84f7edc49b1331b75f92bbfb5a52f9337117e0b
+页码表示PDF文件页序，不自动等同于期刊印刷页码。Native为原文本层，OCR为扫描或低文字页识别；表格、音标、公式与OCR仍须对照PDF。
+
+===== PDF PAGE 0001 / 0006 | Native =====
 Efficient compression in color naming and its evolution
 Noga Zaslavskya,b,1 , Charles Kempc,2 , Terry Regierb,d , and Naftali Tishbya,e
 a
@@ -100,7 +106,9 @@ of color space in a discrete order: first dark vs. light, then red,             
 then green and yellow, then blue, followed by other basic color
 
 www.pnas.org/cgi/doi/10.1073/pnas.1800521115                                                                                            PNAS Latest Articles | 1 of 6
-                                                                                                              X
+
+===== PDF PAGE 0002 / 0006 | Native =====
+                                                                                                              X
    Our work focuses on data compression, in contrast with work                                    m̂w (u) =         q(m|w )m(u),                 [1]
 that views language in information-theoretic terms but focuses                                                m∈M
 instead on channel capacity (2–4, 7, 20), including work on lan-
@@ -137,7 +145,7 @@ according to a naming policy q(w |m). This distribution is                      
 a stochastic encoder that compresses meanings into words.                       (Fig. 2, Lower) in which Euclidean distance between nearby
 Because we focus on the uncertainty involved in compressing                     colors is correlated with perceptual difference. We define the
 meanings into words, rather than the uncertainty involved in                    meaning associated with chip c to be an isotropic
-                                                                                                                                 Gaussian cen-
+                                                                                                                                 Gaussian cen-
 transmission, we assume an idealized noiseless channel that con-                tered at c, namely mc (u) ∝ exp − 2σ1 2 ku − ck2 . mc reflects the
 veys its input unaltered as its output. This channel may have a                 speaker’s subjective belief over colors that is invoked by chip
 limited capacity, which imposes a constraint on the available lex-              c, and the scale of these Gaussians reflects her level of per-
@@ -179,7 +187,9 @@ m is drawn from p(m). The speaker communicates m by uttering the word           
 “blue,” and the listener interprets blue as meaning m̂.                         meaning. In our formulation the speaker represents her intended
 
 2 of 6 | www.pnas.org/cgi/doi/10.1073/pnas.1800521115                                                                                 Zaslavsky et al.
-                                                                              where β ≥ 1 is the trade-off parameter. Every language l , defined
+
+===== PDF PAGE 0003 / 0006 | Native =====
+                                                                              where β ≥ 1 is the trade-off parameter. Every language l , defined
                                                                               by an encoder ql (w |m), attains a certain level of complexity and
                                                                               a certain level of accuracy. These two quantities can be plotted
                                                                               against each other. Fig. 3 shows this information plane for the
@@ -267,7 +277,9 @@ obtained by minimizing the IB objective function,                             A 
 
 
 Zaslavsky et al.                                                                                                               PNAS Latest Articles | 3 of 6
-        A
+
+===== PDF PAGE 0004 / 0006 | Native =====
+        A
 
 
 
@@ -325,7 +337,9 @@ difference in NID is not substantial. Similar behavior appears                  
 
 
 4 of 6 | www.pnas.org/cgi/doi/10.1073/pnas.1800521115                                                                                          Zaslavsky et al.
-color naming in four languages with increasing complexity. Simi-                 Appendix, Movie S1 shows that low agreement around blue hues
+
+===== PDF PAGE 0005 / 0006 | Native =====
+color naming in four languages with increasing complexity. Simi-                 Appendix, Movie S1 shows that low agreement around blue hues
 lar results for all languages are presented in SI Appendix, section              is predicted by IB for languages that operate around 1.026 ≤ βl ≤
 10. The category colors in Fig. 4 correspond to the color cen-                   1.033, and this is consistent with several WCS languages (e.g.,
 troids of each category, and it can be seen that the data centroids              Aguacatec and Berik in SI Appendix, section 10; also ref. 29), as
@@ -408,7 +422,9 @@ in Fig. 4.                                                                      
 
 
 Zaslavsky et al.                                                                                                              PNAS Latest Articles | 5 of 6
-each language were estimated from at least five responses per chip (SI                         where Wi0 corresponds to another independent speaker that uses qi . If q1
+
+===== PDF PAGE 0006 / 0006 | Native =====
+each language were estimated from at least five responses per chip (SI                         where Wi0 corresponds to another independent speaker that uses qi . If q1
 Appendix, section 4.1).                                                                        and q2 are deterministic, i.e., they induce hard partitions, then gNID reduces
                                                                                                to NID (SI Appendix, section 3 for more details).
 LI Source. A source distribution can be defined from a prior over colors by
@@ -435,13 +451,13 @@ dissimilarity between q1 and q2 by                                              
                                           max{I(W1 ; W10 ), I(W2 ; W20 )}                      Berkeley.
 
 
- 1. Ferrer i Cancho R, Solé RV (2003) Least effort and the origins of scaling in human        15. Slonim N (2002) The information bottleneck: Theory and applications. PhD thesis
+ 1. Ferrer i Cancho R, Solé RV (2003) Least effort and the origins of scaling in human        15. Slonim N (2002) The information bottleneck: Theory and applications. PhD thesis
     language. Proc Natl Acad Sci USA 100:788–791.                                                  (Hebrew Univ of Jerusalem, Jerusalem).
  2. Levy RP, Jaeger TF (2007) Speakers optimize information density through syntactic          16. Shamir O, Sabato S, Tishby N (2010) Learning and generalization with the information
-    reduction. Advances in Neural Information Processing Systems, eds Schölkopf B, Platt          bottleneck. Theor Comput Sci 411:2696–2711.
+    reduction. Advances in Neural Information Processing Systems, eds Schölkopf B, Platt          bottleneck. Theor Comput Sci 411:2696–2711.
     JC, Hoffman T (MIT Press, Cambridge, MA), Vol 19, pp 849–856.                              17. Palmer SE, Marre O, Berry MJ, Bialek W (2015) Predictive information in a sensory
  3. Piantadosi ST, Tily H, Gibson E (2011) Word lengths are optimized for efficient                population. Proc Natl Acad Sci USA 112:6908–6913.
-    communication. Proc Natl Acad Sci USA 108:3526–3529.                                       18. Harremoës P, Tishby N (2007) The information bottleneck revisited or how to choose
+    communication. Proc Natl Acad Sci USA 108:3526–3529.                                       18. Harremoës P, Tishby N (2007) The information bottleneck revisited or how to choose
  4. Gibson E, et al. (2013) A noisy-channel account of crosslinguistic word-order variation.       a good distortion measure. IEEE International Symposium on Information Theory.
     Psychol Sci 24:1079–1088.                                                                      Available at https://ieeexplore.ieee.org/document/4557285/. Accessed July 10, 2018.
  5. Jameson K, D’Andrade RG (1997) It’s not really red, green, yellow, blue: An                19. Shannon CE (1959) Coding theorems for a discrete source with a fidelity criterion. IRE
@@ -460,11 +476,11 @@ dissimilarity between q1 and q2 by                                              
     2446.                                                                                          Handbook of Categorization in Cognitive Science, eds Cohen H, Lefebvre C (Elsevier,
 10. Gibson E, et al. (2017) Color naming across languages reflects color use. Proc Natl            Amsterdam), pp 223–242.
     Acad Sci USA 114:10785–10790.                                                              25. Lindsey DT, Brown AM (2014) The color lexicon of American English. J Vis 14:17.
-11. Berlin B, Kay P (1969) Basic Color Terms: Their Universality and Evolution (Univ of        26. Csiszár I, Shields P (2004) Information theory and statistics: A tutorial. Found Trends
+11. Berlin B, Kay P (1969) Basic Color Terms: Their Universality and Evolution (Univ of        26. Csiszár I, Shields P (2004) Information theory and statistics: A tutorial. Found Trends
     California Press, Berkeley).                                                                   Commun Inf Theor 1:417–528.
 12. MacLaury RE (1997) Color and Cognition in Mesoamerica: Constructing Categories as          27. Vinh NX, Epps J, Bailey J (2010) Information theoretic measures for clusterings
     Vantages (Univ of Texas Press, Austin, TX).                                                    comparison: Variants, properties, normalization and correction for chance. JMLR
-13. Levinson SC (2000) Yélı̂ Dnye and the theory of basic color terms. J Linguistic               11:2837–2854.
+13. Levinson SC (2000) Yélı̂ Dnye and the theory of basic color terms. J Linguistic               11:2837–2854.
     Anthropol 10:3–55.                                                                         28. Rose K (1998) Deterministic annealing for clustering, compression, classifica-
 14. Tishby N, Pereira FC, Bialek W (1999) The information bottleneck method. Pro-                  tion, regression, and related optimization problems. Proceedings of the IEEE
     ceedings of the 37th Annual Allerton Conference on Communication, Control                      86:2210–2239.
@@ -475,4 +491,3 @@ dissimilarity between q1 and q2 by                                              
 
 
 6 of 6 | www.pnas.org/cgi/doi/10.1073/pnas.1800521115                                                                                                                     Zaslavsky et al.
-

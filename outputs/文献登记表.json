@@ -10,7 +10,7 @@
     "doi": "10.2307/2843284",
     "url": "https://doi.org/10.2307/2843284",
     "pdf_url": "https://zenodo.org/records/1679705/files/article.pdf",
-    "pdf_path": "literature/A/A01.pdf",
+    "pdf_path": "literature/A/A01_Kroeber_1909_Classificatory_Systems_of_Relationship.pdf",
     "access_level": "pdf_fulltext",
     "abstract_path": null,
     "abstract_url": null,
@@ -39,14 +39,20 @@
     ],
     "eligible_read": true,
     "retrieved_at": "2026-10-14",
-    "fulltext_path": "notes/A/A01_fulltext.txt",
+    "fulltext_path": "literature/A/A01_Kroeber_1909_Classificatory_Systems_of_Relationship.txt",
     "metadata_source": "https://api.crossref.org/works/10.2307/2843284",
     "sha256": "1ab15eafd2135c5473b3715b39bb883fb525cf6a5c0a5306cdba94e3ef97f430",
     "material_type": "journal_article",
     "eligible_formal_read": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "1ab15eafd2135c5473b3715b39bb883fb525cf6a5c0a5306cdba94e3ef97f430"
+    "txt_path": "literature/A/A01_Kroeber_1909_Classificatory_Systems_of_Relationship.txt",
+    "pdf_sha256": "1ab15eafd2135c5473b3715b39bb883fb525cf6a5c0a5306cdba94e3ef97f430",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "ae67a68582401e96c71d57a9bd4da2ca8c6411e90b1b9c5d4a6f67b63c699d22",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "A02",
@@ -80,14 +86,16 @@
       }
     ],
     "notes": [],
-    "eligible_read": true,
+    "eligible_read": false,
     "retrieved_at": "2026-10-14",
     "fulltext_path": null,
     "metadata_source": "https://api.crossref.org/works/10.1525/aa.1967.69.2.02a00050",
     "material_type": "journal_article",
-    "eligible_formal_read": true,
-    "formal_counted": true,
-    "supplementary_preview": false
+    "eligible_formal_read": false,
+    "citation_status": "excluded_no_fulltext",
+    "formal_counted": false,
+    "supplementary_preview": false,
+    "exclusion_reason_zh": "用户要求：仍未取得全文的文献不引用。"
   },
   {
     "id": "A03",
@@ -100,10 +108,10 @@
     "doi": "10.2307/410665",
     "url": "https://doi.org/10.2307/410665",
     "pdf_url": null,
-    "pdf_path": null,
-    "access_level": "abstract_only",
-    "abstract_path": "notes/A/A03_abstract.txt",
-    "abstract_url": "https://api.crossref.org/works/10.2307/410665",
+    "pdf_path": "literature/A/A03_Goodenough_1956_Componential_Analysis_and_the_Study_of_Meaning.pdf",
+    "access_level": "fulltext_published_pdf",
+    "abstract_path": null,
+    "abstract_url": null,
     "download_attempts": [
       {
         "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/8B75EC4438C0D67F5EADC147B966FDBA/S009785075611812Xa.pdf/componential-analysis-and-the-study-of-meaning.pdf",
@@ -120,27 +128,66 @@
         "bytes": 3038,
         "final_url": "https://www.jstor.org/stable/pdf/410665.pdf",
         "pdf_magic": false
+      },
+      {
+        "url": "user-upload:8-Goodenough-ComponentialAnalysisStudy-1956.pdf",
+        "status": "2026-10-15 用户提供；PDF题名与出版版本核验通过"
       }
     ],
-    "summary_zh": "出版商所展示的摘要性首段，以Truk亲属称谓为例讨论将成分分析从语言形式推广到文化形式与意义分析。",
-    "relevance_zh": "为区别语义特征描述与统计加性假设提供历史背景；当前可读首段未报告完整理论和实证细节。",
+    "summary_zh": "以Truk亲属称谓说明成分分析如何从词项的指称范围建立语义变量，并在§7.5比较可描述相同用法的不同概念模型。",
+    "relevance_zh": "直接支持区分词形指称、语义成分和分析表述；相同词汇分布可能容许不同概念变量，故特征编码与统计交互须分别解释。",
     "evidence_claims": [
       {
-        "claim_zh": "该文将亲属称谓的成分分析纳入经验意义研究。",
-        "locator": "出版商提供的摘要性首段，Crossref元数据"
+        "claim_zh": "语义成分由变量取值及其组合描述，不能直接把词形分段等同于概念成分。",
+        "locator": "PDF第4页，印刷第197页；正文对sememes和变量的讨论。"
+      },
+      {
+        "claim_zh": "作者比较能够描述相同亲属用法的不同概念模型及其经济性。",
+        "locator": "PDF第18—20页，印刷第211—213页，§7.5 Alternative concepts and structures。"
       }
     ],
     "notes": [
-      "出版商把论文开篇段落放在摘要字段；仅据该可见首段引述，不把它当作全文研究结果摘要。"
+      "2026年10月15日由用户提供正式论文PDF，已核对题名、作者和出版信息。"
     ],
     "eligible_read": true,
     "retrieved_at": "2026-10-14",
-    "fulltext_path": null,
+    "fulltext_path": "literature/A/A03_Goodenough_1956_Componential_Analysis_and_the_Study_of_Meaning.txt",
     "metadata_source": "https://api.crossref.org/works/10.2307/410665",
-    "material_type": "publisher_intro_preview",
-    "eligible_formal_read": false,
-    "formal_counted": false,
-    "supplementary_preview": true
+    "material_type": "journal_article",
+    "eligible_formal_read": true,
+    "citation_status": "included_fulltext",
+    "formal_counted": true,
+    "supplementary_preview": false,
+    "access_history": [
+      {
+        "date": "2026-10-14",
+        "state": {
+          "access_level": "abstract_only",
+          "pdf_path": null,
+          "notes": [
+            "出版商把论文开篇段落放在摘要字段；仅据该可见首段引述，不把它当作全文研究结果摘要。"
+          ],
+          "evidence_claims": [
+            {
+              "claim_zh": "该文将亲属称谓的成分分析纳入经验意义研究。",
+              "locator": "出版商提供的摘要性首段，Crossref元数据"
+            }
+          ]
+        }
+      }
+    ],
+    "pdf_version": "version_of_record",
+    "pdf_source": "user_uploaded",
+    "source_filename": "8-Goodenough-ComponentialAnalysisStudy-1956.pdf",
+    "user_supplied_on": "2026-10-15",
+    "read_scope": "已核对全文文件并定向核查与本研究有关段落；不宣称逐页精读。",
+    "txt_path": "literature/A/A03_Goodenough_1956_Componential_Analysis_and_the_Study_of_Meaning.txt",
+    "pdf_sha256": "ee0677918a86d902c154c4a2d2552a491765919b53ea1ebbd174bdc6d3e93ce3",
+    "sha256": "ee0677918a86d902c154c4a2d2552a491765919b53ea1ebbd174bdc6d3e93ce3",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "a673ea43ea84fa50727422779b5e21684dcb2259383b453422c3093eb74d7a11",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "A04",
@@ -153,10 +200,10 @@
     "doi": "10.2307/410664",
     "url": "https://doi.org/10.2307/410664",
     "pdf_url": null,
-    "pdf_path": null,
-    "access_level": "abstract_only",
-    "abstract_path": "notes/A/A04_abstract.txt",
-    "abstract_url": "https://api.crossref.org/works/10.2307/410664",
+    "pdf_path": "literature/A/A04_Lounsbury_1956_A_Semantic_Analysis_of_the_Pawnee_Kinship_Usage.pdf",
+    "access_level": "fulltext_published_pdf",
+    "abstract_path": null,
+    "abstract_url": null,
     "download_attempts": [
       {
         "url": "https://www.jstor.org/stable/pdf/410664.pdf",
@@ -165,27 +212,62 @@
         "bytes": 3038,
         "final_url": "https://www.jstor.org/stable/pdf/410664.pdf",
         "pdf_magic": false
+      },
+      {
+        "url": "user-upload:3-Lounsbury-SemanticAnalysisPawnee-1956.pdf",
+        "status": "2026-10-15 用户提供；PDF题名与出版版本核验通过"
       }
     ],
-    "summary_zh": "出版商提供的摘要性首段将语言的形式结构与文化人类学所研究的非语言刺激、反应和语境联系起来。",
-    "relevance_zh": "构成形式语义分析与文化语境研究的经典背景；本次摘要性首段不足以重建其Pawnee具体分析规则。",
+    "summary_zh": "对Pawnee亲属用法进行语义分析，区分有独立语音形式的类别与以隐含分布或组合方式表达的语义特征。",
+    "relevance_zh": "支持把精确共享Form作为可重复观测，而不将其等同于全部意义结构；也提供直接成分分析文献，而非仅据首段介绍。",
     "evidence_claims": [
       {
-        "claim_zh": "该文开篇讨论形式语言研究与文化人类学之间的联系。",
-        "locator": "出版商提供的摘要性首段，Crossref元数据"
+        "claim_zh": "同一语义特征可以有显性或隐性语言表达，语义特征的对比不必有独立的语音分段。",
+        "locator": "PDF第5—6页，印刷第161—162页，components概述。"
       }
     ],
     "notes": [
-      "出版商把论文开篇段落放在摘要字段；仅据该可见首段引述，不把它当作全文研究结果摘要。"
+      "2026年10月15日由用户提供正式论文PDF，已核对题名、作者和出版信息。"
     ],
     "eligible_read": true,
     "retrieved_at": "2026-10-14",
-    "fulltext_path": null,
+    "fulltext_path": "literature/A/A04_Lounsbury_1956_A_Semantic_Analysis_of_the_Pawnee_Kinship_Usage.txt",
     "metadata_source": "https://api.crossref.org/works/10.2307/410664",
-    "material_type": "publisher_intro_preview",
-    "eligible_formal_read": false,
-    "formal_counted": false,
-    "supplementary_preview": true
+    "material_type": "journal_article",
+    "eligible_formal_read": true,
+    "citation_status": "included_fulltext",
+    "formal_counted": true,
+    "supplementary_preview": false,
+    "access_history": [
+      {
+        "date": "2026-10-14",
+        "state": {
+          "access_level": "abstract_only",
+          "pdf_path": null,
+          "notes": [
+            "出版商把论文开篇段落放在摘要字段；仅据该可见首段引述，不把它当作全文研究结果摘要。"
+          ],
+          "evidence_claims": [
+            {
+              "claim_zh": "该文开篇讨论形式语言研究与文化人类学之间的联系。",
+              "locator": "出版商提供的摘要性首段，Crossref元数据"
+            }
+          ]
+        }
+      }
+    ],
+    "pdf_version": "version_of_record",
+    "pdf_source": "user_uploaded",
+    "source_filename": "3-Lounsbury-SemanticAnalysisPawnee-1956.pdf",
+    "user_supplied_on": "2026-10-15",
+    "read_scope": "已核对全文文件并定向核查与本研究有关段落；不宣称逐页精读。",
+    "txt_path": "literature/A/A04_Lounsbury_1956_A_Semantic_Analysis_of_the_Pawnee_Kinship_Usage.txt",
+    "pdf_sha256": "afd6a5ba5b4d3b38603cad9e662e067d74d3678802b256abf39204c832e11353",
+    "sha256": "afd6a5ba5b4d3b38603cad9e662e067d74d3678802b256abf39204c832e11353",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "7fdef7de7b848d66c9b156d6e656cf1b0747d5b0055fe8029c456e69c27d37f4",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "A05",
@@ -224,8 +306,10 @@
     "metadata_source": "https://api.crossref.org/works/10.2307/3772782",
     "material_type": "journal_article",
     "eligible_formal_read": false,
+    "citation_status": "excluded_no_fulltext",
     "formal_counted": false,
-    "supplementary_preview": false
+    "supplementary_preview": false,
+    "exclusion_reason_zh": "用户要求：仍未取得全文的文献不引用。"
   },
   {
     "id": "A06",
@@ -238,8 +322,8 @@
     "doi": "10.1525/ae.1974.1.3.02a00060",
     "url": "https://doi.org/10.1525/ae.1974.1.3.02a00060",
     "pdf_url": null,
-    "pdf_path": null,
-    "access_level": "abstract_only",
+    "pdf_path": "literature/A/A06_Kronenfeld_1974_Sibling_Typology_Beyond_Nerlove_and_Romney.pdf",
+    "access_level": "fulltext_published_pdf",
     "abstract_path": "notes/A/A06_abstract.txt",
     "abstract_url": "https://api.crossref.org/works/10.1525/ae.1974.1.3.02a00060",
     "download_attempts": [
@@ -247,25 +331,64 @@
         "url": "https://anthrosource.onlinelibrary.wiley.com/doi/pdf/10.1525/ae.1974.1.3.02a00060",
         "status": "failed",
         "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "user-upload:4-Kronenfeld-SiblingTypologyBeyond-1974.pdf",
+        "status": "2026-10-15 用户提供；PDF题名与出版版本核验通过"
       }
     ],
-    "summary_zh": "摘要明确表明文章在Nerlove与Romney的合取性及标记性条件基础上推广类型学，并讨论这些条件的心理基础及其解释范围。",
-    "relevance_zh": "所选模型必须考虑传统合取性、标记性及相对性别结构，才能判断残余预测增益。",
+    "summary_zh": "修订兄弟姐妹类型学的合取性、标记性和层级条件；明确区分三种二元关系位置变量与含相对性别在内的语义特征，并讨论Fanti词项重叠。",
+    "relevance_zh": "直接支持八类别空间及传统相对性别基准；Fanti例子说明语义合取性和无重叠划分是不同要求，适合审查集合重叠结果。",
     "evidence_claims": [
       {
-        "claim_zh": "兄弟姐妹称谓的合取性及标记性约束已有专门类型学分析。",
-        "locator": "出版商原摘要，Crossref元数据"
+        "claim_zh": "说话者性别、所指者性别和相对年龄构成八种关系位置，相对性别是比较两性别得到的另一个语义特征。",
+        "locator": "PDF第3—4页，印刷第490—491页。"
+      },
+      {
+        "claim_zh": "Fanti例子中的词项覆盖可重叠，因此保持合取性并不必然形成每个关系位置只归一个词项的整齐划分。",
+        "locator": "PDF第14页，印刷第501页，Fanti分类讨论。"
       }
     ],
-    "notes": [],
+    "notes": [
+      "2026年10月15日由用户提供正式论文PDF，已核对题名、作者和出版信息。"
+    ],
     "eligible_read": true,
     "retrieved_at": "2026-10-14",
-    "fulltext_path": null,
+    "fulltext_path": "literature/A/A06_Kronenfeld_1974_Sibling_Typology_Beyond_Nerlove_and_Romney.txt",
     "metadata_source": "https://api.crossref.org/works/10.1525/ae.1974.1.3.02a00060",
     "material_type": "journal_article",
     "eligible_formal_read": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
-    "supplementary_preview": false
+    "supplementary_preview": false,
+    "access_history": [
+      {
+        "date": "2026-10-14",
+        "state": {
+          "access_level": "abstract_only",
+          "pdf_path": null,
+          "notes": [],
+          "evidence_claims": [
+            {
+              "claim_zh": "兄弟姐妹称谓的合取性及标记性约束已有专门类型学分析。",
+              "locator": "出版商原摘要，Crossref元数据"
+            }
+          ]
+        }
+      }
+    ],
+    "pdf_version": "version_of_record",
+    "pdf_source": "user_uploaded",
+    "source_filename": "4-Kronenfeld-SiblingTypologyBeyond-1974.pdf",
+    "user_supplied_on": "2026-10-15",
+    "read_scope": "已核对全文文件并定向核查与本研究有关段落；不宣称逐页精读。",
+    "txt_path": "literature/A/A06_Kronenfeld_1974_Sibling_Typology_Beyond_Nerlove_and_Romney.txt",
+    "pdf_sha256": "74f8cb19cbfc94c49927829b9daf3931a6750ea3ee885bda80bebeb1e633a8d8",
+    "sha256": "74f8cb19cbfc94c49927829b9daf3931a6750ea3ee885bda80bebeb1e633a8d8",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "cbde5c77b4bd91d7778ff46aaeb52e3db8cfc33ef1181a250217c35b6a839851",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "A07",
@@ -278,8 +401,8 @@
     "doi": "10.1177/146349960100100203",
     "url": "https://doi.org/10.1177/146349960100100203",
     "pdf_url": null,
-    "pdf_path": null,
-    "access_level": "abstract_only",
+    "pdf_path": "literature/A/A07_Hage_2001_Marking_Theory_and_Kinship_Analysis_Cross_cultural_and_Historical_Applications.pdf",
+    "access_level": "fulltext_published_pdf",
     "abstract_path": "notes/A/A07_abstract.txt",
     "abstract_url": "https://api.crossref.org/works/10.1177/146349960100100203",
     "download_attempts": [
@@ -287,25 +410,64 @@
         "url": "https://journals.sagepub.com/doi/pdf/10.1177/146349960100100203?download=true",
         "status": "failed",
         "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "user-upload:2-Marking_theory_and_kinship_analysis.pdf",
+        "status": "2026-10-15 用户提供；PDF题名与出版版本核验通过"
       }
     ],
-    "summary_zh": "摘要将Greenberg的亲属标记性理论用于跨文化分类、称谓演变次序和历史社会组织推断。",
-    "relevance_zh": "帮助将特征不对称与层级约束置于既有理论脉络，限制统计交互的原创性和因果解释范围。",
+    "summary_zh": "将标记理论用于亲属分类、特征中和及历史重建，讨论无标记／有标记关系与演变次序。",
+    "relevance_zh": "提示特征作用具有层级和语境条件；标记性证据可与回归差异函数对照，但不能自动推导某一统计交互参数。",
     "evidence_claims": [
       {
-        "claim_zh": "标记性理论用于亲属分类的跨文化规律与历史演变研究。",
-        "locator": "出版商原摘要，Crossref元数据；Sage网页摘要"
+        "claim_zh": "亲属区分的中和可在不同词汇区域及条件下出现。",
+        "locator": "PDF第3页，印刷第199页，neutralization与facultative expression。"
+      },
+      {
+        "claim_zh": "作者将标记关系用于历史解释及替代重建的比较。",
+        "locator": "PDF第6页起，印刷第202页起，Historical interpretations。"
       }
     ],
-    "notes": [],
+    "notes": [
+      "2026年10月15日由用户提供正式论文PDF，已核对题名、作者和出版信息。"
+    ],
     "eligible_read": true,
     "retrieved_at": "2026-10-14",
-    "fulltext_path": null,
+    "fulltext_path": "literature/A/A07_Hage_2001_Marking_Theory_and_Kinship_Analysis_Cross_cultural_and_Historical_Applications.txt",
     "metadata_source": "https://api.crossref.org/works/10.1177/146349960100100203",
     "material_type": "journal_article",
     "eligible_formal_read": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
-    "supplementary_preview": false
+    "supplementary_preview": false,
+    "access_history": [
+      {
+        "date": "2026-10-14",
+        "state": {
+          "access_level": "abstract_only",
+          "pdf_path": null,
+          "notes": [],
+          "evidence_claims": [
+            {
+              "claim_zh": "标记性理论用于亲属分类的跨文化规律与历史演变研究。",
+              "locator": "出版商原摘要，Crossref元数据；Sage网页摘要"
+            }
+          ]
+        }
+      }
+    ],
+    "pdf_version": "version_of_record",
+    "pdf_source": "user_uploaded",
+    "source_filename": "2-Marking_theory_and_kinship_analysis.pdf",
+    "user_supplied_on": "2026-10-15",
+    "read_scope": "已核对全文文件并定向核查与本研究有关段落；不宣称逐页精读。",
+    "txt_path": "literature/A/A07_Hage_2001_Marking_Theory_and_Kinship_Analysis_Cross_cultural_and_Historical_Applications.txt",
+    "pdf_sha256": "108d458b0a7b248e40ce94621fdc51d3468c875010d124a220c2ccd2c6aba1a3",
+    "sha256": "108d458b0a7b248e40ce94621fdc51d3468c875010d124a220c2ccd2c6aba1a3",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "eaa600bdf20c84efe4c5b1e256cb6c7797edb0a7988aab37ee7ea81a29da5b2e",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "A08",
@@ -318,7 +480,7 @@
     "doi": null,
     "url": "https://darwin-online.org.uk/converted/pdf/1871_Morgan_consanguinity_DlibD_A3203.pdf",
     "pdf_url": "https://darwin-online.org.uk/converted/pdf/1871_Morgan_consanguinity_DlibD_A3203.pdf",
-    "pdf_path": "literature/A/A08.pdf",
+    "pdf_path": "literature/A/A08_Morgan_1871_Systems_of_Consanguinity_and_Affinity_of_the_Human_Family.pdf",
     "access_level": "pdf_fulltext",
     "abstract_path": null,
     "abstract_url": null,
@@ -347,13 +509,19 @@
     ],
     "eligible_read": true,
     "retrieved_at": "2026-10-14",
-    "fulltext_path": "notes/A/A08_fulltext.txt",
+    "fulltext_path": "literature/A/A08_Morgan_1871_Systems_of_Consanguinity_and_Affinity_of_the_Human_Family.txt",
     "sha256": "612d010eb4bad54b92f2d78e4fbdcfba4fd990a37bb2193de176574d5c306e9b",
     "material_type": "book",
     "eligible_formal_read": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "612d010eb4bad54b92f2d78e4fbdcfba4fd990a37bb2193de176574d5c306e9b"
+    "txt_path": "literature/A/A08_Morgan_1871_Systems_of_Consanguinity_and_Affinity_of_the_Human_Family.txt",
+    "pdf_sha256": "612d010eb4bad54b92f2d78e4fbdcfba4fd990a37bb2193de176574d5c306e9b",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "699133be5bff6e0044c2a8e11d79afd9dfd695644999a4d9f094ef88b7b91b80",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "A09",
@@ -389,7 +557,7 @@
     "doi": "10.1371/journal.pone.0283218",
     "url": "https://doi.org/10.1371/journal.pone.0283218",
     "pdf_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0283218&type=printable",
-    "pdf_path": "literature/A/A09.pdf",
+    "pdf_path": "literature/A/A09_Passmore_2023_Kinbank_A_Global_Database_of_Kinship_Terminology.pdf",
     "access_level": "pdf_fulltext",
     "abstract_path": "notes/A/A09_abstract.txt",
     "abstract_url": "https://api.crossref.org/works/10.1371/journal.pone.0283218",
@@ -428,14 +596,20 @@
     "notes": [],
     "eligible_read": true,
     "retrieved_at": "2026-10-14",
-    "fulltext_path": "notes/A/A09_fulltext.txt",
+    "fulltext_path": "literature/A/A09_Passmore_2023_Kinbank_A_Global_Database_of_Kinship_Terminology.txt",
     "metadata_source": "https://api.crossref.org/works/10.1371/journal.pone.0283218",
     "sha256": "a5be884b4903ae4c4fd656704d7f8d163ddaa032926c00f3c3e38b86ec468f5e",
     "material_type": "journal_article",
     "eligible_formal_read": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "a5be884b4903ae4c4fd656704d7f8d163ddaa032926c00f3c3e38b86ec468f5e"
+    "txt_path": "literature/A/A09_Passmore_2023_Kinbank_A_Global_Database_of_Kinship_Terminology.txt",
+    "pdf_sha256": "a5be884b4903ae4c4fd656704d7f8d163ddaa032926c00f3c3e38b86ec468f5e",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "8c7d9436f36b578a4ddb97a1a7ca11acc942b058db2905906b9d894669af68e8",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "A10",
@@ -448,7 +622,7 @@
     "doi": "10.3378/027.083.0209",
     "url": "https://doi.org/10.3378/027.083.0209",
     "pdf_url": "https://pure.mpg.de/rest/items/item_417669_11/component/file_958629/content",
-    "pdf_path": "literature/A/A10.pdf",
+    "pdf_path": "literature/A/A10_Jordan_2011_A_Phylogenetic_Analysis_of_the_Evolution_of_Austronesian_Sibling_Terminologies.pdf",
     "access_level": "pdf_fulltext",
     "abstract_path": "notes/A/A10_abstract.txt",
     "abstract_url": "https://api.openalex.org/works/https://doi.org/10.3378/027.083.0209",
@@ -479,14 +653,20 @@
     "notes": [],
     "eligible_read": true,
     "retrieved_at": "2026-10-14",
-    "fulltext_path": "notes/A/A10_fulltext.txt",
+    "fulltext_path": "literature/A/A10_Jordan_2011_A_Phylogenetic_Analysis_of_the_Evolution_of_Austronesian_Sibling_Terminologies.txt",
     "metadata_source": "https://api.crossref.org/works/10.3378/027.083.0209",
     "sha256": "948c60177cd94eed73d79b81c40a9fd8391c1d9e6465c1b59a1260ad3450c22e",
     "material_type": "journal_article",
     "eligible_formal_read": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "948c60177cd94eed73d79b81c40a9fd8391c1d9e6465c1b59a1260ad3450c22e"
+    "txt_path": "literature/A/A10_Jordan_2011_A_Phylogenetic_Analysis_of_the_Evolution_of_Austronesian_Sibling_Terminologies.txt",
+    "pdf_sha256": "948c60177cd94eed73d79b81c40a9fd8391c1d9e6465c1b59a1260ad3450c22e",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "f422662c3dc831dc9bab828540dc9a0d7f5647f687fb0612cc588540c5bf0a0a",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "A11",
@@ -500,7 +680,7 @@
     "doi": "10.1017/ehs.2020.41",
     "url": "https://doi.org/10.1017/ehs.2020.41",
     "pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0BF406C9CFC182F9142749FDD0442471/S2513843X20000419a.pdf/div-class-title-no-universals-in-the-cultural-evolution-of-kinship-terminology-div.pdf",
-    "pdf_path": "literature/A/A11.pdf",
+    "pdf_path": "literature/A/A11_Passmore_2020_No_Universals_in_the_Cultural_Evolution_of_Kinship_Terminology.pdf",
     "access_level": "pdf_fulltext",
     "abstract_path": "notes/A/A11_abstract.txt",
     "abstract_url": "https://api.crossref.org/works/10.1017/ehs.2020.41",
@@ -527,14 +707,20 @@
     "notes": [],
     "eligible_read": true,
     "retrieved_at": "2026-10-14",
-    "fulltext_path": "notes/A/A11_fulltext.txt",
+    "fulltext_path": "literature/A/A11_Passmore_2020_No_Universals_in_the_Cultural_Evolution_of_Kinship_Terminology.txt",
     "metadata_source": "https://api.crossref.org/works/10.1017/ehs.2020.41",
     "sha256": "55e25e8c85eb8f281bdc83a3ed4e7c0cd66b4b7761d0d9977744ccba2d5ab770",
     "material_type": "journal_article",
     "eligible_formal_read": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "55e25e8c85eb8f281bdc83a3ed4e7c0cd66b4b7761d0d9977744ccba2d5ab770"
+    "txt_path": "literature/A/A11_Passmore_2020_No_Universals_in_the_Cultural_Evolution_of_Kinship_Terminology.txt",
+    "pdf_sha256": "55e25e8c85eb8f281bdc83a3ed4e7c0cd66b4b7761d0d9977744ccba2d5ab770",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "09522a17cd50336fd958ffd60884d0e66ec886bca3ebb4951129704606b69051",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "A12",
@@ -549,7 +735,7 @@
     "doi": "10.1111/tops.12430",
     "url": "https://doi.org/10.1111/tops.12430",
     "pdf_url": "https://research-information.bris.ac.uk/ws/portalfiles/portal/202655238/Full_text_PDF_final_published_version_.pdf",
-    "pdf_path": "literature/A/A12.pdf",
+    "pdf_path": "literature/A/A12_Racz_2020_Social_Practice_and_Shared_History_Not_Social_Scale_Structure_Cross_Cultural_Complexity.pdf",
     "access_level": "pdf_fulltext",
     "abstract_path": "notes/A/A12_abstract.txt",
     "abstract_url": "https://api.crossref.org/works/10.1111/tops.12430",
@@ -583,14 +769,20 @@
     ],
     "eligible_read": true,
     "retrieved_at": "2026-10-14",
-    "fulltext_path": "notes/A/A12_fulltext.txt",
+    "fulltext_path": "literature/A/A12_Racz_2020_Social_Practice_and_Shared_History_Not_Social_Scale_Structure_Cross_Cultural_Complexity.txt",
     "metadata_source": "https://api.crossref.org/works/10.1111/tops.12430",
     "sha256": "4c132fdbfd2ea4042f476efc794e803c4a34fd355334f2c8919fb5c54eb90a5c",
     "material_type": "journal_article",
     "eligible_formal_read": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "4c132fdbfd2ea4042f476efc794e803c4a34fd355334f2c8919fb5c54eb90a5c"
+    "txt_path": "literature/A/A12_Racz_2020_Social_Practice_and_Shared_History_Not_Social_Scale_Structure_Cross_Cultural_Complexity.txt",
+    "pdf_sha256": "4c132fdbfd2ea4042f476efc794e803c4a34fd355334f2c8919fb5c54eb90a5c",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "9425f2f0425fd48923335a91a314116e2e2d68b250017039648d50ea9804d945",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "A13",
@@ -604,7 +796,7 @@
     "doi": "10.1371/journal.pone.0147920",
     "url": "https://doi.org/10.1371/journal.pone.0147920",
     "pdf_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0147920&type=printable",
-    "pdf_path": "literature/A/A13.pdf",
+    "pdf_path": "literature/A/A13_Guillon_2016_A_Phylogenetic_Comparative_Study_of_Bantu_Kinship_Terminology_Finds_Limited_Support_for.pdf",
     "access_level": "pdf_fulltext",
     "abstract_path": "notes/A/A13_abstract.txt",
     "abstract_url": "https://api.openalex.org/works/https://doi.org/10.1371/journal.pone.0147920",
@@ -631,14 +823,20 @@
     "notes": [],
     "eligible_read": true,
     "retrieved_at": "2026-10-14",
-    "fulltext_path": "notes/A/A13_fulltext.txt",
+    "fulltext_path": "literature/A/A13_Guillon_2016_A_Phylogenetic_Comparative_Study_of_Bantu_Kinship_Terminology_Finds_Limited_Support_for.txt",
     "metadata_source": "https://api.crossref.org/works/10.1371/journal.pone.0147920",
     "sha256": "92ff469641e6c2a8058e2cab773528ff23b67da89169e7527c78a6ca0bd64822",
     "material_type": "journal_article",
     "eligible_formal_read": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "92ff469641e6c2a8058e2cab773528ff23b67da89169e7527c78a6ca0bd64822"
+    "txt_path": "literature/A/A13_Guillon_2016_A_Phylogenetic_Comparative_Study_of_Bantu_Kinship_Terminology_Finds_Limited_Support_for.txt",
+    "pdf_sha256": "92ff469641e6c2a8058e2cab773528ff23b67da89169e7527c78a6ca0bd64822",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "075833f99233a7a76b5a60abc7abc46c98bc7ef020a83db47ce11d34f62f044f",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "A14",
@@ -651,7 +849,7 @@
     "doi": "10.1017/S0140525X10000890",
     "url": "https://doi.org/10.1017/S0140525X10000890",
     "pdf_url": "https://cpb-us-w2.wpmucdn.com/web.sas.upenn.edu/dist/0/236/files/2017/04/jones-bbs-kinship_origins-2bxhvg5.pdf",
-    "pdf_path": "literature/A/A14.pdf",
+    "pdf_path": "literature/A/A14_Jones_2010_Human_Kinship_from_Conceptual_Structure_to_Grammar.pdf",
     "access_level": "pdf_fulltext",
     "abstract_path": "notes/A/A14_abstract.txt",
     "abstract_url": "https://api.crossref.org/works/10.1017/S0140525X10000890",
@@ -678,14 +876,20 @@
     "notes": [],
     "eligible_read": true,
     "retrieved_at": "2026-10-14",
-    "fulltext_path": "notes/A/A14_fulltext.txt",
+    "fulltext_path": "literature/A/A14_Jones_2010_Human_Kinship_from_Conceptual_Structure_to_Grammar.txt",
     "metadata_source": "https://api.crossref.org/works/10.1017/S0140525X10000890",
     "sha256": "32580f7630054fccbf303dce3a02979603b6cb7f16f6e646a6109ca845d09304",
     "material_type": "journal_article",
     "eligible_formal_read": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "32580f7630054fccbf303dce3a02979603b6cb7f16f6e646a6109ca845d09304"
+    "txt_path": "literature/A/A14_Jones_2010_Human_Kinship_from_Conceptual_Structure_to_Grammar.txt",
+    "pdf_sha256": "32580f7630054fccbf303dce3a02979603b6cb7f16f6e646a6109ca845d09304",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "d84199d6f30129aa4d3b44e11ca5f4291142ef5798657d3b883ef438f0758bae",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "A15",
@@ -698,7 +902,7 @@
     "doi": null,
     "url": "https://escholarship.org/uc/item/93c7072g",
     "pdf_url": "https://escholarship.org/content/qt93c7072g/qt93c7072g.pdf",
-    "pdf_path": "literature/A/A15.pdf",
+    "pdf_path": "literature/A/A15_Read_2007_Kinship_Theory_A_Paradigm_Shift.pdf",
     "access_level": "pdf_fulltext",
     "abstract_path": null,
     "abstract_url": null,
@@ -725,13 +929,19 @@
     "notes": [],
     "eligible_read": true,
     "retrieved_at": "2026-10-14",
-    "fulltext_path": "notes/A/A15_fulltext.txt",
+    "fulltext_path": "literature/A/A15_Read_2007_Kinship_Theory_A_Paradigm_Shift.txt",
     "sha256": "aaa4e2aa39d237368f04c7469482ba65ef54373df3d43f2c03c822453f7a24d8",
     "material_type": "journal_article",
     "eligible_formal_read": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "aaa4e2aa39d237368f04c7469482ba65ef54373df3d43f2c03c822453f7a24d8"
+    "txt_path": "literature/A/A15_Read_2007_Kinship_Theory_A_Paradigm_Shift.txt",
+    "pdf_sha256": "aaa4e2aa39d237368f04c7469482ba65ef54373df3d43f2c03c822453f7a24d8",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "3aa0253a576eb6a1da153042196a59dea034ec08f1f490c074f9400b3e59554e",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "A16",
@@ -744,7 +954,7 @@
     "doi": "10.11649/cs.1374",
     "url": "https://doi.org/10.11649/cs.1374",
     "pdf_url": "https://journals.ispan.edu.pl/index.php/cs-ec/article/download/cs.1374/3059/8060",
-    "pdf_path": "literature/A/A16.pdf",
+    "pdf_path": "literature/A/A16_Pericliev_2017_Kin_Term_Patterns_and_Language_Families.pdf",
     "access_level": "pdf_fulltext",
     "abstract_path": "notes/A/A16_abstract.txt",
     "abstract_url": "https://api.crossref.org/works/10.11649/cs.1374",
@@ -773,14 +983,20 @@
     ],
     "eligible_read": true,
     "retrieved_at": "2026-10-14",
-    "fulltext_path": "notes/A/A16_fulltext.txt",
+    "fulltext_path": "literature/A/A16_Pericliev_2017_Kin_Term_Patterns_and_Language_Families.txt",
     "metadata_source": "https://api.crossref.org/works/10.11649/cs.1374",
     "sha256": "76d6ae8b1e09841995f7cd00079145257bcec08840d0c3a896110374f8746e03",
     "material_type": "journal_article",
     "eligible_formal_read": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "76d6ae8b1e09841995f7cd00079145257bcec08840d0c3a896110374f8746e03"
+    "txt_path": "literature/A/A16_Pericliev_2017_Kin_Term_Patterns_and_Language_Families.txt",
+    "pdf_sha256": "76d6ae8b1e09841995f7cd00079145257bcec08840d0c3a896110374f8746e03",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "871439566a53b3185fb518f4ba64f4270f6cf89e23e445b94bd0dbb95cfbb212",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "A17",
@@ -793,7 +1009,7 @@
     "doi": null,
     "url": "https://escholarship.org/uc/item/99s7r1fz",
     "pdf_url": "https://escholarship.org/content/qt99s7r1fz/qt99s7r1fz.pdf",
-    "pdf_path": "literature/A/A17.pdf",
+    "pdf_path": "literature/A/A17_Kronenfeld_2006_Issues_in_the_Classification_of_Kinship_Terminologies_Toward_a_New_Typology.pdf",
     "access_level": "pdf_fulltext",
     "abstract_path": null,
     "abstract_url": null,
@@ -824,13 +1040,19 @@
     "notes": [],
     "eligible_read": true,
     "retrieved_at": "2026-10-14",
-    "fulltext_path": "notes/A/A17_fulltext.txt",
+    "fulltext_path": "literature/A/A17_Kronenfeld_2006_Issues_in_the_Classification_of_Kinship_Terminologies_Toward_a_New_Typology.txt",
     "sha256": "4af65f816ba3f922cfbcd3bef801023fecd87f0f4c4bf1295d3bb01f5f868132",
     "material_type": "journal_article",
     "eligible_formal_read": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "4af65f816ba3f922cfbcd3bef801023fecd87f0f4c4bf1295d3bb01f5f868132"
+    "txt_path": "literature/A/A17_Kronenfeld_2006_Issues_in_the_Classification_of_Kinship_Terminologies_Toward_a_New_Typology.txt",
+    "pdf_sha256": "4af65f816ba3f922cfbcd3bef801023fecd87f0f4c4bf1295d3bb01f5f868132",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "cc963a247d40bd3d8fcb8e22029e8b5fedb33e4803d9c3cbba6bafa9aca157f9",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "A18",
@@ -848,7 +1070,7 @@
     "doi": "10.1007/s13752-021-00379-6",
     "url": "https://doi.org/10.1007/s13752-021-00379-6",
     "pdf_url": "https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/4df17a60-f4f8-4d6b-96e7-ca4dfea5255f/content",
-    "pdf_path": "literature/A/A18.pdf",
+    "pdf_path": "literature/A/A18_Passmore_2021_Kin_Against_Kin_Internal_Co_selection_and_the_Coherence_of_Kinship_Typologies.pdf",
     "access_level": "pdf_fulltext",
     "abstract_path": "notes/A/A18_abstract.txt",
     "abstract_url": "https://api.crossref.org/works/10.1007/s13752-021-00379-6",
@@ -885,14 +1107,20 @@
     ],
     "eligible_read": true,
     "retrieved_at": "2026-10-14",
-    "fulltext_path": "notes/A/A18_fulltext.txt",
+    "fulltext_path": "literature/A/A18_Passmore_2021_Kin_Against_Kin_Internal_Co_selection_and_the_Coherence_of_Kinship_Typologies.txt",
     "metadata_source": "https://api.crossref.org/works/10.1007/s13752-021-00379-6",
     "sha256": "642fb6d06c0b673d141cad5554d9b445e73e2389e7f04b8186011a4794507481",
     "material_type": "journal_article",
     "eligible_formal_read": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "642fb6d06c0b673d141cad5554d9b445e73e2389e7f04b8186011a4794507481"
+    "txt_path": "literature/A/A18_Passmore_2021_Kin_Against_Kin_Internal_Co_selection_and_the_Coherence_of_Kinship_Typologies.txt",
+    "pdf_sha256": "642fb6d06c0b673d141cad5554d9b445e73e2389e7f04b8186011a4794507481",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "5b4262b586b19fd8125bc68d7a7dca04a9af9aa308efad238164e90fb52ed363",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "A19",
@@ -905,8 +1133,8 @@
     "doi": "10.1525/ae.1997.24.3.652",
     "url": "https://doi.org/10.1525/ae.1997.24.3.652",
     "pdf_url": null,
-    "pdf_path": null,
-    "access_level": "abstract_only",
+    "pdf_path": "literature/A/A19_Hage_1997_Unthinkable_Categories_and_the_Fundamental_Laws_of_Kinship.pdf",
+    "access_level": "fulltext_published_pdf",
     "abstract_path": "notes/A/A19_abstract.txt",
     "abstract_url": "https://api.crossref.org/works/10.1525/ae.1997.24.3.652",
     "download_attempts": [
@@ -914,25 +1142,64 @@
         "url": "https://anthrosource.onlinelibrary.wiley.com/doi/pdf/10.1525/ae.1997.24.3.652",
         "status": "failed",
         "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "user-upload:6-American-Ethnologist-August-1997-Hage-Unthinkable-Categories-and-the-Fundamental-Laws-of-Kinship.pdf",
+        "status": "2026-10-15 用户提供；PDF题名与出版版本核验通过"
       }
     ],
-    "summary_zh": "摘要以认知语言学、图论及演化视角重新解释在经典分类中未观测到的亲属体系，并强调析取类别约束。",
-    "relevance_zh": "为传统合并限制提供理论背景；统计交互应与已有类别结构约束相对照。",
+    "summary_zh": "以合取／析取类别及半格结构重新讨论亲属分类的基本规律，连接认知限制和二元特征的相继加入／删除。",
+    "relevance_zh": "提供已有类别结构限制的理论对照；本研究的非加性不能直接被表述为推翻此类类型学规律。",
     "evidence_claims": [
       {
-        "claim_zh": "该文摘要以析取类别约束和图论视角讨论经典类型中的未实现体系。",
-        "locator": "出版商原摘要，Crossref元数据"
+        "claim_zh": "作者以相继二元划分及特征的加入／删除描述合取性亲属体系的演变路径。",
+        "locator": "PDF第1页，印刷第652页。"
+      },
+      {
+        "claim_zh": "合取和析取类别在定义方式上有别；文中将其用于讨论亲属类别的结构。",
+        "locator": "PDF第3页，印刷第654页。"
       }
     ],
-    "notes": [],
+    "notes": [
+      "2026年10月15日由用户提供正式论文PDF，已核对题名、作者和出版信息。"
+    ],
     "eligible_read": true,
     "retrieved_at": "2026-10-14",
-    "fulltext_path": null,
+    "fulltext_path": "literature/A/A19_Hage_1997_Unthinkable_Categories_and_the_Fundamental_Laws_of_Kinship.txt",
     "metadata_source": "https://api.crossref.org/works/10.1525/ae.1997.24.3.652",
     "material_type": "journal_article",
     "eligible_formal_read": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
-    "supplementary_preview": false
+    "supplementary_preview": false,
+    "access_history": [
+      {
+        "date": "2026-10-14",
+        "state": {
+          "access_level": "abstract_only",
+          "pdf_path": null,
+          "notes": [],
+          "evidence_claims": [
+            {
+              "claim_zh": "该文摘要以析取类别约束和图论视角讨论经典类型中的未实现体系。",
+              "locator": "出版商原摘要，Crossref元数据"
+            }
+          ]
+        }
+      }
+    ],
+    "pdf_version": "version_of_record",
+    "pdf_source": "user_uploaded",
+    "source_filename": "6-American-Ethnologist-August-1997-Hage-Unthinkable-Categories-and-the-Fundamental-Laws-of-Kinship.pdf",
+    "user_supplied_on": "2026-10-15",
+    "read_scope": "已核对全文文件并定向核查与本研究有关段落；不宣称逐页精读。",
+    "txt_path": "literature/A/A19_Hage_1997_Unthinkable_Categories_and_the_Fundamental_Laws_of_Kinship.txt",
+    "pdf_sha256": "f4bc5cf71854e39983d9310e13d8fffd381f326691c16dc616a8fdef8d1f4994",
+    "sha256": "f4bc5cf71854e39983d9310e13d8fffd381f326691c16dc616a8fdef8d1f4994",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "85e731ec89a9c6b1c0de6f6564bda796db0cb7299fa120095df7e7bdb6d356a8",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "A20",
@@ -945,8 +1212,8 @@
     "doi": "10.1525/aa.1969.71.3.02a00080",
     "url": "https://doi.org/10.1525/aa.1969.71.3.02a00080",
     "pdf_url": null,
-    "pdf_path": null,
-    "access_level": "abstract_only",
+    "pdf_path": "literature/A/A20_Faris_1969_Sibling_Terminology_and_Cross_Sex_Behavior_Data_from_the_Southeastern_Nuba_Mountains.pdf",
+    "access_level": "fulltext_published_pdf",
     "abstract_path": "notes/A/A20_abstract.txt",
     "abstract_url": "https://api.crossref.org/works/10.1525/aa.1969.71.3.02a00080",
     "download_attempts": [
@@ -954,25 +1221,64 @@
         "url": "https://anthrosource.onlinelibrary.wiley.com/doi/pdf/10.1525/aa.1969.71.3.02a00080",
         "status": "failed",
         "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "user-upload:7-Faris-SiblingTerminologyCrossSex-1969.pdf",
+        "status": "2026-10-15 用户提供；PDF题名与出版版本核验通过"
       }
     ],
-    "summary_zh": "摘要报告东南Nuba兄弟姐妹称谓具有主要说话者性别成分且保持合取性，用该材料讨论Nerlove与Romney的部分假设。",
-    "relevance_zh": "为参照者性别的经验重要性提供经典例证，也说明传统类型学条件需要结合真实语言材料评价。",
+    "summary_zh": "通过东南Nuba兄弟姐妹称谓讨论说话者性别、年龄、条件性的同性／异性区分以及多义分析。",
+    "relevance_zh": "提供条件性特征和语义重分析的具体先例；可用于检验现有差异指标是否过度合并了不同端点状态。",
     "evidence_claims": [
       {
-        "claim_zh": "东南Nuba材料的兄弟姐妹体系具有主要说话者性别成分且是合取性的。",
-        "locator": "出版商原摘要，Crossref元数据"
+        "claim_zh": "Nuba材料中的同性／异性区分限于男性说话者，单看初始表格会呈现不同的类别分析。",
+        "locator": "PDF第3页，印刷第483页，Table 1及其讨论。"
+      },
+      {
+        "claim_zh": "作者进一步以多义分析重新讨论表面析取，并主张说话者性别可处于主要区分层次。",
+        "locator": "PDF第4页，印刷第484页；PDF第7页，印刷第487页。"
       }
     ],
-    "notes": [],
+    "notes": [
+      "2026年10月15日由用户提供正式论文PDF，已核对题名、作者和出版信息。"
+    ],
     "eligible_read": true,
     "retrieved_at": "2026-10-14",
-    "fulltext_path": null,
+    "fulltext_path": "literature/A/A20_Faris_1969_Sibling_Terminology_and_Cross_Sex_Behavior_Data_from_the_Southeastern_Nuba_Mountains.txt",
     "metadata_source": "https://api.crossref.org/works/10.1525/aa.1969.71.3.02a00080",
     "material_type": "journal_article",
     "eligible_formal_read": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
-    "supplementary_preview": false
+    "supplementary_preview": false,
+    "access_history": [
+      {
+        "date": "2026-10-14",
+        "state": {
+          "access_level": "abstract_only",
+          "pdf_path": null,
+          "notes": [],
+          "evidence_claims": [
+            {
+              "claim_zh": "东南Nuba材料的兄弟姐妹体系具有主要说话者性别成分且是合取性的。",
+              "locator": "出版商原摘要，Crossref元数据"
+            }
+          ]
+        }
+      }
+    ],
+    "pdf_version": "version_of_record",
+    "pdf_source": "user_uploaded",
+    "source_filename": "7-Faris-SiblingTerminologyCrossSex-1969.pdf",
+    "user_supplied_on": "2026-10-15",
+    "read_scope": "已核对全文文件并定向核查与本研究有关段落；不宣称逐页精读。",
+    "txt_path": "literature/A/A20_Faris_1969_Sibling_Terminology_and_Cross_Sex_Behavior_Data_from_the_Southeastern_Nuba_Mountains.txt",
+    "pdf_sha256": "4187b5a33f0608b36cde67de76b628c21e8d54350e2b1ff21ce8e95245be18a8",
+    "sha256": "4187b5a33f0608b36cde67de76b628c21e8d54350e2b1ff21ce8e95245be18a8",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "3ecf0a2dd555a4cea4eea78ade8c077eab822a10057b49ed1e62e8321a723f2d",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "B01",
@@ -990,7 +1296,7 @@
     "doi": "10.1126/science.1218811",
     "url": "https://doi.org/10.1126/science.1218811",
     "pdf_url": "https://www.charleskemp.com/papers/kempr_kinshipcategoriesacrosslanguagesreflectgeneralcommunicativeprinciples.pdf",
-    "pdf_path": "literature/B/B01.pdf",
+    "pdf_path": "literature/B/B01_Kemp_2012_Kinship_Categories_Across_Languages_Reflect_General_Communicative_Principles.pdf",
     "access_level": "fulltext_pdf",
     "abstract_path": "notes/B/B01_abstract.txt",
     "abstract_url": "https://www.charleskemp.com/papers/kempr_kinshipcategoriesacrosslanguagesreflectgeneralcommunicativeprinciples.pdf",
@@ -1013,14 +1319,21 @@
       }
     ],
     "notes": "作者主页提供的Science正式排版PDF，个人研究使用；文件含首页相邻论文尾段，已通过标题、作者、DOI核对目标论文。",
-    "fulltext_path": "notes/B/B01_fulltext.txt",
+    "fulltext_path": "literature/B/B01_Kemp_2012_Kinship_Categories_Across_Languages_Reflect_General_Communicative_Principles.txt",
     "metadata_path": "notes/B/B01.json",
     "read_scope": "已核对全文题名、作者、来源和摘要；对研究相关的方法、讨论及指定证据位置做定点阅读。",
     "pdf_magic_validated": true,
     "title_author_verified": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "5cee49eefdfcc875b9926c6b672916e854f5b28e61c6f84f484d73bb06736202"
+    "txt_path": "literature/B/B01_Kemp_2012_Kinship_Categories_Across_Languages_Reflect_General_Communicative_Principles.txt",
+    "pdf_sha256": "5cee49eefdfcc875b9926c6b672916e854f5b28e61c6f84f484d73bb06736202",
+    "sha256": "5cee49eefdfcc875b9926c6b672916e854f5b28e61c6f84f484d73bb06736202",
+    "txt_sha256": "c1794a1dd73893c651fcc07e8ca347265403b7f34131668385213eeeaef952c6",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "B02",
@@ -1040,7 +1353,7 @@
     "doi": null,
     "url": "https://escholarship.org/uc/item/1fg7b7hn",
     "pdf_url": "https://escholarship.org/content/qt1fg7b7hn/qt1fg7b7hn.pdf",
-    "pdf_path": "literature/B/B02.pdf",
+    "pdf_path": "literature/B/B02_Hallam_2025_Efficient_communication_drives_the_semantic_structure_of_kinship_terminology.pdf",
     "access_level": "fulltext_pdf",
     "abstract_path": "notes/B/B02_abstract.txt",
     "abstract_url": "https://escholarship.org/content/qt1fg7b7hn/qt1fg7b7hn.pdf",
@@ -1063,14 +1376,21 @@
       }
     ],
     "notes": "出版社机构知识库正式会议论文PDF；PDF作者顺序为Hallam、Kirby、Jordan、Smith。没有将同名会议视频/演示记录DOI当作此论文DOI。",
-    "fulltext_path": "notes/B/B02_fulltext.txt",
+    "fulltext_path": "literature/B/B02_Hallam_2025_Efficient_communication_drives_the_semantic_structure_of_kinship_terminology.txt",
     "metadata_path": "论文PDF首页和标题页",
     "read_scope": "已核对全文题名、作者、来源和摘要；对研究相关的方法、讨论及指定证据位置做定点阅读。",
     "pdf_magic_validated": true,
     "title_author_verified": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "e8af86bdee7587a1103ca573141807ae220183e4991571abd2483c48353ae6e0"
+    "txt_path": "literature/B/B02_Hallam_2025_Efficient_communication_drives_the_semantic_structure_of_kinship_terminology.txt",
+    "pdf_sha256": "e8af86bdee7587a1103ca573141807ae220183e4991571abd2483c48353ae6e0",
+    "sha256": "e8af86bdee7587a1103ca573141807ae220183e4991571abd2483c48353ae6e0",
+    "txt_sha256": "69c1ec4daa5754bba66d48bf4516c556b4cea837a15908f1bff32d6871038156",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "B03",
@@ -1089,9 +1409,9 @@
     "article_number": null,
     "doi": "10.1162/opmi.a.27",
     "url": "https://doi.org/10.1162/opmi.a.27",
-    "pdf_url": "https://osf.io/download/2wzcq/",
-    "pdf_path": "literature/B/B03.pdf",
-    "access_level": "fulltext_author_preprint_pdf_and_version_of_record_xml",
+    "pdf_url": null,
+    "pdf_path": "literature/B/B03_Hallam_2025_Predictive_Structure_Emerges_During_the_Generalisation_of_Kin_Terms_to_New_Referents.pdf",
+    "access_level": "fulltext_published_pdf",
     "abstract_path": "notes/B/B03_abstract.txt",
     "abstract_url": "https://api.crossref.org/works/10.1162/opmi.a.27",
     "download_attempts": [
@@ -1114,36 +1434,70 @@
       {
         "url": "https://osf.io/download/2wzcq/",
         "status": "author preprint downloaded; %PDF- validated; 1195250 bytes"
+      },
+      {
+        "url": "user-upload:1-opmi.a.27.pdf",
+        "status": "2026-10-15 用户提供；PDF题名与出版版本核验通过"
       }
     ],
-    "summary_zh": "研究731种语言的代际亲属类别预测关系，以对称条件熵及置换基准衡量系统结构；随后通过人工亲属称谓推广任务检验学习者对预测结构的偏好。",
-    "relevance_zh": "提供类别之间依赖和推广机制的直接证据。与本研究的区别是预测另一代类别体系，而不是同一兄弟姐妹空间中类别对共享词形的差异交互。",
+    "summary_zh": "正式期刊版以731种语言检验跨代预测结构，并结合人工亲属词推广任务讨论简洁性、推广与其他区分压力。",
+    "relevance_zh": "与本研究的域内类别对预测区分；当前主要引用源已升级为用户提供的正式期刊PDF。",
     "evidence_claims": [
       {
-        "claim_zh": "对称条件熵衡量父辈称谓与其子辈称谓之间的双向可预测性。",
-        "locator": "Study 1，Measuring Predictive Structure / Symmetric Conditional Entropy"
-      },
-      {
-        "claim_zh": "731种语言各生成1000次置换以构建保持称谓数的语言特定基准。",
-        "locator": "Study 1，A Baseline With No Bias for Predictive Structure"
-      },
-      {
-        "claim_zh": "实验显示学习者偏好预测结构，同时受到性别区分偏好的影响。",
-        "locator": "Study 3；Discussion；正式版本摘要"
+        "claim_zh": "正式版研究摘要报告731种语言及人工亲属词推广任务。",
+        "locator": "PDF第1页，印刷第1431页，Abstract；方法与结果见正文。"
       }
     ],
-    "notes": "正式期刊PDF在出版社和机构库均403；已下载同题作者预印本，同时获取正式期刊全文XML核对731语言结果和摘要。期刊PDF未下载，明确列入未获得正式版本PDF清单。",
-    "fulltext_path": "notes/B/B03_fulltext.txt",
+    "notes": [
+      "2026年10月15日由用户提供正式论文PDF，已核对题名、作者和出版信息。"
+    ],
+    "fulltext_path": "literature/B/B03_Hallam_2025_Predictive_Structure_Emerges_During_the_Generalisation_of_Kin_Terms_to_New_Referents.txt",
     "metadata_path": "notes/B/B03.json",
-    "read_scope": "已核对全文题名、作者、来源和摘要；对研究相关的方法、讨论及指定证据位置做定点阅读。",
-    "journal_pdf_unavailable": true,
+    "read_scope": "已核对全文文件并定向核查与本研究有关段落；不宣称逐页精读。",
     "formal_fulltext_path": "notes/B/B03_europexml.raw",
     "formal_fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12483572/fullTextXML",
     "pdf_magic_validated": true,
     "title_author_verified": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "cac0a6dfb11562405c814e7e0fe363e9a33a5975ab9b6d6d26aa3cbc2af16ce4"
+    "earlier_pdf_path": "literature/B/earlier_versions/B03_Hallam_2025_Author_Preprint.pdf",
+    "access_history": [
+      {
+        "date": "2026-10-14",
+        "state": {
+          "access_level": "fulltext_author_preprint_pdf_and_version_of_record_xml",
+          "pdf_path": "literature/B/B03.pdf",
+          "notes": "正式期刊PDF在出版社和机构库均403；已下载同题作者预印本，同时获取正式期刊全文XML核对731语言结果和摘要。期刊PDF未下载，明确列入未获得正式版本PDF清单。",
+          "evidence_claims": [
+            {
+              "claim_zh": "对称条件熵衡量父辈称谓与其子辈称谓之间的双向可预测性。",
+              "locator": "Study 1，Measuring Predictive Structure / Symmetric Conditional Entropy"
+            },
+            {
+              "claim_zh": "731种语言各生成1000次置换以构建保持称谓数的语言特定基准。",
+              "locator": "Study 1，A Baseline With No Bias for Predictive Structure"
+            },
+            {
+              "claim_zh": "实验显示学习者偏好预测结构，同时受到性别区分偏好的影响。",
+              "locator": "Study 3；Discussion；正式版本摘要"
+            }
+          ]
+        }
+      }
+    ],
+    "pdf_version": "version_of_record",
+    "pdf_source": "user_uploaded",
+    "source_filename": "1-opmi.a.27.pdf",
+    "user_supplied_on": "2026-10-15",
+    "material_type": "journal_article",
+    "txt_path": "literature/B/B03_Hallam_2025_Predictive_Structure_Emerges_During_the_Generalisation_of_Kin_Terms_to_New_Referents.txt",
+    "pdf_sha256": "b7d34db364d59f17730947b4f932a5c06ec231508e26cff811acb10947b0ec8d",
+    "sha256": "b7d34db364d59f17730947b4f932a5c06ec231508e26cff811acb10947b0ec8d",
+    "txt_sha256": "5e64fe45a2e13df2759526399bd661f82cf0e7fc4697b85af31e6d98be6ec9e3",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "B04",
@@ -1160,7 +1514,7 @@
     "doi": "10.1038/s41467-025-67463-4",
     "url": "https://doi.org/10.1038/s41467-025-67463-4",
     "pdf_url": "https://www.nature.com/articles/s41467-025-67463-4.pdf",
-    "pdf_path": "literature/B/B04.pdf",
+    "pdf_path": "literature/B/B04_Kemp_2026_Symmetry_in_category_systems_across_languages.pdf",
     "access_level": "fulltext_pdf",
     "abstract_path": "notes/B/B04_abstract.txt",
     "abstract_url": "https://api.crossref.org/works/10.1038/s41467-025-67463-4",
@@ -1187,14 +1541,21 @@
       }
     ],
     "notes": "正式期刊排版PDF，标题、作者及DOI核对通过。",
-    "fulltext_path": "notes/B/B04_fulltext.txt",
+    "fulltext_path": "literature/B/B04_Kemp_2026_Symmetry_in_category_systems_across_languages.txt",
     "metadata_path": "notes/B/B04.json",
     "read_scope": "已核对全文题名、作者、来源和摘要；对研究相关的方法、讨论及指定证据位置做定点阅读。",
     "pdf_magic_validated": true,
     "title_author_verified": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "3b751e82587d2d2c4f345095324caa4722b1e1e83631865b84c77e356e73e818"
+    "txt_path": "literature/B/B04_Kemp_2026_Symmetry_in_category_systems_across_languages.txt",
+    "pdf_sha256": "3b751e82587d2d2c4f345095324caa4722b1e1e83631865b84c77e356e73e818",
+    "sha256": "3b751e82587d2d2c4f345095324caa4722b1e1e83631865b84c77e356e73e818",
+    "txt_sha256": "531bdc7acccae10d1883cfa5d2124f615ecf110aa1a17a369af3b6bae21302da",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "B05",
@@ -1213,7 +1574,7 @@
     "doi": "10.1146/annurev-linguistics-011817-045406",
     "url": "https://doi.org/10.1146/annurev-linguistics-011817-045406",
     "pdf_url": "https://www.charleskemp.com/papers/kempxr_semantictypologyandefficientcommunication.pdf",
-    "pdf_path": "literature/B/B05.pdf",
+    "pdf_path": "literature/B/B05_Kemp_2018_Semantic_Typology_and_Efficient_Communication.pdf",
     "access_level": "fulltext_author_manuscript_pdf",
     "abstract_path": "notes/B/B05_abstract.txt",
     "abstract_url": "https://api.crossref.org/works/10.1146/annurev-linguistics-011817-045406",
@@ -1232,14 +1593,21 @@
       }
     ],
     "notes": "作者提供的待刊稿，首页标To appear；以Crossref核对正式2018卷期页码。",
-    "fulltext_path": "notes/B/B05_fulltext.txt",
+    "fulltext_path": "literature/B/B05_Kemp_2018_Semantic_Typology_and_Efficient_Communication.txt",
     "metadata_path": "notes/B/B05.json",
     "read_scope": "已核对全文题名、作者、来源和摘要；对研究相关的方法、讨论及指定证据位置做定点阅读。",
     "pdf_magic_validated": true,
     "title_author_verified": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "e9e687d7947f20f9cb528ffc2ef8c9bcb4cd88036c07c023a3595dc93f65a46a"
+    "txt_path": "literature/B/B05_Kemp_2018_Semantic_Typology_and_Efficient_Communication.txt",
+    "pdf_sha256": "e9e687d7947f20f9cb528ffc2ef8c9bcb4cd88036c07c023a3595dc93f65a46a",
+    "sha256": "e9e687d7947f20f9cb528ffc2ef8c9bcb4cd88036c07c023a3595dc93f65a46a",
+    "txt_sha256": "98b70f6a24da0414527ef658fa2c0a22ac0529c7047fb1b19cd3654e01e0ca78",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "B06",
@@ -1259,7 +1627,7 @@
     "doi": "10.1073/pnas.1800521115",
     "url": "https://doi.org/10.1073/pnas.1800521115",
     "pdf_url": "https://www.charleskemp.com/papers/zaslavskykrt_efficientcompressionincolornaminganditsevolution.pdf",
-    "pdf_path": "literature/B/B06.pdf",
+    "pdf_path": "literature/B/B06_Zaslavsky_2018_Efficient_compression_in_color_naming_and_its_evolution.pdf",
     "access_level": "fulltext_pdf",
     "abstract_path": "notes/B/B06_abstract.txt",
     "abstract_url": "https://www.charleskemp.com/papers/zaslavskykrt_efficientcompressionincolornaminganditsevolution.pdf",
@@ -1278,14 +1646,21 @@
       }
     ],
     "notes": "正式期刊排版PDF，标题、作者及DOI核对通过。",
-    "fulltext_path": "notes/B/B06_fulltext.txt",
+    "fulltext_path": "literature/B/B06_Zaslavsky_2018_Efficient_compression_in_color_naming_and_its_evolution.txt",
     "metadata_path": "notes/B/B06.json",
     "read_scope": "已核对全文题名、作者、来源和摘要；对研究相关的方法、讨论及指定证据位置做定点阅读。",
     "pdf_magic_validated": true,
     "title_author_verified": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "aff18dfbaefd528e9c3cb57dd84f7edc49b1331b75f92bbfb5a52f9337117e0b"
+    "txt_path": "literature/B/B06_Zaslavsky_2018_Efficient_compression_in_color_naming_and_its_evolution.txt",
+    "pdf_sha256": "aff18dfbaefd528e9c3cb57dd84f7edc49b1331b75f92bbfb5a52f9337117e0b",
+    "sha256": "aff18dfbaefd528e9c3cb57dd84f7edc49b1331b75f92bbfb5a52f9337117e0b",
+    "txt_sha256": "a47582d1aa4a72c794f72ff8c726493bb59e71d3a31c8b5f057dd7f8414f061a",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "B07",
@@ -1304,7 +1679,7 @@
     "doi": "10.1002/9781118346136.ch11",
     "url": "https://doi.org/10.1002/9781118346136.ch11",
     "pdf_url": "https://lclab.berkeley.edu/papers/EC-chapter-2014.pdf",
-    "pdf_path": "literature/B/B07.pdf",
+    "pdf_path": "literature/B/B07_Regier_2015_Word_Meanings_across_Languages_Support_Efficient_Communication.pdf",
     "access_level": "fulltext_author_manuscript_pdf",
     "abstract_path": null,
     "abstract_url": null,
@@ -1323,7 +1698,7 @@
       }
     ],
     "notes": "作者预印本，首页注明personal use, not for redistribution；正式章页237–263。",
-    "fulltext_path": "notes/B/B07_fulltext.txt",
+    "fulltext_path": "literature/B/B07_Regier_2015_Word_Meanings_across_Languages_Support_Efficient_Communication.txt",
     "metadata_path": "notes/B/B07.json",
     "read_scope": "已核对全文题名、作者、来源和摘要；对研究相关的方法、讨论及指定证据位置做定点阅读。",
     "editors": [
@@ -1333,9 +1708,16 @@
     "publisher": "Wiley Blackwell",
     "pdf_magic_validated": true,
     "title_author_verified": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "934b4702067eaef4c1db3af152319589d6b1185aca017b7ebbf5c117f27ced88"
+    "txt_path": "literature/B/B07_Regier_2015_Word_Meanings_across_Languages_Support_Efficient_Communication.txt",
+    "pdf_sha256": "934b4702067eaef4c1db3af152319589d6b1185aca017b7ebbf5c117f27ced88",
+    "sha256": "934b4702067eaef4c1db3af152319589d6b1185aca017b7ebbf5c117f27ced88",
+    "txt_sha256": "34e4107f182e8f1bc63d59fd4668b2ecb71a890411ad6b3ea4633513e00eab3a",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "B08",
@@ -1354,7 +1736,7 @@
     "doi": "10.1073/pnas.0610341104",
     "url": "https://doi.org/10.1073/pnas.0610341104",
     "pdf_url": "https://lclab.berkeley.edu/papers/regier-kay-khetarpal-PNAS-2007.pdf",
-    "pdf_path": "literature/B/B08.pdf",
+    "pdf_path": "literature/B/B08_Regier_2007_Color_naming_reflects_optimal_partitions_of_color_space.pdf",
     "access_level": "fulltext_pdf",
     "abstract_path": "notes/B/B08_abstract.txt",
     "abstract_url": "https://api.crossref.org/works/10.1073/pnas.0610341104",
@@ -1373,14 +1755,21 @@
       }
     ],
     "notes": "正式期刊排版PDF，标题、作者及DOI核对通过。",
-    "fulltext_path": "notes/B/B08_fulltext.txt",
+    "fulltext_path": "literature/B/B08_Regier_2007_Color_naming_reflects_optimal_partitions_of_color_space.txt",
     "metadata_path": "notes/B/B08.json",
     "read_scope": "已核对全文题名、作者、来源和摘要；对研究相关的方法、讨论及指定证据位置做定点阅读。",
     "pdf_magic_validated": true,
     "title_author_verified": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "ee9c810b12c7a601300913596dd8214797863ef656da0eafc6e99f32260ac4fb"
+    "txt_path": "literature/B/B08_Regier_2007_Color_naming_reflects_optimal_partitions_of_color_space.txt",
+    "pdf_sha256": "ee9c810b12c7a601300913596dd8214797863ef656da0eafc6e99f32260ac4fb",
+    "sha256": "ee9c810b12c7a601300913596dd8214797863ef656da0eafc6e99f32260ac4fb",
+    "txt_sha256": "8a1f639c03d6710e7ab8ebb144d94e62d14ac69874bad221da83e6312a682ff4",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "B09",
@@ -1399,7 +1788,7 @@
     "doi": "10.1162/opmi_a_00034",
     "url": "https://doi.org/10.1162/opmi_a_00034",
     "pdf_url": "https://lclab.berkeley.edu/papers/xu-et-al-2020.pdf",
-    "pdf_path": "literature/B/B09.pdf",
+    "pdf_path": "literature/B/B09_Xu_2020_Numeral_Systems_Across_Languages_Support_Efficient_Communication_From_Approximate_Numero.pdf",
     "access_level": "fulltext_pdf",
     "abstract_path": "notes/B/B09_abstract.txt",
     "abstract_url": "https://api.crossref.org/works/10.1162/opmi_a_00034",
@@ -1426,14 +1815,21 @@
       }
     ],
     "notes": "已下载2020年三作者正式Open Mind PDF；对应2014年两作者会议版本另存earlier_versions，不作为2020论文PDF或新增文献计数。",
-    "fulltext_path": "notes/B/B09_fulltext.txt",
+    "fulltext_path": "literature/B/B09_Xu_2020_Numeral_Systems_Across_Languages_Support_Efficient_Communication_From_Approximate_Numero.txt",
     "metadata_path": "notes/B/B09.json",
     "read_scope": "已核对全文题名、作者、来源和摘要；对研究相关的方法、讨论及指定证据位置做定点阅读。",
     "pdf_magic_validated": true,
     "title_author_verified": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "f4c2d595d2773aee18c431f79667688b235bc1cf5dddc688d609ee21f6e9b57a"
+    "txt_path": "literature/B/B09_Xu_2020_Numeral_Systems_Across_Languages_Support_Efficient_Communication_From_Approximate_Numero.txt",
+    "pdf_sha256": "f4c2d595d2773aee18c431f79667688b235bc1cf5dddc688d609ee21f6e9b57a",
+    "sha256": "f4c2d595d2773aee18c431f79667688b235bc1cf5dddc688d609ee21f6e9b57a",
+    "txt_sha256": "cf100aaf8257863f185b9acee070e06ab57d4b5eec6d94e37de080310a3165ca",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "B10",
@@ -1450,7 +1846,7 @@
     "doi": "10.1037/a0029347",
     "url": "https://doi.org/10.1037/a0029347",
     "pdf_url": "https://www.charleskemp.com/papers/kemp_exploringtheconceptualuniverse.pdf",
-    "pdf_path": "literature/B/B10.pdf",
+    "pdf_path": "literature/B/B10_Kemp_2012_Exploring_the_conceptual_universe.pdf",
     "access_level": "fulltext_early_view_pdf",
     "abstract_path": "notes/B/B10_abstract.txt",
     "abstract_url": "https://www.charleskemp.com/papers/kemp_exploringtheconceptualuniverse.pdf",
@@ -1469,14 +1865,21 @@
       }
     ],
     "notes": "作者提供的Online First正式排版版本，首页卷期页码为占位值；正式书目信息按Crossref核对。",
-    "fulltext_path": "notes/B/B10_fulltext.txt",
+    "fulltext_path": "literature/B/B10_Kemp_2012_Exploring_the_conceptual_universe.txt",
     "metadata_path": "notes/B/B10.json",
     "read_scope": "已核对全文题名、作者、来源和摘要；对研究相关的方法、讨论及指定证据位置做定点阅读。",
     "pdf_magic_validated": true,
     "title_author_verified": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "797eee18c36703bb5d9c58d3901a302f4f30c96ce0279bd283793a40771c2177"
+    "txt_path": "literature/B/B10_Kemp_2012_Exploring_the_conceptual_universe.txt",
+    "pdf_sha256": "797eee18c36703bb5d9c58d3901a302f4f30c96ce0279bd283793a40771c2177",
+    "sha256": "797eee18c36703bb5d9c58d3901a302f4f30c96ce0279bd283793a40771c2177",
+    "txt_sha256": "b0a40f9c2a77858a1f4e9b2a56a649f28eae1196fd74d3379988ec89082bbbdb",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "B11",
@@ -1501,7 +1904,7 @@
     "doi": "10.1073/pnas.1619666114",
     "url": "https://doi.org/10.1073/pnas.1619666114",
     "pdf_url": "https://dspace.mit.edu/server/api/core/bitstreams/d8a3dc13-3924-4b1d-8790-94ef85c75314/content",
-    "pdf_path": "literature/B/B11.pdf",
+    "pdf_path": "literature/B/B11_Gibson_2017_Color_naming_across_languages_reflects_color_use.pdf",
     "access_level": "fulltext_pdf",
     "abstract_path": "notes/B/B11_abstract.txt",
     "abstract_url": "https://dspace.mit.edu/server/api/core/bitstreams/d8a3dc13-3924-4b1d-8790-94ef85c75314/content",
@@ -1532,14 +1935,21 @@
       }
     ],
     "notes": "正式期刊排版PDF，标题、作者及DOI核对通过。",
-    "fulltext_path": "notes/B/B11_fulltext.txt",
+    "fulltext_path": "literature/B/B11_Gibson_2017_Color_naming_across_languages_reflects_color_use.txt",
     "metadata_path": "notes/B/B11.json",
     "read_scope": "已核对全文题名、作者、来源和摘要；对研究相关的方法、讨论及指定证据位置做定点阅读。",
     "pdf_magic_validated": true,
     "title_author_verified": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "03d01ec61b5f954b4941b98816170b1847c77474fd5c03bc44cc6beda6e574f1"
+    "txt_path": "literature/B/B11_Gibson_2017_Color_naming_across_languages_reflects_color_use.txt",
+    "pdf_sha256": "03d01ec61b5f954b4941b98816170b1847c77474fd5c03bc44cc6beda6e574f1",
+    "sha256": "03d01ec61b5f954b4941b98816170b1847c77474fd5c03bc44cc6beda6e574f1",
+    "txt_sha256": "a708adc1475db365934e0c74947448b93d9ec8ed112145fbf3c6f437fc0475ef",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "B12",
@@ -1559,7 +1969,7 @@
     "doi": "10.1016/j.cognition.2020.104289",
     "url": "https://doi.org/10.1016/j.cognition.2020.104289",
     "pdf_url": "https://osf.io/download/atuwf/",
-    "pdf_path": "literature/B/B12.pdf",
+    "pdf_path": "literature/B/B12_Carr_2020_Simplicity_and_informativeness_in_semantic_category_systems.pdf",
     "access_level": "fulltext_author_manuscript_pdf",
     "abstract_path": "notes/B/B12_abstract.txt",
     "abstract_url": "https://api.osf.io/v2/preprints/jkfyx/",
@@ -1586,14 +1996,21 @@
       }
     ],
     "notes": "作者共享稿，经OSF API解析primary_file后下载；以正式Cognition DOI核对2020出版。",
-    "fulltext_path": "notes/B/B12_fulltext.txt",
+    "fulltext_path": "literature/B/B12_Carr_2020_Simplicity_and_informativeness_in_semantic_category_systems.txt",
     "metadata_path": "notes/B/B12.json",
     "read_scope": "已核对全文题名、作者、来源和摘要；对研究相关的方法、讨论及指定证据位置做定点阅读。",
     "pdf_magic_validated": true,
     "title_author_verified": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "b031db6775da119ce2a6113f86ba198e4a4fc0caaf28768302d73c81e99b144b"
+    "txt_path": "literature/B/B12_Carr_2020_Simplicity_and_informativeness_in_semantic_category_systems.txt",
+    "pdf_sha256": "b031db6775da119ce2a6113f86ba198e4a4fc0caaf28768302d73c81e99b144b",
+    "sha256": "b031db6775da119ce2a6113f86ba198e4a4fc0caaf28768302d73c81e99b144b",
+    "txt_sha256": "90b63266b3d0b28da7f72067554fb0e27f6f57482767e7813b7371285b8de594",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "B13",
@@ -1611,7 +2028,7 @@
     "doi": "10.3389/fpsyg.2015.01964",
     "url": "https://doi.org/10.3389/fpsyg.2015.01964",
     "pdf_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2015.01964/pdf",
-    "pdf_path": "literature/B/B13.pdf",
+    "pdf_path": "literature/B/B13_Culbertson_2016_Simplicity_and_Specificity_in_Language_Domain_General_Biases_Have_Domain_Specific_Effect.pdf",
     "access_level": "fulltext_pdf",
     "abstract_path": "notes/B/B13_abstract.txt",
     "abstract_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2015.01964/pdf",
@@ -1630,14 +2047,21 @@
       }
     ],
     "notes": "2016年1月12日发表，但DOI与卷号包含2015/6，年份以正式发表日期为准。",
-    "fulltext_path": "notes/B/B13_fulltext.txt",
+    "fulltext_path": "literature/B/B13_Culbertson_2016_Simplicity_and_Specificity_in_Language_Domain_General_Biases_Have_Domain_Specific_Effect.txt",
     "metadata_path": "notes/B/B13.json",
     "read_scope": "已核对全文题名、作者、来源和摘要；对研究相关的方法、讨论及指定证据位置做定点阅读。",
     "pdf_magic_validated": true,
     "title_author_verified": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "1853a0141f3a63925d19564ee8627ba69b0a3137a928527585320741ff99dc1f"
+    "txt_path": "literature/B/B13_Culbertson_2016_Simplicity_and_Specificity_in_Language_Domain_General_Biases_Have_Domain_Specific_Effect.txt",
+    "pdf_sha256": "1853a0141f3a63925d19564ee8627ba69b0a3137a928527585320741ff99dc1f",
+    "sha256": "1853a0141f3a63925d19564ee8627ba69b0a3137a928527585320741ff99dc1f",
+    "txt_sha256": "5c2476125a221eebfbf95f79aeb5756eaf884533af11456557290ca5346d8c82",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "B14",
@@ -1655,7 +2079,7 @@
     "doi": "10.3758/s13423-021-02017-5",
     "url": "https://doi.org/10.3758/s13423-021-02017-5",
     "pdf_url": "https://link.springer.com/content/pdf/10.3758/s13423-021-02017-5.pdf",
-    "pdf_path": "literature/B/B14.pdf",
+    "pdf_path": "literature/B/B14_Mollica_2022_Logical_word_learning_The_case_of_kinship.pdf",
     "access_level": "fulltext_pdf",
     "abstract_path": "notes/B/B14_abstract.txt",
     "abstract_url": "https://api.crossref.org/works/10.3758/s13423-021-02017-5",
@@ -1682,14 +2106,21 @@
       }
     ],
     "notes": "在线首发2021，但卷期版本2022，统一按卷期2022引用。",
-    "fulltext_path": "notes/B/B14_fulltext.txt",
+    "fulltext_path": "literature/B/B14_Mollica_2022_Logical_word_learning_The_case_of_kinship.txt",
     "metadata_path": "notes/B/B14.json",
     "read_scope": "已核对全文题名、作者、来源和摘要；对研究相关的方法、讨论及指定证据位置做定点阅读。",
     "pdf_magic_validated": true,
     "title_author_verified": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "e251b976c00ac33de0825ff0bc8adc53a2eea3eb086f85d38e2e9c07f18c4876"
+    "txt_path": "literature/B/B14_Mollica_2022_Logical_word_learning_The_case_of_kinship.txt",
+    "pdf_sha256": "e251b976c00ac33de0825ff0bc8adc53a2eea3eb086f85d38e2e9c07f18c4876",
+    "sha256": "e251b976c00ac33de0825ff0bc8adc53a2eea3eb086f85d38e2e9c07f18c4876",
+    "txt_sha256": "9511e3cb6a2059212db4a9978d3bb87124964ad57a7a7851744b7da2ba681075",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "B15",
@@ -1711,7 +2142,7 @@
     "doi": "10.1073/pnas.2025993118",
     "url": "https://doi.org/10.1073/pnas.2025993118",
     "pdf_url": "https://escholarship.org/content/qt9zx351pm/qt9zx351pm.pdf",
-    "pdf_path": "literature/B/B15.pdf",
+    "pdf_path": "literature/B/B15_Mollica_2021_The_forms_and_meanings_of_grammatical_markers_support_efficient_communication.pdf",
     "access_level": "fulltext_pdf",
     "abstract_path": "notes/B/B15_abstract.txt",
     "abstract_url": "https://escholarship.org/content/qt9zx351pm/qt9zx351pm.pdf",
@@ -1730,14 +2161,21 @@
       }
     ],
     "notes": "正式期刊排版PDF，标题、作者及DOI核对通过。",
-    "fulltext_path": "notes/B/B15_fulltext.txt",
+    "fulltext_path": "literature/B/B15_Mollica_2021_The_forms_and_meanings_of_grammatical_markers_support_efficient_communication.txt",
     "metadata_path": "notes/B/B15.json",
     "read_scope": "已核对全文题名、作者、来源和摘要；对研究相关的方法、讨论及指定证据位置做定点阅读。",
     "pdf_magic_validated": true,
     "title_author_verified": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "c16d2ae3ee96f5274413d71374c9a5e53ad101e4125ebb289ac2619f29f21071"
+    "txt_path": "literature/B/B15_Mollica_2021_The_forms_and_meanings_of_grammatical_markers_support_efficient_communication.txt",
+    "pdf_sha256": "c16d2ae3ee96f5274413d71374c9a5e53ad101e4125ebb289ac2619f29f21071",
+    "sha256": "c16d2ae3ee96f5274413d71374c9a5e53ad101e4125ebb289ac2619f29f21071",
+    "txt_sha256": "d1fb5f188ad875fc3aa275dd4e399a4290114fa5a408ae33b190a057953209c3",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "B16",
@@ -1757,7 +2195,7 @@
     "doi": "10.1111/tops.12395",
     "url": "https://doi.org/10.1111/tops.12395",
     "pdf_url": "https://www.nogsky.com/publication/2018c-topics/2018c-topiCS.pdf",
-    "pdf_path": "literature/B/B16.pdf",
+    "pdf_path": "literature/B/B16_Zaslavsky_2019_Color_Naming_Reflects_Both_Perceptual_Structure_and_Communicative_Need.pdf",
     "access_level": "fulltext_early_view_pdf",
     "abstract_path": "notes/B/B16_abstract.txt",
     "abstract_url": "https://api.crossref.org/works/10.1111/tops.12395",
@@ -1784,14 +2222,21 @@
       }
     ],
     "notes": "已获得带同一DOI的Topics in Cognitive Science Early View期刊排版PDF；统一按2019卷期引用。另存的2018会议版本不新增计数。",
-    "fulltext_path": "notes/B/B16_fulltext.txt",
+    "fulltext_path": "literature/B/B16_Zaslavsky_2019_Color_Naming_Reflects_Both_Perceptual_Structure_and_Communicative_Need.txt",
     "metadata_path": "notes/B/B16.json",
     "read_scope": "已核对全文题名、作者、来源和摘要；对研究相关的方法、讨论及指定证据位置做定点阅读。",
     "pdf_magic_validated": true,
     "title_author_verified": true,
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "e0dc6dbb1f9a06c6234eb2c9b198d8c027414fe706feb08e80c015f0bf55f0a6"
+    "txt_path": "literature/B/B16_Zaslavsky_2019_Color_Naming_Reflects_Both_Perceptual_Structure_and_Communicative_Need.txt",
+    "pdf_sha256": "e0dc6dbb1f9a06c6234eb2c9b198d8c027414fe706feb08e80c015f0bf55f0a6",
+    "sha256": "e0dc6dbb1f9a06c6234eb2c9b198d8c027414fe706feb08e80c015f0bf55f0a6",
+    "txt_sha256": "9ea8657fd8b0e6aa7515f07f7ef57431f272bda50a2bf4fe668a84dbcbad32a5",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "C01",
@@ -1821,9 +2266,9 @@
     "issue": "4",
     "pages": "434-446",
     "pdf_url": "https://garstats.wordpress.com/wp-content/uploads/2016/08/jaeger-jml-2008.pdf",
-    "pdf_path": "literature/C/C01.pdf",
+    "pdf_path": "literature/C/C01_Jaeger_2008_Categorical_data_analysis_Away_from_ANOVAs_transformation_or_not_and_towards_logit_mixed.pdf",
     "access_level": "full_text_pdf",
-    "fulltext_path": "notes/C/C01_fulltext.txt",
+    "fulltext_path": "literature/C/C01_Jaeger_2008_Categorical_data_analysis_Away_from_ANOVAs_transformation_or_not_and_towards_logit_mixed.txt",
     "pdf_sha256": "f1c0c44a6a4cbd7f91dc7b2d772a364edd9f7a763fd5e1fe4fe59a74c388beb0",
     "checked_on": "2026-10-14",
     "abstract_path": null,
@@ -1842,9 +2287,17 @@
     ],
     "notes": "",
     "metadata_source": "notes/C/C01_crossref.json",
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "f1c0c44a6a4cbd7f91dc7b2d772a364edd9f7a763fd5e1fe4fe59a74c388beb0"
+    "txt_path": "literature/C/C01_Jaeger_2008_Categorical_data_analysis_Away_from_ANOVAs_transformation_or_not_and_towards_logit_mixed.txt",
+    "sha256": "f1c0c44a6a4cbd7f91dc7b2d772a364edd9f7a763fd5e1fe4fe59a74c388beb0",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "ed79bd4cabb8e9b0a895b9d8b67140d85a2ca10418859c7072f9ac3a9b756ed4",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "C02",
@@ -1873,9 +2326,9 @@
     "issue": "3",
     "pages": "255-278",
     "pdf_url": "https://www.mit.edu/~rplevy/papers/barr-etal-2013-jml.pdf",
-    "pdf_path": "literature/C/C02.pdf",
+    "pdf_path": "literature/C/C02_Barr_2013_Random_effects_structure_for_confirmatory_hypothesis_testing_Keep_it_maximal.pdf",
     "access_level": "full_text_pdf",
-    "fulltext_path": "notes/C/C02_fulltext.txt",
+    "fulltext_path": "literature/C/C02_Barr_2013_Random_effects_structure_for_confirmatory_hypothesis_testing_Keep_it_maximal.txt",
     "pdf_sha256": "3a427f32943e5387bcb39d77ba42a9e2b4c2f85232b821c0ea7e044dd7396904",
     "checked_on": "2026-10-14",
     "abstract_path": null,
@@ -1894,9 +2347,17 @@
     ],
     "notes": "",
     "metadata_source": "notes/C/C02_crossref.json",
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "3a427f32943e5387bcb39d77ba42a9e2b4c2f85232b821c0ea7e044dd7396904"
+    "txt_path": "literature/C/C02_Barr_2013_Random_effects_structure_for_confirmatory_hypothesis_testing_Keep_it_maximal.txt",
+    "sha256": "3a427f32943e5387bcb39d77ba42a9e2b4c2f85232b821c0ea7e044dd7396904",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "a62bb0192ad8612dd3b9d959ad23070bed36ed4c8a4d2176b14bd95ade59bc50",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "C03",
@@ -1927,9 +2388,9 @@
     "abstract_path": "notes/C/C03_abstract.txt",
     "abstract_url": "https://doi.org/10.18637/jss.v067.i01",
     "pdf_url": "https://www.jstatsoft.org/article/view/v067i01/v67i01.pdf",
-    "pdf_path": "literature/C/C03.pdf",
+    "pdf_path": "literature/C/C03_Bates_2015_Fitting_Linear_Mixed_Effects_Models_Using_lme4.pdf",
     "access_level": "full_text_pdf",
-    "fulltext_path": "notes/C/C03_fulltext.txt",
+    "fulltext_path": "literature/C/C03_Bates_2015_Fitting_Linear_Mixed_Effects_Models_Using_lme4.txt",
     "pdf_sha256": "a9ae8934fbe46ac4c3a6d333a75c2c815f9d2ed7725d7613ddce1d5a5244bbff",
     "checked_on": "2026-10-14",
     "summary_zh": "介绍 lme4 中线性混合模型的公式表示、最大似然及限制最大似然估计、稀疏矩阵计算与优化。",
@@ -1946,9 +2407,17 @@
     ],
     "notes": "作者姓名按PDF首页核对，使用Benjamin M. Bolker、Steven C. Walker，而非Crossref简写Ben、Steve。",
     "metadata_source": "notes/C/C03_crossref.json",
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "a9ae8934fbe46ac4c3a6d333a75c2c815f9d2ed7725d7613ddce1d5a5244bbff"
+    "txt_path": "literature/C/C03_Bates_2015_Fitting_Linear_Mixed_Effects_Models_Using_lme4.txt",
+    "sha256": "a9ae8934fbe46ac4c3a6d333a75c2c815f9d2ed7725d7613ddce1d5a5244bbff",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "8fb1d77e7f9bebc00de51e6f4b9533514246ee42e9159a1ebbe118ad02fe71a3",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "C04",
@@ -1993,9 +2462,9 @@
     "abstract_path": "notes/C/C04_abstract.txt",
     "abstract_url": "https://api.crossref.org/works/10.1111/ecog.02881",
     "pdf_url": "https://www.biometrie.uni-freiburg.de/mitarbeiter/dormann/roberts-et-al-2017-ecography.pdf/at_download/file",
-    "pdf_path": "literature/C/C04.pdf",
+    "pdf_path": "literature/C/C04_Roberts_2017_Crossvalidation_strategies_for_data_with_temporal_spatial_hierarchical_or_phylogenetic_s.pdf",
     "access_level": "full_text_pdf",
-    "fulltext_path": "notes/C/C04_fulltext.txt",
+    "fulltext_path": "literature/C/C04_Roberts_2017_Crossvalidation_strategies_for_data_with_temporal_spatial_hierarchical_or_phylogenetic_s.txt",
     "pdf_sha256": "77f836a01a52fbca9ab5a6b8b4292121d8d896b04eb66fbf351358fec208c1f4",
     "checked_on": "2026-10-14",
     "summary_zh": "综述有时间、空间、层级或系统发育结构的数据验证方法，并以模拟和案例比较随机与分块交叉验证。",
@@ -2012,9 +2481,17 @@
     ],
     "notes": "参考文献年份采用正式卷期2017；2016为接受稿上线年份。最终PDF采用作者所在大学提供的公开文件。",
     "metadata_source": "notes/C/C04_crossref.json",
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "77f836a01a52fbca9ab5a6b8b4292121d8d896b04eb66fbf351358fec208c1f4"
+    "txt_path": "literature/C/C04_Roberts_2017_Crossvalidation_strategies_for_data_with_temporal_spatial_hierarchical_or_phylogenetic_s.txt",
+    "sha256": "77f836a01a52fbca9ab5a6b8b4292121d8d896b04eb66fbf351358fec208c1f4",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "81ff4b6c0484649120700df9f0e0b406f30adbd6137751c1a97266bd2e22ca4f",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "C05",
@@ -2053,9 +2530,9 @@
     "abstract_path": "notes/C/C05_abstract.txt",
     "abstract_url": "https://api.crossref.org/works/10.1214/08-AOAS191",
     "pdf_url": "https://arxiv.org/pdf/0901.4011",
-    "pdf_path": "literature/C/C05.pdf",
+    "pdf_path": "literature/C/C05_Gelman_2008_A_weakly_informative_default_prior_distribution_for_logistic_and_other_regression_models.pdf",
     "access_level": "full_text_pdf",
-    "fulltext_path": "notes/C/C05_fulltext.txt",
+    "fulltext_path": "literature/C/C05_Gelman_2008_A_weakly_informative_default_prior_distribution_for_logistic_and_other_regression_models.txt",
     "pdf_sha256": "41c99a11cbe5bb3a6d012644b2326f87f92a49a21409c08d61ef394d9e0db5a9",
     "checked_on": "2026-10-14",
     "summary_zh": "提出缩放预测变量后对逻辑回归系数使用弱信息 Student-t 先验，默认Cauchy先验能够稳定稀疏或分离数据中的估计，并收缩高阶交互。",
@@ -2072,9 +2549,17 @@
     ],
     "notes": "公开PDF为arXiv存档的期刊重印版；正文分页与期刊版可能不同，证据定位同时注明两个版本。",
     "metadata_source": "notes/C/C05_crossref.json",
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "41c99a11cbe5bb3a6d012644b2326f87f92a49a21409c08d61ef394d9e0db5a9"
+    "txt_path": "literature/C/C05_Gelman_2008_A_weakly_informative_default_prior_distribution_for_logistic_and_other_regression_models.txt",
+    "sha256": "41c99a11cbe5bb3a6d012644b2326f87f92a49a21409c08d61ef394d9e0db5a9",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "3f8bd2e4b59343e79116359a343d8a0f904ba5b721467bd5d36cd9ce6c744ee7",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "C06",
@@ -2106,9 +2591,9 @@
     "abstract_path": "notes/C/C06_abstract.txt",
     "abstract_url": "https://doi.org/10.1093/biomet/80.1.27",
     "pdf_url": "https://www2.stat.duke.edu/~sschmid/Courses/Stat376/Papers/GibbsFieldEst/BiasReductionMLE.pdf",
-    "pdf_path": "literature/C/C06.pdf",
+    "pdf_path": "literature/C/C06_Firth_1993_Bias_reduction_of_maximum_likelihood_estimates.pdf",
     "access_level": "full_text_pdf",
-    "fulltext_path": "notes/C/C06_fulltext.txt",
+    "fulltext_path": "literature/C/C06_Firth_1993_Bias_reduction_of_maximum_likelihood_estimates.txt",
     "pdf_sha256": "a121647bd7af4171af1fb7fd348b09311cd8fe8f6e418b8bb9b1f9e140ff4d94",
     "checked_on": "2026-10-14",
     "summary_zh": "在一般参数模型中修改得分方程以去除最大似然估计的一阶渐近偏差；在规范参数化指数族中，对应Jeffreys先验惩罚。",
@@ -2125,9 +2610,17 @@
     ],
     "notes": "扫描PDF；已对题名、作者、摘要及所引用页作OCR核查。",
     "metadata_source": "notes/C/C06_crossref.json",
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "a121647bd7af4171af1fb7fd348b09311cd8fe8f6e418b8bb9b1f9e140ff4d94"
+    "txt_path": "literature/C/C06_Firth_1993_Bias_reduction_of_maximum_likelihood_estimates.txt",
+    "sha256": "a121647bd7af4171af1fb7fd348b09311cd8fe8f6e418b8bb9b1f9e140ff4d94",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "3be6e0bb17c2d760f4392730a880544388c5c147d22fb1684b1b36c857a0a121",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "C07",
@@ -2156,9 +2649,9 @@
     "abstract_path": "notes/C/C07_abstract.txt",
     "abstract_url": "https://api.crossref.org/works/10.1111/j.2517-6161.1995.tb02031.x",
     "pdf_url": "https://www.math.tau.ac.il/~ybenja/MyPapers/benjamini_hochberg1995.pdf",
-    "pdf_path": "literature/C/C07.pdf",
+    "pdf_path": "literature/C/C07_Benjamini_1995_Controlling_the_False_Discovery_Rate_A_Practical_and_Powerful_Approach_to_Multiple_Testi.pdf",
     "access_level": "full_text_pdf",
-    "fulltext_path": "notes/C/C07_fulltext.txt",
+    "fulltext_path": "literature/C/C07_Benjamini_1995_Controlling_the_False_Discovery_Rate_A_Practical_and_Powerful_Approach_to_Multiple_Testi.txt",
     "pdf_sha256": "f3f7e2352a941403e812b7b5afee6094c9a31002d725dfcc25fc60ca3c240eab",
     "checked_on": "2026-10-14",
     "summary_zh": "将错误发现率定义为被拒绝假设中错误拒绝比例的期望，提出控制该率的逐步程序，并讨论其功效。",
@@ -2175,9 +2668,17 @@
     ],
     "notes": "扫描PDF；已对题名、作者、摘要及所引用页作OCR核查。",
     "metadata_source": "notes/C/C07_crossref.json",
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "f3f7e2352a941403e812b7b5afee6094c9a31002d725dfcc25fc60ca3c240eab"
+    "txt_path": "literature/C/C07_Benjamini_1995_Controlling_the_False_Discovery_Rate_A_Practical_and_Powerful_Approach_to_Multiple_Testi.txt",
+    "sha256": "f3f7e2352a941403e812b7b5afee6094c9a31002d725dfcc25fc60ca3c240eab",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "53e0306adb3ae47d5328c6397031a8e0983ce803a202a192c8d757f0fdf9c3a5",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "C08",
@@ -2206,9 +2707,9 @@
       }
     ],
     "pdf_url": "https://www.researchgate.net/profile/T-Florian-Jaeger/publication/229079011_Mixed_effect_models_for_genetic_and_areal_dependencies_in_linguistic_typology/links/0912f500d7d933761e000000/Mixed-effect-models-for-genetic-and-areal-dependencies-in-linguistic-typology.pdf",
-    "pdf_path": "literature/C/C08.pdf",
+    "pdf_path": "literature/C/C08_Jaeger_2011_Mixed_effect_models_for_genetic_and_areal_dependencies_in_linguistic_typology.pdf",
     "access_level": "full_text_pdf",
-    "fulltext_path": "notes/C/C08_fulltext.txt",
+    "fulltext_path": "literature/C/C08_Jaeger_2011_Mixed_effect_models_for_genetic_and_areal_dependencies_in_linguistic_typology.txt",
     "pdf_sha256": "06b322baf9dfcf2a742e867d235c8187f5e5a81b86794bbb0b497980038367b1",
     "checked_on": "2026-10-14",
     "abstract_path": null,
@@ -2227,9 +2728,17 @@
     ],
     "notes": "作者在ResearchGate公开上传的39页作者副本；该评论文章无独立摘要，不将开头正文误标为abstract。",
     "metadata_source": "notes/C/C08_crossref.json",
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "06b322baf9dfcf2a742e867d235c8187f5e5a81b86794bbb0b497980038367b1"
+    "txt_path": "literature/C/C08_Jaeger_2011_Mixed_effect_models_for_genetic_and_areal_dependencies_in_linguistic_typology.txt",
+    "sha256": "06b322baf9dfcf2a742e867d235c8187f5e5a81b86794bbb0b497980038367b1",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "358dab7a7ca306e627567a31c302853794d38c87895a7f4728233f774abc6b1e",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "C09",
@@ -2266,9 +2775,9 @@
     "issue": "7345",
     "pages": "79-82",
     "pdf_url": "https://pure.mpg.de/rest/items/item_95245_23/component/file_894565/content",
-    "pdf_path": "literature/C/C09.pdf",
+    "pdf_path": "literature/C/C09_Dunn_2011_Evolved_structure_of_language_shows_lineage_specific_trends_in_word_order_universals.pdf",
     "access_level": "full_text_pdf",
-    "fulltext_path": "notes/C/C09_fulltext.txt",
+    "fulltext_path": "literature/C/C09_Dunn_2011_Evolved_structure_of_language_shows_lineage_specific_trends_in_word_order_universals.txt",
     "pdf_sha256": "9e6ca84243e561942a267188081933d0ad39169e05d4357833ef542a8a99046c",
     "checked_on": "2026-10-14",
     "abstract_path": "notes/C/C09_abstract.txt",
@@ -2287,9 +2796,17 @@
     ],
     "notes": "MPI官方页面公开提供论文及补充材料；主文为file_894565，补充材料为file_852605，已按内容核查。额外保存补充材料C09_supplement.pdf，不额外计文献数量。",
     "metadata_source": "notes/C/C09_crossref.json",
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "9e6ca84243e561942a267188081933d0ad39169e05d4357833ef542a8a99046c"
+    "txt_path": "literature/C/C09_Dunn_2011_Evolved_structure_of_language_shows_lineage_specific_trends_in_word_order_universals.txt",
+    "sha256": "9e6ca84243e561942a267188081933d0ad39169e05d4357833ef542a8a99046c",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "1a322f02569d33bffa5274548c2db7e32cd06e32d851dccc05c7aea739f3db17",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "C10",
@@ -2331,9 +2848,9 @@
     "abstract_path": "notes/C/C10_abstract.txt",
     "abstract_url": "https://doi.org/10.1371/journal.pone.0158391",
     "pdf_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0158391&type=printable",
-    "pdf_path": "literature/C/C10.pdf",
+    "pdf_path": "literature/C/C10_Kirby_2016_D_PLACE_A_Global_Database_of_Cultural_Linguistic_and_Environmental_Diversity.pdf",
     "access_level": "full_text_pdf",
-    "fulltext_path": "notes/C/C10_fulltext.txt",
+    "fulltext_path": "literature/C/C10_Kirby_2016_D_PLACE_A_Global_Database_of_Cultural_Linguistic_and_Environmental_Diversity.txt",
     "pdf_sha256": "aae18152fc050114f09df02059f7f4601ca25cbd7e114b1f99ea774eb258dbe1",
     "checked_on": "2026-10-14",
     "summary_zh": "D-PLACE联结文化变量、语言分类与谱系树、地理位置及环境数据，支持检验文化多样性的历史与空间结构。",
@@ -2350,9 +2867,17 @@
     ],
     "notes": "",
     "metadata_source": "notes/C/C10_crossref.json",
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "aae18152fc050114f09df02059f7f4601ca25cbd7e114b1f99ea774eb258dbe1"
+    "txt_path": "literature/C/C10_Kirby_2016_D_PLACE_A_Global_Database_of_Cultural_Linguistic_and_Environmental_Diversity.txt",
+    "sha256": "aae18152fc050114f09df02059f7f4601ca25cbd7e114b1f99ea774eb258dbe1",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "993b8546a8861bddd2f7df7a3ee209051093b21de3103bf384030bee3e143a1c",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "C11",
@@ -2389,9 +2914,9 @@
     "abstract_path": "notes/C/C11_abstract.txt",
     "abstract_url": "https://api.crossref.org/works/10.1038/sdata.2018.205",
     "pdf_url": "https://www.nature.com/articles/sdata2018205.pdf",
-    "pdf_path": "literature/C/C11.pdf",
+    "pdf_path": "literature/C/C11_Forkel_2018_Cross_Linguistic_Data_Formats_advancing_data_sharing_and_re_use_in_comparative_linguisti.pdf",
     "access_level": "full_text_pdf",
-    "fulltext_path": "notes/C/C11_fulltext.txt",
+    "fulltext_path": "literature/C/C11_Forkel_2018_Cross_Linguistic_Data_Formats_advancing_data_sharing_and_re_use_in_comparative_linguisti.txt",
     "pdf_sha256": "be1420d6b2c8919c1a517f28532ef6cdcef1f1ddae9306b10be2474595e63066",
     "checked_on": "2026-10-14",
     "summary_zh": "CLDF规定可机器读取的跨语言数据结构，以语言、比较概念、观测值和来源为核心对象，并用CSVW元数据描述表间关系。",
@@ -2408,10 +2933,18 @@
     ],
     "notes": "",
     "metadata_source": "notes/C/C11_crossref.json",
+    "article_number": "180205",
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "be1420d6b2c8919c1a517f28532ef6cdcef1f1ddae9306b10be2474595e63066",
-    "article_number": "180205"
+    "txt_path": "literature/C/C11_Forkel_2018_Cross_Linguistic_Data_Formats_advancing_data_sharing_and_re_use_in_comparative_linguisti.txt",
+    "sha256": "be1420d6b2c8919c1a517f28532ef6cdcef1f1ddae9306b10be2474595e63066",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "c25a34fa98e90798af9c824ad3a52040e5c22a96dc730c6f8ccd82249605bd46",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   },
   {
     "id": "C12",
@@ -2436,6 +2969,10 @@
       {
         "url": "https://www.nber.org/papers/t0344.pdf",
         "status": "HTTP 200; valid PDF; title and authors verified; 379396 bytes"
+      },
+      {
+        "url": "user-upload:5-rest.90.3.414.pdf",
+        "status": "2026-10-15 用户提供；PDF题名与出版版本核验通过"
       }
     ],
     "title": "Bootstrap-Based Improvements for Inference with Clustered Errors",
@@ -2452,28 +2989,65 @@
     "pages": "414-427",
     "abstract_path": "notes/C/C12_abstract.txt",
     "abstract_url": "https://doi.org/10.1162/rest.90.3.414",
-    "pdf_url": "https://www.nber.org/papers/t0344.pdf",
-    "pdf_path": "literature/C/C12.pdf",
-    "access_level": "full_text_pdf",
-    "fulltext_path": "notes/C/C12_fulltext.txt",
-    "pdf_sha256": "ed34e19ea9f1c036bc590022ee4e27cffb40b975da3eefe2e75df5e77fc37655",
+    "pdf_url": null,
+    "pdf_path": "literature/C/C12_Cameron_2008_Bootstrap_Based_Improvements_for_Inference_with_Clustered_Errors.pdf",
+    "access_level": "fulltext_published_pdf",
+    "fulltext_path": "literature/C/C12_Cameron_2008_Bootstrap_Based_Improvements_for_Inference_with_Clustered_Errors.txt",
+    "pdf_sha256": "c797dbf81593ec98aae2b21e3b97efcceab01ce586d3c6c3bacd3a4231ea3ada",
     "checked_on": "2026-10-14",
-    "summary_zh": "研究聚类误差下的bootstrap推断，以OLS和有限聚类数的模拟为重点，比较整组重抽样及wild cluster bootstrap等方法。",
-    "relevance_zh": "对样本外损失差的区间估计以语系为重抽样单位，保留每个语系内全部语言与配对；本文为结构依据，非对本研究具体估计量的已证明有限样本保证。",
+    "summary_zh": "正式期刊版讨论聚类误差下的bootstrap推断，比较pairs、residual及wild cluster方案，重点考察有限聚类数下的bootstrap-t。",
+    "relevance_zh": "支持整组重抽样的结构原则；其OLS及bootstrap-t结果不直接证明本项目固定折外损失差百分位区间的有限样本性质。",
     "evidence_claims": [
       {
-        "claim_zh": "整组pairs cluster bootstrap重抽样整个聚类，保持聚类内部的相关结构。",
-        "locator": "所下载NBER2007工作论文第12页，PDF第14页，§3.1"
+        "claim_zh": "pairs cluster bootstrap从原样本中整组、有放回抽取聚类。",
+        "locator": "正式PDF第3页，印刷第416页，§III.A Pairs Cluster Bootstrap-se and Bootstrap-t。"
       },
       {
-        "claim_zh": "少量聚类会影响常规聚类稳健推断的表现，论文比较bootstrap修正。",
-        "locator": "工作论文第2—4页，PDF第4—6页；正式版摘要"
+        "claim_zh": "论文的主要目标包含对小聚类数下bootstrap-t推断的比较。",
+        "locator": "正式PDF第1页，印刷第414页，Abstract及Introduction。"
       }
     ],
-    "notes": "正式书目为2008年Review of Economics and Statistics论文；下载的是同题同作者NBER Technical Working Paper344（2007年9月）对应工作论文，不能称为已获得2008年排版全文。正式版下载失败。",
+    "notes": [
+      "2026年10月15日由用户提供正式论文PDF，已核对题名、作者和出版信息。"
+    ],
     "metadata_source": "notes/C/C12_crossref.json",
+    "citation_status": "included_fulltext",
     "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
     "supplementary_preview": false,
-    "pdf_sha256_confirmed": "ed34e19ea9f1c036bc590022ee4e27cffb40b975da3eefe2e75df5e77fc37655"
+    "earlier_pdf_path": "literature/C/earlier_versions/C12_Cameron_Gelbach_Miller_2007_NBER_Working_Paper.pdf",
+    "access_history": [
+      {
+        "date": "2026-10-14",
+        "state": {
+          "access_level": "full_text_pdf",
+          "pdf_path": "literature/C/C12.pdf",
+          "notes": "正式书目为2008年Review of Economics and Statistics论文；下载的是同题同作者NBER Technical Working Paper344（2007年9月）对应工作论文，不能称为已获得2008年排版全文。正式版下载失败。",
+          "evidence_claims": [
+            {
+              "claim_zh": "整组pairs cluster bootstrap重抽样整个聚类，保持聚类内部的相关结构。",
+              "locator": "所下载NBER2007工作论文第12页，PDF第14页，§3.1"
+            },
+            {
+              "claim_zh": "少量聚类会影响常规聚类稳健推断的表现，论文比较bootstrap修正。",
+              "locator": "工作论文第2—4页，PDF第4—6页；正式版摘要"
+            }
+          ]
+        }
+      }
+    ],
+    "pdf_version": "version_of_record",
+    "pdf_source": "user_uploaded",
+    "source_filename": "5-rest.90.3.414.pdf",
+    "user_supplied_on": "2026-10-15",
+    "material_type": "journal_article",
+    "read_scope": "已核对全文文件并定向核查与本研究有关段落；不宣称逐页精读。",
+    "txt_path": "literature/C/C12_Cameron_2008_Bootstrap_Based_Improvements_for_Inference_with_Clustered_Errors.txt",
+    "sha256": "c797dbf81593ec98aae2b21e3b97efcceab01ce586d3c6c3bacd3a4231ea3ada",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "txt_sha256": "2d9ca1fa8a2ecad6e79a450d53b6af6e6f6e097b73c32663cf1c5a72f33fb36b",
+    "text_conversion_report": "literature/pdf_text_conversion_report.json"
   }
 ]

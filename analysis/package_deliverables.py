@@ -8,7 +8,7 @@ data_rel=[
  'data/kinbank/kinbank/cldf/cldf-metadata.json','data/kinbank/kinbank/README.md',
  'data/kinbank/kinbank/FORMS.md','data/kinbank/LICENSE','data/glottolog_languages.csv',
  'data/glottolog_cldf-metadata.json','data/glottolog_README.md','data/glottolog_LICENSE','data/glottolog_commit.json']
-files=[ROOT/'README.md',ROOT/'original_research_plan.md']+[ROOT/p for p in data_rel]
+files=[ROOT/n for n in ['README.md','original_research_plan.md','CLAUDE.md','CLAUDE_TODO.md','CLAUDE_REVIEW_CHECKLIST.md','.gitignore','.gitattributes']]+[ROOT/p for p in data_rel]
 for folder in ['outputs','literature','analysis','notes']:
  for p in (ROOT/folder).rglob('*'):
   if not p.is_file() or '__pycache__' in p.parts or p.name=='资料包文件清单.json':continue
@@ -17,7 +17,7 @@ for folder in ['outputs','literature','analysis','notes']:
   files.append(p)
 files=sorted(set(files))
 assert all(p.exists() for p in files)
-manifest={'资料包说明':'45份正式文献、40项PDF全文及5项真实摘要；另有历史首段与仅书目资料，不重复计数。','files':[]}
+manifest={'资料包说明':'46项正式全文文献、51个源PDF及对应TXT；2项无全文资料不引用，早期版本和补充文件不重复计数。','files':[]}
 for p in files:
  manifest['files'].append({'path':str(p.relative_to(ROOT)),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
 m=ROOT/'outputs/资料包文件清单.json';m.write_text(json.dumps(manifest,ensure_ascii=False,indent=2));files.append(m)

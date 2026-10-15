@@ -1,5 +1,5 @@
 {
-  "资料包说明": "GitHub仓库整理版本：45份正式文献，40项PDF全文与5项真实摘要；另有补充历史资料。",
+  "资料包说明": "46项正式全文文献、51个源PDF及对应TXT；2项无全文资料不引用，早期版本和补充文件不重复计数。",
   "files": [
     {
       "path": ".gitattributes",
@@ -8,18 +8,33 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 64,
-      "sha256": "6d65f0fbc7d61d7992d4bcfd1ea0aa113bfad7617d5419f9ec1f8c5c3c51cc49"
+      "bytes": 99,
+      "sha256": "2b283261fed826e7b347ae5eea9bfb1c81f76f24594124e4d98f3e73e38c3581"
+    },
+    {
+      "path": "CLAUDE.md",
+      "bytes": 1607,
+      "sha256": "a34ad5a5ed15df106d0da0c44d61b7fe9a1c7088b1cbce648b8d9183b139bf3e"
+    },
+    {
+      "path": "CLAUDE_REVIEW_CHECKLIST.md",
+      "bytes": 4634,
+      "sha256": "ee5e99d70d10a677f68d3e90c8af92c67d8107ec174ea178c9ff471bc5e23e21"
+    },
+    {
+      "path": "CLAUDE_TODO.md",
+      "bytes": 5874,
+      "sha256": "bec21baafbd4752d32bdb463bd07c1a5172b1c1064860e6a3ce69e8dc284ba72"
     },
     {
       "path": "README.md",
-      "bytes": 5181,
-      "sha256": "e251d8df13a0a7ec4a4f899d72e8dd8138e7c6b98caf00568f81a3e4219bc277"
+      "bytes": 6791,
+      "sha256": "9eb4f4d1210f41f5905320b97851ce80d8fdbdedd2871140030cdad3d89e0405"
     },
     {
       "path": "analysis/README.md",
-      "bytes": 3384,
-      "sha256": "c33cf5b172dd2b57e162bf9473b41d4fba731200a808c3d72f4e76902563d827"
+      "bytes": 3856,
+      "sha256": "ff84742c8d06603cd2d9afac88557df9f00e0f9ffa583c573d4c900e8a8f633b"
     },
     {
       "path": "analysis/analysis_report.md",
@@ -38,13 +53,18 @@
     },
     {
       "path": "analysis/build_documents.py",
-      "bytes": 12962,
-      "sha256": "0743781cdbbccbb157baebf3b507a940d065a76746d36e75caab367de71e8d39"
+      "bytes": 8861,
+      "sha256": "e860bb36ce26a281896f782f9e23616bde6c2a0070f739bc7bf516831e300963"
     },
     {
       "path": "analysis/category_forms_primary.csv",
       "bytes": 419202,
       "sha256": "c5e9d9f49cf0cb523568ddab54d2644483e009bcceb93cd6398868e55a5caa65"
+    },
+    {
+      "path": "analysis/convert_literature_pdf_to_txt.py",
+      "bytes": 6290,
+      "sha256": "84d70815f387d99e600ec3cd45c522c68869827b4530df46db5c2638ac447125"
     },
     {
       "path": "analysis/cv_coefficients.csv",
@@ -68,8 +88,8 @@
     },
     {
       "path": "analysis/export_documents.py",
-      "bytes": 1888,
-      "sha256": "c4c285fc8808deae7636517d73c8be39970a7739ec11d27de0da2a010aa86260"
+      "bytes": 2117,
+      "sha256": "16037f0c8e1d7287a1923c757831e0872570562efad31681412c1eedaa64d883"
     },
     {
       "path": "analysis/extension_descriptive_summary.csv",
@@ -103,8 +123,8 @@
     },
     {
       "path": "analysis/package_deliverables.py",
-      "bytes": 1990,
-      "sha256": "1256bf4fb70176b28bffb81ee28d9dcfcbb87cbe4399e8bd9d23ae07f53125f1"
+      "bytes": 2101,
+      "sha256": "8e936df83b5250e7dfa56c5657e3797f4b7300b385473a9415b70ae123c5ff42"
     },
     {
       "path": "analysis/pairs_C0.1.csv",
@@ -172,6 +192,11 @@
       "sha256": "9ec82eabd11d4edb2ad4fa3483de5f0330aa06ea7a57c6beb2800417f9a44262"
     },
     {
+      "path": "analysis/requirements_text.txt",
+      "bytes": 31,
+      "sha256": "aade9116a68e72edfe379d4d22703192c60ef9735eba971db27ad15ae91a3188"
+    },
+    {
       "path": "analysis/results.json",
       "bytes": 28576,
       "sha256": "a715b5b6c0d585cec26c636c629c04ae620baddf78f8c7cbb48d338dc2784dd1"
@@ -215,6 +240,11 @@
       "path": "analysis/structural_audit.json",
       "bytes": 1559,
       "sha256": "326f5058c3d0d49fc517482052fca6dae873f2970874a3b22c8fa6dbf8f4a17a"
+    },
+    {
+      "path": "analysis/validate_literature_update.py",
+      "bytes": 4346,
+      "sha256": "27824ba63fe1c1d82892099c6f93f6aa2a2bfb502bbf08064fce8096a245dd8b"
     },
     {
       "path": "analysis/verify_results_independent.py",
@@ -287,149 +317,359 @@
       "sha256": "e335c13e137b6b7fae5e250445d97f0da5a29cb04fd6529a1d54c3e073b4cec9"
     },
     {
-      "path": "literature/A/A01.pdf",
+      "path": "literature/A/A01_Kroeber_1909_Classificatory_Systems_of_Relationship.pdf",
       "bytes": 836014,
       "sha256": "1ab15eafd2135c5473b3715b39bb883fb525cf6a5c0a5306cdba94e3ef97f430"
     },
     {
-      "path": "literature/A/A08.pdf",
+      "path": "literature/A/A01_Kroeber_1909_Classificatory_Systems_of_Relationship.txt",
+      "bytes": 28165,
+      "sha256": "ae67a68582401e96c71d57a9bd4da2ca8c6411e90b1b9c5d4a6f67b63c699d22"
+    },
+    {
+      "path": "literature/A/A03_Goodenough_1956_Componential_Analysis_and_the_Study_of_Meaning.pdf",
+      "bytes": 3420305,
+      "sha256": "ee0677918a86d902c154c4a2d2552a491765919b53ea1ebbd174bdc6d3e93ce3"
+    },
+    {
+      "path": "literature/A/A03_Goodenough_1956_Componential_Analysis_and_the_Study_of_Meaning.txt",
+      "bytes": 77416,
+      "sha256": "a673ea43ea84fa50727422779b5e21684dcb2259383b453422c3093eb74d7a11"
+    },
+    {
+      "path": "literature/A/A04_Lounsbury_1956_A_Semantic_Analysis_of_the_Pawnee_Kinship_Usage.pdf",
+      "bytes": 5415577,
+      "sha256": "afd6a5ba5b4d3b38603cad9e662e067d74d3678802b256abf39204c832e11353"
+    },
+    {
+      "path": "literature/A/A04_Lounsbury_1956_A_Semantic_Analysis_of_the_Pawnee_Kinship_Usage.txt",
+      "bytes": 120617,
+      "sha256": "7fdef7de7b848d66c9b156d6e656cf1b0747d5b0055fe8029c456e69c27d37f4"
+    },
+    {
+      "path": "literature/A/A06_Kronenfeld_1974_Sibling_Typology_Beyond_Nerlove_and_Romney.pdf",
+      "bytes": 571937,
+      "sha256": "74f8cb19cbfc94c49927829b9daf3931a6750ea3ee885bda80bebeb1e633a8d8"
+    },
+    {
+      "path": "literature/A/A06_Kronenfeld_1974_Sibling_Typology_Beyond_Nerlove_and_Romney.txt",
+      "bytes": 65207,
+      "sha256": "cbde5c77b4bd91d7778ff46aaeb52e3db8cfc33ef1181a250217c35b6a839851"
+    },
+    {
+      "path": "literature/A/A07_Hage_2001_Marking_Theory_and_Kinship_Analysis_Cross_cultural_and_Historical_Applications.pdf",
+      "bytes": 111394,
+      "sha256": "108d458b0a7b248e40ce94621fdc51d3468c875010d124a220c2ccd2c6aba1a3"
+    },
+    {
+      "path": "literature/A/A07_Hage_2001_Marking_Theory_and_Kinship_Analysis_Cross_cultural_and_Historical_Applications.txt",
+      "bytes": 58578,
+      "sha256": "eaa600bdf20c84efe4c5b1e256cb6c7797edb0a7988aab37ee7ea81a29da5b2e"
+    },
+    {
+      "path": "literature/A/A08_Morgan_1871_Systems_of_Consanguinity_and_Affinity_of_the_Human_Family.pdf",
       "bytes": 81478170,
       "sha256": "612d010eb4bad54b92f2d78e4fbdcfba4fd990a37bb2193de176574d5c306e9b"
     },
     {
-      "path": "literature/A/A09.pdf",
+      "path": "literature/A/A08_Morgan_1871_Systems_of_Consanguinity_and_Affinity_of_the_Human_Family.txt",
+      "bytes": 2747738,
+      "sha256": "699133be5bff6e0044c2a8e11d79afd9dfd695644999a4d9f094ef88b7b91b80"
+    },
+    {
+      "path": "literature/A/A09_Passmore_2023_Kinbank_A_Global_Database_of_Kinship_Terminology.pdf",
       "bytes": 1313539,
       "sha256": "a5be884b4903ae4c4fd656704d7f8d163ddaa032926c00f3c3e38b86ec468f5e"
     },
     {
-      "path": "literature/A/A10.pdf",
+      "path": "literature/A/A09_Passmore_2023_Kinbank_A_Global_Database_of_Kinship_Terminology.txt",
+      "bytes": 114538,
+      "sha256": "8c7d9436f36b578a4ddb97a1a7ca11acc942b058db2905906b9d894669af68e8"
+    },
+    {
+      "path": "literature/A/A10_Jordan_2011_A_Phylogenetic_Analysis_of_the_Evolution_of_Austronesian_Sibling_Terminologies.pdf",
       "bytes": 1762179,
       "sha256": "948c60177cd94eed73d79b81c40a9fd8391c1d9e6465c1b59a1260ad3450c22e"
     },
     {
-      "path": "literature/A/A11.pdf",
+      "path": "literature/A/A10_Jordan_2011_A_Phylogenetic_Analysis_of_the_Evolution_of_Austronesian_Sibling_Terminologies.txt",
+      "bytes": 67967,
+      "sha256": "f422662c3dc831dc9bab828540dc9a0d7f5647f687fb0612cc588540c5bf0a0a"
+    },
+    {
+      "path": "literature/A/A11_Passmore_2020_No_Universals_in_the_Cultural_Evolution_of_Kinship_Terminology.pdf",
       "bytes": 433848,
       "sha256": "55e25e8c85eb8f281bdc83a3ed4e7c0cd66b4b7761d0d9977744ccba2d5ab770"
     },
     {
-      "path": "literature/A/A12.pdf",
+      "path": "literature/A/A11_Passmore_2020_No_Universals_in_the_Cultural_Evolution_of_Kinship_Terminology.txt",
+      "bytes": 68635,
+      "sha256": "09522a17cd50336fd958ffd60884d0e66ec886bca3ebb4951129704606b69051"
+    },
+    {
+      "path": "literature/A/A12_Racz_2020_Social_Practice_and_Shared_History_Not_Social_Scale_Structure_Cross_Cultural_Complexity.pdf",
       "bytes": 2540856,
       "sha256": "4c132fdbfd2ea4042f476efc794e803c4a34fd355334f2c8919fb5c54eb90a5c"
     },
     {
-      "path": "literature/A/A13.pdf",
+      "path": "literature/A/A12_Racz_2020_Social_Practice_and_Shared_History_Not_Social_Scale_Structure_Cross_Cultural_Complexity.txt",
+      "bytes": 118003,
+      "sha256": "9425f2f0425fd48923335a91a314116e2e2d68b250017039648d50ea9804d945"
+    },
+    {
+      "path": "literature/A/A13_Guillon_2016_A_Phylogenetic_Comparative_Study_of_Bantu_Kinship_Terminology_Finds_Limited_Support_for.pdf",
       "bytes": 571192,
       "sha256": "92ff469641e6c2a8058e2cab773528ff23b67da89169e7527c78a6ca0bd64822"
     },
     {
-      "path": "literature/A/A14.pdf",
+      "path": "literature/A/A13_Guillon_2016_A_Phylogenetic_Comparative_Study_of_Bantu_Kinship_Terminology_Finds_Limited_Support_for.txt",
+      "bytes": 89288,
+      "sha256": "075833f99233a7a76b5a60abc7abc46c98bc7ef020a83db47ce11d34f62f044f"
+    },
+    {
+      "path": "literature/A/A14_Jones_2010_Human_Kinship_from_Conceptual_Structure_to_Grammar.pdf",
       "bytes": 980689,
       "sha256": "32580f7630054fccbf303dce3a02979603b6cb7f16f6e646a6109ca845d09304"
     },
     {
-      "path": "literature/A/A15.pdf",
+      "path": "literature/A/A14_Jones_2010_Human_Kinship_from_Conceptual_Structure_to_Grammar.txt",
+      "bytes": 423887,
+      "sha256": "d84199d6f30129aa4d3b44e11ca5f4291142ef5798657d3b883ef438f0758bae"
+    },
+    {
+      "path": "literature/A/A15_Read_2007_Kinship_Theory_A_Paradigm_Shift.pdf",
       "bytes": 1970640,
       "sha256": "aaa4e2aa39d237368f04c7469482ba65ef54373df3d43f2c03c822453f7a24d8"
     },
     {
-      "path": "literature/A/A16.pdf",
+      "path": "literature/A/A15_Read_2007_Kinship_Theory_A_Paradigm_Shift.txt",
+      "bytes": 109343,
+      "sha256": "3aa0253a576eb6a1da153042196a59dea034ec08f1f490c074f9400b3e59554e"
+    },
+    {
+      "path": "literature/A/A16_Pericliev_2017_Kin_Term_Patterns_and_Language_Families.pdf",
       "bytes": 178359,
       "sha256": "76d6ae8b1e09841995f7cd00079145257bcec08840d0c3a896110374f8746e03"
     },
     {
-      "path": "literature/A/A17.pdf",
+      "path": "literature/A/A16_Pericliev_2017_Kin_Term_Patterns_and_Language_Families.txt",
+      "bytes": 44278,
+      "sha256": "871439566a53b3185fb518f4ba64f4270f6cf89e23e445b94bd0dbb95cfbb212"
+    },
+    {
+      "path": "literature/A/A17_Kronenfeld_2006_Issues_in_the_Classification_of_Kinship_Terminologies_Toward_a_New_Typology.pdf",
       "bytes": 172945,
       "sha256": "4af65f816ba3f922cfbcd3bef801023fecd87f0f4c4bf1295d3bb01f5f868132"
     },
     {
-      "path": "literature/A/A18.pdf",
+      "path": "literature/A/A17_Kronenfeld_2006_Issues_in_the_Classification_of_Kinship_Terminologies_Toward_a_New_Typology.txt",
+      "bytes": 103284,
+      "sha256": "cc963a247d40bd3d8fcb8e22029e8b5fedb33e4803d9c3cbba6bafa9aca157f9"
+    },
+    {
+      "path": "literature/A/A18_Passmore_2021_Kin_Against_Kin_Internal_Co_selection_and_the_Coherence_of_Kinship_Typologies.pdf",
       "bytes": 2099019,
       "sha256": "642fb6d06c0b673d141cad5554d9b445e73e2389e7f04b8186011a4794507481"
     },
     {
-      "path": "literature/A/records.json",
-      "bytes": 49114,
-      "sha256": "bd965b36a6970e76add6d26ba8e3f06d87fb7502b751882c5c8f36568a1a2458"
+      "path": "literature/A/A18_Passmore_2021_Kin_Against_Kin_Internal_Co_selection_and_the_Coherence_of_Kinship_Typologies.txt",
+      "bytes": 107359,
+      "sha256": "5b4262b586b19fd8125bc68d7a7dca04a9af9aa308efad238164e90fb52ed363"
     },
     {
-      "path": "literature/B/B01.pdf",
+      "path": "literature/A/A19_Hage_1997_Unthinkable_Categories_and_the_Fundamental_Laws_of_Kinship.pdf",
+      "bytes": 1526530,
+      "sha256": "f4bc5cf71854e39983d9310e13d8fffd381f326691c16dc616a8fdef8d1f4994"
+    },
+    {
+      "path": "literature/A/A19_Hage_1997_Unthinkable_Categories_and_the_Fundamental_Laws_of_Kinship.txt",
+      "bytes": 65556,
+      "sha256": "85e731ec89a9c6b1c0de6f6564bda796db0cb7299fa120095df7e7bdb6d356a8"
+    },
+    {
+      "path": "literature/A/A20_Faris_1969_Sibling_Terminology_and_Cross_Sex_Behavior_Data_from_the_Southeastern_Nuba_Mountains.pdf",
+      "bytes": 1350731,
+      "sha256": "4187b5a33f0608b36cde67de76b628c21e8d54350e2b1ff21ce8e95245be18a8"
+    },
+    {
+      "path": "literature/A/A20_Faris_1969_Sibling_Terminology_and_Cross_Sex_Behavior_Data_from_the_Southeastern_Nuba_Mountains.txt",
+      "bytes": 45294,
+      "sha256": "3ecf0a2dd555a4cea4eea78ade8c077eab822a10057b49ed1e62e8321a723f2d"
+    },
+    {
+      "path": "literature/A/records.json",
+      "bytes": 69127,
+      "sha256": "27d843eca9d48fb790a4f298c64190465f07ee07a1db7d618df48f7b1200b17e"
+    },
+    {
+      "path": "literature/B/B01_Kemp_2012_Kinship_Categories_Across_Languages_Reflect_General_Communicative_Principles.pdf",
       "bytes": 758132,
       "sha256": "5cee49eefdfcc875b9926c6b672916e854f5b28e61c6f84f484d73bb06736202"
     },
     {
-      "path": "literature/B/B02.pdf",
+      "path": "literature/B/B01_Kemp_2012_Kinship_Categories_Across_Languages_Reflect_General_Communicative_Principles.txt",
+      "bytes": 72494,
+      "sha256": "c1794a1dd73893c651fcc07e8ca347265403b7f34131668385213eeeaef952c6"
+    },
+    {
+      "path": "literature/B/B02_Hallam_2025_Efficient_communication_drives_the_semantic_structure_of_kinship_terminology.pdf",
       "bytes": 294048,
       "sha256": "e8af86bdee7587a1103ca573141807ae220183e4991571abd2483c48353ae6e0"
     },
     {
-      "path": "literature/B/B03.pdf",
-      "bytes": 1195250,
-      "sha256": "cac0a6dfb11562405c814e7e0fe363e9a33a5975ab9b6d6d26aa3cbc2af16ce4"
+      "path": "literature/B/B02_Hallam_2025_Efficient_communication_drives_the_semantic_structure_of_kinship_terminology.txt",
+      "bytes": 57821,
+      "sha256": "69c1ec4daa5754bba66d48bf4516c556b4cea837a15908f1bff32d6871038156"
     },
     {
-      "path": "literature/B/B04.pdf",
+      "path": "literature/B/B03_Hallam_2025_Predictive_Structure_Emerges_During_the_Generalisation_of_Kin_Terms_to_New_Referents.pdf",
+      "bytes": 5322930,
+      "sha256": "b7d34db364d59f17730947b4f932a5c06ec231508e26cff811acb10947b0ec8d"
+    },
+    {
+      "path": "literature/B/B03_Hallam_2025_Predictive_Structure_Emerges_During_the_Generalisation_of_Kin_Terms_to_New_Referents.txt",
+      "bytes": 192054,
+      "sha256": "5e64fe45a2e13df2759526399bd661f82cf0e7fc4697b85af31e6d98be6ec9e3"
+    },
+    {
+      "path": "literature/B/B04_Kemp_2026_Symmetry_in_category_systems_across_languages.pdf",
       "bytes": 701569,
       "sha256": "3b751e82587d2d2c4f345095324caa4722b1e1e83631865b84c77e356e73e818"
     },
     {
-      "path": "literature/B/B05.pdf",
+      "path": "literature/B/B04_Kemp_2026_Symmetry_in_category_systems_across_languages.txt",
+      "bytes": 83834,
+      "sha256": "531bdc7acccae10d1883cfa5d2124f615ecf110aa1a17a369af3b6bae21302da"
+    },
+    {
+      "path": "literature/B/B05_Kemp_2018_Semantic_Typology_and_Efficient_Communication.pdf",
       "bytes": 9867463,
       "sha256": "e9e687d7947f20f9cb528ffc2ef8c9bcb4cd88036c07c023a3595dc93f65a46a"
     },
     {
-      "path": "literature/B/B06.pdf",
+      "path": "literature/B/B05_Kemp_2018_Semantic_Typology_and_Efficient_Communication.txt",
+      "bytes": 80683,
+      "sha256": "98b70f6a24da0414527ef658fa2c0a22ac0529c7047fb1b19cd3654e01e0ca78"
+    },
+    {
+      "path": "literature/B/B06_Zaslavsky_2018_Efficient_compression_in_color_naming_and_its_evolution.pdf",
       "bytes": 1753602,
       "sha256": "aff18dfbaefd528e9c3cb57dd84f7edc49b1331b75f92bbfb5a52f9337117e0b"
     },
     {
-      "path": "literature/B/B07.pdf",
+      "path": "literature/B/B06_Zaslavsky_2018_Efficient_compression_in_color_naming_and_its_evolution.txt",
+      "bytes": 54280,
+      "sha256": "a47582d1aa4a72c794f72ff8c726493bb59e71d3a31c8b5f057dd7f8414f061a"
+    },
+    {
+      "path": "literature/B/B07_Regier_2015_Word_Meanings_across_Languages_Support_Efficient_Communication.pdf",
       "bytes": 1377326,
       "sha256": "934b4702067eaef4c1db3af152319589d6b1185aca017b7ebbf5c117f27ced88"
     },
     {
-      "path": "literature/B/B08.pdf",
+      "path": "literature/B/B07_Regier_2015_Word_Meanings_across_Languages_Support_Efficient_Communication.txt",
+      "bytes": 84761,
+      "sha256": "34e4107f182e8f1bc63d59fd4668b2ecb71a890411ad6b3ea4633513e00eab3a"
+    },
+    {
+      "path": "literature/B/B08_Regier_2007_Color_naming_reflects_optimal_partitions_of_color_space.pdf",
       "bytes": 2451487,
       "sha256": "ee9c810b12c7a601300913596dd8214797863ef656da0eafc6e99f32260ac4fb"
     },
     {
-      "path": "literature/B/B09.pdf",
+      "path": "literature/B/B08_Regier_2007_Color_naming_reflects_optimal_partitions_of_color_space.txt",
+      "bytes": 44991,
+      "sha256": "8a1f639c03d6710e7ab8ebb144d94e62d14ac69874bad221da83e6312a682ff4"
+    },
+    {
+      "path": "literature/B/B09_Xu_2020_Numeral_Systems_Across_Languages_Support_Efficient_Communication_From_Approximate_Numero.pdf",
       "bytes": 1180370,
       "sha256": "f4c2d595d2773aee18c431f79667688b235bc1cf5dddc688d609ee21f6e9b57a"
     },
     {
-      "path": "literature/B/B10.pdf",
+      "path": "literature/B/B09_Xu_2020_Numeral_Systems_Across_Languages_Support_Efficient_Communication_From_Approximate_Numero.txt",
+      "bytes": 68597,
+      "sha256": "cf100aaf8257863f185b9acee070e06ab57d4b5eec6d94e37de080310a3165ca"
+    },
+    {
+      "path": "literature/B/B10_Kemp_2012_Exploring_the_conceptual_universe.pdf",
       "bytes": 1735467,
       "sha256": "797eee18c36703bb5d9c58d3901a302f4f30c96ce0279bd283793a40771c2177"
     },
     {
-      "path": "literature/B/B11.pdf",
+      "path": "literature/B/B10_Kemp_2012_Exploring_the_conceptual_universe.txt",
+      "bytes": 285969,
+      "sha256": "b0a40f9c2a77858a1f4e9b2a56a649f28eae1196fd74d3379988ec89082bbbdb"
+    },
+    {
+      "path": "literature/B/B11_Gibson_2017_Color_naming_across_languages_reflects_color_use.pdf",
       "bytes": 1575718,
       "sha256": "03d01ec61b5f954b4941b98816170b1847c77474fd5c03bc44cc6beda6e574f1"
     },
     {
-      "path": "literature/B/B12.pdf",
+      "path": "literature/B/B11_Gibson_2017_Color_naming_across_languages_reflects_color_use.txt",
+      "bytes": 82183,
+      "sha256": "a708adc1475db365934e0c74947448b93d9ec8ed112145fbf3c6f437fc0475ef"
+    },
+    {
+      "path": "literature/B/B12_Carr_2020_Simplicity_and_informativeness_in_semantic_category_systems.pdf",
       "bytes": 1305915,
       "sha256": "b031db6775da119ce2a6113f86ba198e4a4fc0caaf28768302d73c81e99b144b"
     },
     {
-      "path": "literature/B/B13.pdf",
+      "path": "literature/B/B12_Carr_2020_Simplicity_and_informativeness_in_semantic_category_systems.txt",
+      "bytes": 89236,
+      "sha256": "90b63266b3d0b28da7f72067554fb0e27f6f57482767e7813b7371285b8de594"
+    },
+    {
+      "path": "literature/B/B13_Culbertson_2016_Simplicity_and_Specificity_in_Language_Domain_General_Biases_Have_Domain_Specific_Effect.pdf",
       "bytes": 1033748,
       "sha256": "1853a0141f3a63925d19564ee8627ba69b0a3137a928527585320741ff99dc1f"
     },
     {
-      "path": "literature/B/B14.pdf",
+      "path": "literature/B/B13_Culbertson_2016_Simplicity_and_Specificity_in_Language_Domain_General_Biases_Have_Domain_Specific_Effect.txt",
+      "bytes": 93652,
+      "sha256": "5c2476125a221eebfbf95f79aeb5756eaf884533af11456557290ca5346d8c82"
+    },
+    {
+      "path": "literature/B/B14_Mollica_2022_Logical_word_learning_The_case_of_kinship.pdf",
       "bytes": 3386382,
       "sha256": "e251b976c00ac33de0825ff0bc8adc53a2eea3eb086f85d38e2e9c07f18c4876"
     },
     {
-      "path": "literature/B/B15.pdf",
+      "path": "literature/B/B14_Mollica_2022_Logical_word_learning_The_case_of_kinship.txt",
+      "bytes": 204462,
+      "sha256": "9511e3cb6a2059212db4a9978d3bb87124964ad57a7a7851744b7da2ba681075"
+    },
+    {
+      "path": "literature/B/B15_Mollica_2021_The_forms_and_meanings_of_grammatical_markers_support_efficient_communication.pdf",
       "bytes": 2098400,
       "sha256": "c16d2ae3ee96f5274413d71374c9a5e53ad101e4125ebb289ac2619f29f21071"
     },
     {
-      "path": "literature/B/B16.pdf",
+      "path": "literature/B/B15_Mollica_2021_The_forms_and_meanings_of_grammatical_markers_support_efficient_communication.txt",
+      "bytes": 93462,
+      "sha256": "d1fb5f188ad875fc3aa275dd4e399a4290114fa5a408ae33b190a057953209c3"
+    },
+    {
+      "path": "literature/B/B16_Zaslavsky_2019_Color_Naming_Reflects_Both_Perceptual_Structure_and_Communicative_Need.pdf",
       "bytes": 854779,
       "sha256": "e0dc6dbb1f9a06c6234eb2c9b198d8c027414fe706feb08e80c015f0bf55f0a6"
+    },
+    {
+      "path": "literature/B/B16_Zaslavsky_2019_Color_Naming_Reflects_Both_Perceptual_Structure_and_Communicative_Need.txt",
+      "bytes": 33659,
+      "sha256": "9ea8657fd8b0e6aa7515f07f7ef57431f272bda50a2bf4fe668a84dbcbad32a5"
+    },
+    {
+      "path": "literature/B/earlier_versions/B03_Hallam_2025_Author_Preprint.pdf",
+      "bytes": 1195250,
+      "sha256": "cac0a6dfb11562405c814e7e0fe363e9a33a5975ab9b6d6d26aa3cbc2af16ce4"
+    },
+    {
+      "path": "literature/B/earlier_versions/B03_Hallam_2025_Author_Preprint.txt",
+      "bytes": 114356,
+      "sha256": "88a163dad3341c43ade90bae642a93ffde8373fc69c6a60ea1883c048d8445bf"
     },
     {
       "path": "literature/B/earlier_versions/Xu_Regier_2014_conference_version.pdf",
@@ -437,59 +677,114 @@
       "sha256": "ee116756ddf87f07a498691bfa66ac1b04dfed2a350b25480978b68c64040fa3"
     },
     {
+      "path": "literature/B/earlier_versions/Xu_Regier_2014_conference_version.txt",
+      "bytes": 46437,
+      "sha256": "b73329f3b758a5675e7d5e88bbdeb006875a027e9c80910054865a1ff1ebce1b"
+    },
+    {
       "path": "literature/B/earlier_versions/Zaslavsky_et_al_2018_conference_version.pdf",
       "bytes": 3720472,
       "sha256": "575882b01c750765577e7913ed93f9eb1894488e40bcaf86edf9efdf6b520f91"
     },
     {
-      "path": "literature/B/records.json",
-      "bytes": 37147,
-      "sha256": "ec6ed964fb5ae53e9a92e755bd2aad33cd18068b934484d5efbce49cd9ebec0a"
+      "path": "literature/B/earlier_versions/Zaslavsky_et_al_2018_conference_version.txt",
+      "bytes": 49571,
+      "sha256": "db1ab6614b8600f5a0c7f796cb2acbdac8ff0f702a860b495517d8e8a28a5845"
     },
     {
-      "path": "literature/C/C01.pdf",
+      "path": "literature/B/records.json",
+      "bytes": 48426,
+      "sha256": "05c98aebf3d75caaa461af42698593e4e5673206a2e9dbbbe48f7e096ff42c6b"
+    },
+    {
+      "path": "literature/C/C01_Jaeger_2008_Categorical_data_analysis_Away_from_ANOVAs_transformation_or_not_and_towards_logit_mixed.pdf",
       "bytes": 390849,
       "sha256": "f1c0c44a6a4cbd7f91dc7b2d772a364edd9f7a763fd5e1fe4fe59a74c388beb0"
     },
     {
-      "path": "literature/C/C02.pdf",
+      "path": "literature/C/C01_Jaeger_2008_Categorical_data_analysis_Away_from_ANOVAs_transformation_or_not_and_towards_logit_mixed.txt",
+      "bytes": 78888,
+      "sha256": "ed79bd4cabb8e9b0a895b9d8b67140d85a2ca10418859c7072f9ac3a9b756ed4"
+    },
+    {
+      "path": "literature/C/C02_Barr_2013_Random_effects_structure_for_confirmatory_hypothesis_testing_Keep_it_maximal.pdf",
       "bytes": 1334168,
       "sha256": "3a427f32943e5387bcb39d77ba42a9e2b4c2f85232b821c0ea7e044dd7396904"
     },
     {
-      "path": "literature/C/C03.pdf",
+      "path": "literature/C/C02_Barr_2013_Random_effects_structure_for_confirmatory_hypothesis_testing_Keep_it_maximal.txt",
+      "bytes": 234284,
+      "sha256": "a62bb0192ad8612dd3b9d959ad23070bed36ed4c8a4d2176b14bd95ade59bc50"
+    },
+    {
+      "path": "literature/C/C03_Bates_2015_Fitting_Linear_Mixed_Effects_Models_Using_lme4.pdf",
       "bytes": 865814,
       "sha256": "a9ae8934fbe46ac4c3a6d333a75c2c815f9d2ed7725d7613ddce1d5a5244bbff"
     },
     {
-      "path": "literature/C/C04.pdf",
+      "path": "literature/C/C03_Bates_2015_Fitting_Linear_Mixed_Effects_Models_Using_lme4.txt",
+      "bytes": 172509,
+      "sha256": "8fb1d77e7f9bebc00de51e6f4b9533514246ee42e9159a1ebbe118ad02fe71a3"
+    },
+    {
+      "path": "literature/C/C04_Roberts_2017_Crossvalidation_strategies_for_data_with_temporal_spatial_hierarchical_or_phylogenetic_s.pdf",
       "bytes": 811805,
       "sha256": "77f836a01a52fbca9ab5a6b8b4292121d8d896b04eb66fbf351358fec208c1f4"
     },
     {
-      "path": "literature/C/C05.pdf",
+      "path": "literature/C/C04_Roberts_2017_Crossvalidation_strategies_for_data_with_temporal_spatial_hierarchical_or_phylogenetic_s.txt",
+      "bytes": 124203,
+      "sha256": "81ff4b6c0484649120700df9f0e0b406f30adbd6137751c1a97266bd2e22ca4f"
+    },
+    {
+      "path": "literature/C/C05_Gelman_2008_A_weakly_informative_default_prior_distribution_for_logistic_and_other_regression_models.pdf",
       "bytes": 434508,
       "sha256": "41c99a11cbe5bb3a6d012644b2326f87f92a49a21409c08d61ef394d9e0db5a9"
     },
     {
-      "path": "literature/C/C06.pdf",
+      "path": "literature/C/C05_Gelman_2008_A_weakly_informative_default_prior_distribution_for_logistic_and_other_regression_models.txt",
+      "bytes": 78228,
+      "sha256": "3f8bd2e4b59343e79116359a343d8a0f904ba5b721467bd5d36cd9ce6c744ee7"
+    },
+    {
+      "path": "literature/C/C06_Firth_1993_Bias_reduction_of_maximum_likelihood_estimates.pdf",
       "bytes": 1207278,
       "sha256": "a121647bd7af4171af1fb7fd348b09311cd8fe8f6e418b8bb9b1f9e140ff4d94"
     },
     {
-      "path": "literature/C/C07.pdf",
+      "path": "literature/C/C06_Firth_1993_Bias_reduction_of_maximum_likelihood_estimates.txt",
+      "bytes": 31589,
+      "sha256": "3be6e0bb17c2d760f4392730a880544388c5c147d22fb1684b1b36c857a0a121"
+    },
+    {
+      "path": "literature/C/C07_Benjamini_1995_Controlling_the_False_Discovery_Rate_A_Practical_and_Powerful_Approach_to_Multiple_Testi.pdf",
       "bytes": 1358125,
       "sha256": "f3f7e2352a941403e812b7b5afee6094c9a31002d725dfcc25fc60ca3c240eab"
     },
     {
-      "path": "literature/C/C08.pdf",
+      "path": "literature/C/C07_Benjamini_1995_Controlling_the_False_Discovery_Rate_A_Practical_and_Powerful_Approach_to_Multiple_Testi.txt",
+      "bytes": 35229,
+      "sha256": "53e0306adb3ae47d5328c6397031a8e0983ce803a202a192c8d757f0fdf9c3a5"
+    },
+    {
+      "path": "literature/C/C08_Jaeger_2011_Mixed_effect_models_for_genetic_and_areal_dependencies_in_linguistic_typology.pdf",
       "bytes": 5829116,
       "sha256": "06b322baf9dfcf2a742e867d235c8187f5e5a81b86794bbb0b497980038367b1"
     },
     {
-      "path": "literature/C/C09.pdf",
+      "path": "literature/C/C08_Jaeger_2011_Mixed_effect_models_for_genetic_and_areal_dependencies_in_linguistic_typology.txt",
+      "bytes": 108728,
+      "sha256": "358dab7a7ca306e627567a31c302853794d38c87895a7f4728233f774abc6b1e"
+    },
+    {
+      "path": "literature/C/C09_Dunn_2011_Evolved_structure_of_language_shows_lineage_specific_trends_in_word_order_universals.pdf",
       "bytes": 267561,
       "sha256": "9e6ca84243e561942a267188081933d0ad39169e05d4357833ef542a8a99046c"
+    },
+    {
+      "path": "literature/C/C09_Dunn_2011_Evolved_structure_of_language_shows_lineage_specific_trends_in_word_order_universals.txt",
+      "bytes": 47775,
+      "sha256": "1a322f02569d33bffa5274548c2db7e32cd06e32d851dccc05c7aea739f3db17"
     },
     {
       "path": "literature/C/C09_supplement.pdf",
@@ -497,29 +792,99 @@
       "sha256": "6cbe63a2c273c2d4d6e51685d0bfcafb90b575e904409152f4cc414710701761"
     },
     {
-      "path": "literature/C/C10.pdf",
+      "path": "literature/C/C09_supplement.txt",
+      "bytes": 74350,
+      "sha256": "fe2fca83ce0c72d3d48fac5bd859aefcd5a8624ecc69aee01458ea39ea7329e7"
+    },
+    {
+      "path": "literature/C/C10_Kirby_2016_D_PLACE_A_Global_Database_of_Cultural_Linguistic_and_Environmental_Diversity.pdf",
       "bytes": 1535596,
       "sha256": "aae18152fc050114f09df02059f7f4601ca25cbd7e114b1f99ea774eb258dbe1"
     },
     {
-      "path": "literature/C/C11.pdf",
+      "path": "literature/C/C10_Kirby_2016_D_PLACE_A_Global_Database_of_Cultural_Linguistic_and_Environmental_Diversity.txt",
+      "bytes": 78646,
+      "sha256": "993b8546a8861bddd2f7df7a3ee209051093b21de3103bf384030bee3e143a1c"
+    },
+    {
+      "path": "literature/C/C11_Forkel_2018_Cross_Linguistic_Data_Formats_advancing_data_sharing_and_re_use_in_comparative_linguisti.pdf",
       "bytes": 1041160,
       "sha256": "be1420d6b2c8919c1a517f28532ef6cdcef1f1ddae9306b10be2474595e63066"
     },
     {
-      "path": "literature/C/C12.pdf",
+      "path": "literature/C/C11_Forkel_2018_Cross_Linguistic_Data_Formats_advancing_data_sharing_and_re_use_in_comparative_linguisti.txt",
+      "bytes": 68199,
+      "sha256": "c25a34fa98e90798af9c824ad3a52040e5c22a96dc730c6f8ccd82249605bd46"
+    },
+    {
+      "path": "literature/C/C12_Cameron_2008_Bootstrap_Based_Improvements_for_Inference_with_Clustered_Errors.pdf",
+      "bytes": 177775,
+      "sha256": "c797dbf81593ec98aae2b21e3b97efcceab01ce586d3c6c3bacd3a4231ea3ada"
+    },
+    {
+      "path": "literature/C/C12_Cameron_2008_Bootstrap_Based_Improvements_for_Inference_with_Clustered_Errors.txt",
+      "bytes": 158977,
+      "sha256": "2d9ca1fa8a2ecad6e79a450d53b6af6e6f6e097b73c32663cf1c5a72f33fb36b"
+    },
+    {
+      "path": "literature/C/earlier_versions/C12_Cameron_Gelbach_Miller_2007_NBER_Working_Paper.pdf",
       "bytes": 379396,
       "sha256": "ed34e19ea9f1c036bc590022ee4e27cffb40b975da3eefe2e75df5e77fc37655"
     },
     {
+      "path": "literature/C/earlier_versions/C12_Cameron_Gelbach_Miller_2007_NBER_Working_Paper.txt",
+      "bytes": 104180,
+      "sha256": "8f5ba7c67b33cb7ea391240486c66ce2f4658553038fbac01874c62f8a08abaf"
+    },
+    {
       "path": "literature/C/records.json",
-      "bytes": 30933,
-      "sha256": "fa5c0d3831b933a3245c0b23b0e55cee34083859e830778118c3b60124875d76"
+      "bytes": 40404,
+      "sha256": "6b21d7283c344ab707cac91bb30821954eedf84a29b0aea6790f58405735e207"
     },
     {
       "path": "literature/C/records_initial.json",
       "bytes": 13744,
       "sha256": "d5eab8a6a6162328fb59f256f7403bf1ee5f14275176aaef8369d1912f46a912"
+    },
+    {
+      "path": "literature/README.md",
+      "bytes": 14278,
+      "sha256": "d6cfd385510577b5cb43984a1427b79fc51e095d60f0fc1a3e6cf7092a304e58"
+    },
+    {
+      "path": "literature/TXT索引.md",
+      "bytes": 14938,
+      "sha256": "2cd76fdf947ac9946cb3547d5ddb171fda6b2dba680299607106851d161db341"
+    },
+    {
+      "path": "literature/ocr_page_review.json",
+      "bytes": 1734,
+      "sha256": "47aef83e9f2a159215f4e745ad5e65418f75ffb8df7b2784b590d87dc903c508"
+    },
+    {
+      "path": "literature/pdf_text_conversion_report.csv",
+      "bytes": 10677,
+      "sha256": "cd2c21983dfe599f37c9fd606738e0eda3e894b19a46e4d514fffd2aad1777ef"
+    },
+    {
+      "path": "literature/pdf_text_conversion_report.json",
+      "bytes": 63980,
+      "sha256": "23d8044cef93e21f220a1d1f39e9131e32d641fc1c247e9122dddc454e8ff2c6"
+    },
+    {
+      "path": "literature/update_baseline_hashes.json",
+      "bytes": 1007,
+      "sha256": "3ecb9b2e589143f822c1034bfeb3f51b42d7da2ba7fa60b0a102f83dcbfea248"
+    },
+    {
+      "path": "literature/uploaded_pdf_manifest.json",
+      "bytes": 10280,
+      "sha256": "76cad1c7c98ad6245aba3b1875417518db3687b171e96810a72ea971fed3d3f5"
+    },
+    {
+      "path": "literature/文本质量说明.md",
+      "bytes": 1321,
+      "sha256": "d4750b7b7cb44353a0826ea99b7cc7db1d2e9e23347b6c3ba94ed2c2ad0cae55"
     },
     {
       "path": "notes/A/A01_acquisition.json",
@@ -533,8 +898,8 @@
     },
     {
       "path": "notes/A/A01_fulltext.txt",
-      "bytes": 27413,
-      "sha256": "9eedca57b37c311975aaaeff50df3d15a813f90cab510d91f6c88d3e8c22ddcb"
+      "bytes": 28165,
+      "sha256": "ae67a68582401e96c71d57a9bd4da2ca8c6411e90b1b9c5d4a6f67b63c699d22"
     },
     {
       "path": "notes/A/A02_abstract.txt",
@@ -552,11 +917,6 @@
       "sha256": "ad768823a4e77b45ff0e62110c82bacf47cf4de9aa61968dcf68422b9f13a938"
     },
     {
-      "path": "notes/A/A03_abstract.txt",
-      "bytes": 889,
-      "sha256": "320f2ebeb19f1f99737d674479f7fa27521fa82c7e26ac93fde5e2b9c517014e"
-    },
-    {
       "path": "notes/A/A03_acquisition.json",
       "bytes": 891,
       "sha256": "a1e6f6ed5a3a137945b173e3ebe38dad97dd83b15420370135622fe44b2deff0"
@@ -567,9 +927,14 @@
       "sha256": "de8ab42deb89bf133b45231a9b9cbf9068d1ad5b8f7c16b96d4b116886125394"
     },
     {
-      "path": "notes/A/A04_abstract.txt",
-      "bytes": 1092,
-      "sha256": "d5d31c9ad22ed029bb99ab60aa48a3fcb4fd7125a1911596d92fa0171a3097a0"
+      "path": "notes/A/A03_fulltext.txt",
+      "bytes": 77416,
+      "sha256": "a673ea43ea84fa50727422779b5e21684dcb2259383b453422c3093eb74d7a11"
+    },
+    {
+      "path": "notes/A/A03_historical_publisher_intro_preview.txt",
+      "bytes": 889,
+      "sha256": "320f2ebeb19f1f99737d674479f7fa27521fa82c7e26ac93fde5e2b9c517014e"
     },
     {
       "path": "notes/A/A04_acquisition.json",
@@ -580,6 +945,16 @@
       "path": "notes/A/A04_crossref.json",
       "bytes": 4116,
       "sha256": "2ac6c52018370b960d0904f2db8a5a6274b10f1f455cf9358589694b50892ee6"
+    },
+    {
+      "path": "notes/A/A04_fulltext.txt",
+      "bytes": 120617,
+      "sha256": "7fdef7de7b848d66c9b156d6e656cf1b0747d5b0055fe8029c456e69c27d37f4"
+    },
+    {
+      "path": "notes/A/A04_historical_publisher_intro_preview.txt",
+      "bytes": 1092,
+      "sha256": "d5d31c9ad22ed029bb99ab60aa48a3fcb4fd7125a1911596d92fa0171a3097a0"
     },
     {
       "path": "notes/A/A05_acquisition.json",
@@ -607,6 +982,11 @@
       "sha256": "63bd445092674578663bd4aeae8bd611302a1bf124bb622c54cc8184c6e856ec"
     },
     {
+      "path": "notes/A/A06_fulltext.txt",
+      "bytes": 65207,
+      "sha256": "cbde5c77b4bd91d7778ff46aaeb52e3db8cfc33ef1181a250217c35b6a839851"
+    },
+    {
       "path": "notes/A/A07_abstract.txt",
       "bytes": 1050,
       "sha256": "30ce074010d13d98e53032e20cef2f6b0471215c13b397059d89fa335dd85ee1"
@@ -627,14 +1007,19 @@
       "sha256": "c9ff15d8f3a7a682a04162c9eea1b360846b2b81308fc0a67c5c7a160f6a0a83"
     },
     {
+      "path": "notes/A/A07_fulltext.txt",
+      "bytes": 58578,
+      "sha256": "eaa600bdf20c84efe4c5b1e256cb6c7797edb0a7988aab37ee7ea81a29da5b2e"
+    },
+    {
       "path": "notes/A/A08_acquisition.json",
       "bytes": 1109,
       "sha256": "51a7394133898c390d2621293aa90645795b3bca22ce81fd715022b33e8908f0"
     },
     {
       "path": "notes/A/A08_fulltext.txt",
-      "bytes": 1942358,
-      "sha256": "69628ba5c031d7e9868cfa324b65257b10e441a9cfa117d1648fa0dc6a935b37"
+      "bytes": 2747738,
+      "sha256": "699133be5bff6e0044c2a8e11d79afd9dfd695644999a4d9f094ef88b7b91b80"
     },
     {
       "path": "notes/A/A09_abstract.txt",
@@ -653,8 +1038,8 @@
     },
     {
       "path": "notes/A/A09_fulltext.txt",
-      "bytes": 113367,
-      "sha256": "896594347ae0e100c71ae5d47e32e1f0573ed8fe513f535de5e789f34f1718c4"
+      "bytes": 114538,
+      "sha256": "8c7d9436f36b578a4ddb97a1a7ca11acc942b058db2905906b9d894669af68e8"
     },
     {
       "path": "notes/A/A10_abstract.txt",
@@ -673,8 +1058,8 @@
     },
     {
       "path": "notes/A/A10_fulltext.txt",
-      "bytes": 65494,
-      "sha256": "e2acd88307f4a60afc2af3665321f8ef04dc050f76ce1462daa70baa866bfd59"
+      "bytes": 67967,
+      "sha256": "f422662c3dc831dc9bab828540dc9a0d7f5647f687fb0612cc588540c5bf0a0a"
     },
     {
       "path": "notes/A/A11_abstract.txt",
@@ -693,8 +1078,8 @@
     },
     {
       "path": "notes/A/A11_fulltext.txt",
-      "bytes": 67648,
-      "sha256": "6e7b7b49c1451b0532abd8d56911a6937ed1f829fb1b9a60d66aa8c9c1ed30ea"
+      "bytes": 68635,
+      "sha256": "09522a17cd50336fd958ffd60884d0e66ec886bca3ebb4951129704606b69051"
     },
     {
       "path": "notes/A/A12_abstract.txt",
@@ -713,8 +1098,8 @@
     },
     {
       "path": "notes/A/A12_fulltext.txt",
-      "bytes": 116648,
-      "sha256": "fdd89a46081518c60250f17d14abe31cbc16795ca3af3bdbe741b1713159e4a6"
+      "bytes": 118003,
+      "sha256": "9425f2f0425fd48923335a91a314116e2e2d68b250017039648d50ea9804d945"
     },
     {
       "path": "notes/A/A13_abstract.txt",
@@ -733,8 +1118,8 @@
     },
     {
       "path": "notes/A/A13_fulltext.txt",
-      "bytes": 88237,
-      "sha256": "df4110575330a3f2054f6abdfc73415e1385e81b5bb920540c29fe2d04f395f8"
+      "bytes": 89288,
+      "sha256": "075833f99233a7a76b5a60abc7abc46c98bc7ef020a83db47ce11d34f62f044f"
     },
     {
       "path": "notes/A/A14_abstract.txt",
@@ -753,8 +1138,8 @@
     },
     {
       "path": "notes/A/A14_fulltext.txt",
-      "bytes": 421373,
-      "sha256": "977f082e01fdf4378419d2829988c4baee01f1aff223d1839ae5e7bd61fcffc0"
+      "bytes": 423887,
+      "sha256": "d84199d6f30129aa4d3b44e11ca5f4291142ef5798657d3b883ef438f0758bae"
     },
     {
       "path": "notes/A/A15_acquisition.json",
@@ -768,8 +1153,8 @@
     },
     {
       "path": "notes/A/A15_fulltext.txt",
-      "bytes": 107551,
-      "sha256": "499776a02024351588f9b734ce17cbb16f4a39d8448760d84a1c012c721c14ca"
+      "bytes": 109343,
+      "sha256": "3aa0253a576eb6a1da153042196a59dea034ec08f1f490c074f9400b3e59554e"
     },
     {
       "path": "notes/A/A16_abstract.txt",
@@ -793,8 +1178,8 @@
     },
     {
       "path": "notes/A/A16_fulltext.txt",
-      "bytes": 43397,
-      "sha256": "d471b2bfcdc608edf22fdba63dfa6e8be2d28fb4948c9b675bf7992ec8d4d66b"
+      "bytes": 44278,
+      "sha256": "871439566a53b3185fb518f4ba64f4270f6cf89e23e445b94bd0dbb95cfbb212"
     },
     {
       "path": "notes/A/A17_acquisition.json",
@@ -808,8 +1193,8 @@
     },
     {
       "path": "notes/A/A17_fulltext.txt",
-      "bytes": 102113,
-      "sha256": "30a6223e14a26ab7d64a7a53213d1fa44ad769186fd3fd2309c74aad6afecff7"
+      "bytes": 103284,
+      "sha256": "cc963a247d40bd3d8fcb8e22029e8b5fedb33e4803d9c3cbba6bafa9aca157f9"
     },
     {
       "path": "notes/A/A18_abstract.txt",
@@ -833,8 +1218,8 @@
     },
     {
       "path": "notes/A/A18_fulltext.txt",
-      "bytes": 106275,
-      "sha256": "e1aa3e834dfe0d0e4d01edac5c62b11a6dbdb05a19914ba36d56cb4a2e5f9794"
+      "bytes": 107359,
+      "sha256": "5b4262b586b19fd8125bc68d7a7dca04a9af9aa308efad238164e90fb52ed363"
     },
     {
       "path": "notes/A/A19_abstract.txt",
@@ -857,6 +1242,11 @@
       "sha256": "d7aeff61c3ee0f18ca5e760ae6cac430d6bb551421f252e2cdda23690a0aa460"
     },
     {
+      "path": "notes/A/A19_fulltext.txt",
+      "bytes": 65556,
+      "sha256": "85e731ec89a9c6b1c0de6f6564bda796db0cb7299fa120095df7e7bdb6d356a8"
+    },
+    {
       "path": "notes/A/A20_abstract.txt",
       "bytes": 645,
       "sha256": "7740bc09e3a1fcad1fafc5ae29063e1842b98423ac6a739f40b7a8155dfcdbf3"
@@ -870,6 +1260,11 @@
       "path": "notes/A/A20_crossref.json",
       "bytes": 6095,
       "sha256": "24383f767618786d1b055fb5b5934e4fd6647ae88aae6b152136c9a1fe5d81c6"
+    },
+    {
+      "path": "notes/A/A20_fulltext.txt",
+      "bytes": 45294,
+      "sha256": "3ecf0a2dd555a4cea4eea78ade8c077eab822a10057b49ed1e62e8321a723f2d"
     },
     {
       "path": "notes/A/acquire.py",
@@ -953,18 +1348,23 @@
     },
     {
       "path": "notes/A/pdf_unavailable_zh.md",
-      "bytes": 1333,
-      "sha256": "898abee8c5cff101cea956de097fc6fc65106f2fcf681ff6f12d5b254182c40c"
+      "bytes": 291,
+      "sha256": "c05948a19d4163d7e67ba6a5d66f459556d544a194a9fcc09944c4b7e0e11583"
     },
     {
       "path": "notes/A/records.json",
-      "bytes": 49114,
-      "sha256": "bd965b36a6970e76add6d26ba8e3f06d87fb7502b751882c5c8f36568a1a2458"
+      "bytes": 69127,
+      "sha256": "27d843eca9d48fb790a4f298c64190465f07ee07a1db7d618df48f7b1200b17e"
     },
     {
       "path": "notes/A/review_zh.md",
-      "bytes": 6707,
-      "sha256": "3fd14f990233055d3fd38aa78b3c3ded96c5d7d3b12a2b45696f7334da9735e4"
+      "bytes": 1942,
+      "sha256": "2936e3db429a50ee5238ae35c1fe46494acc88b03b43e993a0b37c3e56818d84"
+    },
+    {
+      "path": "notes/A/source_review_zh.md",
+      "bytes": 13354,
+      "sha256": "07de82c9379b0bdfa9f0096f9495b0f54b39769bcccf2e631f38b271d86e65e2"
     },
     {
       "path": "notes/B/B01.json",
@@ -978,8 +1378,8 @@
     },
     {
       "path": "notes/B/B01_fulltext.txt",
-      "bytes": 71779,
-      "sha256": "8867b8cf532b2f5b85e7a3f0886bc76ecca6d898180ec28364328cb0f9159af7"
+      "bytes": 72494,
+      "sha256": "c1794a1dd73893c651fcc07e8ca347265403b7f34131668385213eeeaef952c6"
     },
     {
       "path": "notes/B/B01_rawtext.txt",
@@ -998,8 +1398,8 @@
     },
     {
       "path": "notes/B/B02_fulltext.txt",
-      "bytes": 57081,
-      "sha256": "fc2a710ca4c509a53ac02f3b99afa44aeb50abab18eb46e93acf1cb8c0b81d1e"
+      "bytes": 57821,
+      "sha256": "69c1ec4daa5754bba66d48bf4516c556b4cea837a15908f1bff32d6871038156"
     },
     {
       "path": "notes/B/B02_pdf.html",
@@ -1028,8 +1428,8 @@
     },
     {
       "path": "notes/B/B03_fulltext.txt",
-      "bytes": 111824,
-      "sha256": "7ee7ad507ef3513a98be9b045546c7b94d02fc1126b3a6d3bdc54f6c036bfb71"
+      "bytes": 192054,
+      "sha256": "5e64fe45a2e13df2759526399bd661f82cf0e7fc4697b85af31e6d98be6ec9e3"
     },
     {
       "path": "notes/B/B03_openalex.json",
@@ -1058,8 +1458,8 @@
     },
     {
       "path": "notes/B/B04_fulltext.txt",
-      "bytes": 83135,
-      "sha256": "4bc2c68e6bef3764323d51e2ffca69080d35cc3b09b846542319248b10507a00"
+      "bytes": 83834,
+      "sha256": "531bdc7acccae10d1883cfa5d2124f615ecf110aa1a17a369af3b6bae21302da"
     },
     {
       "path": "notes/B/B04_publisher.html",
@@ -1078,8 +1478,8 @@
     },
     {
       "path": "notes/B/B05_fulltext.txt",
-      "bytes": 79363,
-      "sha256": "71dce46bc636efdd53ceca11c1adeb1415ad667c825ee4bbe571b5a96ac1b2dd"
+      "bytes": 80683,
+      "sha256": "98b70f6a24da0414527ef658fa2c0a22ac0529c7047fb1b19cd3654e01e0ca78"
     },
     {
       "path": "notes/B/B06.json",
@@ -1093,8 +1493,8 @@
     },
     {
       "path": "notes/B/B06_fulltext.txt",
-      "bytes": 53641,
-      "sha256": "e2de5ab048f130d6b7e3cf076e02c8711a31d2926b84eaaf8dcbd35802377942"
+      "bytes": 54280,
+      "sha256": "a47582d1aa4a72c794f72ff8c726493bb59e71d3a31c8b5f057dd7f8414f061a"
     },
     {
       "path": "notes/B/B06_openalex.json",
@@ -1113,8 +1513,8 @@
     },
     {
       "path": "notes/B/B07_fulltext.txt",
-      "bytes": 83444,
-      "sha256": "773e6429569b1009f11da76421565dbea0f2bf41e11248d38a5f77259fba5f1f"
+      "bytes": 84761,
+      "sha256": "34e4107f182e8f1bc63d59fd4668b2ecb71a890411ad6b3ea4633513e00eab3a"
     },
     {
       "path": "notes/B/B08.json",
@@ -1128,8 +1528,8 @@
     },
     {
       "path": "notes/B/B08_fulltext.txt",
-      "bytes": 44349,
-      "sha256": "c9ec5e9315206a4d42ca49f0ddf8502e3ed8aefd09f0c0effc1fc058b111c740"
+      "bytes": 44991,
+      "sha256": "8a1f639c03d6710e7ab8ebb144d94e62d14ac69874bad221da83e6312a682ff4"
     },
     {
       "path": "notes/B/B09.json",
@@ -1143,8 +1543,8 @@
     },
     {
       "path": "notes/B/B09_fulltext.txt",
-      "bytes": 67591,
-      "sha256": "84e080f289588318b6674e231f49bf56f330c94f9bcb17a158a875fc6df1a38d"
+      "bytes": 68597,
+      "sha256": "cf100aaf8257863f185b9acee070e06ab57d4b5eec6d94e37de080310a3165ca"
     },
     {
       "path": "notes/B/B09_openalex.json",
@@ -1168,8 +1568,8 @@
     },
     {
       "path": "notes/B/B10_fulltext.txt",
-      "bytes": 283969,
-      "sha256": "5fd8726777fd7f563ce12158eb9ce4d8c0b57cbea15bed40857db98cb403c66c"
+      "bytes": 285969,
+      "sha256": "b0a40f9c2a77858a1f4e9b2a56a649f28eae1196fd74d3379988ec89082bbbdb"
     },
     {
       "path": "notes/B/B11.json",
@@ -1183,8 +1583,8 @@
     },
     {
       "path": "notes/B/B11_fulltext.txt",
-      "bytes": 81506,
-      "sha256": "aa69ec2aef57574e38248c9858720452922715a72bf9f69d57b2619d66206ee2"
+      "bytes": 82183,
+      "sha256": "a708adc1475db365934e0c74947448b93d9ec8ed112145fbf3c6f437fc0475ef"
     },
     {
       "path": "notes/B/B11_openalex.json",
@@ -1208,8 +1608,8 @@
     },
     {
       "path": "notes/B/B12_fulltext.txt",
-      "bytes": 87747,
-      "sha256": "f96461141dbb6cfb0b9d06957a0b3c7ef2ad7ca7a83eb7a784a87e889549d613"
+      "bytes": 89236,
+      "sha256": "90b63266b3d0b28da7f72067554fb0e27f6f57482767e7813b7371285b8de594"
     },
     {
       "path": "notes/B/B12_openalex.json",
@@ -1228,8 +1628,8 @@
     },
     {
       "path": "notes/B/B13_fulltext.txt",
-      "bytes": 92763,
-      "sha256": "0c4ff7a667173d809568b3772ad237c8a11272ed8c02c65ec9d365008dac443d"
+      "bytes": 93652,
+      "sha256": "5c2476125a221eebfbf95f79aeb5756eaf884533af11456557290ca5346d8c82"
     },
     {
       "path": "notes/B/B13_openalex.json",
@@ -1253,8 +1653,8 @@
     },
     {
       "path": "notes/B/B14_fulltext.txt",
-      "bytes": 202710,
-      "sha256": "0724ead5843df80e30e9f255b3533066222cddc8646b47af39b711ed0f1373da"
+      "bytes": 204462,
+      "sha256": "9511e3cb6a2059212db4a9978d3bb87124964ad57a7a7851744b7da2ba681075"
     },
     {
       "path": "notes/B/B14_openalex.json",
@@ -1273,8 +1673,8 @@
     },
     {
       "path": "notes/B/B15_fulltext.txt",
-      "bytes": 92603,
-      "sha256": "4f35064c391ed4709682e05979cb26b1c2a8460eb95a8a8c3d2b135258243e4b"
+      "bytes": 93462,
+      "sha256": "d1fb5f188ad875fc3aa275dd4e399a4290114fa5a408ae33b190a057953209c3"
     },
     {
       "path": "notes/B/B15_openalex.json",
@@ -1303,8 +1703,8 @@
     },
     {
       "path": "notes/B/B16_fulltext.txt",
-      "bytes": 32700,
-      "sha256": "38c89cf254a70f35fc45c87b394108ac887980db5ced361534eb773a646c8d9b"
+      "bytes": 33659,
+      "sha256": "9ea8657fd8b0e6aa7515f07f7ef57431f272bda50a2bf4fe668a84dbcbad32a5"
     },
     {
       "path": "notes/B/B16_openalex.json",
@@ -1353,8 +1753,8 @@
     },
     {
       "path": "notes/B/records.json",
-      "bytes": 37147,
-      "sha256": "ec6ed964fb5ae53e9a92e755bd2aad33cd18068b934484d5efbce49cd9ebec0a"
+      "bytes": 48426,
+      "sha256": "05c98aebf3d75caaa461af42698593e4e5673206a2e9dbbbe48f7e096ff42c6b"
     },
     {
       "path": "notes/B/regier_author.html",
@@ -1372,9 +1772,14 @@
       "sha256": "ff9dab733c03ed85c5dbc7566a3b9d0b9e32ccd61ca86124cb089465d48718f4"
     },
     {
+      "path": "notes/B/source_review_zh.md",
+      "bytes": 10642,
+      "sha256": "8723a5c6bdb9a909ffc3e8e3cc5da7df5cf6ea60d4ff01b931ff91f5fe9e5334"
+    },
+    {
       "path": "notes/B/unavailable_pdf_zh.md",
-      "bytes": 982,
-      "sha256": "69bc6482ff41e0097a5ff513e437fbdf62622beff5960c86694bcf8110e333f7"
+      "bytes": 291,
+      "sha256": "c05948a19d4163d7e67ba6a5d66f459556d544a194a9fcc09944c4b7e0e11583"
     },
     {
       "path": "notes/C/C01_crossref.json",
@@ -1383,8 +1788,8 @@
     },
     {
       "path": "notes/C/C01_fulltext.txt",
-      "bytes": 77948,
-      "sha256": "fdcafddc4025c555f432413dbe32cc8939e1436cd0a88dde4a5d2e2cc68ec5de"
+      "bytes": 78888,
+      "sha256": "ed79bd4cabb8e9b0a895b9d8b67140d85a2ca10418859c7072f9ac3a9b756ed4"
     },
     {
       "path": "notes/C/C01_openalex.json",
@@ -1398,8 +1803,8 @@
     },
     {
       "path": "notes/C/C02_fulltext.txt",
-      "bytes": 233226,
-      "sha256": "afa2903e3179911beacd928efdae74746b04642dd2c53342659740e0d974d1c7"
+      "bytes": 234284,
+      "sha256": "a62bb0192ad8612dd3b9d959ad23070bed36ed4c8a4d2176b14bd95ade59bc50"
     },
     {
       "path": "notes/C/C02_openalex.json",
@@ -1418,8 +1823,8 @@
     },
     {
       "path": "notes/C/C03_fulltext.txt",
-      "bytes": 170162,
-      "sha256": "c56af671dadf246966021214a701cef532fd1883da98b43f4faf037a702cf8f8"
+      "bytes": 172509,
+      "sha256": "8fb1d77e7f9bebc00de51e6f4b9533514246ee42e9159a1ebbe118ad02fe71a3"
     },
     {
       "path": "notes/C/C03_openalex.json",
@@ -1438,8 +1843,8 @@
     },
     {
       "path": "notes/C/C04_fulltext.txt",
-      "bytes": 123065,
-      "sha256": "93ed5f408b356388d9aaa640b57ec2117ecb111ea683c161cb913ccc5eade24a"
+      "bytes": 124203,
+      "sha256": "81ff4b6c0484649120700df9f0e0b406f30adbd6137751c1a97266bd2e22ca4f"
     },
     {
       "path": "notes/C/C04_openalex.json",
@@ -1458,8 +1863,8 @@
     },
     {
       "path": "notes/C/C05_fulltext.txt",
-      "bytes": 76719,
-      "sha256": "2a72db83a1d5e0dba070faa043ed45b8be3069f838edfbe6115acfffd61e72d2"
+      "bytes": 78228,
+      "sha256": "3f8bd2e4b59343e79116359a343d8a0f904ba5b721467bd5d36cd9ce6c744ee7"
     },
     {
       "path": "notes/C/C05_openalex.json",
@@ -1478,8 +1883,8 @@
     },
     {
       "path": "notes/C/C06_fulltext.txt",
-      "bytes": 1507,
-      "sha256": "d5ef4a596244de6209c2bcf2f0e07fb09fd88fa148705d775e863c71d3bdad26"
+      "bytes": 31589,
+      "sha256": "3be6e0bb17c2d760f4392730a880544388c5c147d22fb1684b1b36c857a0a121"
     },
     {
       "path": "notes/C/C06_ocr_excerpt.txt",
@@ -1513,8 +1918,8 @@
     },
     {
       "path": "notes/C/C07_fulltext.txt",
-      "bytes": 13,
-      "sha256": "859aa658314fcc519a9b7aa9096bc94316446ca5d26eb9f1a5e9369030b02c86"
+      "bytes": 35229,
+      "sha256": "53e0306adb3ae47d5328c6397031a8e0983ce803a202a192c8d757f0fdf9c3a5"
     },
     {
       "path": "notes/C/C07_ocr_excerpt.txt",
@@ -1543,8 +1948,8 @@
     },
     {
       "path": "notes/C/C08_fulltext.txt",
-      "bytes": 106714,
-      "sha256": "aa0461d8d95e190685705d10e91df7530b651e4ac756628cabdd83f8be93e54b"
+      "bytes": 108728,
+      "sha256": "358dab7a7ca306e627567a31c302853794d38c87895a7f4728233f774abc6b1e"
     },
     {
       "path": "notes/C/C08_openalex.json",
@@ -1563,8 +1968,8 @@
     },
     {
       "path": "notes/C/C09_fulltext.txt",
-      "bytes": 47191,
-      "sha256": "36189509912656f67705f4657ef13824fed23cf7c05348a2543a689cea3f26e1"
+      "bytes": 47775,
+      "sha256": "1a322f02569d33bffa5274548c2db7e32cd06e32d851dccc05c7aea739f3db17"
     },
     {
       "path": "notes/C/C09_openalex.json",
@@ -1588,8 +1993,8 @@
     },
     {
       "path": "notes/C/C10_fulltext.txt",
-      "bytes": 77648,
-      "sha256": "eeeda6b0f961d9cad9aa2448a49f7e41de62ec369c00eaa9d6fe39060e5a158e"
+      "bytes": 78646,
+      "sha256": "993b8546a8861bddd2f7df7a3ee209051093b21de3103bf384030bee3e143a1c"
     },
     {
       "path": "notes/C/C10_openalex.json",
@@ -1608,8 +2013,8 @@
     },
     {
       "path": "notes/C/C11_fulltext.txt",
-      "bytes": 67476,
-      "sha256": "2813048ec1aafe9cf4839f4452c5d0d8479c8571d145e4d5f01e3f58150c5cb3"
+      "bytes": 68199,
+      "sha256": "c25a34fa98e90798af9c824ad3a52040e5c22a96dc730c6f8ccd82249605bd46"
     },
     {
       "path": "notes/C/C11_openalex.json",
@@ -1628,8 +2033,8 @@
     },
     {
       "path": "notes/C/C12_fulltext.txt",
-      "bytes": 101181,
-      "sha256": "d5d1c2bf1bb86d7c33ce51fb47ddbc6ebde61a3362ef3905300029b237a4d0bd"
+      "bytes": 158977,
+      "sha256": "2d9ca1fa8a2ecad6e79a450d53b6af6e6f6e097b73c32663cf1c5a72f33fb36b"
     },
     {
       "path": "notes/C/C12_openalex.json",
@@ -1652,14 +2057,19 @@
       "sha256": "a8b210d4aad141256049b2b8e57b391271ad311bb04cb170c9f58b33b467bf05"
     },
     {
+      "path": "notes/C/records.json",
+      "bytes": 40404,
+      "sha256": "6b21d7283c344ab707cac91bb30821954eedf84a29b0aea6790f58405735e207"
+    },
+    {
       "path": "notes/C/review_zh.md",
-      "bytes": 4766,
-      "sha256": "11f643de2c71905e40fee8b831fd2759565ac329392db8e55d57328a8f14fd2f"
+      "bytes": 4492,
+      "sha256": "874e3a45a9d7d05c8686fd94e2f17ca6cc36713b764571cc2eae3552f142448c"
     },
     {
       "path": "notes/C/source_review_zh.md",
-      "bytes": 15201,
-      "sha256": "7ff2acf311bff2d0fe674f275cc2cdf78565dc36e445f8e3fa86a277346ca885"
+      "bytes": 9863,
+      "sha256": "062bc28aa23ecc8bc97caa71442cc4969aa3ba0ead0569640951f20aa021124a"
     },
     {
       "path": "notes/design_audit.md",
@@ -1673,13 +2083,13 @@
     },
     {
       "path": "notes/manuscript_evidence_review.md",
-      "bytes": 3568,
-      "sha256": "e281afcd61369beeb98bcb9f82c0f505dd752f37a1f40f0ba88485ae765f6db0"
+      "bytes": 3690,
+      "sha256": "c4167cf6370cccf7aa7ac2e5aa9860f6af9a6cb7d9cd4de4a9742c5de0a08851"
     },
     {
       "path": "notes/研究章程.md",
-      "bytes": 3091,
-      "sha256": "aa49f2827eb71c94db1252ab1c40693481720d617771eb521538b089281891ba"
+      "bytes": 3370,
+      "sha256": "baa39969b4b5e2360b90f835252768033aaa0ea9cbd13ab5c8bb9b2d8db00ee8"
     },
     {
       "path": "original_research_plan.md",
@@ -1688,13 +2098,18 @@
     },
     {
       "path": "outputs/PDF无法下载清单.md",
-      "bytes": 8787,
-      "sha256": "4cea58d969ca5cf8ee58871fab61d544ef5920765ed8b224ff4c8b9cf856aba6"
+      "bytes": 3826,
+      "sha256": "bdc74f1a08f6e10dc9ed44ee865872ecf25ee4619e43e64729326b6162cfe032"
     },
     {
       "path": "outputs/PDF无法下载清单.pdf",
-      "bytes": 83852,
-      "sha256": "ae1d2973a83c2f024ed290a071502d94536cdb15a2d3d3f9f294aae8b0a1aa14"
+      "bytes": 53268,
+      "sha256": "31bdb15d61826fa321f9a1d75d09da147462c68ff9bcc2cd4ec05d054006da36"
+    },
+    {
+      "path": "outputs/PDF无法下载清单.txt",
+      "bytes": 2834,
+      "sha256": "f4ccd324eb24f21587eeb96251240c6860f3ae83bc9892b1bd24d98829b32627"
     },
     {
       "path": "outputs/pdf_header.tex",
@@ -1703,53 +2118,78 @@
     },
     {
       "path": "outputs/文献登记表.csv",
-      "bytes": 12178,
-      "sha256": "90790ed1814547c8e991b6c500d97ef34aa15fec6f620f02e8b724f3ea0bd728"
+      "bytes": 19416,
+      "sha256": "8380ef0fd9b41817475a156dbed9a917f4fd603228099aa120136016ed5d1299"
     },
     {
       "path": "outputs/文献登记表.json",
-      "bytes": 119987,
-      "sha256": "ab32290ddf6c15dec15eec895d7e4c57dc71a9e5a6d8267206c066c7bfe9f520"
+      "bytes": 157953,
+      "sha256": "4162144573e7cc8a4b94fb118e0a9cce309bbbff0de2e4fcb54f8fbf48185b28"
     },
     {
       "path": "outputs/文献综述与证据台账.md",
-      "bytes": 81394,
-      "sha256": "6e76277bc5f9f9e2bcdd02d2851dd843428c52af3e1be695ee3aa5895547695c"
+      "bytes": 62285,
+      "sha256": "905a9517c555c3a397d7c2f504ef1d660f322361099cbc9c6e7ebc8b75632e32"
     },
     {
       "path": "outputs/文献综述与证据台账.pdf",
-      "bytes": 345167,
-      "sha256": "bf6d344fdaccb10912ed4874af3c15047f55a929ff7e9222152d2b4c14221abb"
+      "bytes": 274162,
+      "sha256": "f8c4af5deceb43a87f888e54717e9727e1100620bb0e544fa3d069c049b30e17"
+    },
+    {
+      "path": "outputs/文献综述与证据台账.txt",
+      "bytes": 51570,
+      "sha256": "7b46926e7570282d060be6e1933532702c461557533f6c0587e0a7b21b43d4b9"
+    },
+    {
+      "path": "outputs/本地同步核验.json",
+      "bytes": 68916,
+      "sha256": "f27975024b47f57c6cf3b571f4095a55edff2c405edaa2a0f08c4b9cceb02654"
+    },
+    {
+      "path": "outputs/本轮文献更新核验.json",
+      "bytes": 1309,
+      "sha256": "9a8cc41ffe635fc702cdd926755f717553026e9a62ff58e2fd73edfa285e5682"
     },
     {
       "path": "outputs/研究计划_完善版.docx",
-      "bytes": 27092,
-      "sha256": "5841fa00e0583b1963a7bf8bb78ae9e0ac40e58e1bcb281f914412735d782613"
+      "bytes": 27214,
+      "sha256": "83849b2d8e9e93f33461587fbdf24ea9057590b4213567c97dfbcf1c95703b3b"
     },
     {
       "path": "outputs/研究计划_完善版.md",
-      "bytes": 29354,
-      "sha256": "70bca30e280a73db35a1bb66d1e92c7c76dac180be874f239d3cca0c14d14a28"
+      "bytes": 29582,
+      "sha256": "204e57af4dc406d501cf3b47aa7b38e8a913e2800c065f277566d65881f04eea"
     },
     {
       "path": "outputs/研究计划_完善版.pdf",
-      "bytes": 234675,
-      "sha256": "4ddf33702ca2f5a039ab436e9b0237805ccc3682624be6c17bf5f99d8170689f"
+      "bytes": 233441,
+      "sha256": "3d578b8ecfea25a4f5ebab8256c304ea185091407001252c28e59de298fb97d2"
+    },
+    {
+      "path": "outputs/研究计划_完善版.txt",
+      "bytes": 29947,
+      "sha256": "691f527b80b1294d87f80e2f8ef819f74f63dbf49769b8ba4ddc1b0aa10cbca8"
     },
     {
       "path": "outputs/论文_中文实证稿.docx",
-      "bytes": 212204,
-      "sha256": "5ddc9308ff2638b00777e75194c27dbc29927f6b0d844652d743a16ffa3b5063"
+      "bytes": 212497,
+      "sha256": "95893f2921a8154507df581df865259868216f85ab52f6504609ab26fb9bf61c"
     },
     {
       "path": "outputs/论文_中文实证稿.md",
-      "bytes": 38544,
-      "sha256": "db89c126709c525401c7bd966195a9a90d2d3062edefb735f9eae7cf9cfbe876"
+      "bytes": 39138,
+      "sha256": "9d212c536b34f105ab4e8ebdb2252295fe4a04916a8465dbcd514c436f856d45"
     },
     {
       "path": "outputs/论文_中文实证稿.pdf",
-      "bytes": 443556,
-      "sha256": "c337e29eeff171bf53b094fa645d88adee8b9b3bad122ecbd7d500a6b021f0f2"
+      "bytes": 444439,
+      "sha256": "3b21acf8713812f0ff13d2297c7024e7d6a9b75f0a6172a2fba50361507406a0"
+    },
+    {
+      "path": "outputs/论文_中文实证稿.txt",
+      "bytes": 39166,
+      "sha256": "99ec1fdb48e3df8f3bb4b40f48fd0ad22357b82a62ff5a39a167ad74e425f2c9"
     }
   ]
 }

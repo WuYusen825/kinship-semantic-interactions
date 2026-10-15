@@ -1,3 +1,9 @@
+# PDF全文文本（UTF-8）
+来源PDF：literature/C/C11_Forkel_2018_Cross_Linguistic_Data_Formats_advancing_data_sharing_and_re_use_in_comparative_linguisti.pdf
+原PDF SHA-256：be1420d6b2c8919c1a517f28532ef6cdcef1f1ddae9306b10be2474595e63066
+页码表示PDF文件页序，不自动等同于期刊印刷页码。Native为原文本层，OCR为扫描或低文字页识别；表格、音标、公式与OCR仍须对照PDF。
+
+===== PDF PAGE 0001 / 0010 | Native =====
                                                                                                     www.nature.com/scientificdata
 
 
@@ -15,7 +21,7 @@
                                amenable for comparison and re-use. The Cross-Linguistic Data Formats initiative proposes new
                                standards for two basic types of data in historical and typological language comparison (word lists,
                                structural datasets) and a framework to incorporate more data types (e.g. parallel texts, and
-                               dictionaries). The new speciﬁcation for cross-linguistic data formats comes along with a software
+                               dictionaries). The new specification for cross-linguistic data formats comes along with a software
                                package for validation and manipulation, a basic ontology which links to more general frameworks,
                                and usage examples of best practices.
 
@@ -33,7 +39,9 @@
 
 
 SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                                                                                      1
-www.nature.com/sdata/
+
+===== PDF PAGE 0002 / 0010 | Native =====
+www.nature.com/sdata/
 
 
                                Introduction
@@ -60,11 +68,11 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
                                shaping languages from climate13,14, to population size15–17, to genes18,19, and how these factors may or
                                may not shape human social behavior at a society level20. (All URLS mentioned in this paragraph were
                                accessed July 26, 2018).
-                                   Despite this gold rush in the creation of linguistic databases and their application reﬂected in a large
+                                   Despite this gold rush in the creation of linguistic databases and their application reflected in a large
                                number of scholarly publications and an increased interest in the media, linguistic data are still far away
                                from being “FAIR” in the sense of Wilkinson et al.21: Findable, Accessible, Interoperable, and Reusable. It
-                               is still very difﬁcult to ﬁnd particular datasets, since linguistic journals often do not have a policy on
-                               supplementary data and may lack resources for hosting data on their servers. It is also often difﬁcult to
+                               is still very difficult to find particular datasets, since linguistic journals often do not have a policy on
+                               supplementary data and may lack resources for hosting data on their servers. It is also often difficult to
                                access data, and many papers which are based on original data are still being published without the data1
                                and having to request the data from the authors is sometimes a more serious obstacle than it should
                                be22,23. Due to idiosyncratic formats, linguistic datasets also often lack interoperability and are therefore
@@ -75,13 +83,13 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
                                there are too many degrees of freedom which render most of the data that have been produced hard to
                                compare. Due to the apparently simple structure, scholars rarely bother with proper serialization,
                                assuming that their data will be easy to re-use. Although there are recent and long-standing
-                               standardization efforts, like the establishment of the International Phonetic Alphabet (IPA) as a uniﬁed
+                               standardization efforts, like the establishment of the International Phonetic Alphabet (IPA) as a unified
                                alphabet for phonetic transcription24, which goes back to the end of the 19th century25, or the more
                                recent publication of reference catalogues for languages26 and word meanings27, linguists often forgo
-                               these standards when compiling their datasets and use less strictly speciﬁed documentation traditions.
-                                   While certain standards, such as the usage of uniﬁed transcription systems, are generally agreed upon
+                               these standards when compiling their datasets and use less strictly specified documentation traditions.
+                                   While certain standards, such as the usage of unified transcription systems, are generally agreed upon
                                but often not applied (or mis-applied) in practice, other types of linguistic data come along with a
-                               multitude of different standards which make data interoperability extremely difﬁcult (see Fig. 1 for
+                               multitude of different standards which make data interoperability extremely difficult (see Fig. 1 for
                                examples on different practices of cognate coding in wordlists in historical linguistics).
                                    At the same time, funding agencies such as the German Academic Research Council emphasize that
                                ‘the use of open or openly documented formats [to enable] free public access to data deriving from
@@ -95,15 +103,17 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
                                trials is a focus on data re-use scenarios as motivating use cases.
                                    Previously, the focus of standardization attempts was often on comprehensiveness (cf. the GOLD
                                ontology http://linguistics-ontology.org/, accessed July 27, 2018) which led to problems with adoption.
-                               Our proposal is more modest, targeting mainly the speciﬁc case of tool-based re-use (i.e. analysis,
-                               visualization, publication, etc.) of linguistic data. While this may seem overly speciﬁc, it is central to the
-                               scientiﬁc method and reproducible research32. This approach may also be particularly successful, because
+                               Our proposal is more modest, targeting mainly the specific case of tool-based re-use (i.e. analysis,
+                               visualization, publication, etc.) of linguistic data. While this may seem overly specific, it is central to the
+                               scientific method and reproducible research32. This approach may also be particularly successful, because
                                it puts the burden of early adoption on a sample of the linguistics community which may be best
                                equipped to deal with it: the computationalists. The line between computational and non-computational
                                linguists is diffuse enough for the former to act as catalysts for adoption, in particular because tools which
 
 SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                                                                                      2
-www.nature.com/sdata/
+
+===== PDF PAGE 0003 / 0010 | Native =====
+www.nature.com/sdata/
 
 
 
@@ -135,12 +145,12 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
 
                                Results
                                To address the above-mentioned obstacles of sharing and re-use of cross-linguistic datasets, the Cross-
-                               Linguistic Data Formats initiative (CLDF) offers modular speciﬁcations for common data types in
+                               Linguistic Data Formats initiative (CLDF) offers modular specifications for common data types in
                                language typology and historical linguistics, which are based on a shared data model and a formal
                                ontology.
 
                                Data Model
-                               The data model underlying the CLDF speciﬁcation is simple, yet expressive enough to cover a range of
+                               The data model underlying the CLDF specification is simple, yet expressive enough to cover a range of
                                data types commonly collected in language typology and historical linguistics. The core concepts of this
                                model have been derived from the data model which was originally developed for the Cross-Linguistic
                                Linked Data project (cf. http://clld.org, accessed July 27, 2018), which aimed at developing and curating
@@ -152,15 +162,17 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
                                comparative concepts33, which can be measured and compared across languages; and (c) Values, the
                                “measurements” for each pairing of a language with a parameter. In addition, each triple should have at
                                least one (d) Source, as cross-linguistic data are typically aggregated from primary sources which
-                               themselves are the result of language documentation based on linguistic ﬁeldwork. This reﬂects the
+                               themselves are the result of language documentation based on linguistic fieldwork. This reflects the
                                observation of Good and Cysouw34 that cross-linguistic data deal with doculects, i.e. languages as they are
-                               documented in a speciﬁc primary source - rather than languages as they are spoken directly by the
+                               documented in a specific primary source - rather than languages as they are spoken directly by the
                                speakers.
                                   In this model, each Value is related to one Parameter and one Language and can be based on multiple
                                Sources. The many-to-many relation between Value and Source is realized via References which can carry
 
 SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                                                                                3
-www.nature.com/sdata/
+
+===== PDF PAGE 0004 / 0010 | Native =====
+www.nature.com/sdata/
 
 
                                 Name                      URL                  Description
@@ -173,7 +185,7 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
 
                                 Phoible                   phoible.org          Cross-linguistic survey of sound inventories for more than 2000 languages world-wide.
 
-                                Glottolog                 glottolog.org        Reference catalogue of language names, geographic locations, and afﬁliations.
+                                Glottolog                 glottolog.org        Reference catalogue of language names, geographic locations, and affiliations.
 
                                 Concepticon               concepticon.clld.org Reference catalogue of word meanings and concepts used in cross-linguistic surveys and psycholinguistic
                                                                                studies.
@@ -187,20 +199,20 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
                                an additional Context attribute, which is typically represented by page numbers when dealing with
                                printed sources.
 
-                               The CLDF Speciﬁcation
+                               The CLDF Specification
                                CLDF is a package format, describing various types of cross-linguistic data; in other words, a CLDF
-                               dataset is made up by a set of data ﬁles (i.e. ﬁles holding tabular data, or tables) and a descriptive ﬁle,
-                               wrapping this set and deﬁning relations between tables. Each linguistic data type is modeled via a CLDF
+                               dataset is made up by a set of data files (i.e. files holding tabular data, or tables) and a descriptive file,
+                               wrapping this set and defining relations between tables. Each linguistic data type is modeled via a CLDF
                                module, with additional, orthogonal aspects of the data modeled as CLDF components. “Orthogonal” here
                                refers to aspects of the data which recur across different data types, e.g. references to sources, or glossed
                                examples. This approach mirrors the way Dublin Core metadata terms (a common way of describing
                                metadata, cf. http://dublincore.org, accessed July 27, 2018) are packaged into meaningful sets using
-                               Application Proﬁles (cf. http://dublincore.org/documents/2009/05/18/proﬁle-guidelines/, accessed July 27,
-                               2018): a well known technique to support custom, modular - yet interoperable - metadata speciﬁcations
-                               devised by the Dublin Core Metadata Initiative. CLDF modules are proﬁles of cross-linguistic data types,
+                               Application Profiles (cf. http://dublincore.org/documents/2009/05/18/profile-guidelines/, accessed July 27,
+                               2018): a well known technique to support custom, modular - yet interoperable - metadata specifications
+                               devised by the Dublin Core Metadata Initiative. CLDF modules are profiles of cross-linguistic data types,
                                consisting of CLDF components and terms from the CLDF ontology.
 
-                               CLDF Ontology. The CLDF speciﬁcation recognizes certain objects and properties with well-known
+                               CLDF Ontology. The CLDF specification recognizes certain objects and properties with well-known
                                semantics in comparative linguistics. These are listed in a “vocabulary” or “ontology” (cf. https://www.w3.
                                org/standards/semanticweb/ontology for a description of vocabularies in the context of the Semantic
                                Web) - the CLDF Ontology - thereby making them available for reference by URI - the key mechanism of
@@ -210,7 +222,7 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
                                makes it easy to link entities in a CLDF dataset to a reference catalogue by providing corresponding
                                reference properties.
 
-                               Basic Modules in CLDF. Currently, CLDF deﬁnes two modules which handle the most basic types of
+                               Basic Modules in CLDF. Currently, CLDF defines two modules which handle the most basic types of
                                data which are frequently being used, collected, and shared in historical linguistics and typology (cf.
                                http://clld.org/datasets.html). The Wordlist module handles lexical data which are usually based on a
                                concept list that has been translated into a certain number of different languages, wich are often further
@@ -225,10 +237,10 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
                                standard: CLDF is intended as iterative, evolving standard, providing a short feedback loop between
                                standardization, implementation and non-standard extensions - thus allowing new data types to be integrated
                                easily.
-                                  Each of the modules deﬁnes additional components which deﬁne relations among the values across
+                                  Each of the modules defines additional components which define relations among the values across
                                languages, inside a language, or value-internally.
 
-                               Components. CLDF modules can include components. Components are pre-deﬁned tables or custom,
+                               Components. CLDF modules can include components. Components are pre-defined tables or custom,
                                that is non-standardized, tables. While components can have different interpretations, depending on the
                                module they are combined with, in the Wordlist module they are typically interpreted as concepts and in
                                the StructureDataset module they most often interpreted as categorical variables.
@@ -239,19 +251,21 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
                                metadata/, accessed July 27, 2018, henceforth referred to as CSVW for “CSV on the Web”), which provide a
 
 SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                                                                                                                                 4
-www.nature.com/sdata/
+
+===== PDF PAGE 0005 / 0010 | Native =====
+www.nature.com/sdata/
 
 
 
 
-                               Figure 2. Using CSVW metadata to describe the ﬁles making up a CLDF dataset.
+                               Figure 2. Using CSVW metadata to describe the files making up a CLDF dataset.
 
 
 
 
-                               package format allowing us to tie together multiple ﬁles containing tabular data (see Fig. 2). Thus, each
-                               CLDF dataset is described by a JSON (Javascript Object Notation, see http://json.org/) metadata ﬁle
-                               according to CSVW tabular metadata speciﬁcation.
+                               package format allowing us to tie together multiple files containing tabular data (see Fig. 2). Thus, each
+                               CLDF dataset is described by a JSON (Javascript Object Notation, see http://json.org/) metadata file
+                               according to CSVW tabular metadata specification.
                                   This means that there are standard ways of including metadata: Common properties on table or table group
                                descriptions can be used to add (a) bibliographic metadata using terms from the Dublin Core namespace (cf.
                                http://purl.org/dc/terms/), (b) provenance information using terms from the PROV namespace (cf. https://
@@ -260,21 +274,23 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
                                complements the efforts of the RDA Linguistics Interest Group (cf. http://site.uit.no/linguisticsdatacitation/
                                austinprinciples, accessed July 27, 2018).
 
-                               Extensibility of CLDF. The CLDF speciﬁcation is designed for extensibility. A CLDF dataset can
-                               comprise any number of additional tables (by simply adding corresponding table deﬁnitions in the
-                               metadata ﬁle), or by adding additional columns to speciﬁed tables. Thus, we expect to see further
-                               standardization by converging usage, much like Flickr machine tags evolved (cf. https://www.ﬂickr.com/
+                               Extensibility of CLDF. The CLDF specification is designed for extensibility. A CLDF dataset can
+                               comprise any number of additional tables (by simply adding corresponding table definitions in the
+                               metadata file), or by adding additional columns to specified tables. Thus, we expect to see further
+                               standardization by converging usage, much like Flickr machine tags evolved (cf. https://www.flickr.com/
                                groups/api/discuss/72157594497877875, accessed July 27, 2018). A dataset may, for example, specify
                                scales for its parameters to guide appropriate visualization. If more and more users employ this new
-                               speciﬁcation, it will become a candidate for standardization within the CLDF speciﬁcation.
+                               specification, it will become a candidate for standardization within the CLDF specification.
                                   As an example for future enhancement, CLDF could build on extensive metadata schemes like the COREQ
                                standards for qualitative social science research36 to allow for an explicit annotation of basic attributes related
-                               to language informants when handling original ﬁeldwork data (such as age, gender, multilingualism, etc.). In a
-                               similar way, existing semantic web ontologies could be further integrated into the CLDF speciﬁcation, provided
-                               adapters of CLDF ﬁnd them useful and important.
+                               to language informants when handling original fieldwork data (such as age, gender, multilingualism, etc.). In a
+                               similar way, existing semantic web ontologies could be further integrated into the CLDF specification, provided
+                               adapters of CLDF find them useful and important.
 
 SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                                                                                        5
-www.nature.com/sdata/
+
+===== PDF PAGE 0006 / 0010 | Native =====
+www.nature.com/sdata/
 
 
                                   This extension mechanism (and backwards compatible, frequent releases) allows us to start out small and
@@ -289,10 +305,10 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
                                standard catalogues like Glottolog and ISO 639-326 for languoids and Concepticon for lexical concepts.
                                While Glottolog is now well-established among linguists concentrating on cross-linguistic language
                                comparison, Concepticon is a rather young attempt to standardize the reference to lexical concepts as
-                               they can be encountered in numerous questionnaires that scholars use in ﬁeldwork and comparative
-                               studies. Similar to Glottolog, Concepticon offers unique identiﬁers for currently 3144 lexical concepts,
-                               along with deﬁnitions and additional metadata. The lexical concepts deﬁned by Concepticon, however,
-                               are not meant to reﬂect concepts that are expressed by the words in any speciﬁc language, but instead link
+                               they can be encountered in numerous questionnaires that scholars use in fieldwork and comparative
+                               studies. Similar to Glottolog, Concepticon offers unique identifiers for currently 3144 lexical concepts,
+                               along with definitions and additional metadata. The lexical concepts defined by Concepticon, however,
+                               are not meant to reflect concepts that are expressed by the words in any specific language, but instead link
                                to various resources (so-called concept-lists) in which these concepts were elicited. Similar to language
                                names, which show many different variants in the linguistic literature, the glosses which scholars use to
                                elicit a certain concept in cross-linguistic studies may also drastically vary. Linking these elicitation
@@ -305,23 +321,23 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
                                Grammaticon,37) and hope to make them available to CLDF data descriptions by providing
                                corresponding reference properties in future versions of the CLDF Ontology.
                                    However, while including reference properties for certain catalogues facilitates data aggregation and
-                               re-use, the CLDF speciﬁcation does not require the use of any or all reference catalogues. Instead, users
+                               re-use, the CLDF specification does not require the use of any or all reference catalogues. Instead, users
                                should decide what is most applicable to the dataset itself.
 
                                Interacting with CLDF Datasets
-                               The main goal of CLDF is connecting cross-linguistic data and tools. The constituent ﬁle formats of
+                               The main goal of CLDF is connecting cross-linguistic data and tools. The constituent file formats of
                                CLDF - CSV, JSON and BibTeX -- enjoy ample support for reading and writing on many platforms and
                                in many computing environments. Thus, reading and writing CLDF dataset should be easily achieved in
-                               any environment. A sufﬁciently standardized data format like CLDF means that general data editing tools
+                               any environment. A sufficiently standardized data format like CLDF means that general data editing tools
                                (e.g. https://visidata.org/) can be used for working with CLDF data (see https://csvconf.com for more
                                information about CSV in science, accessed July 26, 2018). A standardized format allows the community
-                               to move from ad-hoc tools programmed by a proﬁcient minority for their particular use case, towards
+                               to move from ad-hoc tools programmed by a proficient minority for their particular use case, towards
                                more and better applications, making their functionality available also to researchers without
                                programming skills.
                                    A few such tools already exist. LingPy (cf. http://lingpy.org, accessed July 27, 2018), a suite of open
                                source Python modules, provides state-of-the-art algorithms and visualizations for quantitative historical
                                linguistics; BEASTLing38, a Python package, translates human-readable descriptions of phylogenetic
-                               inference into the complex driver ﬁles for the popular BEAST software; EDICTOR39, a graphical
+                               inference into the complex driver files for the popular BEAST software; EDICTOR39, a graphical
                                JavaScript application, allows scholars to edit etymological dictionary data in a machine- and human-
                                readable way. While the development on these examples began before the CLDF standard, all three of
                                them were originally using CSV dialects for easy data exchange and are now in the process of adding
@@ -335,23 +351,25 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
                                A Python API: pycldf
                                In many research disciplines the Python programming language has become the de-facto standard
                                for data manipulation (often including analyses40,). Thus, providing tools for programmatic access to
-                               CLDF data from Python programs increases the usefulness of a format speciﬁcation like CLDF. We
+                               CLDF data from Python programs increases the usefulness of a format specification like CLDF. We
                                implemented a Python package pycldf (cf. https://github.com/cldf/pycldf, accessed July 27, 2018), serving
                                as reference implementation of the CLDF standard, and in particular supporting reading, writing and
                                validating CLDF datasets (cf. https://github.com/cldf/pycldf/tree/master/examples, accessed July
                                26, 2018).
-                                  By making use of the table descriptions in a CLDF metadata ﬁle, pycldf can do a lot more. For
-                               example, based on the datatype descriptors and foreign key relations speciﬁed in table schemas, pycldf
+                                  By making use of the table descriptions in a CLDF metadata file, pycldf can do a lot more. For
+                               example, based on the datatype descriptors and foreign key relations specified in table schemas, pycldf
                                can provide a generic conversion of a CLDF dataset into an SQLite database; thereby allowing analysis of
 
 SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                                                                                6
-www.nature.com/sdata/
+
+===== PDF PAGE 0007 / 0010 | Native =====
+www.nature.com/sdata/
 
 
                                 Abbr. Requirement                      Note
 
                                 P     PEP 20                           “Simple things should be simple, complex things should be possible” (cf. https://www.python.org/dev/peps/pep-0020/,
-                                                                       accessed July 27, 2018): Datasets can be one simple CSV ﬁle, encoding language-parameter-value-triples.
+                                                                       accessed July 27, 2018): Datasets can be one simple CSV file, encoding language-parameter-value-triples.
 
                                 R     Referencing                      If entities and parameters can be linked to reference catalogues such as Glottolog or Concepticon, this should be
                                                                        preferred to duplicating information.
@@ -361,13 +379,13 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
                                 H     Human- and machine-readability Data should be both editable by hand and amenable to reading and writing by software (preferable software which
                                                                      typical linguists can be expected to use).
 
-                                T     Text                             Data should be encoded as UTF-8 text ﬁles or in formats that provide full support for UTF-8.
+                                T     Text                             Data should be encoded as UTF-8 text files or in formats that provide full support for UTF-8.
 
-                                I     Identiﬁers                       Identiﬁers should be resolvable HTTP-URLs, where possible, if not, this should be documented in the metadata.
+                                I     Identifiers                       Identifiers should be resolvable HTTP-URLs, where possible, if not, this should be documented in the metadata.
 
                                 C     Compatibility                    Compatibility with existing tools, standards, and practices should always be kept in mind and never easily given up.
 
-                                E     Explicitness                     One row should only store one data point, and each cell should only have one type of data, unless speciﬁed in the
+                                E     Explicitness                     One row should only store one data point, and each cell should only have one type of data, unless specified in the
                                                                        metadata.
 
 
@@ -377,7 +395,7 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
 
                                CLDF datasets using SQL - one of the work horses of data science. Another example for the usefulness of
                                programmatic access to CLDF data is validation. Having a Python library available for CLDF means
-                               validation can be built into LibreOfﬁce’s spreadsheet application or easily run via continuous integration
+                               validation can be built into LibreOffice’s spreadsheet application or easily run via continuous integration
                                services like Travis on datasets hosted in public repositories (see, for example, https://github.com/
                                lexibank/birchallchapacuran, accessed July 26, 2018).
 
@@ -385,56 +403,58 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
                                At the beginning of the CLDF initiative we developed a list of practitioner requirements for cross-
                                linguistic data, based on the experiences of linguists who have worked and are regularly working with
                                cross-linguistic datasets. These practical principles are summarized in Table 241, and when comparing
-                               them with our ﬁrst version of CLDF, it can be seen that CLDF still conforms to all of them. Furthermore,
-                               when comparing our initial requirements with the criteria for ﬁle formats and standards put forward in
+                               them with our first version of CLDF, it can be seen that CLDF still conforms to all of them. Furthermore,
+                               when comparing our initial requirements with the criteria for file formats and standards put forward in
                                guidelines for research data management such as the ones proposed by the WissGrid project42, one can
                                also see that the perspectives are largely compatible, thus corroborating our hope that while being
-                               sufﬁciently speciﬁc to be of use for linguists, CLDF will also be generic enough to blend in with current
+                               sufficiently specific to be of use for linguists, CLDF will also be generic enough to blend in with current
                                best practices for research data management across disciplines.
-                                  Following a similar line of reasoning as Gorgolewski et al.43 lay out in their proposal of a uniﬁed data
+                                  Following a similar line of reasoning as Gorgolewski et al.43 lay out in their proposal of a unified data
                                structure for brain imaging data, and building on recommendations from the “Good Practices of
-                               Scientiﬁc Computing” by Wilson et al.,44 we decided to base CLDF on well-known and well-supported
-                               serialization formats, namely CSV and JSON, with their speciﬁc shortcomings being outbalanced by
+                               Scientific Computing” by Wilson et al.,44 we decided to base CLDF on well-known and well-supported
+                               serialization formats, namely CSV and JSON, with their specific shortcomings being outbalanced by
                                building on CSVW, including its concept of CSV dialects, which allows us to support more variation in
-                               tabular data ﬁles and help with adaptation of the format. CSVW and its support for foreign keys between
+                               tabular data files and help with adaptation of the format. CSVW and its support for foreign keys between
                                tables also allows us to seamlessly implement the recommendation to “anticipate the need to use multiple
-                               tables, and use a unique identiﬁer for every record”43.
-                                  Since CSVW is speciﬁed as a JSON-LD dialect (i.e. grounded in the Resource Description Framework
+                               tables, and use a unique identifier for every record”43.
+                                  Since CSVW is specified as a JSON-LD dialect (i.e. grounded in the Resource Description Framework
                                RDF, cf. https://www.w3.org/TR/rdf11-primer/, accessed July 27, 2018), it can be combined with an RDF
                                Vocabulary or Ontology to provide (a) the syntax of a relational serialization format via CSVW, as well as
                                (b) the semantics of the entities in the data model via the ontology. Thus, the CLDF Ontology provides
                                answers to the two questions of “Which things do exist?” and “Which things are based on others?”, which
-                               are considered crucial to assess the identiﬁcation needs for data collections42.
+                               are considered crucial to assess the identification needs for data collections42.
                                   Being able to build on Linked Data technologies to attach custom semantics to CSV data is the main
                                advantage for us of CSVW over the similar Data Package Standard (cf. https://frictionlessdata.io/specs/
                                data-package/), with its pure JSON package descriptions. It should also be noted that the overlap between
-                               these two data packaging speciﬁcations is so big and the speciﬁcations so similar, that the authors of the
-                               Data Package standard “imagine increasing crossover in tool and speciﬁcation support”45.
-                                  When adopting CSVW as the basis of the speciﬁcation, it may seem counter-intuitive to model source
+                               these two data packaging specifications is so big and the specifications so similar, that the authors of the
+                               Data Package standard “imagine increasing crossover in tool and specification support”45.
+                                  When adopting CSVW as the basis of the specification, it may seem counter-intuitive to model source
                                information via BibTeX - rather than as just another CSV table, linked to with foreign keys. But given
                                that (a) Glottolog - the most extensive bibliography of language descriptions - disseminates BibTeX and
                                (b) the many-to-many relation between values and sources would have required an additional association
                                table, (c) BibTeX is a standard format readable and usable by most citation software programs, BibTeX
                                seemed to be the right choice when maximizing maintainability of datasets.
-                                  Another design decision taken with CLDF was to not specify a single-ﬁle format. Instead of forcing
-                               users to provide their data in database formats, like SQLite (cf. https://sqlite.org/appﬁleformat.html,
+                                  Another design decision taken with CLDF was to not specify a single-file format. Instead of forcing
+                               users to provide their data in database formats, like SQLite (cf. https://sqlite.org/appfileformat.html,
                                accessed July 27, 2018), or in pure text formats with extensible markup, like the NEXUS format in
-                               biology46, we opted for specifying a multi-ﬁle format - and deliberately chose to not deﬁne any packaging.
-                               Instead, we regard packaging of usually rather small sets of small text ﬁles as a problem for which
+                               biology46, we opted for specifying a multi-file format - and deliberately chose to not define any packaging.
+                               Instead, we regard packaging of usually rather small sets of small text files as a problem for which
                                multiple solutions with particular use cases have already been proposed (e.g. zip for compression, bagit
                                for archiving, etc., cf. https://tools.ietf.org/html/draft-kunze-bagit-14, accessed July 27, 2018). We do not
 
 SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                                                                                                                                      7
-www.nature.com/sdata/
+
+===== PDF PAGE 0008 / 0010 | Native =====
+www.nature.com/sdata/
 
 
-                               even have to specify a particular directory layout for the multiple ﬁles forming a CLDF dataset, because
-                               the description ﬁle references data ﬁles using URIs, thereby turning CLDF into a multi-ﬁle format almost
-                               as ﬂexible as HTML. While this decision goes against the idea of “self-describing data” - underlying
-                               formats like XML - it works well with databases with established curation workﬂows, because it provides
+                               even have to specify a particular directory layout for the multiple files forming a CLDF dataset, because
+                               the description file references data files using URIs, thereby turning CLDF into a multi-file format almost
+                               as flexible as HTML. While this decision goes against the idea of “self-describing data” - underlying
+                               formats like XML - it works well with databases with established curation workflows, because it provides
                                an inobtrusive way to enhance the existing dataset: For example the “traditional” WALS Online tab-
                                separated format (e.g. http://wals.info/feature/1A.tab) can be turned into a CLDF dataset (by anyone) by
-                               providing a separate description ﬁle, just referencing the tab-separated ﬁle as data ﬁle.
+                               providing a separate description file, just referencing the tab-separated file as data file.
                                    Since CLDF has been developed in close collaboration with researchers working on different ends of
                                data-driven research in historical linguistics and language typology, CLDF is already being used by large
                                linguistic projects (cf. http://clics.clld.org/ and http://www.model-ling.eu/lexirumah/, both accessed
@@ -446,15 +466,15 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
                                phylogenetic analyses (BEASTLing38), up to interfaces for data inspection and curation (EDICTOR39).
                                    Since the CLDF initiative was born out of the Cross-Linguistic Linked Data (CLLD) project, it is
                                readily integrated into the CLLD framework and will allow users to publish their data without efforts on
-                               the web, making their data ﬁndable by exposing data and metadata to the major search engines, and
+                               the web, making their data findable by exposing data and metadata to the major search engines, and
                                increasing thus their interoperability. An important part of enabling data re-use is making data
                                discoverable. In today’s digital environment this means largely being “present” on the web. Basing CLDF
                                on the recommendations of W3C’s Tabular Data on the Web working group is a partial answer to this
                                requirement.
                                    Making it simple to publish CLDF datasets as CLLD applications goes a step further, because CLLD
                                applications improve the visibility of datasets by exposing data and metadata to the major search engines,
-                               but also to ﬁeld-speciﬁc aggregators such as OLAC, the Open Language Archives Community. More
-                               speciﬁcally, since CLLD applications implement the data provider part of the OAI-PMH protocol (cf.
+                               but also to field-specific aggregators such as OLAC, the Open Language Archives Community. More
+                               specifically, since CLLD applications implement the data provider part of the OAI-PMH protocol (cf.
                                http://www.openarchives.org/OAI/openarchivesprotocol.html, accessed July 27, 2018) a CLDF dataset
                                served by a CLLD application will be discoverable from OLAC and other portals.
                                    It is important to note that CLDF is not limited to linguistic data alone. By embracing reference
@@ -479,24 +499,26 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
                                Lorentz Center in Leiden - brought together people interested in analysis of cross-linguistic data, thus
                                providing a test bed for the proposals.
                                   Apart from these larger meetings where scholars discussed ideas of standardization, the CLDF-
-                               initiative proﬁted from the numerous Glottobank meetings organized by the Department of Linguistic
+                               initiative profited from the numerous Glottobank meetings organized by the Department of Linguistic
                                and Cultural Evolution at the Max Planck Institute for the Science of Human History (Jena), in which
                                big-picture ideas of standards for linguistic data were discussed in more concrete terms by smaller teams
-                               which came forward to work on speciﬁc aspects of the speciﬁcation, including reference catalogues like
+                               which came forward to work on specific aspects of the specification, including reference catalogues like
                                Concepticon, the handling of etymological data, and linking to external projects like D-PLACE.
-                                  These events formed a group representing the main institutions in the small ﬁeld of large-scale
-                               comparison of cross-linguistic data, which contributed to the CLDF speciﬁcation.
+                                  These events formed a group representing the main institutions in the small field of large-scale
+                               comparison of cross-linguistic data, which contributed to the CLDF specification.
                                   When a Linguistics Data Interest Group was endorsed by Research Data Alliance (RDA) in 2017,
                                echoing RDA’s call to ‘develop and apply common standards across institutions and domains to ensure
                                greater interoperability across datasets’ in Linguistics, this coincided nicely with the progress of CLDF 1.0.
 
                                Code Availability
-                               The CLDF speciﬁcation is curated using a GitHub repository (cf. https://github.com/cldf/cldf). Released
+                               The CLDF specification is curated using a GitHub repository (cf. https://github.com/cldf/cldf). Released
                                versions are published and archived via Zenodo under the Apache 2.0 license. The current version of the
-                               speciﬁcation is CLDF 1.0.151.
+                               specification is CLDF 1.0.151.
 
 SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                                                                                   8
-www.nature.com/sdata/
+
+===== PDF PAGE 0009 / 0010 | Native =====
+www.nature.com/sdata/
 
 
                                   The pycldf package is maintained in a GitHub repository (cf. https://github.com/cldf/cldf). Released
@@ -517,7 +539,7 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
                                 6. Youn, H. et al. On the universal structure of human lexical semantics. P. Natl. Acad. Sci. USA 113, 1766–1771 (2016).
                                 7. Haynie, H. J. & Bowern, C. Phylogenetic approach to the evolution of color term systems. P. Natl. Acad. Sci. USA 113,
                                    13666–13671 (2016).
-                                8. Gibson, E. et al. Color naming across languages reﬂects color use. P. Natl. Acad. Sci. USA 114, 10785–10790 (2017).
+                                8. Gibson, E. et al. Color naming across languages reflects color use. P. Natl. Acad. Sci. USA 114, 10785–10790 (2017).
                                 9. Bouckaert, R. et al. Mapping the origins and expansion of the Indo-European language family. Science 337, 957–960 (2012).
                                10. Chang, W., Cathcart, C., Hall, D. & Garret, A. Ancestry-constrained phylogenetic analysis support the Indo-European steppe
                                    hypothesis. Language 91, 194–244 (2015).
@@ -539,8 +561,8 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
                                    variation across languages. P. Natl. Acad. Sci. USA 115, 4951–4956 (2018).
                                20. Roberts, S. G., Winters, J. & Chen, K. Future tense and economic decisions: controlling for cultural evolution. PLoS One 10,
                                    e0132145 (2015).
-                               21. Wilkinson, M. D. et al. The FAIR guiding principles for scientiﬁc data management and stewardship. Sci. Data 3, 160018 (2016).
-                               22. Tamburelli, M. & Brasca, L. Revisiting the classiﬁcation of Gallo-Italic: a dialectometric approach. Digit. Scholarsh. Hum 33,
+                               21. Wilkinson, M. D. et al. The FAIR guiding principles for scientific data management and stewardship. Sci. Data 3, 160018 (2016).
+                               22. Tamburelli, M. & Brasca, L. Revisiting the classification of Gallo-Italic: a dialectometric approach. Digit. Scholarsh. Hum 33,
                                    442–455 (2018).
                                23. Saxena, A., Borin, L. In Approaches To Measuring Linguistic Differences eds Borin, L. & Saxena, A. Carving Tibeto-Kanauri by its
                                    joints: using basic vocabulary lists for genetic grouping of languages. (De Gruyter Mouton, 2013).
@@ -553,8 +575,8 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
                                28. Deutsche Forschungsgemeinschaft. Guidelines On The Handling Of Research Data In Biodiversity Research https://is.gd/Oofm6W
                                    (2015).
                                29. European Commission. Directorate-General for Research & Innovation. H2020 Programme: Guidelines to the Rules on Open
-                                   Access to Scientiﬁc Publications and Open Access to Research Data in Horizon 2020 https://is.gd/BUkJLJ (2017).
-                               30. Berez-Kroeker, A. L. et al. Reproducible research in linguistics: a position statement on data citation and attribution in our ﬁeld.
+                                   Access to Scientific Publications and Open Access to Research Data in Horizon 2020 https://is.gd/BUkJLJ (2017).
+                               30. Berez-Kroeker, A. L. et al. Reproducible research in linguistics: a position statement on data citation and attribution in our field.
                                    Linguistics 56, 1–18 (2018).
                                31. xkcd. Standards http://xkcd.com/927/ (2011).
                                32. Stodden, V., Seiler, J. & Ma, Z. An empirical analysis of journal policy effectiveness for computational reproducibility. P. Natl.
@@ -580,14 +602,16 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
 
 
 SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                                                                                                               9
-www.nature.com/sdata/
+
+===== PDF PAGE 0010 / 0010 | Native =====
+www.nature.com/sdata/
 
 
                                43. Gorgolewski, K. J. et al. The brain imaging data structure, a format for organizing and describing outputs of neuroimaging
                                    experiments. Sci. Data 3, 160044 (2016).
-                               44. Wilson, G. et al. Good enough practices in scientiﬁc computing. PLOS. Comput. Biol. 13, e1005510 (2017).
+                               44. Wilson, G. et al. Good enough practices in scientific computing. PLOS. Comput. Biol. 13, e1005510 (2017).
                                45. Fowler, D., Barratt, J. & Walsh, P. Frictionless data: making research data quality visible. Int. J. Digit. Curation 12 (2017).
-                               46. Maddison, D. R., Swofford, D. L. & Maddison, W. P. Nexus: an extensible ﬁle format for systematic information. Syst. Biol 46,
+                               46. Maddison, D. R., Swofford, D. L. & Maddison, W. P. Nexus: an extensible file format for systematic information. Syst. Biol 46,
                                    590–621 (1997).
                                47. Hill, N. & List, J.-M. Challenges of annotation and analysis in computer-assisted language comparison: a case study on burmish
                                    languages. Yearbook of the Poznań, Linguistic Meeting 3, 47–76 (2017).
@@ -619,18 +643,18 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
                                Author Contributions
                                Author R.D.G., R.F., M.C., H.H., M.H., and J.M.L. initiated the CLDF initiative. By making CLDF a key
                                initiative for data handling at the Department of Linguistic and Cultural Evolution (MPI-SHH, Jena), R.
-                               D.G. provided ﬁnancial, administrative, and conceptual support for C.L.D.F. R.F., S.J.G., and J.M.L.
-                               conceptualized the speciﬁcation. R.F. conceptualized and designed the implementation. C.R., R.F., M.C.,
-                               S.J.G., H.H., M.H., J.M.L., and G.K. contributed to the speciﬁcation. R.F. and S.B. wrote the code for the
-                               pycldf package. R.F., J.M.L., and S.G. wrote the ﬁrst draft. C.R., R.F., S.G., G.K., and J.M.L. expanded the
-                               ﬁrst draft. All authors revised the second draft and agree with the ﬁnal version.
+                               D.G. provided financial, administrative, and conceptual support for C.L.D.F. R.F., S.J.G., and J.M.L.
+                               conceptualized the specification. R.F. conceptualized and designed the implementation. C.R., R.F., M.C.,
+                               S.J.G., H.H., M.H., J.M.L., and G.K. contributed to the specification. R.F. and S.B. wrote the code for the
+                               pycldf package. R.F., J.M.L., and S.G. wrote the first draft. C.R., R.F., S.G., G.K., and J.M.L. expanded the
+                               first draft. All authors revised the second draft and agree with the final version.
 
                                Additional Information
                                Competing interests: The authors declare no competing interests.
                                How to cite this article: Forkel, R. et al. Cross-Linguistic Data Formats, advancing data sharing and reuse
                                in comparative linguistics. Sci. Data. 5:180205 doi: 10.1038/sdata.2018.205 (2018).
                                Publisher’s note: Springer Nature remains neutral with regard to jurisdictional claims in published maps
-                               and institutional afﬁliations.
+                               and institutional affiliations.
 
 
                                                 Open Access This article is licensed under a Creative Commons Attribution 4.0 Interna-
@@ -649,4 +673,3 @@ SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                        
 
 
 SCIENTIFIC DATA | 5:180205 | DOI: 10.1038/sdata.2018.205                                                                                                         10
-

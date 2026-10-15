@@ -1,3 +1,9 @@
+# PDF全文文本（UTF-8）
+来源PDF：literature/C/C03_Bates_2015_Fitting_Linear_Mixed_Effects_Models_Using_lme4.pdf
+原PDF SHA-256：a9ae8934fbe46ac4c3a6d333a75c2c815f9d2ed7725d7613ddce1d5a5244bbff
+页码表示PDF文件页序，不自动等同于期刊印刷页码。Native为原文本层，OCR为扫描或低文字页识别；表格、音标、公式与OCR仍须对照PDF。
+
+===== PDF PAGE 0001 / 0048 | Native =====
 JSS                         Journal of Statistical Software
                         October 2015, Volume 67, Issue 1.                    doi: 10.18637/jss.v067.i01
 
@@ -43,7 +49,9 @@ and nonlinear mixed models. In each of these names, the term “mixed” or, mor
 effects”, denotes a model that incorporates both fixed- and random-effects terms in a linear
 predictor expression from which the conditional mean of the response can be evaluated. In this
 paper we describe the formulation and representation of linear mixed models. The techniques
-2                                Linear Mixed Models with lme4
+
+===== PDF PAGE 0002 / 0048 | Native =====
+2                                Linear Mixed Models with lme4
 
 
 used for generalized linear and nonlinear mixed models will be described separately, in a
@@ -91,7 +99,9 @@ lme4 (Section 1.1); introduce the sleepstudy data that will be used as an exampl
 1.1. Linear mixed models
 Just as a linear model is described by the distribution of a vector-valued random response
 variable, Y, whose observed value is yobs , a linear mixed model is described by the distribution
-                               Journal of Statistical Software                                   3
+
+===== PDF PAGE 0003 / 0048 | Native =====
+                               Journal of Statistical Software                                   3
 
 
 of two vector-valued random variables: Y, the response, and B, the vector of random effects.
@@ -141,7 +151,9 @@ per day for subjects in a sleep deprivation study (Belenky et al. 2003). On day 
 had their normal amount of sleep. Starting that night they were restricted to 3 hours of sleep
 per night. The response variable, Reaction, represents average reaction times in milliseconds
 (ms) on a series of tests given each Day to each Subject (Figure 1),
-4                                                                                                                   Linear Mixed Models with lme4
+
+===== PDF PAGE 0004 / 0048 | Native =====
+4                                                                                                                   Linear Mixed Models with lme4
 
                                                                   0 2 4 6 8                                                  0 2 4 6 8                                                        0 2 4 6 8                                                           0 2 4 6 8
 
@@ -234,7 +246,9 @@ to illustrate the theory and practice underlying lmer. However, lmer is capable 
 more complex mixed models to larger data sets. For example, we direct the interested reader
 to RShowDoc("lmerperf", package = "lme4") for examples that more thoroughly exercise
 the performance capabilities of lmer.
-                                 Journal of Statistical Software                                  5
+
+===== PDF PAGE 0005 / 0048 | Native =====
+                                 Journal of Statistical Software                                  5
 
 
 Module                       R function        Description
@@ -280,7 +294,9 @@ and the output module,
 
 R> mkMerMod(rho = environment(devianceFunction), opt = optimizerOutput,
 +    reTrms = parsedFormula$reTrms, fr = parsedFormula$fr)
-6                              Linear Mixed Models with lme4
+
+===== PDF PAGE 0006 / 0048 | Native =====
+6                              Linear Mixed Models with lme4
 
 
                                 2. Formula module
@@ -328,7 +344,9 @@ the second model in Table 2. This model contains no fixed effects, or more accur
 fixed-effects model matrix, X, has zero columns and β has length zero.
 We may also construct models with multiple grouping factors. For example, if the observations
 are grouped by g2, which is nested within g1, then the third formula in Table 2 can be used
-                                Journal of Statistical Software                                 7
+
+===== PDF PAGE 0007 / 0048 | Native =====
+                                Journal of Statistical Software                                 7
 
 
 Formula                        Alternative                            Meaning
@@ -378,7 +396,9 @@ correlation (e.g., fm1) are invariant to additive shifts of the continuous predi
 this case). This invariance breaks down when the correlation is constrained to zero; any shift
 in the predictor will necessarily lead to a change in the estimated correlation, and in the
 likelihood and predictions of the model. For example, we can eliminate the correlation in
-8                                Linear Mixed Models with lme4
+
+===== PDF PAGE 0008 / 0048 | Native =====
+8                                Linear Mixed Models with lme4
 
 
          Symbol          Size
@@ -392,7 +412,7 @@ likelihood and predictions of the model. For example, we can eliminate the corre
          qi = pi `i      Number of columns of the term-wise model matrix, Zi .
          k               Number of random-effects terms.
          mi = pi2+1      Number of covariance parameters for term i.
-                    
+                    
 
          m = i mi        Total number of covariance parameters.
               Pk
@@ -434,7 +454,9 @@ to multiple terms. Tables 3 and 4 summarize the matrices and vectors that determ
 structure of Z and Λθ .
 The expression, r, is a linear model formula that evaluates to an R model matrix, Xi , of
 size n × pi , called the raw random-effects model matrix for term i. A term is said to be a
-                                    Journal of Statistical Software                                           9
+
+===== PDF PAGE 0009 / 0048 | Native =====
+                                    Journal of Statistical Software                                           9
 
 
 scalar random-effects term when pi = 1, otherwise it is vector-valued. For a simple, scalar
@@ -489,7 +511,9 @@ pi columns. The rows in the first block are the rows of Xi multiplied by the 0/1
 frame, ensuring that any expressions for grouping factors have been coerced to factors and any unused levels
 of these factors have been dropped. That is, `i , the number of levels in the grouping factor for the ith
 random-effects term, is well-defined.
-10                                       Linear Mixed Models with lme4
+
+===== PDF PAGE 0010 / 0048 | Native =====
+10                                       Linear Mixed Models with lme4
 
 
 the first column of Ji and similarly for the subsequent blocks. With these definitions we
@@ -556,7 +580,9 @@ Zi> Zi as j=1 Jij Jij >
                                                                                                                   >
 is a pi × pi matrix of all zeros except for a single 1 along the diagonal. Therefore, the cross-products, Xij Xij   ,
 will be added to one of the `i blocks of size pi × pi along the diagonal of Zi> Zi .
-                                 Journal of Statistical Software                                      11
+
+===== PDF PAGE 0011 / 0048 | Native =====
+                                 Journal of Statistical Software                                      11
 
 
 k = 1 (i.e., there is only one random-effects term, and Zi = Z), Z > Z will be block diag-
@@ -597,7 +623,7 @@ The q × q covariance factor, Λθ , is a block diagonal matrix whose ith diagon
 size qi , i = 1, . . . , k. We refer to Λi as the term-wise relative covariance factor. Furthermore,
 Λi is a homogeneous block diagonal matrix with each of the `i lower-triangular blocks on
 the diagonal being a copy of a pi × pi lower-triangular         template matrix, Ti . The covariance
-                                              pi +1
+                                              pi +1
 parameter vector, θ, of length mi = 2 , consists of the elements in the lower triangle of
 Ti , i = 1, . . . , k. To provide a unique representation we require that the diagonal elements of
 the Ti , i = 1, . . . , k be non-negative.
@@ -614,7 +640,9 @@ R> (colIndices <- sequence(1:nc))
 
 R> (template <- sparseMatrix(rowIndices, colIndices,
 +    x = 1 * (rowIndices == colIndices)))
-12                               Linear Mixed Models with lme4
+
+===== PDF PAGE 0012 / 0048 | Native =====
+12                               Linear Mixed Models with lme4
 
 
 3 x 3 sparse Matrix of class "dgCMatrix"
@@ -665,7 +693,9 @@ R> (Lind <- rep(LindTemplate, nl))
  [1] 1 2 4 3 5 6 1 2 4 3 5 6
 
 For example, if we randomly generate a new value for theta,
-                                       Journal of Statistical Software                                             13
+
+===== PDF PAGE 0013 / 0048 | Native =====
+                                       Journal of Statistical Software                                             13
 
 
 R> thetanew <- round(runif(length(theta)), 1)
@@ -697,12 +727,12 @@ natural to define U in terms of B we must write the relationship as in Equation 
 for singular Λθ . The conditional distribution (Equation 2) of the response vector given the
 random effects may now be reformulated as
 
-                                     (Y|U = u) ∼ N (µY|U =u , σ 2 W −1 ),                                     (12)
+                                     (Y|U = u) ∼ N (μY|U =u , σ 2 W −1 ),                                     (12)
 
 where
-                                         µY|U =u = Xβ + ZΛθ u + o                                             (13)
+                                         μY|U =u = Xβ + ZΛθ u + o                                             (13)
 is a vector of linear predictors, which can be interpreted as a conditional mean (or mode).
-Similarly, we also define µU |Y=yobs as the conditional mean (or mode) of the spherical random
+Similarly, we also define μU |Y=yobs as the conditional mean (or mode) of the spherical random
 effects given the observed value of the response vector. Note also that we use the u symbol
 throughout to represent a specific value of the random variable, U.
 
@@ -713,15 +743,17 @@ penalized weighted residual sum-of-squares,
 
                                       r2 (θ, β, u) = ρ2 (θ, β, u) + kuk2 ,                                    (14)
   4
-      N (µ, σ 2 I) distributions are called “spherical” because contours of the probability density are spheres.
-14                                        Linear Mixed Models with lme4
+      N (μ, σ 2 I) distributions are called “spherical” because contours of the probability density are spheres.
+
+===== PDF PAGE 0014 / 0048 | Native =====
+14                                        Linear Mixed Models with lme4
 
        " #
        u
 over     , where
        β
                                                         h              i 2
-                                 ρ2 (θ, β, u) = W 1/2 yobs − µY|U =u                                     (15)
+                                 ρ2 (θ, β, u) = W 1/2 yobs − μY|U =u                                     (15)
 
 is the weighted residual sum-of-squares. This notation makes explicit the fact that r2 and ρ2
 both depend on θ, β, and u. The reason for the word “penalized” is that the term, kuk2 , in
@@ -739,19 +771,19 @@ This pseudo-data approach shows that the PLS problem may also be thought of as a
 least squares
        "         problem
                     #      for an extended response vector, which implies that the minimizing
-         µU |Y=yobs
+         μU |Y=yobs
 value,                , satisfies the normal equations,
              βbθ
 
              "                        #    "                                    #"               #
               θ Z W (yobs − o) = Λθ Z W ZΛθ + I Λθ Z W X
-             Λ>   >               > >            > >                             µU |Y=yobs
+             Λ>   >               > >            > >                             μU |Y=yobs
                                                                                             ,            (17)
               X W (yobs − o)
                 >                    >
                                     X W ZΛθ      X >W X                              βbθ
 
-where µU |Y=yobs is the conditional mean of U given that Y = yobs . Note that this conditional
+where μU |Y=yobs is the conditional mean of U given that Y = yobs . Note that this conditional
 mean depends on θ, although we do not make this dependency explicit in order to reduce
 notational clutter.
 The cross-product matrix in Equation 17 can be Cholesky decomposed,
@@ -766,11 +798,11 @@ We may use this decomposition to rewrite the penalized weighted residual sum-of-
 
                                                                        2                         2
      r2 (θ, β, u) = r2 (θ) + L>
-                              θ (u − µU |Y=yobs ) + RZX (β − βθ )
+                              θ (u − μU |Y=yobs ) + RZX (β − βθ )
                                                              b             + RX (β − βbθ )           ,   (19)
 
 
-where we have simplified notation by writing r2 (θ, βbθ , µU |Y=yobs ) as r2 (θ). This is an im-
+where we have simplified notation by writing r2 (θ, βbθ , μU |Y=yobs ) as r2 (θ). This is an im-
 portant expression in the theory underlying lme4. It relates the penalized weighted residual
 sum-of-squares, r2 (θ, β, u), with its minimum value, r2 (θ). This relationship is useful in
 the next section where we integrate over the random effects, which is required for maximum
@@ -779,7 +811,9 @@ likelihood estimation.
 3.3. Probability densities
 The residual sums-of-squares discussed in the previous section can be used to express various
 probability densities, which are required for maximum likelihood estimation of the linear
-                                         Journal of Statistical Software                                                                15
+
+===== PDF PAGE 0015 / 0048 | Native =====
+                                         Journal of Statistical Software                                                                15
 
 
 mixed model5 ,
@@ -820,7 +854,7 @@ The integral in Equation 24 may be more explicitly written as
 
                                                                                                                    2
                                                                                                                                     (26)
-                                                   − Lθ (u − µU |Y=yobs ) + RZX (β − βθ )
+                                                   − Lθ (u − μU |Y=yobs ) + RZX (β − βθ )
                                         Z              >                              b
                                              exp                                                                        du,
                                                                                                                         
@@ -829,7 +863,7 @@ The integral in Equation 24 may be more explicitly written as
 which can be evaluated with the change of variables,
 
                                    v = L>
-                                        θ (u − µU |Y=yobs ) + RZX (β − βθ ).
+                                        θ (u − μU |Y=yobs ) + RZX (β − βθ ).
                                                                        b                                                             (27)
 
 The Jacobian determinant of the transformation from u to v is |Lθ |. Therefore we are able
@@ -866,7 +900,9 @@ which by the properties of exponential integrands becomes,
 
   5
       These expressions only technically hold at the observed value, yobs , of the response vector, Y.
-16                                  Linear Mixed Models with lme4
+
+===== PDF PAGE 0016 / 0048 | Native =====
+16                                  Linear Mixed Models with lme4
 
 
 3.4. Evaluating and profiling the deviance and the REML criterion
@@ -931,7 +967,9 @@ to the fixed effects (Laird and Ware 1982),
           fY (yobs )dβ =                 exp                      exp                        dβ,       (35)
                                                                                              
                            (2πσ 2 )n/2              2σ 2                     2σ 2
-                                    Journal of Statistical Software                                          17
+
+===== PDF PAGE 0017 / 0048 | Native =====
+                                    Journal of Statistical Software                                          17
 
 
 which can be evaluated with the change of variables,
@@ -989,39 +1027,41 @@ are given as Equation 6 of Henderson Jr. (1982) and would be expressed as
                  "                                   #"                   #       "            #
                      X > X/σ 2    X > Z/σ 2                 βbθ                 X > yobs /σ 2
                                                                               =               ,           (42)
-                     Z > X/σ 2 Z > Z/σ 2 + Σ−1           µB|Y=yobs              Z > yobs /σ 2
+                     Z > X/σ 2 Z > Z/σ 2 + Σ−1           μB|Y=yobs              Z > yobs /σ 2
 
 in our notation (ignoring weights and offsets, without loss of generality). The matrix written
 as R in Henderson Jr. (1982) is σ 2 In in our formulation of the model.
 Bates and DebRoy (2004) modified the PLS equations to
                            "                    #"                #           "        #
-                               Z >Z + Ω Z >X       µB|Y=yobs   X > yobs
+                               Z >Z + Ω Z >X       μB|Y=yobs   X > yobs
                                                              =          ,                                 (43)
                                  X >Z   X >X          βbθ      Z > yobs
-18                                Linear Mixed Models with lme4
 
-                      −1
-where Ωθ = Λ>  θ Λθ     = σ 2 Σ−1 is the relative precision matrix for a given value of θ. They
+===== PDF PAGE 0018 / 0048 | Native =====
+18                                Linear Mixed Models with lme4
+
+                      −1
+where Ωθ = Λ>  θ Λθ     = σ 2 Σ−1 is the relative precision matrix for a given value of θ. They
 also showed that the profiled log-likelihood can be expressed (on the deviance scale) as
 
-                                   |Z > Z + Ω|                              2πr2 (θ)
+                                   |Z > Z + Ω|                              2πr2 (θ)
                                                      !        "                         !#
                    −2L(θ) = log                           + n 1 + log                        .             (44)
-                                        |Ω|                                    n
+                                        |Ω|                                    n
 
 The primary difference between Equation 42 and Equation 43 is the order of the blocks in the
 system matrix. The PLS problem can be solved using a Cholesky factor of the system matrix
 with the blocks in either order. The advantage of using the arrangement in Equation 43
-is to allow for evaluation of the profiled log-likelihood. To evaluate |Z > Z + Ω| from the
+is to allow for evaluation of the profiled log-likelihood. To evaluate |Z > Z + Ω| from the
 Cholesky factor that block must be in the upper-left corner, not the lower right. Also, Z is
 sparse whereas X is usually dense. It is straightforward to exploit the sparsity of Z > Z in the
 Cholesky factorization when the block containing this matrix is the first block to be factored.
 If X > X is the first block to be factored, it is much more difficult to preserve sparsity.
 The main change from the formulation in Bates and DebRoy (2004) to the current formulation
-is the use of a relative covariance factor, Λθ , instead of a relative precision matrix, Ωθ , and
+is the use of a relative covariance factor, Λθ , instead of a relative precision matrix, Ωθ , and
 solving for the mean of U|Y = yobs instead of the mean of B|Y = yobs . This change improves
 stability, because the solution to the PLS problem in Section 3.2 is well-defined when Λθ is
-singular whereas the formulation in Equation 43 cannot be used in these cases because Ωθ
+singular whereas the formulation in Equation 43 cannot be used in these cases because Ωθ
 does not exist.
 It is important to allow for Λθ to be singular because situations where the parameter esti-
 mates, θ,
@@ -1032,31 +1072,31 @@ at such values during the course of the numerical optimization of the criterion.
 Bates and DebRoy (2004) also provided expressions for the gradient of the profiled log-
 likelihood expressed as Equation 44. These expressions can be translated into the current
 formulation. From Equation 34 we can see that (again ignoring weights),
-                                                                           
+                                                                           
                  ∇ (−2L(θ)) = ∇ log(|Lθ |2 ) + ∇ n log(r2 (θ))
-                                                                                   
+                                                                                   
                               = ∇ log(|Λ>  >
                                         θ Z ZΛθ + I|) + n ∇r (θ) /r (θ)
                                                             2      2
                                                                                                            (45)
-                                                                               
+                                                                               
                               = ∇ log(|Λ>  >
                                         θ Z ZΛθ + I|) + ∇r (θ) /(σ ).
                                                           2      c2
 
 The first gradient is easy to express but difficult to evaluate for the general model. The
 individual elements of this gradient are
-                                                                                           
+                                                                                           
       ∂ log(|Λ>                          ∂ Λ>  >
                                             θ Z ZΛθ
               θ Z ZΛθ + I|)
-                 >                                                                     −1
+                 >                                                                     −1
                                 = tr                             Λ>  >
                                                                    θ Z ZΛθ + I
                                                                                               
                  ∂θi                            ∂θi
                                        "                                                          !#       (46)
-                                                   −1
+                                                   −1
                                                                 > ∂Λθ    ∂Λ>
                                 = tr        Lθ L>
                                                 θ          Λ>
@@ -1066,11 +1106,13 @@ individual elements of this gradient are
 
 The second gradient term can be expressed as a linear function of the residual, with individual
 elements of the form
-                         ∂r2 (θ)        ∂Λ>                      
+                         ∂r2 (θ)        ∂Λ>                      
                                  = −2u>    θ
                                              Z > y − ZΛθ u − X βbθ ,                                       (47)
                           ∂θi            ∂θi
-                                    Journal of Statistical Software                                          19
+
+===== PDF PAGE 0019 / 0048 | Native =====
+                                    Journal of Statistical Software                                          19
 
 
 Name/description                      Pseudocode       Math                      Type
@@ -1118,7 +1160,9 @@ lme4pureR and is currently available on Github (https://github.com/lme4/lme4pure
 PLS step I: Update relative covariance factor
 The first step of PLS is to update the relative covariance factor, Λθ , from the current value
 of the covariance parameter vector, θ. The updated Λθ is then used to update the random-
-20                                  Linear Mixed Models with lme4
+
+===== PDF PAGE 0020 / 0048 | Native =====
+20                                  Linear Mixed Models with lme4
 
 
                                      Pseudocode   Math
@@ -1147,8 +1191,8 @@ Fixed-effects coefficients      beta           β (Equation 2)          double v
 Spherical conditional modes     u              u (Section 3.1)         double vector
 Non-spherical conditional       b              b (Equation 2)          double vector
 modes
-Linear predictor                mu             µY|U =u (Equation 13)   double vector
-Weighted residuals              wtres          W 1/2 (yobs − µ)        double vector
+Linear predictor                mu             μY|U =u (Equation 13)   double vector
+Weighted residuals              wtres          W 1/2 (yobs − μ)        double vector
 Penalized weighted residual     pwrss          r2 (θ) (Equation 19)    double
 sum-of-squares
 Twice the log determinant       logDet         log |Lθ |2              double
@@ -1170,7 +1214,9 @@ where mapping is an R function that both accepts and returns a numeric vector. T
 elements of sparse matrix classes in Matrix are stored in a slot called x.
 In the current version of lme4 (1.1-10) the mapping from θ to Λθ is represented as an R
 integer vector, Lind, of indices, so that
-                                Journal of Statistical Software                                 21
+
+===== PDF PAGE 0021 / 0048 | Native =====
+                                Journal of Statistical Software                                 21
 
 
 R> mapping <- function(theta) theta[Lind]
@@ -1219,10 +1265,12 @@ block on the left-hand-side of Equation 18.
 PLS step II: Solve normal equations
 With the new covariance parameters installed in Λθ , the next step is to solve the normal
 equations (Equation 17) for the current estimate of the fixed-effects coefficients, βbθ , and the
-22                                Linear Mixed Models with lme4
+
+===== PDF PAGE 0022 / 0048 | Native =====
+22                                Linear Mixed Models with lme4
 
 
-conditional mode, µU |Y=yobs . We solve these equations using a sparse Cholesky factorization
+conditional mode, μU |Y=yobs . We solve these equations using a sparse Cholesky factorization
 (Equation 18). In a complex model fit to a large data set, the dominant calculation in the
 evaluation of the profiled deviance (Equation 34) or REML criterion (Equation 41) is this
 sparse Cholesky factorization (Equation 18). The factorization is performed in two phases: a
@@ -1239,7 +1287,7 @@ solution proceeds by the following steps,
                                   RX  RX = X > W X − RZX
                                                       >
                                                          RZX                            (50)
-                                    
+                                    
                                 >
                                RX RX βbθ = X > W y − RZX cu                             (51)
                                    L>
@@ -1262,20 +1310,22 @@ the equation (system = "L"). In the assignment to u[], the nesting is reversed i
 return to the original permutation.
 
 PLS step III: Update linear predictor and residuals
-The next step is to compute the linear predictor, µY|U (Equation 13), and the weighted resid-
-uals with new values for βbθ and µB|Y=yobs . In lme4pureR these quantities can be computed
+The next step is to compute the linear predictor, μY|U (Equation 13), and the weighted resid-
+uals with new values for βbθ and μB|Y=yobs . In lme4pureR these quantities can be computed
 as
 
 R> b[] <- as.vector(crossprod(Lambdat, u))
 R> mu[] <- as.vector(crossprod(Zt, b) + X %*% beta + offset)
 R> wtres <- sqrtW * (y - mu)
 
-where b represents the current estimate of µB|Y=yobs .
+where b represents the current estimate of μB|Y=yobs .
 
 PLS step IV: Compute profiled deviance
 Finally, the updated linear predictor and weighted residuals can be used to compute the
 profiled deviance (or REML criterion), which in lme4pureR proceeds as
-                               Journal of Statistical Software                                   23
+
+===== PDF PAGE 0023 / 0048 | Native =====
+                               Journal of Statistical Software                                   23
 
 
 R> pwrss <- sum(wtres^2) + sum(u^2)
@@ -1332,7 +1382,9 @@ compressed sparse row (CSR, Davis 2006, Chapter 2). The CHOLMOD (and, more gener
 the SuiteSparse package of C libraries; Davis et al. 2015) uses the CSC storage format. In
 this format the nonzero elements in a column are in adjacent storage locations and access to
 all the elements in a column is much easier than access to those in a row (similar to dense
-24                               Linear Mixed Models with lme4
+
+===== PDF PAGE 0024 / 0048 | Native =====
+24                               Linear Mixed Models with lme4
 
 
 matrices stored in column-major order).
@@ -1385,7 +1437,9 @@ very small numerical range of values).
 The requirement for optimizers that can handle box constraints stems from our decision to
 parameterize the variance-covariance matrix in a constrained space, in order to allow for
 singular fits. In contrast to the approach taken in the nlme package (Pinheiro et al. 2015),
-                                Journal of Statistical Software                                 25
+
+===== PDF PAGE 0025 / 0048 | Native =====
+                                Journal of Statistical Software                                 25
 
 
 which goes to some lengths to use an unconstrained variance-covariance parameterization
@@ -1430,16 +1484,18 @@ cross-product of the model matrix, times the residual variance (Chambers 1993). 
 cross-product matrix is computed by first inverting the upper triangular matrix resulting from
 the QR decomposition of the model matrix, and then taking its cross-product,
                          "             #!            "             #−1 "           #−1
-                          µU |Y=yobs                     L>  RZX        Lθ    0
+                          μU |Y=yobs                     L>  RZX        Lθ    0
                 Varθ,σ                      =σ   2         θ
                                                                          >     >         .   (53)
                               β̂                          0  RX        RZX   RX
-26                                Linear Mixed Models with lme4
+
+===== PDF PAGE 0026 / 0048 | Native =====
+26                                Linear Mixed Models with lme4
 
 
 Because of "normality, #!
                         the marginal covariance matrix of β̂ is just the lower-right p-by-p block
-             µU |Y=yobs
+             μU |Y=yobs
 of Varθ,σ                  . This lower-right block is
                  β̂
 
@@ -1486,7 +1542,9 @@ fixed-effects coefficients and the residual standard deviation, both of which ar
 to users, are profiled out (in the sense used above) of the deviance function (Section 3.4), so
 we have to find a strategy for estimating the deviance for values of β and σ 2 other than the
 profiled values.
-                                Journal of Statistical Software                                  27
+
+===== PDF PAGE 0027 / 0048 | Native =====
+                                Journal of Statistical Software                                  27
 
 
 To handle the first problem we create a new version of the deviance function that first takes
@@ -1528,14 +1586,16 @@ until a sufficiently large deviation from the minimum deviance is attained. lme4
 chooses a cutoff φ based on the 1 − αmax critical value of the χ2 distribution with a number
 of degrees of freedom equal to the total number of parameters in the model, where αmax is
 set to 0.05 by default. The profile computation initially adjusts the focal parameter pi by
-an amount  = 1.01p̂i from its ML or REML estimate p̂i (or by  = 0.001 if p̂i is zero, as
+an amount  = 1.01p̂i from its ML or REML estimate p̂i (or by  = 0.001 if p̂i is zero, as
 in the case of a singular variance-covariance model). The local slope of the likelihood profile
-(ζ(p̂i + ) − ζ(p̂i ))/ is used to pick the next point to evaluate, extrapolating the local slope
-to find a new  that would be expected to correspond to the desired step size ∆ζ (equal to
+(ζ(p̂i + ) − ζ(p̂i ))/ is used to pick the next point to evaluate, extrapolating the local slope
+to find a new  that would be expected to correspond to the desired step size ∆ζ (equal to
 φ/8 by default, so that 16 points would be used to cover the profile in both directions if the
 log-likelihood surface were exactly quadratic). Some fail-safe testing is done to ensure that
 the step chosen is always positive, and less than a maximum; if a deviance is ever detected
-28                               Linear Mixed Models with lme4
+
+===== PDF PAGE 0028 / 0048 | Native =====
+28                               Linear Mixed Models with lme4
 
 
 that is lower than that of the ML deviance, which can occur if the initial fit was wrong due
@@ -1566,17 +1626,17 @@ unknown.
 Given this simplified linear mixed model, a standard result in Bayesian linear regression mod-
 eling (Gelman et al. 2013) implies that the conditional distribution of the spherical random
 effects given the observed response vector is Gaussian,
-                             (U|Y = yobs ) ∼ N (µU |Y=yobs , σ
+                             (U|Y = yobs ) ∼ N (μU |Y=yobs , σ
                                                              b 2 V ),                      (55)
-where                                             −1          >          
+where                                             −1          >          
                        V = Λ>      >
                                 b Z W ZΛθb + Iq          = L−1          L−1                (56)
                                θ                            θ
                                                             b            θ
                                                                          b
 is the unscaled conditional variance and
-                                                                       
-                          µU |Y=yobs = V Λ>  >
+                                                                       
+                          μU |Y=yobs = V Λ>  >
                                           b Z W yobs − o − X β
                                                              b                             (57)
                                            θ
@@ -1592,24 +1652,26 @@ ance matrix of B may be expressed as
 The hat matrix
 The hat matrix, H, is a useful object in linear model diagnostics (Cook and Weisberg 1982).
 In general, H relates the observed and fitted response vectors, but we specifically define it as
-                                  Journal of Statistical Software                             29
+
+===== PDF PAGE 0029 / 0048 | Native =====
+                                  Journal of Statistical Software                             29
 
 
-                                                   
-                                      µY|U =u − o = H (yobs − o) .                         (59)
+                                                   
+                                      μY|U =u − o = H (yobs − o) .                         (59)
 To find H we note that
                                                              "            #
-                                                  h       i µ
+                                                  h       i μ
                                                                 U |Y=yobs
-                                µY|U =u − o = ZΛ          X                 .              (60)
+                                μY|U =u − o = ZΛ          X                 .              (60)
                                                                    βb   θ
                                   "             #
-                              µ
+                              μ
 Next we get an expression for U |Y=y obs
                                          by solving the normal equations (Equation 17),
                                  βbθ
            "            #   "              #−1 "                #−1 "       #
-             µU |Y=yobs   L>  RZX                    Lθ    0        Λ>
+             μU |Y=yobs   L>  RZX                    Lθ    0        Λ>
                                                                      θZ
                                                                          >
                         =   θ
@@ -1618,7 +1680,7 @@ Next we get an expression for U |Y=y obs
                  b         0  RX                    RZX   RX         X
 
 By the Schur complement identity (Horn and Zhang 2005),
-                    "              #−1         −1             −1           
+                    "              #−1         −1             −1           
                         L>  RZX               L>          − L>               −1
                                                                         RZX RX
                           θ              =    θ             θ                     .      (62)
@@ -1662,7 +1724,9 @@ effects term (Days | Subject) and add a new term with a random intercept,
 
 R> fm3 <- update(fm1, . ~ . - (Days | Subject) + (1 | Subject))
 R> formula(fm3)
-30                                 Linear Mixed Models with lme4
+
+===== PDF PAGE 0030 / 0048 | Native =====
+30                                 Linear Mixed Models with lme4
 
 
 Generic            Brief description of return value
@@ -1712,7 +1776,9 @@ The summary method for ‘merMod’ objects provides information about the model
 we consider the output of summary(fm1) in four steps. The first few lines of output indicate
 that the model was fitted by REML as well as the value of the REML criterion (Equation 39)
 at convergence (which may also be extracted using REMLcrit(fm1)). The beginning of the
-                               Journal of Statistical Software                               31
+
+===== PDF PAGE 0031 / 0048 | Native =====
+                               Journal of Statistical Software                               31
 
 
 summary also reproduces the model formula and the scaled Pearson residuals,
@@ -1765,7 +1831,9 @@ R> as.data.frame(VarCorr(fm1))
 2 Subject        Days <NA> 35.071661 5.92213312
 3 Subject (Intercept) Days   9.604306 0.06555113
 4 Residual       <NA> <NA> 654.941028 25.59181564
-32                               Linear Mixed Models with lme4
+
+===== PDF PAGE 0032 / 0048 | Native =====
+32                               Linear Mixed Models with lme4
 
 
 which contains one row for each variance or covariance parameter. The grp column gives
@@ -1816,7 +1884,9 @@ In addition to these standard diagnostic plots, which examine the validity of va
 tions (linearity, homoscedasticity, normality) at the level of the residuals, one can also use
 the dotplot and qqmath methods for the conditional modes (i.e., ‘ranef.mer’ objects gen-
 erated by ranef(fit)) to check for interesting patterns and normality in the conditional
-                                Journal of Statistical Software                                33
+
+===== PDF PAGE 0033 / 0048 | Native =====
+                                Journal of Statistical Software                                33
 
 
 modes. lme4 does not provide influence diagnostics, but these (and other useful diagnostic
@@ -1866,7 +1936,9 @@ tion 18) associated with the ith fixed-effects term. Then the sum of squares for
 
                                       SS i = βb> Ri> Ri β.
                                                         b                                  (67)
-34                               Linear Mixed Models with lme4
+
+===== PDF PAGE 0034 / 0048 | Native =====
+34                               Linear Mixed Models with lme4
 
 
 If DF i is the number of columns in Ri , then the F statistic for term i is
@@ -1917,7 +1989,9 @@ the package does not provide them (except via parametric bootstrapping, Section 
 have provided a help page to guide users in finding appropriate methods:
 
 R> help("pvalues")
-                                Journal of Statistical Software                                 35
+
+===== PDF PAGE 0035 / 0048 | Native =====
+                                Journal of Statistical Software                                 35
 
 
 This help page provides pointers to other packages that provide machinery for calculating
@@ -1966,7 +2040,9 @@ zeta functions (Section 5.1) and other related quantities.
     Bates and Watts (1988, Chapter 6). The profile pairs plot shows two-dimensional 50%,
     80%, 90%, 95% and 99% marginal confidence regions based on the likelihood ratio, as
     well as the profile traces, which indicate the conditional estimates of each parameter
-36                                       Linear Mixed Models with lme4
+
+===== PDF PAGE 0036 / 0048 | Native =====
+36                                       Linear Mixed Models with lme4
 
                      σ                                    (Intercept)                             Days
 
@@ -2030,7 +2106,9 @@ model; if re.form is ~ 0 or NA, then the predictions are made at the population 
 random-effects values set to zero). In models with multiple random effects, the user can give
 re.form as a formula that specifies which random effects are conditioned on.
 lme4 also provides a simulate method, which allows similar flexibility in conditioning on
-                                                                          Journal of Statistical Software                                                                                                                                37
+
+===== PDF PAGE 0037 / 0048 | Native =====
+                                                                          Journal of Statistical Software                                                                                                                                37
 
                                                      σ                                                                           (Intercept)                                                                    Days
 
@@ -2106,7 +2184,9 @@ We have learned much about linear mixed models in the process of developing lme4
 our own attempts to develop robust and reliable procedures and from the broad community
 of lme4 users; we have attempted to describe many of these lessons here. In moving forward,
 our main priorities are (1) to maintain the reference implementation of lme4 on the Compre-
-38                                         Linear Mixed Models with lme4
+
+===== PDF PAGE 0038 / 0048 | Native =====
+38                                         Linear Mixed Models with lme4
 
                                                                                                16
                                                                                                14
@@ -2170,7 +2250,9 @@ Højsgaard participated in useful discussions and Xi Xia and Christian Zingg exe
 and reported problems. We would like to thank the Banff International Research Station for
 hosting a working group on lme4, and an NSERC Discovery grant and NSERC postdoctoral
 fellowship for funding.
-                               Journal of Statistical Software                               39
+
+===== PDF PAGE 0039 / 0048 | Native =====
+                               Journal of Statistical Software                               39
 
 
                                       References
@@ -2212,7 +2294,9 @@ Chen Y, Davis TA, Hager WW, Rajamanickam S (2008). “Algorithm 887: CHOLMOD,
 Chung Y, Rabe-Hesketh S, Dorie V, Gelman A, Liu J (2013). “A Nondegenerate Penalized
   Likelihood Estimator for Variance Parameters in Multilevel Models.” Psychometrika, 78(4),
   685–709.
-40                               Linear Mixed Models with lme4
+
+===== PDF PAGE 0040 / 0048 | Native =====
+40                               Linear Mixed Models with lme4
 
 
 Cook RD, Weisberg S (1982). Residuals and Influence in Regression. Chapman and Hall,
@@ -2266,9 +2350,11 @@ Kenward MG, Roger JH (1997). “Small Sample Inference for Fixed Effects from Re
  Maximum Likelihood.” Biometrics, 53(3), 983–997. doi:10.2307/2533558.
 
 Khatri CG, Rao CR (1968). “Solutions to Some Functional Equations and Their Applications
- to Characterization of Probability Distributions.” Sankhyā: The Indian Journal of Statistics
+ to Characterization of Probability Distributions.” Sankhyā: The Indian Journal of Statistics
  A, 30(2), 167–180.
-                              Journal of Statistical Software                                  41
+
+===== PDF PAGE 0041 / 0048 | Native =====
+                              Journal of Statistical Software                                  41
 
 
 Klein K, Neira J (2013). “Nelder-Mead Simplex Optimization Routine for Large-Scale Prob-
@@ -2320,7 +2406,9 @@ Vaida F, Blanchard S (2005). “Conditional Akaike Information for Mixed-Effects
 
 Wood S, Scheipl F (2014). gamm4: Generalized Additive Mixed Models Using mgcv and lme4.
  R package version 0.2-3, URL http://CRAN.R-project.org/package=gamm4.
-42                                 Linear Mixed Models with lme4
+
+===== PDF PAGE 0042 / 0048 | Native =====
+42                                 Linear Mixed Models with lme4
 
 
                            A. Modularization examples
@@ -2369,7 +2457,9 @@ R> head(dat)
 4           1 1.5952808 -1.1855604 -1.9348085
 5           1 0.3295078 -0.5004395 1.0386957
 6           1 -0.8204684 -0.5249887 -0.2835501
-                                Journal of Statistical Software                                  43
+
+===== PDF PAGE 0043 / 0048 | Native =====
+                                Journal of Statistical Software                                  43
 
 
 The initial parameters for this model may be obtained using mkParsTemplate.
@@ -2422,7 +2512,9 @@ R> cor(t(sapply(lmList(formLm, dat), coef)))
 (Intercept)      1.0000000 0.52889639 0.42648559
 explVar1         0.5288964 1.00000000 0.06094783
 explVar2         0.4264856 0.06094783 1.00000000
-44                              Linear Mixed Models with lme4
+
+===== PDF PAGE 0044 / 0048 | Native =====
+44                              Linear Mixed Models with lme4
 
 
 This lmList function computes ordinary linear models for each level of the grouping factor.
@@ -2476,7 +2568,9 @@ the deviance function as follows.
 R> devfWrap <- function(phi) devf(phiToTheta(phi))
 
 Finally, we optimize the deviance function,
-                               Journal of Statistical Software                                 45
+
+===== PDF PAGE 0045 / 0048 | Native =====
+                               Journal of Statistical Software                                 45
 
 
 R> opt <- bobyqa(par = lf$reTrms$theta[-5], fn = devfWrap,
@@ -2524,7 +2618,9 @@ and Scheipl 2014). In particular, the strategy involves the following steps:
   4. Fit the resulting model using the remaining modularized functions (Table 1).
 
 Here we illustrate this general strategy using a simple simulated data set,
-46                                        Linear Mixed Models with lme4
+
+===== PDF PAGE 0046 / 0048 | Native =====
+46                                        Linear Mixed Models with lme4
 
 
                    1.0                        ●
@@ -2610,7 +2706,9 @@ We now insert a spline basis into the parsedFormula object,
 
 R> parsedFormula$reTrms <- within(parsedFormula$reTrms, {
 +    Bt <- t(as.matrix(Bstatistical))[]
-                                      Journal of Statistical Software                                                                         47
+
+===== PDF PAGE 0047 / 0048 | Native =====
+                                      Journal of Statistical Software                                                                         47
 
 
                    1.0                         ●
@@ -2694,7 +2792,9 @@ Fixed Effects:
 Computing the fitted values of this additive model requires some custom code, and illustrates
 the general principle that methods for ‘merMod’ objects constructed from modular fits should
 only be used if the user knows what she is doing,
-48                                Linear Mixed Models with lme4
+
+===== PDF PAGE 0048 / 0048 | Native =====
+48                                Linear Mixed Models with lme4
 
 
 R> xNew <- seq(min(x), max(x), length = 100)
@@ -2743,4 +2843,3 @@ Journal of Statistical Software                              http://www.jstatsof
 published by the Foundation for Open Access Statistics         http://www.foastat.org/
 October 2015, Volume 67, Issue 1                                   Submitted: 2014-06-30
 doi:10.18637/jss.v067.i01                                           Accepted: 2015-01-23
-

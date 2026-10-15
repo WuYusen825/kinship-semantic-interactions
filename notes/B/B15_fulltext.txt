@@ -1,3 +1,9 @@
+# PDF全文文本（UTF-8）
+来源PDF：literature/B/B15_Mollica_2021_The_forms_and_meanings_of_grammatical_markers_support_efficient_communication.pdf
+原PDF SHA-256：c16d2ae3ee96f5274413d71374c9a5e53ad101e4125ebb289ac2619f29f21071
+页码表示PDF文件页序，不自动等同于期刊印刷页码。Native为原文本层，OCR为扫描或低文字页识别；表格、音标、公式与OCR仍须对照PDF。
+
+===== PDF PAGE 0001 / 0011 | Native =====
 UC Berkeley
 UC Berkeley Previously Published Works
 
@@ -33,8 +39,10 @@ Peer reviewed
 
  eScholarship.org                            Powered by the California Digital Library
                                                              University of California
-The forms and meanings of grammatical markers
-support efﬁcient communication
+
+===== PDF PAGE 0002 / 0011 | Native =====
+The forms and meanings of grammatical markers
+support efficient communication
 Francis Mollicaa,1 , Geoff Baconb , Noga Zaslavskyc,d , Yang Xue , Terry Regierb,f , and Charles Kempg
 a
  Institute for Language, Cognition and Computation, School of Informatics, University of Edinburgh, Edinburgh EH8 9LE, United Kingdom; b Department
@@ -118,7 +126,9 @@ refers to the location of an event in time (e.g., past, present, and          Pu
 
 
 PNAS 2021 Vol. 118 No. 49 e2025993118                                                                          https://doi.org/10.1073/pnas.2025993118                1 of 10
-with all of these research strands but formally bridges them by                 informativeness) and complexity (the inverse of simplicity). We
+
+===== PDF PAGE 0003 / 0011 | Native =====
+with all of these research strands but formally bridges them by                 informativeness) and complexity (the inverse of simplicity). We
 providing an integrated account of both grammatical feature                     then provide an overview of number, tense, and evidentiality
 values and the forms used to express them.                                      across languages and introduce the typological data that we
    The information-theoretic framework that we use formalizes                   analyze. The first set of analyses focuses on meaning and
@@ -141,11 +151,11 @@ simplicity in information-theoretic terms. Within this framework,               
 the simplicity dimension connects naturally with the notion of                  in U. To summarize this mental state the speaker generates a
 coding efficiency from the literature on grammatical marking (6,                linguistic form f according to an encoder q(f |s), which maps
 16). We will therefore argue that the trade-off between infor-                  speaker distributions into forms. Upon receiving this form, the
-mativeness and simplicity helps to explain both which feature                   listener computes a distribution ŝ that is intended to approximate
-values are attested across languages and the relative lengths of                the speaker distribution s. We assume that this distribution ŝ
+mativeness and simplicity helps to explain both which feature                   listener computes a distribution ŝ that is intended to approximate
+values are attested across languages and the relative lengths of                the speaker distribution s. We assume that this distribution ŝ
 the linguistic realizations of these feature values.                            is computed by carrying out Bayesian inference based on the
    The next section introduces our theoretical framework and                    encoder q(f |s) and a prior p(s) over speaker distributions, which
-provides formal definitions of information loss (the inverse of                 gives the optimal ŝ (14). The prior reflects communicative need
+provides formal definitions of information loss (the inverse of                 gives the optimal ŝ (14). The prior reflects communicative need
 
 
 
@@ -158,7 +168,9 @@ evidentiality. (Bottom) Priors p(s) on the three sets of speaker distributions.
 
 2 of 10   PNAS                                                                                                                                   Mollica et al.
           https://doi.org/10.1073/pnas.2025993118                              The forms and meanings of grammatical markers support efficient communication
-or the relative frequency with which speakers communicate about                    Given this theoretical framework, we can ask whether attested
+
+===== PDF PAGE 0004 / 0011 | Native =====
+or the relative frequency with which speakers communicate about                    Given this theoretical framework, we can ask whether attested
 different states of the world (8, 29, 30).                                      grammatical feature inventories achieve near-optimal trade-offs
    An optimal encoder q(f |s) should satisfy two criteria: it should            between complexity and information loss. For any given feature,
 allow the listener to accurately reconstruct the speaker’s mental               applying the framework requires three components to be spec-
@@ -170,13 +182,13 @@ form (or realization) f. For number in English, there are two such              
 pairs: (SINGULAR, ∅) and (PLURAL, “-s”), where the empty set ∅                  achieve optimal trade-offs between complexity and information
 indicates that the singular is zero-marked, or realized without                 loss (14, 32).
 an overt form. Given this representation we can decompose
-the encoder q(f |s) into a meaning encoder qm (m|s) that maps                   Efﬁciency of Form. We now consider the mapping qf from mean-
+the encoder q(f |s) into a meaning encoder qm (m|s) that maps                   Efficiency of Form. We now consider the mapping qf from mean-
 speaker distributions into meanings and a form encoder qf (f |m)                ings to forms, or strings of phonemes. Because this mapping is
 that maps meanings into forms. This two-stage encoding process                  assumed to be lossless, efficiency is purely a matter of minimizing
 is illustrated in Fig. 1 and is used in the following sections to               expected form length. The entropy H (M ) gives a lower bound
 develop analyses that focus on efficiency of meaning and analyses               on expected form length (27), and an efficient mapping qf is
 that focus on efficiency of form.                                               expected to assign a form to meaning m that has length close to
-   The meaning encoder qm is lossy, but for simplicity we assume                                                      
+   The meaning encoder qm is lossy, but for simplicity we assume                                                      
 that the form encoder qf is lossless, which means that the listener                       h(m) = − log p(m) = log          qm (m|s)p(s).            [3]
 is able to reconstruct the meaning m without error given the                                                           s
 form f. In reality this assumption does not hold. Languages
@@ -197,7 +209,7 @@ historical emergence of grammatical forms (31). Assuming that                   
 qf is lossless, however, is a natural starting point given the cross-           ertheless reflect a pressure toward brevity. Eq. 3 suggests that
 linguistic data available to us.                                                shorter forms should be used for more frequent meanings, and
                                                                                 we will examine whether this inverse relationship between form
-Efﬁciency of Meaning. An efficient encoder qm achieves an op-                   length and frequency holds in our data.
+Efficiency of Meaning. An efficient encoder qm achieves an op-                   length and frequency holds in our data.
 timal trade-off between complexity and information loss (the                       Previous work on grammatical marking (11, 36) and the lexicon
 inverse of informativeness). Following ref. 14, the formal defi-                (4, 10, 37) has emphasized the notion of coding efficiency and
 nitions of complexity and information loss are grounded in the                  has demonstrated that forms tend to be paired with meanings
@@ -216,15 +228,15 @@ H (M |S ).                                                                      
    The informativeness of an encoder is negatively related to the               maximally uninformative (i.e., the information loss in Eq. 2 is
 expected information loss associated with each communicative                    maximized). The pressure toward minimizing code lengths must
 interaction. Following refs. 12 and 14, we define this information              therefore trade off against a pressure toward informative com-
-loss as the expected Kullback–Leibler divergence KL(s||ŝ) be-                  munication (41). This trade-off is especially clear for determin-
+loss as the expected Kullback–Leibler divergence KL(s||ŝ) be-                  munication (41). This trade-off is especially clear for determin-
 tween the speaker distribution s and the listener’s reconstruction              istic encoders qm , for which the complexity measure in Eq. 1
-ŝ of that distribution:                                                        is equivalent to the entropy H (M ). Most (but not all) of the
-                                                                               grammatical feature systems that we analyze are deterministic to
-            E [KL[S ||Ŝ ]] =   p(s)qm (m|s)KL[s||ŝm ],       [2]
+ŝ of that distribution:                                                        is equivalent to the entropy H (M ). Most (but not all) of the
+                                                                               grammatical feature systems that we analyze are deterministic to
+            E [KL[S ||Ŝ ]] =   p(s)qm (m|s)KL[s||ŝm ],       [2]
                                                                                 a good first approximation: for example, in the English number
                               s,m
                                                                                 system the singular is consistently used for individual items, and
-where ŝm is the reconstructed distribution for occasions on which              the plural is consistently used for multiple items.
+where ŝm is the reconstructed distribution for occasions on which              the plural is consistently used for multiple items.
 the speaker chooses meaning m.
    Every possible mapping from speaker distributions to mean-                   Framework Instantiations
 ings corresponds to a point in a two-dimensional space where                    Now that we have introduced our general theoretical framework,
@@ -242,7 +254,9 @@ loss cannot be reduced without increasing complexity.                           
 
 Mollica et al.                                                                                                                           PNAS     3 of 10
 The forms and meanings of grammatical markers support efficient communication                                    https://doi.org/10.1073/pnas.2025993118
-Table 1.   Example inventories for grammatical number, tense, and evidentiality
+
+===== PDF PAGE 0005 / 0011 | Native =====
+Table 1.   Example inventories for grammatical number, tense, and evidentiality
                                                                                                                                  Information Frontier    Form
               Language                                                System                                      Complexity         loss    distance correlation
 Number        Pirahã                                              (GENERAL, ∅)                                          0.00          1.44         0.00          NA
@@ -347,7 +361,9 @@ and the more important question is the extent to which our                      
 
 4 of 10    PNAS                                                                                                                                      Mollica et al.
            https://doi.org/10.1073/pnas.2025993118                                 The forms and meanings of grammatical markers support efficient communication
-legend). The main challenge in coding number systems is that                            (see SI Appendix, Table S1, for the complete list) to distribute
+
+===== PDF PAGE 0006 / 0011 | Native =====
+legend). The main challenge in coding number systems is that                            (see SI Appendix, Table S1, for the complete list) to distribute
 indeterminate meanings (paucal, 3 to 6; plural, >2; greater pau-                        probability mass among the three levels of remoteness within
 cal, 6 to 8; greater plural, >9) vary slightly across languages.                        both past and future categories. All frequencies were derived
 For example, we code plural in Murrinh-Patha as greater than                            from the Google Ngram English corpus (59) for 1985, the year of
@@ -430,7 +446,9 @@ ral adverbs such as “yesterday,” “last week,” and “last month”      
 
 Mollica et al.                                                                                                                                   PNAS     5 of 10
 The forms and meanings of grammatical markers support efficient communication                                            https://doi.org/10.1073/pnas.2025993118
-λ = 0.1. The resulting speaker distributions are shown in Fig. 1,               Encoders that achieve optimal trade-offs between information
+
+===== PDF PAGE 0007 / 0011 | Native =====
+λ = 0.1. The resulting speaker distributions are shown in Fig. 1,               Encoders that achieve optimal trade-offs between information
 Right Center.                                                                   loss and complexity lie along the Pareto frontier, shown here
    Although evidentiality occurs in around a quarter of the                     as a solid line, and the dark gray region below the curve shows
 world’s languages, few corpora are available for languages with                 trade-offs that are impossible to achieve. Attested inventories
@@ -481,7 +499,9 @@ optimal trade-offs lie along the Pareto frontier (solid line), and the shaded re
 
 6 of 10   PNAS                                                                                                                                  Mollica et al.
           https://doi.org/10.1073/pnas.2025993118                             The forms and meanings of grammatical markers support efficient communication
-these trajectories and shows that they recapitulate some patterns               zero-marking can be partially predicted by the information loss
+
+===== PDF PAGE 0008 / 0011 | Native =====
+these trajectories and shows that they recapitulate some patterns               zero-marking can be partially predicted by the information loss
 previously identified by work in linguistic typology. Following                 of the meaning encoding system. When information loss is high,
 (67), these patterns are often formulated as universal constraints              zero-marking provides relatively large reductions in expected
 on possible systems: for example, one such universal states that                length and is relatively likely to be used. In contrast, systems with
@@ -562,7 +582,9 @@ in an attested system, and gray dots show possible but unattested systems.      
 
 Mollica et al.                                                                                                                            PNAS     7 of 10
 The forms and meanings of grammatical markers support efficient communication                                     https://doi.org/10.1073/pnas.2025993118
-Fig. 4. Analyses of the form of grammatical markers. Relationship between optimal and observed code lengths for a subsample of (Left) number, (Middle)
+
+===== PDF PAGE 0009 / 0011 | Native =====
+Fig. 4. Analyses of the form of grammatical markers. Relationship between optimal and observed code lengths for a subsample of (Left) number, (Middle)
 tense, and (Right) evidentiality systems. Within each language, forms were unit normalized, and the lengths of multiple forms for the same feature value
 within a language were averaged. Gray lines show trend lines for each language, and each colored data point shows an average across all languages that
 include a given feature value. Error bars show SEM, and the vertical error bars occur because of normalization and because the optimal length for a marker
@@ -590,7 +612,7 @@ language learning and use impose pressures toward informa-                     g
 tiveness and simplicity (80–82). On this account, the pressure                 are shown in detail in SI Appendix.
 toward informativeness applies during cooperative language use                 Speaker Distributions. For number, the nth speaker distribution is given by
 (e.g., ref. 83), and the pressure toward simplicity applies during             the analytical form
-language learning (e.g., ref. 84). There is now a sizable body of                                                                         
+language learning (e.g., ref. 84). There is now a sizable body of                                                                         
 evidence in language acquisition showing that learners reshape                                                               p(n)        2
                                                                                                  S(u|n) ∝ p(u) exp       −        (n − u) ,               [4]
 their input to learn languages that are simpler, easier to produce,                                                           λn
@@ -618,7 +640,9 @@ productively applied to our data.                                              i
 
 8 of 10   PNAS                                                                                                                                 Mollica et al.
           https://doi.org/10.1073/pnas.2025993118                            The forms and meanings of grammatical markers support efficient communication
-0.001 increments. For tense, the β schedule was 2x for x from 5 to 0 by 0.001                         ACKNOWLEDGMENTS. We thank Naomi Baes for her meticulous work in
+
+===== PDF PAGE 0010 / 0011 | Native =====
+0.001 increments. For tense, the β schedule was 2x for x from 5 to 0 by 0.001                         ACKNOWLEDGMENTS. We thank Naomi Baes for her meticulous work in
 increments. For evidentiality, the β schedule was 2x for x from 5 to 0 by 0.001                       compiling the number forms. A preliminary version of this work was pre-
 increments.                                                                                           sented at the Annual Meeting of the Cognitive Science Society in 2020. This
                                                                                                       work was supported in part by a Brain and Cognitive Sciences fellowship in
@@ -738,7 +762,9 @@ Open Science Foundation repository (89) at https://osf.io/s5b7h/.               
 
 Mollica et al.                                                                                                                                                              PNAS     9 of 10
 The forms and meanings of grammatical markers support efficient communication                                                                       https://doi.org/10.1073/pnas.2025993118
-70. S. Steinert-Threlkeld, “Quantifiers in natural language optimize the simplic-            79. S. Caplan, J. Kodner, C. Yang, Miller’s monkey updated: Communicative efficiency
+
+===== PDF PAGE 0011 / 0011 | Native =====
+70. S. Steinert-Threlkeld, “Quantifiers in natural language optimize the simplic-            79. S. Caplan, J. Kodner, C. Yang, Miller’s monkey updated: Communicative efficiency
     ity/informativeness trade-off” in Proceedings of the 22nd Amsterdam Colloquium,              and the statistics of words in natural language. Cognition 205, 104466 (2020).
     J. J. Schlöder, D. McHugh, F. Roelofsen, Eds. (Institute for Logic, Language and         80. S. Kirby, M. Tamariz, H. Cornish, K. Smith, Compression and communication in the
     Computation at the University of Amsterdam, 2020), pp. 513–522.
@@ -746,7 +772,7 @@ The forms and meanings of grammatical markers support efficient communication   
 71. Y. Xu, E. Liu, T. Regier, Numeral systems across languages support efficient commu-
     nication: From approximate numerosity to recursion. Open Mind (Camb.) 4, 57–70           81. A. Carstensen, J. Xu, C. Smith, T. Regier, “Language evolution in the lab tends toward
     (2020).                                                                                      informative communication” in Proceedings of the 37th Annual Meeting of the
-72. M Denić, S Steinert-Threlkeld, J Szymanik, “Complexity/informativeness trade-off            Cognitive Science Society, D. C. Noelle et al., Eds. (Cognitive Science Society, 2015),
+72. M Denić, S Steinert-Threlkeld, J Szymanik, “Complexity/informativeness trade-off            Cognitive Science Society, D. C. Noelle et al., Eds. (Cognitive Science Society, 2015),
     in the domain of indefinite pronouns” in Semantics and Linguistic Theory 2020,               pp. 303–308.
     J. Rhyne, K. Lamp, N. Dreier, C. Kwon, Eds. (Linguistic Society of America, 2020),       82. J. W. Carr, K. Smith, J. Culbertson, S. Kirby, Simplicity and informativeness in semantic
     pp. 166–184.                                                                                 category systems. Cognition 202, 104289 (2020).
@@ -779,4 +805,3 @@ The forms and meanings of grammatical markers support efficient communication   
 
 10 of 10     PNAS                                                                                                                                             Mollica et al.
              https://doi.org/10.1073/pnas.2025993118                                        The forms and meanings of grammatical markers support efficient communication
-

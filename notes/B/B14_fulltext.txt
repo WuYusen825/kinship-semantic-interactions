@@ -1,3 +1,9 @@
+# PDF全文文本（UTF-8）
+来源PDF：literature/B/B14_Mollica_2022_Logical_word_learning_The_case_of_kinship.pdf
+原PDF SHA-256：e251b976c00ac33de0825ff0bc8adc53a2eea3eb086f85d38e2e9c07f18c4876
+页码表示PDF文件页序，不自动等同于期刊印刷页码。Native为原文本层，OCR为扫描或低文字页识别；表格、音标、公式与OCR仍须对照PDF。
+
+===== PDF PAGE 0001 / 0034 | Native =====
 Psychonomic Bulletin and Review (2022) 29:766–799
 https://doi.org/10.3758/s13423-021-02017-5
 
@@ -15,7 +21,7 @@ Abstract
 We examine the conceptual development of kinship through the lens of program induction. We present a computational
 model for the acquisition of kinship term concepts, resulting in the first computational model of kinship learning that is
 closely tied to developmental phenomena. We demonstrate that our model can learn several kinship systems of varying
-complexity using cross-linguistic data from English, Pukapuka, Turkish, and Yanomamö. More importantly, the behavioral
+complexity using cross-linguistic data from English, Pukapuka, Turkish, and Yanomamö. More importantly, the behavioral
 patterns observed in children learning kinship terms, under-extension and over-generalization, fall out naturally from
 our learning model. We then conducted interviews to simulate realistic learning environments and demonstrate that the
 characteristic-to-defining shift is a consequence of our learning model in naturalistic contexts containing abstract and
@@ -50,7 +56,7 @@ of the Cognitive Science Society (2015, 2017) and has been shared
                                                                     a partial knowledge of the underlying concept even though
 as a preprint on OSF and the author’s websites.                     they can produce the word and appear to fully understand
                                                                     the word (Clark, 1973; Bloom, 2000). Interestingly, tasks
- Francis Mollica
+ Francis Mollica
                                                                     assessing this partial knowledge have revealed systematic
      mollicaf@gmail.com
                                                                     patterns of word use as children learn the true underlying
@@ -60,7 +66,9 @@ as a preprint on OSF and the author’s websites.                     they can p
 
 
 13
-Psychon Bull Rev (2022) 29:766–799                                                                                                  767
+
+===== PDF PAGE 0002 / 0034 | Native =====
+Psychon Bull Rev (2022) 29:766–799                                                                                                  767
 
 
 referents (Clark, 1973; Kay & Anglin, 1982). For example,                 century of data collection and theorizing by anthropologists
@@ -122,7 +130,9 @@ a family tree.                                                            limita
 
 
                                                                                                                              13
-768                                                                                             Psychon Bull Rev (2022) 29:766–799
+
+===== PDF PAGE 0003 / 0034 | Native =====
+768                                                                                             Psychon Bull Rev (2022) 29:766–799
 
 
 Children’s acquisition of kinship terms                          regarding perspective taking. Nonetheless, an initial period
@@ -181,7 +191,9 @@ model against the specific egocentric claims in the literature   experience with
 
 
 13
-Psychon Bull Rev (2022) 29:766–799                                                                                                 769
+
+===== PDF PAGE 0004 / 0034 | Native =====
+Psychon Bull Rev (2022) 29:766–799                                                                                                 769
 
 
 terms. While experience seems to explain differences in           beyond the ages in which one typically observes patterns of
@@ -242,7 +254,9 @@ icant conceptual development still taking place in kinship        inter-related 
 
 
                                                                                                                            13
-770                                                                                                 Psychon Bull Rev (2022) 29:766–799
+
+===== PDF PAGE 0005 / 0034 | Native =====
+770                                                                                                 Psychon Bull Rev (2022) 29:766–799
 
 
     The earliest computational models of kinship were pri-        relations between individuals and kinship term use to learn
@@ -252,11 +266,11 @@ language, what is the minimal set of features required to dis-    ple, applying 
 tinguish the terms (Goodenough, 1956; Lounsbury, 1956)?           system results in groups of individuals that share “diagnos-
 As Burling (1964) was quick to point out, the componential        tic” kinship relevant feature dimensions such as age and
 analysis of a kinship dataset has many possible solutions.        gender. Katz, Goodman, Kersting, Kemp, and Tenenbaum
-Pericliev and Valdés-Pérez (1998) implemented a model to        (2008) proposed a generative model similar to the IRM but
+Pericliev and Valdés-Pérez (1998) implemented a model to        (2008) proposed a generative model similar to the IRM but
 perform componential analysis that finds all possible solu-       with a richer representation system based in first order logic,
 tions possessing both the smallest number of unique features      Horn Clause Theories. Their model learns each individual’s
 and the shortest feature conjunctions required to define all      kinship relevant properties and the abstract rule govern-
-terms. Proving Burling’s point, Pericliev and Valdés-Pérez      ing how those properties give rise to the kinship relation.
+terms. Proving Burling’s point, Pericliev and Valdés-Pérez      ing how those properties give rise to the kinship relation.
 (1998)’s automated analysis of Bulgarian kinship systems          Katz et al. (2008)’s representation scheme has two advan-
 found two equally complex feature inventories that use dif-       tages over the IRM. First, Horn Clause Theories take into
 ferent features. To complement componential analyses, sev-        account human reasoning in order to be expressed in the
@@ -302,7 +316,9 @@ Yamada, & Ueda, 2006) uses the presence or absence of             implementation
 
 
 13
-Psychon Bull Rev (2022) 29:766–799                                                                                                   771
+
+===== PDF PAGE 0006 / 0034 | Native =====
+Psychon Bull Rev (2022) 29:766–799                                                                                                   771
 
 
 2016; Goodman, Tenenbaum, & Gerstenberg, 2015; Good-             Hypothesis space
@@ -357,7 +373,7 @@ below). We model learning as the movement of probability         of abstraction 
 mass across a hypothesis space as a function of observing        learning, the granularity and span of a hypothesis space depends on the
 data. Following Bayes rule, the posterior probability of a       characterization of the learning problem (Perfors, 2012). Our general
 hypothesis h after observing a set of data points D is:          findings will not strongly depend on any particular base function
-                                                                inventory; however, inventories can make different predictions about
+                                                                inventory; however, inventories can make different predictions about
 P (h|D) ∝ P (h)       P (d|h).                             (1)   the precise pattern and timing of children’s behavior over learning.
                                                                  7 Specifically, Chapais (2014) argue that we are innately predisposed
                    d∈D
@@ -366,7 +382,9 @@ We will discuss each component in turn.                          recognition is 
 
 
                                                                                                                             13
-772                                                                                                        Psychon Bull Rev (2022) 29:766–799
+
+===== PDF PAGE 0007 / 0034 | Native =====
+772                                                                                                        Psychon Bull Rev (2022) 29:766–799
 
 Table 1 The Probabilistic Context Free Grammar (PCFG) specifying the base functions and the rewrite rules that govern their composition. Each
 hypothesis starts with a SET symbol and there are 37 concrete referents in our learning context
@@ -400,7 +418,7 @@ SET −
 
 
 (Goodman et al., 2008; Piantadosi et al., 2012; Ullman,                 language learning, simplicity has been suggested as a
-Goodman, & Tenenbaum, 2012). Briefly, a PCFG is a set                   guiding principle (Chater & Vitányi, 2007) that solves
+Goodman, & Tenenbaum, 2012). Briefly, a PCFG is a set                   guiding principle (Chater & Vitányi, 2007) that solves
 of rewrite rules which describe how functions can compose               the logical problem of acquisition. In kinship specifically,
 while defining a potentially infinite space of possible                 simplicity has previously been proposed as the driving
 compositions. For example, the composition leading to the               factor behind the order of acquisition of kinship terms
@@ -414,7 +432,7 @@ an algorithmic model of how people search this space. In                PCFG sco
 addition to defining the hypothesis space, the PCFG also                over rules (thus each additional rule lower’s a hypothesis’
 provides the prior probability distribution over that space.            prior):
 In this distribution, we weight each rule equally as likely
-                                                                                  
+                                                                                  
 with two exceptions. First to prevent infinite recursion when           P (h) =         P (r),                                             (2)
 generating hypotheses, the speaker, X, is weighted ten times                      r∈h
 as likely as the other rules. Second, we divide the weight
@@ -450,7 +468,9 @@ output.                                                                 learner 
 
 
 13
-Psychon Bull Rev (2022) 29:766–799                                                                                                            773
+
+===== PDF PAGE 0008 / 0034 | Native =====
+Psychon Bull Rev (2022) 29:766–799                                                                                                            773
 
 
 
@@ -519,7 +539,9 @@ alter-centric (e.g., a mother saying daddy is coming) uses                   are
 
 
                                                                                                                                       13
-774                                                                                             Psychon Bull Rev (2022) 29:766–799
+
+===== PDF PAGE 0009 / 0034 | Native =====
+774                                                                                             Psychon Bull Rev (2022) 29:766–799
 
 
 the learner received adequate data that might be obtained        preference for concrete reference—i.e., under-extension,
@@ -572,13 +594,15 @@ Order of Acquisition. In Model Outcomes, we first check          The model learn
 that the model successfully learns the conventionally agreed     as input varies
 upon extension for each kinship term in finite amounts of
 data. We conduct this analysis using four different kinship      We first simulated data for four kinship systems that vary
-systems: Pukapukan, English, Turkish and Yanomamö. We           in descriptive complexity and are common in the languages
-then take a closer look at how the model behaves locally at      of the world: Pukapukan, English, Turkish and Yanomamö.
+systems: Pukapukan, English, Turkish and Yanomamö. We           in descriptive complexity and are common in the languages
+then take a closer look at how the model behaves locally at      of the world: Pukapukan, English, Turkish and Yanomamö.
 the outset of learning to demonstrate how children’s early       Extensions for the kinship terms of these languages are
 
 
 13
-Psychon Bull Rev (2022) 29:766–799                                                                                                            775
+
+===== PDF PAGE 0010 / 0034 | Native =====
+Psychon Bull Rev (2022) 29:766–799                                                                                                            775
 
 
 
@@ -587,14 +611,14 @@ Fig. 2 Average lexicon posterior-weighted accuracy for each word as a function o
 bootstrapped confidence intervals. Insets show the color-coded extension of the terms
 
 provided in the insets of Fig. 2 and Table 2. The Pukapukan                  Figure 2 shows the predicted learning curves for each
-kinship system is six kinship terms that are fully described              kinship term in Pukapuka, English, Turkish and Yanomamö.
+kinship system is six kinship terms that are fully described              kinship term in Pukapuka, English, Turkish and Yanomamö.
 by generation and gender. The English kinship has nine                    The x-axis shows the number of data points for each
 terms that require representing parent/child relations. The               word observed by the child. Note the differences in scale
 Turkish system has fourteen kinship terms with high                       across languages. The y-axis is the probability that a learner
 specificity in the first generation. In addition to requiring             has acquired the conventionally-aligned upon meaning of
 tree moving functions, the Turkish requires separating                    that term—i.e., extends the term appropriately. The shaded
 paternal and maternal brothers and sisters and their spousal              region represents the 95% bootstrapped confidence interval.
-relationships. The Yanomaö system has eight kinship terms                The line for each word is color coded to match the word’s
+relationships. The Yanomaö system has eight kinship terms                The line for each word is color coded to match the word’s
 with a notable distinction between cross-cousins—i.e., the                extension in the inset. Table 2 provides the maximum-a-
 children of parents’ opposite-sex siblings, and parallel-                 posteriori hypotheses learned for each kinship term.
 cousins—i.e., the children of parent’s same-sex siblings.                    While different languages favor different base functions
@@ -602,27 +626,29 @@ Capturing this distinction between cousins is possible with               and re
 the same set of primitives required for Turkish; however,                 successfully learns a set of computations equivalent to the
 the hypothesized concepts would require many primitives to                conventional kinship systems for each of these languages
 be composed. The complexity required for this distinction,                based solely on differences in data input. Further, the model
-however, may be mitigated by its importance to Yanomamö                  learns these kinship systems with fairly few data points, on
+however, may be mitigated by its importance to Yanomamö                  learns these kinship systems with fairly few data points, on
 society, which follows strict bilateral cross-cousin marriages            average between 30 and 50 data points per word learned. As
 and maintains patrilocal residence. When we incorporate                   a back-of-the-envelope feasibility check, if we assumed that
 this important sociocultural information into the hypothesis              an effective data point, following Mollica and Piantadosi
 space via the coresidence primitive, the complexity of                    (2017) arrives on average once every two months, we would
-Yanomamö kinship concepts decreases.10                                   expect the mean age of acquisition to be between 5 and
+Yanomamö kinship concepts decreases.10                                   expect the mean age of acquisition to be between 5 and
 
 10 For ease of computational search, we modified two primitives
 
-used to capture the relations in Yanomamö compared to the other
+used to capture the relations in Yanomamö compared to the other
 kinship systems. Specifically, we exclude “in-laws” when calculating
-generation for Yanomamö but include them for the other cultures.         locally and following strict cross-cousin marriage, a mother’s sisters
-Second, we added a primitive that takes an individual as input and        are likely to live locally to her. Our modifications for Yanomamö was
+generation for Yanomamö but include them for the other cultures.         locally and following strict cross-cousin marriage, a mother’s sisters
+Second, we added a primitive that takes an individual as input and        are likely to live locally to her. Our modifications for Yanomamö was
 returns the set of adults who co-reside with the input individual         motivated primarily by a desire to decrease computational search time.
-only for Yanomamö. Our co-residence primitive is motivated by the        That being said, related-generation and co-residing adults are plausibly
+only for Yanomamö. Our co-residence primitive is motivated by the        That being said, related-generation and co-residing adults are plausibly
 patrilocal residence patterns and prescriptive cross-cousin marriage      noticed by children and would serve as a strong cue for relevant
-in Yanomamö society. Following patrilocality, a father’s brothers live   genealogical relationships in some kinship systems.
+in Yanomamö society. Following patrilocality, a father’s brothers live   genealogical relationships in some kinship systems.
 
 
                                                                                                                                      13
-776                                                                                                                    Psychon Bull Rev (2022) 29:766–799
+
+===== PDF PAGE 0011 / 0034 | Native =====
+776                                                                                                                    Psychon Bull Rev (2022) 29:766–799
 
 Table 2 The maximum-a-posterior (MAP) hypotheses after learning
 
@@ -657,7 +683,7 @@ Turkish           abi                    B                    male(child(parent(
                   kuzen                  PGC , PGEC           difference(generation0(X), child(parent(X)))
                   teyze                  MZ                   difference(difference(female(generation0(female(parent(X)))),X),parent(X))
                   yenge                  PGH                  difference(female(generation1(X)),union(child(parent(parent(X))),parent(X)))
-Yanomamö         amiwa                  Z , FBD , MZD        female(child(coreside(X)))
+Yanomamö         amiwa                  Z , FBD , MZD        female(child(coreside(X)))
                   eiwa                   B , FBS , MZS        male(child(coreside(X)))
                   haya                   F , FB               male(coreside(X))
                   naya                   M , MZ               female(coreside(X))
@@ -679,11 +705,13 @@ We discuss the differences between this model’s predicted                     
 acquisition order and children’s empirical order for English                     draw abstractions over individuals (Clark, 1973; Kay &
 in the Order of Acquisition section. Unfortunately, we could                     Anglin, 1982). This pattern naturally falls out of our model’s
 not find empirical data for the order of acquisition of                          push to explain the data when there are few unique data
-Pukapukan, Turkish and Yanomamö kinship terms.                                  points, suggesting that the preference for using concrete
+Pukapukan, Turkish and Yanomamö kinship terms.                                  points, suggesting that the preference for using concrete
 
 
 13
-Psychon Bull Rev (2022) 29:766–799                                                                                                            777
+
+===== PDF PAGE 0012 / 0034 | Native =====
+Psychon Bull Rev (2022) 29:766–799                                                                                                            777
 
 
 reference is driven by the data observed rather than by                    we plot the probability of abstraction when the model
@@ -725,7 +753,9 @@ prior values of concrete reference, the rise in the probability of abstraction i
 
 
                                                                                                                                      13
-778                                                                                                            Psychon Bull Rev (2022) 29:766–799
+
+===== PDF PAGE 0013 / 0034 | Native =====
+778                                                                                                            Psychon Bull Rev (2022) 29:766–799
 
 
 
@@ -758,7 +788,7 @@ dicting many referents. The model will shift from these                     mode
 simple wide-reaching hypotheses to narrower hypotheses                      We will discuss order effects in the Order of Acquisition
 as it observes more data that can be explained better by a                  section.
 more complicated hypothesis. As a result, the patterns of
-over-extension should be predicted by base functions and                    The characteristic-to-deﬁning shift
+over-extension should be predicted by base functions and                    The characteristic-to-defining shift
 compositions of base functions that increasingly approxi-
 mate the true concept. We provide model predictions of the                  The characteristic-to-defining shift is a prevalent pattern of
 over-extension pattern for each kin term in supplemental                    children’s over-extension. Young children are more likely to
@@ -773,7 +803,9 @@ between base function inventories.                                          simu
 
 
 13
-Psychon Bull Rev (2022) 29:766–799                                                                                                             779
+
+===== PDF PAGE 0014 / 0034 | Native =====
+Psychon Bull Rev (2022) 29:766–799                                                                                                             779
 
 
                                        aunt                        brother                          cousin
@@ -829,7 +861,7 @@ changes in representation or processing might be matura-                        
 tional in nature, such as the development of abstraction                          concepts, as found in our model, and similar to conceptual
 (Piaget & Inhelder, 1969). Alternately, they may be driven                        garden-pathing (Thaker, Tenenbaum, & Gershman, 2017)
 by inductive inference mechanisms operating over observed                         or learning traps (Rich & Gureckis, 2018). We expect our
-data, à la rational constructivism.                                              model to demonstrate a characteristic-to-defining shift only
+data, à la rational constructivism.                                              model to demonstrate a characteristic-to-defining shift only
    From the outset, we can narrow down this space of                              if the characteristic features of the people in the context
 theoretical hypotheses. The characteristic-to-defining shift                      are informative but imperfect in their ability to capture
 is most likely a function of data, not maturation (Keil,                          the underlying concept (by denoting the proper referents).
@@ -838,7 +870,9 @@ single time-point, children should represent all words using                    
 
 
                                                                                                                                       13
-780                                                                                                          Psychon Bull Rev (2022) 29:766–799
+
+===== PDF PAGE 0015 / 0034 | Native =====
+780                                                                                                          Psychon Bull Rev (2022) 29:766–799
 
 
 
@@ -886,7 +920,9 @@ github.com/MollicaF/LogicalWordLearning.                                  sample
 
 
 13
-Psychon Bull Rev (2022) 29:766–799                                                                                                       781
+
+===== PDF PAGE 0016 / 0034 | Native =====
+Psychon Bull Rev (2022) 29:766–799                                                                                                       781
 
 Table 3 Additional rules for the PCFG in Table 1. Now, each hypothesis starts with a START symbol
          1                            1                                           1                                        1
@@ -958,7 +994,9 @@ rule-like definitions have been learned (Lupyan, 2013).                        e
 
 
                                                                                                                                    13
-782                                                                                                                                                                                 Psychon Bull Rev (2022) 29:766–799
+
+===== PDF PAGE 0017 / 0034 | Native =====
+782                                                                                                                                                                                 Psychon Bull Rev (2022) 29:766–799
 
 
                                                                One                                      Two                                 Three                               Four
@@ -1075,7 +1113,9 @@ characteristic-to-defining shift
 
 
 13
-Psychon Bull Rev (2022) 29:766–799                                                                                                            783
+
+===== PDF PAGE 0018 / 0034 | Native =====
+Psychon Bull Rev (2022) 29:766–799                                                                                                            783
 
 Table 4 Best hypotheses for Informant One learning GRANDMA at three different time points
 
@@ -1109,7 +1149,7 @@ kinship terms is not uniform either17 (MacWhinney,                          For 
 2000). Further, CHILDES frequency estimates differ from                  prior (Uniform/Simplicity) and the data distribution (Uni-
 the surveys of Benson and Anglin (1987) and a larger                     form/CHILDES/Zipfian). For each set of assumptions, we
 corpus analysis of kinship term use across Indo-European                 simulated 1000 data sets of 1000 data points from the tree
-languages (Rácz, Passmore, Sheard, & Jordan, 2019), which               in Fig. 1 and ran the learning model with only the base
+languages (Rácz, Passmore, Sheard, & Jordan, 2019), which               in Fig. 1 and ran the learning model with only the base
 finds that frequency decreases as genealogical distance                  primitives to measure the probability that kinship terms are
 increases.18                                                             acquired in a specific order.19
    Following Benson and Anglin (1987)’s surveys, we                         Figure 8 illustrates four possible patterns that we might
@@ -1132,12 +1172,14 @@ learning and found that frequency was not strongly correlated with how
 many effective learning instances children required to learn a word.
 However, frequency was moderately correlated to the rate of effective
 learning instances children received.                                    19 We returned to the simulated tree for practical convenience and
-18 Although, Rácz, Passmore, Sheard, and Jordan (2019) did not          because the sparseness of the solicited trees lead to incomplete learning
+18 Although, Rácz, Passmore, Sheard, and Jordan (2019) did not          because the sparseness of the solicited trees lead to incomplete learning
 include grandparents in their analysis.                                  of kinship terms (see Appendix B).
 
 
                                                                                                                                      13
-784                                                                                                              Psychon Bull Rev (2022) 29:766–799
+
+===== PDF PAGE 0019 / 0034 | Native =====
+784                                                                                                              Psychon Bull Rev (2022) 29:766–799
 
 Table 5 Complexity in terms of Haviland and Clark (1974) aligns with the prior probability of our model
 
@@ -1163,7 +1205,9 @@ are filled according to the probability of acquisition. Words that have zero pro
 
 
 13
-Psychon Bull Rev (2022) 29:766–799                                                                                                        785
+
+===== PDF PAGE 0020 / 0034 | Native =====
+Psychon Bull Rev (2022) 29:766–799                                                                                                        785
 
 
 
@@ -1200,7 +1244,9 @@ predictions.                                                             were fu
 
 
                                                                                                                                   13
-786                                                                                                           Psychon Bull Rev (2022) 29:766–799
+
+===== PDF PAGE 0021 / 0034 | Native =====
+786                                                                                                           Psychon Bull Rev (2022) 29:766–799
 
 Table 6 Quantitative description of consistency and correlation to attested order of acquisition
 
@@ -1261,7 +1307,9 @@ Order of Acquisition               Environmental experience                   Th
 
 
 13
-Psychon Bull Rev (2022) 29:766–799                                                                                          787
+
+===== PDF PAGE 0022 / 0034 | Native =====
+Psychon Bull Rev (2022) 29:766–799                                                                                          787
 
 
 against children’s patterns of generalization as in the           to imagine a child construing uncle in Uncle Ben as a term of
@@ -1320,25 +1368,27 @@ sociological and attitudinal structures. For example, it’s easy   hypotheses g
 
 
                                                                                                                      13
-788                                                                                             Psychon Bull Rev (2022) 29:766–799
+
+===== PDF PAGE 0023 / 0034 | Native =====
+788                                                                                             Psychon Bull Rev (2022) 29:766–799
 
 
 that contained the developmental trajectories of multiple       and recall by marginalizing over hypotheses at each data
 words. A small percentage of these lexicons contained           amount. For example, the posterior weighted accuracy is
 correct hypotheses for all of the words. Phase one and two      given by:
 combined generated too many lexicons to tractably analyze                        H
-further. Therefore, we truncated the space by normalizing                        
-                                                                P (ĥ = h|d) =       δĥh P (h|d).                            (4)
+further. Therefore, we truncated the space by normalizing                        
+                                                                P (ĥ = h|d) =       δĥh P (h|d).                            (4)
 the lexicons and selecting the top 1000 hypotheses at
 various data amounts. For our main analyses, we collapse        We adopt this same approach to estimate the extension
 across lexicons and analyze developmental trajectories for      probability for each referent x in a context as a function of
 each word independently to avoid any complications with         data:
 not having a complete lexicon space.                                        H
-                                                                            
+                                                                            
    To generate an initial set of hypotheses, we used            P (x|d) =       P (x ∈ |h|)P (h|d),                           (5)
 the Metropolis-Hastings algorithm using tree-regeneration
 proposals following (Goodman et al., 2008; Piantadosi           where P (x ∈ |h|) is given by:
-et al., 2012). For each language, we ran 16 chains at each                    
+et al., 2012). For each language, we ran 16 chains at each                    
                                                                                1 if x ∈ |h|
 of 25 equally spaced data amounts between 10 and 250.           P (x ∈ |h|) =                                                 (6)
 Due to memory limitations, we only saved the top 100                           0 else.
@@ -1352,7 +1402,7 @@ Few if any lexicons resulting from this search contained        steps for each a
 the correct hypothesis for all words; however, across all       100 hypotheses from each chain to use for analysis. We
 lexicons the correct hypothesis for every word was learned.     operationalize abstraction as the probability the hypothesis
    In our second phase, we used Gibbs sampling to mix           is a function of the speaker:
-                                                                                      
+                                                                                      
 the hypotheses generated in the first phase, constructing                              1 if rSET →p ∈ h
 lexicons that contained the developmental trajectories of       P (rSET →p ∈ h) =                         .                (7)
                                                                                        0 else
@@ -1360,7 +1410,7 @@ multiple words. A small percentage of these lexicons
 contained correct hypotheses for all of the words. Phase        The posterior probability of using abstraction at a given data
 one and two combined generated too many lexicons                amount is therefore:
 to tractably analyze further (around 200,000 nine-word                             H
-lexicons for English). Therefore, we truncated the space                           
+lexicons for English). Therefore, we truncated the space                           
                                                                 P (rSET →p |d) =       P (rSET →p ∈ h)P (h|d).                (8)
 by normalizing the likelihoods and selecting the top 1000
 lexicons at various data amounts favoring lower amounts         We manipulate the prior bias for concrete reference by
@@ -1368,7 +1418,7 @@ lexicons at various data amounts favoring lower amounts         We manipulate th
 equal intervals between 25 and 250 data points). For the        Table 1, which influences the prior probability following
 analyses presented in the main text, we marginalize over        Equation 2.
 lexicons to analyze hypotheses for different kinship terms
-independently. As hypotheses are included in the space          Characteristic-to-deﬁning shift
+independently. As hypotheses are included in the space          Characteristic-to-defining shift
 based on their performance at varying data amounts, we
 normalize the likelihood by simulating 1000 data points,        We build the hypothesis space for characteristic and
 computing the likelihood of each hypothesis and taking the      defining features separately for each informant. To gather
@@ -1376,7 +1426,7 @@ average likelihood for each hypothesis.                         defining hypothe
                                                                 equally spaced data amounts between 10 and 250 using the
 Learnability, F1 and over-extension analyses                    PCFG in Table 1 for 500,000 steps. To gather characteristic
                                                                 hypotheses, we ran seven chains at each of 25 equally
-To evaluate if a hypothesis ĥ was correct, we compared         spaced data amounts between 10 and 250 using the PCFG
+To evaluate if a hypothesis ĥ was correct, we compared         spaced data amounts between 10 and 250 using the PCFG
 the hypothesis’s extension to the hand-constructed, ground      in Table 3 for 500,000 steps. Due to memory limitations, we
 truth hypothesis h for each kinship term system. We obtain      only saved the top 100 best lexicons from each chain. For
 the trajectories for posterior weighted accuracy, precision     each informant, the defining and characteristic hypotheses
@@ -1385,7 +1435,9 @@ the trajectories for posterior weighted accuracy, precision     each informant, 
 
 
 13
-Psychon Bull Rev (2022) 29:766–799                                                                                           789
+
+===== PDF PAGE 0024 / 0034 | Native =====
+Psychon Bull Rev (2022) 29:766–799                                                                                           789
 
 
 were concatenated to form a single finite hypothesis space.        context. Conditioned on the word and speaker, a referent
@@ -1393,19 +1445,19 @@ As our analyses collapsed over lexicons, we did not perform        is sampled fr
 Gibbs sampling as above.                                           possible referents for that word and speaker Pwx :
    We replicate the learnability and F1 analyses (described
 in Appendix B) using the same methods described above.                               αdp−s         (1 − α)
-Our analysis of the characteristic-to-defining shift is            P (p|x, w) ∼           −s +            .                (14)
+Our analysis of the characteristic-to-defining shift is            P (p|x, w) ∼           −s +            .                (14)
                                                                                     p∈Pwx dp         |X|
 similar to our analysis of concrete referents. The posterior
 probability of using a characteristic hypothesis at a given
 data amount is                                                        For our analyses, s = 1, reflecting the typical bias
                                                                    observed in texts (Piantadosi, 2014b). We assigned dis-
                            H
-                                                                  tances to the tree context in Fig. 1 by fixing the learner
+                                                                  tances to the tree context in Fig. 1 by fixing the learner
 P (rF SET →feature |d) =       P (rF SET →feature ∈ h)P (h|d),     as the central female in the youngest generation that
                                                              (9)   had both a brother and a sister, and assigning relatives
                                                                    closer in Euclidean distance smaller distance values. The
 where P (rF SET →feature ∈ h) is:                                  assignment of distance in our informant provided data
-                                                                  suggests this relationship has great individual variability,
+                                                                  suggests this relationship has great individual variability,
                            1 if rF SET →feature ∈ h
 P (rF SET →feature ∈ h) =                                  (10)    so we refrain from making strong predictions about the
                            0 else.                                 order of acquisition for individual terms. For the Zip-
@@ -1440,7 +1492,7 @@ is sampled from a Zipfian distribution over the set of all         the predictio
 possible speakers of that word Xw :                                the reliability of the environment by simulating data with
                                                                    30−60% reliability and set our model’s reliability parameter
                  αdx−s       (1 − α)                               to either 0.1, 0.5, and 0.9 to gauge whether learning in
-P (x|w) ∼              −s +         ,                     (13)
+P (x|w) ∼              −s +         ,                     (13)
                 x∈Xw xd        |X|                                 our simulations will be robust to unreliable environments
                                                                    and different reliability assumptions. As can be seen in
 where dx is the ranking of the speaker x, s is the Zipfian         Fig. 10, we find no qualitative differences in learning across
@@ -1449,7 +1501,9 @@ exponent and X is the set of all individuals in the tree           reliability a
 
 
                                                                                                                       13
-790                                                                                                                       Psychon Bull Rev (2022) 29:766–799
+
+===== PDF PAGE 0025 / 0034 | Native =====
+790                                                                                                                       Psychon Bull Rev (2022) 29:766–799
 
 
                          aunt          brother         cousin        father           grandma         grandpa    mother          sister         uncle
@@ -1508,7 +1562,7 @@ different words (columns) and environmental reliability values (rows). The virtu
 
 
 
-Appendix B: F1 score plots                                                               B.1 The characteristic-to-deﬁning shift
+Appendix B: F1 score plots                                                               B.1 The characteristic-to-defining shift
 
 As described in the main text, F1 score plots are a                                      Figure 12 displays the F1 plots for each of our informants.
 visualization of learnability and over-generalization. Each                              For all words, posterior weighted recall is greater than pos-
@@ -1518,25 +1572,25 @@ accuracy, precision and recall (y-axis) as a function of data                   
 has acquired the adult-like concept for that kinship term.                               the impoverished input/context. That being said, the model
 Recall corresponds to the probability that the model will                                always learns a hypothesis that is consistent with its input.
 recognize a correct referent, and is given by:                                           If we had provided evidence from multiple family tree con-
-                                                                                        texts, we expect the model to learn the adult-like extension
-             x∈ĥ [x ∈ h]                                                                for all of the concepts. This suggests that having evidence
+                                                                                        texts, we expect the model to learn the adult-like extension
+             x∈ĥ [x ∈ h]                                                                for all of the concepts. This suggests that having evidence
                             ,                                                  (15)
                 |h|                                                                      from multiple families is likely an important property of the
                                                                                          kinship data that children use to learn their kinship terms.
                                                                                             In the majority of cases where the model does not
-where x is a referent, ĥ is the proposed hypothesis, h is                               acquire the correct extension, the conventional hypothesis
+where x is a referent, ĥ is the proposed hypothesis, h is                               acquire the correct extension, the conventional hypothesis
 the ground truth hypothesis. Precision corresponds to the                                was blocked by a hypothesis that overfit the context. For
 probability that the model will propose a correct referent,                              example, Informant 3 overfits for GRANDMA and Informant
 and is given by:                                                                         4 overfits for GRANDPA because there is only one of those
-                                                                                        relations in their family tree. Hence, it is sufficient to just
-   x∈ĥ [x ∈ h]                                                                          point to that person. Informant 2 does not learn AUNT,
+                                                                                        relations in their family tree. Hence, it is sufficient to just
+   x∈ĥ [x ∈ h]                                                                          point to that person. Informant 2 does not learn AUNT,
                 .                                     (16)
-      |ĥ|                                                                               Informant 3 does not learn SISTER and Informant 4 does
+      |ĥ|                                                                               Informant 3 does not learn SISTER and Informant 4 does
                                                                                          not learn COUSIN for similar reasons. In these cases, the
 When recall is greater than precision, the model is over-                                conventional hypotheses do have some posterior probability
 extending the term.                                                                      (as evidenced in Fig. 12 by non-zero Accuracy) but do
    Figure 11 displays the F1 plots for Pukapuka, Turkish                                 not come to dominate the posterior distribution of possible
-and Yanomamö. As shown in the main text, the model learns                               hypotheses. The conventional hypotheses are blocked by
+and Yanomamö. As shown in the main text, the model learns                               hypotheses. The conventional hypotheses are blocked by
 the correct extension for every word. As expected, the pos-                              hypotheses that are less complex, explain the observed data,
 terior weighted recall is greater than the posterior weighted                            but would not generalize properly across contexts.
 precision for every word, suggesting that the model over-                                   Instead of overfitting, Informant 1 and 4 do not learn
@@ -1546,7 +1600,9 @@ supplemental material.                                                          
 
 
 13
-Psychon Bull Rev (2022) 29:766–799                                                                                                             791
+
+===== PDF PAGE 0026 / 0034 | Native =====
+Psychon Bull Rev (2022) 29:766–799                                                                                                             791
 
 
                                                  kainga                    matua−tane                 matua−wawine
@@ -1620,7 +1676,9 @@ is a hallmark of over-generalization. Shaded regions represent 95% bootstrapped 
 
 
                                                                                                                                          13
-792                                                                                                          Psychon Bull Rev (2022) 29:766–799
+
+===== PDF PAGE 0027 / 0034 | Native =====
+792                                                                                                          Psychon Bull Rev (2022) 29:766–799
 
 
                                               haya                         soaya                            eiwa
@@ -1658,7 +1716,9 @@ Fig. 11 (continued)
 
 
 13
-Psychon Bull Rev (2022) 29:766–799                                                                                                                                                                                                    793
+
+===== PDF PAGE 0028 / 0034 | Native =====
+Psychon Bull Rev (2022) 29:766–799                                                                                                                                                                                                    793
 
 
                                              One                                                Two                                          Three                                          Four
@@ -1775,7 +1835,9 @@ is a hallmark of over-generalization. Shaded regions represent 95% bootstrapped 
 
 
                                                                                                                                                                                                                                 13
-794                                                                                                               Psychon Bull Rev (2022) 29:766–799
+
+===== PDF PAGE 0029 / 0034 | Native =====
+794                                                                                                               Psychon Bull Rev (2022) 29:766–799
 
 
 the maximum-a-posteriori, or best, hypothesis recovered by                    Table 8 An example local max lexicon when permitting recursive calls
@@ -1837,14 +1899,16 @@ computation that performs identically.                                        as
 
 
 13
-Psychon Bull Rev (2022) 29:766–799                                                                                                 795
+
+===== PDF PAGE 0030 / 0034 | Native =====
+Psychon Bull Rev (2022) 29:766–799                                                                                                 795
 
 
 favors the reuse of specific combinations of primitives in the       most likely to extend to the target referent P (w|r, C). This
 lexicon similar to the recursive calls in Table 8.                   can be formalized using Bayes rule as:
    We found that when using a compression prior, the model
                                                                                    P (r|w, C)P (w)
-predicts an inductive leap from most of the kinship terms            P (w|r, C) =                   ,                            (17)
+predicts an inductive leap from most of the kinship terms            P (w|r, C) =                   ,                            (17)
 not being properly acquired to all of the kinship terms being                      w P (r|w, C)P (w)
 learned. We see this leap because the correct lexicon under          where P(r|w, C) is our noisy size-principle likelihood
 the compression prior is significantly less complex than the         Equation 3. Using this equation, if the learner needs to refer
@@ -1898,7 +1962,9 @@ MOTHER           female(parent(X))             0.7
 
 
                                                                                                                             13
-796                                                                                                            Psychon Bull Rev (2022) 29:766–799
+
+===== PDF PAGE 0031 / 0034 | Native =====
+796                                                                                                            Psychon Bull Rev (2022) 29:766–799
 
 
 Availability of Data and Material The anonymized data are provided at      Bruner, J. S., Olver, R. R., & Greenfield, P. M. (1966). Studies in
@@ -1916,13 +1982,13 @@ Declarations                                                                   u
 Ethics approval The research was approved by the Institutional             Chapais, B. (2014). Complex kinship patterns as evolutionary
 Review Board at the University of Rochester (where informants were             constructions, and the origins of sociocultural universals. Current
 consulted).                                                                    Anthropology, 55(6), 000–000.
-                                                                           Chater, N., & Vitányi, P. (2007). ‘Ideal learning of natural language:
+                                                                           Chater, N., & Vitányi, P. (2007). ‘Ideal learning of natural language:
 Consent to participate Informants provided informed consent for the            Positive results about learning from positive evidence. Journal of
 use of their anonymized data.                                                  Mathematical psychology, 51(3), 135–163.
                                                                            Chi, M. T. H. (1985). Interactive roles of knowledge and strategies
 Competing interests The authors declare no competing interests.                in the development of organized sorting and recall. Thinking and
                                                                                learning skills, 2, 457–483.
-Conﬂict of Interests The authors declare no conflict interests.            Chi, M. T. H., Feltovich, P. J., & Glaser, R. (1981). Categorization
+Conflict of Interests The authors declare no conflict interests.            Chi, M. T. H., Feltovich, P. J., & Glaser, R. (1981). Categorization
                                                                                and representation of physics problems by experts and novices.
 Open Access This article is licensed under a Creative Commons                  Cognitive science, 5(2), 121–152.
 Attribution 4.0 International License, which permits use, sharing,         Clark, E. V. (1973). What’s in a word? On the child’s acquisition of
@@ -1970,7 +2036,9 @@ Braginsky, M., Yurovsky, D., Marchman, V. A., & Frank, M. C.               Golin
 
 
 13
-Psychon Bull Rev (2022) 29:766–799                                                                                                             797
+
+===== PDF PAGE 0032 / 0034 | Native =====
+Psychon Bull Rev (2022) 29:766–799                                                                                                             797
 
 
 Goodenough, W. H. (1956). Componential analysis and the study of            Keil, F. C., & Batterman, N. (1984). A characteristic-to-defining shift
@@ -2047,7 +2115,9 @@ Keil, F. C. (1989). Concepts, kinds, and conceptual development.                
 
 
                                                                                                                                       13
-798                                                                                                            Psychon Bull Rev (2022) 29:766–799
+
+===== PDF PAGE 0033 / 0034 | Native =====
+798                                                                                                            Psychon Bull Rev (2022) 29:766–799
 
 
 Medina, T. N., Snedeker, J., Trueswell, J. C., & Gleitman, L. R. (2011).   Piantadosi, S. T., & Jacobs, R. A. (2016). Four Problems Solved
@@ -2069,7 +2139,7 @@ Mollica, F., & Piantadosi, S. T. (2017). How Data Drive Early Word             K
 Mollica, F., & Piantadosi, S. T. (2019). Humans store about 1.5            Quinn, P. C., Yahr, J., Kuhn, A., Slater, A. M., & Pascalis, O.
     megabytes of information during language acquisition. Royal                (2002). Representation of the gender of human faces by infants: A
     Society open science, 6(3), 181393.                                        preference for female. Perception, 31(9), 1109–1121.
-Mollica, F., Wade, S., & Piantadosi, S. T. (2017). A rational              Rácz, P., Passmore, S., Sheard, C., & Jordan, F. M. (2019). Usage
+Mollica, F., Wade, S., & Piantadosi, S. T. (2017). A rational              Rácz, P., Passmore, S., Sheard, C., & Jordan, F. M. (2019). Usage
     constructivist account of the characteristic to defining shift. In         frequency and lexical class determine the evolution of kinship
     Proceedings of the 39th Annual Meeting of the Cognitive Science            terms in Indo-European. Royal Society Open Science, 6(10),
     Society.                                                                   191385.
@@ -2097,7 +2167,7 @@ Passmore, S., Barth, W., Quinn, K., Greenhill, S. J., Evans, N., &             c
     pp. 1–18.                                                              Siskind, J. M. (1996). A computational study of cross-situational
 Perfors, A. (2012). Bayesian models of cognition: what’s built in after        techniques for learning word-to-meaning mappings. Cognition,
     all?. Philosophy Compass, 7(2), 127–138.                                   61(1-2), 39–91.
-Pericliev, V., & Valdés-Pérez, R. E. (1998). Automatic componential      Smith, L., & Yu, C. (2008). Infants rapidly learn word-referent
+Pericliev, V., & Valdés-Pérez, R. E. (1998). Automatic componential      Smith, L., & Yu, C. (2008). Infants rapidly learn word-referent
     analysis of kinship semantics with a proposed structural solution          mappings via cross-situational statistics. Cognition, 106(3), 1558–
     to the problem of multiple models. Anthropological Linguistics,            1568.
     pp. 272–317.                                                           Smith, K., Frank, S., Rolando, S., Kirby, S., & Loy, J. (2020). Simple
@@ -2120,7 +2190,9 @@ Piantadosi, S. T. (2014b). Zipfs word frequency law in natural             Thake
 
 
 13
-Psychon Bull Rev (2022) 29:766–799                                                                                                           799
+
+===== PDF PAGE 0034 / 0034 | Native =====
+Psychon Bull Rev (2022) 29:766–799                                                                                                           799
 
 
 Ullman, T. D., Goodman, N. D., & Tenenbaum, J. B. (2012). Theory          Xu, F. (2007). Rational statistical inference and cognitive develop-
@@ -2147,4 +2219,3 @@ Wierzbicka, A. (2016). Back to Mother and Father: Overcoming the          jurisd
 
 
                                                                                                                                     13
-

@@ -1,3 +1,9 @@
+# PDF全文文本（UTF-8）
+来源PDF：literature/B/B16_Zaslavsky_2019_Color_Naming_Reflects_Both_Perceptual_Structure_and_Communicative_Need.pdf
+原PDF SHA-256：e0dc6dbb1f9a06c6234eb2c9b198d8c027414fe706feb08e80c015f0bf55f0a6
+页码表示PDF文件页序，不自动等同于期刊印刷页码。Native为原文本层，OCR为扫描或低文字页识别；表格、音标、公式与OCR仍须对照PDF。
+
+===== PDF PAGE 0001 / 0013 | Native =====
 Topics in Cognitive Science (2018) 1–13
 © 2018 Cognitive Science Society, Inc. All rights reserved.
 ISSN:1756-8765 online
@@ -50,7 +56,9 @@ Keywords: Information theory; Color naming; Categorization
    Correspondence should be sent to Noga Zaslavsky, Edmond and Lily Safra Center for Brain Sciences,
 The Hebrew University of Jerusalem, Edmond J. Safra Campus, Jerusalem 9190401, Israel. E-mail: noga.za-
 slavsky@mail.huji.ac.il
-2                      N. Zaslavsky et al. / Topics in Cognitive Science (2018)
+
+===== PDF PAGE 0002 / 0013 | Native =====
+2                      N. Zaslavsky et al. / Topics in Cognitive Science (2018)
 
 
 1. Introduction
@@ -95,7 +103,9 @@ to be warm-colored rather than cool-colored, and in that sense warm colors have
 higher communicative need. They concluded that the warm–cool asymmetry in com-
 municative precision across languages “reflects colors of universal usefulness” and that
 the principle of color use “governs how color categories come about”
-                          N. Zaslavsky et al. / Topics in Cognitive Science (2018)                       3
+
+===== PDF PAGE 0003 / 0013 | Native =====
+                          N. Zaslavsky et al. / Topics in Cognitive Science (2018)                       3
 
 (p. 10785). They presented this idea as an alternative to proposals based on perceptual
 salience (p. 10785). Below we present the data they considered, and their definitions
@@ -109,7 +119,7 @@ ing data from 110 languages of non-industrialized societies. In the WCS, native 
 of each language were asked to provide a name for each of 330 color chips. Gibson et al.
 analyzed naming data for the subset of 80 color chips shown in Fig. 1, for all WCS
 languages and also for three languages for which they collected data: English, Spanish,
-and Tsimane. For each language l, each color term w in l, and each color chip c, they
+and Tsimane. For each language l, each color term w in l, and each color chip c, they
 estimated the color naming distribution pl ðwjcÞ as the proportion of speakers of l who
 used w rather than some other term to name c.
 
@@ -136,19 +146,21 @@ color naming distribution p(w|c) and a prior p(c), defined by
 Fig. 1. The 80 color chips analyzed by Gibson et al. (2017), represented in the standard WCS palette. White
 spaces indicate WCS chips that were excluded from the analysis. The achromatic WCS color chips were also
 excluded.
-4                     N. Zaslavsky et al. / Topics in Cognitive Science (2018)
+
+===== PDF PAGE 0004 / 0013 | Native =====
+4                     N. Zaslavsky et al. / Topics in Cognitive Science (2018)
 
 
 
                                           X
-                              SðcÞ ¼          pðwjcÞ log pðcjwÞ;                     ð1Þ
+                              SðcÞ 1⁄4          pðwjcÞ log pðcjwÞ;                     ð1Þ
                                            w
 
 
 where p(c|w) is obtained by applying Bayes’ rule:
 
                                                pðwjcÞpðcÞ
-                                pðcjwÞ ¼ P             0    0
+                                pðcjwÞ 1⁄4 P             0    0
                                                                :                      ð2Þ
                                                c0 pðwjc Þpðc Þ
 
@@ -186,13 +198,15 @@ We began with the color naming data of the WCS, supplemented by data for English
 (Lindsey & Brown, 2014); we call this joint dataset WCS+. We considered the same 80
 chips used by Gibson et al. Then for each actual language l, we constructed a correspond-
 ing hypothetical system by clustering the 80 color chips into kl categories, using the k-
-                         N. Zaslavsky et al. / Topics in Cognitive Science (2018)                       5
+
+===== PDF PAGE 0005 / 0013 | Native =====
+                         N. Zaslavsky et al. / Topics in Cognitive Science (2018)                       5
 
 
 
 
-Fig. 2. The 80 color chips of Fig. 1, represented in CIELAB color space. L corresponds to lightness, and
-hue and saturation are represented in polar coordinates in the orthogonal plane defined by a and b . The
+Fig. 2. The 80 color chips of Fig. 1, represented in CIELAB color space. L corresponds to lightness, and
+hue and saturation are represented in polar coordinates in the orthogonal plane defined by a and b . The
 irregular distribution of these colors reflects a perceptual asymmetry between warm and cool colors.
 
 means algorithm with respect to the Euclidean distance between colors in CIELAB space.
@@ -222,7 +236,9 @@ et al. reported and captured in their salience-weighted prior itself, according 
 foreground objects (as opposed to their backgrounds) are more likely to be warm-colored
 rather than cool-colored. We found that their salience-weighted prior is correlated
 (r = 0.49, p < 0.0001) with the distance of each chip from central gray in CIELAB
-6                          N. Zaslavsky et al. / Topics in Cognitive Science (2018)
+
+===== PDF PAGE 0006 / 0013 | Native =====
+6                          N. Zaslavsky et al. / Topics in Cognitive Science (2018)
 
 
 
@@ -232,7 +248,9 @@ ience-weighted prior. Across languages, warm colors have lower expected surprisa
 D) Analogous analyses in which each language’s color naming system was replaced by a hypothetical color
 naming system obtained by k-means clustering of the color chips represented in CIELAB space. These per-
 ceptually derived hypothetical systems also exhibit a warm–cool surprisal asymmetry.
-                      N. Zaslavsky et al. / Topics in Cognitive Science (2018)               7
+
+===== PDF PAGE 0007 / 0013 | Native =====
+                      N. Zaslavsky et al. / Topics in Cognitive Science (2018)               7
 
 space,1 suggesting that the salience-weighted prior reflects how “un-gray” and thus per-
 ceptually salient different colors are. It is possible that useful objects are often saliently
@@ -270,7 +288,7 @@ mal mutual information between the input and output, namely by
 
 where the maximization is over all possible choices of p(c), and the mutual information is
                                          X                       pðcjwÞ
-                           IðW; CÞ ¼            pðcÞpðwjcÞ log          :                 ð4Þ
+                           IðW; CÞ 1⁄4            pðcÞpðwjcÞ log          :                 ð4Þ
                                           c;w
                                                                   pðcÞ
 
@@ -279,12 +297,14 @@ where the maximization is over all possible choices of p(c), and the mutual info
 capacity-achieving prior can be found via the Blahut–Arimoto algorithm (Arimoto, 1972;
 Blahut, 1972). This algorithm is based on the fact that by differentiating Eq. (4) with
 respect to p(c) we get the following necessary and sufficient2 condition for optimality:
-8                      N. Zaslavsky et al. / Topics in Cognitive Science (2018)
+
+===== PDF PAGE 0008 / 0013 | Native =====
+8                      N. Zaslavsky et al. / Topics in Cognitive Science (2018)
 
 
 
 
-                                      pðcÞ / expðSðcÞÞ:                                  ð5Þ
+                                      pðcÞ / expðSðcÞÞ:                                  ð5Þ
 
  We find it interesting that while Blahut and Arimoto derived the expression for S(c)
 from the capacity achieving principle, the same expression has been used for different
@@ -292,13 +312,13 @@ reasons by Gibson et al. and others (e.g., Piantadosi et al., 2011). Note that E
 a self-consistent condition for optimality, because S(c) also depends on the prior. By taking
 the log on both sides of Eq. (5) we get that a prior is a CAP if and only if it satisfies
 
-                                   log pðcÞ ¼ SðcÞ þ log Z;                              ð6Þ
+                                   log pðcÞ 1⁄4 SðcÞ þ log Z;                              ð6Þ
 
 where Z is the normalization factor of Eq. (5).
    Thus, need and communicative precision are linked through the capacity achieving
 principle. Specifically, for a capacity-achieving prior, that is, a prior p(c) that maximizes
 the information about color that is conveyed by a given lexicon, we should see a simple
-linear relationship, with slope 1, between  log p(c) and the expected surprisal (or com-
+linear relationship, with slope 1, between  log p(c) and the expected surprisal (or com-
 municative imprecision) S(c). Notice that the link between p(c) and S(c) in Eq. (6)
 implies that, ideally, patterns in p(c) would be mirrored in S(c), and thus the link is con-
 sistent with Gibson et al.’s findings. However, this link makes a stronger claim in that it
@@ -324,13 +344,15 @@ alone. In each case, following Zaslavsky et al. (2018), we evaluated the CAP pl 
 each language l (real or artificial) with respect to its color naming distribution pl ðwjcÞ,
 and averaged together these language-specific priors in order to infer a universal need
 distribution.3 That is, we defined
-                         N. Zaslavsky et al. / Topics in Cognitive Science (2018)                    9
+
+===== PDF PAGE 0009 / 0013 | Native =====
+                         N. Zaslavsky et al. / Topics in Cognitive Science (2018)                    9
 
 
 
                                                    1X L
-                                          pðcÞ ¼         pl ðcÞ;                                   ð7Þ
-                                                   L l¼1
+                                          pðcÞ 1⁄4         pl ðcÞ;                                   ð7Þ
+                                                   L l1⁄41
 
 where L = 111 is the number of languages in the WCS+ dataset.
    For comparison with these inferred priors, we also considered the salience-weighted
@@ -340,11 +362,11 @@ images. For each of these three priors—WCS-CAP, KM-CAP, and salience-weighted�
 we entered it as p(c) into Eq. (2), and then used Eq. (1) to obtain the expected surprisal S
 (c) for each language in the WCS+ data given that prior. We then assessed each prior in
 two ways: first by asking whether we obtain the CAP-predicted linear relationship
-between  log p(c) and S(c), and second by sorting chips by S(c) and asking whether we
+between  log p(c) and S(c), and second by sorting chips by S(c) and asking whether we
 observe the warm–cool surprisal asymmetry reported by Gibson et al. and also seen in
 our Fig. 3.
    The results are shown in Fig. 5. Comparing first just the two inferred priors, WCS-
-CAP and KM-CAP, we see that the linear relation between  log p(c) and average S(c)
+CAP and KM-CAP, we see that the linear relation between  log p(c) and average S(c)
 is dissociable from the warm–cool surprisal asymmetry: WCS-CAP shows a linear rela-
 tion but not a clear warm–cool asymmetry, whereas KM-CAP shows a clear warm–cool
 
@@ -355,7 +377,9 @@ Fig. 4. Inferred (A: WCS-CAP, B: KM-CAP) and directly measured (C: salience-weig
 along the x-axis are rank ordered according to p(c). Dashed line corresponds to a uniform prior. KM-CAP
 and salience-weighted exhibit a warm–cool asymmetry, whereas WCS-CAP exhibits a weaker tendency for
 warm colors and the two most needed colors according to this prior correspond to light and dark.
-10                      N. Zaslavsky et al. / Topics in Cognitive Science (2018)
+
+===== PDF PAGE 0010 / 0013 | Native =====
+10                      N. Zaslavsky et al. / Topics in Cognitive Science (2018)
 
 asymmetry but not a clear linear relation (r = 0.32, p < 0.01). The presence of a very
 clean linear relation for WCS-CAP reassures us that by averaging the language-specific
@@ -364,7 +388,7 @@ haps more surprising that the warm–cool asymmetry vanishes under this well-mot
 prior, given that it has persisted under others (recall Fig. 3). The absence of the warm–
 cool surprisal asymmetry under WCS-CAP demonstrates the sensitivity of this asymmetry
 to the assumed prior. At the same time, the lack of a clear linear relation between
- log p(c) and average S(c) under KM-CAP suggests that this prior is not well-suited for
+ log p(c) and average S(c) under KM-CAP suggests that this prior is not well-suited for
 precise communication using the naturally occurring color naming systems of the WCS+
 dataset. KM-CAP is ultimately derived from perceptual structure, whereas WCS-CAP is
 derived from the actual WCS+ languages, and both priors are derived using the same
@@ -372,7 +396,7 @@ principle. Thus, the difference between them, seen in Figs. 4 and 5, can be attr
 features in the WCS+ data that are not simply a reflection of perceptual structure.
    With this by way of stage-setting, consider now the results for the salience-weighted
 prior. It exhibits a warm–cool surprisal asymmetry on the WCS+ data (in fact, this panel
-simply replicates Fig. 3B) and also exhibits a roughly linear relation between  log p(c)
+simply replicates Fig. 3B) and also exhibits a roughly linear relation between  log p(c)
 and average S(c), with slope close to 1 (r = 0.83, p < 0.0001). This linear relation is sig-
 nificant for two reasons. First, the fact that this relation is found for the salience-weighted
 prior but not for the perceptually based KM-CAP suggests that the salience-weighted
@@ -400,12 +424,14 @@ traces of universal patterns of communicative need beyond what perceptual factor
 predict. Thus, we agree with Gibson et al. that communicative preferences appear to have
 left their imprint on color naming systems in the world’s languages (see also Kemp &
 Regier, 2012 for a similar argument concerning kin terminologies). However, we differ with
-                          N. Zaslavsky et al. / Topics in Cognitive Science (2018)                           11
+
+===== PDF PAGE 0011 / 0013 | Native =====
+                          N. Zaslavsky et al. / Topics in Cognitive Science (2018)                           11
 
 
 
 
-Fig. 5. Comparison between the priors of Fig. 4. Upper panels: Scatterplots of  log p(c) vs. average S(c)
+Fig. 5. Comparison between the priors of Fig. 4. Upper panels: Scatterplots of  log p(c) vs. average S(c)
 across languages. Lower panels: Surprisal patterns for each prior, analogous to Fig. 3. See text for interpreta-
 tion.
 
@@ -429,7 +455,9 @@ Acknowledgments
 prior with us, Delwin Lindsey and Angela Brown for kindly sharing their English color
 naming data with us, and Joshua Abbott for helpful discussions. This study was supported
 by the Gatsby Charitable Foundation (N.Z. and N.T.) and DTRA award
-12                          N. Zaslavsky et al. / Topics in Cognitive Science (2018)
+
+===== PDF PAGE 0012 / 0013 | Native =====
+12                          N. Zaslavsky et al. / Topics in Cognitive Science (2018)
 
 HDTRA11710042 (T.R.). Part of this work was done while N.Z. and N.T. were visiting
 the Simons Institute for the Theory of Computing at UC Berkeley.
@@ -477,7 +505,9 @@ Kay, P., & McDaniel, C. K. (1978). The linguistic significance of the meanings o
    Language, 54, 610–646.
 Kemp, C., & Regier, T. (2012). Kinship categories across languages reflect general communicative
    principles. Science, 336(6084), 1049–1054.
-                         N. Zaslavsky et al. / Topics in Cognitive Science (2018)                      13
+
+===== PDF PAGE 0013 / 0013 | Native =====
+                         N. Zaslavsky et al. / Topics in Cognitive Science (2018)                      13
 
 Komarova, N. L., & Jameson, K. A. (2013). A quantitative theory of human color choices. PLOS One, 8(2),
    e55986.
@@ -501,4 +531,3 @@ Shepard, R. N. (1994). Perceptual-cognitive universals as reflections of the wor
    Review, 1(1), 2–28.
 Zaslavsky, N., Kemp, C., Regier, T., & Tishby, N. (2018). Efficient compression in color naming and its
    evolution. Proceedings of the National Academy of Sciences, 115(31), 7937–7942.
-

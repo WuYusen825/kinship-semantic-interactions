@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "verified_at_utc": "2026-10-15T06:57:23.767780+00:00",
+  "formal_fulltext_references": 46,
+  "excluded_no_fulltext": [
+    "A02",
+    "A05"
+  ],
+  "uploaded_pdfs_verified": 8,
+  "source_pdf_files": 51,
+  "source_txt_files": 51,
+  "pdf_pages": 1675,
+  "ocr_attempted_pages": 241,
+  "remaining_low_text_pages": {
+    "literature/A/A08_Morgan_1871_Systems_of_Consanguinity_and_Affinity_of_the_Human_Family.pdf": [
+      5,
+      6,
+      105,
+      163,
+      313,
+      314,
+      653,
+      655
+    ]
+  },
+  "checked_markdown_documents": [
+    "README.md",
+    "CLAUDE.md",
+    "CLAUDE_TODO.md",
+    "CLAUDE_REVIEW_CHECKLIST.md",
+    "literature/README.md",
+    "literature/TXT索引.md",
+    "outputs/研究计划_完善版.md",
+    "outputs/PDF无法下载清单.md",
+    "outputs/文献综述与证据台账.md",
+    "outputs/论文_中文实证稿.md"
+  ],
+  "checked_relative_links": 348,
+  "frozen_statistical_files_unchanged": [
+    "analysis/analyze.py",
+    "analysis/audit.py",
+    "analysis/results.json",
+    "analysis/protocol_frozen.md",
+    "analysis/protocol_addendum_before_outcomes.md",
+    "analysis/provenance.json",
+    "analysis/oof_predictions.csv",
+    "analysis/pairs_primary.csv",
+    "analysis/language_oof_scores.csv"
+  ],
+  "statistical_models_rerun": false
+}
