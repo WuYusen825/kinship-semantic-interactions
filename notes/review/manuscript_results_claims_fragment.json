@@ -1,0 +1,2479 @@
+{
+  "manuscript_sha256": "6d782b6897d0ba3751cb75e4b2c04e449163146d498a7fd5cf18e0ce04c3bb94",
+  "claims": [
+    {
+      "occurrence_id": "N00001",
+      "anchor": {
+        "token": "939",
+        "line": 8,
+        "column": 55,
+        "line_text": "**摘要：** 兄弟姐妹称谓如何组合性别、年龄和说话者信息，是亲属语义学的经典问题。本文分析Kinbank中939个记录系统，在事后补充协议下，以严格划分检验合取及层级约束，并比较未见谱系与地域的词形共用预测。625个单词形系统中，非合取记录占3.5%，远低于两种人工随机参照；性别偏年长侧、年龄偏同性侧获得谱系方向支持，年龄偏男性侧未获支持。条件模型相对原始加性的对数损失降低0.0145，但相对完整差异交互的增益区间跨零，且跨地域不占优势。参照者性别限制出现少数记录不兼容，真实语义解释仍未确认。结果提示经典约束获得部分支持，其适用范围取决于表示、测量和推广目标。",
+        "numeric_index_on_line": 1,
+        "context_sha256": "155c9acd768fd090ab23f8a97f42c796f516768fc90fa3f2143dd82b6f284e1b"
+      },
+      "kind": "result",
+      "label": "摘要：Kinbank主样本记录系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/sample/full_systems"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00002",
+      "anchor": {
+        "token": "625",
+        "line": 8,
+        "column": 106,
+        "line_text": "**摘要：** 兄弟姐妹称谓如何组合性别、年龄和说话者信息，是亲属语义学的经典问题。本文分析Kinbank中939个记录系统，在事后补充协议下，以严格划分检验合取及层级约束，并比较未见谱系与地域的词形共用预测。625个单词形系统中，非合取记录占3.5%，远低于两种人工随机参照；性别偏年长侧、年龄偏同性侧获得谱系方向支持，年龄偏男性侧未获支持。条件模型相对原始加性的对数损失降低0.0145，但相对完整差异交互的增益区间跨零，且跨地域不占优势。参照者性别限制出现少数记录不兼容，真实语义解释仍未确认。结果提示经典约束获得部分支持，其适用范围取决于表示、测量和推广目标。",
+        "numeric_index_on_line": 2,
+        "context_sha256": "155c9acd768fd090ab23f8a97f42c796f516768fc90fa3f2143dd82b6f284e1b"
+      },
+      "kind": "result",
+      "label": "摘要：每类单词形的严格划分系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P1/A_four/subsets/overall/n_systems"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00003",
+      "anchor": {
+        "token": "3.5%",
+        "line": 8,
+        "column": 123,
+        "line_text": "**摘要：** 兄弟姐妹称谓如何组合性别、年龄和说话者信息，是亲属语义学的经典问题。本文分析Kinbank中939个记录系统，在事后补充协议下，以严格划分检验合取及层级约束，并比较未见谱系与地域的词形共用预测。625个单词形系统中，非合取记录占3.5%，远低于两种人工随机参照；性别偏年长侧、年龄偏同性侧获得谱系方向支持，年龄偏男性侧未获支持。条件模型相对原始加性的对数损失降低0.0145，但相对完整差异交互的增益区间跨零，且跨地域不占优势。参照者性别限制出现少数记录不兼容，真实语义解释仍未确认。结果提示经典约束获得部分支持，其适用范围取决于表示、测量和推广目标。",
+        "numeric_index_on_line": 3,
+        "context_sha256": "155c9acd768fd090ab23f8a97f42c796f516768fc90fa3f2143dd82b6f284e1b"
+      },
+      "kind": "result",
+      "label": "摘要：四特征非合取系统比例",
+      "metric": "proportion",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P1/A_four/subsets/overall/baselines/uniform_all_partitions/system_equal/observed_violation_rate"
+      },
+      "format": {
+        "kind": "percent",
+        "places": 1
+      }
+    },
+    {
+      "occurrence_id": "N00005",
+      "anchor": {
+        "token": "0.0145",
+        "line": 8,
+        "column": 190,
+        "line_text": "**摘要：** 兄弟姐妹称谓如何组合性别、年龄和说话者信息，是亲属语义学的经典问题。本文分析Kinbank中939个记录系统，在事后补充协议下，以严格划分检验合取及层级约束，并比较未见谱系与地域的词形共用预测。625个单词形系统中，非合取记录占3.5%，远低于两种人工随机参照；性别偏年长侧、年龄偏同性侧获得谱系方向支持，年龄偏男性侧未获支持。条件模型相对原始加性的对数损失降低0.0145，但相对完整差异交互的增益区间跨零，且跨地域不占优势。参照者性别限制出现少数记录不兼容，真实语义解释仍未确认。结果提示经典约束获得部分支持，其适用范围取决于表示、测量和推广目标。",
+        "numeric_index_on_line": 5,
+        "context_sha256": "155c9acd768fd090ab23f8a97f42c796f516768fc90fa3f2143dd82b6f284e1b"
+      },
+      "kind": "result",
+      "label": "摘要：MLE谱系等权语系留出M4相对M0对数损失降低",
+      "metric": "log_loss_gain",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/comparisons/M0-M4/gain"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00243",
+      "anchor": {
+        "token": "625",
+        "line": 82,
+        "column": 8,
+        "line_text": "严格划分样本含625个系统、108个谱系组。四特征下22个系统不合取，占3.5%；谱系等权比例为2.8%，谱系整组自助95%区间为[0.5%, 6.0%]。两种人工参照的非合取率分别为93.7%和82.9%；“观测−参照”分别为−90.9个百分点[−93.2, −87.8]和−80.1个百分点[−83.3, −76.4]，均低于零，P1按运行前规则获得方向支持。其含义是记录中的合取结构较随机划分集中，不是随机划分已成为语言演化模型。",
+        "numeric_index_on_line": 1,
+        "context_sha256": "b2ff19fe9c61375788385e343c0b9fcd91197ebe9d51db35314eec6f9ee6bf30"
+      },
+      "kind": "result",
+      "label": "严格划分系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P1/A_four/subsets/overall/n_systems"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00244",
+      "anchor": {
+        "token": "108",
+        "line": 82,
+        "column": 15,
+        "line_text": "严格划分样本含625个系统、108个谱系组。四特征下22个系统不合取，占3.5%；谱系等权比例为2.8%，谱系整组自助95%区间为[0.5%, 6.0%]。两种人工参照的非合取率分别为93.7%和82.9%；“观测−参照”分别为−90.9个百分点[−93.2, −87.8]和−80.1个百分点[−83.3, −76.4]，均低于零，P1按运行前规则获得方向支持。其含义是记录中的合取结构较随机划分集中，不是随机划分已成为语言演化模型。",
+        "numeric_index_on_line": 2,
+        "context_sha256": "b2ff19fe9c61375788385e343c0b9fcd91197ebe9d51db35314eec6f9ee6bf30"
+      },
+      "kind": "result",
+      "label": "严格划分谱系组数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P1/A_four/subsets/overall/n_families"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00246",
+      "anchor": {
+        "token": "22",
+        "line": 82,
+        "column": 27,
+        "line_text": "严格划分样本含625个系统、108个谱系组。四特征下22个系统不合取，占3.5%；谱系等权比例为2.8%，谱系整组自助95%区间为[0.5%, 6.0%]。两种人工参照的非合取率分别为93.7%和82.9%；“观测−参照”分别为−90.9个百分点[−93.2, −87.8]和−80.1个百分点[−83.3, −76.4]，均低于零，P1按运行前规则获得方向支持。其含义是记录中的合取结构较随机划分集中，不是随机划分已成为语言演化模型。",
+        "numeric_index_on_line": 4,
+        "context_sha256": "b2ff19fe9c61375788385e343c0b9fcd91197ebe9d51db35314eec6f9ee6bf30"
+      },
+      "kind": "result",
+      "label": "四特征非合取系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P1/A_four/subsets/overall/violating_systems"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00247",
+      "anchor": {
+        "token": "3.5%",
+        "line": 82,
+        "column": 37,
+        "line_text": "严格划分样本含625个系统、108个谱系组。四特征下22个系统不合取，占3.5%；谱系等权比例为2.8%，谱系整组自助95%区间为[0.5%, 6.0%]。两种人工参照的非合取率分别为93.7%和82.9%；“观测−参照”分别为−90.9个百分点[−93.2, −87.8]和−80.1个百分点[−83.3, −76.4]，均低于零，P1按运行前规则获得方向支持。其含义是记录中的合取结构较随机划分集中，不是随机划分已成为语言演化模型。",
+        "numeric_index_on_line": 5,
+        "context_sha256": "b2ff19fe9c61375788385e343c0b9fcd91197ebe9d51db35314eec6f9ee6bf30"
+      },
+      "kind": "result",
+      "label": "系统等权非合取比例",
+      "metric": "proportion",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P1/A_four/subsets/overall/baselines/uniform_all_partitions/system_equal/observed_violation_rate"
+      },
+      "format": {
+        "kind": "percent",
+        "places": 1
+      }
+    },
+    {
+      "occurrence_id": "N00248",
+      "anchor": {
+        "token": "2.8%",
+        "line": 82,
+        "column": 49,
+        "line_text": "严格划分样本含625个系统、108个谱系组。四特征下22个系统不合取，占3.5%；谱系等权比例为2.8%，谱系整组自助95%区间为[0.5%, 6.0%]。两种人工参照的非合取率分别为93.7%和82.9%；“观测−参照”分别为−90.9个百分点[−93.2, −87.8]和−80.1个百分点[−83.3, −76.4]，均低于零，P1按运行前规则获得方向支持。其含义是记录中的合取结构较随机划分集中，不是随机划分已成为语言演化模型。",
+        "numeric_index_on_line": 6,
+        "context_sha256": "b2ff19fe9c61375788385e343c0b9fcd91197ebe9d51db35314eec6f9ee6bf30"
+      },
+      "kind": "result",
+      "label": "谱系等权非合取比例",
+      "metric": "proportion",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P1/A_four/subsets/overall/baselines/uniform_all_partitions/family_equal/observed_violation_rate"
+      },
+      "format": {
+        "kind": "percent",
+        "places": 1
+      }
+    },
+    {
+      "occurrence_id": "N00250",
+      "anchor": {
+        "token": "0.5%",
+        "line": 82,
+        "column": 67,
+        "line_text": "严格划分样本含625个系统、108个谱系组。四特征下22个系统不合取，占3.5%；谱系等权比例为2.8%，谱系整组自助95%区间为[0.5%, 6.0%]。两种人工参照的非合取率分别为93.7%和82.9%；“观测−参照”分别为−90.9个百分点[−93.2, −87.8]和−80.1个百分点[−83.3, −76.4]，均低于零，P1按运行前规则获得方向支持。其含义是记录中的合取结构较随机划分集中，不是随机划分已成为语言演化模型。",
+        "numeric_index_on_line": 8,
+        "context_sha256": "b2ff19fe9c61375788385e343c0b9fcd91197ebe9d51db35314eec6f9ee6bf30"
+      },
+      "kind": "result",
+      "label": "谱系等权非合取比例95%区间下界",
+      "metric": "proportion_ci",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P1/A_four/subsets/overall/baselines/uniform_all_partitions/family_equal/observed_ci95/0"
+      },
+      "format": {
+        "kind": "percent",
+        "places": 1
+      }
+    },
+    {
+      "occurrence_id": "N00251",
+      "anchor": {
+        "token": "6.0%",
+        "line": 82,
+        "column": 73,
+        "line_text": "严格划分样本含625个系统、108个谱系组。四特征下22个系统不合取，占3.5%；谱系等权比例为2.8%，谱系整组自助95%区间为[0.5%, 6.0%]。两种人工参照的非合取率分别为93.7%和82.9%；“观测−参照”分别为−90.9个百分点[−93.2, −87.8]和−80.1个百分点[−83.3, −76.4]，均低于零，P1按运行前规则获得方向支持。其含义是记录中的合取结构较随机划分集中，不是随机划分已成为语言演化模型。",
+        "numeric_index_on_line": 9,
+        "context_sha256": "b2ff19fe9c61375788385e343c0b9fcd91197ebe9d51db35314eec6f9ee6bf30"
+      },
+      "kind": "result",
+      "label": "谱系等权非合取比例95%区间上界",
+      "metric": "proportion_ci",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P1/A_four/subsets/overall/baselines/uniform_all_partitions/family_equal/observed_ci95/1"
+      },
+      "format": {
+        "kind": "percent",
+        "places": 1
+      }
+    },
+    {
+      "occurrence_id": "N00253",
+      "anchor": {
+        "token": "93.7%",
+        "line": 82,
+        "column": 93,
+        "line_text": "严格划分样本含625个系统、108个谱系组。四特征下22个系统不合取，占3.5%；谱系等权比例为2.8%，谱系整组自助95%区间为[0.5%, 6.0%]。两种人工参照的非合取率分别为93.7%和82.9%；“观测−参照”分别为−90.9个百分点[−93.2, −87.8]和−80.1个百分点[−83.3, −76.4]，均低于零，P1按运行前规则获得方向支持。其含义是记录中的合取结构较随机划分集中，不是随机划分已成为语言演化模型。",
+        "numeric_index_on_line": 11,
+        "context_sha256": "b2ff19fe9c61375788385e343c0b9fcd91197ebe9d51db35314eec6f9ee6bf30"
+      },
+      "kind": "result",
+      "label": "全划分等概率参照非合取率",
+      "metric": "proportion",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P1/A_four/subsets/overall/baselines/uniform_all_partitions/family_equal/reference_violation_rate"
+      },
+      "format": {
+        "kind": "percent",
+        "places": 1
+      }
+    },
+    {
+      "occurrence_id": "N00254",
+      "anchor": {
+        "token": "82.9%",
+        "line": 82,
+        "column": 99,
+        "line_text": "严格划分样本含625个系统、108个谱系组。四特征下22个系统不合取，占3.5%；谱系等权比例为2.8%，谱系整组自助95%区间为[0.5%, 6.0%]。两种人工参照的非合取率分别为93.7%和82.9%；“观测−参照”分别为−90.9个百分点[−93.2, −87.8]和−80.1个百分点[−83.3, −76.4]，均低于零，P1按运行前规则获得方向支持。其含义是记录中的合取结构较随机划分集中，不是随机划分已成为语言演化模型。",
+        "numeric_index_on_line": 12,
+        "context_sha256": "b2ff19fe9c61375788385e343c0b9fcd91197ebe9d51db35314eec6f9ee6bf30"
+      },
+      "kind": "result",
+      "label": "固定块大小参照非合取率",
+      "metric": "proportion",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P1/A_four/subsets/overall/baselines/fixed_block_sizes/family_equal/reference_violation_rate"
+      },
+      "format": {
+        "kind": "percent",
+        "places": 1
+      }
+    },
+    {
+      "occurrence_id": "N00255",
+      "anchor": {
+        "token": "−90.9",
+        "line": 82,
+        "column": 115,
+        "line_text": "严格划分样本含625个系统、108个谱系组。四特征下22个系统不合取，占3.5%；谱系等权比例为2.8%，谱系整组自助95%区间为[0.5%, 6.0%]。两种人工参照的非合取率分别为93.7%和82.9%；“观测−参照”分别为−90.9个百分点[−93.2, −87.8]和−80.1个百分点[−83.3, −76.4]，均低于零，P1按运行前规则获得方向支持。其含义是记录中的合取结构较随机划分集中，不是随机划分已成为语言演化模型。",
+        "numeric_index_on_line": 13,
+        "context_sha256": "b2ff19fe9c61375788385e343c0b9fcd91197ebe9d51db35314eec6f9ee6bf30"
+      },
+      "kind": "result",
+      "label": "观测减全划分参照非合取率百分点",
+      "metric": "percentage_points",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P1/A_four/subsets/overall/baselines/uniform_all_partitions/family_equal/observed_minus_reference"
+      },
+      "format": {
+        "kind": "percentage_points",
+        "places": 1
+      }
+    },
+    {
+      "occurrence_id": "N00256",
+      "anchor": {
+        "token": "−93.2",
+        "line": 82,
+        "column": 125,
+        "line_text": "严格划分样本含625个系统、108个谱系组。四特征下22个系统不合取，占3.5%；谱系等权比例为2.8%，谱系整组自助95%区间为[0.5%, 6.0%]。两种人工参照的非合取率分别为93.7%和82.9%；“观测−参照”分别为−90.9个百分点[−93.2, −87.8]和−80.1个百分点[−83.3, −76.4]，均低于零，P1按运行前规则获得方向支持。其含义是记录中的合取结构较随机划分集中，不是随机划分已成为语言演化模型。",
+        "numeric_index_on_line": 14,
+        "context_sha256": "b2ff19fe9c61375788385e343c0b9fcd91197ebe9d51db35314eec6f9ee6bf30"
+      },
+      "kind": "result",
+      "label": "观测减全划分参照差值区间下界百分点",
+      "metric": "percentage_points",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P1/A_four/subsets/overall/baselines/uniform_all_partitions/family_equal/difference_ci95/0"
+      },
+      "format": {
+        "kind": "percentage_points",
+        "places": 1
+      }
+    },
+    {
+      "occurrence_id": "N00257",
+      "anchor": {
+        "token": "−87.8",
+        "line": 82,
+        "column": 132,
+        "line_text": "严格划分样本含625个系统、108个谱系组。四特征下22个系统不合取，占3.5%；谱系等权比例为2.8%，谱系整组自助95%区间为[0.5%, 6.0%]。两种人工参照的非合取率分别为93.7%和82.9%；“观测−参照”分别为−90.9个百分点[−93.2, −87.8]和−80.1个百分点[−83.3, −76.4]，均低于零，P1按运行前规则获得方向支持。其含义是记录中的合取结构较随机划分集中，不是随机划分已成为语言演化模型。",
+        "numeric_index_on_line": 15,
+        "context_sha256": "b2ff19fe9c61375788385e343c0b9fcd91197ebe9d51db35314eec6f9ee6bf30"
+      },
+      "kind": "result",
+      "label": "观测减全划分参照差值区间上界百分点",
+      "metric": "percentage_points",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P1/A_four/subsets/overall/baselines/uniform_all_partitions/family_equal/difference_ci95/1"
+      },
+      "format": {
+        "kind": "percentage_points",
+        "places": 1
+      }
+    },
+    {
+      "occurrence_id": "N00258",
+      "anchor": {
+        "token": "−80.1",
+        "line": 82,
+        "column": 139,
+        "line_text": "严格划分样本含625个系统、108个谱系组。四特征下22个系统不合取，占3.5%；谱系等权比例为2.8%，谱系整组自助95%区间为[0.5%, 6.0%]。两种人工参照的非合取率分别为93.7%和82.9%；“观测−参照”分别为−90.9个百分点[−93.2, −87.8]和−80.1个百分点[−83.3, −76.4]，均低于零，P1按运行前规则获得方向支持。其含义是记录中的合取结构较随机划分集中，不是随机划分已成为语言演化模型。",
+        "numeric_index_on_line": 16,
+        "context_sha256": "b2ff19fe9c61375788385e343c0b9fcd91197ebe9d51db35314eec6f9ee6bf30"
+      },
+      "kind": "result",
+      "label": "观测减固定块大小参照非合取率百分点",
+      "metric": "percentage_points",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P1/A_four/subsets/overall/baselines/fixed_block_sizes/family_equal/observed_minus_reference"
+      },
+      "format": {
+        "kind": "percentage_points",
+        "places": 1
+      }
+    },
+    {
+      "occurrence_id": "N00259",
+      "anchor": {
+        "token": "−83.3",
+        "line": 82,
+        "column": 149,
+        "line_text": "严格划分样本含625个系统、108个谱系组。四特征下22个系统不合取，占3.5%；谱系等权比例为2.8%，谱系整组自助95%区间为[0.5%, 6.0%]。两种人工参照的非合取率分别为93.7%和82.9%；“观测−参照”分别为−90.9个百分点[−93.2, −87.8]和−80.1个百分点[−83.3, −76.4]，均低于零，P1按运行前规则获得方向支持。其含义是记录中的合取结构较随机划分集中，不是随机划分已成为语言演化模型。",
+        "numeric_index_on_line": 17,
+        "context_sha256": "b2ff19fe9c61375788385e343c0b9fcd91197ebe9d51db35314eec6f9ee6bf30"
+      },
+      "kind": "result",
+      "label": "观测减固定块大小参照差值区间下界百分点",
+      "metric": "percentage_points",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P1/A_four/subsets/overall/baselines/fixed_block_sizes/family_equal/difference_ci95/0"
+      },
+      "format": {
+        "kind": "percentage_points",
+        "places": 1
+      }
+    },
+    {
+      "occurrence_id": "N00260",
+      "anchor": {
+        "token": "−76.4",
+        "line": 82,
+        "column": 156,
+        "line_text": "严格划分样本含625个系统、108个谱系组。四特征下22个系统不合取，占3.5%；谱系等权比例为2.8%，谱系整组自助95%区间为[0.5%, 6.0%]。两种人工参照的非合取率分别为93.7%和82.9%；“观测−参照”分别为−90.9个百分点[−93.2, −87.8]和−80.1个百分点[−83.3, −76.4]，均低于零，P1按运行前规则获得方向支持。其含义是记录中的合取结构较随机划分集中，不是随机划分已成为语言演化模型。",
+        "numeric_index_on_line": 18,
+        "context_sha256": "b2ff19fe9c61375788385e343c0b9fcd91197ebe9d51db35314eec6f9ee6bf30"
+      },
+      "kind": "result",
+      "label": "观测减固定块大小参照差值区间上界百分点",
+      "metric": "percentage_points",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P1/A_four/subsets/overall/baselines/fixed_block_sizes/family_equal/difference_ci95/1"
+      },
+      "format": {
+        "kind": "percentage_points",
+        "places": 1
+      }
+    },
+    {
+      "occurrence_id": "N00262",
+      "anchor": {
+        "token": "163",
+        "line": 84,
+        "column": 30,
+        "line_text": "表示选择会明显改变可描述范围：只用s、a、r时非合取系统为163个，加入传统q后降为22个。四特征任意合取与递归树在本样本均有22个不兼容系统，扩展六特征后均为21个。观测样本因而没有区分两种定义，但它们在全部理论划分上的允许集合不同，不能由观测相同宣称两定义等价。去除南岛或帕马–恩永甘后，P1相对两种参照的差值方向保持。",
+        "numeric_index_on_line": 1,
+        "context_sha256": "a40d176dc324f4f02eea1552d02ee0d2bde36a1a3ff7c3c6c1d598adb3380277"
+      },
+      "kind": "result",
+      "label": "仅s、a、r三特征非合取系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P1/A_three/subsets/overall/violating_systems"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00263",
+      "anchor": {
+        "token": "22",
+        "line": 84,
+        "column": 43,
+        "line_text": "表示选择会明显改变可描述范围：只用s、a、r时非合取系统为163个，加入传统q后降为22个。四特征任意合取与递归树在本样本均有22个不兼容系统，扩展六特征后均为21个。观测样本因而没有区分两种定义，但它们在全部理论划分上的允许集合不同，不能由观测相同宣称两定义等价。去除南岛或帕马–恩永甘后，P1相对两种参照的差值方向保持。",
+        "numeric_index_on_line": 2,
+        "context_sha256": "a40d176dc324f4f02eea1552d02ee0d2bde36a1a3ff7c3c6c1d598adb3380277"
+      },
+      "kind": "result",
+      "label": "加入相对性别q后非合取系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P1/A_four/subsets/overall/violating_systems"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00265",
+      "anchor": {
+        "token": "22",
+        "line": 84,
+        "column": 64,
+        "line_text": "表示选择会明显改变可描述范围：只用s、a、r时非合取系统为163个，加入传统q后降为22个。四特征任意合取与递归树在本样本均有22个不兼容系统，扩展六特征后均为21个。观测样本因而没有区分两种定义，但它们在全部理论划分上的允许集合不同，不能由观测相同宣称两定义等价。去除南岛或帕马–恩永甘后，P1相对两种参照的差值方向保持。",
+        "numeric_index_on_line": 4,
+        "context_sha256": "a40d176dc324f4f02eea1552d02ee0d2bde36a1a3ff7c3c6c1d598adb3380277"
+      },
+      "kind": "result",
+      "label": "四特征任意合取与递归单叶树在观测样本中共同的不兼容系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P1/B_four/subsets/overall/violating_systems",
+        "guards": [
+          {
+            "pointer": "/partition/P1/A_four/subsets/overall/violating_systems",
+            "equals": 22
+          }
+        ]
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00267",
+      "anchor": {
+        "token": "21",
+        "line": 84,
+        "column": 81,
+        "line_text": "表示选择会明显改变可描述范围：只用s、a、r时非合取系统为163个，加入传统q后降为22个。四特征任意合取与递归树在本样本均有22个不兼容系统，扩展六特征后均为21个。观测样本因而没有区分两种定义，但它们在全部理论划分上的允许集合不同，不能由观测相同宣称两定义等价。去除南岛或帕马–恩永甘后，P1相对两种参照的差值方向保持。",
+        "numeric_index_on_line": 6,
+        "context_sha256": "a40d176dc324f4f02eea1552d02ee0d2bde36a1a3ff7c3c6c1d598adb3380277"
+      },
+      "kind": "result",
+      "label": "六特征任意合取与递归单叶树在观测样本中共同的不兼容系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P1/B_six/subsets/overall/violating_systems",
+        "guards": [
+          {
+            "pointer": "/partition/P1/A_six/subsets/overall/violating_systems",
+            "equals": 21
+          }
+        ]
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00279",
+      "anchor": {
+        "token": "一",
+        "line": 88,
+        "column": 113,
+        "line_text": "严格结构见证区分了几条经典预测（表2、图2）。性别二级区分偏年长侧、年龄二级区分偏同性侧，在谱系多数投票及多重调整后仍获方向支持；年龄偏男性侧仅有同向点估计，调整后未得到支持。三项都不能由系统数之比直接替代谱系检验。P3另有一个谱系组平局，不进入其二项分母；不适用的系统也不是反向证据。",
+        "numeric_index_on_line": 7,
+        "context_sha256": "593e522bdbfc9a671b3dc21d4d620eb7cb0b8ab2cf47da4432b4f0fe046299d8"
+      },
+      "kind": "result",
+      "label": "P3谱系多数方向平局组数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P2_P4/P3/strict_direction/overall/family_ties"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00284",
+      "anchor": {
+        "token": "51",
+        "line": 94,
+        "column": 15,
+        "line_text": "| P2 性别偏年长侧 | 51/6 | 21/3 | 0.0001 | 0.0004 | 方向支持 |",
+        "numeric_index_on_line": 2,
+        "context_sha256": "bf0bdc4c77260afa13b5b2a19d54ece5019d99fef08b74ba5f93960fca4b2100"
+      },
+      "kind": "result",
+      "label": "P2严格结构见证：预测方向系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P2_P4/P2/strict_direction/overall/systems_predicted"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00285",
+      "anchor": {
+        "token": "6",
+        "line": 94,
+        "column": 18,
+        "line_text": "| P2 性别偏年长侧 | 51/6 | 21/3 | 0.0001 | 0.0004 | 方向支持 |",
+        "numeric_index_on_line": 3,
+        "context_sha256": "bf0bdc4c77260afa13b5b2a19d54ece5019d99fef08b74ba5f93960fca4b2100"
+      },
+      "kind": "result",
+      "label": "P2严格结构见证：反向系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P2_P4/P2/strict_direction/overall/systems_opposite"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00286",
+      "anchor": {
+        "token": "21",
+        "line": 94,
+        "column": 22,
+        "line_text": "| P2 性别偏年长侧 | 51/6 | 21/3 | 0.0001 | 0.0004 | 方向支持 |",
+        "numeric_index_on_line": 4,
+        "context_sha256": "bf0bdc4c77260afa13b5b2a19d54ece5019d99fef08b74ba5f93960fca4b2100"
+      },
+      "kind": "result",
+      "label": "P2严格结构见证：预测方向多数谱系组数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P2_P4/P2/strict_direction/overall/families_predicted_majority"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00287",
+      "anchor": {
+        "token": "3",
+        "line": 94,
+        "column": 25,
+        "line_text": "| P2 性别偏年长侧 | 51/6 | 21/3 | 0.0001 | 0.0004 | 方向支持 |",
+        "numeric_index_on_line": 5,
+        "context_sha256": "bf0bdc4c77260afa13b5b2a19d54ece5019d99fef08b74ba5f93960fca4b2100"
+      },
+      "kind": "result",
+      "label": "P2严格结构见证：反向多数谱系组数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P2_P4/P2/strict_direction/overall/families_opposite_majority"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00288",
+      "anchor": {
+        "token": "0.0001",
+        "line": 94,
+        "column": 29,
+        "line_text": "| P2 性别偏年长侧 | 51/6 | 21/3 | 0.0001 | 0.0004 | 方向支持 |",
+        "numeric_index_on_line": 6,
+        "context_sha256": "bf0bdc4c77260afa13b5b2a19d54ece5019d99fef08b74ba5f93960fca4b2100"
+      },
+      "kind": "result",
+      "label": "P2严格结构见证：单侧精确二项p值",
+      "metric": "p_value",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P2_P4/P2/strict_direction/overall/exact_binomial_p_one_sided"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00289",
+      "anchor": {
+        "token": "0.0004",
+        "line": 94,
+        "column": 38,
+        "line_text": "| P2 性别偏年长侧 | 51/6 | 21/3 | 0.0001 | 0.0004 | 方向支持 |",
+        "numeric_index_on_line": 7,
+        "context_sha256": "bf0bdc4c77260afa13b5b2a19d54ece5019d99fef08b74ba5f93960fca4b2100"
+      },
+      "kind": "result",
+      "label": "P2严格结构见证：三项Bonferroni调整p值",
+      "metric": "p_value",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P2_P4/P2/strict_direction/overall/bonferroni_three_p"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00291",
+      "anchor": {
+        "token": "17",
+        "line": 95,
+        "column": 15,
+        "line_text": "| P3 年龄偏男性侧 | 17/5 | 11/3 | 0.0287 | 0.0861 | 未支持 |",
+        "numeric_index_on_line": 2,
+        "context_sha256": "41116a9ce01d9c8e113f047a904bdfaff5644d28789664e59c900b4444ba0e23"
+      },
+      "kind": "result",
+      "label": "P3严格结构见证：预测方向系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P2_P4/P3/strict_direction/overall/systems_predicted"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00292",
+      "anchor": {
+        "token": "5",
+        "line": 95,
+        "column": 18,
+        "line_text": "| P3 年龄偏男性侧 | 17/5 | 11/3 | 0.0287 | 0.0861 | 未支持 |",
+        "numeric_index_on_line": 3,
+        "context_sha256": "41116a9ce01d9c8e113f047a904bdfaff5644d28789664e59c900b4444ba0e23"
+      },
+      "kind": "result",
+      "label": "P3严格结构见证：反向系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P2_P4/P3/strict_direction/overall/systems_opposite"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00293",
+      "anchor": {
+        "token": "11",
+        "line": 95,
+        "column": 22,
+        "line_text": "| P3 年龄偏男性侧 | 17/5 | 11/3 | 0.0287 | 0.0861 | 未支持 |",
+        "numeric_index_on_line": 4,
+        "context_sha256": "41116a9ce01d9c8e113f047a904bdfaff5644d28789664e59c900b4444ba0e23"
+      },
+      "kind": "result",
+      "label": "P3严格结构见证：预测方向多数谱系组数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P2_P4/P3/strict_direction/overall/families_predicted_majority"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00294",
+      "anchor": {
+        "token": "3",
+        "line": 95,
+        "column": 25,
+        "line_text": "| P3 年龄偏男性侧 | 17/5 | 11/3 | 0.0287 | 0.0861 | 未支持 |",
+        "numeric_index_on_line": 5,
+        "context_sha256": "41116a9ce01d9c8e113f047a904bdfaff5644d28789664e59c900b4444ba0e23"
+      },
+      "kind": "result",
+      "label": "P3严格结构见证：反向多数谱系组数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P2_P4/P3/strict_direction/overall/families_opposite_majority"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00295",
+      "anchor": {
+        "token": "0.0287",
+        "line": 95,
+        "column": 29,
+        "line_text": "| P3 年龄偏男性侧 | 17/5 | 11/3 | 0.0287 | 0.0861 | 未支持 |",
+        "numeric_index_on_line": 6,
+        "context_sha256": "41116a9ce01d9c8e113f047a904bdfaff5644d28789664e59c900b4444ba0e23"
+      },
+      "kind": "result",
+      "label": "P3严格结构见证：单侧精确二项p值",
+      "metric": "p_value",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P2_P4/P3/strict_direction/overall/exact_binomial_p_one_sided"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00296",
+      "anchor": {
+        "token": "0.0861",
+        "line": 95,
+        "column": 38,
+        "line_text": "| P3 年龄偏男性侧 | 17/5 | 11/3 | 0.0287 | 0.0861 | 未支持 |",
+        "numeric_index_on_line": 7,
+        "context_sha256": "41116a9ce01d9c8e113f047a904bdfaff5644d28789664e59c900b4444ba0e23"
+      },
+      "kind": "result",
+      "label": "P3严格结构见证：三项Bonferroni调整p值",
+      "metric": "p_value",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P2_P4/P3/strict_direction/overall/bonferroni_three_p"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00298",
+      "anchor": {
+        "token": "81",
+        "line": 96,
+        "column": 15,
+        "line_text": "| P4 年龄偏同性侧 | 81/1 | 17/1 | <0.0001 | 0.0002 | 方向支持 |",
+        "numeric_index_on_line": 2,
+        "context_sha256": "28514095b74fb35c910307ea55ceb1835cb2718832305806b2cb6c7bcb872734"
+      },
+      "kind": "result",
+      "label": "P4严格结构见证：预测方向系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P2_P4/P4/strict_direction/overall/systems_predicted"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00299",
+      "anchor": {
+        "token": "1",
+        "line": 96,
+        "column": 18,
+        "line_text": "| P4 年龄偏同性侧 | 81/1 | 17/1 | <0.0001 | 0.0002 | 方向支持 |",
+        "numeric_index_on_line": 3,
+        "context_sha256": "28514095b74fb35c910307ea55ceb1835cb2718832305806b2cb6c7bcb872734"
+      },
+      "kind": "result",
+      "label": "P4严格结构见证：反向系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P2_P4/P4/strict_direction/overall/systems_opposite"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00300",
+      "anchor": {
+        "token": "17",
+        "line": 96,
+        "column": 22,
+        "line_text": "| P4 年龄偏同性侧 | 81/1 | 17/1 | <0.0001 | 0.0002 | 方向支持 |",
+        "numeric_index_on_line": 4,
+        "context_sha256": "28514095b74fb35c910307ea55ceb1835cb2718832305806b2cb6c7bcb872734"
+      },
+      "kind": "result",
+      "label": "P4严格结构见证：预测方向多数谱系组数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P2_P4/P4/strict_direction/overall/families_predicted_majority"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00301",
+      "anchor": {
+        "token": "1",
+        "line": 96,
+        "column": 25,
+        "line_text": "| P4 年龄偏同性侧 | 81/1 | 17/1 | <0.0001 | 0.0002 | 方向支持 |",
+        "numeric_index_on_line": 5,
+        "context_sha256": "28514095b74fb35c910307ea55ceb1835cb2718832305806b2cb6c7bcb872734"
+      },
+      "kind": "result",
+      "label": "P4严格结构见证：反向多数谱系组数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P2_P4/P4/strict_direction/overall/families_opposite_majority"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00302",
+      "anchor": {
+        "token": "0.0001",
+        "line": 96,
+        "column": 30,
+        "line_text": "| P4 年龄偏同性侧 | 81/1 | 17/1 | <0.0001 | 0.0002 | 方向支持 |",
+        "numeric_index_on_line": 6,
+        "context_sha256": "28514095b74fb35c910307ea55ceb1835cb2718832305806b2cb6c7bcb872734"
+      },
+      "kind": "result",
+      "label": "P4严格结构见证：单侧精确二项p值",
+      "metric": "p_value",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P2_P4/P4/strict_direction/overall/exact_binomial_p_one_sided"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      },
+      "bound": {
+        "relation": "<",
+        "threshold": "0.0001"
+      }
+    },
+    {
+      "occurrence_id": "N00303",
+      "anchor": {
+        "token": "0.0002",
+        "line": 96,
+        "column": 39,
+        "line_text": "| P4 年龄偏同性侧 | 81/1 | 17/1 | <0.0001 | 0.0002 | 方向支持 |",
+        "numeric_index_on_line": 7,
+        "context_sha256": "28514095b74fb35c910307ea55ceb1835cb2718832305806b2cb6c7bcb872734"
+      },
+      "kind": "result",
+      "label": "P4严格结构见证：三项Bonferroni调整p值",
+      "metric": "p_value",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P2_P4/P4/strict_direction/overall/bonferroni_three_p"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00309",
+      "anchor": {
+        "token": "600",
+        "line": 98,
+        "column": 49,
+        "line_text": "去除两个大型谱系的指定检查中，P2、P4仍获方向支持，P3仍未支持；区域方向却不完全一致。P5有600个系统存在兼容树，22个无合法单叶树而列域外，另3个记录系统在全部合法树中都需较早使用s：Umbundu、Urak Lawoi与Yuracare。这只与所定数据库普遍版本不兼容；其词项分析是否为真实语义反例仍未确认。固定顺序抽查20个不同违例系统，全部保留可核对形式和来源，语义解释仍未决；其中4个有含空格形式，1个有较粗兄弟姐妹记录可作背景，不能据此把违例全部归因于资料错误。运行后另补查全部22个主四特征非合取系统及3个P5不兼容系统，共25个；连同固定样本，去重后审查43个系统。补查保留为事后质量核查，真实语义解释仍未确认，不替代预定抽查。",
+        "numeric_index_on_line": 6,
+        "context_sha256": "525c362c3c287c40c97c29b291af2687727711ef2544af51c5c5f30133cfa661"
+      },
+      "kind": "result",
+      "label": "P5存在兼容树的系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P5/overall/status_counts/compatible"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00310",
+      "anchor": {
+        "token": "22",
+        "line": 98,
+        "column": 61,
+        "line_text": "去除两个大型谱系的指定检查中，P2、P4仍获方向支持，P3仍未支持；区域方向却不完全一致。P5有600个系统存在兼容树，22个无合法单叶树而列域外，另3个记录系统在全部合法树中都需较早使用s：Umbundu、Urak Lawoi与Yuracare。这只与所定数据库普遍版本不兼容；其词项分析是否为真实语义反例仍未确认。固定顺序抽查20个不同违例系统，全部保留可核对形式和来源，语义解释仍未决；其中4个有含空格形式，1个有较粗兄弟姐妹记录可作背景，不能据此把违例全部归因于资料错误。运行后另补查全部22个主四特征非合取系统及3个P5不兼容系统，共25个；连同固定样本，去重后审查43个系统。补查保留为事后质量核查，真实语义解释仍未确认，不替代预定抽查。",
+        "numeric_index_on_line": 7,
+        "context_sha256": "525c362c3c287c40c97c29b291af2687727711ef2544af51c5c5f30133cfa661"
+      },
+      "kind": "result",
+      "label": "P5无合法单叶树域外系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P5/overall/status_counts/outside_single_leaf_tree_domain"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00311",
+      "anchor": {
+        "token": "3",
+        "line": 98,
+        "column": 76,
+        "line_text": "去除两个大型谱系的指定检查中，P2、P4仍获方向支持，P3仍未支持；区域方向却不完全一致。P5有600个系统存在兼容树，22个无合法单叶树而列域外，另3个记录系统在全部合法树中都需较早使用s：Umbundu、Urak Lawoi与Yuracare。这只与所定数据库普遍版本不兼容；其词项分析是否为真实语义反例仍未确认。固定顺序抽查20个不同违例系统，全部保留可核对形式和来源，语义解释仍未决；其中4个有含空格形式，1个有较粗兄弟姐妹记录可作背景，不能据此把违例全部归因于资料错误。运行后另补查全部22个主四特征非合取系统及3个P5不兼容系统，共25个；连同固定样本，去重后审查43个系统。补查保留为事后质量核查，真实语义解释仍未确认，不替代预定抽查。",
+        "numeric_index_on_line": 8,
+        "context_sha256": "525c362c3c287c40c97c29b291af2687727711ef2544af51c5c5f30133cfa661"
+      },
+      "kind": "result",
+      "label": "P5全部合法树均须提前使用s的不兼容系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P5/overall/status_counts/incompatible_all_trees_require_early_feature"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00312",
+      "anchor": {
+        "token": "20",
+        "line": 98,
+        "column": 166,
+        "line_text": "去除两个大型谱系的指定检查中，P2、P4仍获方向支持，P3仍未支持；区域方向却不完全一致。P5有600个系统存在兼容树，22个无合法单叶树而列域外，另3个记录系统在全部合法树中都需较早使用s：Umbundu、Urak Lawoi与Yuracare。这只与所定数据库普遍版本不兼容；其词项分析是否为真实语义反例仍未确认。固定顺序抽查20个不同违例系统，全部保留可核对形式和来源，语义解释仍未决；其中4个有含空格形式，1个有较粗兄弟姐妹记录可作背景，不能据此把违例全部归因于资料错误。运行后另补查全部22个主四特征非合取系统及3个P5不兼容系统，共25个；连同固定样本，去重后审查43个系统。补查保留为事后质量核查，真实语义解释仍未确认，不替代预定抽查。",
+        "numeric_index_on_line": 9,
+        "context_sha256": "525c362c3c287c40c97c29b291af2687727711ef2544af51c5c5f30133cfa661"
+      },
+      "kind": "result",
+      "label": "运行前固定顺序抽查的不同系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/violation_audit/audited_distinct_systems"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00313",
+      "anchor": {
+        "token": "4",
+        "line": 98,
+        "column": 199,
+        "line_text": "去除两个大型谱系的指定检查中，P2、P4仍获方向支持，P3仍未支持；区域方向却不完全一致。P5有600个系统存在兼容树，22个无合法单叶树而列域外，另3个记录系统在全部合法树中都需较早使用s：Umbundu、Urak Lawoi与Yuracare。这只与所定数据库普遍版本不兼容；其词项分析是否为真实语义反例仍未确认。固定顺序抽查20个不同违例系统，全部保留可核对形式和来源，语义解释仍未决；其中4个有含空格形式，1个有较粗兄弟姐妹记录可作背景，不能据此把违例全部归因于资料错误。运行后另补查全部22个主四特征非合取系统及3个P5不兼容系统，共25个；连同固定样本，去重后审查43个系统。补查保留为事后质量核查，真实语义解释仍未确认，不替代预定抽查。",
+        "numeric_index_on_line": 10,
+        "context_sha256": "525c362c3c287c40c97c29b291af2687727711ef2544af51c5c5f30133cfa661"
+      },
+      "kind": "result",
+      "label": "固定抽查中有空格词形系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/violation_audit/field_evidence_summary/systems_with_space_form"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00314",
+      "anchor": {
+        "token": "1",
+        "line": 98,
+        "column": 208,
+        "line_text": "去除两个大型谱系的指定检查中，P2、P4仍获方向支持，P3仍未支持；区域方向却不完全一致。P5有600个系统存在兼容树，22个无合法单叶树而列域外，另3个记录系统在全部合法树中都需较早使用s：Umbundu、Urak Lawoi与Yuracare。这只与所定数据库普遍版本不兼容；其词项分析是否为真实语义反例仍未确认。固定顺序抽查20个不同违例系统，全部保留可核对形式和来源，语义解释仍未决；其中4个有含空格形式，1个有较粗兄弟姐妹记录可作背景，不能据此把违例全部归因于资料错误。运行后另补查全部22个主四特征非合取系统及3个P5不兼容系统，共25个；连同固定样本，去重后审查43个系统。补查保留为事后质量核查，真实语义解释仍未确认，不替代预定抽查。",
+        "numeric_index_on_line": 11,
+        "context_sha256": "525c362c3c287c40c97c29b291af2687727711ef2544af51c5c5f30133cfa661"
+      },
+      "kind": "result",
+      "label": "固定抽查中有较粗兄弟姐妹记录背景的系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/violation_audit/field_evidence_summary/systems_with_coarse_sibling_context_rows"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00315",
+      "anchor": {
+        "token": "22",
+        "line": 98,
+        "column": 249,
+        "line_text": "去除两个大型谱系的指定检查中，P2、P4仍获方向支持，P3仍未支持；区域方向却不完全一致。P5有600个系统存在兼容树，22个无合法单叶树而列域外，另3个记录系统在全部合法树中都需较早使用s：Umbundu、Urak Lawoi与Yuracare。这只与所定数据库普遍版本不兼容；其词项分析是否为真实语义反例仍未确认。固定顺序抽查20个不同违例系统，全部保留可核对形式和来源，语义解释仍未决；其中4个有含空格形式，1个有较粗兄弟姐妹记录可作背景，不能据此把违例全部归因于资料错误。运行后另补查全部22个主四特征非合取系统及3个P5不兼容系统，共25个；连同固定样本，去重后审查43个系统。补查保留为事后质量核查，真实语义解释仍未确认，不替代预定抽查。",
+        "numeric_index_on_line": 12,
+        "context_sha256": "525c362c3c287c40c97c29b291af2687727711ef2544af51c5c5f30133cfa661"
+      },
+      "kind": "result",
+      "label": "事后补查的全部主四特征非合取系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/violation_audit/posthoc_primary_four_A_all_plus_P5/field_evidence_summary/systems_with_primary_four_feature_A_violation"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00317",
+      "anchor": {
+        "token": "3",
+        "line": 98,
+        "column": 262,
+        "line_text": "去除两个大型谱系的指定检查中，P2、P4仍获方向支持，P3仍未支持；区域方向却不完全一致。P5有600个系统存在兼容树，22个无合法单叶树而列域外，另3个记录系统在全部合法树中都需较早使用s：Umbundu、Urak Lawoi与Yuracare。这只与所定数据库普遍版本不兼容；其词项分析是否为真实语义反例仍未确认。固定顺序抽查20个不同违例系统，全部保留可核对形式和来源，语义解释仍未决；其中4个有含空格形式，1个有较粗兄弟姐妹记录可作背景，不能据此把违例全部归因于资料错误。运行后另补查全部22个主四特征非合取系统及3个P5不兼容系统，共25个；连同固定样本，去重后审查43个系统。补查保留为事后质量核查，真实语义解释仍未确认，不替代预定抽查。",
+        "numeric_index_on_line": 14,
+        "context_sha256": "525c362c3c287c40c97c29b291af2687727711ef2544af51c5c5f30133cfa661"
+      },
+      "kind": "result",
+      "label": "事后补查的全部P5不兼容系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/violation_audit/posthoc_primary_four_A_all_plus_P5/field_evidence_summary/systems_with_P5_violation"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00319",
+      "anchor": {
+        "token": "25",
+        "line": 98,
+        "column": 273,
+        "line_text": "去除两个大型谱系的指定检查中，P2、P4仍获方向支持，P3仍未支持；区域方向却不完全一致。P5有600个系统存在兼容树，22个无合法单叶树而列域外，另3个记录系统在全部合法树中都需较早使用s：Umbundu、Urak Lawoi与Yuracare。这只与所定数据库普遍版本不兼容；其词项分析是否为真实语义反例仍未确认。固定顺序抽查20个不同违例系统，全部保留可核对形式和来源，语义解释仍未决；其中4个有含空格形式，1个有较粗兄弟姐妹记录可作背景，不能据此把违例全部归因于资料错误。运行后另补查全部22个主四特征非合取系统及3个P5不兼容系统，共25个；连同固定样本，去重后审查43个系统。补查保留为事后质量核查，真实语义解释仍未确认，不替代预定抽查。",
+        "numeric_index_on_line": 16,
+        "context_sha256": "525c362c3c287c40c97c29b291af2687727711ef2544af51c5c5f30133cfa661"
+      },
+      "kind": "result",
+      "label": "事后补查四特征非合取与P5不兼容不同系统总数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/violation_audit/posthoc_primary_four_A_all_plus_P5/audited_distinct_systems"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00320",
+      "anchor": {
+        "token": "43",
+        "line": 98,
+        "column": 289,
+        "line_text": "去除两个大型谱系的指定检查中，P2、P4仍获方向支持，P3仍未支持；区域方向却不完全一致。P5有600个系统存在兼容树，22个无合法单叶树而列域外，另3个记录系统在全部合法树中都需较早使用s：Umbundu、Urak Lawoi与Yuracare。这只与所定数据库普遍版本不兼容；其词项分析是否为真实语义反例仍未确认。固定顺序抽查20个不同违例系统，全部保留可核对形式和来源，语义解释仍未决；其中4个有含空格形式，1个有较粗兄弟姐妹记录可作背景，不能据此把违例全部归因于资料错误。运行后另补查全部22个主四特征非合取系统及3个P5不兼容系统，共25个；连同固定样本，去重后审查43个系统。补查保留为事后质量核查，真实语义解释仍未确认，不替代预定抽查。",
+        "numeric_index_on_line": 17,
+        "context_sha256": "525c362c3c287c40c97c29b291af2687727711ef2544af51c5c5f30133cfa661"
+      },
+      "kind": "result",
+      "label": "固定样本及事后补查去重后总审查系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/violation_audit/total_distinct_systems_with_existing_fields_reviewed"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00325",
+      "anchor": {
+        "token": "0.0145",
+        "line": 102,
+        "column": 19,
+        "line_text": "主设定的损失见表3。M4相对M0改善0.0145，谱系整组自助95%区间为[0.0076, 0.0219]；相对M2只改善0.0018，[−0.0005, 0.0039]包含零，125组中51组改善、74组变差。换算到完整系统的28对，平均对数似然比分别为0.4055和0.0491，其区间分别为[0.2115, 0.6134]和[−0.0154, 0.1106]。额外位置编码相对已有差异交互的增益尚不稳定。",
+        "numeric_index_on_line": 4,
+        "context_sha256": "60420f7a11f9ba4f35c232d070feadeba5a67b671b8bfcde9150cd5498f6fd63"
+      },
+      "kind": "result",
+      "label": "语系留出M4相对M0对数损失降低",
+      "metric": "log_loss_gain",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/comparisons/M0-M4/gain"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00327",
+      "anchor": {
+        "token": "0.0076",
+        "line": 102,
+        "column": 39,
+        "line_text": "主设定的损失见表3。M4相对M0改善0.0145，谱系整组自助95%区间为[0.0076, 0.0219]；相对M2只改善0.0018，[−0.0005, 0.0039]包含零，125组中51组改善、74组变差。换算到完整系统的28对，平均对数似然比分别为0.4055和0.0491，其区间分别为[0.2115, 0.6134]和[−0.0154, 0.1106]。额外位置编码相对已有差异交互的增益尚不稳定。",
+        "numeric_index_on_line": 6,
+        "context_sha256": "60420f7a11f9ba4f35c232d070feadeba5a67b671b8bfcde9150cd5498f6fd63"
+      },
+      "kind": "result",
+      "label": "语系留出M4相对M0损失增益95%区间下界",
+      "metric": "log_loss_ci",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/comparisons/M0-M4/family_cluster_bootstrap_95ci/0"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00328",
+      "anchor": {
+        "token": "0.0219",
+        "line": 102,
+        "column": 47,
+        "line_text": "主设定的损失见表3。M4相对M0改善0.0145，谱系整组自助95%区间为[0.0076, 0.0219]；相对M2只改善0.0018，[−0.0005, 0.0039]包含零，125组中51组改善、74组变差。换算到完整系统的28对，平均对数似然比分别为0.4055和0.0491，其区间分别为[0.2115, 0.6134]和[−0.0154, 0.1106]。额外位置编码相对已有差异交互的增益尚不稳定。",
+        "numeric_index_on_line": 7,
+        "context_sha256": "60420f7a11f9ba4f35c232d070feadeba5a67b671b8bfcde9150cd5498f6fd63"
+      },
+      "kind": "result",
+      "label": "语系留出M4相对M0损失增益95%区间上界",
+      "metric": "log_loss_ci",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/comparisons/M0-M4/family_cluster_bootstrap_95ci/1"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00330",
+      "anchor": {
+        "token": "0.0018",
+        "line": 102,
+        "column": 62,
+        "line_text": "主设定的损失见表3。M4相对M0改善0.0145，谱系整组自助95%区间为[0.0076, 0.0219]；相对M2只改善0.0018，[−0.0005, 0.0039]包含零，125组中51组改善、74组变差。换算到完整系统的28对，平均对数似然比分别为0.4055和0.0491，其区间分别为[0.2115, 0.6134]和[−0.0154, 0.1106]。额外位置编码相对已有差异交互的增益尚不稳定。",
+        "numeric_index_on_line": 9,
+        "context_sha256": "60420f7a11f9ba4f35c232d070feadeba5a67b671b8bfcde9150cd5498f6fd63"
+      },
+      "kind": "result",
+      "label": "语系留出M4相对M2对数损失降低",
+      "metric": "log_loss_gain",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/comparisons/M2-M4/gain"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00331",
+      "anchor": {
+        "token": "−0.0005",
+        "line": 102,
+        "column": 70,
+        "line_text": "主设定的损失见表3。M4相对M0改善0.0145，谱系整组自助95%区间为[0.0076, 0.0219]；相对M2只改善0.0018，[−0.0005, 0.0039]包含零，125组中51组改善、74组变差。换算到完整系统的28对，平均对数似然比分别为0.4055和0.0491，其区间分别为[0.2115, 0.6134]和[−0.0154, 0.1106]。额外位置编码相对已有差异交互的增益尚不稳定。",
+        "numeric_index_on_line": 10,
+        "context_sha256": "60420f7a11f9ba4f35c232d070feadeba5a67b671b8bfcde9150cd5498f6fd63"
+      },
+      "kind": "result",
+      "label": "语系留出M4相对M2损失增益95%区间下界",
+      "metric": "log_loss_ci",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/comparisons/M2-M4/family_cluster_bootstrap_95ci/0"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00332",
+      "anchor": {
+        "token": "0.0039",
+        "line": 102,
+        "column": 79,
+        "line_text": "主设定的损失见表3。M4相对M0改善0.0145，谱系整组自助95%区间为[0.0076, 0.0219]；相对M2只改善0.0018，[−0.0005, 0.0039]包含零，125组中51组改善、74组变差。换算到完整系统的28对，平均对数似然比分别为0.4055和0.0491，其区间分别为[0.2115, 0.6134]和[−0.0154, 0.1106]。额外位置编码相对已有差异交互的增益尚不稳定。",
+        "numeric_index_on_line": 11,
+        "context_sha256": "60420f7a11f9ba4f35c232d070feadeba5a67b671b8bfcde9150cd5498f6fd63"
+      },
+      "kind": "result",
+      "label": "语系留出M4相对M2损失增益95%区间上界",
+      "metric": "log_loss_ci",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/comparisons/M2-M4/family_cluster_bootstrap_95ci/1"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00333",
+      "anchor": {
+        "token": "125",
+        "line": 102,
+        "column": 90,
+        "line_text": "主设定的损失见表3。M4相对M0改善0.0145，谱系整组自助95%区间为[0.0076, 0.0219]；相对M2只改善0.0018，[−0.0005, 0.0039]包含零，125组中51组改善、74组变差。换算到完整系统的28对，平均对数似然比分别为0.4055和0.0491，其区间分别为[0.2115, 0.6134]和[−0.0154, 0.1106]。额外位置编码相对已有差异交互的增益尚不稳定。",
+        "numeric_index_on_line": 12,
+        "context_sha256": "60420f7a11f9ba4f35c232d070feadeba5a67b671b8bfcde9150cd5498f6fd63"
+      },
+      "kind": "result",
+      "label": "主语系留出评分的谱系组数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/families"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00334",
+      "anchor": {
+        "token": "51",
+        "line": 102,
+        "column": 95,
+        "line_text": "主设定的损失见表3。M4相对M0改善0.0145，谱系整组自助95%区间为[0.0076, 0.0219]；相对M2只改善0.0018，[−0.0005, 0.0039]包含零，125组中51组改善、74组变差。换算到完整系统的28对，平均对数似然比分别为0.4055和0.0491，其区间分别为[0.2115, 0.6134]和[−0.0154, 0.1106]。额外位置编码相对已有差异交互的增益尚不稳定。",
+        "numeric_index_on_line": 13,
+        "context_sha256": "60420f7a11f9ba4f35c232d070feadeba5a67b671b8bfcde9150cd5498f6fd63"
+      },
+      "kind": "result",
+      "label": "M4相对M2改善的谱系组数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/comparisons/M2-M4/families_positive"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00335",
+      "anchor": {
+        "token": "74",
+        "line": 102,
+        "column": 101,
+        "line_text": "主设定的损失见表3。M4相对M0改善0.0145，谱系整组自助95%区间为[0.0076, 0.0219]；相对M2只改善0.0018，[−0.0005, 0.0039]包含零，125组中51组改善、74组变差。换算到完整系统的28对，平均对数似然比分别为0.4055和0.0491，其区间分别为[0.2115, 0.6134]和[−0.0154, 0.1106]。额外位置编码相对已有差异交互的增益尚不稳定。",
+        "numeric_index_on_line": 14,
+        "context_sha256": "60420f7a11f9ba4f35c232d070feadeba5a67b671b8bfcde9150cd5498f6fd63"
+      },
+      "kind": "result",
+      "label": "M4相对M2变差的谱系组数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/comparisons/M2-M4/families_negative"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00337",
+      "anchor": {
+        "token": "0.4055",
+        "line": 102,
+        "column": 129,
+        "line_text": "主设定的损失见表3。M4相对M0改善0.0145，谱系整组自助95%区间为[0.0076, 0.0219]；相对M2只改善0.0018，[−0.0005, 0.0039]包含零，125组中51组改善、74组变差。换算到完整系统的28对，平均对数似然比分别为0.4055和0.0491，其区间分别为[0.2115, 0.6134]和[−0.0154, 0.1106]。额外位置编码相对已有差异交互的增益尚不稳定。",
+        "numeric_index_on_line": 16,
+        "context_sha256": "60420f7a11f9ba4f35c232d070feadeba5a67b671b8bfcde9150cd5498f6fd63"
+      },
+      "kind": "result",
+      "label": "M4相对M0完整28对系统平均对数似然比",
+      "metric": "log_loss_gain",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/comparisons/M0-M4/mean_system_loglikelihood_ratio"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00338",
+      "anchor": {
+        "token": "0.0491",
+        "line": 102,
+        "column": 136,
+        "line_text": "主设定的损失见表3。M4相对M0改善0.0145，谱系整组自助95%区间为[0.0076, 0.0219]；相对M2只改善0.0018，[−0.0005, 0.0039]包含零，125组中51组改善、74组变差。换算到完整系统的28对，平均对数似然比分别为0.4055和0.0491，其区间分别为[0.2115, 0.6134]和[−0.0154, 0.1106]。额外位置编码相对已有差异交互的增益尚不稳定。",
+        "numeric_index_on_line": 17,
+        "context_sha256": "60420f7a11f9ba4f35c232d070feadeba5a67b671b8bfcde9150cd5498f6fd63"
+      },
+      "kind": "result",
+      "label": "M4相对M2完整28对系统平均对数似然比",
+      "metric": "log_loss_gain",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/comparisons/M2-M4/mean_system_loglikelihood_ratio"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00339",
+      "anchor": {
+        "token": "0.2115",
+        "line": 102,
+        "column": 150,
+        "line_text": "主设定的损失见表3。M4相对M0改善0.0145，谱系整组自助95%区间为[0.0076, 0.0219]；相对M2只改善0.0018，[−0.0005, 0.0039]包含零，125组中51组改善、74组变差。换算到完整系统的28对，平均对数似然比分别为0.4055和0.0491，其区间分别为[0.2115, 0.6134]和[−0.0154, 0.1106]。额外位置编码相对已有差异交互的增益尚不稳定。",
+        "numeric_index_on_line": 18,
+        "context_sha256": "60420f7a11f9ba4f35c232d070feadeba5a67b671b8bfcde9150cd5498f6fd63"
+      },
+      "kind": "result",
+      "label": "M4相对M0完整系统对数似然比95%区间下界",
+      "metric": "log_loss_ci",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/comparisons/M0-M4/mean_system_loglikelihood_ratio_95ci/0"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00340",
+      "anchor": {
+        "token": "0.6134",
+        "line": 102,
+        "column": 158,
+        "line_text": "主设定的损失见表3。M4相对M0改善0.0145，谱系整组自助95%区间为[0.0076, 0.0219]；相对M2只改善0.0018，[−0.0005, 0.0039]包含零，125组中51组改善、74组变差。换算到完整系统的28对，平均对数似然比分别为0.4055和0.0491，其区间分别为[0.2115, 0.6134]和[−0.0154, 0.1106]。额外位置编码相对已有差异交互的增益尚不稳定。",
+        "numeric_index_on_line": 19,
+        "context_sha256": "60420f7a11f9ba4f35c232d070feadeba5a67b671b8bfcde9150cd5498f6fd63"
+      },
+      "kind": "result",
+      "label": "M4相对M0完整系统对数似然比95%区间上界",
+      "metric": "log_loss_ci",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/comparisons/M0-M4/mean_system_loglikelihood_ratio_95ci/1"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00341",
+      "anchor": {
+        "token": "−0.0154",
+        "line": 102,
+        "column": 167,
+        "line_text": "主设定的损失见表3。M4相对M0改善0.0145，谱系整组自助95%区间为[0.0076, 0.0219]；相对M2只改善0.0018，[−0.0005, 0.0039]包含零，125组中51组改善、74组变差。换算到完整系统的28对，平均对数似然比分别为0.4055和0.0491，其区间分别为[0.2115, 0.6134]和[−0.0154, 0.1106]。额外位置编码相对已有差异交互的增益尚不稳定。",
+        "numeric_index_on_line": 20,
+        "context_sha256": "60420f7a11f9ba4f35c232d070feadeba5a67b671b8bfcde9150cd5498f6fd63"
+      },
+      "kind": "result",
+      "label": "M4相对M2完整系统对数似然比95%区间下界",
+      "metric": "log_loss_ci",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/comparisons/M2-M4/mean_system_loglikelihood_ratio_95ci/0"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00342",
+      "anchor": {
+        "token": "0.1106",
+        "line": 102,
+        "column": 176,
+        "line_text": "主设定的损失见表3。M4相对M0改善0.0145，谱系整组自助95%区间为[0.0076, 0.0219]；相对M2只改善0.0018，[−0.0005, 0.0039]包含零，125组中51组改善、74组变差。换算到完整系统的28对，平均对数似然比分别为0.4055和0.0491，其区间分别为[0.2115, 0.6134]和[−0.0154, 0.1106]。额外位置编码相对已有差异交互的增益尚不稳定。",
+        "numeric_index_on_line": 21,
+        "context_sha256": "60420f7a11f9ba4f35c232d070feadeba5a67b671b8bfcde9150cd5498f6fd63"
+      },
+      "kind": "result",
+      "label": "M4相对M2完整系统对数似然比95%区间上界",
+      "metric": "log_loss_ci",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/comparisons/M2-M4/mean_system_loglikelihood_ratio_95ci/1"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00344",
+      "anchor": {
+        "token": "939",
+        "line": 106,
+        "column": 13,
+        "line_text": "| 模型 | 未见谱系（939系统） | 未见区域（909系统） |",
+        "numeric_index_on_line": 1,
+        "context_sha256": "a57962b93c6746a426bd688cd9edd97a6648ac71f85bb688489862272f523bae"
+      },
+      "kind": "result",
+      "label": "表3主语系验证系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/systems"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00345",
+      "anchor": {
+        "token": "909",
+        "line": 106,
+        "column": 27,
+        "line_text": "| 模型 | 未见谱系（939系统） | 未见区域（909系统） |",
+        "numeric_index_on_line": 2,
+        "context_sha256": "a57962b93c6746a426bd688cd9edd97a6648ac71f85bb688489862272f523bae"
+      },
+      "kind": "result",
+      "label": "表3主地域验证系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_area/systems"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00347",
+      "anchor": {
+        "token": "0.5088",
+        "line": 108,
+        "column": 8,
+        "line_text": "| M0 | 0.5088 | 0.5326 |",
+        "numeric_index_on_line": 2,
+        "context_sha256": "94916a7cd2e19ebfaa778801e7ca8fcdb961d664890657c008af4e9f03487734"
+      },
+      "kind": "result",
+      "label": "表3未见谱系M0折外对数损失",
+      "metric": "log_loss",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/logloss/M0"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00348",
+      "anchor": {
+        "token": "0.5326",
+        "line": 108,
+        "column": 17,
+        "line_text": "| M0 | 0.5088 | 0.5326 |",
+        "numeric_index_on_line": 3,
+        "context_sha256": "94916a7cd2e19ebfaa778801e7ca8fcdb961d664890657c008af4e9f03487734"
+      },
+      "kind": "result",
+      "label": "表3未见区域M0折外对数损失",
+      "metric": "log_loss",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_area/logloss/M0"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00350",
+      "anchor": {
+        "token": "0.5020",
+        "line": 109,
+        "column": 8,
+        "line_text": "| M1 | 0.5020 | 0.5410 |",
+        "numeric_index_on_line": 2,
+        "context_sha256": "3f5c0e6c6a33965817cc0c5b5c3ed62da80e1fdb99c388ad2295ab206a6d6d22"
+      },
+      "kind": "result",
+      "label": "表3未见谱系M1折外对数损失",
+      "metric": "log_loss",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/logloss/M1"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00351",
+      "anchor": {
+        "token": "0.5410",
+        "line": 109,
+        "column": 17,
+        "line_text": "| M1 | 0.5020 | 0.5410 |",
+        "numeric_index_on_line": 3,
+        "context_sha256": "3f5c0e6c6a33965817cc0c5b5c3ed62da80e1fdb99c388ad2295ab206a6d6d22"
+      },
+      "kind": "result",
+      "label": "表3未见区域M1折外对数损失",
+      "metric": "log_loss",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_area/logloss/M1"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00353",
+      "anchor": {
+        "token": "0.4961",
+        "line": 110,
+        "column": 8,
+        "line_text": "| M2 | 0.4961 | 0.5400 |",
+        "numeric_index_on_line": 2,
+        "context_sha256": "f7bbcb2e704d7019b0a4aba168a19c2c09cecd34ed64fba67d7bd996ceb49cbd"
+      },
+      "kind": "result",
+      "label": "表3未见谱系M2折外对数损失",
+      "metric": "log_loss",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/logloss/M2"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00354",
+      "anchor": {
+        "token": "0.5400",
+        "line": 110,
+        "column": 17,
+        "line_text": "| M2 | 0.4961 | 0.5400 |",
+        "numeric_index_on_line": 3,
+        "context_sha256": "f7bbcb2e704d7019b0a4aba168a19c2c09cecd34ed64fba67d7bd996ceb49cbd"
+      },
+      "kind": "result",
+      "label": "表3未见区域M2折外对数损失",
+      "metric": "log_loss",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_area/logloss/M2"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00356",
+      "anchor": {
+        "token": "0.4944",
+        "line": 111,
+        "column": 8,
+        "line_text": "| M3 | 0.4944 | 0.5407 |",
+        "numeric_index_on_line": 2,
+        "context_sha256": "a182aade7d3eccad79874d6422370e4490dfe516eba469966420ae604ef9270f"
+      },
+      "kind": "result",
+      "label": "表3未见谱系M3折外对数损失",
+      "metric": "log_loss",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/logloss/M3"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00357",
+      "anchor": {
+        "token": "0.5407",
+        "line": 111,
+        "column": 17,
+        "line_text": "| M3 | 0.4944 | 0.5407 |",
+        "numeric_index_on_line": 3,
+        "context_sha256": "a182aade7d3eccad79874d6422370e4490dfe516eba469966420ae604ef9270f"
+      },
+      "kind": "result",
+      "label": "表3未见区域M3折外对数损失",
+      "metric": "log_loss",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_area/logloss/M3"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00359",
+      "anchor": {
+        "token": "0.4943",
+        "line": 112,
+        "column": 8,
+        "line_text": "| M4 | 0.4943 | 0.5405 |",
+        "numeric_index_on_line": 2,
+        "context_sha256": "4368c18758b35b8c5e060bda8a4700d48f1199a8a54710da39ad4024da6cda28"
+      },
+      "kind": "result",
+      "label": "表3未见谱系M4折外对数损失",
+      "metric": "log_loss",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_family/logloss/M4"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00360",
+      "anchor": {
+        "token": "0.5405",
+        "line": 112,
+        "column": 17,
+        "line_text": "| M4 | 0.4943 | 0.5405 |",
+        "numeric_index_on_line": 3,
+        "context_sha256": "4368c18758b35b8c5e060bda8a4700d48f1199a8a54710da39ad4024da6cda28"
+      },
+      "kind": "result",
+      "label": "表3未见区域M4折外对数损失",
+      "metric": "log_loss",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_area/logloss/M4"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00363",
+      "anchor": {
+        "token": "939",
+        "line": 114,
+        "column": 68,
+        "line_text": "![图1　七个差异单元的实测率与拟合率。各区域实测点按区域内谱系等权；曲线是在各面板重复的全样本MLE拟合，不是各区重新拟合。总面板含939系统，其中30个缺地域；六区面板合计909系统。](../../analysis/supplementary_s2/s2_seven_cells.png){width=95%}",
+        "numeric_index_on_line": 3,
+        "context_sha256": "51f53a5a41bf6cc0950936c262494e4bdcd1a8ab2168e29c648a6f2f48f0f479"
+      },
+      "kind": "result",
+      "label": "图1总面板完整系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/sample/full_systems"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00364",
+      "anchor": {
+        "token": "30",
+        "line": 114,
+        "column": 76,
+        "line_text": "![图1　七个差异单元的实测率与拟合率。各区域实测点按区域内谱系等权；曲线是在各面板重复的全样本MLE拟合，不是各区重新拟合。总面板含939系统，其中30个缺地域；六区面板合计909系统。](../../analysis/supplementary_s2/s2_seven_cells.png){width=95%}",
+        "numeric_index_on_line": 4,
+        "context_sha256": "51f53a5a41bf6cc0950936c262494e4bdcd1a8ab2168e29c648a6f2f48f0f479"
+      },
+      "kind": "result",
+      "label": "图1缺地域系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/sample/full_unknown_macroarea_systems"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00365",
+      "anchor": {
+        "token": "909",
+        "line": 114,
+        "column": 89,
+        "line_text": "![图1　七个差异单元的实测率与拟合率。各区域实测点按区域内谱系等权；曲线是在各面板重复的全样本MLE拟合，不是各区重新拟合。总面板含939系统，其中30个缺地域；六区面板合计909系统。](../../analysis/supplementary_s2/s2_seven_cells.png){width=95%}",
+        "numeric_index_on_line": 5,
+        "context_sha256": "51f53a5a41bf6cc0950936c262494e4bdcd1a8ab2168e29c648a6f2f48f0f479"
+      },
+      "kind": "result",
+      "label": "图1六区面板合计系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/measurement/geography/regional_validation_eligible_systems"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00371",
+      "anchor": {
+        "token": "一",
+        "line": 116,
+        "column": 29,
+        "line_text": "![图2　严格结构见证下的系统数与谱系多数方向；P3另有一个平局谱系组未进入方向检验。](../../analysis/supplementary_s2/s2_hierarchy_directions.png){width=95%}",
+        "numeric_index_on_line": 3,
+        "context_sha256": "d3948b01df7f3ab56210db9971af4432f0df5dfd4b780e4cbb818941faf7a48e"
+      },
+      "kind": "result",
+      "label": "图2P3方向投票平局谱系组数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/partition/P2_P4/P3/strict_direction/overall/family_ties"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00376",
+      "anchor": {
+        "token": "5000",
+        "line": 118,
+        "column": 8,
+        "line_text": "三个理论系数的5000次整谱系重拟合均成功，但方向证据有别（表4）。年长条件下性别差异和同性条件下年龄差异的区间均为负，男性条件下年龄差异则跨零；多重调整区间维持这一判断。它们描述控制其他设计列后的总体logit对照，不是表2语言内部树方向的同一种统计量。因M2到M4的增益及一个指定系数均不满足规则，P6整体未得到支持。",
+        "numeric_index_on_line": 2,
+        "context_sha256": "e6e1effae7f7e57e19b3120921084ea09811c56a7368e415f3b30c92a7ba9ff0"
+      },
+      "kind": "result",
+      "label": "成功的整谱系系数重拟合次数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/uncertainty/bootstrap_valid"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00387",
+      "anchor": {
+        "token": "−0.4578",
+        "line": 124,
+        "column": 16,
+        "line_text": "| DrE：性别×均年长 | −0.4578 | [−0.7822, −0.1648] |",
+        "numeric_index_on_line": 1,
+        "context_sha256": "e8adeb70767610de656623a10cfa6ee5f02e3a2a7ce0a79208af57f18823d3eb"
+      },
+      "kind": "result",
+      "label": "表4DrE理论条件项MLE系数",
+      "metric": "coefficient",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/uncertainty/theory_terms/DrE/point_estimate"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00388",
+      "anchor": {
+        "token": "−0.7822",
+        "line": 124,
+        "column": 27,
+        "line_text": "| DrE：性别×均年长 | −0.4578 | [−0.7822, −0.1648] |",
+        "numeric_index_on_line": 2,
+        "context_sha256": "e8adeb70767610de656623a10cfa6ee5f02e3a2a7ce0a79208af57f18823d3eb"
+      },
+      "kind": "result",
+      "label": "表4DrE整谱系重拟合95%区间下界",
+      "metric": "coefficient",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/uncertainty/theory_terms/DrE/family_refit_percentile_95_interval/0"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00389",
+      "anchor": {
+        "token": "−0.1648",
+        "line": 124,
+        "column": 36,
+        "line_text": "| DrE：性别×均年长 | −0.4578 | [−0.7822, −0.1648] |",
+        "numeric_index_on_line": 3,
+        "context_sha256": "e8adeb70767610de656623a10cfa6ee5f02e3a2a7ce0a79208af57f18823d3eb"
+      },
+      "kind": "result",
+      "label": "表4DrE整谱系重拟合95%区间上界",
+      "metric": "coefficient",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/uncertainty/theory_terms/DrE/family_refit_percentile_95_interval/1"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00390",
+      "anchor": {
+        "token": "−0.1195",
+        "line": 125,
+        "column": 16,
+        "line_text": "| DaB：年龄×均男性 | −0.1195 | [−0.3801, 0.1305] |",
+        "numeric_index_on_line": 1,
+        "context_sha256": "3a3c839cbde0c46c62261a9b9a2a225291d7361dc9d2129556b39116b598447c"
+      },
+      "kind": "result",
+      "label": "表4DaB理论条件项MLE系数",
+      "metric": "coefficient",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/uncertainty/theory_terms/DaB/point_estimate"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00391",
+      "anchor": {
+        "token": "−0.3801",
+        "line": 125,
+        "column": 27,
+        "line_text": "| DaB：年龄×均男性 | −0.1195 | [−0.3801, 0.1305] |",
+        "numeric_index_on_line": 2,
+        "context_sha256": "3a3c839cbde0c46c62261a9b9a2a225291d7361dc9d2129556b39116b598447c"
+      },
+      "kind": "result",
+      "label": "表4DaB整谱系重拟合95%区间下界",
+      "metric": "coefficient",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/uncertainty/theory_terms/DaB/family_refit_percentile_95_interval/0"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00392",
+      "anchor": {
+        "token": "0.1305",
+        "line": 125,
+        "column": 36,
+        "line_text": "| DaB：年龄×均男性 | −0.1195 | [−0.3801, 0.1305] |",
+        "numeric_index_on_line": 3,
+        "context_sha256": "3a3c839cbde0c46c62261a9b9a2a225291d7361dc9d2129556b39116b598447c"
+      },
+      "kind": "result",
+      "label": "表4DaB整谱系重拟合95%区间上界",
+      "metric": "coefficient",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/uncertainty/theory_terms/DaB/family_refit_percentile_95_interval/1"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00393",
+      "anchor": {
+        "token": "−0.6558",
+        "line": 126,
+        "column": 16,
+        "line_text": "| DaS：年龄×均同性 | −0.6558 | [−1.0488, −0.3197] |",
+        "numeric_index_on_line": 1,
+        "context_sha256": "7b922765357ae6631dfedcade4601f574f5c1e2b62095e19f9784115dca3b0b5"
+      },
+      "kind": "result",
+      "label": "表4DaS理论条件项MLE系数",
+      "metric": "coefficient",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/uncertainty/theory_terms/DaS/point_estimate"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00394",
+      "anchor": {
+        "token": "−1.0488",
+        "line": 126,
+        "column": 27,
+        "line_text": "| DaS：年龄×均同性 | −0.6558 | [−1.0488, −0.3197] |",
+        "numeric_index_on_line": 2,
+        "context_sha256": "7b922765357ae6631dfedcade4601f574f5c1e2b62095e19f9784115dca3b0b5"
+      },
+      "kind": "result",
+      "label": "表4DaS整谱系重拟合95%区间下界",
+      "metric": "coefficient",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/uncertainty/theory_terms/DaS/family_refit_percentile_95_interval/0"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00395",
+      "anchor": {
+        "token": "−0.3197",
+        "line": 126,
+        "column": 36,
+        "line_text": "| DaS：年龄×均同性 | −0.6558 | [−1.0488, −0.3197] |",
+        "numeric_index_on_line": 3,
+        "context_sha256": "7b922765357ae6631dfedcade4601f574f5c1e2b62095e19f9784115dca3b0b5"
+      },
+      "kind": "result",
+      "label": "表4DaS整谱系重拟合95%区间上界",
+      "metric": "coefficient",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/uncertainty/theory_terms/DaS/family_refit_percentile_95_interval/1"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00397",
+      "anchor": {
+        "token": "30",
+        "line": 130,
+        "column": 14,
+        "line_text": "未见区域上的表现不同：排除30个缺地域系统后，M4相对M0的增益为−0.0079，[−0.0143, −0.0014]；相对M2为−0.0005，[−0.0031, 0.0021]。因此，语系留出的改善不能推广为跨地域优势。移除大型谱系而不重训的杠杆检查亦不能替代重新评估地区分布。",
+        "numeric_index_on_line": 1,
+        "context_sha256": "8280d6d6b317e3e9877ab2fa346342526fde93f4691d91a00f9d3679e42d147e"
+      },
+      "kind": "result",
+      "label": "地域验证排除的缺地域系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/measurement/geography/missing_macroarea_systems"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00400",
+      "anchor": {
+        "token": "−0.0079",
+        "line": 130,
+        "column": 34,
+        "line_text": "未见区域上的表现不同：排除30个缺地域系统后，M4相对M0的增益为−0.0079，[−0.0143, −0.0014]；相对M2为−0.0005，[−0.0031, 0.0021]。因此，语系留出的改善不能推广为跨地域优势。移除大型谱系而不重训的杠杆检查亦不能替代重新评估地区分布。",
+        "numeric_index_on_line": 4,
+        "context_sha256": "8280d6d6b317e3e9877ab2fa346342526fde93f4691d91a00f9d3679e42d147e"
+      },
+      "kind": "result",
+      "label": "地域留出M4相对M0对数损失增益",
+      "metric": "log_loss_gain",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_area/comparisons/M0-M4/gain"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00401",
+      "anchor": {
+        "token": "−0.0143",
+        "line": 130,
+        "column": 43,
+        "line_text": "未见区域上的表现不同：排除30个缺地域系统后，M4相对M0的增益为−0.0079，[−0.0143, −0.0014]；相对M2为−0.0005，[−0.0031, 0.0021]。因此，语系留出的改善不能推广为跨地域优势。移除大型谱系而不重训的杠杆检查亦不能替代重新评估地区分布。",
+        "numeric_index_on_line": 5,
+        "context_sha256": "8280d6d6b317e3e9877ab2fa346342526fde93f4691d91a00f9d3679e42d147e"
+      },
+      "kind": "result",
+      "label": "地域留出M4相对M0增益95%区间下界",
+      "metric": "log_loss_ci",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_area/comparisons/M0-M4/family_cluster_bootstrap_95ci/0"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00402",
+      "anchor": {
+        "token": "−0.0014",
+        "line": 130,
+        "column": 52,
+        "line_text": "未见区域上的表现不同：排除30个缺地域系统后，M4相对M0的增益为−0.0079，[−0.0143, −0.0014]；相对M2为−0.0005，[−0.0031, 0.0021]。因此，语系留出的改善不能推广为跨地域优势。移除大型谱系而不重训的杠杆检查亦不能替代重新评估地区分布。",
+        "numeric_index_on_line": 6,
+        "context_sha256": "8280d6d6b317e3e9877ab2fa346342526fde93f4691d91a00f9d3679e42d147e"
+      },
+      "kind": "result",
+      "label": "地域留出M4相对M0增益95%区间上界",
+      "metric": "log_loss_ci",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_area/comparisons/M0-M4/family_cluster_bootstrap_95ci/1"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00404",
+      "anchor": {
+        "token": "−0.0005",
+        "line": 130,
+        "column": 66,
+        "line_text": "未见区域上的表现不同：排除30个缺地域系统后，M4相对M0的增益为−0.0079，[−0.0143, −0.0014]；相对M2为−0.0005，[−0.0031, 0.0021]。因此，语系留出的改善不能推广为跨地域优势。移除大型谱系而不重训的杠杆检查亦不能替代重新评估地区分布。",
+        "numeric_index_on_line": 8,
+        "context_sha256": "8280d6d6b317e3e9877ab2fa346342526fde93f4691d91a00f9d3679e42d147e"
+      },
+      "kind": "result",
+      "label": "地域留出M4相对M2对数损失增益",
+      "metric": "log_loss_gain",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_area/comparisons/M2-M4/gain"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00405",
+      "anchor": {
+        "token": "−0.0031",
+        "line": 130,
+        "column": 75,
+        "line_text": "未见区域上的表现不同：排除30个缺地域系统后，M4相对M0的增益为−0.0079，[−0.0143, −0.0014]；相对M2为−0.0005，[−0.0031, 0.0021]。因此，语系留出的改善不能推广为跨地域优势。移除大型谱系而不重训的杠杆检查亦不能替代重新评估地区分布。",
+        "numeric_index_on_line": 9,
+        "context_sha256": "8280d6d6b317e3e9877ab2fa346342526fde93f4691d91a00f9d3679e42d147e"
+      },
+      "kind": "result",
+      "label": "地域留出M4相对M2增益95%区间下界",
+      "metric": "log_loss_ci",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_area/comparisons/M2-M4/family_cluster_bootstrap_95ci/0"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00406",
+      "anchor": {
+        "token": "0.0021",
+        "line": 130,
+        "column": 84,
+        "line_text": "未见区域上的表现不同：排除30个缺地域系统后，M4相对M0的增益为−0.0079，[−0.0143, −0.0014]；相对M2为−0.0005，[−0.0031, 0.0021]。因此，语系留出的改善不能推广为跨地域优势。移除大型谱系而不重训的杠杆检查亦不能替代重新评估地区分布。",
+        "numeric_index_on_line": 10,
+        "context_sha256": "8280d6d6b317e3e9877ab2fa346342526fde93f4691d91a00f9d3679e42d147e"
+      },
+      "kind": "result",
+      "label": "地域留出M4相对M2增益95%区间上界",
+      "metric": "log_loss_ci",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/settings/D1_MLE_family_area/comparisons/M2-M4/family_cluster_bootstrap_95ci/1"
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00410",
+      "anchor": {
+        "token": "0.0044",
+        "line": 132,
+        "column": 31,
+        "line_text": "估计设定同样改变结论。原C=1、语言等权下，M2相对M0增益0.0044，[−0.0005, 0.0082]，相对M1为0.0018，[−0.0006, 0.0061]。该收缩使七单元饱和模型的全样本拟合偏离实测率最多3.7个百分点。改用MLE、谱系等权及语系验证后，D1—D5中M2相对M1的区间均为正，M4相对M2却均跨零。故严格测量没有在当前主估计下消除传统相对性别以外的差异非加性，也没有确立条件位置的额外优势。完整交叉结果在补充材料逐项报告。",
+        "numeric_index_on_line": 4,
+        "context_sha256": "f47698c917a1c9cae33e5d4f270b232cb1b609590f1f4765b713dc8e7e1b3721"
+      },
+      "kind": "result",
+      "label": "冻结C1语言等权M2相对M0损失增益",
+      "metric": "log_loss_gain",
+      "source": {
+        "file": "analysis/results.json",
+        "pointer": "/analyses/0/comparisons/raw/language_equal_gain",
+        "guards": [
+          {
+            "pointer": "/analyses/0/variant",
+            "equals": "primary"
+          },
+          {
+            "pointer": "/analyses/0/cv_grouping",
+            "equals": "family"
+          },
+          {
+            "pointer": "/analyses/0/C",
+            "equals": 1
+          }
+        ]
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00411",
+      "anchor": {
+        "token": "−0.0005",
+        "line": 132,
+        "column": 39,
+        "line_text": "估计设定同样改变结论。原C=1、语言等权下，M2相对M0增益0.0044，[−0.0005, 0.0082]，相对M1为0.0018，[−0.0006, 0.0061]。该收缩使七单元饱和模型的全样本拟合偏离实测率最多3.7个百分点。改用MLE、谱系等权及语系验证后，D1—D5中M2相对M1的区间均为正，M4相对M2却均跨零。故严格测量没有在当前主估计下消除传统相对性别以外的差异非加性，也没有确立条件位置的额外优势。完整交叉结果在补充材料逐项报告。",
+        "numeric_index_on_line": 5,
+        "context_sha256": "f47698c917a1c9cae33e5d4f270b232cb1b609590f1f4765b713dc8e7e1b3721"
+      },
+      "kind": "result",
+      "label": "冻结C1语言等权M2相对M0损失增益95%下界",
+      "metric": "log_loss_ci",
+      "source": {
+        "file": "analysis/results.json",
+        "pointer": "/analyses/0/comparisons/raw/family_cluster_bootstrap_95ci/0",
+        "guards": [
+          {
+            "pointer": "/analyses/0/variant",
+            "equals": "primary"
+          },
+          {
+            "pointer": "/analyses/0/cv_grouping",
+            "equals": "family"
+          },
+          {
+            "pointer": "/analyses/0/C",
+            "equals": 1
+          }
+        ]
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00412",
+      "anchor": {
+        "token": "0.0082",
+        "line": 132,
+        "column": 48,
+        "line_text": "估计设定同样改变结论。原C=1、语言等权下，M2相对M0增益0.0044，[−0.0005, 0.0082]，相对M1为0.0018，[−0.0006, 0.0061]。该收缩使七单元饱和模型的全样本拟合偏离实测率最多3.7个百分点。改用MLE、谱系等权及语系验证后，D1—D5中M2相对M1的区间均为正，M4相对M2却均跨零。故严格测量没有在当前主估计下消除传统相对性别以外的差异非加性，也没有确立条件位置的额外优势。完整交叉结果在补充材料逐项报告。",
+        "numeric_index_on_line": 6,
+        "context_sha256": "f47698c917a1c9cae33e5d4f270b232cb1b609590f1f4765b713dc8e7e1b3721"
+      },
+      "kind": "result",
+      "label": "冻结C1语言等权M2相对M0损失增益95%上界",
+      "metric": "log_loss_ci",
+      "source": {
+        "file": "analysis/results.json",
+        "pointer": "/analyses/0/comparisons/raw/family_cluster_bootstrap_95ci/1",
+        "guards": [
+          {
+            "pointer": "/analyses/0/variant",
+            "equals": "primary"
+          },
+          {
+            "pointer": "/analyses/0/cv_grouping",
+            "equals": "family"
+          },
+          {
+            "pointer": "/analyses/0/C",
+            "equals": 1
+          }
+        ]
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00414",
+      "anchor": {
+        "token": "0.0018",
+        "line": 132,
+        "column": 61,
+        "line_text": "估计设定同样改变结论。原C=1、语言等权下，M2相对M0增益0.0044，[−0.0005, 0.0082]，相对M1为0.0018，[−0.0006, 0.0061]。该收缩使七单元饱和模型的全样本拟合偏离实测率最多3.7个百分点。改用MLE、谱系等权及语系验证后，D1—D5中M2相对M1的区间均为正，M4相对M2却均跨零。故严格测量没有在当前主估计下消除传统相对性别以外的差异非加性，也没有确立条件位置的额外优势。完整交叉结果在补充材料逐项报告。",
+        "numeric_index_on_line": 8,
+        "context_sha256": "f47698c917a1c9cae33e5d4f270b232cb1b609590f1f4765b713dc8e7e1b3721"
+      },
+      "kind": "result",
+      "label": "冻结C1语言等权M2相对M1损失增益",
+      "metric": "log_loss_gain",
+      "source": {
+        "file": "analysis/results.json",
+        "pointer": "/analyses/0/comparisons/classical/language_equal_gain",
+        "guards": [
+          {
+            "pointer": "/analyses/0/variant",
+            "equals": "primary"
+          },
+          {
+            "pointer": "/analyses/0/cv_grouping",
+            "equals": "family"
+          },
+          {
+            "pointer": "/analyses/0/C",
+            "equals": 1
+          }
+        ]
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00415",
+      "anchor": {
+        "token": "−0.0006",
+        "line": 132,
+        "column": 69,
+        "line_text": "估计设定同样改变结论。原C=1、语言等权下，M2相对M0增益0.0044，[−0.0005, 0.0082]，相对M1为0.0018，[−0.0006, 0.0061]。该收缩使七单元饱和模型的全样本拟合偏离实测率最多3.7个百分点。改用MLE、谱系等权及语系验证后，D1—D5中M2相对M1的区间均为正，M4相对M2却均跨零。故严格测量没有在当前主估计下消除传统相对性别以外的差异非加性，也没有确立条件位置的额外优势。完整交叉结果在补充材料逐项报告。",
+        "numeric_index_on_line": 9,
+        "context_sha256": "f47698c917a1c9cae33e5d4f270b232cb1b609590f1f4765b713dc8e7e1b3721"
+      },
+      "kind": "result",
+      "label": "冻结C1语言等权M2相对M1损失增益95%下界",
+      "metric": "log_loss_ci",
+      "source": {
+        "file": "analysis/results.json",
+        "pointer": "/analyses/0/comparisons/classical/family_cluster_bootstrap_95ci/0",
+        "guards": [
+          {
+            "pointer": "/analyses/0/variant",
+            "equals": "primary"
+          },
+          {
+            "pointer": "/analyses/0/cv_grouping",
+            "equals": "family"
+          },
+          {
+            "pointer": "/analyses/0/C",
+            "equals": 1
+          }
+        ]
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00416",
+      "anchor": {
+        "token": "0.0061",
+        "line": 132,
+        "column": 78,
+        "line_text": "估计设定同样改变结论。原C=1、语言等权下，M2相对M0增益0.0044，[−0.0005, 0.0082]，相对M1为0.0018，[−0.0006, 0.0061]。该收缩使七单元饱和模型的全样本拟合偏离实测率最多3.7个百分点。改用MLE、谱系等权及语系验证后，D1—D5中M2相对M1的区间均为正，M4相对M2却均跨零。故严格测量没有在当前主估计下消除传统相对性别以外的差异非加性，也没有确立条件位置的额外优势。完整交叉结果在补充材料逐项报告。",
+        "numeric_index_on_line": 10,
+        "context_sha256": "f47698c917a1c9cae33e5d4f270b232cb1b609590f1f4765b713dc8e7e1b3721"
+      },
+      "kind": "result",
+      "label": "冻结C1语言等权M2相对M1损失增益95%上界",
+      "metric": "log_loss_ci",
+      "source": {
+        "file": "analysis/results.json",
+        "pointer": "/analyses/0/comparisons/classical/family_cluster_bootstrap_95ci/1",
+        "guards": [
+          {
+            "pointer": "/analyses/0/variant",
+            "equals": "primary"
+          },
+          {
+            "pointer": "/analyses/0/cv_grouping",
+            "equals": "family"
+          },
+          {
+            "pointer": "/analyses/0/C",
+            "equals": 1
+          }
+        ]
+      },
+      "format": {
+        "kind": "fixed",
+        "places": 4
+      }
+    },
+    {
+      "occurrence_id": "N00418",
+      "anchor": {
+        "token": "3.7",
+        "line": 132,
+        "column": 110,
+        "line_text": "估计设定同样改变结论。原C=1、语言等权下，M2相对M0增益0.0044，[−0.0005, 0.0082]，相对M1为0.0018，[−0.0006, 0.0061]。该收缩使七单元饱和模型的全样本拟合偏离实测率最多3.7个百分点。改用MLE、谱系等权及语系验证后，D1—D5中M2相对M1的区间均为正，M4相对M2却均跨零。故严格测量没有在当前主估计下消除传统相对性别以外的差异非加性，也没有确立条件位置的额外优势。完整交叉结果在补充材料逐项报告。",
+        "numeric_index_on_line": 12,
+        "context_sha256": "f47698c917a1c9cae33e5d4f270b232cb1b609590f1f4765b713dc8e7e1b3721"
+      },
+      "kind": "result",
+      "label": "C1语言等权全样本M2实测率最大绝对偏离百分点",
+      "metric": "percentage_points",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/prediction/calibration_summary/D1_C1_language/M2_max_absolute_error"
+      },
+      "format": {
+        "kind": "percentage_points",
+        "places": 1
+      }
+    },
+    {
+      "occurrence_id": "N00426",
+      "anchor": {
+        "token": "141",
+        "line": 134,
+        "column": 5,
+        "line_text": "D5改变141个系统的1573对结果；相邻重复词元所在线索系统未改变共享结果，说明切词影响不应概括成叠音效应。缺地域的30个系统保留于谱系分析而排除于区域验证及混合模型。三种交叉随机截距模型在预定重试后均因精度损失未满足收敛判据，其近似结果仅作诊断，不提供稳定的层级模型推断。",
+        "numeric_index_on_line": 2,
+        "context_sha256": "3574d7fa463290af891fb3f2255c543119e15982a3692806e6d2c73f78045551"
+      },
+      "kind": "result",
+      "label": "D5切词改变类别对结果的系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/measurement/D5/systems_with_dyad_outcome_changes"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00427",
+      "anchor": {
+        "token": "1573",
+        "line": 134,
+        "column": 12,
+        "line_text": "D5改变141个系统的1573对结果；相邻重复词元所在线索系统未改变共享结果，说明切词影响不应概括成叠音效应。缺地域的30个系统保留于谱系分析而排除于区域验证及混合模型。三种交叉随机截距模型在预定重试后均因精度损失未满足收敛判据，其近似结果仅作诊断，不提供稳定的层级模型推断。",
+        "numeric_index_on_line": 3,
+        "context_sha256": "3574d7fa463290af891fb3f2255c543119e15982a3692806e6d2c73f78045551"
+      },
+      "kind": "result",
+      "label": "D5切词改变的类别对总数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/measurement/D5/dyad_outcome_changes"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    },
+    {
+      "occurrence_id": "N00428",
+      "anchor": {
+        "token": "30",
+        "line": 134,
+        "column": 60,
+        "line_text": "D5改变141个系统的1573对结果；相邻重复词元所在线索系统未改变共享结果，说明切词影响不应概括成叠音效应。缺地域的30个系统保留于谱系分析而排除于区域验证及混合模型。三种交叉随机截距模型在预定重试后均因精度损失未满足收敛判据，其近似结果仅作诊断，不提供稳定的层级模型推断。",
+        "numeric_index_on_line": 4,
+        "context_sha256": "3574d7fa463290af891fb3f2255c543119e15982a3692806e6d2c73f78045551"
+      },
+      "kind": "result",
+      "label": "谱系分析保留而地域验证及GLMM排除的缺地域系统数",
+      "metric": "count",
+      "source": {
+        "file": "analysis/supplementary_s2/s2_results.json",
+        "pointer": "/measurement/geography/missing_macroarea_systems"
+      },
+      "format": {
+        "kind": "integer"
+      }
+    }
+  ]
+}

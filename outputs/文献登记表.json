@@ -2708,7 +2708,7 @@
     ],
     "pdf_url": "https://www.researchgate.net/profile/T-Florian-Jaeger/publication/229079011_Mixed_effect_models_for_genetic_and_areal_dependencies_in_linguistic_typology/links/0912f500d7d933761e000000/Mixed-effect-models-for-genetic-and-areal-dependencies-in-linguistic-typology.pdf",
     "pdf_path": "literature/C/C08_Jaeger_2011_Mixed_effect_models_for_genetic_and_areal_dependencies_in_linguistic_typology.pdf",
-    "access_level": "full_text_pdf",
+    "access_level": "partial_pdf",
     "fulltext_path": "literature/C/C08_Jaeger_2011_Mixed_effect_models_for_genetic_and_areal_dependencies_in_linguistic_typology.txt",
     "pdf_sha256": "06b322baf9dfcf2a742e867d235c8187f5e5a81b86794bbb0b497980038367b1",
     "checked_on": "2026-10-14",
@@ -2726,19 +2726,26 @@
         "locator": "第285页概述；第290—296页地域控制讨论"
       }
     ],
-    "notes": "作者在ResearchGate公开上传的39页作者副本；该评论文章无独立摘要，不将开头正文误标为abstract。",
+    "notes": [
+      "作者在ResearchGate公开上传的39页作者副本；该评论文章无独立摘要，不将开头正文误标为abstract。",
+      "2026-10-15独立完整性复查：39页作者副本仅含印刷281–319，首页篇幅281–320，缺末页320参考文献；公开来源补全未成功。当前新版引用准入排除，旧稿保留历史范围。详见notes/revision_c08_completeness.md。"
+    ],
     "metadata_source": "notes/C/C08_crossref.json",
-    "citation_status": "included_fulltext",
-    "formal_counted": true,
-    "eligible_formal_read": true,
-    "eligible_read": true,
+    "citation_status": "excluded_incomplete_pdf",
+    "formal_counted": false,
+    "eligible_formal_read": false,
+    "eligible_read": false,
     "supplementary_preview": false,
     "txt_path": "literature/C/C08_Jaeger_2011_Mixed_effect_models_for_genetic_and_areal_dependencies_in_linguistic_typology.txt",
     "sha256": "06b322baf9dfcf2a742e867d235c8187f5e5a81b86794bbb0b497980038367b1",
     "pdf_magic_validated": true,
     "title_author_verified": true,
     "txt_sha256": "358dab7a7ca306e627567a31c302853794d38c87895a7f4728233f774abc6b1e",
-    "text_conversion_report": "literature/pdf_text_conversion_report.json"
+    "text_conversion_report": "literature/pdf_text_conversion_report.json",
+    "pdf_complete": false,
+    "pdf_completeness_status": "missing_printed_page_320",
+    "available_printed_pages": "281–319",
+    "printed_page_range_on_pdf_title": "281–320"
   },
   {
     "id": "C09",
@@ -3049,5 +3056,546 @@
     "title_author_verified": true,
     "txt_sha256": "2d9ca1fa8a2ecad6e79a450d53b6af6e6f6e097b73c32663cf1c5a72f33fb36b",
     "text_conversion_report": "literature/pdf_text_conversion_report.json"
+  },
+  {
+    "id": "D01",
+    "title": "Semantic maps and the typology of colexification: Intertwining polysemous networks across languages",
+    "authors": [
+      "Alexandre François"
+    ],
+    "year": 2008,
+    "venue": "From Polysemy to Semantic Change: Towards a typology of lexical semantic associations",
+    "volume": "106",
+    "issue": null,
+    "pages": "163-215",
+    "article_number": null,
+    "doi": "10.1075/slcs.106.09fra",
+    "url": "https://doi.org/10.1075/slcs.106.09fra",
+    "pdf_url": "https://marama.huma-num.fr/data/AlexFrancois_2008_Colexification_SemanticMaps_published.pdf",
+    "pdf_path": "literature/D_colexification/D01_François_2008_Semantic_maps_and_the_typology_of_colexification_Intertwining_polysemous_networks_across_languages.pdf",
+    "txt_path": "literature/D_colexification/D01_François_2008_Semantic_maps_and_the_typology_of_colexification_Intertwining_polysemous_networks_across_languages.txt",
+    "access_level": "pdf_fulltext",
+    "abstract_path": null,
+    "abstract_url": null,
+    "download_attempts": [
+      {
+        "url": "https://marama.huma-num.fr/data/AlexFrancois_2008_Colexification_SemanticMaps_published.pdf",
+        "status": "downloaded; %PDF- validated; 1090604 bytes"
+      }
+    ],
+    "summary_zh": "把共词化定义为两个可区分意义与同一词汇形式关联，作为对语义或历史解释保持中立的描述概念，并区分严格共词化和词源、派生、复合等宽松联系。",
+    "relevance_zh": "明确D1完整词形关系与D5词元共享不能混为同一种测量；语义网络中的重叠关系不必构成严格划分。",
+    "evidence_claims": [
+      {
+        "claim_zh": "同一词汇形式关联两个功能可区分意义是共词化的描述性定义。",
+        "locator": "印刷170页；PDF8；§3.2"
+      },
+      {
+        "claim_zh": "严格共词化与复合、派生、词源联系应分别编码。",
+        "locator": "印刷171–172页；PDF9–10；§3.3"
+      },
+      {
+        "claim_zh": "共词化可来自共享历史、接触和独立趋同。",
+        "locator": "印刷174页；PDF12；§3.4"
+      }
+    ],
+    "notes": "作者公开的正式排版全文；印刷页163–215，PDF1对应163。",
+    "metadata_path": "literature/D_colexification/D01_crossref.json",
+    "read_scope": "核对题名、元数据、相关定义、方法与讨论；文献综合中的证据定位已逐页核查。",
+    "pdf_version": "正式排版PDF",
+    "pdf_pages": 53,
+    "editors": [
+      "Martine Vanhove"
+    ],
+    "publisher": "John Benjamins Publishing Company",
+    "place": "Amsterdam; Philadelphia",
+    "publication_date_note": "出版社页为2008-11-21，Crossref有较早日期；本文按2008引用。",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "citation_status": "included_fulltext",
+    "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
+    "supplementary_preview": false,
+    "pdf_sha256": "976c2dfb9f3aafbed8a8e8c9a0ef6e03ce53b12a4e56435bcc417017c40439e2",
+    "sha256": "976c2dfb9f3aafbed8a8e8c9a0ef6e03ce53b12a4e56435bcc417017c40439e2",
+    "txt_sha256": "a2e9b975eef6dc8fa9aa3cd6e6e005051f856ad79a2f1f8a6d0f79a6d616db45",
+    "fulltext_path": "literature/D_colexification/D01_François_2008_Semantic_maps_and_the_typology_of_colexification_Intertwining_polysemous_networks_across_languages.txt",
+    "text_conversion_report": "literature/D_colexification/conversion_report.json"
+  },
+  {
+    "id": "D02",
+    "title": "The Database of Cross-Linguistic Colexifications, reproducible analysis of cross-linguistic polysemies",
+    "authors": [
+      "Christoph Rzymski",
+      "Tiago Tresoldi",
+      "Simon J. Greenhill",
+      "Mei-Shin Wu",
+      "Nathanael E. Schweikhard",
+      "Maria Koptjevskaja-Tamm",
+      "Volker Gast",
+      "Timotheus A. Bodt",
+      "Abbie Hantgan",
+      "Gereon A. Kaiping",
+      "Sophie Chang",
+      "Yunfan Lai",
+      "Natalia Morozova",
+      "Heini Arjava",
+      "Nataliia Hübler",
+      "Ezequiel Koile",
+      "Steve Pepper",
+      "Mariann Proos",
+      "Briana Van Epps",
+      "Ingrid Blanco",
+      "Carolin Hundt",
+      "Sergei Monakhov",
+      "Kristina Pianykh",
+      "Sallona Ramesh",
+      "Russell D. Gray",
+      "Robert Forkel",
+      "Johann-Mattis List"
+    ],
+    "year": 2020,
+    "venue": "Scientific Data",
+    "volume": "7",
+    "issue": "1",
+    "pages": null,
+    "article_number": "13",
+    "doi": "10.1038/s41597-019-0341-x",
+    "url": "https://doi.org/10.1038/s41597-019-0341-x",
+    "pdf_url": "https://www.nature.com/articles/s41597-019-0341-x.pdf",
+    "pdf_path": "literature/D_colexification/D02_Rzymski_2020_The_Database_of_Cross_Linguistic_Colexifications_reproducible_analysis_of_cross_linguistic_polysemies.pdf",
+    "txt_path": "literature/D_colexification/D02_Rzymski_2020_The_Database_of_Cross_Linguistic_Colexifications_reproducible_analysis_of_cross_linguistic_polysemies.txt",
+    "access_level": "pdf_fulltext",
+    "abstract_path": null,
+    "abstract_url": null,
+    "download_attempts": [
+      {
+        "url": "https://www.nature.com/articles/s41597-019-0341-x.pdf",
+        "status": "downloaded; %PDF- validated; 2782490 bytes"
+      }
+    ],
+    "summary_zh": "CLICS3在统一概念和语言标识后，把同义词拆分、来源清理及规范化词形的相同匹配转为概念对边；同时报告语言和语系层级计数及覆盖差异。",
+    "relevance_zh": "为词形清理与结果测量提供公开范例；其删除变音符等规范化与本文保守精确匹配不同，测量定义需要显式比较。",
+    "evidence_claims": [
+      {
+        "claim_zh": "Value保留原来源，Form为清理后版本；同义词拆开并移除编者注释。",
+        "locator": "文章PDF4，Methods"
+      },
+      {
+        "claim_zh": "共词化计算进一步删除语素边界/变音符并Unicode转ASCII后比较相同；按语言与语系记录。",
+        "locator": "文章PDF4–5；Colexification analysis with CLICS"
+      },
+      {
+        "claim_zh": "CLICS3地理与概念覆盖不均，全球比较须处理此种缺失格局。",
+        "locator": "文章PDF8–9；CLICS3 validation"
+      }
+    ],
+    "notes": "出版社开放正式排版PDF，文章页1–12。",
+    "metadata_path": "literature/D_colexification/D02_crossref.json",
+    "read_scope": "核对题名、元数据、相关定义、方法与讨论；文献综合中的证据定位已逐页核查。",
+    "pdf_version": "正式排版PDF",
+    "pdf_pages": 12,
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "citation_status": "included_fulltext",
+    "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
+    "supplementary_preview": false,
+    "pdf_sha256": "b26e3f3d9ce047028e87ab31828f8a364d1c6d2d956ff68a478c4f460ee66411",
+    "sha256": "b26e3f3d9ce047028e87ab31828f8a364d1c6d2d956ff68a478c4f460ee66411",
+    "txt_sha256": "ef0ab5fe56a39eb40868c09381e144755e89406ca236843237cf7bdfd90a8c8a",
+    "fulltext_path": "literature/D_colexification/D02_Rzymski_2020_The_Database_of_Cross_Linguistic_Colexifications_reproducible_analysis_of_cross_linguistic_polysemies.txt",
+    "text_conversion_report": "literature/D_colexification/conversion_report.json"
+  },
+  {
+    "id": "D03",
+    "title": "When do languages use the same word for different meanings? The Goldilocks principle in colexification",
+    "authors": [
+      "Thomas Brochhagen",
+      "Gemma Boleda"
+    ],
+    "year": 2022,
+    "venue": "Cognition",
+    "volume": "226",
+    "issue": null,
+    "pages": "105179",
+    "article_number": "105179",
+    "doi": "10.1016/j.cognition.2022.105179",
+    "url": "https://doi.org/10.1016/j.cognition.2022.105179",
+    "pdf_url": "https://osf.io/download/tky5w/",
+    "pdf_path": "literature/D_colexification/D03_Brochhagen_2022_When_do_languages_use_the_same_word_for_different_meanings.pdf",
+    "txt_path": "literature/D_colexification/D03_Brochhagen_2022_When_do_languages_use_the_same_word_for_different_meanings.txt",
+    "access_level": "fulltext_author_manuscript_pdf",
+    "abstract_path": null,
+    "abstract_url": null,
+    "download_attempts": [
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S0010027722001676/pdf",
+        "status": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      },
+      {
+        "url": "https://osf.io/download/tky5w/",
+        "status": "downloaded author preprint; %PDF- validated; 356212 bytes"
+      }
+    ],
+    "summary_zh": "使用广义加性逻辑模型分析共词化与概念关联度，提出简洁性和表达准确度平衡的Goldilocks原则，并在模型中加入谱系和地理邻近语言的共词化指标。高关联端的下降与平台均与部分估计相容。",
+    "relevance_zh": "提供非线性语义相似度与依赖处理的直接对照；不应将其称为亲属层级条件模型，也不应把它写成不控制谱系地域。",
+    "evidence_claims": [
+      {
+        "claim_zh": "作者稿分析203056个语言×概念对观察，含1453意义和1259语言。",
+        "locator": "作者稿8页；PDF9；§2.1"
+      },
+      {
+        "claim_zh": "模型用其他语言共词化按谱系与地理距离加权的指标控制关联。",
+        "locator": "作者稿6–8页；PDF7–9；公式1–2"
+      },
+      {
+        "claim_zh": "高关联端下降最相容，但平台也与估计相容。",
+        "locator": "作者稿11页；PDF12；结果"
+      }
+    ],
+    "notes": "OSF作者预印稿，编译日期2022-04-13，29页；该稿匿名不列作者，作者与归属按正式期刊/Crossref/OSF记录核对。引用页码明确标作者稿，不能套用正式期刊页。 页序校正：PDF第1页为未编号封面；作者稿页为PDF文件页减1。模型与依赖指标见作者稿6–8页（PDF7–9），高关联端下降/平台见作者稿11页（PDF12）。",
+    "metadata_path": "literature/D_colexification/D03_crossref.json",
+    "read_scope": "核对题名、元数据、相关定义、方法与讨论；文献综合中的证据定位已逐页核查。",
+    "pdf_version": "作者预印本",
+    "pdf_pages": 29,
+    "publisher_pdf_unavailable": true,
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "citation_status": "included_fulltext",
+    "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
+    "supplementary_preview": false,
+    "pdf_sha256": "0f78b1492c58d13731744d8b38ee0ba8994c02030a90d2c0a65d3a379bd034f2",
+    "sha256": "0f78b1492c58d13731744d8b38ee0ba8994c02030a90d2c0a65d3a379bd034f2",
+    "txt_sha256": "4d272c7cc36a5e83652ed98b589e88fef71469d09cc4dd60f03b25bd6946aed1",
+    "fulltext_path": "literature/D_colexification/D03_Brochhagen_2022_When_do_languages_use_the_same_word_for_different_meanings.txt",
+    "text_conversion_report": "literature/D_colexification/conversion_report.json"
+  },
+  {
+    "id": "D04",
+    "title": "Emotion semantics show both cultural variation and universal structure",
+    "authors": [
+      "Joshua Conrad Jackson",
+      "Joseph Watts",
+      "Teague R. Henry",
+      "Johann-Mattis List",
+      "Robert Forkel",
+      "Peter J. Mucha",
+      "Simon J. Greenhill",
+      "Russell D. Gray",
+      "Kristen A. Lindquist"
+    ],
+    "year": 2019,
+    "venue": "Science",
+    "volume": "366",
+    "issue": "6472",
+    "pages": "1517-1522",
+    "article_number": null,
+    "doi": "10.1126/science.aaw8160",
+    "url": "https://doi.org/10.1126/science.aaw8160",
+    "pdf_url": "https://openresearch-repository.anu.edu.au/bitstreams/51e9da84-0297-470f-beb0-c58eeec2c575/download",
+    "pdf_path": "literature/D_colexification/D04_Jackson_2019_Emotion_semantics_show_both_cultural_variation_and_universal_structure.pdf",
+    "txt_path": "literature/D_colexification/D04_Jackson_2019_Emotion_semantics_show_both_cultural_variation_and_universal_structure.txt",
+    "access_level": "pdf_fulltext",
+    "abstract_path": null,
+    "abstract_url": null,
+    "download_attempts": [
+      {
+        "file": "D04_Jackson_2019.pdf",
+        "url": "https://openresearch-repository.anu.edu.au/bitstreams/51e9da84-0297-470f-beb0-c58eeec2c575/download",
+        "final_url": "https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/51e9da84-0297-470f-beb0-c58eeec2c575/content",
+        "status": 200,
+        "content_type": "application/pdf;charset=UTF-8",
+        "bytes": 690733,
+        "pdf_magic": true
+      },
+      {
+        "file": "crossref_Jackson.json",
+        "url": "https://api.crossref.org/works?query.title=Emotion%20semantics%20show%20both%20cultural%20variation%20and%20universal%20structure&rows=1",
+        "final_url": "https://api.crossref.org/works?query.title=Emotion%20semantics%20show%20both%20cultural%20variation%20and%20universal%20structure&rows=1",
+        "status": 200,
+        "content_type": "application/json",
+        "bytes": 18382,
+        "pdf_magic": false
+      },
+      {
+        "file": "Jackson_publisher.html",
+        "url": "https://www.science.org/doi/10.1126/science.aaw8160",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "file": "crossref_Jackson.json",
+        "url": "https://api.crossref.org/works/10.1126/science.aaw8160",
+        "final_url": "https://api.crossref.org/works/10.1126/science.aaw8160",
+        "status": 200,
+        "bytes": 18334,
+        "content_type": "application/json",
+        "pdf_magic": false
+      },
+      {
+        "file": "Jackson_publisher_pdf.pdf",
+        "url": "https://www.science.org/doi/pdf/10.1126/science.aaw8160",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "summary_zh": "研究以2474种语言的情绪概念共词化网络比较语义组织。不同语系呈现明显差异，语系的地理接近与网络结构相似有关；情绪效价和生理激活程度又体现较广泛的组织作用。这为同时讨论跨语言共享约束与历史、文化差异提供实例。",
+    "relevance_zh": "情绪概念共词化不是亲属语义特征层级的直接证据；同词形网络也不能自动视为概念同一或完整类别划分。地理相关不能单独识别接触的因果机制。",
+    "evidence_claims": [
+      {
+        "claim_zh": "共词化测量两个不同概念是否由同一词形表达；它可作为语义组织的线索。",
+        "locator": "PDF2；正文2 of 5；正文关于colexification的界定及Fig.1。"
+      },
+      {
+        "claim_zh": "本文使用2474种语言的资料，比较情绪共词化网络及语系之间的结构。",
+        "locator": "PDF1,2；正文1–2 of 5；摘要、样本与网络构造。"
+      },
+      {
+        "claim_zh": "语系地理距离与情绪网络相似性有关，支持研究中考虑谱系和地域结构。",
+        "locator": "PDF3；正文3 of 5；Fig.3及其邻近结果。"
+      },
+      {
+        "claim_zh": "效价与激活维度具有较高模型解释作用；此处为情绪领域模型比较。",
+        "locator": "PDF4,5；正文4–5 of 5；Fig.4、删去维度的AIC比较及讨论。"
+      }
+    ],
+    "notes": "期刊书目页码为1517–1522。此副本PDF共6页：第1–5页正文页脚为1 of 5至5 of 5，第6页是期刊书目信息。未据此推定每一文件页对应的连续印刷页码；定位采用PDF文件页及正文自标页。",
+    "pdf_version": "正式期刊排版，ANU机构库合法公开副本",
+    "pdf_pages": 6,
+    "metadata_path": "literature/D_colexification/helper/crossref_Jackson.json",
+    "proposition_links": {
+      "P1": "提供共词化网络测量及跨语言结构比较背景；未检验亲属类别合取比例。",
+      "P2": "未直接检验年龄条件下年长侧的性别二级区分。",
+      "P3": "未直接检验性别条件下男性侧的年龄二级区分。",
+      "P4": "未直接检验相对性别条件下同性侧的年龄二级区分。",
+      "P5": "未直接检验参照者性别的三级位置。",
+      "P6": "地理接近与网络结构关联为分组外推设计提供动机；本文未比较本研究的显式条件结构模型和加性模型。"
+    },
+    "read_scope": "核对作者、题名、元数据及相关定义、模型和结果页。",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "citation_status": "included_fulltext",
+    "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
+    "supplementary_preview": false,
+    "pdf_sha256": "c6e854ba917db42232b569f717e4ca284425d35f96a0c9de6195998a9dabf244",
+    "sha256": "c6e854ba917db42232b569f717e4ca284425d35f96a0c9de6195998a9dabf244",
+    "txt_sha256": "72ec61bc57d09fc8e8e7f466395e4cfc6d3ff0fd38821821686f3336bb25a961",
+    "fulltext_path": "literature/D_colexification/D04_Jackson_2019_Emotion_semantics_show_both_cultural_variation_and_universal_structure.txt",
+    "text_conversion_report": "literature/D_colexification/conversion_report.json"
+  },
+  {
+    "id": "D05",
+    "title": "Conceptual relations predict colexification across languages",
+    "authors": [
+      "Yang Xu",
+      "Khang Duong",
+      "Barbara C. Malt",
+      "Serena Jiang",
+      "Mahesh Srinivasan"
+    ],
+    "year": 2020,
+    "venue": "Cognition",
+    "volume": "201",
+    "issue": null,
+    "pages": "104280",
+    "article_number": "104280",
+    "doi": "10.1016/j.cognition.2020.104280",
+    "url": "https://doi.org/10.1016/j.cognition.2020.104280",
+    "pdf_url": "https://www.cs.toronto.edu/~yangxu/xu_et_al_2020_colexification_preprint.pdf",
+    "pdf_path": "literature/D_colexification/D05_Xu_2020_Conceptual_relations_predict_colexification_across_languages.pdf",
+    "txt_path": "literature/D_colexification/D05_Xu_2020_Conceptual_relations_predict_colexification_across_languages.txt",
+    "access_level": "fulltext_author_manuscript_pdf",
+    "abstract_path": null,
+    "abstract_url": null,
+    "download_attempts": [
+      {
+        "file": "crossref_Xu.json",
+        "url": "https://api.crossref.org/works/10.1016/j.cognition.2020.104280",
+        "final_url": "https://api.crossref.org/works/10.1016/j.cognition.2020.104280",
+        "status": 200,
+        "content_type": "application/json",
+        "bytes": 19261,
+        "pdf_magic": false
+      },
+      {
+        "url": "https://www.cs.utoronto.ca/~yangxu/xu_et_al_2020_colexification_preprint.pdf",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      },
+      {
+        "file": "D05_Xu_2020_author_preprint.pdf",
+        "url": "https://www.cs.toronto.edu/~yangxu/xu_et_al_2020_colexification_preprint.pdf",
+        "final_url": "https://www.cs.toronto.edu/~yangxu/xu_et_al_2020_colexification_preprint.pdf",
+        "status": 200,
+        "content_type": "application/pdf",
+        "bytes": 471274,
+        "pdf_magic": true
+      },
+      {
+        "file": "D05_Xu_2020_author_preprint_alias.pdf",
+        "url": "https://www.cs.utoronto.ca/~yangxu/xu_et_al_2020_colexification_preprint.pdf",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      },
+      {
+        "file": "Xu_publisher.html",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0010027720300998",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      },
+      {
+        "file": "Xu_publisher_pdf.pdf",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0010027720300998/pdfft?isDTMRedir=true&download=true",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    ],
+    "summary_zh": "研究将246种语言的共词化资料与独立的概念联想、语料相似性等指标相联系。结果表明，跨语言更常共词化的概念通常具有更强的联想关系，支持概念关联与认知经济解释。概念联想和语义相似性在研究中分别操作化，不能混同。",
+    "relevance_zh": "概念关联指标主要来自英语；本文指出参考概念和单词标签的限制。联想关系的证据不能直接当作某一亲属特征交互的证据。",
+    "evidence_claims": [
+      {
+        "claim_zh": "共词化按两个意义共享相同词形操作化，包含多义和同音同形的可能性。",
+        "locator": "PDF9；作者稿第9页；§2.1 Cross-linguistic data of colexification。"
+      },
+      {
+        "claim_zh": "样本为246种语言、41个语系；以分层自助法评估语系、气候、地域不均衡。",
+        "locator": "PDF9,10；作者稿第9–10页；§2.1。"
+      },
+      {
+        "claim_zh": "概念联想和word2vec余弦相似性是不同预测指标；另考虑词频等变量。",
+        "locator": "PDF11,12；作者稿第11–12页；§2.2 Predictors of colexification frequency。"
+      },
+      {
+        "claim_zh": "存在性分类采用十折验证；讨论将联想关系视为解释共词化频率的重要变量。",
+        "locator": "PDF15,16,22；作者稿第15–16、22页；§3结果与§4讨论。"
+      }
+    ],
+    "notes": "正式期刊以文章号104280定位，无期号。已取得作者公开稿29页，其页眉页码1–29与PDF文件页序一致；下列定位均为作者稿页，不得改写成出版社最终版页码。",
+    "pdf_version": "作者公开稿；首页标注To appear in Cognition，不能标作已下载出版社最终PDF",
+    "pdf_pages": 29,
+    "metadata_path": "literature/D_colexification/helper/crossref_Xu.json",
+    "proposition_links": {
+      "P1": "支持将同词形共享定义为可检验结果变量，并提醒同音、多义与参考概念选择的影响；未检验类别合取比例。",
+      "P2": "未直接检验亲属年长侧性别区分。",
+      "P3": "未直接检验亲属男性侧年龄区分。",
+      "P4": "未直接检验亲属同性侧年龄区分。",
+      "P5": "未直接检验参照者性别的层级位置。",
+      "P6": "提供独立语义预测指标和验证比较的先例；其概念对十折验证不等于本研究未见谱系、未见地域外推检验。"
+    },
+    "read_scope": "核对作者、题名、元数据及相关定义、模型和结果页。",
+    "publisher_pdf_unavailable": true,
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "citation_status": "included_fulltext",
+    "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
+    "supplementary_preview": false,
+    "pdf_sha256": "e79538ee2523808140240b72c93239ca3148b37b1deca3f756c933d74faf6f8b",
+    "sha256": "e79538ee2523808140240b72c93239ca3148b37b1deca3f756c933d74faf6f8b",
+    "txt_sha256": "f5bbfa84ee1950690b5a9362435192a49d9705d4de54f55085b48147a7f28379",
+    "fulltext_path": "literature/D_colexification/D05_Xu_2020_Conceptual_relations_predict_colexification_across_languages.txt",
+    "text_conversion_report": "literature/D_colexification/conversion_report.json"
+  },
+  {
+    "id": "D06",
+    "title": "Conceptual Similarity and Communicative Need Shape Colexification: An Experimental Study",
+    "authors": [
+      "Andres Karjus",
+      "Richard A. Blythe",
+      "Simon Kirby",
+      "Tianyu Wang",
+      "Kenny Smith"
+    ],
+    "year": 2021,
+    "venue": "Cognitive Science",
+    "volume": "45",
+    "issue": "9",
+    "pages": null,
+    "article_number": "e13035",
+    "doi": "10.1111/cogs.13035",
+    "url": "https://doi.org/10.1111/cogs.13035",
+    "pdf_url": "https://cudan.tlu.ee/pub/2021_CogSci_Karjus-et-al_Conceptual-Similarity.pdf",
+    "pdf_path": "literature/D_colexification/D06_Karjus_2021_Conceptual_Similarity_and_Communicative_Need_Shape_Colexification_An_Experimental_Study.pdf",
+    "txt_path": "literature/D_colexification/D06_Karjus_2021_Conceptual_Similarity_and_Communicative_Need_Shape_Colexification_An_Experimental_Study.txt",
+    "access_level": "pdf_fulltext",
+    "abstract_path": null,
+    "abstract_url": null,
+    "download_attempts": [
+      {
+        "file": "D06_Karjus_2021.pdf",
+        "url": "https://cudan.tlu.ee/pub/2021_CogSci_Karjus-et-al_Conceptual-Similarity.pdf",
+        "final_url": "https://cudan.tlu.ee/pub/2021_CogSci_Karjus-et-al_Conceptual-Similarity.pdf",
+        "status": 200,
+        "content_type": "application/pdf",
+        "bytes": 1334467,
+        "pdf_magic": true
+      },
+      {
+        "file": "crossref_Karjus.json",
+        "url": "https://api.crossref.org/works/10.1111/cogs.13035",
+        "final_url": "https://api.crossref.org/works/10.1111/cogs.13035",
+        "status": 200,
+        "content_type": "application/json",
+        "bytes": 18115,
+        "pdf_magic": false
+      },
+      {
+        "file": "Karjus_publisher.html",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1111/cogs.13035",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "file": "Karjus_publisher_pdf.pdf",
+        "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/cogs.13035",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "summary_zh": "四个人工语言交流实验考察概念相似性与区分需求如何影响共词化。一般条件下，参与者较常让相似概念共享信号；当交流频繁要求区分这些概念时，该倾向减弱。结果为区分相似性偏好和交际需求作用提供实验依据。",
+    "relevance_zh": "人工交流情境及小词表的机制性证据不提供自然语言中P2–P5的方向证据。不可把文中的相似性×交际需求关系当作本研究已经执行的亲属模型。",
+    "evidence_claims": [
+      {
+        "claim_zh": "共词化是不同意义共享词形的描述性关系，不以已判明多义或同音为前提。",
+        "locator": "PDF2；2 of 30；§1 Introduction。"
+      },
+      {
+        "claim_zh": "刺激选择将语义相似性与联想关系区分，使用高相似、低联想的目标词对。",
+        "locator": "PDF5,6；5–6 of 30；§2.2 Meanings及Fig.2。"
+      },
+      {
+        "claim_zh": "目标条件增加相似目标意义相互成为候选时的区分需求；其操纵不是简单提高概念自身总频率。",
+        "locator": "PDF7,20；7、20 of 30；§2.4交际需求操纵、§7.1讨论。"
+      },
+      {
+        "claim_zh": "四实验支持相似性偏好随交际区分需求变化；外推仍受小词表与人工情境限制。",
+        "locator": "PDF4,19,23；4、19、23 of 30；实验概述、§7 General discussion、§8 Conclusions。"
+      }
+    ],
+    "notes": "正式期刊用文章号e13035定位。PDF30页的正文自标页码为1 of 30至30 of 30，与文件页序一致。",
+    "pdf_version": "正式期刊开放版，塔林大学文化数据分析项目公开副本；首页含CC BY-NC-ND许可",
+    "pdf_pages": 30,
+    "metadata_path": "literature/D_colexification/helper/crossref_Karjus.json",
+    "proposition_links": {
+      "P1": "为共词化取舍和交际基准提供实验背景；未检验亲属严格划分中的合取比例。",
+      "P2": "未直接检验年长侧性别二级区分。",
+      "P3": "未直接检验男性侧年龄二级区分。",
+      "P4": "未直接检验同性侧年龄二级区分。",
+      "P5": "未直接检验参照者性别只出现于三级。",
+      "P6": "说明相似性与交际需求应作为可区分的解释；其交互概念不等于本研究特定亲属语义条件结构，未报告本研究的跨谱系或跨地域模型增益。"
+    },
+    "read_scope": "核对作者、题名、元数据及相关定义、模型和结果页。",
+    "pdf_magic_validated": true,
+    "title_author_verified": true,
+    "citation_status": "included_fulltext",
+    "formal_counted": true,
+    "eligible_formal_read": true,
+    "eligible_read": true,
+    "supplementary_preview": false,
+    "pdf_sha256": "f3bce102706b423cfc9aa372091cebab70bbec0377aea6799dbff348e2af9fc3",
+    "sha256": "f3bce102706b423cfc9aa372091cebab70bbec0377aea6799dbff348e2af9fc3",
+    "txt_sha256": "6e9549ec5d360531ab0e8744573b92976553c643b65b33fce96a4d897077f188",
+    "fulltext_path": "literature/D_colexification/D06_Karjus_2021_Conceptual_Similarity_and_Communicative_Need_Shape_Colexification_An_Experimental_Study.txt",
+    "text_conversion_report": "literature/D_colexification/conversion_report.json"
   }
 ]

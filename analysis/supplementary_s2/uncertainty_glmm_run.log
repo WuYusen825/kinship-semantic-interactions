@@ -1,0 +1,8 @@
+冻结C=1逐行复现通过：{"passed": true, "maximum_absolute_error": 1.1102230246251565e-16, "language_equal_logloss": {"M0": 0.5810488878419937, "M1": 0.5784682088411487, "M2": 0.5766254317569881}, "frozen_family_folds_identical": true}
+GLMM M0 迭代上限2000：成功=False，ELBO=-13038.214677，梯度=1.23e-06
+GLMM M2 迭代上限2000：成功=False，ELBO=-12699.705709，梯度=4.6e-06
+GLMM M4 迭代上限2000：成功=False，ELBO=-12637.474854，梯度=2.6e-06
+GLMM M0 迭代上限10000：成功=False，ELBO=-13038.214677，梯度=1.23e-06
+GLMM M2 迭代上限10000：成功=False，ELBO=-12699.705709，梯度=4.6e-06
+GLMM M4 迭代上限10000：成功=False，ELBO=-12637.474854，梯度=2.6e-06
+GLMM三模型完成：/workspace/kinship-semantic-interactions-github/analysis/supplementary_s2/glmm_results.json

@@ -1,0 +1,1252 @@
+# PDF全文文本（UTF-8）
+来源PDF：literature/D_colexification/D03_Brochhagen_2022_When_do_languages_use_the_same_word_for_different_meanings.pdf
+原PDF SHA-256：0f78b1492c58d13731744d8b38ee0ba8994c02030a90d2c0a65d3a379bd034f2
+页码表示PDF文件页序，不自动等同于期刊印刷页码。Native为原文本层，OCR为扫描或低文字页识别；表格、音标、公式与OCR仍须对照PDF。
+
+===== PDF PAGE 0001 / 0029 | Native =====
+When do languages use the same word for different
+          meanings? The Goldilocks Principle in
+                               colexification
+
+
+            This manuscript was compiled on April 13, 2022
+
+
+                                    Abstract
+
+          Lexical ambiguity is pervasive in language, and often systematic.
+      For instance, the Spanish word dedo can refer to a toe or a finger, that
+      is, these two meanings colexify in Spanish; and they do so as well in
+      over one hundred other languages. Previous work shows that related
+      meanings are more likely to colexify. This is attributed to cognitive
+      pressure towards simplicity in language, as it makes lexicons easier to
+      learn and use. The present study examines the interplay between this
+      pressure and the competing pressure for languages to support accu-
+      rate information transfer. We hypothesize that colexification follows
+      a Goldilocks principle that balances the two pressures: meanings are
+      more likely to attach to the same word when they are related to an
+      optimal degree —neither too much, nor too little. We find support
+      for this principle in data from over 1200 languages and 1400 mean-
+      ings. Our results thus suggest that universal forces shape the lexicons
+      of natural languages. More broadly, they contribute to the growing
+      body of evidence suggesting that languages evolve to strike a balance
+      between competing functional and cognitive pressures.
+
+Keywords: language universals; colexification; cognitive effort; ambiguity; effi-
+cient communication
+
+
+===== PDF PAGE 0002 / 0029 | Native =====
+ 1   1        Introduction
+ 2   The association of multiple meanings with the same form is pervasive across
+ 3   natural languages (Murphy 2002, Wasow et al. 2005, Wasow 2015, Dautriche
+ 4   2015), a phenomenon called colexification (François 2008). For instance,
+ 5   as illustrated in Figure 1A, the Spanish word dedo can refer to both a finger
+ 6   and a toe; that is, unlike English, Spanish colexifies these two meanings,
+ 7   using a single word to express both.1 Many colexifications are attested
+ 8   throughout the world (François 2008, Srinivasan and Rabagliati 2015, Youn
+ 9   et al. 2016, Jackson et al. 2019, Xu et al. 2020a). For instance, the conflation
+10   of toe and finger is found in at least 135 languages (Rzymski et al. 2020),
+11   many of which are phylogenetically unrelated and spoken in different parts
+12   of the globe. This suggests that universal forces are at play, giving rise to
+13   systematic cross-linguistic patterns.
+14           This study investigates how the interplay between two major forces
+15   shapes the lexical structure of natural languages, using large-scale cross-
+16   linguistic data about colexification. The first force is cognitive pressure for
+17   simplicity. A number of studies suggest that aspects of languages that are
+18   easier to learn and use will tend to be favored over time (a.o., Kirby and
+19   Hurford 2002, Smith et al. 2003, Kirby et al. 2014). Regarding the lexicon,
+20   in the extreme, a very simple language could colexify all meanings, using a
+21   single word form to express them all. However, while very easy to learn and
+22   store, this language would not be very useful from a communicative point of
+23   view. Indeed, a competing force drives languages to complexity: the need
+24   for them to be informative, in the sense of supporting accurate informa-
+25   tion transfer (a.o., Zipf 1949, Martinet 1962, Horn 1984, Jäger and van Rooij
+26   2007, Piantadosi 2014, Christiansen and Chater 2008, Regier et al. 2015).
+27   At the other extreme, then, a maximally informative lexicon could have one
+28   distinct word per meaning, with no ambiguity. However, this would create
+29   larger lexicons that would be more difficult to learn and use: new mean-
+         1
+         Colexification refers to the same phenomenon as ambiguity. However, the two notions
+     take different perspectives: If a word is ambiguous (e.g. dedo), then the meanings it
+     expresses (e.g. toe and finger) colexify. Colexification encompasses both polysemy and
+     homonymy.
+
+
+                                               1
+
+
+===== PDF PAGE 0003 / 0029 | Native =====
+30   ings could not directly build on established word-meaning associations; and
+31   shared associations could not be exploited for the ease of lexical retrieval
+32   and interpretation (Srinivasan and Rabagliati 2015, Ramiro et al. 2018, Xu
+33   et al. 2020a).
+34      A growing body of research argues that languages are efficient in the
+35   sense that they strike a good balance between informativeness and simplic-
+36   ity (Christiansen and Chater 2008, Regier et al. 2015, Kirby et al. 2015,
+37   Brochhagen et al. 2018, Gibson et al. 2019, Carr et al. 2020, Mollica et al.
+38   2021). Some of this work considers the lexicon (Regier et al. 2015, Mollica
+39   et al. 2021); however, so far only restricted domains have been explored.
+40   These include color (Zaslavsky et al. 2018); numerals (Xu et al. 2020b);
+41   quantifiers (Steinert-Threlkeld 2021); containers (Xu et al. 2016); indefinites
+42   (Denić et al. 2021); and kinship (Kemp and Regier 2012). In the present
+43   study, we examine the interaction between simplicity and informativeness in
+44   the lexicon at a broader scale, covering over 1400 meanings and more than
+45   1200 languages.
+46      We build on recent work that suggests that related meanings, like fin-
+47   ger and toe, tend to be expressed by the same word more than unrelated
+48   meanings (Xu et al. 2020a, Karjus et al. 2021). This tendency has been
+49   attributed to cognitive pressure for simplicity. The structure of lexicons as
+50   well as semantic memory may favor the colexification of meanings that are
+51   easy to relate to one another. This has been argued to assist vocabulary
+52   acquisition (with established word-meaning associations providing a scaffold
+53   for new meanings), as well as lexical retrieval and interpretation (Srinivasan
+54   and Rabagliati 2015, Ramiro et al. 2018, Xu et al. 2020a). However, in
+55   line with Karjus et al.’s (2021) findings using artificial languages, we hy-
+56   pothesize that informativeness may counterbalance the tendency to colexify
+57   related meanings: If meanings are too related, then expressing them with
+58   the same form can be disadvantageous from a functional, communicative
+59   point of view. For instance, left and right are highly related but are
+60   often relevant alternatives in context. Consider someone giving directions;
+61   if they say go left, there is often the contextually relevant alternative of go-
+62   ing right. Thus, using the same form for left and right risks leading to
+
+                                            2
+
+
+===== PDF PAGE 0004 / 0029 | Native =====
+A                                B                                                             C
+                                                                                                     English        Dutch
+
+                                     Colexification likelihood
+
+
+
+
+                                                                                                                                 Relatedness
+                                                                              just                 toe finger   teen vinger
+                                                                             right
+                                                                                                   toe left     teen links
+            dedo (Spanish)
+    TOE     лъецІил (Chamalal)                                                         too
+
+
+
+
+                                                                                                      {
+            yatsa (Hausa)                                                            related
+            kækæʔe (Rotuman)                                       too
+            …                                                    unrelated
+                                                                                                                 English Dutch
+
+FINGER
+                                                                  Semantic relatedness
+
+
+          Figure 1: A: Illustration of cross-linguistic systematicity in colexification.
+          B: Hypothesized relationship between the relatedness of meanings and the
+          likelihood that they are expressed by the same form. The extremes on the
+          x-axis are areas where meanings are either too related or too unrelated to
+          be likely to be colexified. Unrelated meanings (e.g., finger and kettle)
+          are expected to be less likely to be expressed by the same form because they
+          are hard to associate. Strongly related meanings (e.g., left and right)
+          are expected to be less likely to colexify because they are hard to tease
+          apart in context. The middle-to-high range is conversely hypothesized to
+          be particularly conducive to colexification. Meanings in this range (e.g.,
+          toe and finger) may be easier to associate while not being too confusable
+          in context. C: Estimation of relatedness between meanings. English and
+          Dutch words are used as surrogates for meanings. Measures of semantic
+          relatedness, such as distributional similarity, are computed on word pairs
+          and used for meaning pairs. For instance, the distributional similarity of
+          the words teen and vinger in Dutch (upper right part of the figure) serves
+          as a proxy for the similarity of the meanings toe and finger (lower part of
+          the figure). The distributional similarity of the corresponding English words
+          is taken as an alternative estimate of these meanings’ relatedness.
+
+
+
+
+                                                                             3
+
+
+===== PDF PAGE 0005 / 0029 | Native =====
+63   communicative failure. Indeed, the possibility to contextually disambiguate
+64   meanings is crucial for the persistence of lexical ambiguity (Piantadosi et al.
+65   2012, Santana 2014, Brochhagen 2020).
+66      Note that it is always possible to disambiguate meanings using longer
+67   expressions; for instance, Spanish speakers can use dedo del pie (‘finger of
+68   the foot’) when they need to unambiguously refer to a toe. Analogously, it
+69   would also be possible to use a single word, for instance dax, for left and
+70   right, and to use a more complex expression to distinguish between the two.
+71   What is at stake is thus not whether languages can express a given semantic
+72   distinction, but whether they care enough about it to encode it in the lexicon.
+73   The prediction is that, on average, they will care more about distinctions
+74   that are often alternatives in context, because the communicative need to
+75   distinguish them is higher, with context providing less information to tease
+76   them apart.
+77      To sum up, we expect the communicative need to distinguish meanings to
+78   play a role in shaping lexicons across languages. Communicative need varies
+79   across language communities depending on factors such as environment and
+80   culture (Kemp et al. 2018, Jackson et al. 2019, Xu et al. 2020a). However, we
+81   predict that the pressure for informativeness will show a universal signature
+82   over and above such language-specific variation.
+83      More concretely, we hypothesize that colexification follows a Goldilocks
+84   principle: meanings colexify if they are neither too unrelated, nor too re-
+85   lated, but, as in the fairy tale Goldilocks and the Three Bears, “just right”.
+86   The Goldilocks principle is illustrated in Figure 1B. Crucially, following the
+87   hypothesis that what hinders communication is meaning confusability in
+88   context (Piantadosi et al. 2012, Brochhagen 2020), we expect “too related”
+89   to mean “too confusable”. In other words, we expect colexification likeli-
+90   hood to decrease for highly related meanings where confusability is at stake.
+91   As discussed above, this particularly concerns sets of meanings that are con-
+92   trasting alternatives to each other. Examples of such meanings are weekdays
+93   such as monday and tuesday, meanings related to quantification like some
+94   and all, and opposites like warm and cold.
+95      We find support for the Goldilocks principle in two analyses. The first
+
+                                           4
+
+
+===== PDF PAGE 0006 / 0029 | Native =====
+96    uses data-induced measures of semantic relatedness to characterize how
+97    likely meanings are to colexify. As hypothesized, we find that colexifica-
+98    tion likelihood increases with semantic relatedness, until an inflection point
+99    is reached for highly related meanings. However, a decrease in likelihood is
+100   only partially confirmed: while the data is best characterized by a decrease,
+101   it is also consistent with a plateu, suggesting that informativeness may ex-
+102   ert less force than we expected a priori. The second analysis further probes
+103   the role of confusability in the shift in colexification likelihood for related
+104   meanings. We find that meanings that are often alternatives in context, in
+105   particular those that express opposites, are indeed less likely to colexify than
+106   other kinds of related meanings. Our results thus support the hypothesis
+107   that natural language lexicons evolve to strike a balance between competing
+108   pressures for simplicity and informativeness.
+
+
+109   2     Colexification follows the Goldilocks principle
+110   To study the relationship between semantic relatedness and colexification,
+111   we fit regression models to colexification data.2               The data comes from
+112   CLICS3 (Rzymski et al. 2020), the largest cross-linguistic database of colexi-
+113   fications available to date. This database is the result of a standarized aggre-
+114   gation of multiple typological datasets, e.g., the Intercontinental Dictionary
+115   Series (Key and Comrie 2015, Forkel and Rzymski 2019) and NorthEuraLex
+116   (Dellert and Jäger 2017). This is accomplished by interfacing with other
+117   resources such as Glottolog (Hammarström et al. 2020) –for the unifica-
+118   tion of information about the language varieties involved– and Concepticon
+119   (List et al. 2016) –providing comparative meaning glosses. The Concepti-
+120   con catalogue, in turn, is the outcome of an aggregation and unification of
+121   concepts from multiple meaning list datasets.3 All in all, CLICS3 provides
+122   a standardized set of meanings and corresponding lexifications in over 3,000
+         2
+           The data processing and analysis code developed for this article is available at: https:
+      //osf.io/hjvm5/?view_only=cde6d3ed716a4e1dbc9f271a53ae875c. All the resources we
+      use, cited below, are freely available.
+         3
+           Future work may benefit from the NoRaRe dataset (Tjuka et al. 2021), which maps the
+      Concepticon concepts used in CLICS3 to word and concept properties in several languages.
+
+
+                                                   5
+
+
+===== PDF PAGE 0007 / 0029 | Native =====
+123   languages. In what follows, two distinct meanings are taken to colexify if
+124   they share a lexification, i.e., if they are expressed by the same word in the
+125   database.
+126          In this first analysis, we proceed in two steps: we first identify the oper-
+127   ationalization of the variables of interest that best explains the data. This
+128   is independent of the shape of the effects; the best model could or could
+129   not show the Goldilocks curve. Once we find the best model, we inspect its
+130   estimate of the effect of semantic relatedness on colexification.
+
+131   2.1       Models
+132   We use generalized additive logistic models (Wood 2017), which allow for
+133   non-linear relationships between the dependent variable and independent
+134   variables. This makes them suitable to probe our hypothesized relationship
+135   between colexification likelihood and semantic relatedness (Figure 1B). Gen-
+136   eralized additive models include a penalization against excessive curvature:
+137   “wigglier” trends, such as the Goldilocks curve compared to a (more) linear
+138   relationship, are only established if they substantially improve the model
+139   fit.4
+             The models characterize how likely a pair of meanings is to colexify in
+      a given language (e.g., toe and finger in Spanish) as a function of one
+      of three data-induced estimates of semantic relatedness, specified below.
+      Since language contact –facilitated by geographic proximity– and common
+      linguistic ancestry influence colexification (Jackson et al. 2019, Xu et al.
+      2020a), the models are also passed information about how often a pair of
+      meanings colexifies in other languages. This information is weighted by
+      the phylogenetic or geographic distance to the response language. More
+      precisely, all models have the general form
+
+                 logit(pijl ) = β0 + β1 resource + s(rel(i, j)) + β2 Pijl + β3 Gijl ,      (1)
+         4
+          Notwithstanding, for explicitness’ sake, linear versions of the models reported on in
+      the main text are compared to their (possibly) non-linear counterparts in SI Section 3.2.
+      In all cases, additive models outrank their linear counterparts.
+
+
+
+
+                                                  6
+
+
+===== PDF PAGE 0008 / 0029 | Native =====
+140   where the colexification of meanings i and j in language l is assumed to
+141   be Bernoulli distributed; resource indicates whether predictor information
+142   stems from Dutch or English resources (see below); rel(i, j) is a data-induced
+143   estimate of semantic relatedness; and P and G summarize how prevalent the
+144   colexification of i and j is in other languages k, weighted by the phylogenetic
+145   (P ) or geographic (G) distance between l and k. The smooth function
+146   s(·) corresponds to the potentially non-linear contribution of relatedness,
+147   rel(i, j), on colexification likelihood (Wood 2017).5
+          The general form of the distance variables P and G is
+                                        X                          
+                               Iijl ∝         colexijk (1 − d(l, k)) ,                         (2)
+                                          k
+
+148   with colexijk = 1 if meanings i and j colexify in language k and 0 otherwise;
+149   k 6= l; and d(l, k) being the phylogenetic or geographic distance between l
+150   and k. Pijl and Gijl thus summarize how often meanings i and j are colexi-
+151   fied in languages other than l, factoring in their phylogenetic or geographic
+152   distance to l. Higher values indicate that two meanings are often colexified
+153   in neighboring languages. The converse is true for lower values.
+154       Geographic information –latitude and longitude of the place where each
+155   language is majoritarily spoken– was drawn from Glottolog (Hammarström
+156   et al. 2020), and provided through CLICS3 . Geographic distances are based
+157   on the shortest distance between two points on an ellipsoid. Identifying a
+158   language with a single point on the globe is a clear simplification, particu-
+159   larly for linguistic communities spanning large regions; and inaccurate for
+160   languages spoken in different parts of the world (e.g., English or Spanish).
+161   Consequently, while both issues are strongly mitigated by the fact that they
+162   are comparably rare in the large sample of languages we analyse, they can
+163   lead to noisy estimates for some individual languages. Phylogenetic dis-
+164   tance estimates are from Jäger (2018). They are based on the pointwise
+165   mutual information of word lists. These estimates have been shown to fare
+         5
+           While a maximally random structure would be desirable, adding random intercepts or
+      slopes makes the models computationally intractable on a cluster with 500GB of RAM. We
+      thus decided to trade off model structure in favor of data coverage and, chiefly, in favor of
+      the inclusion of a non-parametric form for the relationship of relatedness to colexification.
+
+
+
+                                                   7
+
+
+===== PDF PAGE 0009 / 0029 | Native =====
+166   well at phylogenetic inference. Further details and discussion on distance
+167   information are given in SI Section 1.1.
+168      All models were diagnosed to ensure reliable estimates, and validated and
+169   compared using approximate leave-one-out cross-validation (Vehtari et al.
+170   2017; 2019). Individual model definitions are given in full in SI Section 3:
+171   diagnostics and validations are reported in Section 3.1, comparisons in Sec-
+172   tion 3.2, and estimate summaries in Section 3.3. SI Table S2 shows that the
+173   formulation of distance indices as in (2) is preferrable to an exponentiated
+174   variant.
+175      Pre-processing the data from CLICS3 for this first analysis yielded 203,056
+176   data points, encompassing 1453 unique meanings and 1259 distinct lan-
+177   guages. This includes all positive cases of colexification from the database
+178   for which we had information conforming with Eq. (1) as well as an equal
+179   number of negative examples, randomly sampled. We did not include all
+180   possible negative cases of colexification because that would make the analy-
+181   ses computationally intractable. SI Section 1 details all pre-processing steps
+182   and SI Section 2 gives an overview of the resulting data sets.
+
+183   2.2   Estimating semantic relatedness
+184   We follow previous work in using words as surrogates for meanings when
+185   estimating semantic relatedness (e.g., Xu et al. 2020a, Karjus et al. 2021,
+186   Westera et al. 2021). More specifically, we use words in Dutch and English
+187   (previous work used English only). As illustrated in Figure 1C, the related-
+188   ness of word pairs, such as teen-vinger in Dutch or the equivalent toe–finger
+189   in English, are used as an estimate for the relatedness of their meanings
+190   (toe-finger). These estimates are then used to predict the colexification
+191   likelihood of meanings in other languages (Eq. 1). It would be desirable to
+192   use more –and more linguistically diverse– languages to estimate semantic
+193   relatedness; however, at present only Dutch and English have resources that
+194   are large enough, and of a high enough quality, for our analysis. SI Section
+195   1 discusses this issue in more detail.
+196      Building on Xu et al. (2020a), we evaluate three measures of semantic
+
+
+                                               8
+
+
+===== PDF PAGE 0010 / 0029 | Native =====
+197   relatedness: distributional similarity, associativity, and the first principal
+198   component of these two measures.6
+199       Distributional similarity measures how similar the contexts of use of dif-
+200   ferent linguistic expressions are, quantifying their contextual overlap based
+201   on large amounts of data, typically text corpora (Harris 1954, Lund and
+202   Burgess 1996, Landauer and Dumais 1997). The Dutch and English dis-
+203   tributional models that we use are from fastText (Grave et al. 2018). To
+204   illustrate the measure, the contexts of use of left and right are quite simi-
+205   lar (distributional similarity of 0.57 in the English model, with 1 being the
+206   maximum); toe and finger are also quite similar but less so (0.47); and toe
+207   and bird are, expectedly, the least similar of these pairs (0.06).
+208       Associativity is derived from large-scale association norms from De Deyne
+209   et al. (2013; 2018), obtained by asking subjects to produce words in response
+210   to a cue. For instance, when prompted by the word toe, a given subject may
+211   produce foot, finger, or nail. Following De Deyne et al. (2016; 2018), we
+212   consider three different transformations of the raw cue-response counts as
+213   measures of associativity. The measures are laid out in SI Section 1.3. In
+214   the main text, we report results for the best one. Model comparison by
+215   means of differences in expected log point-wise predictive densities indicates
+216   that this is the most sophisticated, random-walk based, transformation (see
+217   SI Table S3). This is consistent with De Deyne et al.’s (2018) evaluation
+218   of these transformations on other semantic tasks. Using the examples from
+219   above and the English associativity scores that we use in this study, left and
+220   right have an associativity of 0.42 (maximum is 1); toe and finger score 0.41;
+221   and toe and bird score 0.02.
+222       Distributional similarity and associativity codify different facets of se-
+223   mantic relatedness, but they do not strongly diverge either. They have a
+224   Pearson’s correlation of 0.7 for Dutch resources; 0.82 for English resources;
+225   and 0.76 overall. To intuitively exemplify where they may differ: car is dis-
+         6
+           Xu et al. (2020a) additionally consider frequency and two variables related to
+      metaphoricity. These factors were found to be less informative about colexification than
+      distributional similarity and associativity. SI Section 3 shows results for models with fre-
+      quency added as an additional predictor. They indicate that the effects reported below
+      are neither explained nor modulated by frequency.
+
+
+                                                   9
+
+
+===== PDF PAGE 0011 / 0029 | Native =====
+226   tributionally similar to bike and associated with petrol. However, bike is not
+227   strongly associated with car, nor is petrol distributionally similar to it (Hill
+228   et al. 2015). This motivates the use of a third measure that synthesizes the
+229   two “views” on semantic relatedness given by distributional similarity and
+230   associativity, namely, their first principal component (PC1). PC1 accounts
+231   for the largest amount of the variance of the two measures. A priori, it is not
+232   clear how well PC1 will characterize the data. If both distributional similar-
+233   ity and associativity are relevant to colexification in complementary ways,
+234   then it is likely that their first principal component will be as well –and pos-
+235   sibly even more so. Conversely, if, instead, either distributional similarity or
+236   associativity is starkly less informative about colexification than the other
+237   measure, then the synthesis provided by PC1 will also be less successful
+238   than the more informative measure it is based on. SI Section 2 gives a vi-
+239   sual overview of the colexification data in relation to the different measures
+240   of relatedness employed.
+
+241   2.3   Results
+
+                            ELPD∆ (SE∆ )                ELPD (SE)       EFF (SE)
+       PC1                     0.00 (0.00)        -77231.93 (266.11)   12.29 (0.19)
+       Associativity      -715.08 (366.14)        -77947.01 (266.16)   11.33 (0.21)
+       Distributional    -2145.77 (368.55)        -79377.70 (268.90)   12.64 (0.17)
+
+      Table 1: Model comparison of the PC1 model, the associativity model, and
+      the distributional model using approximate leave-one-out cross-validation
+      (Vehtari et al. 2017). All three are generalized additive models that have
+      the colexification of a pair of meanings in a language as dependent variable
+      and one of three operationalizations of semantic relatedness as an indepen-
+      dent variable (Eq. 1). ELPD∆ is the difference in expected log point-wise
+      predictive density to the best ranked model, PC1. Intuitively, ELPD evalu-
+      ates a model against an estimate of future data, weighted by how likely this
+      data is estimated to be. EFF indicates the effective number of parameters.
+      It serves as an indicator of a model’s complexity. The three models are
+      approximately equivalent in this respect.
+
+
+
+                                             10
+
+
+===== PDF PAGE 0012 / 0029 | Native =====
+242          Table 1 shows a comparison of the three operationalizations of seman-
+243   tic relatedness as predictors of colexification. It shows that cross-linguistic
+244   patterns are best explained by the model with the PC1 measure of semantic
+245   relatedness. Thus, distributional similarity and associativity provide com-
+246   plementary information about the kind of relatedness that matters for colex-
+247   ification. The ranking in Table 1, based on expected predictive accuracy,
+248   is only interpretable in relative terms, for model comparison. However, the
+249   PC1 model also performs well in absolute terms: It has a root-mean-square
+250   error of 0.34, an accuracy of 0.84 when binarizing the mean of its posterior’s
+251   predictions, and a Bayesian R2 of 0.53 (Gelman et al. 2019). For compari-
+252   son, a random baseline model would obtain a root-mean-square error of 0.71
+253   and an accuracy of 0.50.
+254          We next turn to the main hypothesis. Figure 2 shows that the best
+255   model identifies the hypothesized Goldilocks principle. The left graph in
+256   the figure depicts the marginal effect of semantic relatedness, and the right
+257   part shows model predictions for example meaning pairs.7 The model es-
+258   timates that unrelated meanings, like three-yes, are unlikely to colexify.
+259   In line with previous research, for low to medium values, as semantic re-
+260   latedness increases, so does the likelihood to colexify (Xu et al. 2020a).
+261   For instance, bright-yellow and town-people are more related than
+262   three-yes, and are thus more likely to be expressed by the same word in
+263   a language. However, as hypothesized, this trend breaks for highly related
+264   meanings. For instance, tuesday-thursday is the most related pair in the
+265   figure, and has a lower mean colexification likelihood than the less related
+266   pair calf-cattle.
+267          As shown in Figure 2.A, the data is most compatible with a decrease
+268   in colexification likelihood at the higher end of semantic relatedness (see
+269   blue line). However, it is also compatible with a plateau (see upper part of
+270   shaded area). Either way, the model identifies a clear shift in regime, with
+         7
+           For completeness’ sake, the marginal effects of distributional similarity and associativ-
+      ity are depicted in SI Section 3.3. However, it is important to stress that the PC1 model
+      best characterizes the colexification data and thus provides the most reliable estimate of
+      the relationship between semantic relatedness and colexification likelihood that we have
+      at our disposal.
+
+
+                                                   11
+
+
+===== PDF PAGE 0013 / 0029 | Native =====
+                                                                                                                  1.00
+A 3                                                                                  B
+                                                                                                                                                                                CALF/CATTLE
+Estimated effect on colexification
+
+
+
+
+                                                                                                                                                                                         ●    NORTH/SOUTH
+                                                                                                                                                       TOE/FINGER                    ●
+                                                                                                                  0.75                                                                          ●●
+
+
+
+
+                                                                                      Mean posterior prediction
+                                      2                                                                                                                                     ●
+                                                                                                                                                                        ●
+                                                                                                                                                                                   FOOT/TOE STALLION/MARE
+                                                                                                                                                                                                      ●
+                                                                                                                                        WARM/FIRE          PATH/ROAD
+                                                                                                                                                                ●
+                                                                                                                                                                                         TUESDAY/THURSDAY
+                                                                                                                                        SPIDER/ANT         ●
+
+
+                                      1                                                                           0.50                                 ●
+                                                                                                                                                               WEAK/SMALL
+                                                                                                                                                   ●
+                                                                                                                                   TOWN/PEOPLE
+                                                                                                                                               ●
+
+                                                                                                                                    BRIGHT/YELLOW
+                                      0
+                                                                                                                  0.25                     ●
+                                                                                                                                   MOON/MONTH
+                                                                                                                                LOOK/CHOP
+                                                                                                                                    ●
+                                                                                                                               ●
+
+                                     −1                                                                                       THREE/YES
+                                                                                                                  0.00
+                                          −2      0         2          4         6                                       −2               0                         2                    4           6
+                                                          PC1                                                                                                       PC1
+
+
+                                               Figure 2: A: Marginal effects of the best measure of semantic relatedness
+                                               (PC1, in standardized units). Shading shows 95% credible intervals. A
+                                               smooth function is inferred from the data and characterizes how the con-
+                                               tribution of PC1 to colexification likelihood changes across its values (on
+                                               the logit scale); this is depicted on the y-axis. Uncertainty increases with
+                                               deviation from the predictor’s mean. This is expected given that data in
+                                               this region is comparatively sparse (see SI Section 2 for an overview of the
+                                               data distribution). B: Example of mean posterior predictions for meaning
+                                               pairs across standardized PC1 values estimated from Dutch words. Phylo-
+                                               genetic and geographic indicators were set to the minimum values they take
+                                               in the data. These predictions are consequently about meaning pairs in a
+                                               hypothetical language that has no nearby languages colexifying them.
+
+
+
+
+                                                                                     12
+
+
+===== PDF PAGE 0014 / 0029 | Native =====
+271   a non-linear relationship between semantic relatedness and colexification
+272   likelihood. The data thus support the hypothesis that, for highly related
+273   meanings, the positive relationship between semantic relatedness and colex-
+274   ification likelihood does not hold anymore. We return to this matter in
+275   Section 4.
+
+
+276   3    Confusability decreases colexification likelihood
+277   The results so far suggest that there is a shift in colexification likelihood for
+278   highly related meanings; however, our hypothesis specifically predicts that
+279   the shift is due to confusability, rather than high semantic relatedness per
+280   se. We next probe the role of confusability directly.
+281       As discussed above, we expect communicative pressure to make it less
+282   likely for languages to colexify meanings that often express contrasting al-
+283   ternatives to each other in context. In Figure 2B, this is exemplified by
+284   the pairs north-south, stallion-mare and thursday-thursday. The
+285   notion of contextually relevant alternative is intuitively clear and relevant
+286   to many areas of linguistics, but to the best of our knowledge no indepen-
+287   dent definition of it exists (see Buccola et al. 2021 for further discussion).
+288   For this reason, we focus on opposites (e.g., left and right), a subset of
+289   such contextually relevant alternatives for which independent resources exist
+290   (Fellbaum 2015).
+291       Opposite meanings express contrasts, being maximally similar in every
+292   respect but one (Tversky 1977, Chiarello et al. 1990, Mohammad et al. 2013,
+293   Kliegr and Zamazal 2018). Therefore, losing the semantic distinction that
+294   they encode can be expected to be particularly harmful in communicative
+295   terms. Intuitions along these lines have been put forward in past stud-
+296   ies (François 2008, Xu et al. 2020a); we here make a specific prediction,
+297   grounded in broader theoretical considerations, and probe it empirically.
+298   As comparison points, we choose two semantic relations that do not nec-
+299   essarily lead to high confusability and can also be estimated from existing
+300   resources (Fellbaum 2015): part-whole (e.g., toe-foot) and subsumption
+301   (e.g., calf-cattle; calves are cattle, therefore cattle subsumes calf).
+
+                                             13
+
+
+===== PDF PAGE 0015 / 0029 | Native =====
+302   Note that colexifying meanings connected by these relationships also im-
+303   plies losing a potentially useful semantic distinction. However, we expect
+304   their rate of colexification to be higher than that of opposites, under the
+305   assumption that functional pressure exerts less force to lexically distinguish
+306   them.
+307      For this analysis, colexification rates for the different semantic rela-
+308   tions were estimated from 1416 meanings and 2279 languages from CLICS3
+309   (Rzymski et al. 2020). Semantic relations were extracted from WordNet
+310   (Fellbaum 2015), a human-annotated lexical database, using English words
+311   as proxies for meanings. The primary WordNet unit is the so-called synset,
+312   or set of synonyms, aimed at representing a given sense of a word. A word
+313   can be included in different synsets. In this analysis, each meaning was rep-
+314   resented by the most frequent synset of its English lexification in CLICS3 .
+315   The following semantic relations between synset pairs were then retrieved:
+316   antonymy (for opposite meanings), holonymy and meronymy (part-whole),
+317   and hyponymy and hypernymy (subsumption). The obtained data cor-
+318   respond to 79 antonyms, 70 holo-/meronyms, 155 hyper-/hyponyms, and
+319   1,001,438 pairs that stand in none of these three relations. Data not cov-
+320   ered by WordNet was not included in the analysis. Further details and
+321   descriptive statistics are given in SI Section 1.5.
+
+322   3.1     Results
+323   Figure 3 shows mean colexification percentages for the different relation-
+324   ships. These results suggest, first, that standing in one of the three semantic
+325   relations increases the odds for meanings to colexify compared to the control
+326   group ‘none/other’; and second, that not all relations are equally conducive
+327   to colexification. In particular, as predicted, meanings that stand in oppo-
+328   sition to one another are less likely to be expressed by the same form than
+329   those standing in part-whole or subsumption relations. As in the preceding
+330   analysis, thus, we find that semantic relatedness renders colexification more
+331   likely; and, moreover, we show that the need to distinguish meanings that
+332   are particularly confusable can counteract this trend. In our interpretation,
+
+
+                                            14
+
+
+===== PDF PAGE 0016 / 0029 | Native =====
+                                             4
+            Mean colexification percentage
+
+
+
+
+                                             3
+
+
+
+
+                                             2
+
+
+
+
+                                             1
+
+
+
+
+                                             0
+                                                                       n
+
+
+
+
+                                                                                          e
+                                                        er
+
+
+
+
+                                                                                                   ite
+                                                                       io
+
+
+
+
+                                                                                         l
+                                                                                      ho
+                                                     th
+
+
+
+
+                                                                    pt
+
+
+
+
+                                                                                                  s
+                                                     /o
+
+
+
+
+                                                                                               po
+                                                                                      w
+                                                               um
+                                                   ne
+
+
+
+
+                                                                                  rt−
+
+
+
+
+                                                                                              op
+                                                               bs
+                                                 no
+
+
+
+
+                                                                                 pa
+                                                             su
+
+
+
+
+Figure 3: Mean colexification percentage for meaning pairs, categorized by
+semantic relations, with 95% credible intervals. With a region of practical
+equivalence of 1% (Kruschke 2011), part-whole and subsumption groups are
+equivalent in terms of colexification rates; all other groups differ from each
+other.
+
+
+
+
+                                                                            15
+
+
+===== PDF PAGE 0017 / 0029 | Native =====
+333   thus, simplicity pushes the colexification rate for opposites up, and infor-
+334   mativeness pulls it down, resulting in the middle position of opposites (with
+335   respect to the other semantic relations) shown in Figure 3.
+336           A further piece of evidence that contextual confusability may be at play
+337   is the fact that opposites have a higher mean distributional similarity (0.59,
+338   SD = 0.18) than meanings in the part-whole (0.46, SD = 0.14) and sub-
+339   sumption (0.42, SD = 0.16) relations.8 This indicates that the contexts of
+340   use of opposites are more similar (recall that distributional similarity cap-
+341   tures contextual overlap). Therefore, one can expect it to be harder –on
+342   average– to tell opposites apart, rendering them less likely to colexify, due
+343   to pressure for informativeness.
+
+
+344   4        Discussion
+345   We have found empirical support for a Goldilocks principle in colexification:
+346   Meanings are more likely to be expressed by the same word when they are
+347   neither too unrelated, nor too related, but just right. This pattern is pre-
+348   dicted by the measure of semantic relatedness that best characterizes the
+349   colexification data: a synthesis of distributional similarity and associativity.
+350   More specifically, our results suggest that the Goldilocks zone of colexifica-
+351   tion is composed of meanings that are related enough that colexifying them
+352   fosters cognitive economy (Xu et al. 2020a, Karjus et al. 2021), and at the
+353   same time are not too confusable in actual language use (Karjus et al. 2021).
+354   Our interpretation is that natural language lexicons follow the Goldilocks
+355   principle because they evolve to strike a balance between being as simple
+356   as possible while still being informative enough. That is, they do so as a
+357   response to competing cognitive and communicative pressures.
+358           We should stress that, while less likely according to model estimates,
+359   the results of the first analysis do not rule out a weaker version of the
+360   principle, one in which colexification likelihood does not decrease with high
+361   semantic relatedness, but simply plateaus. This version still supports the
+          8
+          This result is in line with previous work in distributional semantics (e.g. Lin et al.
+      2003).
+
+
+                                                 16
+
+
+===== PDF PAGE 0018 / 0029 | Native =====
+362   general hypothesis, namely, that pressure for informativeness counteracts
+363   the increasing trend from simplicity. However, it also suggests that informa-
+364   tiveness may exert less force than we expected a priori. Another caveat is
+365   the fact that we have used a particular database of colexifications (Rzymski
+366   et al. 2020); while this is the most complete source of colexification data
+367   available to date, it could be that it leads to underestimating colexification
+368   rates for particular kinds of meanings, or to other kinds of biases in the
+369   results. In particular, the database covers just under 3000 concepts, most of
+370   them pertaining to concrete objects that are commonly relevant in language
+371   communities; and only certain subsets of these concepts are covered in each
+372   of the languages included in the database. Future work should aim at an
+373   even broader coverage of the conceptual domain and the world’s languages.
+374      While the pattern we identified is a tendency across languages, we still
+375   expect important culture-specific effects on the way languages partition
+376   meanings into words, depending on their communicative needs (Jackson
+377   et al. 2019, Xu et al. 2020a). For instance, while languages tend to use dif-
+378   ferent words for opposites, the meanings lend and borrow are still colex-
+379   ified in at least 40 languages (Rzymski et al. 2020). These languages are as
+380   phylogenetically and geographically varied as Thakali (Sino-Tibetan); Komi
+381   (Uralic); Guaranı́ (Tupian); and Takia (Austronesian). Also, as mentioned
+382   above, using the same word for two meanings that are related but not op-
+383   posites, like toe and finger, also implies losing a distinction that may be
+384   relevant for communicative success. Ultimately, while one linguistic commu-
+385   nity may not care to lexically distinguish lend from borrow, another may
+386   not care about keeping toe and finger apart (Kemp et al. 2018, Xu et al.
+387   2020a). In light of the diversity in how languages carve out reality through
+388   their lexicons, it is remarkable that a signature of the universal need to keep
+389   contextually confusable meanings apart can be identified.
+390      Throughout this study we focused on the relationship of pairs of mean-
+391   ings to better understand what drives some of them together. This contrasts
+392   with the kind of characterization provided by comparative studies on seman-
+393   tic maps (e.g., Haspelmath 1997, Croft 2001, Haspelmath 2003), where the
+394   relations between meanings are mapped out in a network-like structure to
+
+                                            17
+
+
+===== PDF PAGE 0019 / 0029 | Native =====
+395   uncover universal implicational patterns like “if a form in a language ex-
+396   presses both x and y, it also expresses z” (see also François 2008, List et al.
+397   2013 and Jackson et al. 2019 for network-based studies of colexification). To
+398   the best of our knowledge, while being similar in scope and aims, these two
+399   approaches have not yet been integrated. A promising open area of research
+400   would consequently be to extend the kind of analysis conducted here to net-
+401   works, and elucidate how and to which extent implicational patterns can be
+402   derived from them.
+403      Our findings have broader implications for phenomena regarding lexical
+404   ambiguity, in particular the pervasiveness of metaphor (Lakoff and Johnson
+405   1980). Previous work (Lakoff and Johnson 1980, Xu et al. 2017) indicates
+406   that it is common for metaphorically related senses to belong to differ-
+407   ent ontological domains, and, in particular, to vary along a concreteness-
+408   abstractness axis. As an example, the verb go in English can be used in a
+409   concrete physical sense (“Kids can easily go from the school to the library
+410   in this village”) and in an abstract sense (“Voters can easily go from a lib-
+411   eral to a conservative position in this country”). It has furthermore been
+412   shown that metaphor is directional; for instance, historically, languages ex-
+413   tend concrete words with abstract meanings (Xu et al. 2017). This has been
+414   suggested to be cognitively advantageous, because metaphor assists us in
+415   reasoning about abstract domains by extending features from domains that
+416   are more directly accessible to perception (Lakoff and Johnson 1980, Xu
+417   et al. 2017). Our study suggests that metaphor is also advantageous from
+418   a functional perspective, because it allows speakers to conflate meanings
+419   without risking communicative failure: If two meanings belong to ontologi-
+420   cally different domains, then it is unlikely that colexifying them will cause
+421   confusion in context. Under this interpretation, metaphor simultaneously
+422   maximizes simplicity and informativeness, which would explain its vast suc-
+423   cess as a linguistic mechanism. Future work should probe this hypothesis
+424   directly, and further examine how metaphor aids cognition (in particular,
+425   what specifically makes meanings relateable by metaphor), as well as how the
+426   hypothesis may extend to related semantic phenomena, such as metonymy.
+427      More generally, we contribute to the growing body of evidence that nat-
+
+                                            18
+
+
+===== PDF PAGE 0020 / 0029 | Native =====
+428   ural languages are shaped by the need for efficient communication, in the
+429   sense that they achieve a good balance between the two competing pressures
+430   for simplicity and informativeness (Christiansen and Chater 2008, Regier
+431   et al. 2015, Kirby et al. 2015, Brochhagen et al. 2018, Gibson et al. 2019,
+432   Carr et al. 2020, Monaghan et al. 2011, Dingemanse et al. 2015). Going
+433   beyond the restricted domains examined so far (Kemp and Regier 2012,
+434   Xu et al. 2016, Zaslavsky et al. 2018, Xu et al. 2020b, Denić et al. 2021,
+435   Steinert-Threlkeld 2021), our work suggests that the trade-off between sim-
+436   plicity and informativeness is reflected in the way natural language lexicons
+437   associate words and meanings, and how they manage ambiguity, shedding
+438   further light on how universal principles shape language.
+
+
+439   Supplementary material
+440   This article is accompanied by supplementary material, available at: https:
+441   //osf.io/eqa6r/?view_only=169a658ef4194affb29b20543b1bc023. Fur-
+442   thermore, all analysis scripts used in this study are available at: https:
+443   //osf.io/hjvm5/?view_only=cde6d3ed716a4e1dbc9f271a53ae875c.
+
+
+444   Acknowledgments
+445   This section will be filled in once anonymity is lifted
+
+
+446   Funding
+447   This section will be filled in once anonymity is lifted
+
+
+448   References
+449   T. Brochhagen. Signaling under uncertainty: Interpretative alignment with-
+450     out a common prior. The British Journal for the Philosophy of Science,
+451     71(2):471–496, 2020. doi: 10.1093/bjps/axx058.
+
+
+
+                                            19
+
+
+===== PDF PAGE 0021 / 0029 | Native =====
+452   T. Brochhagen, M. Franke, and R. van Rooij. Coevolution of lexical meaning
+453     and pragmatic use. Cognitive Science, 42(8):2757–2789, 2018. doi: 10.
+454     1111/cogs.12681.
+
+455   B. Buccola, M. Križ, and E. Chemla. Conceptual alternatives. Linguistics
+456     and Philosophy, 2021. doi: 10.1007/s10988-021-09327-w. URL https:
+457     //doi.org/10.1007%2Fs10988-021-09327-w.
+
+458   J. W. Carr, K. Smith, J. Culbertson, and S. Kirby. Simplicity and informa-
+459     tiveness in semantic category systems. Cognition, 202:104289, sep 2020.
+460     doi: 10.1016/j.cognition.2020.104289. URL https://doi.org/10.1016%
+461     2Fj.cognition.2020.104289.
+
+462   C. Chiarello, C. Burgess, L. Richards, and A. Pollock. Semantic and as-
+463     sociative priming in the cerebral hemispheres: Some words do, some
+464     words don’t ... sometimes, some places. Brain and Language, 38(1):75–
+465     104, 1990. ISSN 0093-934X. doi: https://doi.org/10.1016/0093-934X(90)
+466     90103-N.    URL https://www.sciencedirect.com/science/article/
+467     pii/0093934X9090103N.
+
+468   M. H. Christiansen and N. Chater. Language as shaped by the brain. Behav-
+469     ioral and Brain Sciences, 31(05), 2008. doi: 10.1017/s0140525x08004998.
+
+470   W. Croft. Radical Construction Grammar. Oxford University Press, oct
+471     2001. doi: 10.1093/acprof:oso/9780198299554.001.0001. URL https://
+472     doi.org/10.1093%2Facprof%3Aoso%2F9780198299554.001.0001.
+
+473   I. Dautriche. Weaving an Ambiguous Lexicon. PhD thesis, École Normale
+474     Supérieure, 2015.
+
+475   S. De Deyne, D. J. Navarro, and G. Storms. Better explanations of lexi-
+476     cal and semantic cognition using networks derived from continued rather
+477     than single-word associations. Behavior Research Methods, 45(2):480–498,
+478     2013. doi: 10.3758/s13428-012-0260-7. URL https://doi.org/10.3758%
+479     2Fs13428-012-0260-7.
+
+
+
+                                         20
+
+
+===== PDF PAGE 0022 / 0029 | Native =====
+480   S. De Deyne, D. J. Navarro, A. Perfors, and G. Storms. Structure at every
+481     scale: A semantic network account of the similarities between unrelated
+482     concepts. Journal of Experimental Psychology: General, 145(9):1228–
+483     1254, 2016. doi: 10.1037/xge0000192. URL https://doi.org/10.1037%
+484     2Fxge0000192.
+
+485   S. De Deyne, D. J. Navarro, A. Perfors, M. Brysbaert, and G. Storms.
+486     The “Small World of Words” English word association norms for over
+487     12,000 cue words. Behavior Research Methods, 51(3):987–1006, 2018.
+488     doi:   10.3758/s13428-018-1115-7.        URL https://doi.org/10.3758%
+489     2Fs13428-018-1115-7.
+
+490   J. Dellert and G. Jäger, editors. NorthEuraLex (Version 0.9). Max Planck
+491     Institute for Evolutionary Anthropology, Tübingen: Eberhard-Karls Uni-
+492     versity., 2017.     URL https://github.com/lexibank/northeuralex/
+493     releases.
+
+494   M.   Denić,   S. Steinert-Threlkeld,      and J.   Szymanik.     Complex-
+495     ity/informativeness trade-off in the domain of indefinite pronouns. Seman-
+496     tics and Linguistic Theory, 30:166, 2021. doi: 10.3765/salt.v30i0.4811.
+497     URL https://doi.org/10.3765%2Fsalt.v30i0.4811.
+
+498   M. Dingemanse, D. E. Blasi, G. Lupyan, M. H. Christiansen, and P. Mon-
+499     aghan. Arbitrariness, iconicity, and systematicity in language. Trends in
+500     cognitive sciences, 19(10):603–615, 2015.
+
+501   C. Fellbaum.        WordNet.   Oxford University Press, apr 2015.       doi:
+502     10.1093/oxfordhb/9780199842193.013.001. URL https://doi.org/10.
+503     1093%2Foxfordhb%2F9780199842193.013.001.
+
+504   R. Forkel and C. Rzymski. Intercontinental Dictionary Series. Zenodo,
+505     2019. doi: 10.5281/zenodo.3534904. URL https://doi.org/10.5281/
+506     zenodo.3534904.
+
+507   A. François. Semantic maps and the typology of colexification: Intertwining
+508     polysemous networks across languages. In Studies in Language Companion
+
+
+                                            21
+
+
+===== PDF PAGE 0023 / 0029 | Native =====
+509     Series, pages 163–215. John Benjamins Publishing Company, 2008. doi:
+510     10.1075/slcs.106.09fra.
+
+511   A. Gelman, B. Goodrich, J. Gabry, and A. Vehtari. R-squared for Bayesian
+512     regression models. The American Statistician, 73(3):307–309, may 2019.
+513     doi: 10.1080/00031305.2018.1549100. URL https://doi.org/10.1080%
+514     2F00031305.2018.1549100.
+
+515   E. Gibson, R. Futrell, S. P. Piantadosi, I. Dautriche, K. Mahowald,
+516     L. Bergen, and R. Levy. How efficiency shapes human language. Trends
+517     in Cognitive Sciences, 23(5):389–407, 2019. ISSN 1364-6613. doi: https:
+518     //doi.org/10.1016/j.tics.2019.02.003.
+
+519   E. Grave, P. Bojanowski, P. Gupta, A. Joulin, and T. Mikolov. Learn-
+520     ing word vectors for 157 languages. In Proceedings of the International
+521     Conference on Language Resources and Evaluation (LREC 2018), 2018.
+
+522   H. Hammarström, R. Forkel, M. Haspelmath, and S. Bank. Glottolog 4.3,
+523     2020. URL https://doi.org/10.5281/zenodo.4061162.
+
+524   Z. S. Harris. Distributional structure. Word, 10(2-3):146–162, 1954.
+
+525   M. Haspelmath. Indefinite pronouns. Oxford University Press, 1997.
+
+526   M. Haspelmath. The geometry of grammatical meaning: Semantic maps and
+527     cross-linguistic comparison. In The New Psychology of Language, pages
+528     217–248. Psychology Press, jan 2003. doi: 10.4324/9781410606921-11.
+529     URL https://doi.org/10.4324%2F9781410606921-11.
+
+530   F. Hill, R. Reichart, and A. Korhonen. SimLex-999: Evaluating semantic
+531     models with (genuine) similarity estimation. Computational Linguistics,
+532     41(4):665–695, dec 2015. doi: 10.1162/coli a 00237. URL https://doi.
+533     org/10.1162%2Fcoli_a_00237.
+
+534   L. R. Horn. Toward a new taxonomy for pragmatic inference: Q-based and
+535     R-based implicature. In D. Schiffrin, editor, Meaning, Form and Use in
+536     Context, pages 11 – 42. Georgetown University Press, 1984.
+
+
+                                          22
+
+
+===== PDF PAGE 0024 / 0029 | Native =====
+537   J. C. Jackson, J. Watts, T. R. Henry, J.-M. List, R. Forkel, P. J. Mucha,
+538     S. J. Greenhill, R. D. Gray, and K. A. Lindquist. Emotion semantics
+539     show both cultural variation and universal structure. Science, 366(6472):
+540     1517–1522, 2019. doi: 10.1126/science.aaw8160.
+
+541   G. Jäger.   Global-scale phylogenetic linguistic inference from lexical re-
+542     sources. Scientific Data, 5(1), 2018. doi: 10.1038/sdata.2018.189. URL
+543     https://doi.org/10.1038%2Fsdata.2018.189.
+
+544   G. Jäger and R. van Rooij. Language structure: psychological and social con-
+545     straints. Synthese, 159(1):99–130, 2007. doi: 10.1007/s11229-006-9073-5.
+
+546   A. Karjus, R. A. Blythe, S. Kirby, T. Wang, and K. Smith. Conceptual
+547     similarity and communicative need shape colexification: An experimental
+548     study. Cognitive Science, 45(9), sep 2021. doi: 10.1111/cogs.13035. URL
+549     https://doi.org/10.1111%2Fcogs.13035.
+
+550   C. Kemp and T. Regier. Kinship categories across languages reflect general
+551     communicative principles. Science, 336(6084):1049–1054, 2012. doi: 10.
+552     1126/science.1218811.
+
+553   C. Kemp, Y. Xu, and T. Regier. Semantic typology and efficient com-
+554     munication. Annual Review of Linguistics, 4(1):109–128, jan 2018. doi:
+555     10.1146/annurev-linguistics-011817-045406. URL https://doi.org/10.
+556     1146%2Fannurev-linguistics-011817-045406.
+
+557   M. R. Key and B. Comrie, editors. Intercontinental Dictionary Series.
+558     Max Planck Institute for Evolutionary Anthropology, Leipzig, 2015. URL
+559     https://ids.clld.org/.
+
+560   S. Kirby and J. R. Hurford. The emergence of linguistic structure: An
+561     overview of the iterated learning model. In A. Cangelosi and D. Parisi,
+562     editors, Simulating the Evolution of Language, chapter 6, pages 121–148.
+563     Springer Verlag, London, 2002.
+
+564   S. Kirby, T. Griffiths, and K. Smith. Iterated learning and the evolution
+
+
+                                           23
+
+
+===== PDF PAGE 0025 / 0029 | Native =====
+565     of language. Current Opinion in Neurobiology, 28:108–114, 2014. doi:
+566     10.1016/j.conb.2014.07.014.
+
+567   S. Kirby, M. Tamariz, H. Cornish, and K. Smith. Compression and commu-
+568     nication in the cultural evolution of linguistic structure. Cognition, 141:
+569     87–102, 2015. doi: 10.1016/j.cognition.2015.03.016.
+
+570   T. Kliegr and O. Zamazal. Antonyms are similar: Towards paradigmatic
+571     association approach to rating similarity in SimLex-999 and WordSim-
+572     353. Data & Knowledge Engineering, 115:174–193, may 2018. doi: 10.
+573     1016/j.datak.2018.03.004. URL https://doi.org/10.1016%2Fj.datak.
+574     2018.03.004.
+
+575   J. K. Kruschke. Bayesian assessment of null values via parameter estimation
+576     and model comparison. Perspectives on Psychological Science, 6(3):299–
+577     312, may 2011. doi: 10.1177/1745691611406925. URL https://doi.org/
+578     10.1177%2F1745691611406925.
+
+579   G. Lakoff and M. Johnson. Metaphors we live by. University of Chicago
+580     press, 1980.
+
+581   T. K. Landauer and S. T. Dumais. A solution to Plato’s problem: The
+582     latent semantic analysis theory of acquisition, induction, and representa-
+583     tion of knowledge. Psychological Review, 104:211–240, 1997. doi: 10.1037/
+584     0033-295X.104.2.211. URL https://doi.org/10.1037/0033-295x.104.
+585     2.211.
+
+586   D. Lin, S. Zhao, L. Qin, and M. Zhou. Identifying synonyms among distri-
+587     butionally similar words. In IJCAI, volume 3, pages 1492–1493. Citeseer,
+588     2003.
+
+589   J.-M. List, A. Terhalle, and M. Urban. Using network approaches to en-
+590     hance the analysis of cross-linguistic polysemies. In Proceedings of the
+591     10th International Conference on Computational Semantics - Short Pa-
+592     pers, pages 347–353, Stroudsburg, 2013.
+
+
+
+                                           24
+
+
+===== PDF PAGE 0026 / 0029 | Native =====
+593   J.-M. List, M. Cysouw, and R. Forkel. Concepticon: A resource for the
+594     linking of concept lists. In Proceedings of the Tenth International Con-
+595     ference on Language Resources and Evaluation (LREC’16), pages 2393–
+596     2400, 2016.
+
+597   K. Lund and C. Burgess. Producing high-dimensional semantic spaces from
+598     lexical co-occurrence. Behavior research methods, instruments, & com-
+599     puters, 28(2):203–208, 1996.
+
+600   A. Martinet. A Functional View of Language. Clarendon Press, Oxford,
+601     1962.
+
+602   S. M. Mohammad, B. J. Dorr, G. Hirst, and P. D. Turney. Computing
+603     lexical contrast. Computational Linguistics, 39(3):555–590, 2013.
+
+604   F. Mollica, G. Bacon, N. Zaslavsky, Y. Xu, T. Regier, and C. Kemp. The
+605     forms and meanings of grammatical markers support efficient commu-
+606     nication.   Proceedings of the National Academy of Sciences, 118(49):
+607     e2025993118, dec 2021. doi: 10.1073/pnas.2025993118. URL https:
+608     //doi.org/10.1073%2Fpnas.2025993118.
+
+609   P. Monaghan, M. H. Christiansen, and S. A. Fitneva. The arbitrariness
+610     of the sign: learning advantages from the structure of the vocabulary.
+611     Journal of Experimental Psychology: General, 140(3):325, 2011.
+
+612   G. L. Murphy. The Big Book of Concepts. The MIT Press, Cambridge, MA,
+613     2002.
+
+614   S. T. Piantadosi. Zipf’s word frequency law in natural language: A critical
+615     review and future directions. Psychonomic bulletin & review, 21(5):1112–
+616     1130, 2014. doi: 10.3758/s13423-014-0585-6.
+
+617   S. T. Piantadosi, H. Tily, and E. Gibson. The communicative function of
+618     ambiguity in language. Cognition, 122(3):280–291, 2012. doi: 10.1016/j.
+619     cognition.2011.10.004.
+
+
+
+
+                                          25
+
+
+===== PDF PAGE 0027 / 0029 | Native =====
+620   C. Ramiro, M. Srinivasan, B. C. Malt, and Y. Xu. Algorithms in the his-
+621     torical emergence of word senses. Proceedings of the National Academy
+622     of Sciences of the United States of America, 115:2323–2328, jun 2018.
+623     doi: 10.31234/osf.io/8scm9. URL https://doi.org/10.31234%2Fosf.
+624     io%2F8scm9.
+
+625   T. Regier, C. Kemp, and P. Kay. Word Meanings across Languages Sup-
+626     port Efficient Communication, chapter 11, pages 237–263.            John Wi-
+627     ley & Sons, Ltd, 2015. ISBN 9781118346136. doi: https://doi.org/10.
+628     1002/9781118346136.ch11. URL https://onlinelibrary.wiley.com/
+629     doi/abs/10.1002/9781118346136.ch11.
+
+630   C. Rzymski, T. Tresoldi, S. J. Greenhill, M.-S. Wu, N. E. Schweikhard,
+631     M. Koptjevskaja-Tamm, V. Gast, T. A. Bodt, A. Hantgan, G. A. Kaiping,
+632     et al. The database of cross-linguistic colexifications, reproducible analysis
+633     of cross-linguistic polysemies. Scientific Data, 7(1):1–12, 2020.
+
+634   C. Santana. Ambiguity in cooperative signaling. Philosophy of Science, 81
+635     (3):398–422, 2014. doi: 10.1086/676652.
+
+636   K. Smith, S. Kirby, and H. Brighton. Iterated learning: A framework for
+637     the emergence of language. Artificial Life, 9:371–386, 2003.
+
+638   M. Srinivasan and H. Rabagliati. How concepts and conventions structure
+639     the lexicon: Cross-linguistic evidence from polysemy. Lingua, 157:124–
+640     152, 2015. doi: 10.1016/j.lingua.2014.12.004.
+
+641   S. Steinert-Threlkeld. Quantifiers in natural language: Efficient communi-
+642     cation and degrees of semantic universals. Entropy, 23(10):1335, oct 2021.
+643     doi: 10.3390/e23101335. URL https://doi.org/10.3390%2Fe23101335.
+
+644   A. Tjuka, R. Forkel, and J.-M. List. Linking norms, ratings, and relations of
+645     words and concepts across multiple language varieties. Behavior Research
+646     Methods, pages 1–21, 2021.
+
+647   A. Tversky. Features of similarity. Psychological Review, 84(4):327–352,
+
+
+                                            26
+
+
+===== PDF PAGE 0028 / 0029 | Native =====
+648     1977.   doi: 10.1037/0033-295x.84.4.327.     URL https://doi.org/10.
+649     1037%2F0033-295x.84.4.327.
+
+650   A. Vehtari, A. Gelman, and J. Gabry. Practical Bayesian model evaluation
+651     using leave-one-out cross-validation and WAIC. Statistics and computing,
+652     27(5):1413–1432, 2017.
+
+653   A. Vehtari, J. Gabry, M. Magnusson, Y. Yao, and A. Gelman. loo: Efficient
+654     leave-one-out cross-validation and WAIC for Bayesian models, 2019. URL
+655     https://mc-stan.org/loo. R package version 2.2.0.
+
+656   T. Wasow. Ambiguity avoidance is overrated. In Ambiguity. Walter de
+657     Gruyter GmbH, 2015. doi: 10.1515/9783110403589-003.
+
+658   T. Wasow, A. Perfors, and D. Beaver. The puzzle of ambiguity. In Morphol-
+659     ogy and the web of grammar: Essays in memory of Steven G. Lapointe,
+660     pages 265–282. CSLI Publications, 2005.
+
+661   M. Westera, A. Gupta, G. Boleda, and S. Padó. Distributional models
+662     of category concepts based on names of category members. Cognitive
+663     Science, 46, 2021.
+
+664   S. N. Wood. Generalized Additive Models. Chapman and Hall/CRC, may
+665     2017. doi: 10.1201/9781315370279. URL https://doi.org/10.1201%
+666     2F9781315370279.
+
+667   Y. Xu, T. Regier, and B. C. Malt. Historical semantic chaining and efficient
+668     communication: The case of container names. Cognitive Science, 40(8):
+669     2081–2094, oct 2016. doi: 10.1111/cogs.12312. URL https://doi.org/
+670     10.1111%2Fcogs.12312.
+
+671   Y. Xu, B. C. Malt, and M. Srinivasan. Evolution of word meanings through
+672     metaphorical mapping: Systematicity over the past millennium. Cognitive
+673     Psychology, 96:41–53, 2017. doi: 10.1016/j.cogpsych.2017.05.005. URL
+674     https://doi.org/10.1016%2Fj.cogpsych.2017.05.005.
+
+675   Y. Xu, K. Duong, B. C. Malt, S. Jiang, and M. Srinivasan. Conceptual
+676     relations predict colexification across languages. Cognition, 201, 2020a.
+
+                                           27
+
+
+===== PDF PAGE 0029 / 0029 | Native =====
+677   Y. Xu, E. Liu, and T. Regier. Numeral systems across languages sup-
+678     port efficient communication: From approximate numerosity to recur-
+679     sion. Open Mind, 4:57–70, aug 2020b. doi: 10.1162/opmi a 00034. URL
+680     https://doi.org/10.1162%2Fopmi_a_00034.
+
+681   H. Youn, L. Sutton, E. Smith, C. Moore, J. F. Wilkins, I. Maddieson,
+682     W. Croft, and T. Bhattacharya.        On the universal structure of hu-
+683     man lexical semantics.   Proceedings of the National Academy of Sci-
+684     ences, 113(7):1766–1771, 2016.   doi: 10.1073/pnas.1520752113.    URL
+685     https://doi.org/10.1073%2Fpnas.1520752113.
+
+686   N. Zaslavsky, C. Kemp, T. Regier, and N. Tishby. Efficient compression
+687     in color naming and its evolution. Proceedings of the National Academy
+688     of Sciences, 115(31):7937–7942, jul 2018. doi: 10.1073/pnas.1800521115.
+689     URL https://doi.org/10.1073%2Fpnas.1800521115.
+
+690   G. Zipf. Human behavior and the principle of least effort. Addison-Wesley
+691     Press, 1949.
+
+
+
+
+                                         28

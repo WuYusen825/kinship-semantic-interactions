@@ -1,15 +1,21 @@
 {
   "passed": true,
-  "verified_at_utc": "2026-10-15T06:57:23.767780+00:00",
-  "formal_fulltext_references": 46,
+  "verified_at_utc": "2026-10-16T00:51:28.489046+00:00",
+  "formal_fulltext_references": 51,
   "excluded_no_fulltext": [
     "A02",
     "A05"
   ],
+  "excluded_incomplete_pdf": [
+    "C08"
+  ],
+  "publication_completeness_caveats": {
+    "C08": "2026-10-15独立完整性复查：39页作者副本仅含印刷281–319，首页篇幅281–320，缺末页320参考文献；公开来源补全未成功。当前新版引用准入排除，旧稿保留历史范围。详见notes/revision_c08_completeness.md。"
+  },
   "uploaded_pdfs_verified": 8,
-  "source_pdf_files": 51,
-  "source_txt_files": 51,
-  "pdf_pages": 1675,
+  "source_pdf_files": 57,
+  "source_txt_files": 57,
+  "pdf_pages": 1834,
   "ocr_attempted_pages": 241,
   "remaining_low_text_pages": {
     "literature/A/A08_Morgan_1871_Systems_of_Consanguinity_and_Affinity_of_the_Human_Family.pdf": [
@@ -30,12 +36,18 @@
     "CLAUDE_REVIEW_CHECKLIST.md",
     "literature/README.md",
     "literature/TXT索引.md",
+    "outputs/论文_中文正式稿.md",
     "outputs/研究计划_完善版.md",
     "outputs/PDF无法下载清单.md",
+    "outputs/理论约束对照表.md",
     "outputs/文献综述与证据台账.md",
-    "outputs/论文_中文实证稿.md"
+    "outputs/论文_中文实证稿.md",
+    "outputs/文献综合矩阵.md",
+    "outputs/数据测量复核.md",
+    "outputs/理论新颖性核查.md",
+    "outputs/Claude复查报告.md"
   ],
-  "checked_relative_links": 348,
+  "checked_relative_links": 442,
   "frozen_statistical_files_unchanged": [
     "analysis/analyze.py",
     "analysis/audit.py",

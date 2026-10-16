@@ -1,0 +1,26 @@
+[
+  {
+    "file": "crossref_Jackson.json",
+    "url": "https://api.crossref.org/works/10.1126/science.aaw8160",
+    "final_url": "https://api.crossref.org/works/10.1126/science.aaw8160",
+    "status": 200,
+    "bytes": 18334,
+    "content_type": "application/json",
+    "pdf_magic": false
+  },
+  {
+    "file": "Xu_publisher_pdf.pdf",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0010027720300998/pdfft?isDTMRedir=true&download=true",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "file": "Jackson_publisher_pdf.pdf",
+    "url": "https://www.science.org/doi/pdf/10.1126/science.aaw8160",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "Karjus_publisher_pdf.pdf",
+    "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/cogs.13035",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

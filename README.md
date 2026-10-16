@@ -1,10 +1,39 @@
 # 亲属称谓的语义组合：跨语言兄弟姐妹词形共享研究
 
-本仓库保存已经执行的公开数据库分析、当前中文研究工作稿、文献全文和可复现结果，并提供后续研究与复查交接。
+本仓库保存中文正式论文、公开数据库分析、文献全文和可复现结果，并提供研究与复查交接。
 
-研究的问题是：所指者性别、相对年龄和参照者性别的独立贡献，能否预测两个兄弟姐妹类别是否共享词形？加入传统“同性／异性兄弟姐妹”特征之后，进一步的组合项还能带来多少跨语系预测增益？
+大修分支为`codex/major-revision`。S2最终协议于实测前单独提交（`6ba7afb`）；它写于原结果已知之后，属于事后补充分析。旧稿、冻结结果和S1保留。v2已完成并通过第五轮独立复查，逐处数字、引文及独立全稿核查记录单列；以下提供新分析与历史分析的独立入口。
 
-## 研究与主要结果
+研究的问题是：兄弟姐妹词项是否呈现合取与层级约束，以及显式条件结构能否提高未见谱系和地域上的共用词形预测。划分结构、类别对预测与测量边界分别检验。
+
+本分支的研究与正式稿修订见[草稿PR #2](https://github.com/WuYusen825/kinship-semantic-interactions/pull/2)，目标为`claude/finish-forum-paper-rio1ke`。此前payload同步证据保留于[历史记录](notes/revision_delivery_sync.json)。
+
+## 正式论文（当前阅读版本）
+
+- [中文正式稿](outputs/论文_中文正式稿.md)｜[PDF](outputs/论文_中文正式稿.pdf)｜[Word](outputs/论文_中文正式稿.docx)｜[摘要](outputs/正式论文_摘要.txt)。
+- 摘要仅保留样本规模，正文按研究问题、理论背景、方法、结果与讨论组织。下载时间、执行时间、提交编号及文件校验信息集中于[复现说明](notes/formal_reproducibility.md)。
+- 正文采用著者—出版年引注与页码上标，42项参考文献按GB/T 7714—2015整理，规范条目及来源说明见[引用格式记录](notes/formal_references.md)。
+- 正式稿已通过独立体例、内容、引文与排版复查；摘要只保留一项样本规模。
+- [正式稿数字核验](notes/formal_manuscript_number_check.json)｜[引文核对](notes/formal_citation_check.md)｜[排版核验](notes/formal_artifact_check.json)｜[独立评审](notes/review/formal_paper_review.md)。
+
+## S2与论坛稿v2
+
+- [v2中文稿](outputs/forum/论坛稿_v2.md)｜[v2 Word](outputs/forum/词与世界论坛-英语-吴雨森、瞿唯艺_v2.docx)｜[v2 PDF](outputs/forum/词与世界论坛-英语-吴雨森、瞿唯艺_v2.pdf)｜[v2摘要](outputs/forum/中文摘要_提交用_v2.txt)。
+- [运行前协议](analysis/supplementary_s2/protocol_s2.md)｜[S2报告](analysis/supplementary_s2/s2_report.md)｜[完整结果JSON](analysis/supplementary_s2/s2_results.json)。
+- [全部420项交叉比较](analysis/supplementary_s2/s2_crossed_comparisons.csv)｜[交叉敏感性图](analysis/supplementary_s2/s2_multiverse_forest.png)｜[逐系统分数](analysis/supplementary_s2/s2_language_scores.csv)。
+- [数字逐处核验](notes/manuscript_number_check.json)｜[引文页码核对](notes/revision_citation_check.md)｜[导出与冻结核验](notes/revision_artifact_check.json)。
+- [文献综合矩阵](outputs/文献综合矩阵.md)｜[理论约束](outputs/理论约束对照表.md)｜[测量复核](outputs/数据测量复核.md)｜[独立S2审计](notes/review/independent_revision_review_round3.md)｜[最终整稿复审](notes/review/independent_revision_review_round5.md)。
+
+主样本仍为939个系统、125个谱系组。625个单词形系统中，主四特征定义下有22个非合取系统；年长侧与同性侧的次级区分方向得到支持，男性侧方向未通过调整后的检验。条件模型相对原始加性有正增益，相对七差异单元交互模型的区间包含零；未见地域验证没有支持其优势。
+
+| 主语系留出、无惩罚、谱系等权 | 对数损失增益 | 固定折外预测的谱系自助95%区间 |
+|---|---:|---|
+| 条件模型相对原始加性 | 0.0145 | [0.0076, 0.0219] |
+| 条件模型相对七单元交互 | 0.0018 | [-0.0005, 0.0039] |
+
+20组测量×估计×权重条件、三种验证及5000次系数重拟合均保存。地域缺失30个系统，地域验证和GLMM使用909个已知地域系统；三个GLMM均未达到预定收敛标准，保留失败诊断，不作稳定的模型化不确定性推断。其余预测和结构结论不使用这些失败近似后验。
+
+## 原冻结分析：C=1历史参照
 
 主样本包含 **939个语言记录系统、125个谱系组、26,292个无序类别对**。研究以Kinbank词形记录为基础，使用Glottolog官方分类整组留出语系，比较三个模型：
 
@@ -27,11 +56,13 @@
 
 ## 文献与阅读材料
 
-当前正式引用 **46项独立学术著作，全部具有PDF全文和同名TXT**。仍未取得全文的A02与A05已从正文引用和正式参考文献中排除。文献库共保存 **51个源PDF及51个TXT**；额外5个文件是早期版本或补充材料，不重复计数。
+当前可用的正式全文文献为 **51项独立学术著作，全部具有PDF全文和同名TXT**。A02、A05仍无全文；独立复查另发现C08副本缺末页320，公开源未能补齐，暂排除新版引用。旧稿保留历史文献范围。文献库共保存 **57个源PDF及57个TXT**；额外5个文件是早期版本或补充材料，不重复计数。
+
+2026年10月15日大修准备新增6项共词化研究全文，D03、D05使用完整作者稿，版本单列；既有研究计划和旧论文保留原来的46项文献范围。
 
 2026年10月15日收到用户补充8份PDF，已核对题名、作者与版本，并统一命名为“编号_第一作者_年份_题名”。B03与C12现以正式期刊PDF为主要依据；旧预印本、工作论文保留在`earlier_versions/`。其余作者稿和在线先行版本按登记表明确说明。
 
-- [46项主要文献入口](literature/README.md)
+- [51项完整全文与来源状态入口](literature/README.md)
 - [全部PDF／TXT索引](literature/TXT索引.md)
 - [逐页转换及OCR报告](literature/pdf_text_conversion_report.json)｜[文本质量与8个低文字页复核](literature/文本质量说明.md)
 - [用户补充PDF与重命名校验](literature/uploaded_pdf_manifest.json)
@@ -41,7 +72,7 @@ TXT保留PDF文件页序；扫描或低文本页已尝试OCR。图表、公式�
 ## 成果导航
 
 - **研究计划：** [Markdown](outputs/研究计划_完善版.md)｜[PDF](outputs/研究计划_完善版.pdf)｜[Word](outputs/研究计划_完善版.docx)。
-- **中文论文：** [Markdown](outputs/论文_中文实证稿.md)｜[PDF](outputs/论文_中文实证稿.pdf)｜[Word](outputs/论文_中文实证稿.docx)。
+- **早期中文实证工作稿（历史版本）：** [Markdown](outputs/论文_中文实证稿.md)｜[PDF](outputs/论文_中文实证稿.pdf)｜[Word](outputs/论文_中文实证稿.docx)。
 - **论坛投稿稿（第六届“词与世界”本科生论坛，2026年10月15日）：** [Markdown](outputs/forum/论坛稿.md)｜[Word](outputs/forum/词与世界论坛-英语-吴雨森、瞿唯艺.docx)｜[PDF](outputs/forum/词与世界论坛-英语-吴雨森、瞿唯艺.pdf)｜[提交用摘要](outputs/forum/中文摘要_提交用.txt)。由`python analysis/export_forum_documents.py`生成。
 - **补充分析S1（结果已知后写定协议、提交后运行）：** [协议](analysis/supplementary_s1/protocol_s1.md)｜[结果](analysis/supplementary_s1/s1_report.md)：嵌套调参、经典模型编码依赖、28类别对饱和模型；不替代冻结的C=1主比较。论坛稿表1、表2的描述统计见`analysis/forum_descriptives.py`。
 - **文献综述与证据台账：** [Markdown](outputs/文献综述与证据台账.md)｜[PDF](outputs/文献综述与证据台账.pdf)。
@@ -49,7 +80,7 @@ TXT保留PDF文件页序；扫描或低文本页已尝试OCR。图表、公式�
 - **结构化书目：** [CSV](outputs/文献登记表.csv)｜[JSON](outputs/文献登记表.json)。
 - [复现说明](analysis/README.md)：数据版本、运行环境、输出字段和核验方法。
 
-`literature/`按A亲属研究、B语义范畴与效率、C统计与数据方法保存PDF和登记表；`data/`保存锁定版本的必要原始表；`analysis/`保存脚本、协议、配对数据、折外预测与图表；`notes/`保存摘要、阅读证据和独立核验记录。
+`literature/`按A亲属研究、B语义范畴与效率、C统计与数据方法、D共词化研究保存PDF和登记表；`data/`保存锁定版本的必要原始表；`analysis/`保存脚本、协议、配对数据、折外预测与图表；`notes/`保存摘要、阅读证据和独立核验记录。
 
 ## Claude交接
 
@@ -57,17 +88,25 @@ TXT保留PDF文件页序；扫描或低文本页已尝试OCR。图表、公式�
 - [待完成清单](CLAUDE_TODO.md)：理论约束、创新定位、后续估计设计与成稿任务。
 - [复查清单](CLAUDE_REVIEW_CHECKLIST.md)：文献、OCR、模型、数值、文件及同步检查。
 
-本轮不改动2026年10月14日的冻结统计结果；新增全文用于更新证据与后续研究设计。
+2026年10月14日的冻结统计结果保持原内容；新增全文用于v2论证，S2另存并已实际执行。
 
 ## 复现
 
 ```bash
-git clone https://github.com/WuYusen825/kinship-semantic-interactions.git
+git clone --branch codex/major-revision https://github.com/WuYusen825/kinship-semantic-interactions.git
 cd kinship-semantic-interactions
 ```
 
 
-使用Python 3.12，在仓库根目录运行：
+使用Python 3.12，S2复现方式见[目录说明](analysis/supplementary_s2/README.md)。在独立克隆的仓库根目录运行：
+
+```bash
+python -m pip install -r analysis/supplementary_s2/requirements.txt
+python analysis/supplementary_s2/test_partitions.py
+python analysis/supplementary_s2/run_s2.py --phase all
+```
+
+以下命令用于重建原冻结分析，会写入历史结果目录；需要执行时请使用另一个独立克隆：
 
 ```bash
 python -m pip install -r analysis/requirements.txt
@@ -100,8 +139,7 @@ python analysis/verify_results_independent.py
 ```bash
 python -m pip install -r analysis/requirements_text.txt
 python analysis/convert_literature_pdf_to_txt.py --workers 3 --dpi 200
-python analysis/build_documents.py
 python analysis/validate_literature_update.py
 ```
 
-转换脚本仅生成TXT和质量报告，不改写PDF。源码、引用和材料校验的当前结果见[本轮更新核验](outputs/本轮文献更新核验.json)。PDF／Word排版说明见`analysis/export_documents.py`，还需Pandoc、XeLaTeX和中文字体。
+转换脚本仅生成TXT和质量报告，不改写PDF。旧`build_documents.py`会重建旧稿，本次v2使用`export_forum_documents.py --input outputs/forum/论坛稿_v2.md`。源码、引用和材料校验的当前结果见[本轮更新核验](outputs/本轮文献更新核验.json)。PDF／Word排版说明见`analysis/export_documents.py`，还需Pandoc、XeLaTeX和中文字体。

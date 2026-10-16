@@ -1,0 +1,22 @@
+聚合等价与合成解析核验通过：{"passed": true, "actual_weighted_row_vs_cell_absolute_errors": {"objective": 0.0, "gradient": 1.7195134205394424e-12, "information": 4.263256414560601e-14, "total_weight": 2.2737367544323206e-13}, "synthetic_finite_MLE": {"parameter_max_error": 5.364242386396434e-08, "probability_max_error": 6.062050167399136e-09, "diagnostics": {"rank": 14, "weight_sum": 5600.0, "separation": false, "separation_lp_objective": 0.0, "method": "MLE", "converged": true, "iterations": 5, "standardized_score": 8.640672253891677e-10, "max_abs_beta": 0.399999946374544, "min_probability": 0.13814666738256015, "max_probability": 0.42367811935524213}}, "synthetic_separated_Firth_analytic_cases": [{"binomial_cells": 1, "analytic_probability_max_error": 9.342878692919498e-10, "diagnostics": {"rank": 1, "weight_sum": 20.0, "separation": true, "separation_lp_objective": 1.0, "method": "Firth", "converged": true, "trigger": "检出完全或准完全分离", "iterations": 9, "standardized_score": 9.810022627565473e-10, "max_abs_beta": 3.713572026507143, "min_probability": 0.023809524743811677, "max_probability": 0.023809524743811677}}, {"binomial_cells": 2, "analytic_probability_max_error": 9.342878692919498e-10, "diagnostics": {"rank": 2, "weight_sum": 40.0, "separation": true, "separation_lp_objective": 2.0, "method": "Firth", "converged": true, "trigger": "检出完全或准完全分离", "iterations": 9, "standardized_score": 9.810023002265744e-10, "max_abs_beta": 3.713572026507144, "min_probability": 0.023809524743811677, "max_probability": 0.9761904752561883}}], "scope": "验证目标/梯度/信息矩阵的聚合等价与解析可解估计，不重现内部实现作为答案。"}
+系数重拟合 250/5000，成功250，耗时0.1秒
+系数重拟合 500/5000，成功500，耗时0.1秒
+系数重拟合 750/5000，成功750，耗时0.2秒
+系数重拟合 1000/5000，成功1000，耗时0.3秒
+系数重拟合 1250/5000，成功1250，耗时0.3秒
+系数重拟合 1500/5000，成功1500，耗时0.4秒
+系数重拟合 1750/5000，成功1750，耗时0.5秒
+系数重拟合 2000/5000，成功2000，耗时0.5秒
+系数重拟合 2250/5000，成功2250，耗时0.6秒
+系数重拟合 2500/5000，成功2500，耗时0.7秒
+系数重拟合 2750/5000，成功2750，耗时0.7秒
+系数重拟合 3000/5000，成功3000，耗时0.8秒
+系数重拟合 3250/5000，成功3250，耗时0.9秒
+系数重拟合 3500/5000，成功3500，耗时0.9秒
+系数重拟合 3750/5000，成功3750，耗时1.0秒
+系数重拟合 4000/5000，成功4000，耗时1.1秒
+系数重拟合 4250/5000，成功4250，耗时1.1秒
+系数重拟合 4500/5000，成功4500，耗时1.2秒
+系数重拟合 4750/5000，成功4750，耗时1.3秒
+系数重拟合 5000/5000，成功5000，耗时1.3秒
+系数重拟合完成：{"DrE": {"point_estimate": -0.4578417310811507, "family_refit_percentile_95_interval": [-0.782206214109294, -0.16484082949449264], "bonferroni_98_333333_percent_interval": [-0.8512399988817064, -0.112695775002743], "negative_fraction": 0.9986, "valid_replicates": 5000, "direction_assessment": "逐项95%区间支持预期负方向"}, "DaB": {"point_estimate": -0.11951831014511637, "family_refit_percentile_95_interval": [-0.38013852134224557, 0.1305139293961301], "bonferroni_98_333333_percent_interval": [-0.44290221994048673, 0.18685669726585583], "negative_fraction": 0.8154, "valid_replicates": 5000, "direction_assessment": "方向证据未定"}, "DaS": {"point_estimate": -0.6558214425314142, "family_refit_percentile_95_interval": [-1.0488149802186169, -0.3196767656485335], "bonferroni_98_333333_percent_interval": [-1.1315120217532861, -0.25163349676926366], "negative_fraction": 1.0, "valid_replicates": 5000, "direction_assessment": "逐项95%区间支持预期负方向"}}

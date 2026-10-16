@@ -1,8 +1,8 @@
 # 全部PDF的TXT索引
 
-每个PDF都有同目录、同文件名的UTF-8 TXT。每页保留PDF页序标记，扫描及低文本页已尝试OCR。正式文献与早期版本／补充材料分别计数，转换不新增文献数量。
+现有51项完整全文文献，另保留C08不完整副本及5个早期版本或补充文件；共57份PDF与同名逐页TXT。C08缺印刷320页，暂排除新版引用。页码为PDF页序。新增D组中的D03、D05是完整作者稿，实际版本见登记表。
 
-| PDF | TXT | 页数 | OCR页数 | 低文字页（需对照PDF） |
+| PDF | TXT | 页数 | OCR页数 | 低文字页 |
 |---|---|---:|---:|---|
 | [A/A01_Kroeber_1909_Classificatory_Systems_of_Relationship.pdf](A/A01_Kroeber_1909_Classificatory_Systems_of_Relationship.pdf) | [TXT](A/A01_Kroeber_1909_Classificatory_Systems_of_Relationship.txt) | 9 | 0 | — |
 | [A/A03_Goodenough_1956_Componential_Analysis_and_the_Study_of_Meaning.pdf](A/A03_Goodenough_1956_Componential_Analysis_and_the_Study_of_Meaning.pdf) | [TXT](A/A03_Goodenough_1956_Componential_Analysis_and_the_Study_of_Meaning.txt) | 23 | 0 | — |
@@ -55,3 +55,9 @@
 | [C/C11_Forkel_2018_Cross_Linguistic_Data_Formats_advancing_data_sharing_and_re_use_in_comparative_linguisti.pdf](C/C11_Forkel_2018_Cross_Linguistic_Data_Formats_advancing_data_sharing_and_re_use_in_comparative_linguisti.pdf) | [TXT](C/C11_Forkel_2018_Cross_Linguistic_Data_Formats_advancing_data_sharing_and_re_use_in_comparative_linguisti.txt) | 10 | 0 | — |
 | [C/C12_Cameron_2008_Bootstrap_Based_Improvements_for_Inference_with_Clustered_Errors.pdf](C/C12_Cameron_2008_Bootstrap_Based_Improvements_for_Inference_with_Clustered_Errors.pdf) | [TXT](C/C12_Cameron_2008_Bootstrap_Based_Improvements_for_Inference_with_Clustered_Errors.txt) | 14 | 0 | — |
 | [C/earlier_versions/C12_Cameron_Gelbach_Miller_2007_NBER_Working_Paper.pdf](C/earlier_versions/C12_Cameron_Gelbach_Miller_2007_NBER_Working_Paper.pdf) | [TXT](C/earlier_versions/C12_Cameron_Gelbach_Miller_2007_NBER_Working_Paper.txt) | 64 | 0 | — |
+| [D_colexification/D01_François_2008_Semantic_maps_and_the_typology_of_colexification_Intertwining_polysemous_networks_across_languages.pdf](D_colexification/D01_François_2008_Semantic_maps_and_the_typology_of_colexification_Intertwining_polysemous_networks_across_languages.pdf) | [TXT](D_colexification/D01_François_2008_Semantic_maps_and_the_typology_of_colexification_Intertwining_polysemous_networks_across_languages.txt) | 53 | 0 | — |
+| [D_colexification/D02_Rzymski_2020_The_Database_of_Cross_Linguistic_Colexifications_reproducible_analysis_of_cross_linguistic_polysemies.pdf](D_colexification/D02_Rzymski_2020_The_Database_of_Cross_Linguistic_Colexifications_reproducible_analysis_of_cross_linguistic_polysemies.pdf) | [TXT](D_colexification/D02_Rzymski_2020_The_Database_of_Cross_Linguistic_Colexifications_reproducible_analysis_of_cross_linguistic_polysemies.txt) | 12 | 0 | — |
+| [D_colexification/D03_Brochhagen_2022_When_do_languages_use_the_same_word_for_different_meanings.pdf](D_colexification/D03_Brochhagen_2022_When_do_languages_use_the_same_word_for_different_meanings.pdf) | [TXT](D_colexification/D03_Brochhagen_2022_When_do_languages_use_the_same_word_for_different_meanings.txt) | 29 | 0 | — |
+| [D_colexification/D04_Jackson_2019_Emotion_semantics_show_both_cultural_variation_and_universal_structure.pdf](D_colexification/D04_Jackson_2019_Emotion_semantics_show_both_cultural_variation_and_universal_structure.pdf) | [TXT](D_colexification/D04_Jackson_2019_Emotion_semantics_show_both_cultural_variation_and_universal_structure.txt) | 6 | 0 | — |
+| [D_colexification/D05_Xu_2020_Conceptual_relations_predict_colexification_across_languages.pdf](D_colexification/D05_Xu_2020_Conceptual_relations_predict_colexification_across_languages.pdf) | [TXT](D_colexification/D05_Xu_2020_Conceptual_relations_predict_colexification_across_languages.txt) | 29 | 0 | — |
+| [D_colexification/D06_Karjus_2021_Conceptual_Similarity_and_Communicative_Need_Shape_Colexification_An_Experimental_Study.pdf](D_colexification/D06_Karjus_2021_Conceptual_Similarity_and_Communicative_Need_Shape_Colexification_An_Experimental_Study.pdf) | [TXT](D_colexification/D06_Karjus_2021_Conceptual_Similarity_and_Communicative_Need_Shape_Colexification_An_Experimental_Study.txt) | 30 | 0 | — |

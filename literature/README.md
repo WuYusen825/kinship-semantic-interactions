@@ -1,8 +1,8 @@
 # 文献库与全文入口
 
-正式引用46项独立著作；未取得全文的A02、A05不引用。命名采用“编号_第一作者_年份_题名”；各主要PDF同目录有同名TXT。5个早期版本或补充PDF不额外计作文献。
+可用完整全文51项独立著作；未取得全文的A02、A05不引用。命名采用“编号_第一作者_年份_题名”；各主要PDF同目录有同名TXT。5个早期版本或补充PDF不额外计作文献。
 
-[全部51个源PDF及TXT索引](TXT索引.md)｜[结构化登记表](../outputs/文献登记表.json)｜[补充与排除清单](../outputs/PDF无法下载清单.md)
+[全部57个源PDF及TXT索引](TXT索引.md)｜[结构化登记表](../outputs/文献登记表.json)｜[补充与排除清单](../outputs/PDF无法下载清单.md)
 
 | 编号 | 文献 | PDF | TXT |
 |---|---|---|---|
@@ -52,3 +52,20 @@
 | C10 | Kathryn R. Kirby（2016），D-PLACE: A Global Database of Cultural, Linguistic and Environmental Diversity | [PDF](C/C10_Kirby_2016_D_PLACE_A_Global_Database_of_Cultural_Linguistic_and_Environmental_Diversity.pdf) | [TXT](C/C10_Kirby_2016_D_PLACE_A_Global_Database_of_Cultural_Linguistic_and_Environmental_Diversity.txt) |
 | C11 | Robert Forkel（2018），Cross-Linguistic Data Formats, advancing data sharing and re-use in comparative linguistics | [PDF](C/C11_Forkel_2018_Cross_Linguistic_Data_Formats_advancing_data_sharing_and_re_use_in_comparative_linguisti.pdf) | [TXT](C/C11_Forkel_2018_Cross_Linguistic_Data_Formats_advancing_data_sharing_and_re_use_in_comparative_linguisti.txt) |
 | C12 | A. Colin Cameron（2008），Bootstrap-Based Improvements for Inference with Clustered Errors | [PDF](C/C12_Cameron_2008_Bootstrap_Based_Improvements_for_Inference_with_Clustered_Errors.pdf) | [TXT](C/C12_Cameron_2008_Bootstrap_Based_Improvements_for_Inference_with_Clustered_Errors.txt) |
+
+## 大修补充：共形研究
+
+新增6项均已取得全文及同名TXT；D03、D05为完整作者稿，页码以实际稿本为准。旧稿参考文献保留历史范围。
+
+| 编号 | 文献 | PDF | TXT |
+|---|---|---|---|
+| D01 | Alexandre François（2008），Semantic maps and the typology of colexification: Intertwining polysemous networks across languages | [PDF](D_colexification/D01_François_2008_Semantic_maps_and_the_typology_of_colexification_Intertwining_polysemous_networks_across_languages.pdf) | [TXT](D_colexification/D01_François_2008_Semantic_maps_and_the_typology_of_colexification_Intertwining_polysemous_networks_across_languages.txt) |
+| D02 | Christoph Rzymski（2020），The Database of Cross-Linguistic Colexifications, reproducible analysis of cross-linguistic polysemies | [PDF](D_colexification/D02_Rzymski_2020_The_Database_of_Cross_Linguistic_Colexifications_reproducible_analysis_of_cross_linguistic_polysemies.pdf) | [TXT](D_colexification/D02_Rzymski_2020_The_Database_of_Cross_Linguistic_Colexifications_reproducible_analysis_of_cross_linguistic_polysemies.txt) |
+| D03 | Thomas Brochhagen（2022），When do languages use the same word for different meanings? The Goldilocks principle in colexification | [PDF](D_colexification/D03_Brochhagen_2022_When_do_languages_use_the_same_word_for_different_meanings.pdf) | [TXT](D_colexification/D03_Brochhagen_2022_When_do_languages_use_the_same_word_for_different_meanings.txt) |
+| D04 | Joshua Conrad Jackson（2019），Emotion semantics show both cultural variation and universal structure | [PDF](D_colexification/D04_Jackson_2019_Emotion_semantics_show_both_cultural_variation_and_universal_structure.pdf) | [TXT](D_colexification/D04_Jackson_2019_Emotion_semantics_show_both_cultural_variation_and_universal_structure.txt) |
+| D05 | Yang Xu（2020），Conceptual relations predict colexification across languages | [PDF](D_colexification/D05_Xu_2020_Conceptual_relations_predict_colexification_across_languages.pdf) | [TXT](D_colexification/D05_Xu_2020_Conceptual_relations_predict_colexification_across_languages.txt) |
+| D06 | Andres Karjus（2021），Conceptual Similarity and Communicative Need Shape Colexification: An Experimental Study | [PDF](D_colexification/D06_Karjus_2021_Conceptual_Similarity_and_Communicative_Need_Shape_Colexification_An_Experimental_Study.pdf) | [TXT](D_colexification/D06_Karjus_2021_Conceptual_Similarity_and_Communicative_Need_Shape_Colexification_An_Experimental_Study.txt) |
+
+## 完整性复查：C08暂不进入新版引用
+
+C08作者副本只有39页，印刷281–319；首页标281–320，参考文献末页缺失。多来源补全未成功，现为`excluded_incomplete_pdf`。旧文件保留溯源，其已读局部不等于完整全文。见[核查与请求记录](../notes/revision_c08_completeness.md)。以上历史表中的C08链接不是新版引用准入许可。

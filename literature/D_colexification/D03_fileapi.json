@@ -1,0 +1,88 @@
+{
+  "data": {
+    "id": "61d5c7f972da2311fcbfb3be",
+    "type": "files",
+    "attributes": {
+      "guid": "tky5w",
+      "checkout": null,
+      "name": "main.pdf",
+      "kind": "file",
+      "path": "/61d5c7f972da2311fcbfb3be",
+      "size": 356212,
+      "provider": "osfstorage",
+      "materialized_path": "/main.pdf",
+      "last_touched": null,
+      "date_modified": "2022-05-20T08:41:13.442082",
+      "date_created": "2022-01-05T16:31:53.988638Z",
+      "extra": {
+        "hashes": {
+          "md5": "39c260a593a712296cc555ad06459498",
+          "sha256": "0f78b1492c58d13731744d8b38ee0ba8994c02030a90d2c0a65d3a379bd034f2"
+        },
+        "downloads": 989
+      },
+      "tags": [],
+      "current_user_can_comment": false,
+      "current_version": 2,
+      "show_as_unviewed": false
+    },
+    "relationships": {
+      "parent_folder": {
+        "links": {
+          "related": {
+            "href": "https://api.osf.io/v2/files/61d5c7f4e2c76c06a6ed3201/",
+            "meta": {}
+          }
+        },
+        "data": {
+          "id": "61d5c7f4e2c76c06a6ed3201",
+          "type": "files"
+        }
+      },
+      "versions": {
+        "links": {
+          "related": {
+            "href": "https://api.osf.io/v2/files/61d5c7f972da2311fcbfb3be/versions/",
+            "meta": {}
+          }
+        }
+      },
+      "target": {
+        "links": {
+          "related": {
+            "href": "https://api.osf.io/v2/preprints/efs4p_v1/",
+            "meta": {
+              "type": "preprints"
+            }
+          }
+        },
+        "data": {
+          "type": "preprints",
+          "id": "efs4p_v1"
+        }
+      },
+      "cedar_metadata_records": {
+        "links": {
+          "related": {
+            "href": "https://api.osf.io/v2/files/61d5c7f972da2311fcbfb3be/cedar_metadata_records/",
+            "meta": {}
+          }
+        }
+      }
+    },
+    "links": {
+      "info": "https://api.osf.io/v2/files/61d5c7f972da2311fcbfb3be/",
+      "move": "https://files.de-1.osf.io/v1/resources/efs4p_v1/providers/osfstorage/61d5c7f972da2311fcbfb3be",
+      "upload": "https://files.de-1.osf.io/v1/resources/efs4p_v1/providers/osfstorage/61d5c7f972da2311fcbfb3be",
+      "delete": "https://files.de-1.osf.io/v1/resources/efs4p_v1/providers/osfstorage/61d5c7f972da2311fcbfb3be",
+      "download": "https://osf.io/download/tky5w/",
+      "render": "https://mfr.de-1.osf.io/render?url=https%3A%2F%2Fosf.io%2Fdownload%2Ftky5w%2F%3Fdirect%26mode%3Drender",
+      "html": "https://osf.io/efs4p_v1/files/osfstorage/61d5c7f972da2311fcbfb3be",
+      "self": "https://api.osf.io/v2/files/61d5c7f972da2311fcbfb3be/",
+      "iri": "https://osf.io/tky5w"
+    }
+  },
+  "meta": {
+    "version": "2.0"
+  }
+}
