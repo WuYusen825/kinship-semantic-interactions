@@ -1,11 +1,17 @@
 {
-  "checked_utc": "2026-10-16T00:46:41.488617+00:00",
+  "checked_utc": "2026-10-16T06:01:59.009308+00:00",
   "passed": true,
-  "manuscript_sha256": "35f78f0daaf3eeb0a3ad50a8af87fc4462f07f7c6ecbdfa94caf0a70a0be9b83",
+  "manuscript_sha256": "2414de8533d77d5578efcdef7ce8e080dc00b9847155965ebd1c72eb9734288c",
   "scope": "正文为第一节起至结论末；含节标题、表格、图题；排除摘要、数据代码说明、参考文献",
-  "body_han_with_tables_captions_headings": 6350,
-  "body_prose_han_excluding_tables_captions_headings": 5961,
-  "abstract_han": 235,
+  "body_han_with_tables_captions_headings": 11563,
+  "body_prose_han_excluding_tables_captions_headings": 11092,
+  "body_han_required_range": [
+    10000,
+    15000
+  ],
+  "discussion_han": 5778,
+  "discussion_share_of_body": 0.4996973103865779,
+  "abstract_han": 277,
   "references": 42,
   "figures": 2,
   "tables": 4,
@@ -13,26 +19,26 @@
   "body_word_compatible_statistics": {
     "table-count": 4,
     "image-count": 2,
-    "object-count": 0,
+    "object-count": 1,
     "page-count": 1,
-    "paragraph-count": 139,
-    "word-count": 7430,
-    "character-count": 8875,
-    "non-whitespace-character-count": 8796
+    "paragraph-count": 173,
+    "word-count": 13249,
+    "character-count": 15278,
+    "non-whitespace-character-count": 15162
   },
   "full_docx_statistics": {
     "table-count": 4,
     "image-count": 2,
-    "object-count": 0,
+    "object-count": 1,
     "page-count": 1,
-    "paragraph-count": 190,
-    "word-count": 8775,
-    "character-count": 16817,
-    "non-whitespace-character-count": 15805
+    "paragraph-count": 224,
+    "word-count": 14810,
+    "character-count": 25017,
+    "non-whitespace-character-count": 23798
   },
-  "actual_pdf_pages": 18,
+  "actual_pdf_pages": 29,
   "docx_pdf_han_sequence_equal": true,
-  "docx_pdf_han_characters": 6688,
+  "docx_pdf_han_characters": 11944,
   "all_six_main_headings_in_pdf": true,
   "pagination_note": "ODT导入统计中的page-count为缓存值，不作实际页数使用，也不写回Word页数属性；实际页数由最终PDF读取。",
   "frozen_baseline_files": [
@@ -123,7 +129,7 @@
     {
       "path": "analysis/export_forum_documents.py",
       "baseline_sha256": "3e4a1b854b481bb0160d8ee2ec6b37ce00c25f6251e9b35a23cac37eff7d2948",
-      "actual_sha256": "aa2254bcdb75c8728306a147c32f7a53fadcd075d0e6228bb53a7a3cd4aefcac",
+      "actual_sha256": "13d243b20c88a727525a387020559d2f2347a17074034055b96d92df102ff629",
       "unchanged": false,
       "maintenance_exception": "计划授权指定输入与v2导出接口"
     },
@@ -422,9 +428,9 @@
     "analysis/package_deliverables.py": "资料包动态统计51完整来源、57源PDF，避免写死旧数量"
   },
   "artifacts_sha256": {
-    "outputs/论文_中文正式稿.md": "35f78f0daaf3eeb0a3ad50a8af87fc4462f07f7c6ecbdfa94caf0a70a0be9b83",
-    "outputs/论文_中文正式稿.docx": "d53ef066477bb937aa8666cc433c8c68f711e9a4dd3c4944f09ca84082b084f0",
-    "outputs/论文_中文正式稿.pdf": "acaaac3c05a958cb8b3da6ab733dcbdd761a1fc10c62d06dd4889c499f3d49bc",
-    "outputs/正式论文_摘要.txt": "141e31c34d69e3e1dc28ab0594d3e5bd1eb16b8e7ffd58876f50075aa0e4704a"
+    "outputs/论文_中文正式稿.md": "2414de8533d77d5578efcdef7ce8e080dc00b9847155965ebd1c72eb9734288c",
+    "outputs/论文_中文正式稿.docx": "4955954a836cba80991a3cdb5d6de81e536237e1119857b4bfa307a1ee2472f4",
+    "outputs/论文_中文正式稿.pdf": "7e2e1ea0bc45411c027babc64292568cd6c6b470f56a3a6e2278f3266d2c7c93",
+    "outputs/正式论文_摘要.txt": "4e0b6d6d45bacb31983c17d70dbba042c787abf9c98f4c2a91f35456c5ff0bd6"
   }
 }

@@ -1,20 +1,22 @@
-# 亲属称谓的语义组合：跨语言兄弟姐妹词形共享研究
+# 兄弟姐妹称谓的合取偏好与条件区分
 
 本仓库保存中文正式论文、公开数据库分析、文献全文和可复现结果，并提供研究与复查交接。
 
 大修分支为`codex/major-revision`。S2最终协议于实测前单独提交（`6ba7afb`）；它写于原结果已知之后，属于事后补充分析。旧稿、冻结结果和S1保留。v2已完成并通过第五轮独立复查，逐处数字、引文及独立全稿核查记录单列；以下提供新分析与历史分析的独立入口。
 
-研究的问题是：兄弟姐妹词项是否呈现合取与层级约束，以及显式条件结构能否提高未见谱系和地域上的共用词形预测。划分结构、类别对预测与测量边界分别检验。
+研究考察兄弟姐妹称谓的合取偏好、次级区分与跨群组预测，并以关系表征、局部区分需要及历史传承解释这些现象。划分结构、类别对概率与表达实现分别判断，理论提案与已执行分析明确对应。
 
-本分支的研究与正式稿修订见[草稿PR #2](https://github.com/WuYusen825/kinship-semantic-interactions/pull/2)，目标为`claude/finish-forum-paper-rio1ke`。此前payload同步证据保留于[历史记录](notes/revision_delivery_sync.json)。
+本分支的研究与正式稿修订见[PR #2](https://github.com/WuYusen825/kinship-semantic-interactions/pull/2)，目标为`claude/finish-forum-paper-rio1ke`。此前payload同步证据保留于[历史记录](notes/revision_delivery_sync.json)。
 
 ## 正式论文（当前阅读版本）
 
-- [中文正式稿](outputs/论文_中文正式稿.md)｜[PDF](outputs/论文_中文正式稿.pdf)｜[Word](outputs/论文_中文正式稿.docx)｜[摘要](outputs/正式论文_摘要.txt)。
+- [中文正式稿](outputs/论文_中文正式稿.md)｜[Word](outputs/论文_中文正式稿.docx)｜[PDF预览](outputs/论文_中文正式稿.pdf)｜[TXT](outputs/论文_中文正式稿.txt)｜[摘要](outputs/正式论文_摘要.txt)。
 - 摘要仅保留样本规模，正文按研究问题、理论背景、方法、结果与讨论组织。下载时间、执行时间、提交编号及文件校验信息集中于[复现说明](notes/formal_reproducibility.md)。
-- 正文采用著者—出版年引注与页码上标，42项参考文献按GB/T 7714—2015整理，规范条目及来源说明见[引用格式记录](notes/formal_references.md)。
-- 正式稿已通过独立体例、内容、引文与排版复查；摘要只保留一项样本规模。
-- [正式稿数字核验](notes/formal_manuscript_number_check.json)｜[引文核对](notes/formal_citation_check.md)｜[排版核验](notes/formal_artifact_check.json)｜[独立评审](notes/review/formal_paper_review.md)。
+- 正文采用著者—出版年引注与页码上标，42项英文参考文献按用户模板示例整理，规范条目及来源说明见[引用格式记录](notes/formal_references.md)。字体与1.5倍行距见[模板应用说明](notes/format/中文模板_应用说明.md)；Word使用模板字体名，PDF为替代字体预览。
+- 正文11563汉字，讨论六节5778汉字、约占一半。综述以理论分歧组织，讨论从实测结果出发解释关系压缩、局部标记、总体非加性及推广差异；摘要277汉字，只保留一项样本规模。
+- 理论解释经独立首轮评审后局部修订，第二轮内容和最终29页导出实物均已通过；原方法、结果区块逐字节保持，不重新拟合模型。
+- [理论回溯台账](notes/discussion_expansion_20261016/research_ledger.md)｜[学习、效率及共词化证据](notes/discussion_expansion_20261016/semantic_explanation_evidence.md)｜[标记、角色及历史证据](notes/discussion_expansion_20261016/kinship_explanation_evidence.md)。
+- [正式稿数字核验](notes/formal_manuscript_number_check.json)｜[引文核对](notes/formal_citation_check.md)｜[排版核验](notes/formal_artifact_check.json)｜[第二轮独立评审](notes/review/theory_expansion_review_round2.md)｜[首轮修改意见](notes/review/theory_expansion_review_round1.md)。旧快照通过记录不作为新版验收。
 
 ## S2与论坛稿v2
 
