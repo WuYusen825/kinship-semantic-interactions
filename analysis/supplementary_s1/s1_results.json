@@ -1,0 +1,217 @@
+{
+  "protocol": "protocol_s1.md",
+  "protocol_sha256": "3937ef2c55cfd4406da01f51974cbf16d26e40cd3923de9567643f95c71023c1",
+  "script_sha256": "8babad5eea93b1af008567de970fd0f0bcd1b5aa0d0985c50c686846bf74c064",
+  "started_utc": "2026-10-15T07:24:27.043224+00:00",
+  "python": "3.13.16",
+  "languages": 939,
+  "family_groups": 125,
+  "pairs": 26292,
+  "reproduction_of_frozen_C1_max_abs_error": 0.0,
+  "grid": [
+    0.01,
+    0.1,
+    1,
+    10,
+    100,
+    1000
+  ],
+  "settings": {
+    "nested": {
+      "language_equal_logloss": {
+        "M0": 0.5907033862806641,
+        "M1": 0.5922964766815929,
+        "M1p": 0.5921504723102945,
+        "M2": 0.5866490081769589,
+        "M3": 0.5771882281975567
+      },
+      "language_equal_brier": {
+        "M0": 0.1963183054661386,
+        "M1": 0.19598827287245266,
+        "M1p": 0.19557345934540113,
+        "M2": 0.19647540582370968,
+        "M3": 0.1920622466867389
+      },
+      "comparisons": {
+        "M0-M2": {
+          "gain": 0.00405437810370527,
+          "family_cluster_bootstrap_95ci": [
+            0.0011760813412863697,
+            0.006017765487806581
+          ],
+          "gain_excluding_largest_family": 0.0027548345161888016,
+          "families_positive": 67,
+          "families_negative": 58
+        },
+        "M1-M2": {
+          "gain": 0.005647468504634065,
+          "family_cluster_bootstrap_95ci": [
+            0.0019676441696015925,
+            0.00766697490955292
+          ],
+          "gain_excluding_largest_family": 0.0038533728438592168,
+          "families_positive": 82,
+          "families_negative": 43
+        },
+        "M0-M1": {
+          "gain": -0.0015930904009287953,
+          "family_cluster_bootstrap_95ci": [
+            -0.003697718176871826,
+            0.00196260438072513
+          ],
+          "gain_excluding_largest_family": -0.0010985383276704143,
+          "families_positive": 40,
+          "families_negative": 85
+        },
+        "M1-M1p": {
+          "gain": 0.00014600437129837096,
+          "family_cluster_bootstrap_95ci": [
+            -0.0017635064521282977,
+            0.0020141238290199495
+          ],
+          "gain_excluding_largest_family": 0.00038611626188957425,
+          "families_positive": 80,
+          "families_negative": 45
+        },
+        "M2-M3": {
+          "gain": 0.009460779979402076,
+          "family_cluster_bootstrap_95ci": [
+            0.005999636759186117,
+            0.015918641141879148
+          ],
+          "gain_excluding_largest_family": 0.012304145727739416,
+          "families_positive": 95,
+          "families_negative": 30
+        },
+        "M1-M3": {
+          "gain": 0.01510824848403614,
+          "family_cluster_bootstrap_95ci": [
+            0.011509813134409094,
+            0.020387084413738737
+          ],
+          "gain_excluding_largest_family": 0.016157518571598632,
+          "families_positive": 106,
+          "families_negative": 19
+        }
+      }
+    },
+    "C1": {
+      "language_equal_logloss": {
+        "M0": 0.5810488878419937,
+        "M1": 0.5784682088411487,
+        "M1p": 0.5791618195846324,
+        "M2": 0.576625431756988,
+        "M3": 0.5659717636549918
+      },
+      "language_equal_brier": {
+        "M0": 0.19294261982320124,
+        "M1": 0.19261309324253142,
+        "M1p": 0.19281890729788287,
+        "M2": 0.19183479402468329,
+        "M3": 0.18961789155828757
+      },
+      "comparisons": {
+        "M0-M2": {
+          "gain": 0.004423456085005574,
+          "family_cluster_bootstrap_95ci": [
+            -0.0005099248921372266,
+            0.008204789775725568
+          ],
+          "gain_excluding_largest_family": 0.0023261159143628204,
+          "families_positive": 53,
+          "families_negative": 72
+        },
+        "M1-M2": {
+          "gain": 0.0018427770841605978,
+          "family_cluster_bootstrap_95ci": [
+            -0.0006035471597976721,
+            0.006119784026667319
+          ],
+          "gain_excluding_largest_family": 0.0038622294809595044,
+          "families_positive": 71,
+          "families_negative": 54
+        },
+        "M0-M1": {
+          "gain": 0.0025806790008449762,
+          "family_cluster_bootstrap_95ci": [
+            -0.004826402129619612,
+            0.008116300001220322
+          ],
+          "gain_excluding_largest_family": -0.0015361135665966843,
+          "families_positive": 41,
+          "families_negative": 84
+        },
+        "M1-M1p": {
+          "gain": -0.0006936107434837594,
+          "family_cluster_bootstrap_95ci": [
+            -0.00246993154977408,
+            0.001484293698838082
+          ],
+          "gain_excluding_largest_family": 0.0009202334109525322,
+          "families_positive": 83,
+          "families_negative": 42
+        },
+        "M2-M3": {
+          "gain": 0.010653668101996075,
+          "family_cluster_bootstrap_95ci": [
+            -0.0035646421209151154,
+            0.02340952251235903
+          ],
+          "gain_excluding_largest_family": -0.0013660066407481261,
+          "families_positive": 56,
+          "families_negative": 69
+        },
+        "M1-M3": {
+          "gain": 0.012496445186156674,
+          "family_cluster_bootstrap_95ci": [
+            -0.000980002028128794,
+            0.023371976055048992
+          ],
+          "gain_excluding_largest_family": 0.0024962228402113785,
+          "families_positive": 93,
+          "families_negative": 32
+        }
+      }
+    }
+  },
+  "largest_family": "aust1307",
+  "selected_C": {
+    "M0": [
+      1.0,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "M1": [
+      10.0,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "M1p": [
+      10.0,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "M2": [
+      10.0,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "M3": [
+      10.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "all_fits_converged": true,
+  "finished_utc": "2026-10-15T07:25:46.797729+00:00"
+}

@@ -42,6 +42,8 @@ TXT保留PDF文件页序；扫描或低文本页已尝试OCR。图表、公式�
 
 - **研究计划：** [Markdown](outputs/研究计划_完善版.md)｜[PDF](outputs/研究计划_完善版.pdf)｜[Word](outputs/研究计划_完善版.docx)。
 - **中文论文：** [Markdown](outputs/论文_中文实证稿.md)｜[PDF](outputs/论文_中文实证稿.pdf)｜[Word](outputs/论文_中文实证稿.docx)。
+- **论坛投稿稿（第六届“词与世界”本科生论坛，2026年10月15日）：** [Markdown](outputs/forum/论坛稿.md)｜[Word](outputs/forum/词与世界论坛-英语-吴雨森、瞿唯艺.docx)｜[PDF](outputs/forum/词与世界论坛-英语-吴雨森、瞿唯艺.pdf)｜[提交用摘要](outputs/forum/中文摘要_提交用.txt)。由`python analysis/export_forum_documents.py`生成。
+- **补充分析S1（结果已知后写定协议、提交后运行）：** [协议](analysis/supplementary_s1/protocol_s1.md)｜[结果](analysis/supplementary_s1/s1_report.md)：嵌套调参、经典模型编码依赖、28类别对饱和模型；不替代冻结的C=1主比较。论坛稿表1、表2的描述统计见`analysis/forum_descriptives.py`。
 - **文献综述与证据台账：** [Markdown](outputs/文献综述与证据台账.md)｜[PDF](outputs/文献综述与证据台账.pdf)。
 - **全文补充与排除清单：** [Markdown](outputs/PDF无法下载清单.md)｜[PDF](outputs/PDF无法下载清单.pdf)。
 - **结构化书目：** [CSV](outputs/文献登记表.csv)｜[JSON](outputs/文献登记表.json)。
