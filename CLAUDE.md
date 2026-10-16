@@ -15,3 +15,5 @@ S2包含20个测量×估计×权重条件、三种验证、五模型，及5000�
 文献与版本状态以[登记表](outputs/文献登记表.json)为准。独立S2审计见[第三轮报告](notes/review/independent_revision_review_round3.md)，它不能代替随后完成的论文终审核查。
 
 最终v2已通过[第五轮独立复查](notes/review/independent_revision_review_round5.md)：781处数字、53处正文引文、37处附页核对通过；正文5919汉字、摘要232，42参考、4表2图。MD、DOCX、18页PDF与TXT已同步，实际哈希见artifact报告。后续修改仍须重新运行数字和导出核验，不沿用本次通过标记。
+
+当前正式阅读版本为[论文_中文正式稿](outputs/论文_中文正式稿.md)，按用户要求精简摘要数据、重编学术论证并统一著者出版年与GB/T书目格式。下载与执行时间、commit/SHA及审计过程信息移入[复现说明](notes/formal_reproducibility.md)。这是基于已执行研究的编辑重编，未重新拟合或改变实测结果；正式稿的数字/引文与导出另立核验，不沿用旧v2的通过标记。

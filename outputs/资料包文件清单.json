@@ -18,23 +18,23 @@
     },
     {
       "path": "CLAUDE.md",
-      "bytes": 2756,
-      "sha256": "59af45ec6713f3254c59a0e5d307ffb2b3c1874fdce833bd2a7317825b466a4e"
+      "bytes": 3223,
+      "sha256": "2cb0f60d3efd18ccd40c535e4c72e9630cc5b5c00cb2ac234ec7fe2ed9662f1d"
     },
     {
       "path": "CLAUDE_REVIEW_CHECKLIST.md",
-      "bytes": 6161,
-      "sha256": "36ae9829c64446d661806bf81f9b24b27816bd1ba2a84e2ffb6a053464d1718f"
+      "bytes": 6842,
+      "sha256": "36d0fd5e79b6f1e65585c554487a779f20c7b90fd85b27e4201992da099cc4e9"
     },
     {
       "path": "CLAUDE_TODO.md",
-      "bytes": 4837,
-      "sha256": "7e65cd914eae483b2e53471b38255e519d1c10ef44cd6b5bd86f143a8b8845c1"
+      "bytes": 5574,
+      "sha256": "ec884649c0a66d54867b0c6574db32fcd22ab24895c7eae39612c8081cad47bc"
     },
     {
       "path": "README.md",
-      "bytes": 11088,
-      "sha256": "9754e8ce626662f780dc9a65d8eaf2d34b5cf439cced24c8e4b64bcc79f18907"
+      "bytes": 12066,
+      "sha256": "e9fe8fd0e0cefce4d28be17de48c787f0fcb41a1336b06bfb639246f50aac1a1"
     },
     {
       "path": "analysis/README.md",
@@ -58,8 +58,8 @@
     },
     {
       "path": "analysis/audit_revision_artifacts.py",
-      "bytes": 8064,
-      "sha256": "cc5a21ebdba36f8eef0ff42836173f31694a6bb3437e09913b84ae58ec3b9bfa"
+      "bytes": 8631,
+      "sha256": "7173a54853c2954a6c43491e15a9b543a0de6bc8d78f92e066147132d6cfd240"
     },
     {
       "path": "analysis/build_documents.py",
@@ -108,8 +108,8 @@
     },
     {
       "path": "analysis/export_forum_documents.py",
-      "bytes": 8450,
-      "sha256": "02a0d85fecc0a327da875631ad8f4ba6323fd6d09a08a0e37b987d991160a390"
+      "bytes": 9506,
+      "sha256": "aa2254bcdb75c8728306a147c32f7a53fadcd075d0e6228bb53a7a3cd4aefcac"
     },
     {
       "path": "analysis/extension_descriptive_summary.csv",
@@ -145,6 +145,11 @@
       "path": "analysis/language_oof_scores.csv",
       "bytes": 2117332,
       "sha256": "4fcf41a548eaab2367dee230c3c58e641523b77e45a7c431cbbd0bf71cbd5c65"
+    },
+    {
+      "path": "analysis/map_formal_manuscript_numbers.py",
+      "bytes": 14767,
+      "sha256": "1a5df8996cac1378aa5a0aa11deaacbaf6adee2e0f8336c3fe2bb7af207f3e39"
     },
     {
       "path": "analysis/oof_predictions.csv",
@@ -2677,6 +2682,51 @@
       "sha256": "513d9589160625cee1f03322ddb0c3a836835dae54e96b52861a60a7d9f5f9a5"
     },
     {
+      "path": "notes/formal_artifact_check.json",
+      "bytes": 19098,
+      "sha256": "ef05d91d0f7794a11192270b8efa664d261886604408b7f7fc1542c753bcb504"
+    },
+    {
+      "path": "notes/formal_citation_check.md",
+      "bytes": 13118,
+      "sha256": "e70ff010191c45d0cf3ed5915698bbf8e07a7cb2591eb49a788f31c72430bc6e"
+    },
+    {
+      "path": "notes/formal_manuscript_number_check.json",
+      "bytes": 766246,
+      "sha256": "c2fa5a67238442c16e44d1cceac6b01538effe5eac7bf140f73542abc9f0fc66"
+    },
+    {
+      "path": "notes/formal_manuscript_number_claims.json",
+      "bytes": 743456,
+      "sha256": "7eceb797565d33a59d88c6b4c5d1bd1a9b1cbd7a29a030668b12cc4c9e94383f"
+    },
+    {
+      "path": "notes/formal_number_migration_baseline.json",
+      "bytes": 523,
+      "sha256": "9ab629c1dc11732d68a194077bfa1f88ca0e0ffb2e38e195bd2af5751bbfbab8"
+    },
+    {
+      "path": "notes/formal_references.json",
+      "bytes": 47725,
+      "sha256": "375fdb7eda229e536865b8bad0732d988f522fe8cdf39abb9fbbdaf5b9f2c527"
+    },
+    {
+      "path": "notes/formal_references.md",
+      "bytes": 10230,
+      "sha256": "70f88168d1ac3142925dec86e7d607248a412b585c36f83518cd4622287ea853"
+    },
+    {
+      "path": "notes/formal_reformat_log.md",
+      "bytes": 2802,
+      "sha256": "68991977611400ff5c3c5588a63fa65949372fc46bb21a2cdaec2409e6be1dcb"
+    },
+    {
+      "path": "notes/formal_reproducibility.md",
+      "bytes": 4131,
+      "sha256": "354f2868a949fead3a2c12ea3108cfdc6007b0bb711a2dbb7ab08a9eac86d351"
+    },
+    {
       "path": "notes/independent_verification.json",
       "bytes": 11963,
       "sha256": "beeca265673a2820100d676c0d0fb8c986bdf448f2be60d1041b40544fb3cd0c"
@@ -2695,6 +2745,21 @@
       "path": "notes/manuscript_number_claims.json",
       "bytes": 1007231,
       "sha256": "5e493b19c41ee095bc1387e7303ee3ac3b1d3ae99da916e3c029a49078c2c78d"
+    },
+    {
+      "path": "notes/review/formal_migration_tool_review.md",
+      "bytes": 3176,
+      "sha256": "3e6ac69851302a3a2f04f175206382efd4e00662a026e879aec0cb55a388273c"
+    },
+    {
+      "path": "notes/review/formal_paper_review.md",
+      "bytes": 9669,
+      "sha256": "47534e89d40cf929be974024843ec9068ac8f9623ea06430e53e532a73e179df"
+    },
+    {
+      "path": "notes/review/formal_results_claims_fragment.json",
+      "bytes": 109056,
+      "sha256": "05e15fad3a8d3e21fa3fc0d64c035bee4451e5bc8433aed7a7bc17442ae5f8cf"
     },
     {
       "path": "notes/review/independent_revision_final_checklist.md",
@@ -2843,8 +2908,8 @@
     },
     {
       "path": "outputs/Claude复查报告.md",
-      "bytes": 3819,
-      "sha256": "c99ca51970b5d463b50fb9c4c92b37d9f04e7acced86ec3164a477999d124e64"
+      "bytes": 4612,
+      "sha256": "18d08e15efbcf1d7237c9dfa79c29f9dbc0af1f00dfc5563eb73b3f88a9db319"
     },
     {
       "path": "outputs/PDF无法下载清单.md",
@@ -2953,8 +3018,13 @@
     },
     {
       "path": "outputs/本轮文献更新核验.json",
-      "bytes": 1864,
-      "sha256": "2be783cbf997056bdd0fc148db3bf379bae0fa9061b8aa08e4254e0f6b9f3756"
+      "bytes": 1905,
+      "sha256": "25083d65fffac7d8555c77c220cc6e387599fb042dc3497dd1a03c7f5aefaa75"
+    },
+    {
+      "path": "outputs/正式论文_摘要.txt",
+      "bytes": 865,
+      "sha256": "141e31c34d69e3e1dc28ab0594d3e5bd1eb16b8e7ffd58876f50075aa0e4704a"
     },
     {
       "path": "outputs/理论新颖性核查.md",
@@ -3005,6 +3075,26 @@
       "path": "outputs/论文_中文实证稿.txt",
       "bytes": 39166,
       "sha256": "99ec1fdb48e3df8f3bb4b40f48fd0ad22357b82a62ff5a39a167ad74e425f2c9"
+    },
+    {
+      "path": "outputs/论文_中文正式稿.docx",
+      "bytes": 607766,
+      "sha256": "d53ef066477bb937aa8666cc433c8c68f711e9a4dd3c4944f09ca84082b084f0"
+    },
+    {
+      "path": "outputs/论文_中文正式稿.md",
+      "bytes": 32604,
+      "sha256": "35f78f0daaf3eeb0a3ad50a8af87fc4462f07f7c6ecbdfa94caf0a70a0be9b83"
+    },
+    {
+      "path": "outputs/论文_中文正式稿.pdf",
+      "bytes": 879431,
+      "sha256": "acaaac3c05a958cb8b3da6ab733dcbdd761a1fc10c62d06dd4889c499f3d49bc"
+    },
+    {
+      "path": "outputs/论文_中文正式稿.txt",
+      "bytes": 34565,
+      "sha256": "5325e0835209f769ff9b40920cfd268d5bb64121063c52e2300ac9779a470778"
     }
   ]
 }

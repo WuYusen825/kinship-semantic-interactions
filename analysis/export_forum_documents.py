@@ -75,7 +75,7 @@ def set_widths(table, total):
         tw = OxmlElement('w:tblW'); tblpr.append(tw)
     tw.set(qn('w:w'), str(int(total / 635))); tw.set(qn('w:type'), 'dxa')
 
-def format_docx(path, serif, sans, kai):
+def format_docx(path, serif, sans, kai, page_numbers=False):
     d = Document(path)
     for sec in d.sections:
         sec.page_height, sec.page_width = Cm(29.7), Cm(21)
@@ -144,33 +144,52 @@ def format_docx(path, serif, sans, kai):
                     p.paragraph_format.first_line_indent = Pt(0)
                     p.paragraph_format.line_spacing = 1.15
                     for r in p.runs: r.font.size = Pt(10.5)
+    if page_numbers:
+        for section in d.sections:
+            paragraph = section.footer.paragraphs[0]
+            paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            paragraph.paragraph_format.first_line_indent = Pt(0)
+            run = paragraph.add_run()
+            run.font.name = 'Times New Roman'
+            run.font.size = Pt(9)
+            field = OxmlElement('w:fldSimple')
+            field.set(qn('w:instr'), 'PAGE')
+            value = OxmlElement('w:t')
+            value.text = '1'
+            run._r.append(value)
+            field.append(run._r)
+            paragraph._p.append(field)
     d.save(path)
 
 def main():
     parser = argparse.ArgumentParser(description='导出指定论坛稿，保留旧稿产物。')
     parser.add_argument('--input', type=Path, default=SOURCE)
     parser.add_argument('--suffix', default=None, help='输出文件后缀，v2 输入默认使用 _v2。')
+    parser.add_argument('--name', default=None, help='指定导出文件名，不含扩展名。')
+    parser.add_argument('--abstract-name', default=None, help='指定摘要TXT文件名，不含扩展名。')
+    parser.add_argument('--page-numbers', action='store_true', help='在页脚居中添加页码。')
     args = parser.parse_args()
     source = args.input.resolve()
     suffix = args.suffix if args.suffix is not None else ('_v2' if source.stem.endswith('_v2') else '')
-    name = NAME + suffix
+    name = args.name or NAME + suffix
     destination = source.parent
     with tempfile.TemporaryDirectory() as tmp:
         raw = Path(tmp)/'raw.docx'
         subprocess.run(['pandoc', str(source), '-o', str(raw), '--resource-path', str(destination)], check=True, cwd=destination)
         word = destination/(name+'.docx')
         shutil.copy(raw, word)
-        format_docx(word, '宋体', '黑体', '楷体')
+        format_docx(word, '宋体', '黑体', '楷体', args.page_numbers)
         pdf_docx = Path(tmp)/(name+'.docx')
         shutil.copy(raw, pdf_docx)
-        format_docx(pdf_docx, 'Noto Serif CJK SC', 'Noto Sans CJK SC', 'Noto Serif CJK SC')
+        format_docx(pdf_docx, 'Noto Serif CJK SC', 'Noto Sans CJK SC', 'Noto Serif CJK SC', args.page_numbers)
         subprocess.run(['soffice','--headless','--convert-to','pdf','--outdir',tmp,str(pdf_docx)], check=True, capture_output=True)
         shutil.copy(Path(tmp)/(name+'.pdf'), destination/(name+'.pdf'))
     text = source.read_text()
     abstract = text.split('**摘要：** ')[1].split('\n\n')[0].strip()
     keywords = text.split('**关键词：** ')[1].split('\n\n')[0].strip()
     han = len(re.findall(r'[一-鿿]', abstract))
-    (destination/('中文摘要_提交用'+suffix+'.txt')).write_text(f'{abstract}\n\n关键词：{keywords}\n')
+    abstract_name = args.abstract_name or '中文摘要_提交用'+suffix
+    (destination/(abstract_name+'.txt')).write_text(f'{abstract}\n\n关键词：{keywords}\n')
     print(f'Word：{word.name}；PDF：{name}.pdf；摘要汉字数 {han}')
 
 if __name__ == '__main__':

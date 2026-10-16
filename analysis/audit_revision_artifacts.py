@@ -2,6 +2,7 @@
 from pathlib import Path
 from zipfile import ZipFile
 import datetime
+import argparse
 import hashlib
 import json
 import re
@@ -65,11 +66,20 @@ def refresh_docx_stats(path, stats):
 
 
 def main():
-    source = FORUM / '论坛稿_v2.md'
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--input', default='outputs/forum/论坛稿_v2.md')
+    parser.add_argument('--name', default=NAME)
+    parser.add_argument('--abstract-name', default='中文摘要_提交用_v2')
+    parser.add_argument('--output', default='notes/revision_artifact_check.json')
+    args = parser.parse_args()
+    source = (ROOT/args.input).resolve()
+    destination = source.parent
+    name = args.name
     text = source.read_text()
     assert '【待' not in text and '待插入' not in text
     abstract = text.split('**摘要：** ', 1)[1].split('\n\n', 1)[0]
-    body = text.split('## 一、', 1)[1].split('## 数据与代码', 1)[0]
+    data_heading = '## 数据可得性' if '## 数据可得性' in text else '## 数据与代码'
+    body = text.split('## 一、', 1)[1].split(data_heading, 1)[0]
     body = '## 一、' + body
     prose = '\n'.join(line for line in body.splitlines()
                       if not line.startswith(('|', '![', '#'))
@@ -87,16 +97,16 @@ def main():
         md = tmp / '正文.md'
         md.write_text(body)
         body_docx = tmp / '正文.docx'
-        subprocess.run(['pandoc', str(md), '-o', str(body_docx), '--resource-path', str(FORUM)],
-                       check=True, capture_output=True, cwd=FORUM)
+        subprocess.run(['pandoc', str(md), '-o', str(body_docx), '--resource-path', str(destination)],
+                       check=True, capture_output=True, cwd=destination)
         body_stats = odt_statistics(body_docx, tmp / 'body_statistics')
-        full_stats = odt_statistics(FORUM / (NAME + '.docx'), tmp / 'full_statistics')
-    refresh_docx_stats(FORUM / (NAME + '.docx'), full_stats)
-    with ZipFile(FORUM/(NAME+'.docx')) as z:
+        full_stats = odt_statistics(destination / (name + '.docx'), tmp / 'full_statistics')
+    refresh_docx_stats(destination / (name + '.docx'), full_stats)
+    with ZipFile(destination/(name+'.docx')) as z:
         xml = ET.fromstring(z.read('word/document.xml'))
     word_text = ''.join(n.text or '' for n in xml.iter(
         '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t'))
-    pdf_text = subprocess.check_output(['pdftotext', '-layout', str(FORUM/(NAME+'.pdf')), '-'], text=True)
+    pdf_text = subprocess.check_output(['pdftotext', '-layout', str(destination/(name+'.pdf')), '-'], text=True)
     word_han = ''.join(re.findall(r'[一-鿿]', word_text))
     pdf_han = ''.join(re.findall(r'[一-鿿]', pdf_text))
     assert word_han == pdf_han, 'PDF与DOCX中文正文/标题/表格/图注顺序不一致'
@@ -117,7 +127,7 @@ def main():
                 'outputs/论文_中文实证稿.md', 'outputs/论文_中文实证稿.docx',
                 'outputs/论文_中文实证稿.pdf']:
         assert subprocess.check_output(['git','diff','d32e7d3','--',rel], cwd=ROOT) == b'', rel
-    pdf_info = subprocess.check_output(['pdfinfo', str(FORUM/(NAME+'.pdf'))], text=True)
+    pdf_info = subprocess.check_output(['pdfinfo', str(destination/(name+'.pdf'))], text=True)
     pdf_pages = int(re.search(r'^Pages:\s+(\d+)', pdf_info, re.M).group(1))
     report = {
         'checked_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
@@ -138,10 +148,10 @@ def main():
         'unchanged_count': sum(r['unchanged'] for r in checks),
         'maintenance_exceptions': MAINTENANCE,
         'artifacts_sha256': {str(p.relative_to(ROOT)): digest(p) for p in
-                            [source, FORUM/(NAME+'.docx'), FORUM/(NAME+'.pdf'),
-                             FORUM/'中文摘要_提交用_v2.txt']},
+                            [source, destination/(name+'.docx'), destination/(name+'.pdf'),
+                             destination/(args.abstract_name+'.txt')]},
     }
-    output = ROOT / 'notes/revision_artifact_check.json'
+    output = ROOT / args.output
     output.write_text(json.dumps(report, ensure_ascii=False, indent=2))
     print(json.dumps({k:v for k,v in report.items() if k not in ['frozen_baseline_files','artifacts_sha256']},ensure_ascii=False,indent=2))
 

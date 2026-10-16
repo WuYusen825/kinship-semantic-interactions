@@ -1,12 +1,20 @@
 # 亲属称谓的语义组合：跨语言兄弟姐妹词形共享研究
 
-本仓库保存已经执行的公开数据库分析、当前中文研究工作稿、文献全文和可复现结果，并提供后续研究与复查交接。
+本仓库保存中文正式论文、公开数据库分析、文献全文和可复现结果，并提供研究与复查交接。
 
 大修分支为`codex/major-revision`。S2最终协议于实测前单独提交（`6ba7afb`）；它写于原结果已知之后，属于事后补充分析。旧稿、冻结结果和S1保留。v2已完成并通过第五轮独立复查，逐处数字、引文及独立全稿核查记录单列；以下提供新分析与历史分析的独立入口。
 
 研究的问题是：兄弟姐妹词项是否呈现合取与层级约束，以及显式条件结构能否提高未见谱系和地域上的共用词形预测。划分结构、类别对预测与测量边界分别检验。
 
-当前改动见[草稿PR #2](https://github.com/WuYusen825/kinship-semantic-interactions/pull/2)，目标为`claude/finish-forum-paper-rio1ke`。600文件payload已同步至本地研究镜像，证据见[同步记录](notes/revision_delivery_sync.json)。
+本分支的研究与正式稿修订见[草稿PR #2](https://github.com/WuYusen825/kinship-semantic-interactions/pull/2)，目标为`claude/finish-forum-paper-rio1ke`。此前payload同步证据保留于[历史记录](notes/revision_delivery_sync.json)。
+
+## 正式论文（当前阅读版本）
+
+- [中文正式稿](outputs/论文_中文正式稿.md)｜[PDF](outputs/论文_中文正式稿.pdf)｜[Word](outputs/论文_中文正式稿.docx)｜[摘要](outputs/正式论文_摘要.txt)。
+- 摘要仅保留样本规模，正文按研究问题、理论背景、方法、结果与讨论组织。下载时间、执行时间、提交编号及文件校验信息集中于[复现说明](notes/formal_reproducibility.md)。
+- 正文采用著者—出版年引注与页码上标，42项参考文献按GB/T 7714—2015整理，规范条目及来源说明见[引用格式记录](notes/formal_references.md)。
+- 正式稿已通过独立体例、内容、引文与排版复查；摘要只保留一项样本规模。
+- [正式稿数字核验](notes/formal_manuscript_number_check.json)｜[引文核对](notes/formal_citation_check.md)｜[排版核验](notes/formal_artifact_check.json)｜[独立评审](notes/review/formal_paper_review.md)。
 
 ## S2与论坛稿v2
 
@@ -64,7 +72,7 @@ TXT保留PDF文件页序；扫描或低文本页已尝试OCR。图表、公式�
 ## 成果导航
 
 - **研究计划：** [Markdown](outputs/研究计划_完善版.md)｜[PDF](outputs/研究计划_完善版.pdf)｜[Word](outputs/研究计划_完善版.docx)。
-- **中文论文：** [Markdown](outputs/论文_中文实证稿.md)｜[PDF](outputs/论文_中文实证稿.pdf)｜[Word](outputs/论文_中文实证稿.docx)。
+- **早期中文实证工作稿（历史版本）：** [Markdown](outputs/论文_中文实证稿.md)｜[PDF](outputs/论文_中文实证稿.pdf)｜[Word](outputs/论文_中文实证稿.docx)。
 - **论坛投稿稿（第六届“词与世界”本科生论坛，2026年10月15日）：** [Markdown](outputs/forum/论坛稿.md)｜[Word](outputs/forum/词与世界论坛-英语-吴雨森、瞿唯艺.docx)｜[PDF](outputs/forum/词与世界论坛-英语-吴雨森、瞿唯艺.pdf)｜[提交用摘要](outputs/forum/中文摘要_提交用.txt)。由`python analysis/export_forum_documents.py`生成。
 - **补充分析S1（结果已知后写定协议、提交后运行）：** [协议](analysis/supplementary_s1/protocol_s1.md)｜[结果](analysis/supplementary_s1/s1_report.md)：嵌套调参、经典模型编码依赖、28类别对饱和模型；不替代冻结的C=1主比较。论坛稿表1、表2的描述统计见`analysis/forum_descriptives.py`。
 - **文献综述与证据台账：** [Markdown](outputs/文献综述与证据台账.md)｜[PDF](outputs/文献综述与证据台账.pdf)。
