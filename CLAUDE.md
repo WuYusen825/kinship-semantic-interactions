@@ -17,3 +17,5 @@ S2包含20个测量×估计×权重条件、三种验证、五模型，及5000�
 最终v2已通过[第五轮独立复查](notes/review/independent_revision_review_round5.md)：781处数字、53处正文引文、37处附页核对通过；正文5919汉字、摘要232，42参考、4表2图。MD、DOCX、18页PDF与TXT已同步，实际哈希见artifact报告。后续修改仍须重新运行数字和导出核验，不沿用本次通过标记。
 
 当前正式阅读版本为[论文_中文正式稿](outputs/论文_中文正式稿.md)。用户最新要求正文约1万—1.5万字、讨论成为主体但避免冗杂，文献必须提供理论解释而非研究罗列；当前稿讨论六节约占一半，具体回溯见[证据台账](notes/discussion_expansion_20261016/research_ledger.md)。文末英文书目、字体和行距按[用户模板](notes/format/中文模板_应用说明.md)处理，原GB/T版本留存格式前快照；Word保留模板字体名，PDF为替代字体预览。下载与执行时间、commit/SHA及审计过程信息移入[复现说明](notes/formal_reproducibility.md)。未重新拟合或改变实测结果；新版数字、引文与独立评审均按新SHA核验，不沿用旧稿通过标记。
+
+此前正式稿PR #2已合并。本轮理论扩写和模板适配另见[草稿PR #3](https://github.com/WuYusen825/kinship-semantic-interactions/pull/3)，仍以`claude/finish-forum-paper-rio1ke`为目标；后续不要把已合并PR的旧差异视作当前交付。

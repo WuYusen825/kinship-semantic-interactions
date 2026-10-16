@@ -6,7 +6,7 @@
 
 研究考察兄弟姐妹称谓的合取偏好、次级区分与跨群组预测，并以关系表征、局部区分需要及历史传承解释这些现象。划分结构、类别对概率与表达实现分别判断，理论提案与已执行分析明确对应。
 
-本分支的研究与正式稿修订见[PR #2](https://github.com/WuYusen825/kinship-semantic-interactions/pull/2)，目标为`claude/finish-forum-paper-rio1ke`。此前payload同步证据保留于[历史记录](notes/revision_delivery_sync.json)。
+本轮理论扩写与模板排版见[草稿PR #3](https://github.com/WuYusen825/kinship-semantic-interactions/pull/3)，目标为`claude/finish-forum-paper-rio1ke`。此前正式稿[PR #2](https://github.com/WuYusen825/kinship-semantic-interactions/pull/2)已合并；旧payload同步证据保留于[历史记录](notes/revision_delivery_sync.json)。
 
 ## 正式论文（当前阅读版本）
 
