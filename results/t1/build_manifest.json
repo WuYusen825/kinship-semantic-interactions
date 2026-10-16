@@ -1,0 +1,70 @@
+{
+  "task": "T1",
+  "started_utc": "2026-10-16T13:24:40.087972+00:00",
+  "passed": true,
+  "commit": "57afd8c343b2f464906cad700df371c5dee4267f",
+  "baseline": {
+    "T0_passed": true,
+    "baseline_result_sha256": "97c7d032686a3f093499689582dc8e23c5b84c7a198012aa2c76386d3799e1c6",
+    "baseline_tag_commit": "49bc16c52af0c1467c9db366e422e83aa18c7f14"
+  },
+  "parquet_written": true,
+  "partition_count": 4140,
+  "old_conjunction_crosschecks": 16560,
+  "direction_supports_nonzero_mutually_exclusive": true,
+  "samples": {
+    "strict": {
+      "systems": 625,
+      "families": 108,
+      "missing_macroarea_systems": 23,
+      "unique_partitions": 77
+    },
+    "equal_sets": {
+      "systems": 939,
+      "families": 125,
+      "missing_macroarea_systems": 30,
+      "unique_partitions": 93
+    },
+    "components": {
+      "systems": 939,
+      "families": 125,
+      "missing_macroarea_systems": 30,
+      "unique_partitions": 85
+    }
+  },
+  "observed_checks": {
+    "abs_nonconjunctive": 163,
+    "all_nonconjunctive": 22
+  },
+  "tests_passed": true,
+  "tests_command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_v3_infrastructure.py",
+    "-v"
+  ],
+  "parquet_status": "已生成Parquet",
+  "finished_utc": "2026-10-16T13:24:53.772493+00:00",
+  "source_sha256": {
+    "common.py": "a994bec32a42c0a971518dda50437bc75302bb22db9edde09c450ef4d6c9803b",
+    "partitions.py": "347d7e4c0c1676111144bf3af555d54f0bbfe445c2ef7cc27f24a1e688e37aa0",
+    "languages.py": "a221d94037059460a5955cb23272d12ea7f2294ed50b62da602607c5846a3be1",
+    "build_t1.py": "420b5d88b1ea9efd850dca37c80bf014b6c4467a89c6e1cafe24632d01dfb850"
+  },
+  "output_sha256": {
+    "infrastructure_tests.log": "ba43fdfc23af1747e5e3752fdc42b7bf876571442d4a918d86016616eebb8380",
+    "pair_design_metadata.csv": "0c48b276533dd0c9d0f945f00bb72476ab579770af0134f9d24ea63d366e964a",
+    "partitions.csv": "c800cac1a1cf13b36ee0c0e57fee9d706c5fc78b4a35e8c7f7dd74865c08e5f8",
+    "partitions.json": "da209fcb8e03428f460ae94bcb2e6793930ea7a6d7fd6158c3f62300d0313887",
+    "partitions.parquet": "ae3b65b2aa07f6b8b910bf4bc90c134bba2cd24b6b883e7d0e4a1a67210e2208",
+    "subset_description_costs.json": "854d4e87b6d9c3f8dbd6e3abdc63cbe1bfe8f926279d5892f72ef239d999b185",
+    "systems_components.csv": "498b8f6c815ebf924e11ed77de341f022e5548a5bbd0483f166d286c0ca7def5",
+    "systems_set_equal.csv": "9582a76b70535cd68b59ebb4277bbafb1785d0d4e6295da362cbe6984f81efd5",
+    "systems_to_partition.csv": "ba61822b88c156d181f16579c3583ca413e1f1b71618f2a6d8f1d8ad8582f963"
+  }
+}
