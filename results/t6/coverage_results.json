@@ -1,0 +1,780 @@
+{
+  "task": "T6_feasibility",
+  "created_at": "2026-10-16T13:32:42.569438+00:00",
+  "guard": {
+    "T0_passed": true,
+    "baseline_result_sha256": "97c7d032686a3f093499689582dc8e23c5b84c7a198012aa2c76386d3799e1c6",
+    "baseline_tag_commit": "49bc16c52af0c1467c9db366e422e83aa18c7f14",
+    "plan_commit": "5e31d20c310920ffbbc9b0bfd84b720210895998",
+    "plan_sha256": "a5c919605d384850d0ff237dd4ee70c2db61ef814d9918ddb5900d8cced133f2",
+    "plan_commit_time": "2026-10-16T11:05:38Z"
+  },
+  "specification": {
+    "stage": "feasibility_only",
+    "no_structural_metrics": true,
+    "no_cross_domain_associations": true,
+    "selection": "冻结原selected Language_ID，另列main939及strict625交集",
+    "form_rule": "Form的NFC及空白规范化，排除空、问号、连字符；同ID有效集合并集",
+    "source_rule": "仅移除Source方括号定位并按分号拆分；来源交集另列，不改主并集词形"
+  },
+  "parameter_count": 1342,
+  "cohort_sizes": {
+    "original_selected": 1110,
+    "main939": 939,
+    "strict625": 625
+  },
+  "domains": {
+    "cousins16": {
+      "original_selected": {
+        "systems": 1110,
+        "families": 144,
+        "complete_systems": 427,
+        "complete_singleton_systems": 270,
+        "complete_singleton_families": 55,
+        "families_with_at_least_two_complete_singleton_systems": 18,
+        "systems_in_repeated_complete_singleton_families": 233,
+        "complete_singleton_common_source_systems": 264,
+        "any_common_source_complete_systems": 419,
+        "any_common_source_singleton_systems": 288,
+        "valid_cell_count_distribution": {
+          "0": 465,
+          "1": 3,
+          "2": 8,
+          "3": 1,
+          "4": 28,
+          "5": 5,
+          "6": 20,
+          "7": 2,
+          "8": 88,
+          "9": 2,
+          "10": 14,
+          "11": 4,
+          "12": 30,
+          "13": 2,
+          "14": 10,
+          "15": 1,
+          "16": 427
+        },
+        "singleton_cell_count_distribution": {
+          "0": 579,
+          "1": 4,
+          "2": 15,
+          "3": 3,
+          "4": 45,
+          "5": 4,
+          "6": 25,
+          "7": 4,
+          "8": 93,
+          "9": 1,
+          "10": 17,
+          "11": 3,
+          "12": 34,
+          "13": 1,
+          "14": 11,
+          "15": 1,
+          "16": 270
+        },
+        "missing_macroarea_complete_singleton_systems": 4,
+        "complete_singleton_by_macroarea": {
+          "Africa": 37,
+          "Australia": 10,
+          "Eurasia": 55,
+          "North America": 16,
+          "Papunesia": 117,
+          "South America": 31,
+          "missing": 4
+        }
+      },
+      "main939": {
+        "systems": 939,
+        "families": 125,
+        "complete_systems": 383,
+        "complete_singleton_systems": 247,
+        "complete_singleton_families": 48,
+        "families_with_at_least_two_complete_singleton_systems": 16,
+        "systems_in_repeated_complete_singleton_families": 215,
+        "complete_singleton_common_source_systems": 241,
+        "any_common_source_complete_systems": 375,
+        "any_common_source_singleton_systems": 263,
+        "valid_cell_count_distribution": {
+          "0": 402,
+          "1": 3,
+          "2": 8,
+          "3": 1,
+          "4": 13,
+          "5": 2,
+          "6": 13,
+          "7": 2,
+          "8": 66,
+          "9": 2,
+          "10": 10,
+          "11": 2,
+          "12": 22,
+          "13": 1,
+          "14": 8,
+          "15": 1,
+          "16": 383
+        },
+        "singleton_cell_count_distribution": {
+          "0": 501,
+          "1": 4,
+          "2": 14,
+          "3": 3,
+          "4": 29,
+          "5": 1,
+          "6": 18,
+          "7": 3,
+          "8": 70,
+          "9": 1,
+          "10": 12,
+          "11": 1,
+          "12": 23,
+          "13": 1,
+          "14": 10,
+          "15": 1,
+          "16": 247
+        },
+        "missing_macroarea_complete_singleton_systems": 3,
+        "complete_singleton_by_macroarea": {
+          "Africa": 31,
+          "Australia": 10,
+          "Eurasia": 52,
+          "North America": 13,
+          "Papunesia": 112,
+          "South America": 26,
+          "missing": 3
+        }
+      },
+      "strict625": {
+        "systems": 625,
+        "families": 108,
+        "complete_systems": 254,
+        "complete_singleton_systems": 192,
+        "complete_singleton_families": 43,
+        "families_with_at_least_two_complete_singleton_systems": 14,
+        "systems_in_repeated_complete_singleton_families": 163,
+        "complete_singleton_common_source_systems": 186,
+        "any_common_source_complete_systems": 248,
+        "any_common_source_singleton_systems": 195,
+        "valid_cell_count_distribution": {
+          "0": 290,
+          "1": 2,
+          "2": 4,
+          "3": 1,
+          "4": 10,
+          "5": 1,
+          "6": 8,
+          "7": 1,
+          "8": 31,
+          "9": 2,
+          "10": 4,
+          "11": 1,
+          "12": 12,
+          "13": 1,
+          "14": 3,
+          "16": 254
+        },
+        "singleton_cell_count_distribution": {
+          "0": 331,
+          "1": 2,
+          "2": 5,
+          "3": 2,
+          "4": 14,
+          "5": 1,
+          "6": 7,
+          "7": 2,
+          "8": 38,
+          "9": 1,
+          "10": 5,
+          "12": 17,
+          "13": 1,
+          "14": 6,
+          "15": 1,
+          "16": 192
+        },
+        "missing_macroarea_complete_singleton_systems": 3,
+        "complete_singleton_by_macroarea": {
+          "Africa": 27,
+          "Australia": 7,
+          "Eurasia": 40,
+          "North America": 7,
+          "Papunesia": 87,
+          "South America": 21,
+          "missing": 3
+        }
+      }
+    },
+    "parent_siblings_age16": {
+      "original_selected": {
+        "systems": 1110,
+        "families": 144,
+        "complete_systems": 802,
+        "complete_singleton_systems": 483,
+        "complete_singleton_families": 91,
+        "families_with_at_least_two_complete_singleton_systems": 38,
+        "systems_in_repeated_complete_singleton_families": 429,
+        "complete_singleton_common_source_systems": 462,
+        "any_common_source_complete_systems": 767,
+        "any_common_source_singleton_systems": 504,
+        "valid_cell_count_distribution": {
+          "0": 87,
+          "1": 4,
+          "2": 8,
+          "4": 28,
+          "6": 15,
+          "7": 1,
+          "8": 94,
+          "9": 2,
+          "10": 12,
+          "11": 1,
+          "12": 43,
+          "13": 1,
+          "14": 12,
+          "16": 802
+        },
+        "singleton_cell_count_distribution": {
+          "0": 160,
+          "1": 3,
+          "2": 12,
+          "3": 1,
+          "4": 72,
+          "5": 1,
+          "6": 27,
+          "7": 2,
+          "8": 175,
+          "9": 4,
+          "10": 24,
+          "11": 3,
+          "12": 115,
+          "14": 26,
+          "15": 2,
+          "16": 483
+        },
+        "missing_macroarea_complete_singleton_systems": 15,
+        "complete_singleton_by_macroarea": {
+          "Africa": 48,
+          "Australia": 12,
+          "Eurasia": 78,
+          "North America": 78,
+          "Papunesia": 203,
+          "South America": 49,
+          "missing": 15
+        }
+      },
+      "main939": {
+        "systems": 939,
+        "families": 125,
+        "complete_systems": 730,
+        "complete_singleton_systems": 434,
+        "complete_singleton_families": 86,
+        "families_with_at_least_two_complete_singleton_systems": 35,
+        "systems_in_repeated_complete_singleton_families": 383,
+        "complete_singleton_common_source_systems": 418,
+        "any_common_source_complete_systems": 702,
+        "any_common_source_singleton_systems": 458,
+        "valid_cell_count_distribution": {
+          "0": 60,
+          "2": 2,
+          "4": 23,
+          "6": 2,
+          "7": 1,
+          "8": 66,
+          "10": 10,
+          "12": 36,
+          "13": 1,
+          "14": 8,
+          "16": 730
+        },
+        "singleton_cell_count_distribution": {
+          "0": 127,
+          "2": 4,
+          "3": 1,
+          "4": 64,
+          "6": 16,
+          "7": 2,
+          "8": 143,
+          "9": 2,
+          "10": 21,
+          "11": 3,
+          "12": 97,
+          "14": 23,
+          "15": 2,
+          "16": 434
+        },
+        "missing_macroarea_complete_singleton_systems": 14,
+        "complete_singleton_by_macroarea": {
+          "Africa": 28,
+          "Australia": 10,
+          "Eurasia": 78,
+          "North America": 72,
+          "Papunesia": 196,
+          "South America": 36,
+          "missing": 14
+        }
+      },
+      "strict625": {
+        "systems": 625,
+        "families": 108,
+        "complete_systems": 496,
+        "complete_singleton_systems": 351,
+        "complete_singleton_families": 80,
+        "families_with_at_least_two_complete_singleton_systems": 29,
+        "systems_in_repeated_complete_singleton_families": 300,
+        "complete_singleton_common_source_systems": 337,
+        "any_common_source_complete_systems": 478,
+        "any_common_source_singleton_systems": 348,
+        "valid_cell_count_distribution": {
+          "0": 40,
+          "2": 1,
+          "4": 15,
+          "6": 1,
+          "8": 44,
+          "10": 7,
+          "12": 15,
+          "14": 6,
+          "16": 496
+        },
+        "singleton_cell_count_distribution": {
+          "0": 69,
+          "2": 1,
+          "4": 28,
+          "6": 7,
+          "8": 81,
+          "9": 1,
+          "10": 9,
+          "11": 2,
+          "12": 59,
+          "14": 16,
+          "15": 1,
+          "16": 351
+        },
+        "missing_macroarea_complete_singleton_systems": 11,
+        "complete_singleton_by_macroarea": {
+          "Africa": 26,
+          "Australia": 5,
+          "Eurasia": 57,
+          "North America": 65,
+          "Papunesia": 156,
+          "South America": 31,
+          "missing": 11
+        }
+      }
+    },
+    "parent_siblings_generic8": {
+      "original_selected": {
+        "systems": 1110,
+        "families": 144,
+        "complete_systems": 315,
+        "complete_singleton_systems": 161,
+        "complete_singleton_families": 43,
+        "families_with_at_least_two_complete_singleton_systems": 21,
+        "systems_in_repeated_complete_singleton_families": 138,
+        "complete_singleton_common_source_systems": 150,
+        "any_common_source_complete_systems": 296,
+        "any_common_source_singleton_systems": 188,
+        "valid_cell_count_distribution": {
+          "0": 647,
+          "1": 4,
+          "2": 18,
+          "3": 6,
+          "4": 81,
+          "5": 2,
+          "6": 36,
+          "7": 1,
+          "8": 315
+        },
+        "singleton_cell_count_distribution": {
+          "0": 687,
+          "1": 7,
+          "2": 62,
+          "3": 9,
+          "4": 128,
+          "5": 2,
+          "6": 52,
+          "7": 2,
+          "8": 161
+        },
+        "missing_macroarea_complete_singleton_systems": 2,
+        "complete_singleton_by_macroarea": {
+          "Africa": 38,
+          "Australia": 2,
+          "Eurasia": 50,
+          "North America": 20,
+          "Papunesia": 12,
+          "South America": 37,
+          "missing": 2
+        }
+      },
+      "main939": {
+        "systems": 939,
+        "families": 125,
+        "complete_systems": 259,
+        "complete_singleton_systems": 118,
+        "complete_singleton_families": 37,
+        "families_with_at_least_two_complete_singleton_systems": 18,
+        "systems_in_repeated_complete_singleton_families": 99,
+        "complete_singleton_common_source_systems": 109,
+        "any_common_source_complete_systems": 242,
+        "any_common_source_singleton_systems": 145,
+        "valid_cell_count_distribution": {
+          "0": 580,
+          "2": 13,
+          "3": 2,
+          "4": 54,
+          "5": 1,
+          "6": 30,
+          "8": 259
+        },
+        "singleton_cell_count_distribution": {
+          "0": 619,
+          "1": 1,
+          "2": 53,
+          "3": 5,
+          "4": 97,
+          "5": 1,
+          "6": 44,
+          "7": 1,
+          "8": 118
+        },
+        "missing_macroarea_complete_singleton_systems": 1,
+        "complete_singleton_by_macroarea": {
+          "Africa": 21,
+          "Australia": 2,
+          "Eurasia": 49,
+          "North America": 14,
+          "Papunesia": 7,
+          "South America": 24,
+          "missing": 1
+        }
+      },
+      "strict625": {
+        "systems": 625,
+        "families": 108,
+        "complete_systems": 154,
+        "complete_singleton_systems": 96,
+        "complete_singleton_families": 35,
+        "families_with_at_least_two_complete_singleton_systems": 13,
+        "systems_in_repeated_complete_singleton_families": 74,
+        "complete_singleton_common_source_systems": 89,
+        "any_common_source_complete_systems": 145,
+        "any_common_source_singleton_systems": 101,
+        "valid_cell_count_distribution": {
+          "0": 420,
+          "2": 6,
+          "3": 1,
+          "4": 31,
+          "5": 1,
+          "6": 12,
+          "8": 154
+        },
+        "singleton_cell_count_distribution": {
+          "0": 432,
+          "2": 15,
+          "3": 4,
+          "4": 56,
+          "6": 21,
+          "7": 1,
+          "8": 96
+        },
+        "missing_macroarea_complete_singleton_systems": 1,
+        "complete_singleton_by_macroarea": {
+          "Africa": 20,
+          "Australia": 1,
+          "Eurasia": 38,
+          "North America": 11,
+          "Papunesia": 6,
+          "South America": 19,
+          "missing": 1
+        }
+      }
+    }
+  },
+  "registry": {
+    "cousins16": [
+      {
+        "Parameter_ID": "mFBS",
+        "s": 0,
+        "p": 0,
+        "c": 0,
+        "r": 0
+      },
+      {
+        "Parameter_ID": "mFBD",
+        "s": 0,
+        "p": 0,
+        "c": 0,
+        "r": 1
+      },
+      {
+        "Parameter_ID": "mFZS",
+        "s": 0,
+        "p": 0,
+        "c": 1,
+        "r": 0
+      },
+      {
+        "Parameter_ID": "mFZD",
+        "s": 0,
+        "p": 0,
+        "c": 1,
+        "r": 1
+      },
+      {
+        "Parameter_ID": "mMBS",
+        "s": 0,
+        "p": 1,
+        "c": 0,
+        "r": 0
+      },
+      {
+        "Parameter_ID": "mMBD",
+        "s": 0,
+        "p": 1,
+        "c": 0,
+        "r": 1
+      },
+      {
+        "Parameter_ID": "mMZS",
+        "s": 0,
+        "p": 1,
+        "c": 1,
+        "r": 0
+      },
+      {
+        "Parameter_ID": "mMZD",
+        "s": 0,
+        "p": 1,
+        "c": 1,
+        "r": 1
+      },
+      {
+        "Parameter_ID": "fFBS",
+        "s": 1,
+        "p": 0,
+        "c": 0,
+        "r": 0
+      },
+      {
+        "Parameter_ID": "fFBD",
+        "s": 1,
+        "p": 0,
+        "c": 0,
+        "r": 1
+      },
+      {
+        "Parameter_ID": "fFZS",
+        "s": 1,
+        "p": 0,
+        "c": 1,
+        "r": 0
+      },
+      {
+        "Parameter_ID": "fFZD",
+        "s": 1,
+        "p": 0,
+        "c": 1,
+        "r": 1
+      },
+      {
+        "Parameter_ID": "fMBS",
+        "s": 1,
+        "p": 1,
+        "c": 0,
+        "r": 0
+      },
+      {
+        "Parameter_ID": "fMBD",
+        "s": 1,
+        "p": 1,
+        "c": 0,
+        "r": 1
+      },
+      {
+        "Parameter_ID": "fMZS",
+        "s": 1,
+        "p": 1,
+        "c": 1,
+        "r": 0
+      },
+      {
+        "Parameter_ID": "fMZD",
+        "s": 1,
+        "p": 1,
+        "c": 1,
+        "r": 1
+      }
+    ],
+    "parent_siblings_age16": [
+      {
+        "Parameter_ID": "mFeB",
+        "s": 0,
+        "p": 0,
+        "a_parent": 0,
+        "r": 0
+      },
+      {
+        "Parameter_ID": "mFeZ",
+        "s": 0,
+        "p": 0,
+        "a_parent": 0,
+        "r": 1
+      },
+      {
+        "Parameter_ID": "mFyB",
+        "s": 0,
+        "p": 0,
+        "a_parent": 1,
+        "r": 0
+      },
+      {
+        "Parameter_ID": "mFyZ",
+        "s": 0,
+        "p": 0,
+        "a_parent": 1,
+        "r": 1
+      },
+      {
+        "Parameter_ID": "mMeB",
+        "s": 0,
+        "p": 1,
+        "a_parent": 0,
+        "r": 0
+      },
+      {
+        "Parameter_ID": "mMeZ",
+        "s": 0,
+        "p": 1,
+        "a_parent": 0,
+        "r": 1
+      },
+      {
+        "Parameter_ID": "mMyB",
+        "s": 0,
+        "p": 1,
+        "a_parent": 1,
+        "r": 0
+      },
+      {
+        "Parameter_ID": "mMyZ",
+        "s": 0,
+        "p": 1,
+        "a_parent": 1,
+        "r": 1
+      },
+      {
+        "Parameter_ID": "fFeB",
+        "s": 1,
+        "p": 0,
+        "a_parent": 0,
+        "r": 0
+      },
+      {
+        "Parameter_ID": "fFeZ",
+        "s": 1,
+        "p": 0,
+        "a_parent": 0,
+        "r": 1
+      },
+      {
+        "Parameter_ID": "fFyB",
+        "s": 1,
+        "p": 0,
+        "a_parent": 1,
+        "r": 0
+      },
+      {
+        "Parameter_ID": "fFyZ",
+        "s": 1,
+        "p": 0,
+        "a_parent": 1,
+        "r": 1
+      },
+      {
+        "Parameter_ID": "fMeB",
+        "s": 1,
+        "p": 1,
+        "a_parent": 0,
+        "r": 0
+      },
+      {
+        "Parameter_ID": "fMeZ",
+        "s": 1,
+        "p": 1,
+        "a_parent": 0,
+        "r": 1
+      },
+      {
+        "Parameter_ID": "fMyB",
+        "s": 1,
+        "p": 1,
+        "a_parent": 1,
+        "r": 0
+      },
+      {
+        "Parameter_ID": "fMyZ",
+        "s": 1,
+        "p": 1,
+        "a_parent": 1,
+        "r": 1
+      }
+    ],
+    "parent_siblings_generic8": [
+      {
+        "Parameter_ID": "mFB",
+        "s": 0,
+        "p": 0,
+        "r": 0
+      },
+      {
+        "Parameter_ID": "mFZ",
+        "s": 0,
+        "p": 0,
+        "r": 1
+      },
+      {
+        "Parameter_ID": "mMB",
+        "s": 0,
+        "p": 1,
+        "r": 0
+      },
+      {
+        "Parameter_ID": "mMZ",
+        "s": 0,
+        "p": 1,
+        "r": 1
+      },
+      {
+        "Parameter_ID": "fFB",
+        "s": 1,
+        "p": 0,
+        "r": 0
+      },
+      {
+        "Parameter_ID": "fFZ",
+        "s": 1,
+        "p": 0,
+        "r": 1
+      },
+      {
+        "Parameter_ID": "fMB",
+        "s": 1,
+        "p": 1,
+        "r": 0
+      },
+      {
+        "Parameter_ID": "fMZ",
+        "s": 1,
+        "p": 1,
+        "r": 1
+      }
+    ]
+  },
+  "input_sha256": {
+    "data/kinbank/kinbank/cldf/parameters.csv": "90543bf2ecc32c8778181e0e4755c9e3e54212f0c9760077e6157ed6ae85d0cc",
+    "data/kinbank/kinbank/cldf/forms.csv": "7d1238a69a8ac2f8e4b70b9bca797ad50bf85519fa26acc72fb571e067f01664",
+    "analysis/selected_languages_structural.csv": "ffc162e1ab5562b36dd74f336d2e32b1c8ba03ccfd497ed8a8b53ef460484370",
+    "analysis/pairs_primary.csv": "47e676a8fe2e988a40a45a5dd558f61cfa85b4f1a528a6a7bf4153d8e128dfbf",
+    "results/t1/systems_to_partition.csv": "ba61822b88c156d181f16579c3583ca413e1f1b71618f2a6d8f1d8ad8582f963"
+  },
+  "interpretation": "覆盖仅指数据库目标代码和单词形齐全；不证明原文献独立调查各ego、年龄和性别格，不构成q使用或跨域可复用性证据。"
+}
