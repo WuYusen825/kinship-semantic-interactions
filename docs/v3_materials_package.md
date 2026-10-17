@@ -1,6 +1,6 @@
 # 第三版完整资料包
 
-GitHub发布版本：`v3-materials-20261017`。附件名：`kinship-research-v3-complete.zip`；同页提供SHA-256校验文件。资料包内的`资料包版本.json`记录准确提交、Git历史包校验值及文件范围。此版本为研究工作稿的资料交付，不代表期刊发表。
+GitHub发布版本：`v3-materials-20261017`。完整ZIP通过Git LFS保存在`codex/major-revision`分支的`deliverables/kinship-research-v3-complete.zip`，同目录提供SHA-256校验文件；根目录README和Release页提供直接下载链接。资料包内的`资料包版本.json`记录准确源材料提交、Git历史包校验值及文件范围。ZIP与校验文件在源材料提交之后另行入库，压缩包不递归包含自身。此版本为研究工作稿的资料交付，不代表期刊发表。
 
 ## 材料范围
 
@@ -16,7 +16,7 @@ GitHub发布版本：`v3-materials-20261017`。附件名：`kinship-research-v3-
 
 解压后进入`kinship_research/`，先读README，再打开`outputs/论文_中文第三版.docx`。仅阅读论文与文献无需安装Python。
 
-`outputs/资料包文件清单.json`列出交付提交内的材料路径、字节数及SHA-256（清单自身除外）。ZIP另附`仓库历史.bundle`和`资料包版本.json`，其来源与校验关系在版本文件中说明。GitHub Release的SHA-256文件校验整个ZIP。
+`outputs/资料包文件清单.json`列出源材料提交内的路径、字节数及SHA-256（清单自身除外）。ZIP另附`仓库历史.bundle`和`资料包版本.json`，其来源与校验关系在版本文件中说明。仓库`deliverables/`中的SHA-256文件校验整个ZIP。GitHub自动生成的Source code压缩包不含LFS文件的真实字节及离线历史包，请使用README提供的完整ZIP链接。
 
 ## 恢复可复现仓库
 
