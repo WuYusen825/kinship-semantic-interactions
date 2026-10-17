@@ -9,9 +9,9 @@
 - [x] 全部模型只用通过收敛门的拟合，首次失败和数值精化轨迹可查，见[独立分析评审](notes/review/v3_analysis_review_round1.md)。
 - [x] 干净环境完成全部16阶段及115项关键测试，320份统计产物差异为零，允许的运行元数据差异单列，见[复现报告](results/reproducibility/clean_environment.json)及[最终实现补查](results/reproducibility/final_source_audit.json)。
 - [x] MD/Word/PDF/TXT及摘要文字相符；Word字体、1.5倍行距及引用格式沿用模板，PDF替代字体说明准确，见[最终独立实物验收](notes/review/v3_final_review.md)。
-- [ ] GitHub、工作目录镜像与ZIP包含全部交付，逐文件校验一致。
+- [x] GitHub分支HEAD与本地提交一致，工作目录镜像与ZIP的1117份跟踪文件逐字节相同；57组文献PDF/TXT齐备。[资料包清单](outputs/资料包文件清单.json)保存逐文件SHA；最终同步收据位于交付工作区`亲属称谓研究_最终同步核验.json`及镜像根目录，不纳入自身哈希清单。
 
-最终勾选以交付核验实物为准。下文为历史复查清单。
+以上勾选均有实际核验记录。本清单回填后亦重新打包、推送并核对；具体最终提交与压缩包SHA以工作区同步收据为准。下文为历史复查清单。
 
 ---
 
