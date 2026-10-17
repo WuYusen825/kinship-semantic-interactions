@@ -1,0 +1,17 @@
+python analysis/v3/run_all.py --list
+t0: python analysis/v3/reproduce_baseline.py
+t1: python analysis/v3/build_t1.py
+t2_initial_cv: python analysis/v3/run_t2.py --phase cv --sample strict --weighting family --validation family --solver-profile planned
+t2_initial_full: python analysis/v3/run_t2.py --phase full --sample strict --weighting family --solver-profile planned
+t2_cv: python analysis/v3/run_t2.py --phase cv --solver-profile refined
+t2_full: python analysis/v3/run_t2.py --phase full --solver-profile refined
+t3: python analysis/v3/basis_enrichment.py
+t4: python analysis/v3/position_tests.py
+t5_strict: python analysis/v3/run_t5.py --phase strict
+t5_full: python analysis/v3/run_t5.py --phase full
+t5_verify: python analysis/v3/verify_t5_outputs.py
+t2_compare: python analysis/v3/run_t2.py --phase compare --solver-profile refined
+t6_feasibility: python analysis/v3/domain_feasibility.py
+t6: python analysis/v3/cross_domain.py --phase all
+t7: python analysis/v3/tree_feasibility.py
+t8: python analysis/v3/summarize.py

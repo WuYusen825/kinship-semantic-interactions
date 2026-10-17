@@ -1,0 +1,59 @@
+{
+  "task": "T8_clean_reproduction",
+  "workspace": "/tmp/kinship-v3-final-20261017",
+  "started_utc": "2026-10-17T02:09:06.755853+00:00",
+  "prepare_only": false,
+  "passed": true,
+  "full_reproduction_passed": true,
+  "venv_python": "/tmp/kinship-v3-final-20261017/clean_venv/bin/python",
+  "system_site_packages": false,
+  "pip_freeze": "contourpy==1.3.3\ncycler==0.12.1\nfonttools==4.61.1\nformulaic==1.2.2\ninterface_meta==2.0.1\njoblib==1.5.3\nkiwisolver==1.4.9\nlxml==6.1.1\nmatplotlib==3.10.8\nnarwhals==2.27.1\nnumpy==2.3.5\npackaging==26.3\npandas==2.2.3\npatsy==1.0.3\npillow==12.3.0\npyarrow==21.0.0\npyparsing==3.3.2\npython-dateutil==2.9.0.post0\npython-docx==1.2.0\npytz==2026.4\nscikit-learn==1.8.0\nscipy==1.17.0\nsix==1.17.0\nstatsmodels==0.15.0\nthreadpoolctl==3.6.0\ntyping_extensions==4.16.0\ntzdata==2026.4\nwrapt==2.5.1\n",
+  "requirements_sha256": "6d3ec498bede1f84068f35f35dafdf774dc4d50503416d89855352c80b92c265",
+  "constraints_sha256": "6065625d20dc3a39f1f6d29fba8418573c360ec38b5d90c07379f959e7857cee",
+  "snapshot_manifest": "/tmp/kinship-v3-final-20261017/snapshot_manifest.json",
+  "analysis_run": {
+    "command": [
+      "make",
+      "all",
+      "PYTHON=/tmp/kinship-v3-final-20261017/clean_venv/bin/python"
+    ],
+    "cwd": "/tmp/kinship-v3-final-20261017/repo",
+    "log": "/tmp/kinship-v3-final-20261017/make_all.log",
+    "returncode": 0,
+    "elapsed_seconds": 292.204795758
+  },
+  "tests_run": {
+    "command": [
+      "make",
+      "check",
+      "PYTHON=/tmp/kinship-v3-final-20261017/clean_venv/bin/python"
+    ],
+    "cwd": "/tmp/kinship-v3-final-20261017/repo",
+    "log": "/tmp/kinship-v3-final-20261017/make_check.log",
+    "returncode": 0,
+    "elapsed_seconds": 10.383755594999911
+  },
+  "comparison_run": {
+    "command": [
+      "/tmp/kinship-v3-final-20261017/clean_venv/bin/python",
+      "/tmp/kinship-v3-final-20261017/repo/analysis/v3/verify_reproduction.py",
+      "--reference",
+      "/tmp/kinship-v3-final-20261017/reference",
+      "--replica",
+      "/tmp/kinship-v3-final-20261017/repo",
+      "--output",
+      "/tmp/kinship-v3-final-20261017/comparison.json"
+    ],
+    "cwd": "/tmp/kinship-v3-final-20261017/repo",
+    "log": "/tmp/kinship-v3-final-20261017/comparison.log",
+    "returncode": 0,
+    "elapsed_seconds": 17.548008549999963
+  },
+  "status": "完整实际复现通过",
+  "comparison_json": "/tmp/kinship-v3-final-20261017/comparison.json",
+  "files_checked": 320,
+  "statistical_differences_count": 0,
+  "max_absolute_difference": 0.0,
+  "finished_utc": "2026-10-17T02:14:54.269398+00:00",
+  "archived_logs": "results/reproducibility/clean_run_logs"
+}

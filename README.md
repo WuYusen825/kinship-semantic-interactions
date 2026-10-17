@@ -1,20 +1,41 @@
-# 亲属称谓的语义组合：跨语言兄弟姐妹词形共享研究
+# 兄弟姐妹称谓的合取偏好与条件区分
 
 本仓库保存中文正式论文、公开数据库分析、文献全文和可复现结果，并提供研究与复查交接。
 
-大修分支为`codex/major-revision`。S2最终协议于实测前单独提交（`6ba7afb`）；它写于原结果已知之后，属于事后补充分析。旧稿、冻结结果和S1保留。v2已完成并通过第五轮独立复查，逐处数字、引文及独立全稿核查记录单列；以下提供新分析与历史分析的独立入口。
+大修分支为`codex/major-revision`。S2最终协议于实测前单独提交（`6ba7afb`）；它写于原结果已知之后，属于事后补充分析。旧稿、冻结结果和S1保留。v2已完成并通过第五轮独立复查，逐处数字、引文及独立全稿核查记录单列；第三版按新任务书另作完整补充分析，以下提供各版本的独立入口。
 
-研究的问题是：兄弟姐妹词项是否呈现合取与层级约束，以及显式条件结构能否提高未见谱系和地域上的共用词形预测。划分结构、类别对预测与测量边界分别检验。
+研究考察兄弟姐妹称谓的合取偏好、次级区分与跨群组预测，并以关系表征、局部区分需要及历史传承解释这些现象。划分结构、类别对概率与表达实现分别判断，理论提案与已执行分析明确对应。
 
-本分支的研究与正式稿修订见[草稿PR #2](https://github.com/WuYusen825/kinship-semantic-interactions/pull/2)，目标为`claude/finish-forum-paper-rio1ke`。此前payload同步证据保留于[历史记录](notes/revision_delivery_sync.json)。
+本轮第三版及此前理论扩写见[草稿PR #3](https://github.com/WuYusen825/kinship-semantic-interactions/pull/3)，目标为`claude/finish-forum-paper-rio1ke`。此前正式稿[PR #2](https://github.com/WuYusen825/kinship-semantic-interactions/pull/2)已合并；旧payload同步证据保留于[历史记录](notes/revision_delivery_sync.json)。
 
-## 正式论文（当前阅读版本）
+## 第三版（当前修订版本）
 
-- [中文正式稿](outputs/论文_中文正式稿.md)｜[PDF](outputs/论文_中文正式稿.pdf)｜[Word](outputs/论文_中文正式稿.docx)｜[摘要](outputs/正式论文_摘要.txt)。
+- [中文第三版](outputs/论文_中文第三版.md)｜[Word](outputs/论文_中文第三版.docx)｜[PDF预览](outputs/论文_中文第三版.pdf)｜[TXT](outputs/论文_中文第三版.txt)｜[摘要](outputs/第三版_摘要.txt)。第二版及旧论坛稿单独保留。
+- 正文12161汉字，讨论5727汉字（47.1%），摘要288汉字；42项参考文献、4张表、2幅图，PDF共30页。统计口径见[导出核验](notes/v3/artifact_check.json)。
+- 新版以625个严格系统为主，在4140种划分上精确建模；新增基底、位置与跨领域对照。保留所指者性别的相对基底具有预测优势，另一相对坐标反而更差；位置增量区间含零，类型分布只复现部分总体交互，生成检查与类别对预测的不足均保留。
+- 讨论围绕表征锚点、合取与库存成本、局部排序、类型混合、地域历史及表达层次展开。参考文献继续仅用已取得完整全文的来源；模板字体、1.5倍行距、著者—年份与页码上标沿用。Word指定模板字体，PDF为替代字体预览。
+- [任务总报告](results/report.md)｜[逐数值来源](results/summary.json)｜[运行前计划](docs/analysis_plan.md)｜[数值精化附录](docs/numerical_refinement_v3.md)｜[跨领域操作化与计划](docs/t6_association_plan.md)｜[谱系树可行性](docs/t7_feasibility.md)。
+- [Claude矛盾与决定文档](CLAUDE_DECISIONS_V3.md)集中记录7/15两种不变性、两种相对坐标、库存成本抵消、等价检验、T6估计对象差异及未拟合可选Mk的理由。
+- [独立分析评审](notes/review/v3_analysis_review_round1.md)｜[独立全文评审](notes/review/v3_manuscript_review_round1.md)｜[独立最终实物复核](notes/review/v3_final_review.md)。[829处数字核验](notes/v3/number_check.json)、[83次引文及42项全文核对](notes/v3/citation_check.md)与导出报告均绑定第三版实际文件，不沿用旧稿的通过记录。
+- [完整干净环境复现](results/reproducibility/clean_environment.json)：16阶段、115项关键测试通过；320份统计文件、8945243项数值比较无差异，166份实现及固定输入SHA一致。具体范围及单列元数据差异见[比较报告](results/reproducibility/comparison.md)。
+
+第三版一条命令复现全部分析：
+
+```bash
+python -S analysis/v3/clean_reproduce.py --workspace /tmp/kinship-v3-reproduction
+```
+
+也可在已安装[环境依赖](analysis/v3/requirements.txt)的仓库中运行`make all`，用`make check`执行关键单测、`make documents`导出第三版。环境与独立副本说明见[分析入口](analysis/v3/README.md)。
+
+## 第二版正式论文（历史阅读版本）
+
+- [中文正式稿](outputs/论文_中文正式稿.md)｜[Word](outputs/论文_中文正式稿.docx)｜[PDF预览](outputs/论文_中文正式稿.pdf)｜[TXT](outputs/论文_中文正式稿.txt)｜[摘要](outputs/正式论文_摘要.txt)。
 - 摘要仅保留样本规模，正文按研究问题、理论背景、方法、结果与讨论组织。下载时间、执行时间、提交编号及文件校验信息集中于[复现说明](notes/formal_reproducibility.md)。
-- 正文采用著者—出版年引注与页码上标，42项参考文献按GB/T 7714—2015整理，规范条目及来源说明见[引用格式记录](notes/formal_references.md)。
-- 正式稿已通过独立体例、内容、引文与排版复查；摘要只保留一项样本规模。
-- [正式稿数字核验](notes/formal_manuscript_number_check.json)｜[引文核对](notes/formal_citation_check.md)｜[排版核验](notes/formal_artifact_check.json)｜[独立评审](notes/review/formal_paper_review.md)。
+- 正文采用著者—出版年引注与页码上标，42项英文参考文献按用户模板示例整理，规范条目及来源说明见[引用格式记录](notes/formal_references.md)。字体与1.5倍行距见[模板应用说明](notes/format/中文模板_应用说明.md)；Word使用模板字体名，PDF为替代字体预览。
+- 正文11563汉字，讨论六节5778汉字、约占一半。综述以理论分歧组织，讨论从实测结果出发解释关系压缩、局部标记、总体非加性及推广差异；摘要277汉字，只保留一项样本规模。
+- 理论解释经独立首轮评审后局部修订，第二轮内容和最终29页导出实物均已通过；原方法、结果区块逐字节保持，不重新拟合模型。
+- [理论回溯台账](notes/discussion_expansion_20261016/research_ledger.md)｜[学习、效率及共词化证据](notes/discussion_expansion_20261016/semantic_explanation_evidence.md)｜[标记、角色及历史证据](notes/discussion_expansion_20261016/kinship_explanation_evidence.md)。
+- [正式稿数字核验](notes/formal_manuscript_number_check.json)｜[引文核对](notes/formal_citation_check.md)｜[排版核验](notes/formal_artifact_check.json)｜[第二轮独立评审](notes/review/theory_expansion_review_round2.md)｜[首轮修改意见](notes/review/theory_expansion_review_round1.md)。旧快照通过记录不作为新版验收。
 
 ## S2与论坛稿v2
 

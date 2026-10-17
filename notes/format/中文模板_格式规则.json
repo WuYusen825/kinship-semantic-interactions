@@ -1,0 +1,575 @@
+{
+  "template_path": "notes/format/中文格式模板.docx",
+  "template_sha256": "32dfb9c3864408539741db8cc5e64df70d5de753e052399eb1b1a3c06dece440",
+  "scope_zh": "只使用字体（含字号、粗体、斜体）、行距与引用格式。保持正式稿内容、章节、纸张、页边距、表格尺寸、段前段后及普通正文缩进。文末悬挂缩进属于引用格式。",
+  "line_spacing": 1.5,
+  "reference_hanging_indent_pt": 24,
+  "roles": {
+    "body": {
+      "east_asia": "宋体",
+      "latin": "Times New Roman",
+      "size_pt": 12,
+      "bold": null
+    },
+    "title": {
+      "east_asia": "宋体",
+      "latin": "Times New Roman",
+      "size_pt": 20,
+      "bold": false
+    },
+    "subtitle": {
+      "east_asia": "宋体",
+      "latin": "Times New Roman",
+      "size_pt": 12,
+      "bold": false
+    },
+    "author": {
+      "east_asia": "仿宋",
+      "latin": "仿宋",
+      "size_pt": 11,
+      "bold": false
+    },
+    "heading": {
+      "east_asia": "宋体",
+      "latin": "Times New Roman",
+      "size_pt": 12,
+      "bold": true
+    },
+    "abstract": {
+      "east_asia": "宋体",
+      "latin": "Times New Roman",
+      "size_pt": 10.5,
+      "bold": null
+    },
+    "keywords": {
+      "east_asia": "宋体",
+      "latin": "Times New Roman",
+      "size_pt": 10.5,
+      "bold": null
+    },
+    "references": {
+      "east_asia": "宋体",
+      "latin": "Times New Roman",
+      "size_pt": 12,
+      "bold": null
+    },
+    "caption": {
+      "east_asia": "宋体",
+      "latin": "Times New Roman",
+      "size_pt": 10.5,
+      "bold": null
+    },
+    "table": {
+      "east_asia": "宋体",
+      "latin": "Times New Roman",
+      "size_pt": 10.5,
+      "bold": null
+    },
+    "footer": {
+      "east_asia": "宋体",
+      "latin": "Times New Roman",
+      "size_pt": 9,
+      "bold": null
+    }
+  },
+  "pdf_font_substitutions": {
+    "宋体": "Noto Serif CJK SC",
+    "仿宋": "Noto Serif CJK SC",
+    "Times New Roman": "Liberation Serif"
+  },
+  "inference_notes_zh": [
+    "摘要和关键词没有直接字号，继承模板Normal的21半磅，即10.5磅；不把szCs当作东亚文字字号。",
+    "标题20磅宋体不加粗，作者/学校11磅仿宋，正文与一级标题12磅宋体（一级标题加粗），参考文献12磅Times New Roman。",
+    "模板没有二三级标题、图表、英文副标题和页码样例。二三级标题使用同一正文字号并保留粗体；图表、英文副标题及页码保留原字号。行距统一取模板1.5倍。",
+    "参考文献24磅悬挂缩进取实际w:left/w:hanging=480 twips；不将字符缩进误作点数。",
+    "模板无正文引注样例，保留正式稿已有著者—年份及页码上标。英文书目按模板示例，作者自然大小写、首字母带点、年份括号、刊名斜体、DOI URL；不宣称严格APA第7版。",
+    "Word保留模板要求的真实字体名；本环境没有宋体、仿宋和Times New Roman的字体文件。PDF为使用已安装替代字体的预览，不能声称与模板原字体逐字形相同。"
+  ],
+  "evidence": [
+    {
+      "paragraph_index_zero_based": 0,
+      "text": "标题",
+      "paragraph_style": "Normal",
+      "line_spacing": 1.5,
+      "paragraph_indentation_ooxml": {},
+      "runs": [
+        {
+          "text": "标题",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman",
+            "cs": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 20.0,
+          "bold_direct": null,
+          "italic_direct": null
+        }
+      ]
+    },
+    {
+      "paragraph_index_zero_based": 1,
+      "text": "作者",
+      "paragraph_style": "Normal",
+      "line_spacing": 1.5,
+      "paragraph_indentation_ooxml": {},
+      "runs": [
+        {
+          "text": "作者",
+          "font_ooxml": {
+            "ascii": "仿宋",
+            "eastAsia": "仿宋",
+            "hAnsi": "仿宋",
+            "cs": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 11.0,
+          "bold_direct": null,
+          "italic_direct": null
+        }
+      ]
+    },
+    {
+      "paragraph_index_zero_based": 2,
+      "text": "学校",
+      "paragraph_style": "Normal",
+      "line_spacing": 1.5,
+      "paragraph_indentation_ooxml": {},
+      "runs": [
+        {
+          "text": "学校",
+          "font_ooxml": {
+            "ascii": "仿宋",
+            "eastAsia": "仿宋",
+            "hAnsi": "仿宋",
+            "cs": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 11.0,
+          "bold_direct": null,
+          "italic_direct": null
+        }
+      ]
+    },
+    {
+      "paragraph_index_zero_based": 4,
+      "text": "摘要：本研究以。。。",
+      "paragraph_style": "Normal",
+      "line_spacing": 1.5,
+      "paragraph_indentation_ooxml": {},
+      "runs": [
+        {
+          "text": "摘要",
+          "font_ooxml": {
+            "ascii": "宋体",
+            "eastAsia": "宋体",
+            "hAnsi": "宋体",
+            "cs": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": null,
+          "bold_direct": true,
+          "italic_direct": null
+        },
+        {
+          "text": "：",
+          "font_ooxml": {
+            "ascii": "宋体",
+            "eastAsia": "宋体",
+            "hAnsi": "宋体",
+            "cs": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": null,
+          "bold_direct": null,
+          "italic_direct": null
+        },
+        {
+          "text": "本研究以",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman",
+            "cs": "Times New Roman"
+          },
+          "size_pt_direct": null,
+          "bold_direct": null,
+          "italic_direct": null
+        },
+        {
+          "text": "。。。",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman",
+            "cs": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": null,
+          "bold_direct": null,
+          "italic_direct": null
+        }
+      ]
+    },
+    {
+      "paragraph_index_zero_based": 8,
+      "text": "关键词：大语言模型，依存语法，多因素分析，。。。",
+      "paragraph_style": "Normal",
+      "line_spacing": 1.5,
+      "paragraph_indentation_ooxml": {},
+      "runs": [
+        {
+          "text": "关键词：",
+          "font_ooxml": {
+            "ascii": "宋体",
+            "eastAsia": "宋体",
+            "hAnsi": "宋体",
+            "cs": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": null,
+          "bold_direct": true,
+          "italic_direct": null
+        },
+        {
+          "text": "大语言模型，依存语法，多因素分析，。。。",
+          "font_ooxml": {
+            "ascii": "宋体",
+            "eastAsia": "宋体",
+            "hAnsi": "宋体",
+            "cs": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": null,
+          "bold_direct": null,
+          "italic_direct": null
+        }
+      ]
+    },
+    {
+      "paragraph_index_zero_based": 10,
+      "text": "一、引言",
+      "paragraph_style": "Normal",
+      "line_spacing": 1.5,
+      "paragraph_indentation_ooxml": {},
+      "runs": [
+        {
+          "text": "一、引言",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman",
+            "cs": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 12.0,
+          "bold_direct": true,
+          "italic_direct": null
+        }
+      ]
+    },
+    {
+      "paragraph_index_zero_based": 11,
+      "text": "过去数十年，",
+      "paragraph_style": "Normal",
+      "line_spacing": 1.5,
+      "paragraph_indentation_ooxml": {
+        "firstLine": "420"
+      },
+      "runs": [
+        {
+          "text": "过去数十年，",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman",
+            "cs": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 12.0,
+          "bold_direct": null,
+          "italic_direct": null
+        }
+      ]
+    },
+    {
+      "paragraph_index_zero_based": 22,
+      "text": "参考文献",
+      "paragraph_style": "Normal",
+      "line_spacing": 1.5,
+      "paragraph_indentation_ooxml": {},
+      "runs": [
+        {
+          "text": "参考文献",
+          "font_ooxml": {
+            "ascii": "宋体",
+            "eastAsia": "宋体",
+            "hAnsi": "宋体",
+            "cs": "宋体",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 12.0,
+          "bold_direct": true,
+          "italic_direct": null
+        }
+      ]
+    },
+    {
+      "paragraph_index_zero_based": 23,
+      "text": "Aldrich, J. O. & Cunningham, J. B. (2015). Using IBM® SPSS® Statistics: An Interactive Hands-On Approach (2nd ed.). California: SAGE Publications, Inc.",
+      "paragraph_style": "Normal",
+      "line_spacing": 1.5,
+      "paragraph_indentation_ooxml": {
+        "left": "480",
+        "hangingChars": "200",
+        "hanging": "480"
+      },
+      "runs": [
+        {
+          "text": "Aldrich, J. O. & Cunningham, J. B. (2015). ",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 12.0,
+          "bold_direct": null,
+          "italic_direct": null
+        },
+        {
+          "text": "Using IBM® SPSS® Statistics: An Interactive Hands-On Approach",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 12.0,
+          "bold_direct": null,
+          "italic_direct": true
+        },
+        {
+          "text": " (2nd ed.). California: SAGE Publications, Inc.",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 12.0,
+          "bold_direct": null,
+          "italic_direct": null
+        }
+      ]
+    },
+    {
+      "paragraph_index_zero_based": 24,
+      "text": "Arsyad, S., Waluyo, B., & Maisarah, I. (2024). Enhancing TOEFL performance and student motivation through integrated flipped and gamified learning in online settings. Human Behavior and Emerging Technologies, 2024, 1054242, 1-14. https://doi.org/10.1155/2024/1054242.",
+      "paragraph_style": "Normal",
+      "line_spacing": 1.5,
+      "paragraph_indentation_ooxml": {
+        "left": "480",
+        "hangingChars": "200",
+        "hanging": "480"
+      },
+      "runs": [
+        {
+          "text": "Arsyad, S., Waluyo, B., & Maisarah, I. (2024). Enhancing TOEFL performance and student motivation through integrated flipped and gamified learning in online settings. ",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 12.0,
+          "bold_direct": null,
+          "italic_direct": null
+        },
+        {
+          "text": "Human Behavior and Emerging Technologies",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 12.0,
+          "bold_direct": null,
+          "italic_direct": true
+        },
+        {
+          "text": ", 2024, 1054242, 1-14. ",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 12.0,
+          "bold_direct": null,
+          "italic_direct": null
+        },
+        {
+          "text": ".",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 12.0,
+          "bold_direct": null,
+          "italic_direct": null
+        }
+      ]
+    },
+    {
+      "paragraph_index_zero_based": 25,
+      "text": "Azman Ong, M. H. & Ibrahim, N. S. (2024). Towards the formation of we-intention to continue playing mobile multiplayer games: importance of gamification design elements and social play habit roles. Information Technology & People, 0(0), 1-24. https://doi.org/10.1108/ITP-11-2022-0904.",
+      "paragraph_style": "Normal",
+      "line_spacing": 1.5,
+      "paragraph_indentation_ooxml": {
+        "left": "480",
+        "hangingChars": "200",
+        "hanging": "480"
+      },
+      "runs": [
+        {
+          "text": "Azman Ong, M. H. & Ibrahim, N. S. (2024). Towards the formation of we-intention to continue playing mobile multiplayer games: importance of gamification design elements and social play habit roles. ",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 12.0,
+          "bold_direct": null,
+          "italic_direct": null
+        },
+        {
+          "text": "Information Technology & People",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 12.0,
+          "bold_direct": null,
+          "italic_direct": true
+        },
+        {
+          "text": ", 0(0), 1-24. ",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 12.0,
+          "bold_direct": null,
+          "italic_direct": null
+        },
+        {
+          "text": ".",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 12.0,
+          "bold_direct": null,
+          "italic_direct": null
+        }
+      ]
+    },
+    {
+      "paragraph_index_zero_based": 26,
+      "text": "Ding, X., Chen, M., & Xu, Q. (2024). Anxiety and enjoyment in oral presentations: A mixed-method study into Chinese EFL learners’ oral presentation performance. International Review of Applied Linguistics in Language Teaching, 0(0), 1-25. https://doi.org/10.1515/iral-2023-0161.",
+      "paragraph_style": "Normal",
+      "line_spacing": 1.5,
+      "paragraph_indentation_ooxml": {
+        "left": "480",
+        "hangingChars": "200",
+        "hanging": "480"
+      },
+      "runs": [
+        {
+          "text": "Ding, X., Chen, M., & Xu, Q. (2024). Anxiety and enjoyment in oral presentations: A mixed-method study into Chinese EFL learners",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 12.0,
+          "bold_direct": null,
+          "italic_direct": null
+        },
+        {
+          "text": "’ ",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman"
+          },
+          "size_pt_direct": 12.0,
+          "bold_direct": null,
+          "italic_direct": null
+        },
+        {
+          "text": "oral presentation performance. ",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 12.0,
+          "bold_direct": null,
+          "italic_direct": null
+        },
+        {
+          "text": "International Review of Applied Linguistics in Language Teaching",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 12.0,
+          "bold_direct": null,
+          "italic_direct": true
+        },
+        {
+          "text": ", 0(0), 1-25. ",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 12.0,
+          "bold_direct": null,
+          "italic_direct": null
+        },
+        {
+          "text": ".",
+          "font_ooxml": {
+            "ascii": "Times New Roman",
+            "eastAsia": "宋体",
+            "hAnsi": "Times New Roman",
+            "hint": "eastAsia"
+          },
+          "size_pt_direct": 12.0,
+          "bold_direct": null,
+          "italic_direct": null
+        }
+      ]
+    }
+  ],
+  "normal_style_font_size_pt": 10.5
+}

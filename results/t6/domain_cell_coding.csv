@@ -1,0 +1,41 @@
+domain,Parameter_ID,s,p,c,r,Name,a_parent
+cousins16,mFBS,0,0,0.0,0,male ego's father's brother's son,
+cousins16,mFBD,0,0,0.0,1,male ego's father's brother's daughter,
+cousins16,mFZS,0,0,1.0,0,male ego's father's sister's son,
+cousins16,mFZD,0,0,1.0,1,male ego's father's sister's daughter,
+cousins16,mMBS,0,1,0.0,0,male ego's mother's brother's son,
+cousins16,mMBD,0,1,0.0,1,male ego's mother's brother's daughter,
+cousins16,mMZS,0,1,1.0,0,male ego's mother's sister's son,
+cousins16,mMZD,0,1,1.0,1,male ego's mother's sister's daughter,
+cousins16,fFBS,1,0,0.0,0,female ego's father's brother's son,
+cousins16,fFBD,1,0,0.0,1,female ego's father's brother's daughter,
+cousins16,fFZS,1,0,1.0,0,female ego's father's sister's son,
+cousins16,fFZD,1,0,1.0,1,female ego's father's sister's daughter,
+cousins16,fMBS,1,1,0.0,0,female ego's mother's brother's son,
+cousins16,fMBD,1,1,0.0,1,female ego's mother's brother's daughter,
+cousins16,fMZS,1,1,1.0,0,female ego's mother's sister's son,
+cousins16,fMZD,1,1,1.0,1,female ego's mother's sister's daughter,
+parent_siblings_age16,mFeB,0,0,,0,male ego's father's older brother,0.0
+parent_siblings_age16,mFeZ,0,0,,1,male ego's father's older sister,0.0
+parent_siblings_age16,mFyB,0,0,,0,male ego's father's younger brother,1.0
+parent_siblings_age16,mFyZ,0,0,,1,male ego's father's younger sister,1.0
+parent_siblings_age16,mMeB,0,1,,0,male ego's mother's older brother,0.0
+parent_siblings_age16,mMeZ,0,1,,1,male ego's mother's older sister,0.0
+parent_siblings_age16,mMyB,0,1,,0,male ego's mother's younger brother,1.0
+parent_siblings_age16,mMyZ,0,1,,1,male ego's mother's younger sister,1.0
+parent_siblings_age16,fFeB,1,0,,0,female ego's father's older brother,0.0
+parent_siblings_age16,fFeZ,1,0,,1,female ego's father's older sister,0.0
+parent_siblings_age16,fFyB,1,0,,0,female ego's father's younger brother,1.0
+parent_siblings_age16,fFyZ,1,0,,1,female ego's father's younger sister,1.0
+parent_siblings_age16,fMeB,1,1,,0,female ego's mother's older brother,0.0
+parent_siblings_age16,fMeZ,1,1,,1,female ego's mother's older sister,0.0
+parent_siblings_age16,fMyB,1,1,,0,female ego's mother's younger brother,1.0
+parent_siblings_age16,fMyZ,1,1,,1,female ego's mother's younger sister,1.0
+parent_siblings_generic8,mFB,0,0,,0,male ego's father's brother,
+parent_siblings_generic8,mFZ,0,0,,1,male ego's father's sister,
+parent_siblings_generic8,mMB,0,1,,0,male ego's mother's brother,
+parent_siblings_generic8,mMZ,0,1,,1,male ego's mother's sister,
+parent_siblings_generic8,fFB,1,0,,0,female ego's father's brother,
+parent_siblings_generic8,fFZ,1,0,,1,female ego's father's sister,
+parent_siblings_generic8,fMB,1,1,,0,female ego's mother's brother,
+parent_siblings_generic8,fMZ,1,1,,1,female ego's mother's sister,

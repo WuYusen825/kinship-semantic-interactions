@@ -1,0 +1,11 @@
+{"stage": "t2_initial_full", "description": "保留原求解器主条件全样本结果，不强制失败系数重抽", "command": ["/tmp/kinship-v3-final-20261017/clean_venv/bin/python", "analysis/v3/run_t2.py", "--phase", "full", "--sample", "strict", "--weighting", "family", "--solver-profile", "planned"], "script_sha256": "4cd62014776f30fa5832f843b9b32ab9349f015d77271121983f7a6483ab24a7", "started_utc": "2026-10-17T02:09:57.916053+00:00", "log": "results/reproducibility/pipeline_logs/t2_initial_full.log"}
+T2 strict_family: full A0 fitted and predictive checks saved
+T2 strict_family: full A1 fitted and predictive checks saved
+T2 strict_family: full A2 fitted and predictive checks saved
+T2 strict_family: full A3r fitted and predictive checks saved
+T2 strict_family: full A3s fitted and predictive checks saved
+T2 strict_family: full A4 fitted and predictive checks saved
+T2 strict_family: full A5r fitted and predictive checks saved
+T2 strict_family: full A5s fitted and predictive checks saved
+T2 strict_family: full A6 fitted and predictive checks saved
+T2 strict_family: full BASE fitted and predictive checks saved

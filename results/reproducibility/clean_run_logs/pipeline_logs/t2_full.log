@@ -1,0 +1,77 @@
+{"stage": "t2_full", "description": "全样本估计、预测检验与系数重抽", "command": ["/tmp/kinship-v3-final-20261017/clean_venv/bin/python", "analysis/v3/run_t2.py", "--phase", "full", "--solver-profile", "refined"], "script_sha256": "4cd62014776f30fa5832f843b9b32ab9349f015d77271121983f7a6483ab24a7", "started_utc": "2026-10-17T02:11:56.471724+00:00", "log": "results/reproducibility/pipeline_logs/t2_full.log"}
+T2 strict_family: full A0 fitted and predictive checks saved
+T2 strict_family: full A1 fitted and predictive checks saved
+T2 strict_family: full A2 fitted and predictive checks saved
+T2 strict_family: full A3r fitted and predictive checks saved
+T2 strict_family: full A3s fitted and predictive checks saved
+T2 strict_family: full A4 fitted and predictive checks saved
+T2 strict_family: full A5r fitted and predictive checks saved
+T2 strict_family: full A5s fitted and predictive checks saved
+T2 strict_family: full A6 fitted and predictive checks saved
+T2 strict_family: full BASE fitted and predictive checks saved
+T2 strict_family: full A7 fitted and predictive checks saved
+T2 coefficient bootstrap 500/5000; statuses={'converged': 500}
+T2 coefficient bootstrap 1000/5000; statuses={'converged': 1000}
+T2 coefficient bootstrap 1500/5000; statuses={'converged': 1500}
+T2 coefficient bootstrap 2000/5000; statuses={'converged': 2000}
+T2 coefficient bootstrap 2500/5000; statuses={'converged': 2500}
+T2 coefficient bootstrap 3000/5000; statuses={'converged': 3000}
+T2 coefficient bootstrap 3500/5000; statuses={'converged': 3500}
+T2 coefficient bootstrap 4000/5000; statuses={'converged': 4000}
+T2 coefficient bootstrap 4500/5000; statuses={'converged': 4500}
+T2 coefficient bootstrap 5000/5000; statuses={'converged': 5000}
+T2 strict_language: full A0 fitted and predictive checks saved
+T2 strict_language: full A1 fitted and predictive checks saved
+T2 strict_language: full A2 fitted and predictive checks saved
+T2 strict_language: full A3r fitted and predictive checks saved
+T2 strict_language: full A3s fitted and predictive checks saved
+T2 strict_language: full A4 fitted and predictive checks saved
+T2 strict_language: full A5r fitted and predictive checks saved
+T2 strict_language: full A5s fitted and predictive checks saved
+T2 strict_language: full A6 fitted and predictive checks saved
+T2 strict_language: full BASE fitted and predictive checks saved
+T2 strict_language: full A7 fitted and predictive checks saved
+T2 equal_sets_family: full A0 fitted and predictive checks saved
+T2 equal_sets_family: full A1 fitted and predictive checks saved
+T2 equal_sets_family: full A2 fitted and predictive checks saved
+T2 equal_sets_family: full A3r fitted and predictive checks saved
+T2 equal_sets_family: full A3s fitted and predictive checks saved
+T2 equal_sets_family: full A4 fitted and predictive checks saved
+T2 equal_sets_family: full A5r fitted and predictive checks saved
+T2 equal_sets_family: full A5s fitted and predictive checks saved
+T2 equal_sets_family: full A6 fitted and predictive checks saved
+T2 equal_sets_family: full BASE fitted and predictive checks saved
+T2 equal_sets_family: full A7 fitted and predictive checks saved
+T2 equal_sets_language: full A0 fitted and predictive checks saved
+T2 equal_sets_language: full A1 fitted and predictive checks saved
+T2 equal_sets_language: full A2 fitted and predictive checks saved
+T2 equal_sets_language: full A3r fitted and predictive checks saved
+T2 equal_sets_language: full A3s fitted and predictive checks saved
+T2 equal_sets_language: full A4 fitted and predictive checks saved
+T2 equal_sets_language: full A5r fitted and predictive checks saved
+T2 equal_sets_language: full A5s fitted and predictive checks saved
+T2 equal_sets_language: full A6 fitted and predictive checks saved
+T2 equal_sets_language: full BASE fitted and predictive checks saved
+T2 equal_sets_language: full A7 fitted and predictive checks saved
+T2 components_family: full A0 fitted and predictive checks saved
+T2 components_family: full A1 fitted and predictive checks saved
+T2 components_family: full A2 fitted and predictive checks saved
+T2 components_family: full A3r fitted and predictive checks saved
+T2 components_family: full A3s fitted and predictive checks saved
+T2 components_family: full A4 fitted and predictive checks saved
+T2 components_family: full A5r fitted and predictive checks saved
+T2 components_family: full A5s fitted and predictive checks saved
+T2 components_family: full A6 fitted and predictive checks saved
+T2 components_family: full BASE fitted and predictive checks saved
+T2 components_family: full A7 fitted and predictive checks saved
+T2 components_language: full A0 fitted and predictive checks saved
+T2 components_language: full A1 fitted and predictive checks saved
+T2 components_language: full A2 fitted and predictive checks saved
+T2 components_language: full A3r fitted and predictive checks saved
+T2 components_language: full A3s fitted and predictive checks saved
+T2 components_language: full A4 fitted and predictive checks saved
+T2 components_language: full A5r fitted and predictive checks saved
+T2 components_language: full A5s fitted and predictive checks saved
+T2 components_language: full A6 fitted and predictive checks saved
+T2 components_language: full BASE fitted and predictive checks saved
+T2 components_language: full A7 fitted and predictive checks saved

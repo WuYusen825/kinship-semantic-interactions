@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-10-17T02:16:19.643687+00:00",
+  "snapshot_source_files": 166,
+  "current_source_files": 169,
+  "original_snapshot_files_unchanged": true,
+  "added_after_snapshot": {
+    "analysis/v3/audit_manuscript_numbers.py": "8a3a8e3e85ccc024f2f84df5b6e1ac0b7fa6e898666274e7371142e27778cb06",
+    "analysis/v3/map_manuscript_numbers.py": "4470a568c3e37a110be9700e141657bba6ef1f9f0fa1fdf3a6dc000193a7fc95",
+    "analysis/v3/package_deliverables.py": "e20752e26e6dd1092a24cd36cf21141b04ac89b56d031fa9732d7bcf0bede02a"
+  },
+  "removed_after_snapshot": {},
+  "changed_after_snapshot": {},
+  "note": "完整复现对应运行前独立快照。随后新增稿件审核和第三版打包脚本，分别列明SHA；不属于make all科学分析入口。原166份实现与固定输入均与快照一致；旧analysis/package_deliverables.py已恢复原字节。本补查不改原快照、数值或统计比较。"
+}

@@ -1,0 +1,116 @@
+comparison,penalty,gain,systems,scope,ci95,evaluable,interval_excludes_zero_positive,reason
+A0-A1,selected,-0.2589093323950243,625,"fixed OOF, family cluster resampling, no refitting","[-0.40937199572774297, -0.11694326218854738]",True,False,
+A1-A0,selected,0.2589093323950243,625,"fixed OOF, family cluster resampling, no refitting","[0.11694326218854721, 0.40937199572774274]",True,True,
+A2-A0,selected,2.373667885270935,625,"fixed OOF, family cluster resampling, no refitting","[1.9797944350590657, 2.7578120769200076]",True,True,
+A2-A1,selected,2.1147585528759105,625,"fixed OOF, family cluster resampling, no refitting","[1.7189298412140857, 2.499293596195185]",True,True,
+A3r-A0,selected,3.5348809747594903,625,"fixed OOF, family cluster resampling, no refitting","[3.2132251153113573, 3.814370745169825]",True,True,
+A3r-A1,selected,3.2759716423644654,625,"fixed OOF, family cluster resampling, no refitting","[2.9523985461332685, 3.546785001163942]",True,True,
+A3s-A0,selected,0.8420796284381161,625,"fixed OOF, family cluster resampling, no refitting","[0.527959617045442, 1.1492822108582008]",True,True,
+A3s-A1,selected,0.583170296043092,625,"fixed OOF, family cluster resampling, no refitting","[0.33995673881813415, 0.8263192965664606]",True,True,
+A4-A0,selected,2.285520853766692,625,"fixed OOF, family cluster resampling, no refitting","[1.8294705847228614, 2.7074541280304545]",True,True,
+A4-A1,selected,2.026611521371668,625,"fixed OOF, family cluster resampling, no refitting","[1.5752857787715566, 2.4494049239376454]",True,True,
+A5r-A0,selected,3.8358423327865774,625,"fixed OOF, family cluster resampling, no refitting","[3.394870038502995, 4.1880662146261365]",True,True,
+A5r-A1,selected,3.576933000391553,625,"fixed OOF, family cluster resampling, no refitting","[3.144026743993259, 3.9381015060834375]",True,True,
+A5s-A0,selected,0.2338402437374602,625,"fixed OOF, family cluster resampling, no refitting","[0.0883750848718179, 0.3852061395612894]",True,True,
+A5s-A1,selected,-0.02506908865756406,625,"fixed OOF, family cluster resampling, no refitting","[-0.05308218684971377, 0.002623118631152683]",True,False,
+A6-A0,selected,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A6-A1,selected,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A7-A0,selected,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A7-A1,selected,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A3r-A2,selected,1.161213089488555,625,"fixed OOF, family cluster resampling, no refitting","[0.7806761618433261, 1.5435137976242344]",True,True,
+A3s-A2,selected,-1.5315882568328187,625,"fixed OOF, family cluster resampling, no refitting","[-2.0966050594936134, -0.9609214430868763]",True,False,
+A5r-A4,selected,1.5503214790198854,625,"fixed OOF, family cluster resampling, no refitting","[1.045782468152424, 2.0485324550883797]",True,True,
+A5s-A4,selected,-2.051680610029232,625,"fixed OOF, family cluster resampling, no refitting","[-2.470677365699767, -1.6157390918193308]",True,False,
+A7-BASE,selected,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A0-A1,fixed_0,-0.2589093323950243,625,"fixed OOF, family cluster resampling, no refitting","[-0.40937199572774297, -0.11694326218854738]",True,False,
+A1-A0,fixed_0,0.2589093323950243,625,"fixed OOF, family cluster resampling, no refitting","[0.11694326218854721, 0.40937199572774274]",True,True,
+A2-A0,fixed_0,2.368533396316928,625,"fixed OOF, family cluster resampling, no refitting","[1.967823244540016, 2.759476985195974]",True,True,
+A2-A1,fixed_0,2.1096240639219035,625,"fixed OOF, family cluster resampling, no refitting","[1.7057819207697316, 2.5006378586775533]",True,True,
+A3r-A0,fixed_0,3.5308907974538126,625,"fixed OOF, family cluster resampling, no refitting","[3.190545866070287, 3.822880341924573]",True,True,
+A3r-A1,fixed_0,3.271981465058788,625,"fixed OOF, family cluster resampling, no refitting","[2.9310051938487094, 3.5564874002728115]",True,True,
+A3s-A0,fixed_0,0.8451928199360418,625,"fixed OOF, family cluster resampling, no refitting","[0.5291870472458801, 1.1552147869201135]",True,True,
+A3s-A1,fixed_0,0.5862834875410176,625,"fixed OOF, family cluster resampling, no refitting","[0.34547376700777316, 0.8272766732557506]",True,True,
+A4-A0,fixed_0,2.2786910622683583,625,"fixed OOF, family cluster resampling, no refitting","[1.7963336702797967, 2.7284062663588164]",True,True,
+A4-A1,fixed_0,2.019781729873334,625,"fixed OOF, family cluster resampling, no refitting","[1.5391802015913238, 2.470264384203749]",True,True,
+A5r-A0,fixed_0,3.8522678238996786,625,"fixed OOF, family cluster resampling, no refitting","[3.366331853207328, 4.237898063096503]",True,True,
+A5r-A1,fixed_0,3.593358491504654,625,"fixed OOF, family cluster resampling, no refitting","[3.1126209004102035, 3.9900563623064143]",True,True,
+A5s-A0,fixed_0,0.2338402437374602,625,"fixed OOF, family cluster resampling, no refitting","[0.0883750848718179, 0.3852061395612894]",True,True,
+A5s-A1,fixed_0,-0.02506908865756406,625,"fixed OOF, family cluster resampling, no refitting","[-0.05308218684971377, 0.002623118631152683]",True,False,
+A6-A0,fixed_0,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A6-A1,fixed_0,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A7-A0,fixed_0,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A7-A1,fixed_0,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A3r-A2,fixed_0,1.162357401136885,625,"fixed OOF, family cluster resampling, no refitting","[0.7666220599213872, 1.5600670039217182]",True,True,
+A3s-A2,fixed_0,-1.5233405763808863,625,"fixed OOF, family cluster resampling, no refitting","[-2.0880747129396284, -0.9508351799417282]",True,False,
+A5r-A4,fixed_0,1.5735767616313203,625,"fixed OOF, family cluster resampling, no refitting","[1.006049808099054, 2.1143851274824823]",True,True,
+A5s-A4,fixed_0,-2.044850818530898,625,"fixed OOF, family cluster resampling, no refitting","[-2.4888519364154784, -1.5741413493694048]",True,False,
+A7-BASE,fixed_0,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A0-A1,fixed_0.01,-0.24029479805864767,625,"fixed OOF, family cluster resampling, no refitting","[-0.364359579074514, -0.12258450937162646]",True,False,
+A1-A0,fixed_0.01,0.24029479805864767,625,"fixed OOF, family cluster resampling, no refitting","[0.1225845093716263, 0.36435957907451394]",True,True,
+A2-A0,fixed_0.01,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A2-A1,fixed_0.01,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A3r-A0,fixed_0.01,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A3r-A1,fixed_0.01,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A3s-A0,fixed_0.01,0.8439137353604697,625,"fixed OOF, family cluster resampling, no refitting","[0.5274730098005729, 1.1517826809248697]",True,True,
+A3s-A1,fixed_0.01,0.6036189373018219,625,"fixed OOF, family cluster resampling, no refitting","[0.3551079077753255, 0.8551974459178847]",True,True,
+A4-A0,fixed_0.01,2.285520853766692,625,"fixed OOF, family cluster resampling, no refitting","[1.8294705847228614, 2.7074541280304545]",True,True,
+A4-A1,fixed_0.01,2.0452260557080444,625,"fixed OOF, family cluster resampling, no refitting","[1.605905675392872, 2.4609376041082904]",True,True,
+A5r-A0,fixed_0.01,3.793828986905014,625,"fixed OOF, family cluster resampling, no refitting","[3.4467694279973533, 4.082239697641324]",True,True,
+A5r-A1,fixed_0.01,3.5535341888463665,625,"fixed OOF, family cluster resampling, no refitting","[3.2256581025280124, 3.8269747869971806]",True,True,
+A5s-A0,fixed_0.01,0.2150322208106754,625,"fixed OOF, family cluster resampling, no refitting","[0.08442688946743347, 0.3455698667035275]",True,True,
+A5s-A1,fixed_0.01,-0.025262577247972245,625,"fixed OOF, family cluster resampling, no refitting","[-0.0547032159328579, 0.006076538838558064]",True,False,
+A6-A0,fixed_0.01,3.473036213035048,625,"fixed OOF, family cluster resampling, no refitting","[3.174044987758842, 3.7243703005290634]",True,True,
+A6-A1,fixed_0.01,3.2327414149764,625,"fixed OOF, family cluster resampling, no refitting","[2.9663491487984888, 3.4551567575323427]",True,True,
+A7-A0,fixed_0.01,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A7-A1,fixed_0.01,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A3r-A2,fixed_0.01,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A3s-A2,fixed_0.01,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A5r-A4,fixed_0.01,1.508308133138322,625,"fixed OOF, family cluster resampling, no refitting","[1.0582336205035727, 1.9615714016776238]",True,True,
+A5s-A4,fixed_0.01,-2.070488632956017,625,"fixed OOF, family cluster resampling, no refitting","[-2.4874571828790155, -1.6329572421888703]",True,False,
+A7-BASE,fixed_0.01,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A0-A1,fixed_0.1,-0.12613483498446573,625,"fixed OOF, family cluster resampling, no refitting","[-0.220582862115839, -0.022989724506999112]",True,False,
+A1-A0,fixed_0.1,0.12613483498446573,625,"fixed OOF, family cluster resampling, no refitting","[0.022989724506999057, 0.22058286211583897]",True,True,
+A2-A0,fixed_0.1,2.376281018519085,625,"fixed OOF, family cluster resampling, no refitting","[1.9839071084045412, 2.7601268688501266]",True,True,
+A2-A1,fixed_0.1,2.2501461835346195,625,"fixed OOF, family cluster resampling, no refitting","[1.882448708668337, 2.6070384949904697]",True,True,
+A3r-A0,fixed_0.1,3.538989899077308,625,"fixed OOF, family cluster resampling, no refitting","[3.226503946978526, 3.808167405845327]",True,True,
+A3r-A1,fixed_0.1,3.412855064092842,625,"fixed OOF, family cluster resampling, no refitting","[3.149770751469367, 3.620433240199865]",True,True,
+A3s-A0,fixed_0.1,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A3s-A1,fixed_0.1,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A4-A0,fixed_0.1,2.154781223629512,625,"fixed OOF, family cluster resampling, no refitting","[1.8155484314274462, 2.471143766132593]",True,True,
+A4-A1,fixed_0.1,2.028646388645046,625,"fixed OOF, family cluster resampling, no refitting","[1.7214059485715538, 2.313972740384819]",True,True,
+A5r-A0,fixed_0.1,3.2813475653176583,625,"fixed OOF, family cluster resampling, no refitting","[3.0421478806219273, 3.493948232176264]",True,True,
+A5r-A1,fixed_0.1,3.155212730333193,625,"fixed OOF, family cluster resampling, no refitting","[2.973660633747881, 3.3003202932006017]",True,True,
+A5s-A0,fixed_0.1,0.10761786712582662,625,"fixed OOF, family cluster resampling, no refitting","[-0.009693203705048427, 0.22093658934364935]",True,False,
+A5s-A1,fixed_0.1,-0.018516967858639138,625,"fixed OOF, family cluster resampling, no refitting","[-0.06157645162992912, 0.025848751229706507]",True,False,
+A6-A0,fixed_0.1,2.965010682864564,625,"fixed OOF, family cluster resampling, no refitting","[2.738876163478405, 3.167454644325795]",True,True,
+A6-A1,fixed_0.1,2.838875847880099,625,"fixed OOF, family cluster resampling, no refitting","[2.6870191423809064, 2.9634809456335542]",True,True,
+A7-A0,fixed_0.1,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A7-A1,fixed_0.1,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A3r-A2,fixed_0.1,1.1627088805582229,625,"fixed OOF, family cluster resampling, no refitting","[0.7823021038789086, 1.5405931581021959]",True,True,
+A3s-A2,fixed_0.1,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A5r-A4,fixed_0.1,1.1265663416881468,625,"fixed OOF, family cluster resampling, no refitting","[0.8296001316143979, 1.4341943562007629]",True,True,
+A5s-A4,fixed_0.1,-2.0471633565036855,625,"fixed OOF, family cluster resampling, no refitting","[-2.350271096338885, -1.7220552808992526]",True,False,
+A7-BASE,fixed_0.1,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A0-A1,fixed_1,-0.078798179655125,625,"fixed OOF, family cluster resampling, no refitting","[-0.14417179505919533, -0.006536099938544955]",True,False,
+A1-A0,fixed_1,0.078798179655125,625,"fixed OOF, family cluster resampling, no refitting","[0.006536099938544936, 0.1441717950591953]",True,True,
+A2-A0,fixed_1,2.295614937849755,625,"fixed OOF, family cluster resampling, no refitting","[1.9684038770984684, 2.614723382426772]",True,True,
+A2-A1,fixed_1,2.2168167581946294,625,"fixed OOF, family cluster resampling, no refitting","[1.9054339666706717, 2.519123970679911]",True,True,
+A3r-A0,fixed_1,3.3773209046757406,625,"fixed OOF, family cluster resampling, no refitting","[3.142155579404909, 3.577939569747481]",True,True,
+A3r-A1,fixed_1,3.2985227250206157,625,"fixed OOF, family cluster resampling, no refitting","[3.101125676368603, 3.455532104060875]",True,True,
+A3s-A0,fixed_1,0.7659732589111052,625,"fixed OOF, family cluster resampling, no refitting","[0.5227129209268337, 1.0084180423311828]",True,True,
+A3s-A1,fixed_1,0.6871750792559802,625,"fixed OOF, family cluster resampling, no refitting","[0.45999714425581645, 0.9153804470828618]",True,True,
+A4-A0,fixed_1,1.259264852371194,625,"fixed OOF, family cluster resampling, no refitting","[1.0659762067856158, 1.433535863195889]",True,True,
+A4-A1,fixed_1,1.180466672716069,625,"fixed OOF, family cluster resampling, no refitting","[1.042635821381777, 1.3093277007048794]",True,True,
+A5r-A0,fixed_1,1.7536965193483178,625,"fixed OOF, family cluster resampling, no refitting","[1.576971032748627, 1.913055711948675]",True,True,
+A5r-A1,fixed_1,1.6748983396931927,625,"fixed OOF, family cluster resampling, no refitting","[1.5664642110260847, 1.7738486345678954]",True,True,
+A5s-A0,fixed_1,0.07347200350975122,625,"fixed OOF, family cluster resampling, no refitting","[-0.014138030313609091, 0.15733453013737136]",True,False,
+A5s-A1,fixed_1,-0.0053261761453738095,625,"fixed OOF, family cluster resampling, no refitting","[-0.040979300429340705, 0.03066179192829446]",True,False,
+A6-A0,fixed_1,1.4900663603286848,625,"fixed OOF, family cluster resampling, no refitting","[1.3169318032573152, 1.6490120673287885]",True,True,
+A6-A1,fixed_1,1.4112681806735599,625,"fixed OOF, family cluster resampling, no refitting","[1.3064076917124012, 1.5063258556805175]",True,True,
+A7-A0,fixed_1,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A7-A1,fixed_1,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器
+A3r-A2,fixed_1,1.081705966825986,625,"fixed OOF, family cluster resampling, no refitting","[0.7632517451526578, 1.399198543557523]",True,True,
+A3s-A2,fixed_1,-1.5296416789386493,625,"fixed OOF, family cluster resampling, no refitting","[-2.0014144734163404, -1.044025125599413]",True,False,
+A5r-A4,fixed_1,0.4944316669771238,625,"fixed OOF, family cluster resampling, no refitting","[0.38372176864449625, 0.6082049812506375]",True,True,
+A5s-A4,fixed_1,-1.1857928488614426,625,"fixed OOF, family cluster resampling, no refitting","[-1.3231568938509124, -1.0347687255311349]",True,False,
+A7-BASE,fixed_1,,625,"fixed OOF, family cluster resampling, no refitting",,False,,预定测试样本存在非收敛拟合；未删除系统或改换估计器

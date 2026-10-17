@@ -1,6 +1,6 @@
 # 正式论文的补充说明与复现入口
 
-本文件保存与研究复现有关、但不属于论文正文的工程记录。正式稿为`outputs/论文_中文正式稿.md`；此前工作稿、论坛稿及已审核数值原样保留。正式稿只调整学术表达与引用格式，不重新估计模型、不改变数据与结论。
+本文件保存与研究复现有关、但不属于论文正文的工程记录。正式稿为`outputs/论文_中文正式稿.md`；此前工作稿、论坛稿及已审核数值原样保留。本轮在已有结果上扩展理论解释，按用户要求将正文调整到约1万—1.5万汉字、讨论约占一半；方法与结果区块保持原字节，不重新估计模型。理论解释是本次提出的综合框架，其依据、竞争解释与预测见[回溯台账](discussion_expansion_20261016/research_ledger.md)。
 
 ## 一、数据版本与时间信息
 
@@ -24,7 +24,7 @@ S2写于原冻结结果、S1和评审核查结果已知之后，属于探索性�
 
 ## 四、引用版本与页码
 
-正式稿采用著者—出版年制，文末书目按GB/T 7714—2015整理。具有核实印刷页的重点命题保留页码上标；对作者稿或在线先行版本的转述，正文只列作者年份，不把作者稿页码当作正式期刊页码。全部实际PDF页序、作者稿自标页及原文定位仍保存于[逐处证据台账](revision_citation_check.md)及正式稿专属核对记录。
+正式稿采用著者—出版年制，文末英文书目按用户提供模板示例整理（此前GB/T格式保留于格式前快照）。具有核实印刷页的重点命题保留页码上标；对作者稿或在线先行版本的转述，正文只列作者年份，不把作者稿页码当作正式期刊页码。全部实际PDF页序、作者稿自标页及原文定位仍保存于[逐处证据台账](revision_citation_check.md)及正式稿专属核对记录。
 
 例如Kemp等2018、Carr等2020、Xu等2020、Brochhagen与Boleda2022使用的作者稿页码，以及Rácz等2020所据Early View页码，均在补充证据中注明版本。正文删除版本标签与转述页码，并不改变实际阅读来源。引用42项完整全文来源，A02、A05、C08和未取得全文的Murdock1968继续排除。
 
@@ -33,7 +33,8 @@ S2写于原冻结结果、S1和评审核查结果已知之后，属于探索性�
 正式稿的Markdown、Word、PDF及TXT采用一致名称。导出命令为：
 
 ```bash
-python analysis/export_forum_documents.py --input outputs/论文_中文正式稿.md --name 论文_中文正式稿 --abstract-name 正式论文_摘要 --page-numbers
+python analysis/export_forum_documents.py --input outputs/论文_中文正式稿.md --name 论文_中文正式稿 --abstract-name 正式论文_摘要 --page-numbers --format-profile notes/format/中文模板_格式规则.json
+python analysis/audit_revision_artifacts.py --input outputs/论文_中文正式稿.md --name 论文_中文正式稿 --abstract-name 正式论文_摘要 --output notes/formal_artifact_check.json --body-han-min 10000 --body-han-max 15000 --discussion-min-share 0.45
 ```
 
-数字和引文核对为正式稿另立记录，不覆盖论坛稿的781处历史核查。引用格式调整与正文重编后的实际检查结果，见正式稿专属核验文件。
+数字和引文核对为正式稿另立记录，不覆盖论坛稿的781处历史核查。引用格式调整与正文重编后的实际检查结果，见正式稿专属核验文件。字体、行距、模板未涵盖项及PDF预览的字体替代说明见[模板应用说明](format/中文模板_应用说明.md)。

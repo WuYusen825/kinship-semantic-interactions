@@ -71,6 +71,9 @@ def main():
     parser.add_argument('--name', default=NAME)
     parser.add_argument('--abstract-name', default='中文摘要_提交用_v2')
     parser.add_argument('--output', default='notes/revision_artifact_check.json')
+    parser.add_argument('--body-han-min', type=int, default=5400)
+    parser.add_argument('--body-han-max', type=int, default=6600)
+    parser.add_argument('--discussion-min-share', type=float, default=0)
     args = parser.parse_args()
     source = (ROOT/args.input).resolve()
     destination = source.parent
@@ -89,7 +92,10 @@ def main():
     ref_lines = [s for s in refs.splitlines() if s.strip()]
     figures = len(re.findall(r'^!\[', body, re.M))
     tables = len(re.findall(r'^\|\s*:?-{3,}', body, re.M))
-    assert 5400 <= han(body) <= 6600, han(body)
+    assert args.body_han_min <= han(body) <= args.body_han_max, han(body)
+    discussion = body.split('## 五、讨论', 1)[1].split('## 六、结论', 1)[0]
+    discussion_han = han('## 五、讨论' + discussion)
+    assert discussion_han / han(body) >= args.discussion_min_share
     assert 200 <= han(abstract) <= 300, han(abstract)
     assert figures <= 2 and tables <= 4
     with tempfile.TemporaryDirectory(prefix='kinship-v2-count-') as tmp:
@@ -135,6 +141,9 @@ def main():
         'scope': '正文为第一节起至结论末；含节标题、表格、图题；排除摘要、数据代码说明、参考文献',
         'body_han_with_tables_captions_headings': han(body),
         'body_prose_han_excluding_tables_captions_headings': han(prose),
+        'body_han_required_range': [args.body_han_min, args.body_han_max],
+        'discussion_han': discussion_han,
+        'discussion_share_of_body': discussion_han / han(body),
         'abstract_han': han(abstract), 'references': len(ref_lines),
         'figures': figures, 'tables': tables,
         'word_count_method': 'LibreOffice打开DOCX后转ODT读取刷新document-statistic；全稿统计写回DOCX的Word扩展属性。环境无Microsoft Word，未声称运行其专有计数器。',

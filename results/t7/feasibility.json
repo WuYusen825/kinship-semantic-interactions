@@ -1,0 +1,1381 @@
+{
+  "gate": {
+    "T0_passed": true,
+    "baseline_result_sha256": "97c7d032686a3f093499689582dc8e23c5b84c7a198012aa2c76386d3799e1c6",
+    "baseline_tag_commit": "49bc16c52af0c1467c9db366e422e83aa18c7f14",
+    "plan_commit": "5e31d20c310920ffbbc9b0bfd84b720210895998",
+    "plan_sha256": "a5c919605d384850d0ff237dd4ee70c2db61ef814d9918ddb5900d8cced133f2",
+    "plan_commit_time": "2026-10-16T11:05:38Z"
+  },
+  "trees": 246,
+  "metadata_trees": 246,
+  "branch_lengths": 13288,
+  "unique_branch_lengths": [
+    1.0
+  ],
+  "branch_length_units": {
+    "": 246
+  },
+  "strict_systems": 625,
+  "strict_families": 108,
+  "state_coarsening": "conj_all × k bins [1–2,3–4,5–8], at most 6 states",
+  "state_counts": {
+    "合取_3–4": 323,
+    "合取_1–2": 214,
+    "合取_5–8": 66,
+    "非合取_3–4": 10,
+    "非合取_1–2": 7,
+    "非合取_5–8": 5
+  },
+  "coverage": [
+    {
+      "family_group": "afro1255",
+      "family_name": "Afro-Asiatic",
+      "strict_systems": 4,
+      "matched_tree_nodes": 3,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 3,
+        "合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "algi1248",
+      "family_name": "Algic",
+      "strict_systems": 26,
+      "matched_tree_nodes": 20,
+      "matched_internal_nodes": 3,
+      "nonconj_systems": 1,
+      "states": {
+        "合取_3–4": 21,
+        "合取_5–8": 4,
+        "非合取_5–8": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "anga1289",
+      "family_name": "Angan",
+      "strict_systems": 4,
+      "matched_tree_nodes": 4,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 4
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "anim1240",
+      "family_name": "Anim",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "araw1281",
+      "family_name": "Arawakan",
+      "strict_systems": 4,
+      "matched_tree_nodes": 4,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_1–2": 2,
+        "合取_3–4": 2
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "atha1245",
+      "family_name": "Athabaskan-Eyak-Tlingit",
+      "strict_systems": 10,
+      "matched_tree_nodes": 10,
+      "matched_internal_nodes": 2,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 8,
+        "合取_1–2": 2
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "atla1278",
+      "family_name": "Atlantic-Congo",
+      "strict_systems": 51,
+      "matched_tree_nodes": 51,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 2,
+      "states": {
+        "合取_1–2": 25,
+        "合取_3–4": 20,
+        "合取_5–8": 4,
+        "非合取_3–4": 1,
+        "非合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "aust1305",
+      "family_name": "Austroasiatic",
+      "strict_systems": 3,
+      "matched_tree_nodes": 3,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 3
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "aust1307",
+      "family_name": "Austronesian",
+      "strict_systems": 208,
+      "matched_tree_nodes": 175,
+      "matched_internal_nodes": 5,
+      "nonconj_systems": 9,
+      "states": {
+        "合取_1–2": 111,
+        "合取_3–4": 80,
+        "合取_5–8": 8,
+        "非合取_3–4": 5,
+        "非合取_1–2": 4
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "ayma1253",
+      "family_name": "Aymaran",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "barb1265",
+      "family_name": "Barbacoan",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "basq1248",
+      "family_name": "Basque",
+      "strict_systems": 1,
+      "matched_tree_nodes": 0,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_5–8": 1
+      },
+      "tree_available": false
+    },
+    {
+      "family_group": "bord1247",
+      "family_name": "Border",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_5–8": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "bosa1245",
+      "family_name": "Bosavi",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "bula1259",
+      "family_name": "Bulaka River",
+      "strict_systems": 2,
+      "matched_tree_nodes": 2,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_1–2": 2
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "cadd1255",
+      "family_name": "Caddoan",
+      "strict_systems": 2,
+      "matched_tree_nodes": 2,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 1,
+      "states": {
+        "合取_3–4": 1,
+        "非合取_5–8": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "cari1283",
+      "family_name": "Cariban",
+      "strict_systems": 3,
+      "matched_tree_nodes": 3,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_5–8": 1,
+        "合取_3–4": 1,
+        "合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "chib1249",
+      "family_name": "Chibchan",
+      "strict_systems": 3,
+      "matched_tree_nodes": 3,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 2,
+        "合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "choc1280",
+      "family_name": "Chocoan",
+      "strict_systems": 2,
+      "matched_tree_nodes": 2,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 2
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "chon1288",
+      "family_name": "Chonan",
+      "strict_systems": 2,
+      "matched_tree_nodes": 2,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1,
+        "合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "chum1262",
+      "family_name": "Chumashan",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "coch1271",
+      "family_name": "Cochimi-Yuman",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "drav1251",
+      "family_name": "Dravidian",
+      "strict_systems": 6,
+      "matched_tree_nodes": 6,
+      "matched_internal_nodes": 1,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 5,
+        "合取_5–8": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "east1459",
+      "family_name": "East Bird's Head",
+      "strict_systems": 2,
+      "matched_tree_nodes": 2,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_5–8": 1,
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "east2499",
+      "family_name": "East Kutubu",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "east2503",
+      "family_name": "Eastern Trans-Fly",
+      "strict_systems": 2,
+      "matched_tree_nodes": 2,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_1–2": 1,
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "eski1264",
+      "family_name": "Eskimo-Aleut",
+      "strict_systems": 4,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_5–8": 3,
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "guai1249",
+      "family_name": "Guaicuruan",
+      "strict_systems": 2,
+      "matched_tree_nodes": 2,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 2
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "gunw1250",
+      "family_name": "Gunwinyguan",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 1,
+      "states": {
+        "非合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "haid1248",
+      "family_name": "Haida",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "indo1319",
+      "family_name": "Indo-European",
+      "strict_systems": 58,
+      "matched_tree_nodes": 56,
+      "matched_internal_nodes": 3,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_1–2": 41,
+        "合取_3–4": 16,
+        "合取_5–8": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "iroq1247",
+      "family_name": "Iroquoian",
+      "strict_systems": 9,
+      "matched_tree_nodes": 9,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 7,
+        "合取_5–8": 2
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "isolate:bilu1245",
+      "family_name": "Bilua",
+      "strict_systems": 1,
+      "matched_tree_nodes": 0,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_1–2": 1
+      },
+      "tree_available": false
+    },
+    {
+      "family_group": "isolate:duna1248",
+      "family_name": "Duna",
+      "strict_systems": 1,
+      "matched_tree_nodes": 0,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": false
+    },
+    {
+      "family_group": "isolate:iton1250",
+      "family_name": "Itonama",
+      "strict_systems": 1,
+      "matched_tree_nodes": 0,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_1–2": 1
+      },
+      "tree_available": false
+    },
+    {
+      "family_group": "isolate:karo1304",
+      "family_name": "Karuk",
+      "strict_systems": 1,
+      "matched_tree_nodes": 0,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": false
+    },
+    {
+      "family_group": "isolate:kute1249",
+      "family_name": "Kutenai",
+      "strict_systems": 1,
+      "matched_tree_nodes": 0,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_5–8": 1
+      },
+      "tree_available": false
+    },
+    {
+      "family_group": "isolate:mose1249",
+      "family_name": "Mosetén-Chimané",
+      "strict_systems": 1,
+      "matched_tree_nodes": 0,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": false
+    },
+    {
+      "family_group": "isolate:movi1243",
+      "family_name": "Movima",
+      "strict_systems": 1,
+      "matched_tree_nodes": 0,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": false
+    },
+    {
+      "family_group": "isolate:paez1247",
+      "family_name": "Páez",
+      "strict_systems": 1,
+      "matched_tree_nodes": 0,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_1–2": 1
+      },
+      "tree_available": false
+    },
+    {
+      "family_group": "isolate:puel1244",
+      "family_name": "Puelche",
+      "strict_systems": 1,
+      "matched_tree_nodes": 0,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": false
+    },
+    {
+      "family_group": "isolate:puin1248",
+      "family_name": "Puinave",
+      "strict_systems": 1,
+      "matched_tree_nodes": 0,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": false
+    },
+    {
+      "family_group": "isolate:pume1238",
+      "family_name": "Pumé",
+      "strict_systems": 1,
+      "matched_tree_nodes": 0,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": false
+    },
+    {
+      "family_group": "isolate:savo1255",
+      "family_name": "Savosavo",
+      "strict_systems": 1,
+      "matched_tree_nodes": 0,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": false
+    },
+    {
+      "family_group": "isolate:touo1238",
+      "family_name": "Touo",
+      "strict_systems": 1,
+      "matched_tree_nodes": 0,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_1–2": 1
+      },
+      "tree_available": false
+    },
+    {
+      "family_group": "isolate:trum1247",
+      "family_name": "Trumai",
+      "strict_systems": 1,
+      "matched_tree_nodes": 0,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": false
+    },
+    {
+      "family_group": "isolate:yama1264",
+      "family_name": "Yámana",
+      "strict_systems": 1,
+      "matched_tree_nodes": 0,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": false
+    },
+    {
+      "family_group": "isolate:yura1255",
+      "family_name": "Yuracaré",
+      "strict_systems": 1,
+      "matched_tree_nodes": 0,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_5–8": 1
+      },
+      "tree_available": false
+    },
+    {
+      "family_group": "isolate:yuwa1244",
+      "family_name": "Hoti",
+      "strict_systems": 1,
+      "matched_tree_nodes": 0,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": false
+    },
+    {
+      "family_group": "japo1237",
+      "family_name": "Japonic",
+      "strict_systems": 2,
+      "matched_tree_nodes": 2,
+      "matched_internal_nodes": 1,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 2
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "jiva1245",
+      "family_name": "Chicham",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "kaur1274",
+      "family_name": "Kaure-Kosare",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "kawe1237",
+      "family_name": "Kawesqar",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "kiow1265",
+      "family_name": "Kiowa-Tanoan",
+      "strict_systems": 1,
+      "matched_tree_nodes": 0,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "kolo1268",
+      "family_name": "Kolopom",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "kore1284",
+      "family_name": "Koreanic",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_5–8": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "kuni1270",
+      "family_name": "Kunimaipan",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "kwer1242",
+      "family_name": "Greater Kwerba",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "kxaa1236",
+      "family_name": "Kxa",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "lake1255",
+      "family_name": "Lakes Plain",
+      "strict_systems": 2,
+      "matched_tree_nodes": 2,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 2
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "maid1262",
+      "family_name": "Maiduan",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "mair1253",
+      "family_name": "Mairasic",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "manu1261",
+      "family_name": "Manubaran",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "maya1287",
+      "family_name": "Mayan",
+      "strict_systems": 2,
+      "matched_tree_nodes": 2,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 2
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "mayb1237",
+      "family_name": "Maybratic",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "mirn1241",
+      "family_name": "Mirndi",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "mong1349",
+      "family_name": "Mongolic-Khitan",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 1,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "monu1249",
+      "family_name": "Bogia",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_5–8": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "more1255",
+      "family_name": "Yam",
+      "strict_systems": 4,
+      "matched_tree_nodes": 2,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_1–2": 3,
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "musk1252",
+      "family_name": "Muskogean",
+      "strict_systems": 3,
+      "matched_tree_nodes": 3,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_5–8": 3
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "nakh1245",
+      "family_name": "Nakh-Daghestanian",
+      "strict_systems": 18,
+      "matched_tree_nodes": 10,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 18
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "nimb1257",
+      "family_name": "Nimboranic",
+      "strict_systems": 2,
+      "matched_tree_nodes": 2,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 2
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "nort2923",
+      "family_name": "North Halmahera",
+      "strict_systems": 3,
+      "matched_tree_nodes": 3,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 2,
+        "合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "nort2933",
+      "family_name": "North Bougainville",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "nubi1251",
+      "family_name": "Nubian",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "nucl1708",
+      "family_name": "Nuclear Torricelli",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "nucl1709",
+      "family_name": "Nuclear Trans New Guinea",
+      "strict_systems": 25,
+      "matched_tree_nodes": 24,
+      "matched_internal_nodes": 1,
+      "nonconj_systems": 2,
+      "states": {
+        "合取_3–4": 17,
+        "合取_5–8": 4,
+        "非合取_5–8": 2,
+        "合取_1–2": 2
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "nyul1248",
+      "family_name": "Nyulnyulan",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 1,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "paho1240",
+      "family_name": "Pahoturi",
+      "strict_systems": 2,
+      "matched_tree_nodes": 0,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1,
+        "合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "pama1250",
+      "family_name": "Pama-Nyungan",
+      "strict_systems": 25,
+      "matched_tree_nodes": 25,
+      "matched_internal_nodes": 2,
+      "nonconj_systems": 2,
+      "states": {
+        "合取_3–4": 22,
+        "非合取_3–4": 1,
+        "合取_1–2": 1,
+        "非合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "pano1259",
+      "family_name": "Pano-Tacanan",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "pomo1273",
+      "family_name": "Pomoan",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "ramu1234",
+      "family_name": "Ramu",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "sali1255",
+      "family_name": "Salishan",
+      "strict_systems": 2,
+      "matched_tree_nodes": 2,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_5–8": 2
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "sent1261",
+      "family_name": "Sentanic",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "sepi1257",
+      "family_name": "Sepik",
+      "strict_systems": 4,
+      "matched_tree_nodes": 4,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 2,
+        "合取_5–8": 1,
+        "合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "shas1238",
+      "family_name": "Shastan",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "sino1245",
+      "family_name": "Sino-Tibetan",
+      "strict_systems": 9,
+      "matched_tree_nodes": 8,
+      "matched_internal_nodes": 4,
+      "nonconj_systems": 1,
+      "states": {
+        "合取_5–8": 4,
+        "合取_3–4": 4,
+        "非合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "siou1252",
+      "family_name": "Siouan",
+      "strict_systems": 13,
+      "matched_tree_nodes": 10,
+      "matched_internal_nodes": 1,
+      "nonconj_systems": 2,
+      "states": {
+        "合取_5–8": 11,
+        "非合取_3–4": 1,
+        "非合取_5–8": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "sout2772",
+      "family_name": "Southern Daly",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "sout2948",
+      "family_name": "South Bougainville",
+      "strict_systems": 3,
+      "matched_tree_nodes": 3,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 2,
+        "合取_5–8": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "sout3418",
+      "family_name": "South Bird's Head",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 1,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "suki1244",
+      "family_name": "Suki-Gogodala",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "taik1256",
+      "family_name": "Tai-Kadai",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "tang1340",
+      "family_name": "Tangkic",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 1,
+      "states": {
+        "非合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "tebe1251",
+      "family_name": "Teberan",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "timo1261",
+      "family_name": "Timor-Alor-Pantar",
+      "strict_systems": 2,
+      "matched_tree_nodes": 2,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_1–2": 1,
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "toro1256",
+      "family_name": "Tor-Orya",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "tuca1253",
+      "family_name": "Tucanoan",
+      "strict_systems": 2,
+      "matched_tree_nodes": 2,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 2
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "tung1282",
+      "family_name": "Tungusic",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "tupi1275",
+      "family_name": "Tupian",
+      "strict_systems": 13,
+      "matched_tree_nodes": 12,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_5–8": 8,
+        "合取_3–4": 4,
+        "合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "turk1311",
+      "family_name": "Turkic",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "ural1272",
+      "family_name": "Uralic",
+      "strict_systems": 8,
+      "matched_tree_nodes": 7,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 7,
+        "合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "uruc1242",
+      "family_name": "Uru-Chipaya",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "utoa1244",
+      "family_name": "Uto-Aztecan",
+      "strict_systems": 8,
+      "matched_tree_nodes": 5,
+      "matched_internal_nodes": 1,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 7,
+        "合取_1–2": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "west2604",
+      "family_name": "West Bomberai",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_5–8": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "yawa1259",
+      "family_name": "Yawa-Saweru",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    },
+    {
+      "family_group": "yuki1242",
+      "family_name": "Yuki-Wappo",
+      "strict_systems": 1,
+      "matched_tree_nodes": 1,
+      "matched_internal_nodes": 0,
+      "nonconj_systems": 0,
+      "states": {
+        "合取_3–4": 1
+      },
+      "tree_available": true
+    }
+  ],
+  "Mk_fitted": false,
+  "decision": "本轮T7仅完成可行性：固定来源只有分类拓扑及人为单位枝长，未取得可匹配的可靠时间标定树；非合取状态稀少且多族缺少变化，不把可选Mk拟合作为第三版的历史机制证据。",
+  "approximations": [
+    "保留原拓扑单位枝长；只解释每分类边的相对速率",
+    "按采样叶数Grafen高度（ρ=.5/1/2）生成近似枝长；检验拓扑与取样敏感性"
+  ],
+  "followup": "先取得可追溯的时间标定语系树并解决内部节点语言与方言取样；之后另行固定根状态/速率参数、状态合并及比较ER/ARD/受限模型，未在本轮运行或报告AIC。"
+}

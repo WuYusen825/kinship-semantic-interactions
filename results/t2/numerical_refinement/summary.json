@@ -1,0 +1,1710 @@
+{
+  "appendix": {
+    "commit": "2b59811cb906b183b349c6e34ed316ee632b2644",
+    "sha256": "370ffb2534bf344de030d209689f2d8947ccb425d72acac896c80f5c48073e7a",
+    "status": "postdiagnostic_numerical_refinement_not_original_plan"
+  },
+  "settings": {
+    "strict_family_family": {
+      "initial_selected_models": {
+        "A0": {
+          "model": "A0",
+          "penalty": "selected",
+          "mean_log_probability": -8.328451066819362,
+          "derived_pair_logloss": 0.5474575705306409,
+          "evaluable": true
+        },
+        "A1": {
+          "model": "A1",
+          "penalty": "selected",
+          "mean_log_probability": -8.069541734424337,
+          "derived_pair_logloss": 0.5525766888848741,
+          "evaluable": true
+        },
+        "A2": {
+          "model": "A2",
+          "penalty": "selected",
+          "mean_log_probability": -5.954783181548424,
+          "derived_pair_logloss": 0.5144034694801523,
+          "evaluable": true
+        },
+        "A3r": {
+          "model": "A3r",
+          "penalty": "selected",
+          "mean_log_probability": -4.793570092059869,
+          "derived_pair_logloss": 0.48129327901371477,
+          "evaluable": true
+        },
+        "A3s": {
+          "model": "A3s",
+          "penalty": "selected",
+          "mean_log_probability": -7.486371438381243,
+          "derived_pair_logloss": 0.5526409671684578,
+          "evaluable": true
+        },
+        "A4": {
+          "model": "A4",
+          "penalty": "selected",
+          "mean_log_probability": -6.042930213052667,
+          "derived_pair_logloss": 0.5148746515078502,
+          "evaluable": true
+        },
+        "A5r": {
+          "model": "A5r",
+          "penalty": "selected",
+          "mean_log_probability": -4.492608734032783,
+          "derived_pair_logloss": 0.4731558859963611,
+          "evaluable": true
+        },
+        "A5s": {
+          "model": "A5s",
+          "penalty": "selected",
+          "mean_log_probability": -8.094610823081899,
+          "derived_pair_logloss": 0.5533221738833676,
+          "evaluable": true
+        },
+        "A6": {
+          "model": "A6",
+          "penalty": "selected",
+          "mean_log_probability": null,
+          "derived_pair_logloss": null,
+          "evaluable": false
+        },
+        "BASE": {
+          "model": "BASE",
+          "penalty": "selected",
+          "mean_log_probability": -4.492608734032783,
+          "derived_pair_logloss": 0.4731558859963611,
+          "evaluable": true
+        },
+        "A7": {
+          "model": "A7",
+          "penalty": "selected",
+          "mean_log_probability": null,
+          "derived_pair_logloss": null,
+          "evaluable": false
+        }
+      },
+      "refined_selected_models": {
+        "A0": {
+          "model": "A0",
+          "penalty": "selected",
+          "mean_log_probability": -8.328451066819362,
+          "derived_pair_logloss": 0.5474575705306409,
+          "evaluable": true
+        },
+        "A1": {
+          "model": "A1",
+          "penalty": "selected",
+          "mean_log_probability": -8.069541734424337,
+          "derived_pair_logloss": 0.5525766888848741,
+          "evaluable": true
+        },
+        "A2": {
+          "model": "A2",
+          "penalty": "selected",
+          "mean_log_probability": -5.954783181548424,
+          "derived_pair_logloss": 0.5144034694801523,
+          "evaluable": true
+        },
+        "A3r": {
+          "model": "A3r",
+          "penalty": "selected",
+          "mean_log_probability": -4.793570092059869,
+          "derived_pair_logloss": 0.48129327901371477,
+          "evaluable": true
+        },
+        "A3s": {
+          "model": "A3s",
+          "penalty": "selected",
+          "mean_log_probability": -7.485808144221409,
+          "derived_pair_logloss": 0.5523780140703145,
+          "evaluable": true
+        },
+        "A4": {
+          "model": "A4",
+          "penalty": "selected",
+          "mean_log_probability": -6.042930213052667,
+          "derived_pair_logloss": 0.5148746515078502,
+          "evaluable": true
+        },
+        "A5r": {
+          "model": "A5r",
+          "penalty": "selected",
+          "mean_log_probability": -4.476183242919682,
+          "derived_pair_logloss": 0.47182686943887114,
+          "evaluable": true
+        },
+        "A5s": {
+          "model": "A5s",
+          "penalty": "selected",
+          "mean_log_probability": -8.094610823081899,
+          "derived_pair_logloss": 0.5533221738833676,
+          "evaluable": true
+        },
+        "A6": {
+          "model": "A6",
+          "penalty": "selected",
+          "mean_log_probability": -4.849696093376724,
+          "derived_pair_logloss": 0.49882833260112885,
+          "evaluable": true
+        },
+        "BASE": {
+          "model": "BASE",
+          "penalty": "selected",
+          "mean_log_probability": -4.476183242919682,
+          "derived_pair_logloss": 0.47182686943887114,
+          "evaluable": true
+        },
+        "A7": {
+          "model": "A7",
+          "penalty": "selected",
+          "mean_log_probability": -4.459878173186152,
+          "derived_pair_logloss": 0.4708878054254499,
+          "evaluable": true
+        }
+      },
+      "initial_selected_comparisons": {
+        "A0-A1": {
+          "comparison": "A0-A1",
+          "penalty": "selected",
+          "gain": -0.2589093323950243,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            -0.40937199572774297,
+            -0.11694326218854738
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": false
+        },
+        "A1-A0": {
+          "comparison": "A1-A0",
+          "penalty": "selected",
+          "gain": 0.2589093323950243,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            0.11694326218854721,
+            0.40937199572774274
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A2-A0": {
+          "comparison": "A2-A0",
+          "penalty": "selected",
+          "gain": 2.373667885270935,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            1.9797944350590657,
+            2.7578120769200076
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A2-A1": {
+          "comparison": "A2-A1",
+          "penalty": "selected",
+          "gain": 2.1147585528759105,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            1.7189298412140857,
+            2.499293596195185
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A3r-A0": {
+          "comparison": "A3r-A0",
+          "penalty": "selected",
+          "gain": 3.5348809747594903,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            3.2132251153113573,
+            3.814370745169825
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A3r-A1": {
+          "comparison": "A3r-A1",
+          "penalty": "selected",
+          "gain": 3.2759716423644654,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            2.9523985461332685,
+            3.546785001163942
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A3s-A0": {
+          "comparison": "A3s-A0",
+          "penalty": "selected",
+          "gain": 0.8420796284381161,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            0.527959617045442,
+            1.1492822108582008
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A3s-A1": {
+          "comparison": "A3s-A1",
+          "penalty": "selected",
+          "gain": 0.583170296043092,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            0.33995673881813415,
+            0.8263192965664606
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A4-A0": {
+          "comparison": "A4-A0",
+          "penalty": "selected",
+          "gain": 2.285520853766692,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            1.8294705847228614,
+            2.7074541280304545
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A4-A1": {
+          "comparison": "A4-A1",
+          "penalty": "selected",
+          "gain": 2.026611521371668,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            1.5752857787715566,
+            2.4494049239376454
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A5r-A0": {
+          "comparison": "A5r-A0",
+          "penalty": "selected",
+          "gain": 3.8358423327865774,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            3.394870038502995,
+            4.1880662146261365
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A5r-A1": {
+          "comparison": "A5r-A1",
+          "penalty": "selected",
+          "gain": 3.576933000391553,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            3.144026743993259,
+            3.9381015060834375
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A5s-A0": {
+          "comparison": "A5s-A0",
+          "penalty": "selected",
+          "gain": 0.2338402437374602,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            0.0883750848718179,
+            0.3852061395612894
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A5s-A1": {
+          "comparison": "A5s-A1",
+          "penalty": "selected",
+          "gain": -0.02506908865756406,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            -0.05308218684971377,
+            0.002623118631152683
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": false
+        },
+        "A6-A0": {
+          "comparison": "A6-A0",
+          "penalty": "selected",
+          "gain": null,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": null,
+          "evaluable": false,
+          "reason": "预定测试样本存在非收敛拟合；未删除系统或改换估计器"
+        },
+        "A6-A1": {
+          "comparison": "A6-A1",
+          "penalty": "selected",
+          "gain": null,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": null,
+          "evaluable": false,
+          "reason": "预定测试样本存在非收敛拟合；未删除系统或改换估计器"
+        },
+        "A7-A0": {
+          "comparison": "A7-A0",
+          "penalty": "selected",
+          "gain": null,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": null,
+          "evaluable": false,
+          "reason": "预定测试样本存在非收敛拟合；未删除系统或改换估计器"
+        },
+        "A7-A1": {
+          "comparison": "A7-A1",
+          "penalty": "selected",
+          "gain": null,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": null,
+          "evaluable": false,
+          "reason": "预定测试样本存在非收敛拟合；未删除系统或改换估计器"
+        },
+        "A3r-A2": {
+          "comparison": "A3r-A2",
+          "penalty": "selected",
+          "gain": 1.161213089488555,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            0.7806761618433261,
+            1.5435137976242344
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A3s-A2": {
+          "comparison": "A3s-A2",
+          "penalty": "selected",
+          "gain": -1.5315882568328187,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            -2.0966050594936134,
+            -0.9609214430868763
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": false
+        },
+        "A5r-A4": {
+          "comparison": "A5r-A4",
+          "penalty": "selected",
+          "gain": 1.5503214790198854,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            1.045782468152424,
+            2.0485324550883797
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A5s-A4": {
+          "comparison": "A5s-A4",
+          "penalty": "selected",
+          "gain": -2.051680610029232,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            -2.470677365699767,
+            -1.6157390918193308
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": false
+        },
+        "A7-BASE": {
+          "comparison": "A7-BASE",
+          "penalty": "selected",
+          "gain": null,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": null,
+          "evaluable": false,
+          "reason": "预定测试样本存在非收敛拟合；未删除系统或改换估计器"
+        }
+      },
+      "refined_selected_comparisons": {
+        "A0-A1": {
+          "comparison": "A0-A1",
+          "penalty": "selected",
+          "gain": -0.2589093323950243,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            -0.40937199572774297,
+            -0.11694326218854738
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": false
+        },
+        "A1-A0": {
+          "comparison": "A1-A0",
+          "penalty": "selected",
+          "gain": 0.2589093323950243,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            0.11694326218854721,
+            0.40937199572774274
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A2-A0": {
+          "comparison": "A2-A0",
+          "penalty": "selected",
+          "gain": 2.373667885270935,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            1.9797944350590657,
+            2.7578120769200076
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A2-A1": {
+          "comparison": "A2-A1",
+          "penalty": "selected",
+          "gain": 2.1147585528759105,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            1.7189298412140857,
+            2.499293596195185
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A3r-A0": {
+          "comparison": "A3r-A0",
+          "penalty": "selected",
+          "gain": 3.5348809747594903,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            3.2132251153113573,
+            3.814370745169825
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A3r-A1": {
+          "comparison": "A3r-A1",
+          "penalty": "selected",
+          "gain": 3.2759716423644654,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            2.9523985461332685,
+            3.546785001163942
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A3s-A0": {
+          "comparison": "A3s-A0",
+          "penalty": "selected",
+          "gain": 0.8426429225979511,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            0.5260388879160641,
+            1.1504311058929397
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A3s-A1": {
+          "comparison": "A3s-A1",
+          "penalty": "selected",
+          "gain": 0.5837335902029269,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            0.3404637971901419,
+            0.8263859274589173
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A4-A0": {
+          "comparison": "A4-A0",
+          "penalty": "selected",
+          "gain": 2.285520853766692,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            1.8294705847228614,
+            2.7074541280304545
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A4-A1": {
+          "comparison": "A4-A1",
+          "penalty": "selected",
+          "gain": 2.026611521371668,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            1.5752857787715566,
+            2.4494049239376454
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A5r-A0": {
+          "comparison": "A5r-A0",
+          "penalty": "selected",
+          "gain": 3.8522678238996786,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            3.366331853207328,
+            4.237898063096503
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A5r-A1": {
+          "comparison": "A5r-A1",
+          "penalty": "selected",
+          "gain": 3.593358491504654,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            3.1126209004102035,
+            3.9900563623064143
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A5s-A0": {
+          "comparison": "A5s-A0",
+          "penalty": "selected",
+          "gain": 0.2338402437374602,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            0.0883750848718179,
+            0.3852061395612894
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A5s-A1": {
+          "comparison": "A5s-A1",
+          "penalty": "selected",
+          "gain": -0.02506908865756406,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            -0.05308218684971377,
+            0.002623118631152683
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": false
+        },
+        "A6-A0": {
+          "comparison": "A6-A0",
+          "penalty": "selected",
+          "gain": 3.4787549734426366,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            2.9896708800005185,
+            3.8388201177744232
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A6-A1": {
+          "comparison": "A6-A1",
+          "penalty": "selected",
+          "gain": 3.219845641047612,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            2.7397192114245,
+            3.5806072020012127
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A7-A0": {
+          "comparison": "A7-A0",
+          "penalty": "selected",
+          "gain": 3.8685728936332078,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            3.3757178220184683,
+            4.258291023315227
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A7-A1": {
+          "comparison": "A7-A1",
+          "penalty": "selected",
+          "gain": 3.609663561238184,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            3.1171545422475275,
+            4.012712281590354
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A3r-A2": {
+          "comparison": "A3r-A2",
+          "penalty": "selected",
+          "gain": 1.161213089488555,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            0.7806761618433261,
+            1.5435137976242344
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A3s-A2": {
+          "comparison": "A3s-A2",
+          "penalty": "selected",
+          "gain": -1.5310249626729837,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            -2.0925407793668733,
+            -0.9623828965470214
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": false
+        },
+        "A5r-A4": {
+          "comparison": "A5r-A4",
+          "penalty": "selected",
+          "gain": 1.5667469701329861,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            1.0204676180608074,
+            2.0857577881295017
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": true
+        },
+        "A5s-A4": {
+          "comparison": "A5s-A4",
+          "penalty": "selected",
+          "gain": -2.051680610029232,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            -2.470677365699767,
+            -1.6157390918193308
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": false
+        },
+        "A7-BASE": {
+          "comparison": "A7-BASE",
+          "penalty": "selected",
+          "gain": 0.016305069733529607,
+          "systems": 625,
+          "scope": "fixed OOF, family cluster resampling, no refitting",
+          "ci95": [
+            -0.05997464197910321,
+            0.08856287206077675
+          ],
+          "evaluable": true,
+          "interval_excludes_zero_positive": false
+        }
+      },
+      "initial_selections": [
+        {
+          "fold": "0",
+          "base": {
+            "model": "A5r",
+            "space": "A5r",
+            "alpha": 0.0,
+            "score": -4.480556002329406,
+            "successful_inner_folds": 3,
+            "scoring": "pooled_inner_OOF_then_requested_system_weights",
+            "outer_fold": "outer0"
+          },
+          "A7": {
+            "model": "A7",
+            "space": "A7@A5r",
+            "alpha": 0.0,
+            "score": -4.399393554435992,
+            "successful_inner_folds": 3,
+            "scoring": "pooled_inner_OOF_then_requested_system_weights",
+            "outer_fold": "outer0"
+          },
+          "models": {
+            "A1": {
+              "model": "A1",
+              "space": "A1",
+              "alpha": 0.0,
+              "score": -8.068075794319212,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer0"
+            },
+            "A2": {
+              "model": "A2",
+              "space": "A2",
+              "alpha": 0.1,
+              "score": -5.9472673266339235,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer0"
+            },
+            "A3r": {
+              "model": "A3r",
+              "space": "A3r",
+              "alpha": 0.1,
+              "score": -4.79533648897803,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer0"
+            },
+            "A3s": {
+              "model": "A3s",
+              "space": "A3s",
+              "alpha": 0.0,
+              "score": -7.495364515827089,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer0"
+            },
+            "A4": {
+              "model": "A4",
+              "space": "A4",
+              "alpha": 0.01,
+              "score": -6.03376598975724,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer0"
+            },
+            "A5r": {
+              "model": "A5r",
+              "space": "A5r",
+              "alpha": 0.0,
+              "score": -4.480556002329406,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer0"
+            },
+            "A5s": {
+              "model": "A5s",
+              "space": "A5s",
+              "alpha": 0.0,
+              "score": -8.072199709484252,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer0"
+            },
+            "A6": {
+              "model": "A6",
+              "space": "A6",
+              "alpha": 0.0,
+              "score": -4.769118913471883,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer0"
+            }
+          }
+        },
+        {
+          "fold": "1",
+          "base": {
+            "model": "A5r",
+            "space": "A5r",
+            "alpha": 0.0,
+            "score": -4.532173981352054,
+            "successful_inner_folds": 3,
+            "scoring": "pooled_inner_OOF_then_requested_system_weights",
+            "outer_fold": "outer1"
+          },
+          "A7": {
+            "model": "A7",
+            "space": "A7@A5r",
+            "alpha": 0.01,
+            "score": -4.487245441482345,
+            "successful_inner_folds": 3,
+            "scoring": "pooled_inner_OOF_then_requested_system_weights",
+            "outer_fold": "outer1"
+          },
+          "models": {
+            "A1": {
+              "model": "A1",
+              "space": "A1",
+              "alpha": 0.0,
+              "score": -8.152584077334511,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer1"
+            },
+            "A2": {
+              "model": "A2",
+              "space": "A2",
+              "alpha": 0.1,
+              "score": -5.895417973725695,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer1"
+            },
+            "A3r": {
+              "model": "A3r",
+              "space": "A3r",
+              "alpha": 0.1,
+              "score": -4.925122882476585,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer1"
+            },
+            "A3s": {
+              "model": "A3s",
+              "space": "A3s",
+              "alpha": 0.01,
+              "score": -7.658517247367297,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer1"
+            },
+            "A4": {
+              "model": "A4",
+              "space": "A4",
+              "alpha": 0.01,
+              "score": -5.871881947401624,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer1"
+            },
+            "A5r": {
+              "model": "A5r",
+              "space": "A5r",
+              "alpha": 0.0,
+              "score": -4.532173981352054,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer1"
+            },
+            "A5s": {
+              "model": "A5s",
+              "space": "A5s",
+              "alpha": 0.0,
+              "score": -8.147952553736795,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer1"
+            },
+            "A6": {
+              "model": "A6",
+              "space": "A6",
+              "alpha": 0.0,
+              "score": -4.740331310343065,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer1"
+            }
+          }
+        },
+        {
+          "fold": "2",
+          "base": {
+            "model": "A5r",
+            "space": "A5r",
+            "alpha": 0.0,
+            "score": -4.527886530807303,
+            "successful_inner_folds": 3,
+            "scoring": "pooled_inner_OOF_then_requested_system_weights",
+            "outer_fold": "outer2"
+          },
+          "A7": {
+            "model": "A7",
+            "space": "A7@A5r",
+            "alpha": 0.01,
+            "score": -4.552652483471264,
+            "successful_inner_folds": 3,
+            "scoring": "pooled_inner_OOF_then_requested_system_weights",
+            "outer_fold": "outer2"
+          },
+          "models": {
+            "A1": {
+              "model": "A1",
+              "space": "A1",
+              "alpha": 0.0,
+              "score": -8.018962572345643,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer2"
+            },
+            "A2": {
+              "model": "A2",
+              "space": "A2",
+              "alpha": 0.0,
+              "score": -5.948415198343317,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer2"
+            },
+            "A3r": {
+              "model": "A3r",
+              "space": "A3r",
+              "alpha": 0.01,
+              "score": -4.816178127053046,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer2"
+            },
+            "A3s": {
+              "model": "A3s",
+              "space": "A3s",
+              "alpha": 0.0,
+              "score": -7.457147649261705,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer2"
+            },
+            "A4": {
+              "model": "A4",
+              "space": "A4",
+              "alpha": 0.01,
+              "score": -6.033031072680146,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer2"
+            },
+            "A5r": {
+              "model": "A5r",
+              "space": "A5r",
+              "alpha": 0.0,
+              "score": -4.527886530807303,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer2"
+            },
+            "A5s": {
+              "model": "A5s",
+              "space": "A5s",
+              "alpha": 0.0,
+              "score": -8.194500105684945,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer2"
+            },
+            "A6": {
+              "model": "A6",
+              "space": "A6",
+              "alpha": 0.0,
+              "score": -4.789010558565464,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer2"
+            }
+          }
+        },
+        {
+          "fold": "3",
+          "base": {
+            "model": "A5r",
+            "space": "A5r",
+            "alpha": 0.01,
+            "score": -4.48796519185221,
+            "successful_inner_folds": 3,
+            "scoring": "pooled_inner_OOF_then_requested_system_weights",
+            "outer_fold": "outer3"
+          },
+          "A7": {
+            "model": "A7",
+            "space": "A7@A5r",
+            "alpha": 0.01,
+            "score": -4.379371957461598,
+            "successful_inner_folds": 3,
+            "scoring": "pooled_inner_OOF_then_requested_system_weights",
+            "outer_fold": "outer3"
+          },
+          "models": {
+            "A1": {
+              "model": "A1",
+              "space": "A1",
+              "alpha": 0.0,
+              "score": -8.112853158236813,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer3"
+            },
+            "A2": {
+              "model": "A2",
+              "space": "A2",
+              "alpha": 0.1,
+              "score": -6.044389791858609,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer3"
+            },
+            "A3r": {
+              "model": "A3r",
+              "space": "A3r",
+              "alpha": 0.01,
+              "score": -4.741888832526994,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer3"
+            },
+            "A3s": {
+              "model": "A3s",
+              "space": "A3s",
+              "alpha": 0.01,
+              "score": -7.425355916414352,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer3"
+            },
+            "A4": {
+              "model": "A4",
+              "space": "A4",
+              "alpha": 0.01,
+              "score": -6.165565492181626,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer3"
+            },
+            "A5r": {
+              "model": "A5r",
+              "space": "A5r",
+              "alpha": 0.01,
+              "score": -4.48796519185221,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer3"
+            },
+            "A5s": {
+              "model": "A5s",
+              "space": "A5s",
+              "alpha": 0.0,
+              "score": -8.124162487461604,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer3"
+            },
+            "A6": {
+              "model": "A6",
+              "space": "A6",
+              "alpha": 0.01,
+              "score": -4.863823353503207,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer3"
+            }
+          }
+        },
+        {
+          "fold": "4",
+          "base": {
+            "model": "A5r",
+            "space": "A5r",
+            "alpha": 0.0,
+            "score": -4.395302267015142,
+            "successful_inner_folds": 3,
+            "scoring": "pooled_inner_OOF_then_requested_system_weights",
+            "outer_fold": "outer4"
+          },
+          "A7": {
+            "model": "A7",
+            "space": "A7@A5r",
+            "alpha": 0.0,
+            "score": -4.3476054209541575,
+            "successful_inner_folds": 3,
+            "scoring": "pooled_inner_OOF_then_requested_system_weights",
+            "outer_fold": "outer4"
+          },
+          "models": {
+            "A1": {
+              "model": "A1",
+              "space": "A1",
+              "alpha": 0.0,
+              "score": -8.03030413738238,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer4"
+            },
+            "A2": {
+              "model": "A2",
+              "space": "A2",
+              "alpha": 0.1,
+              "score": -5.922802810076328,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer4"
+            },
+            "A3r": {
+              "model": "A3r",
+              "space": "A3r",
+              "alpha": 0.1,
+              "score": -4.673075642799487,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer4"
+            },
+            "A3s": {
+              "model": "A3s",
+              "space": "A3s",
+              "alpha": 0.01,
+              "score": -7.427838401860004,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer4"
+            },
+            "A4": {
+              "model": "A4",
+              "space": "A4",
+              "alpha": 0.01,
+              "score": -6.0612971308041175,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer4"
+            },
+            "A5r": {
+              "model": "A5r",
+              "space": "A5r",
+              "alpha": 0.0,
+              "score": -4.395302267015142,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer4"
+            },
+            "A5s": {
+              "model": "A5s",
+              "space": "A5s",
+              "alpha": 0.0,
+              "score": -8.092641113872267,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer4"
+            },
+            "A6": {
+              "model": "A6",
+              "space": "A6",
+              "alpha": 0.0,
+              "score": -4.7497792235621805,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer4"
+            }
+          }
+        }
+      ],
+      "refined_selections": [
+        {
+          "fold": "0",
+          "base": {
+            "model": "A5r",
+            "space": "A5r",
+            "alpha": 0.0,
+            "score": -4.480556002329406,
+            "successful_inner_folds": 3,
+            "scoring": "pooled_inner_OOF_then_requested_system_weights",
+            "outer_fold": "outer0"
+          },
+          "A7": {
+            "model": "A7",
+            "space": "A7@A5r",
+            "alpha": 0.0,
+            "score": -4.399393554435992,
+            "successful_inner_folds": 3,
+            "scoring": "pooled_inner_OOF_then_requested_system_weights",
+            "outer_fold": "outer0"
+          },
+          "models": {
+            "A1": {
+              "model": "A1",
+              "space": "A1",
+              "alpha": 0.0,
+              "score": -8.068075794319212,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer0"
+            },
+            "A2": {
+              "model": "A2",
+              "space": "A2",
+              "alpha": 0.1,
+              "score": -5.9472673266339235,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer0"
+            },
+            "A3r": {
+              "model": "A3r",
+              "space": "A3r",
+              "alpha": 0.1,
+              "score": -4.79533648897803,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer0"
+            },
+            "A3s": {
+              "model": "A3s",
+              "space": "A3s",
+              "alpha": 0.0,
+              "score": -7.495364515827089,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer0"
+            },
+            "A4": {
+              "model": "A4",
+              "space": "A4",
+              "alpha": 0.01,
+              "score": -6.03376598975724,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer0"
+            },
+            "A5r": {
+              "model": "A5r",
+              "space": "A5r",
+              "alpha": 0.0,
+              "score": -4.480556002329406,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer0"
+            },
+            "A5s": {
+              "model": "A5s",
+              "space": "A5s",
+              "alpha": 0.0,
+              "score": -8.072199709484252,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer0"
+            },
+            "A6": {
+              "model": "A6",
+              "space": "A6",
+              "alpha": 0.0,
+              "score": -4.769118913471883,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer0"
+            }
+          }
+        },
+        {
+          "fold": "1",
+          "base": {
+            "model": "A5r",
+            "space": "A5r",
+            "alpha": 0.0,
+            "score": -4.532173981352054,
+            "successful_inner_folds": 3,
+            "scoring": "pooled_inner_OOF_then_requested_system_weights",
+            "outer_fold": "outer1"
+          },
+          "A7": {
+            "model": "A7",
+            "space": "A7@A5r",
+            "alpha": 0.0,
+            "score": -4.392681961370963,
+            "successful_inner_folds": 3,
+            "scoring": "pooled_inner_OOF_then_requested_system_weights",
+            "outer_fold": "outer1"
+          },
+          "models": {
+            "A1": {
+              "model": "A1",
+              "space": "A1",
+              "alpha": 0.0,
+              "score": -8.152584077334511,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer1"
+            },
+            "A2": {
+              "model": "A2",
+              "space": "A2",
+              "alpha": 0.1,
+              "score": -5.895417973725695,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer1"
+            },
+            "A3r": {
+              "model": "A3r",
+              "space": "A3r",
+              "alpha": 0.1,
+              "score": -4.925122882476585,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer1"
+            },
+            "A3s": {
+              "model": "A3s",
+              "space": "A3s",
+              "alpha": 0.0,
+              "score": -7.651116761347752,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer1"
+            },
+            "A4": {
+              "model": "A4",
+              "space": "A4",
+              "alpha": 0.01,
+              "score": -5.871881947401624,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer1"
+            },
+            "A5r": {
+              "model": "A5r",
+              "space": "A5r",
+              "alpha": 0.0,
+              "score": -4.532173981352054,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer1"
+            },
+            "A5s": {
+              "model": "A5s",
+              "space": "A5s",
+              "alpha": 0.0,
+              "score": -8.147952553736795,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer1"
+            },
+            "A6": {
+              "model": "A6",
+              "space": "A6",
+              "alpha": 0.0,
+              "score": -4.740331310343065,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer1"
+            }
+          }
+        },
+        {
+          "fold": "2",
+          "base": {
+            "model": "A5r",
+            "space": "A5r",
+            "alpha": 0.0,
+            "score": -4.527886530807303,
+            "successful_inner_folds": 3,
+            "scoring": "pooled_inner_OOF_then_requested_system_weights",
+            "outer_fold": "outer2"
+          },
+          "A7": {
+            "model": "A7",
+            "space": "A7@A5r",
+            "alpha": 0.0,
+            "score": -4.493430552623433,
+            "successful_inner_folds": 3,
+            "scoring": "pooled_inner_OOF_then_requested_system_weights",
+            "outer_fold": "outer2"
+          },
+          "models": {
+            "A1": {
+              "model": "A1",
+              "space": "A1",
+              "alpha": 0.0,
+              "score": -8.018962572345643,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer2"
+            },
+            "A2": {
+              "model": "A2",
+              "space": "A2",
+              "alpha": 0.0,
+              "score": -5.948415198343317,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer2"
+            },
+            "A3r": {
+              "model": "A3r",
+              "space": "A3r",
+              "alpha": 0.01,
+              "score": -4.816178127053046,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer2"
+            },
+            "A3s": {
+              "model": "A3s",
+              "space": "A3s",
+              "alpha": 0.0,
+              "score": -7.457147649261705,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer2"
+            },
+            "A4": {
+              "model": "A4",
+              "space": "A4",
+              "alpha": 0.01,
+              "score": -6.033031072680146,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer2"
+            },
+            "A5r": {
+              "model": "A5r",
+              "space": "A5r",
+              "alpha": 0.0,
+              "score": -4.527886530807303,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer2"
+            },
+            "A5s": {
+              "model": "A5s",
+              "space": "A5s",
+              "alpha": 0.0,
+              "score": -8.194500105684945,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer2"
+            },
+            "A6": {
+              "model": "A6",
+              "space": "A6",
+              "alpha": 0.0,
+              "score": -4.789010558565464,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer2"
+            }
+          }
+        },
+        {
+          "fold": "3",
+          "base": {
+            "model": "A5r",
+            "space": "A5r",
+            "alpha": 0.0,
+            "score": -4.431474869965991,
+            "successful_inner_folds": 3,
+            "scoring": "pooled_inner_OOF_then_requested_system_weights",
+            "outer_fold": "outer3"
+          },
+          "A7": {
+            "model": "A7",
+            "space": "A7@A5r",
+            "alpha": 0.0,
+            "score": -4.318164585369559,
+            "successful_inner_folds": 3,
+            "scoring": "pooled_inner_OOF_then_requested_system_weights",
+            "outer_fold": "outer3"
+          },
+          "models": {
+            "A1": {
+              "model": "A1",
+              "space": "A1",
+              "alpha": 0.0,
+              "score": -8.112853158236813,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer3"
+            },
+            "A2": {
+              "model": "A2",
+              "space": "A2",
+              "alpha": 0.1,
+              "score": -6.044389791858609,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer3"
+            },
+            "A3r": {
+              "model": "A3r",
+              "space": "A3r",
+              "alpha": 0.01,
+              "score": -4.741888832526994,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer3"
+            },
+            "A3s": {
+              "model": "A3s",
+              "space": "A3s",
+              "alpha": 0.01,
+              "score": -7.425355916414352,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer3"
+            },
+            "A4": {
+              "model": "A4",
+              "space": "A4",
+              "alpha": 0.01,
+              "score": -6.165565492181626,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer3"
+            },
+            "A5r": {
+              "model": "A5r",
+              "space": "A5r",
+              "alpha": 0.0,
+              "score": -4.431474869965991,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer3"
+            },
+            "A5s": {
+              "model": "A5s",
+              "space": "A5s",
+              "alpha": 0.0,
+              "score": -8.124162487461604,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer3"
+            },
+            "A6": {
+              "model": "A6",
+              "space": "A6",
+              "alpha": 0.01,
+              "score": -4.863823353503207,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer3"
+            }
+          }
+        },
+        {
+          "fold": "4",
+          "base": {
+            "model": "A5r",
+            "space": "A5r",
+            "alpha": 0.0,
+            "score": -4.395302267015142,
+            "successful_inner_folds": 3,
+            "scoring": "pooled_inner_OOF_then_requested_system_weights",
+            "outer_fold": "outer4"
+          },
+          "A7": {
+            "model": "A7",
+            "space": "A7@A5r",
+            "alpha": 0.0,
+            "score": -4.3476054209541575,
+            "successful_inner_folds": 3,
+            "scoring": "pooled_inner_OOF_then_requested_system_weights",
+            "outer_fold": "outer4"
+          },
+          "models": {
+            "A1": {
+              "model": "A1",
+              "space": "A1",
+              "alpha": 0.0,
+              "score": -8.03030413738238,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer4"
+            },
+            "A2": {
+              "model": "A2",
+              "space": "A2",
+              "alpha": 0.1,
+              "score": -5.922802810076328,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer4"
+            },
+            "A3r": {
+              "model": "A3r",
+              "space": "A3r",
+              "alpha": 0.1,
+              "score": -4.673075642799487,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer4"
+            },
+            "A3s": {
+              "model": "A3s",
+              "space": "A3s",
+              "alpha": 0.01,
+              "score": -7.427838401860004,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer4"
+            },
+            "A4": {
+              "model": "A4",
+              "space": "A4",
+              "alpha": 0.01,
+              "score": -6.0612971308041175,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer4"
+            },
+            "A5r": {
+              "model": "A5r",
+              "space": "A5r",
+              "alpha": 0.0,
+              "score": -4.395302267015142,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer4"
+            },
+            "A5s": {
+              "model": "A5s",
+              "space": "A5s",
+              "alpha": 0.0,
+              "score": -8.092641113872267,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer4"
+            },
+            "A6": {
+              "model": "A6",
+              "space": "A6",
+              "alpha": 0.0,
+              "score": -4.7497792235621805,
+              "successful_inner_folds": 3,
+              "scoring": "pooled_inner_OOF_then_requested_system_weights",
+              "outer_fold": "outer4"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

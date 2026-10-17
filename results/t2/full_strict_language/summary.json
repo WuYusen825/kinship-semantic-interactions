@@ -1,0 +1,4387 @@
+{
+  "setting": "strict_language",
+  "sample": "strict",
+  "weighting": "language",
+  "systems": 625,
+  "families": 108,
+  "selected_base": {
+    "model": "A5r",
+    "space": "A5r",
+    "alpha": 0.0,
+    "score": -4.227610678148108,
+    "successful_inner_folds": 3,
+    "scoring": "pooled_inner_OOF_then_requested_system_weights",
+    "outer_fold": "full"
+  },
+  "selected_A7": {
+    "model": "A7",
+    "space": "A7@A5r",
+    "alpha": 0.0,
+    "score": -4.163806025132723,
+    "successful_inner_folds": 3,
+    "scoring": "pooled_inner_OOF_then_requested_system_weights",
+    "outer_fold": "full"
+  },
+  "models": {
+    "A0": {
+      "converged": true,
+      "space": "A0",
+      "alpha": 0.0,
+      "mean_log_probability": -8.32845106681936,
+      "derived_pair_logloss": 0.6106694785031541,
+      "raw_coefficients": {},
+      "gradient_max": 0.0,
+      "normalization_error": 2.220446049250313e-16
+    },
+    "A1": {
+      "converged": true,
+      "space": "A1",
+      "alpha": 0.0,
+      "mean_log_probability": -7.6814198171234365,
+      "derived_pair_logloss": 0.600788832571411,
+      "raw_coefficients": {
+        "k": -3.8910008320585683,
+        "k_squared": 0.40644300566742925
+      },
+      "gradient_max": 7.069760454836427e-08,
+      "normalization_error": 6.661338147750939e-16
+    },
+    "A2": {
+      "converged": true,
+      "space": "A2",
+      "alpha": 0.1,
+      "mean_log_probability": -5.742034718345975,
+      "derived_pair_logloss": 0.5643394397597445,
+      "raw_coefficients": {
+        "k": -0.7087972947837877,
+        "k_squared": -0.030501003175514102,
+        "conj_abs": 4.734310977637418
+      },
+      "gradient_max": 5.221548249334518e-09,
+      "normalization_error": 0.0
+    },
+    "A3r": {
+      "converged": true,
+      "space": "A3r",
+      "alpha": 0.1,
+      "mean_log_probability": -4.505490374572781,
+      "derived_pair_logloss": 0.5302812885714242,
+      "raw_coefficients": {
+        "k": -0.6063431749686431,
+        "k_squared": -0.04732235999116093,
+        "conj_rel_r": 6.493306920096874
+      },
+      "gradient_max": 1.75251505862839e-07,
+      "normalization_error": 4.440892098500626e-16
+    },
+    "A3s": {
+      "converged": true,
+      "space": "A3s",
+      "alpha": 0.0,
+      "mean_log_probability": -6.910824864015281,
+      "derived_pair_logloss": 0.5990822997976109,
+      "raw_coefficients": {
+        "k": -1.8520788773968015,
+        "k_squared": 0.13108431287242803,
+        "conj_rel_s": 3.310887584444063
+      },
+      "gradient_max": 3.9022698761215224e-07,
+      "normalization_error": 4.440892098500626e-16
+    },
+    "A4": {
+      "converged": true,
+      "space": "A4",
+      "alpha": 0.01,
+      "mean_log_probability": -5.94265935693016,
+      "derived_pair_logloss": 0.5686045632198565,
+      "raw_coefficients": {
+        "k": 0.2147312308814515,
+        "k_squared": 0.1814252661609266,
+        "DL_abs": -0.7365999707158439
+      },
+      "gradient_max": 7.93791234479646e-09,
+      "normalization_error": 3.3306690738754696e-16
+    },
+    "A5r": {
+      "converged": true,
+      "space": "A5r",
+      "alpha": 0.0,
+      "mean_log_probability": -4.1338942382061346,
+      "derived_pair_logloss": 0.5209601369685848,
+      "raw_coefficients": {
+        "k": 3.4102600382237247,
+        "k_squared": 0.38391442955985894,
+        "DL_rel_r": -2.154423617224019
+      },
+      "gradient_max": 3.7979468703319696e-07,
+      "normalization_error": 4.440892098500626e-16
+    },
+    "A5s": {
+      "converged": true,
+      "space": "A5s",
+      "alpha": 0.0,
+      "mean_log_probability": -7.600055208022986,
+      "derived_pair_logloss": 0.6007511120524116,
+      "raw_coefficients": {
+        "k": -3.1107514253710224,
+        "k_squared": 0.35355884748837235,
+        "DL_rel_s": -0.11864756718815077
+      },
+      "gradient_max": 4.357004756982974e-10,
+      "normalization_error": 4.440892098500626e-16
+    },
+    "A6": {
+      "converged": true,
+      "space": "A6",
+      "alpha": 0.0,
+      "mean_log_probability": -4.470577449108301,
+      "derived_pair_logloss": 0.5463874446197005,
+      "raw_coefficients": {
+        "k": 3.4965295737784325,
+        "k_squared": 0.47017833263790176,
+        "DL_all": -2.4022876634150565
+      },
+      "gradient_max": 6.168109911719455e-09,
+      "normalization_error": 2.220446049250313e-15
+    },
+    "BASE": {
+      "converged": true,
+      "space": "A5r",
+      "alpha": 0.0,
+      "mean_log_probability": -4.1338942382061346,
+      "derived_pair_logloss": 0.5209601369685848,
+      "raw_coefficients": {
+        "k": 3.4102600382237247,
+        "k_squared": 0.38391442955985894,
+        "DL_rel_r": -2.154423617224019
+      },
+      "gradient_max": 3.7979468703319696e-07,
+      "normalization_error": 4.440892098500626e-16
+    },
+    "A7": {
+      "converged": true,
+      "space": "A7@A5r",
+      "alpha": 0.0,
+      "mean_log_probability": -4.013934830382921,
+      "derived_pair_logloss": 0.5191743049141292,
+      "raw_coefficients": {
+        "k": 3.1763637168843752,
+        "k_squared": 0.41277063721139146,
+        "DL_rel_r": -2.150869346185629,
+        "P2": 1.1675781742515108,
+        "P3": 0.2097987125503981,
+        "P4": 1.143167508461782
+      },
+      "gradient_max": 1.902577143053641e-07,
+      "normalization_error": 4.440892098500626e-16
+    }
+  },
+  "empirical_seven_cells": {
+    "001": 0.6816000000000004,
+    "010": 0.3479999999999997,
+    "011": 0.1635999999999999,
+    "100": 0.23479999999999973,
+    "101": 0.3899999999999998,
+    "110": 0.0376,
+    "111": 0.1296
+  },
+  "empirical_M2_contrast": {
+    "coefficients": {
+      "intercept": 2.368810073291152,
+      "Dr": -3.5502132229033148,
+      "Da": -2.9966521554433374,
+      "De": -1.6076755517462749,
+      "DrDa": 0.9356291907908761,
+      "DrDe": 2.3417664833147693,
+      "DaDe": 0.6038350905126234
+    },
+    "residuals": [
+      2.6645352591003757e-15,
+      5.329070518200751e-15,
+      4.440892098500626e-15,
+      4.6629367034256575e-15,
+      2.4424906541753444e-15,
+      3.1086244689504383e-15,
+      1.7763568394002505e-15
+    ],
+    "max_abs_residual": 5.329070518200751e-15,
+    "interpretation": "saturated projection residual is only a numerical check"
+  },
+  "contrasts": [
+    {
+      "model": "A0",
+      "term": "intercept",
+      "generated_gamma": -1.313895304221137,
+      "observed_seven_cell_gamma": 2.368810073291152,
+      "generated_minus_observed": -3.6827053775122893,
+      "saturated_projection_residual": 8.881784197001252e-16
+    },
+    {
+      "model": "A0",
+      "term": "Dr",
+      "generated_gamma": -7.068645376966987e-16,
+      "observed_seven_cell_gamma": -3.5502132229033148,
+      "generated_minus_observed": 3.550213222903314,
+      "saturated_projection_residual": 8.881784197001252e-16
+    },
+    {
+      "model": "A0",
+      "term": "Da",
+      "generated_gamma": -7.008937242099751e-16,
+      "observed_seven_cell_gamma": -2.9966521554433374,
+      "generated_minus_observed": 2.9966521554433365,
+      "saturated_projection_residual": 8.881784197001252e-16
+    },
+    {
+      "model": "A0",
+      "term": "De",
+      "generated_gamma": -1.8120861469071144e-15,
+      "observed_seven_cell_gamma": -1.6076755517462749,
+      "generated_minus_observed": 1.607675551746273,
+      "saturated_projection_residual": 8.881784197001252e-16
+    },
+    {
+      "model": "A0",
+      "term": "DrDa",
+      "generated_gamma": -1.2523120237096215e-16,
+      "observed_seven_cell_gamma": 0.9356291907908761,
+      "generated_minus_observed": -0.9356291907908763,
+      "saturated_projection_residual": 8.881784197001252e-16
+    },
+    {
+      "model": "A0",
+      "term": "DrDe",
+      "generated_gamma": 5.364071630033583e-16,
+      "observed_seven_cell_gamma": 2.3417664833147693,
+      "generated_minus_observed": -2.341766483314769,
+      "saturated_projection_residual": 8.881784197001252e-16
+    },
+    {
+      "model": "A0",
+      "term": "DaDe",
+      "generated_gamma": 5.400446099219817e-16,
+      "observed_seven_cell_gamma": 0.6038350905126234,
+      "generated_minus_observed": -0.6038350905126229,
+      "saturated_projection_residual": 8.881784197001252e-16
+    },
+    {
+      "model": "A1",
+      "term": "intercept",
+      "generated_gamma": -0.719936402006414,
+      "observed_seven_cell_gamma": 2.368810073291152,
+      "generated_minus_observed": -3.088746475297566,
+      "saturated_projection_residual": 5.551115123125783e-16
+    },
+    {
+      "model": "A1",
+      "term": "Dr",
+      "generated_gamma": 2.4773333386919962e-18,
+      "observed_seven_cell_gamma": -3.5502132229033148,
+      "generated_minus_observed": 3.5502132229033148,
+      "saturated_projection_residual": 5.551115123125783e-16
+    },
+    {
+      "model": "A1",
+      "term": "Da",
+      "generated_gamma": -2.171679274404612e-16,
+      "observed_seven_cell_gamma": -2.9966521554433374,
+      "generated_minus_observed": 2.9966521554433374,
+      "saturated_projection_residual": 5.551115123125783e-16
+    },
+    {
+      "model": "A1",
+      "term": "De",
+      "generated_gamma": -5.186141430147631e-16,
+      "observed_seven_cell_gamma": -1.6076755517462749,
+      "generated_minus_observed": 1.6076755517462744,
+      "saturated_projection_residual": 5.551115123125783e-16
+    },
+    {
+      "model": "A1",
+      "term": "DrDa",
+      "generated_gamma": -1.5321202803138584e-16,
+      "observed_seven_cell_gamma": 0.9356291907908761,
+      "generated_minus_observed": -0.9356291907908763,
+      "saturated_projection_residual": 5.551115123125783e-16
+    },
+    {
+      "model": "A1",
+      "term": "DrDe",
+      "generated_gamma": -7.600322977617883e-17,
+      "observed_seven_cell_gamma": 2.3417664833147693,
+      "generated_minus_observed": -2.3417664833147693,
+      "saturated_projection_residual": 5.551115123125783e-16
+    },
+    {
+      "model": "A1",
+      "term": "DaDe",
+      "generated_gamma": 1.4749536464175406e-16,
+      "observed_seven_cell_gamma": 0.6038350905126234,
+      "generated_minus_observed": -0.6038350905126233,
+      "saturated_projection_residual": 5.551115123125783e-16
+    },
+    {
+      "model": "A2",
+      "term": "intercept",
+      "generated_gamma": 0.8311283959159549,
+      "observed_seven_cell_gamma": 2.368810073291152,
+      "generated_minus_observed": -1.5376816773751973,
+      "saturated_projection_residual": 1.887379141862766e-15
+    },
+    {
+      "model": "A2",
+      "term": "Dr",
+      "generated_gamma": -1.080965675303849,
+      "observed_seven_cell_gamma": -3.5502132229033148,
+      "generated_minus_observed": 2.4692475475994655,
+      "saturated_projection_residual": 1.887379141862766e-15
+    },
+    {
+      "model": "A2",
+      "term": "Da",
+      "generated_gamma": -1.0809656753038484,
+      "observed_seven_cell_gamma": -2.9966521554433374,
+      "generated_minus_observed": 1.915686480139489,
+      "saturated_projection_residual": 1.887379141862766e-15
+    },
+    {
+      "model": "A2",
+      "term": "De",
+      "generated_gamma": -1.0809656753038452,
+      "observed_seven_cell_gamma": -1.6076755517462749,
+      "generated_minus_observed": 0.5267098764424296,
+      "saturated_projection_residual": 1.887379141862766e-15
+    },
+    {
+      "model": "A2",
+      "term": "DrDa",
+      "generated_gamma": 0.2569239845667632,
+      "observed_seven_cell_gamma": 0.9356291907908761,
+      "generated_minus_observed": -0.678705206224113,
+      "saturated_projection_residual": 1.887379141862766e-15
+    },
+    {
+      "model": "A2",
+      "term": "DrDe",
+      "generated_gamma": 0.25692398456676196,
+      "observed_seven_cell_gamma": 2.3417664833147693,
+      "generated_minus_observed": -2.0848424987480074,
+      "saturated_projection_residual": 1.887379141862766e-15
+    },
+    {
+      "model": "A2",
+      "term": "DaDe",
+      "generated_gamma": 0.2569239845667611,
+      "observed_seven_cell_gamma": 0.6038350905126234,
+      "generated_minus_observed": -0.34691110594586233,
+      "saturated_projection_residual": 1.887379141862766e-15
+    },
+    {
+      "model": "A3r",
+      "term": "intercept",
+      "generated_gamma": 0.7956742153837614,
+      "observed_seven_cell_gamma": 2.368810073291152,
+      "generated_minus_observed": -1.5731358579073906,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "A3r",
+      "term": "Dr",
+      "generated_gamma": -1.937002081269763,
+      "observed_seven_cell_gamma": -3.5502132229033148,
+      "generated_minus_observed": 1.6132111416335517,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "A3r",
+      "term": "Da",
+      "generated_gamma": -0.8601060285237996,
+      "observed_seven_cell_gamma": -2.9966521554433374,
+      "generated_minus_observed": 2.136546126919538,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "A3r",
+      "term": "De",
+      "generated_gamma": -0.8601060285237994,
+      "observed_seven_cell_gamma": -1.6076755517462749,
+      "generated_minus_observed": 0.7475695232224755,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "A3r",
+      "term": "DrDa",
+      "generated_gamma": 9.97851846322605e-16,
+      "observed_seven_cell_gamma": 0.9356291907908761,
+      "generated_minus_observed": -0.9356291907908751,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "A3r",
+      "term": "DrDe",
+      "generated_gamma": 1.9370020812697637,
+      "observed_seven_cell_gamma": 2.3417664833147693,
+      "generated_minus_observed": -0.40476440204500563,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "A3r",
+      "term": "DaDe",
+      "generated_gamma": -0.21679002422216176,
+      "observed_seven_cell_gamma": 0.6038350905126234,
+      "generated_minus_observed": -0.8206251147347852,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "A3s",
+      "term": "intercept",
+      "generated_gamma": -0.1739520417449051,
+      "observed_seven_cell_gamma": 2.368810073291152,
+      "generated_minus_observed": -2.5427621150360573,
+      "saturated_projection_residual": 6.661338147750939e-16
+    },
+    {
+      "model": "A3s",
+      "term": "Dr",
+      "generated_gamma": -0.2257196608379185,
+      "observed_seven_cell_gamma": -3.5502132229033148,
+      "generated_minus_observed": 3.3244935620653964,
+      "saturated_projection_residual": 6.661338147750939e-16
+    },
+    {
+      "model": "A3s",
+      "term": "Da",
+      "generated_gamma": -0.22571966083791994,
+      "observed_seven_cell_gamma": -2.9966521554433374,
+      "generated_minus_observed": 2.7709324946054172,
+      "saturated_projection_residual": 6.661338147750939e-16
+    },
+    {
+      "model": "A3s",
+      "term": "De",
+      "generated_gamma": -0.6329001467756574,
+      "observed_seven_cell_gamma": -1.6076755517462749,
+      "generated_minus_observed": 0.9747754049706174,
+      "saturated_projection_residual": 6.661338147750939e-16
+    },
+    {
+      "model": "A3s",
+      "term": "DrDa",
+      "generated_gamma": -0.18146082509981784,
+      "observed_seven_cell_gamma": 0.9356291907908761,
+      "generated_minus_observed": -1.117090015890694,
+      "saturated_projection_residual": 6.661338147750939e-16
+    },
+    {
+      "model": "A3s",
+      "term": "DrDe",
+      "generated_gamma": 0.632900146775656,
+      "observed_seven_cell_gamma": 2.3417664833147693,
+      "generated_minus_observed": -1.7088663365391135,
+      "saturated_projection_residual": 6.661338147750939e-16
+    },
+    {
+      "model": "A3s",
+      "term": "DaDe",
+      "generated_gamma": 8.411997327170026e-16,
+      "observed_seven_cell_gamma": 0.6038350905126234,
+      "generated_minus_observed": -0.6038350905126225,
+      "saturated_projection_residual": 6.661338147750939e-16
+    },
+    {
+      "model": "A4",
+      "term": "intercept",
+      "generated_gamma": 1.3233371107647045,
+      "observed_seven_cell_gamma": 2.368810073291152,
+      "generated_minus_observed": -1.0454729625264476,
+      "saturated_projection_residual": 1.915134717478395e-15
+    },
+    {
+      "model": "A4",
+      "term": "Dr",
+      "generated_gamma": -1.4386229778632096,
+      "observed_seven_cell_gamma": -3.5502132229033148,
+      "generated_minus_observed": 2.111590245040105,
+      "saturated_projection_residual": 1.915134717478395e-15
+    },
+    {
+      "model": "A4",
+      "term": "Da",
+      "generated_gamma": -1.4386229778632098,
+      "observed_seven_cell_gamma": -2.9966521554433374,
+      "generated_minus_observed": 1.5580291775801276,
+      "saturated_projection_residual": 1.915134717478395e-15
+    },
+    {
+      "model": "A4",
+      "term": "De",
+      "generated_gamma": -1.4386229778632094,
+      "observed_seven_cell_gamma": -1.6076755517462749,
+      "generated_minus_observed": 0.1690525738830655,
+      "saturated_projection_residual": 1.915134717478395e-15
+    },
+    {
+      "model": "A4",
+      "term": "DrDa",
+      "generated_gamma": 0.5180110928147146,
+      "observed_seven_cell_gamma": 0.9356291907908761,
+      "generated_minus_observed": -0.41761809797616156,
+      "saturated_projection_residual": 1.915134717478395e-15
+    },
+    {
+      "model": "A4",
+      "term": "DrDe",
+      "generated_gamma": 0.5180110928147137,
+      "observed_seven_cell_gamma": 2.3417664833147693,
+      "generated_minus_observed": -1.8237553905000556,
+      "saturated_projection_residual": 1.915134717478395e-15
+    },
+    {
+      "model": "A4",
+      "term": "DaDe",
+      "generated_gamma": 0.5180110928147135,
+      "observed_seven_cell_gamma": 0.6038350905126234,
+      "generated_minus_observed": -0.08582399769790994,
+      "saturated_projection_residual": 1.915134717478395e-15
+    },
+    {
+      "model": "A5r",
+      "term": "intercept",
+      "generated_gamma": 1.2017134012306592,
+      "observed_seven_cell_gamma": 2.368810073291152,
+      "generated_minus_observed": -1.167096672060493,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "A5r",
+      "term": "Dr",
+      "generated_gamma": -2.576869620296616,
+      "observed_seven_cell_gamma": -3.5502132229033148,
+      "generated_minus_observed": 0.9733436026066986,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "A5r",
+      "term": "Da",
+      "generated_gamma": -1.2580436687405503,
+      "observed_seven_cell_gamma": -2.9966521554433374,
+      "generated_minus_observed": 1.7386084867027871,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "A5r",
+      "term": "De",
+      "generated_gamma": -1.2580436687405492,
+      "observed_seven_cell_gamma": -1.6076755517462749,
+      "generated_minus_observed": 0.3496318830057257,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "A5r",
+      "term": "DrDa",
+      "generated_gamma": 1.6812258193602546e-15,
+      "observed_seven_cell_gamma": 0.9356291907908761,
+      "generated_minus_observed": -0.9356291907908745,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "A5r",
+      "term": "DrDe",
+      "generated_gamma": 2.5768696202966175,
+      "observed_seven_cell_gamma": 2.3417664833147693,
+      "generated_minus_observed": 0.23510313698184815,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "A5r",
+      "term": "DaDe",
+      "generated_gamma": -0.06078228281551533,
+      "observed_seven_cell_gamma": 0.6038350905126234,
+      "generated_minus_observed": -0.6646173733281387,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "A5s",
+      "term": "intercept",
+      "generated_gamma": -0.5673493079752522,
+      "observed_seven_cell_gamma": 2.368810073291152,
+      "generated_minus_observed": -2.936159381266404,
+      "saturated_projection_residual": 2.220446049250313e-16
+    },
+    {
+      "model": "A5s",
+      "term": "Dr",
+      "generated_gamma": 0.03408701688083149,
+      "observed_seven_cell_gamma": -3.5502132229033148,
+      "generated_minus_observed": 3.584300239784146,
+      "saturated_projection_residual": 2.220446049250313e-16
+    },
+    {
+      "model": "A5s",
+      "term": "Da",
+      "generated_gamma": 0.03408701688083129,
+      "observed_seven_cell_gamma": -2.9966521554433374,
+      "generated_minus_observed": 3.030739172324169,
+      "saturated_projection_residual": 2.220446049250313e-16
+    },
+    {
+      "model": "A5s",
+      "term": "De",
+      "generated_gamma": -0.22379448125927626,
+      "observed_seven_cell_gamma": -1.6076755517462749,
+      "generated_minus_observed": 1.3838810704869986,
+      "saturated_projection_residual": 2.220446049250313e-16
+    },
+    {
+      "model": "A5s",
+      "term": "DrDa",
+      "generated_gamma": -0.2919685150209388,
+      "observed_seven_cell_gamma": 0.9356291907908761,
+      "generated_minus_observed": -1.227597705811815,
+      "saturated_projection_residual": 2.220446049250313e-16
+    },
+    {
+      "model": "A5s",
+      "term": "DrDe",
+      "generated_gamma": 0.2237944812592757,
+      "observed_seven_cell_gamma": 2.3417664833147693,
+      "generated_minus_observed": -2.1179720020554935,
+      "saturated_projection_residual": 2.220446049250313e-16
+    },
+    {
+      "model": "A5s",
+      "term": "DaDe",
+      "generated_gamma": 4.906680843804101e-16,
+      "observed_seven_cell_gamma": 0.6038350905126234,
+      "generated_minus_observed": -0.603835090512623,
+      "saturated_projection_residual": 2.220446049250313e-16
+    },
+    {
+      "model": "A6",
+      "term": "intercept",
+      "generated_gamma": 1.1206752553598347,
+      "observed_seven_cell_gamma": 2.368810073291152,
+      "generated_minus_observed": -1.2481348179313174,
+      "saturated_projection_residual": 2.7200464103316335e-15
+    },
+    {
+      "model": "A6",
+      "term": "Dr",
+      "generated_gamma": -1.6009212599248683,
+      "observed_seven_cell_gamma": -3.5502132229033148,
+      "generated_minus_observed": 1.9492919629784464,
+      "saturated_projection_residual": 2.7200464103316335e-15
+    },
+    {
+      "model": "A6",
+      "term": "Da",
+      "generated_gamma": -1.1916955761319037,
+      "observed_seven_cell_gamma": -2.9966521554433374,
+      "generated_minus_observed": 1.8049565793114337,
+      "saturated_projection_residual": 2.7200464103316335e-15
+    },
+    {
+      "model": "A6",
+      "term": "De",
+      "generated_gamma": -1.6009212599248681,
+      "observed_seven_cell_gamma": -1.6076755517462749,
+      "generated_minus_observed": 0.006754291821406744,
+      "saturated_projection_residual": 2.7200464103316335e-15
+    },
+    {
+      "model": "A6",
+      "term": "DrDa",
+      "generated_gamma": 1.019333547667182e-15,
+      "observed_seven_cell_gamma": 0.9356291907908761,
+      "generated_minus_observed": -0.9356291907908751,
+      "saturated_projection_residual": 2.7200464103316335e-15
+    },
+    {
+      "model": "A6",
+      "term": "DrDe",
+      "generated_gamma": 1.600921259924869,
+      "observed_seven_cell_gamma": 2.3417664833147693,
+      "generated_minus_observed": -0.7408452233899003,
+      "saturated_projection_residual": 2.7200464103316335e-15
+    },
+    {
+      "model": "A6",
+      "term": "DaDe",
+      "generated_gamma": 3.5319973289208803e-16,
+      "observed_seven_cell_gamma": 0.6038350905126234,
+      "generated_minus_observed": -0.6038350905126231,
+      "saturated_projection_residual": 2.7200464103316335e-15
+    },
+    {
+      "model": "BASE",
+      "term": "intercept",
+      "generated_gamma": 1.2017134012306592,
+      "observed_seven_cell_gamma": 2.368810073291152,
+      "generated_minus_observed": -1.167096672060493,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "BASE",
+      "term": "Dr",
+      "generated_gamma": -2.576869620296616,
+      "observed_seven_cell_gamma": -3.5502132229033148,
+      "generated_minus_observed": 0.9733436026066986,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "BASE",
+      "term": "Da",
+      "generated_gamma": -1.2580436687405503,
+      "observed_seven_cell_gamma": -2.9966521554433374,
+      "generated_minus_observed": 1.7386084867027871,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "BASE",
+      "term": "De",
+      "generated_gamma": -1.2580436687405492,
+      "observed_seven_cell_gamma": -1.6076755517462749,
+      "generated_minus_observed": 0.3496318830057257,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "BASE",
+      "term": "DrDa",
+      "generated_gamma": 1.6812258193602546e-15,
+      "observed_seven_cell_gamma": 0.9356291907908761,
+      "generated_minus_observed": -0.9356291907908745,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "BASE",
+      "term": "DrDe",
+      "generated_gamma": 2.5768696202966175,
+      "observed_seven_cell_gamma": 2.3417664833147693,
+      "generated_minus_observed": 0.23510313698184815,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "BASE",
+      "term": "DaDe",
+      "generated_gamma": -0.06078228281551533,
+      "observed_seven_cell_gamma": 0.6038350905126234,
+      "generated_minus_observed": -0.6646173733281387,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "A7",
+      "term": "intercept",
+      "generated_gamma": 1.151616029472738,
+      "observed_seven_cell_gamma": 2.368810073291152,
+      "generated_minus_observed": -1.2171940438184141,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "A7",
+      "term": "Dr",
+      "generated_gamma": -2.475708059490821,
+      "observed_seven_cell_gamma": -3.5502132229033148,
+      "generated_minus_observed": 1.0745051634124936,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "A7",
+      "term": "Da",
+      "generated_gamma": -1.2522842740998419,
+      "observed_seven_cell_gamma": -2.9966521554433374,
+      "generated_minus_observed": 1.7443678813434955,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "A7",
+      "term": "De",
+      "generated_gamma": -1.2374909737588902,
+      "observed_seven_cell_gamma": -1.6076755517462749,
+      "generated_minus_observed": 0.3701845779873847,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "A7",
+      "term": "DrDa",
+      "generated_gamma": -0.003504993950512287,
+      "observed_seven_cell_gamma": 0.9356291907908761,
+      "generated_minus_observed": -0.9391341847413884,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "A7",
+      "term": "DrDe",
+      "generated_gamma": 2.588438666683822,
+      "observed_seven_cell_gamma": 2.3417664833147693,
+      "generated_minus_observed": 0.2466721833690526,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    },
+    {
+      "model": "A7",
+      "term": "DaDe",
+      "generated_gamma": -0.10038290148455964,
+      "observed_seven_cell_gamma": 0.6038350905126234,
+      "generated_minus_observed": -0.704217991997183,
+      "saturated_projection_residual": 2.4424906541753444e-15
+    }
+  ],
+  "predictive_checks": [
+    {
+      "model": "A0",
+      "statistic": "k_1",
+      "observed": 0.028800000000000006,
+      "model_expected": 0.00024154589371980676,
+      "synthetic_mean": 0.00024000000000000003,
+      "predictive_ci95": [
+        0.0,
+        0.0016
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A0",
+      "statistic": "k_2",
+      "observed": 0.32479999999999987,
+      "model_expected": 0.030676328502415477,
+      "synthetic_mean": 0.030622080000000006,
+      "predictive_ci95": [
+        0.017600000000000005,
+        0.044799999999999986
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A0",
+      "statistic": "k_3",
+      "observed": 0.1823999999999999,
+      "model_expected": 0.2333333333333314,
+      "synthetic_mean": 0.23318431999999947,
+      "predictive_ci95": [
+        0.19999999999999968,
+        0.26719999999999927
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A0",
+      "statistic": "k_4",
+      "observed": 0.35039999999999966,
+      "model_expected": 0.41086956521739193,
+      "synthetic_mean": 0.4108995199999984,
+      "predictive_ci95": [
+        0.37119999999999864,
+        0.44959999999999817
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A0",
+      "statistic": "k_5",
+      "observed": 0.039999999999999994,
+      "model_expected": 0.2536231884057956,
+      "synthetic_mean": 0.2537593599999993,
+      "predictive_ci95": [
+        0.21919999999999956,
+        0.28799999999999915
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A0",
+      "statistic": "k_6",
+      "observed": 0.04799999999999998,
+      "model_expected": 0.06425120772946871,
+      "synthetic_mean": 0.06440511999999997,
+      "predictive_ci95": [
+        0.04639999999999998,
+        0.08480000000000001
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A0",
+      "statistic": "k_7",
+      "observed": 0.019200000000000005,
+      "model_expected": 0.006763285024154589,
+      "synthetic_mean": 0.006647360000000001,
+      "predictive_ci95": [
+        0.0016,
+        0.014400000000000003
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A0",
+      "statistic": "k_8",
+      "observed": 0.0064,
+      "model_expected": 0.00024154589371980676,
+      "synthetic_mean": 0.00024224,
+      "predictive_ci95": [
+        0.0,
+        0.0016
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A0",
+      "statistic": "conj_abs",
+      "observed": 0.7392000000000003,
+      "model_expected": 0.03719806763285025,
+      "synthetic_mean": 0.03696352,
+      "predictive_ci95": [
+        0.022400000000000007,
+        0.05279999999999997
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A0",
+      "statistic": "conj_rel_r",
+      "observed": 0.9599999999999984,
+      "model_expected": 0.03719806763285025,
+      "synthetic_mean": 0.03710496,
+      "predictive_ci95": [
+        0.022400000000000007,
+        0.05279999999999997
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A0",
+      "statistic": "conj_rel_s",
+      "observed": 0.4463999999999998,
+      "model_expected": 0.03719806763285027,
+      "synthetic_mean": 0.037112,
+      "predictive_ci95": [
+        0.024000000000000007,
+        0.05279999999999997
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A0",
+      "statistic": "conj_all",
+      "observed": 0.9647999999999983,
+      "model_expected": 0.06280193236714979,
+      "synthetic_mean": 0.06254335999999998,
+      "predictive_ci95": [
+        0.044799999999999986,
+        0.0816
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A0",
+      "statistic": "P2_predicted",
+      "observed": 0.08160000000000002,
+      "model_expected": 0.0019323671497584543,
+      "synthetic_mean": 0.0019123200000000001,
+      "predictive_ci95": [
+        0.0,
+        0.0064
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A0",
+      "statistic": "P2_reverse",
+      "observed": 0.009600000000000001,
+      "model_expected": 0.001932367149758454,
+      "synthetic_mean": 0.0018553600000000003,
+      "predictive_ci95": [
+        0.0,
+        0.0064
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A0",
+      "statistic": "P2_not_applicable",
+      "observed": 0.9087999999999993,
+      "model_expected": 0.9961352657004702,
+      "synthetic_mean": 0.9962323200000123,
+      "predictive_ci95": [
+        0.9904000000000119,
+        1.0000000000000122
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A0",
+      "statistic": "P3_predicted",
+      "observed": 0.02720000000000001,
+      "model_expected": 0.0019323671497584543,
+      "synthetic_mean": 0.0019536,
+      "predictive_ci95": [
+        0.0,
+        0.0064
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A0",
+      "statistic": "P3_reverse",
+      "observed": 0.008,
+      "model_expected": 0.0019323671497584543,
+      "synthetic_mean": 0.0019408000000000001,
+      "predictive_ci95": [
+        0.0,
+        0.0064
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A0",
+      "statistic": "P3_not_applicable",
+      "observed": 0.9647999999999982,
+      "model_expected": 0.9961352657004702,
+      "synthetic_mean": 0.996105600000012,
+      "predictive_ci95": [
+        0.9904000000000119,
+        1.0000000000000122
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A0",
+      "statistic": "P4_predicted",
+      "observed": 0.12960000000000002,
+      "model_expected": 0.001932367149758454,
+      "synthetic_mean": 0.00192992,
+      "predictive_ci95": [
+        0.0,
+        0.0064
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A0",
+      "statistic": "P4_reverse",
+      "observed": 0.0016,
+      "model_expected": 0.0019323671497584543,
+      "synthetic_mean": 0.0019369600000000002,
+      "predictive_ci95": [
+        0.0,
+        0.0064
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A0",
+      "statistic": "P4_not_applicable",
+      "observed": 0.8688000000000085,
+      "model_expected": 0.9961352657005518,
+      "synthetic_mean": 0.9961331200000121,
+      "predictive_ci95": [
+        0.9904000000000119,
+        1.0000000000000122
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A0",
+      "statistic": "P2_predicted_among_applicable",
+      "observed": 0.8947368421052632,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.0,
+        1.0
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 4517,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A0",
+      "statistic": "P3_predicted_among_applicable",
+      "observed": 0.7727272727272728,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.0,
+        1.0
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 4559,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A0",
+      "statistic": "P4_predicted_among_applicable",
+      "observed": 0.9878048780487806,
+      "model_expected": 0.49999999999999994,
+      "predictive_ci95": [
+        0.0,
+        1.0
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 4552,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A1",
+      "statistic": "k_1",
+      "observed": 0.028800000000000006,
+      "model_expected": 0.031246295057960297,
+      "synthetic_mean": 0.031120960000000003,
+      "predictive_ci95": [
+        0.017600000000000005,
+        0.04639999999999998
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A1",
+      "statistic": "k_2",
+      "observed": 0.32479999999999987,
+      "model_expected": 0.2743531327947184,
+      "synthetic_mean": 0.2746713599999992,
+      "predictive_ci95": [
+        0.23999999999999944,
+        0.310399999999999
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A1",
+      "statistic": "k_3",
+      "observed": 0.1823999999999999,
+      "model_expected": 0.3252541986958632,
+      "synthetic_mean": 0.32533151999999893,
+      "predictive_ci95": [
+        0.28959999999999914,
+        0.3631999999999987
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A1",
+      "statistic": "k_4",
+      "observed": 0.35039999999999966,
+      "model_expected": 0.20124337414230176,
+      "synthetic_mean": 0.20129343999999968,
+      "predictive_ci95": [
+        0.16959999999999986,
+        0.23359999999999947
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A1",
+      "statistic": "k_5",
+      "observed": 0.039999999999999994,
+      "model_expected": 0.09840337103371961,
+      "synthetic_mean": 0.09830496000000005,
+      "predictive_ci95": [
+        0.07519999999999999,
+        0.12320000000000011
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A1",
+      "statistic": "k_6",
+      "observed": 0.04799999999999998,
+      "model_expected": 0.044518202828433606,
+      "synthetic_mean": 0.044479999999999985,
+      "predictive_ci95": [
+        0.02880000000000001,
+        0.06079999999999996
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A1",
+      "statistic": "k_7",
+      "observed": 0.019200000000000005,
+      "model_expected": 0.018866061138037914,
+      "synthetic_mean": 0.018694400000000007,
+      "predictive_ci95": [
+        0.009600000000000001,
+        0.02883999999999943
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A1",
+      "statistic": "k_8",
+      "observed": 0.0064,
+      "model_expected": 0.006115364308964976,
+      "synthetic_mean": 0.00610336,
+      "predictive_ci95": [
+        0.0016,
+        0.012800000000000002
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A1",
+      "statistic": "conj_abs",
+      "observed": 0.7392000000000003,
+      "model_expected": 0.07158757880841853,
+      "synthetic_mean": 0.07138879999999997,
+      "predictive_ci95": [
+        0.051199999999999975,
+        0.09280000000000004
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A1",
+      "statistic": "conj_rel_r",
+      "observed": 0.9599999999999984,
+      "model_expected": 0.07158757880841855,
+      "synthetic_mean": 0.07131039999999998,
+      "predictive_ci95": [
+        0.051199999999999975,
+        0.09280000000000004
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A1",
+      "statistic": "conj_rel_s",
+      "observed": 0.4463999999999998,
+      "model_expected": 0.07158757880841854,
+      "synthetic_mean": 0.07135967999999998,
+      "predictive_ci95": [
+        0.051199999999999975,
+        0.09280000000000004
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A1",
+      "statistic": "conj_all",
+      "observed": 0.9647999999999983,
+      "model_expected": 0.09004292684793275,
+      "synthetic_mean": 0.08977440000000003,
+      "predictive_ci95": [
+        0.06719999999999997,
+        0.11360000000000009
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A1",
+      "statistic": "P2_predicted",
+      "observed": 0.08160000000000002,
+      "model_expected": 0.0011401428082685456,
+      "synthetic_mean": 0.0011299200000000002,
+      "predictive_ci95": [
+        0.0,
+        0.0048000000000000004
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A1",
+      "statistic": "P2_reverse",
+      "observed": 0.009600000000000001,
+      "model_expected": 0.0011401428082685456,
+      "synthetic_mean": 0.0011363200000000003,
+      "predictive_ci95": [
+        0.0,
+        0.0048000000000000004
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A1",
+      "statistic": "P2_not_applicable",
+      "observed": 0.9087999999999993,
+      "model_expected": 0.997719714383456,
+      "synthetic_mean": 0.9977337600000122,
+      "predictive_ci95": [
+        0.993600000000012,
+        1.0000000000000122
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A1",
+      "statistic": "P3_predicted",
+      "observed": 0.02720000000000001,
+      "model_expected": 0.0011401428082685456,
+      "synthetic_mean": 0.0011305600000000003,
+      "predictive_ci95": [
+        0.0,
+        0.0048000000000000004
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A1",
+      "statistic": "P3_reverse",
+      "observed": 0.008,
+      "model_expected": 0.0011401428082685456,
+      "synthetic_mean": 0.0011366400000000002,
+      "predictive_ci95": [
+        0.0,
+        0.0048000000000000004
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A1",
+      "statistic": "P3_not_applicable",
+      "observed": 0.9647999999999982,
+      "model_expected": 0.9977197143834564,
+      "synthetic_mean": 0.9977328000000123,
+      "predictive_ci95": [
+        0.993600000000012,
+        1.0000000000000122
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A1",
+      "statistic": "P4_predicted",
+      "observed": 0.12960000000000002,
+      "model_expected": 0.0011401428082685456,
+      "synthetic_mean": 0.00114432,
+      "predictive_ci95": [
+        0.0,
+        0.0048000000000000004
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A1",
+      "statistic": "P4_reverse",
+      "observed": 0.0016,
+      "model_expected": 0.0011401428082685456,
+      "synthetic_mean": 0.0010960000000000002,
+      "predictive_ci95": [
+        0.0,
+        0.0048000000000000004
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A1",
+      "statistic": "P4_not_applicable",
+      "observed": 0.8688000000000085,
+      "model_expected": 0.9977197143834649,
+      "synthetic_mean": 0.9977596800000123,
+      "predictive_ci95": [
+        0.993600000000012,
+        1.0000000000000122
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A1",
+      "statistic": "P2_predicted_among_applicable",
+      "observed": 0.8947368421052632,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.0,
+        1.0
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 3799,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A1",
+      "statistic": "P3_predicted_among_applicable",
+      "observed": 0.7727272727272728,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.0,
+        1.0
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 3779,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A1",
+      "statistic": "P4_predicted_among_applicable",
+      "observed": 0.9878048780487806,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.0,
+        1.0
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 3743,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A2",
+      "statistic": "k_1",
+      "observed": 0.028800000000000006,
+      "model_expected": 0.08037479008436166,
+      "synthetic_mean": 0.08043424000000002,
+      "predictive_ci95": [
+        0.05919999999999996,
+        0.10240000000000006
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A2",
+      "statistic": "k_2",
+      "observed": 0.32479999999999987,
+      "model_expected": 0.14765670899686653,
+      "synthetic_mean": 0.14780032,
+      "predictive_ci95": [
+        0.12160000000000011,
+        0.17599999999999982
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A2",
+      "statistic": "k_3",
+      "observed": 0.1823999999999999,
+      "model_expected": 0.3110207323415068,
+      "synthetic_mean": 0.31076127999999903,
+      "predictive_ci95": [
+        0.2751999999999992,
+        0.3455999999999988
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A2",
+      "statistic": "k_4",
+      "observed": 0.35039999999999966,
+      "model_expected": 0.2891280819966428,
+      "synthetic_mean": 0.28901023999999914,
+      "predictive_ci95": [
+        0.25439999999999935,
+        0.3247999999999989
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A2",
+      "statistic": "k_5",
+      "observed": 0.039999999999999994,
+      "model_expected": 0.13341086952005685,
+      "synthetic_mean": 0.13353504000000005,
+      "predictive_ci95": [
+        0.10720000000000007,
+        0.15999999999999992
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A2",
+      "statistic": "k_6",
+      "observed": 0.04799999999999998,
+      "model_expected": 0.035115944470317365,
+      "synthetic_mean": 0.03514176,
+      "predictive_ci95": [
+        0.022400000000000007,
+        0.04959999999999998
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A2",
+      "statistic": "k_7",
+      "observed": 0.019200000000000005,
+      "model_expected": 0.0032104951524484647,
+      "synthetic_mean": 0.00323232,
+      "predictive_ci95": [
+        0.0,
+        0.008
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A2",
+      "statistic": "k_8",
+      "observed": 0.0064,
+      "model_expected": 8.237743779790016e-05,
+      "synthetic_mean": 8.480000000000001e-05,
+      "predictive_ci95": [
+        0.0,
+        0.0016
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A2",
+      "statistic": "conj_abs",
+      "observed": 0.7392000000000003,
+      "model_expected": 0.7222443638218506,
+      "synthetic_mean": 0.7224496000000042,
+      "predictive_ci95": [
+        0.6880000000000033,
+        0.7568000000000052
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A2",
+      "statistic": "conj_rel_r",
+      "observed": 0.9599999999999984,
+      "model_expected": 0.40754323789331975,
+      "synthetic_mean": 0.40744671999999843,
+      "predictive_ci95": [
+        0.36959999999999865,
+        0.4447999999999982
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A2",
+      "statistic": "conj_rel_s",
+      "observed": 0.4463999999999998,
+      "model_expected": 0.40754323789332014,
+      "synthetic_mean": 0.40766111999999843,
+      "predictive_ci95": [
+        0.36959999999999865,
+        0.4463999999999982
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A2",
+      "statistic": "conj_all",
+      "observed": 0.9647999999999983,
+      "model_expected": 0.7255165270361033,
+      "synthetic_mean": 0.7257094400000044,
+      "predictive_ci95": [
+        0.6896000000000033,
+        0.7600000000000053
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A2",
+      "statistic": "P2_predicted",
+      "observed": 0.08160000000000002,
+      "model_expected": 0.041064290738611835,
+      "synthetic_mean": 0.040986879999999996,
+      "predictive_ci95": [
+        0.025600000000000008,
+        0.057599999999999964
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A2",
+      "statistic": "P2_reverse",
+      "observed": 0.009600000000000001,
+      "model_expected": 0.041064290738611835,
+      "synthetic_mean": 0.04102879999999999,
+      "predictive_ci95": [
+        0.02720000000000001,
+        0.057599999999999964
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A2",
+      "statistic": "P2_not_applicable",
+      "observed": 0.9087999999999993,
+      "model_expected": 0.9178714185227732,
+      "synthetic_mean": 0.91798432000001,
+      "predictive_ci95": [
+        0.8960000000000092,
+        0.9376000000000104
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A2",
+      "statistic": "P3_predicted",
+      "observed": 0.02720000000000001,
+      "model_expected": 0.041064290738611835,
+      "synthetic_mean": 0.04106815999999999,
+      "predictive_ci95": [
+        0.025600000000000008,
+        0.057599999999999964
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A2",
+      "statistic": "P3_reverse",
+      "observed": 0.008,
+      "model_expected": 0.041064290738611835,
+      "synthetic_mean": 0.04096479999999999,
+      "predictive_ci95": [
+        0.02720000000000001,
+        0.057599999999999964
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A2",
+      "statistic": "P3_not_applicable",
+      "observed": 0.9647999999999982,
+      "model_expected": 0.917871418522773,
+      "synthetic_mean": 0.9179670400000097,
+      "predictive_ci95": [
+        0.8960000000000092,
+        0.9392000000000105
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A2",
+      "statistic": "P4_predicted",
+      "observed": 0.12960000000000002,
+      "model_expected": 0.0011525337471973316,
+      "synthetic_mean": 0.00116096,
+      "predictive_ci95": [
+        0.0,
+        0.0048000000000000004
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A2",
+      "statistic": "P4_reverse",
+      "observed": 0.0016,
+      "model_expected": 0.0011525337471973316,
+      "synthetic_mean": 0.00116096,
+      "predictive_ci95": [
+        0.0,
+        0.0048000000000000004
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A2",
+      "statistic": "P4_not_applicable",
+      "observed": 0.8688000000000085,
+      "model_expected": 0.997694932505609,
+      "synthetic_mean": 0.997678080000012,
+      "predictive_ci95": [
+        0.993600000000012,
+        1.0000000000000122
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A2",
+      "statistic": "P2_predicted_among_applicable",
+      "observed": 0.8947368421052632,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.36206896551724155,
+        0.6363965744400522
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 5000,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A2",
+      "statistic": "P3_predicted_among_applicable",
+      "observed": 0.7727272727272728,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.3589743589743591,
+        0.6382978723404253
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 5000,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A2",
+      "statistic": "P4_predicted_among_applicable",
+      "observed": 0.9878048780487806,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.0,
+        1.0
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 3828,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A3r",
+      "statistic": "k_1",
+      "observed": 0.028800000000000006,
+      "model_expected": 0.10034209225188769,
+      "synthetic_mean": 0.10032928000000006,
+      "predictive_ci95": [
+        0.0784,
+        0.12480000000000012
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3r",
+      "statistic": "k_2",
+      "observed": 0.32479999999999987,
+      "model_expected": 0.15134589263036188,
+      "synthetic_mean": 0.15137759999999997,
+      "predictive_ci95": [
+        0.12320000000000011,
+        0.1807999999999998
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3r",
+      "statistic": "k_3",
+      "observed": 0.1823999999999999,
+      "model_expected": 0.27474584630166926,
+      "synthetic_mean": 0.2749958399999992,
+      "predictive_ci95": [
+        0.24159999999999943,
+        0.311999999999999
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3r",
+      "statistic": "k_4",
+      "observed": 0.35039999999999966,
+      "model_expected": 0.28427586500812374,
+      "synthetic_mean": 0.2841334399999992,
+      "predictive_ci95": [
+        0.25119999999999937,
+        0.31839999999999896
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3r",
+      "statistic": "k_5",
+      "observed": 0.039999999999999994,
+      "model_expected": 0.14683661862809527,
+      "synthetic_mean": 0.1466256,
+      "predictive_ci95": [
+        0.1200000000000001,
+        0.17439999999999983
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3r",
+      "statistic": "k_6",
+      "observed": 0.04799999999999998,
+      "model_expected": 0.039106793477697945,
+      "synthetic_mean": 0.03918431999999999,
+      "predictive_ci95": [
+        0.025600000000000008,
+        0.05439999999999997
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3r",
+      "statistic": "k_7",
+      "observed": 0.019200000000000005,
+      "model_expected": 0.0032738792762053858,
+      "synthetic_mean": 0.0032796800000000005,
+      "predictive_ci95": [
+        0.0,
+        0.008
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3r",
+      "statistic": "k_8",
+      "observed": 0.0064,
+      "model_expected": 7.30124259547131e-05,
+      "synthetic_mean": 7.424000000000001e-05,
+      "predictive_ci95": [
+        0.0,
+        0.0016
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3r",
+      "statistic": "conj_abs",
+      "observed": 0.7392000000000003,
+      "model_expected": 0.5243117848714007,
+      "synthetic_mean": 0.5242659199999985,
+      "predictive_ci95": [
+        0.48479999999999795,
+        0.5631999999999997
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3r",
+      "statistic": "conj_rel_r",
+      "observed": 0.9599999999999984,
+      "model_expected": 0.9367446270818055,
+      "synthetic_mean": 0.9366579200000104,
+      "predictive_ci95": [
+        0.9168000000000098,
+        0.9552000000000109
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3r",
+      "statistic": "conj_rel_s",
+      "observed": 0.4463999999999998,
+      "model_expected": 0.5243117848714004,
+      "synthetic_mean": 0.5245321599999987,
+      "predictive_ci95": [
+        0.48479999999999795,
+        0.5632399999999991
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3r",
+      "statistic": "conj_all",
+      "observed": 0.9647999999999983,
+      "model_expected": 0.9374742403856801,
+      "synthetic_mean": 0.9373958400000103,
+      "predictive_ci95": [
+        0.9184000000000099,
+        0.9552000000000109
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3r",
+      "statistic": "P2_predicted",
+      "observed": 0.08160000000000002,
+      "model_expected": 0.03931349632230309,
+      "synthetic_mean": 0.039289599999999994,
+      "predictive_ci95": [
+        0.024000000000000007,
+        0.05439999999999997
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3r",
+      "statistic": "P2_reverse",
+      "observed": 0.009600000000000001,
+      "model_expected": 0.03931349632230308,
+      "synthetic_mean": 0.03927615999999999,
+      "predictive_ci95": [
+        0.025600000000000008,
+        0.05439999999999997
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3r",
+      "statistic": "P2_not_applicable",
+      "observed": 0.9087999999999993,
+      "model_expected": 0.9213730073553954,
+      "synthetic_mean": 0.92143424000001,
+      "predictive_ci95": [
+        0.8992000000000093,
+        0.9424000000000106
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3r",
+      "statistic": "P3_predicted",
+      "observed": 0.02720000000000001,
+      "model_expected": 0.05391814170261121,
+      "synthetic_mean": 0.05419359999999997,
+      "predictive_ci95": [
+        0.0368,
+        0.07199999999999998
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3r",
+      "statistic": "P3_reverse",
+      "observed": 0.008,
+      "model_expected": 0.05391814170261121,
+      "synthetic_mean": 0.05383615999999997,
+      "predictive_ci95": [
+        0.0368,
+        0.07199999999999998
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3r",
+      "statistic": "P3_not_applicable",
+      "observed": 0.9647999999999982,
+      "model_expected": 0.8921637165947788,
+      "synthetic_mean": 0.8919702400000091,
+      "predictive_ci95": [
+        0.8672000000000084,
+        0.9152400000000092
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3r",
+      "statistic": "P4_predicted",
+      "observed": 0.12960000000000002,
+      "model_expected": 0.05391814170261121,
+      "synthetic_mean": 0.053877119999999966,
+      "predictive_ci95": [
+        0.0368,
+        0.07199999999999998
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3r",
+      "statistic": "P4_reverse",
+      "observed": 0.0016,
+      "model_expected": 0.05391814170261121,
+      "synthetic_mean": 0.05397023999999998,
+      "predictive_ci95": [
+        0.0368,
+        0.07199999999999998
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3r",
+      "statistic": "P4_not_applicable",
+      "observed": 0.8688000000000085,
+      "model_expected": 0.8921637165947387,
+      "synthetic_mean": 0.8921526400000089,
+      "predictive_ci95": [
+        0.8672000000000084,
+        0.9152000000000098
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3r",
+      "statistic": "P2_predicted_among_applicable",
+      "observed": 0.8947368421052632,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.35849056603773605,
+        0.6444444444444443
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 5000,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A3r",
+      "statistic": "P3_predicted_among_applicable",
+      "observed": 0.7727272727272728,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.3833244680851065,
+        0.6249999999999998
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 5000,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A3r",
+      "statistic": "P4_predicted_among_applicable",
+      "observed": 0.9878048780487806,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.3809356136820928,
+        0.6166666666666665
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 5000,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A3s",
+      "statistic": "k_1",
+      "observed": 0.028800000000000006,
+      "model_expected": 0.09590823480701972,
+      "synthetic_mean": 0.09587872000000004,
+      "predictive_ci95": [
+        0.07359999999999998,
+        0.1200000000000001
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3s",
+      "statistic": "k_2",
+      "observed": 0.32479999999999987,
+      "model_expected": 0.16778145509299738,
+      "synthetic_mean": 0.16801695999999988,
+      "predictive_ci95": [
+        0.14080000000000004,
+        0.1983999999999997
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3s",
+      "statistic": "k_3",
+      "observed": 0.1823999999999999,
+      "model_expected": 0.31542149011033627,
+      "synthetic_mean": 0.31528127999999894,
+      "predictive_ci95": [
+        0.2783999999999992,
+        0.35359999999999875
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3s",
+      "statistic": "k_4",
+      "observed": 0.35039999999999966,
+      "model_expected": 0.24843228316204322,
+      "synthetic_mean": 0.2481583999999994,
+      "predictive_ci95": [
+        0.21599999999999958,
+        0.2815999999999992
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3s",
+      "statistic": "k_5",
+      "observed": 0.039999999999999994,
+      "model_expected": 0.1168693556835398,
+      "synthetic_mean": 0.11720640000000007,
+      "predictive_ci95": [
+        0.09280000000000004,
+        0.14240000000000003
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3s",
+      "statistic": "k_6",
+      "observed": 0.04799999999999998,
+      "model_expected": 0.04498876573166816,
+      "synthetic_mean": 0.044922879999999984,
+      "predictive_ci95": [
+        0.02880000000000001,
+        0.062399999999999956
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3s",
+      "statistic": "k_7",
+      "observed": 0.019200000000000005,
+      "model_expected": 0.009731530093063177,
+      "synthetic_mean": 0.00967744,
+      "predictive_ci95": [
+        0.0032,
+        0.017600000000000005
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3s",
+      "statistic": "k_8",
+      "observed": 0.0064,
+      "model_expected": 0.0008668853193306898,
+      "synthetic_mean": 0.00085792,
+      "predictive_ci95": [
+        0.0,
+        0.0032
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3s",
+      "statistic": "conj_abs",
+      "observed": 0.7392000000000003,
+      "model_expected": 0.2815491918809823,
+      "synthetic_mean": 0.2813766399999992,
+      "predictive_ci95": [
+        0.2447999999999994,
+        0.31839999999999896
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3s",
+      "statistic": "conj_rel_r",
+      "observed": 0.9599999999999984,
+      "model_expected": 0.28154919188098215,
+      "synthetic_mean": 0.2815951999999992,
+      "predictive_ci95": [
+        0.2463999999999994,
+        0.31839999999999896
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3s",
+      "statistic": "conj_rel_s",
+      "observed": 0.4463999999999998,
+      "model_expected": 0.4463999261507703,
+      "synthetic_mean": 0.44634175999999826,
+      "predictive_ci95": [
+        0.40639999999999843,
+        0.48639999999999795
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3s",
+      "statistic": "conj_all",
+      "observed": 0.9647999999999983,
+      "model_expected": 0.4538857328780786,
+      "synthetic_mean": 0.4538473599999981,
+      "predictive_ci95": [
+        0.4127999999999984,
+        0.4927999999999979
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3s",
+      "statistic": "P2_predicted",
+      "observed": 0.08160000000000002,
+      "model_expected": 0.002882211790980772,
+      "synthetic_mean": 0.0028956800000000003,
+      "predictive_ci95": [
+        0.0,
+        0.008
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3s",
+      "statistic": "P2_reverse",
+      "observed": 0.009600000000000001,
+      "model_expected": 0.0028822117909807726,
+      "synthetic_mean": 0.0029049600000000007,
+      "predictive_ci95": [
+        0.0,
+        0.008
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3s",
+      "statistic": "P2_not_applicable",
+      "observed": 0.9087999999999993,
+      "model_expected": 0.9942355764180293,
+      "synthetic_mean": 0.994199360000012,
+      "predictive_ci95": [
+        0.9872000000000118,
+        1.0000000000000122
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3s",
+      "statistic": "P3_predicted",
+      "observed": 0.02720000000000001,
+      "model_expected": 0.0015801696721458795,
+      "synthetic_mean": 0.0016079999999999998,
+      "predictive_ci95": [
+        0.0,
+        0.0048000000000000004
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3s",
+      "statistic": "P3_reverse",
+      "observed": 0.008,
+      "model_expected": 0.0015801696721458795,
+      "synthetic_mean": 0.00158496,
+      "predictive_ci95": [
+        0.0,
+        0.0048000000000000004
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3s",
+      "statistic": "P3_not_applicable",
+      "observed": 0.9647999999999982,
+      "model_expected": 0.9968396606556988,
+      "synthetic_mean": 0.9968070400000121,
+      "predictive_ci95": [
+        0.992000000000012,
+        1.0000000000000122
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3s",
+      "statistic": "P4_predicted",
+      "observed": 0.12960000000000002,
+      "model_expected": 0.019630641345520304,
+      "synthetic_mean": 0.019613440000000006,
+      "predictive_ci95": [
+        0.009600000000000001,
+        0.03040000000000001
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3s",
+      "statistic": "P4_reverse",
+      "observed": 0.0016,
+      "model_expected": 0.019630641345520304,
+      "synthetic_mean": 0.019738880000000007,
+      "predictive_ci95": [
+        0.009600000000000001,
+        0.03200000000000001
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3s",
+      "statistic": "P4_not_applicable",
+      "observed": 0.8688000000000085,
+      "model_expected": 0.9607387173088704,
+      "synthetic_mean": 0.9606476800000111,
+      "predictive_ci95": [
+        0.9440000000000106,
+        0.9760000000000115
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A3s",
+      "statistic": "P2_predicted_among_applicable",
+      "observed": 0.8947368421052632,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.0,
+        1.0
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 4861,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A3s",
+      "statistic": "P3_predicted_among_applicable",
+      "observed": 0.7727272727272728,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.0,
+        1.0
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 4306,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A3s",
+      "statistic": "P4_predicted_among_applicable",
+      "observed": 0.9878048780487806,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.2962962962962962,
+        0.6956851119894594
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 5000,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A4",
+      "statistic": "k_1",
+      "observed": 0.028800000000000006,
+      "model_expected": 0.0646699972546548,
+      "synthetic_mean": 0.06467935999999998,
+      "predictive_ci95": [
+        0.04639999999999998,
+        0.08480000000000001
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A4",
+      "statistic": "k_2",
+      "observed": 0.32479999999999987,
+      "model_expected": 0.22191791317611567,
+      "synthetic_mean": 0.22172863999999953,
+      "predictive_ci95": [
+        0.18879999999999975,
+        0.25439999999999935
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A4",
+      "statistic": "k_3",
+      "observed": 0.1823999999999999,
+      "model_expected": 0.30066709921815626,
+      "synthetic_mean": 0.30084735999999906,
+      "predictive_ci95": [
+        0.2655999999999993,
+        0.33599999999999886
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A4",
+      "statistic": "k_4",
+      "observed": 0.35039999999999966,
+      "model_expected": 0.233869162391147,
+      "synthetic_mean": 0.23407839999999946,
+      "predictive_ci95": [
+        0.20159999999999967,
+        0.26719999999999927
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A4",
+      "statistic": "k_5",
+      "observed": 0.039999999999999994,
+      "model_expected": 0.1288338806502662,
+      "synthetic_mean": 0.12875360000000005,
+      "predictive_ci95": [
+        0.10240000000000006,
+        0.15679999999999994
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A4",
+      "statistic": "k_6",
+      "observed": 0.04799999999999998,
+      "model_expected": 0.042188488259276916,
+      "synthetic_mean": 0.04208415999999999,
+      "predictive_ci95": [
+        0.02720000000000001,
+        0.05919999999999996
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A4",
+      "statistic": "k_7",
+      "observed": 0.019200000000000005,
+      "model_expected": 0.007291424267563918,
+      "synthetic_mean": 0.0072588800000000005,
+      "predictive_ci95": [
+        0.0016,
+        0.014400000000000003
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A4",
+      "statistic": "k_8",
+      "observed": 0.0064,
+      "model_expected": 0.0005620347828200066,
+      "synthetic_mean": 0.0005696000000000001,
+      "predictive_ci95": [
+        0.0,
+        0.0032
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A4",
+      "statistic": "conj_abs",
+      "observed": 0.7392000000000003,
+      "model_expected": 0.5162129309860191,
+      "synthetic_mean": 0.5162719999999985,
+      "predictive_ci95": [
+        0.476799999999998,
+        0.5551999999999995
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A4",
+      "statistic": "conj_rel_r",
+      "observed": 0.9599999999999984,
+      "model_expected": 0.3017754879883382,
+      "synthetic_mean": 0.301904959999999,
+      "predictive_ci95": [
+        0.2655999999999993,
+        0.33759999999999885
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A4",
+      "statistic": "conj_rel_s",
+      "observed": 0.4463999999999998,
+      "model_expected": 0.3017754879883381,
+      "synthetic_mean": 0.30166911999999907,
+      "predictive_ci95": [
+        0.2671599999999993,
+        0.33599999999999886
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A4",
+      "statistic": "conj_all",
+      "observed": 0.9647999999999983,
+      "model_expected": 0.5246914443661824,
+      "synthetic_mean": 0.5247315199999987,
+      "predictive_ci95": [
+        0.48479999999999795,
+        0.5631999999999997
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A4",
+      "statistic": "P2_predicted",
+      "observed": 0.08160000000000002,
+      "model_expected": 0.02587108859090362,
+      "synthetic_mean": 0.025861760000000004,
+      "predictive_ci95": [
+        0.014400000000000003,
+        0.0384
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A4",
+      "statistic": "P2_reverse",
+      "observed": 0.009600000000000001,
+      "model_expected": 0.025871088590903625,
+      "synthetic_mean": 0.025845760000000006,
+      "predictive_ci95": [
+        0.014400000000000003,
+        0.0384
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A4",
+      "statistic": "P2_not_applicable",
+      "observed": 0.9087999999999993,
+      "model_expected": 0.9482578228181912,
+      "synthetic_mean": 0.9482924800000107,
+      "predictive_ci95": [
+        0.9296000000000102,
+        0.9648000000000112
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A4",
+      "statistic": "P3_predicted",
+      "observed": 0.02720000000000001,
+      "model_expected": 0.02587108859090362,
+      "synthetic_mean": 0.025894080000000007,
+      "predictive_ci95": [
+        0.014400000000000003,
+        0.0384
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A4",
+      "statistic": "P3_reverse",
+      "observed": 0.008,
+      "model_expected": 0.02587108859090362,
+      "synthetic_mean": 0.026037120000000004,
+      "predictive_ci95": [
+        0.014400000000000003,
+        0.0384
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A4",
+      "statistic": "P3_not_applicable",
+      "observed": 0.9647999999999982,
+      "model_expected": 0.9482578228181913,
+      "synthetic_mean": 0.9480688000000107,
+      "predictive_ci95": [
+        0.9296000000000102,
+        0.9648000000000112
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A4",
+      "statistic": "P4_predicted",
+      "observed": 0.12960000000000002,
+      "model_expected": 0.001141961715399058,
+      "synthetic_mean": 0.0011359999999999999,
+      "predictive_ci95": [
+        0.0,
+        0.0048000000000000004
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A4",
+      "statistic": "P4_reverse",
+      "observed": 0.0016,
+      "model_expected": 0.001141961715399058,
+      "synthetic_mean": 0.00109216,
+      "predictive_ci95": [
+        0.0,
+        0.0048000000000000004
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A4",
+      "statistic": "P4_not_applicable",
+      "observed": 0.8688000000000085,
+      "model_expected": 0.9977160765691551,
+      "synthetic_mean": 0.9977718400000122,
+      "predictive_ci95": [
+        0.993600000000012,
+        1.0000000000000122
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A4",
+      "statistic": "P2_predicted_among_applicable",
+      "observed": 0.8947368421052632,
+      "model_expected": 0.49999999999999994,
+      "predictive_ci95": [
+        0.32352941176470595,
+        0.6774193548387097
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 5000,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A4",
+      "statistic": "P3_predicted_among_applicable",
+      "observed": 0.7727272727272728,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.33333333333333326,
+        0.6764943074003791
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 5000,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A4",
+      "statistic": "P4_predicted_among_applicable",
+      "observed": 0.9878048780487806,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.0,
+        1.0
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 3768,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A5r",
+      "statistic": "k_1",
+      "observed": 0.028800000000000006,
+      "model_expected": 0.0595273021375277,
+      "synthetic_mean": 0.059582079999999975,
+      "predictive_ci95": [
+        0.04159999999999999,
+        0.0784
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5r",
+      "statistic": "k_2",
+      "observed": 0.32479999999999987,
+      "model_expected": 0.24255557183240606,
+      "synthetic_mean": 0.24268767999999946,
+      "predictive_ci95": [
+        0.20959999999999962,
+        0.2767999999999992
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5r",
+      "statistic": "k_3",
+      "observed": 0.1823999999999999,
+      "model_expected": 0.30062371762331497,
+      "synthetic_mean": 0.30072543999999907,
+      "predictive_ci95": [
+        0.2639999999999993,
+        0.33759999999999885
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5r",
+      "statistic": "k_4",
+      "observed": 0.35039999999999966,
+      "model_expected": 0.204945828565327,
+      "synthetic_mean": 0.20476063999999966,
+      "predictive_ci95": [
+        0.17439999999999983,
+        0.23679999999999946
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5r",
+      "statistic": "k_5",
+      "observed": 0.039999999999999994,
+      "model_expected": 0.1334049575735903,
+      "synthetic_mean": 0.13346976000000005,
+      "predictive_ci95": [
+        0.10720000000000007,
+        0.1615999999999999
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5r",
+      "statistic": "k_6",
+      "observed": 0.04799999999999998,
+      "model_expected": 0.04666708727514028,
+      "synthetic_mean": 0.04662015999999999,
+      "predictive_ci95": [
+        0.03040000000000001,
+        0.06399999999999996
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5r",
+      "statistic": "k_7",
+      "observed": 0.019200000000000005,
+      "model_expected": 0.010724848729765724,
+      "synthetic_mean": 0.010606400000000002,
+      "predictive_ci95": [
+        0.0032,
+        0.019200000000000005
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5r",
+      "statistic": "k_8",
+      "observed": 0.0064,
+      "model_expected": 0.0015506862629287032,
+      "synthetic_mean": 0.00154784,
+      "predictive_ci95": [
+        0.0,
+        0.0048000000000000004
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5r",
+      "statistic": "conj_abs",
+      "observed": 0.7392000000000003,
+      "model_expected": 0.5331967652406742,
+      "synthetic_mean": 0.5334300799999989,
+      "predictive_ci95": [
+        0.4943999999999979,
+        0.5728
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5r",
+      "statistic": "conj_rel_r",
+      "observed": 0.9599999999999984,
+      "model_expected": 0.9791436717526449,
+      "synthetic_mean": 0.9791651200000117,
+      "predictive_ci95": [
+        0.9664000000000113,
+        0.9904000000000119
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5r",
+      "statistic": "conj_rel_s",
+      "observed": 0.4463999999999998,
+      "model_expected": 0.533196765240674,
+      "synthetic_mean": 0.5334227199999988,
+      "predictive_ci95": [
+        0.4927999999999979,
+        0.5728
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5r",
+      "statistic": "conj_all",
+      "observed": 0.9647999999999983,
+      "model_expected": 0.9792562678473359,
+      "synthetic_mean": 0.9792752000000117,
+      "predictive_ci95": [
+        0.9680000000000113,
+        0.9904000000000119
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5r",
+      "statistic": "P2_predicted",
+      "observed": 0.08160000000000002,
+      "model_expected": 0.029000272465195306,
+      "synthetic_mean": 0.029073280000000007,
+      "predictive_ci95": [
+        0.016000000000000004,
+        0.04319999999999999
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5r",
+      "statistic": "P2_reverse",
+      "observed": 0.009600000000000001,
+      "model_expected": 0.029000272465195303,
+      "synthetic_mean": 0.028864640000000007,
+      "predictive_ci95": [
+        0.017600000000000005,
+        0.04319999999999999
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5r",
+      "statistic": "P2_not_applicable",
+      "observed": 0.9087999999999993,
+      "model_expected": 0.94199945506961,
+      "synthetic_mean": 0.9420620800000105,
+      "predictive_ci95": [
+        0.92320000000001,
+        0.9600000000000111
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5r",
+      "statistic": "P3_predicted",
+      "observed": 0.02720000000000001,
+      "model_expected": 0.053173557586047505,
+      "synthetic_mean": 0.05334239999999998,
+      "predictive_ci95": [
+        0.0368,
+        0.07199999999999998
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5r",
+      "statistic": "P3_reverse",
+      "observed": 0.008,
+      "model_expected": 0.053173557586047505,
+      "synthetic_mean": 0.053039039999999975,
+      "predictive_ci95": [
+        0.0368,
+        0.07039999999999998
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5r",
+      "statistic": "P3_not_applicable",
+      "observed": 0.9647999999999982,
+      "model_expected": 0.8936528848279055,
+      "synthetic_mean": 0.8936185600000092,
+      "predictive_ci95": [
+        0.8688000000000085,
+        0.9168000000000098
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5r",
+      "statistic": "P4_predicted",
+      "observed": 0.12960000000000002,
+      "model_expected": 0.053173557586047505,
+      "synthetic_mean": 0.05313311999999997,
+      "predictive_ci95": [
+        0.036760000000000015,
+        0.07039999999999998
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5r",
+      "statistic": "P4_reverse",
+      "observed": 0.0016,
+      "model_expected": 0.053173557586047505,
+      "synthetic_mean": 0.05332447999999997,
+      "predictive_ci95": [
+        0.0368,
+        0.07199999999999998
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5r",
+      "statistic": "P4_not_applicable",
+      "observed": 0.8688000000000085,
+      "model_expected": 0.8936528848278973,
+      "synthetic_mean": 0.8935424000000092,
+      "predictive_ci95": [
+        0.8688000000000085,
+        0.9184000000000099
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5r",
+      "statistic": "P2_predicted_among_applicable",
+      "observed": 0.8947368421052632,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.3333333333333333,
+        0.6666666666666665
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 5000,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A5r",
+      "statistic": "P3_predicted_among_applicable",
+      "observed": 0.7727272727272728,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.38333333333333347,
+        0.6231884057971013
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 5000,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A5r",
+      "statistic": "P4_predicted_among_applicable",
+      "observed": 0.9878048780487806,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.381818181818182,
+        0.6164440639269406
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 5000,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A5s",
+      "statistic": "k_1",
+      "observed": 0.028800000000000006,
+      "model_expected": 0.044340613394561856,
+      "synthetic_mean": 0.044304639999999985,
+      "predictive_ci95": [
+        0.02880000000000001,
+        0.06079999999999996
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5s",
+      "statistic": "k_2",
+      "observed": 0.32479999999999987,
+      "model_expected": 0.25681014219915477,
+      "synthetic_mean": 0.25673439999999936,
+      "predictive_ci95": [
+        0.22239999999999954,
+        0.2911999999999991
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5s",
+      "statistic": "k_3",
+      "observed": 0.1823999999999999,
+      "model_expected": 0.3162162633871291,
+      "synthetic_mean": 0.316183679999999,
+      "predictive_ci95": [
+        0.2799999999999992,
+        0.35199999999999876
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5s",
+      "statistic": "k_4",
+      "observed": 0.35039999999999966,
+      "model_expected": 0.21049993325854094,
+      "synthetic_mean": 0.2102652799999996,
+      "predictive_ci95": [
+        0.1791999999999998,
+        0.24319999999999942
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5s",
+      "statistic": "k_5",
+      "observed": 0.039999999999999994,
+      "model_expected": 0.10575732039934166,
+      "synthetic_mean": 0.10624320000000007,
+      "predictive_ci95": [
+        0.08320000000000001,
+        0.1312000000000001
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5s",
+      "statistic": "k_6",
+      "observed": 0.04799999999999998,
+      "model_expected": 0.04546079024550195,
+      "synthetic_mean": 0.045390399999999984,
+      "predictive_ci95": [
+        0.02880000000000001,
+        0.062399999999999956
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5s",
+      "statistic": "k_7",
+      "observed": 0.019200000000000005,
+      "model_expected": 0.01668026103205028,
+      "synthetic_mean": 0.016662720000000006,
+      "predictive_ci95": [
+        0.008,
+        0.02720000000000001
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5s",
+      "statistic": "k_8",
+      "observed": 0.0064,
+      "model_expected": 0.004234676083719404,
+      "synthetic_mean": 0.00421568,
+      "predictive_ci95": [
+        0.0,
+        0.009600000000000001
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5s",
+      "statistic": "conj_abs",
+      "observed": 0.7392000000000003,
+      "model_expected": 0.09786379158573431,
+      "synthetic_mean": 0.09795872000000005,
+      "predictive_ci95": [
+        0.07519999999999999,
+        0.12160000000000011
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5s",
+      "statistic": "conj_rel_r",
+      "observed": 0.9599999999999984,
+      "model_expected": 0.09786379158573427,
+      "synthetic_mean": 0.09748128000000005,
+      "predictive_ci95": [
+        0.07519999999999999,
+        0.12160000000000011
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5s",
+      "statistic": "conj_rel_s",
+      "observed": 0.4463999999999998,
+      "model_expected": 0.11201343438307894,
+      "synthetic_mean": 0.11203488000000007,
+      "predictive_ci95": [
+        0.08800000000000002,
+        0.13760000000000006
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5s",
+      "statistic": "conj_all",
+      "observed": 0.9647999999999983,
+      "model_expected": 0.13073604710729508,
+      "synthetic_mean": 0.13073120000000008,
+      "predictive_ci95": [
+        0.10400000000000006,
+        0.15679999999999994
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5s",
+      "statistic": "P2_predicted",
+      "observed": 0.08160000000000002,
+      "model_expected": 0.0014859270790910466,
+      "synthetic_mean": 0.00145792,
+      "predictive_ci95": [
+        0.0,
+        0.0048000000000000004
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5s",
+      "statistic": "P2_reverse",
+      "observed": 0.009600000000000001,
+      "model_expected": 0.0014859270790910464,
+      "synthetic_mean": 0.00150208,
+      "predictive_ci95": [
+        0.0,
+        0.0048000000000000004
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5s",
+      "statistic": "P2_not_applicable",
+      "observed": 0.9087999999999993,
+      "model_expected": 0.9970281458418186,
+      "synthetic_mean": 0.9970400000000121,
+      "predictive_ci95": [
+        0.992000000000012,
+        1.0000000000000122
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5s",
+      "statistic": "P3_predicted",
+      "observed": 0.02720000000000001,
+      "model_expected": 0.001235143602023039,
+      "synthetic_mean": 0.0012086400000000002,
+      "predictive_ci95": [
+        0.0,
+        0.0048000000000000004
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5s",
+      "statistic": "P3_reverse",
+      "observed": 0.008,
+      "model_expected": 0.001235143602023039,
+      "synthetic_mean": 0.00125088,
+      "predictive_ci95": [
+        0.0,
+        0.0048000000000000004
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5s",
+      "statistic": "P3_not_applicable",
+      "observed": 0.9647999999999982,
+      "model_expected": 0.9975297127959549,
+      "synthetic_mean": 0.9975404800000122,
+      "predictive_ci95": [
+        0.993600000000012,
+        1.0000000000000122
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5s",
+      "statistic": "P4_predicted",
+      "observed": 0.12960000000000002,
+      "model_expected": 0.0025369496965495543,
+      "synthetic_mean": 0.0025529600000000004,
+      "predictive_ci95": [
+        0.0,
+        0.0064
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5s",
+      "statistic": "P4_reverse",
+      "observed": 0.0016,
+      "model_expected": 0.0025369496965495543,
+      "synthetic_mean": 0.00251584,
+      "predictive_ci95": [
+        0.0,
+        0.0064
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5s",
+      "statistic": "P4_not_applicable",
+      "observed": 0.8688000000000085,
+      "model_expected": 0.994926100606912,
+      "synthetic_mean": 0.9949312000000122,
+      "predictive_ci95": [
+        0.9888000000000119,
+        1.0000000000000122
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A5s",
+      "statistic": "P2_predicted_among_applicable",
+      "observed": 0.8947368421052632,
+      "model_expected": 0.5000000000000001,
+      "predictive_ci95": [
+        0.0,
+        1.0
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 4242,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A5s",
+      "statistic": "P3_predicted_among_applicable",
+      "observed": 0.7727272727272728,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.0,
+        1.0
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 3935,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A5s",
+      "statistic": "P4_predicted_among_applicable",
+      "observed": 0.9878048780487806,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.0,
+        1.0
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 4790,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A6",
+      "statistic": "k_1",
+      "observed": 0.028800000000000006,
+      "model_expected": 0.055820696991650244,
+      "synthetic_mean": 0.05586143999999997,
+      "predictive_ci95": [
+        0.0384,
+        0.07359999999999998
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A6",
+      "statistic": "k_2",
+      "observed": 0.32479999999999987,
+      "model_expected": 0.255533160860871,
+      "synthetic_mean": 0.2555923199999993,
+      "predictive_ci95": [
+        0.22079999999999955,
+        0.28959999999999914
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A6",
+      "statistic": "k_3",
+      "observed": 0.1823999999999999,
+      "model_expected": 0.28793602310356026,
+      "synthetic_mean": 0.2878982399999992,
+      "predictive_ci95": [
+        0.25279999999999936,
+        0.3247999999999989
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A6",
+      "statistic": "k_4",
+      "observed": 0.35039999999999966,
+      "model_expected": 0.20287184655659937,
+      "synthetic_mean": 0.20271135999999965,
+      "predictive_ci95": [
+        0.17119999999999985,
+        0.23519999999999947
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A6",
+      "statistic": "k_5",
+      "observed": 0.039999999999999994,
+      "model_expected": 0.14153552763678248,
+      "synthetic_mean": 0.14159360000000001,
+      "predictive_ci95": [
+        0.1152000000000001,
+        0.16959999999999986
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A6",
+      "statistic": "k_6",
+      "observed": 0.04799999999999998,
+      "model_expected": 0.04477003413659005,
+      "synthetic_mean": 0.044859519999999986,
+      "predictive_ci95": [
+        0.02880000000000001,
+        0.060839999999999374
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A6",
+      "statistic": "k_7",
+      "observed": 0.019200000000000005,
+      "model_expected": 0.009941997043099383,
+      "synthetic_mean": 0.009896,
+      "predictive_ci95": [
+        0.0032,
+        0.017600000000000005
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A6",
+      "statistic": "k_8",
+      "observed": 0.0064,
+      "model_expected": 0.0015907136708493517,
+      "synthetic_mean": 0.00158752,
+      "predictive_ci95": [
+        0.0,
+        0.0048000000000000004
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A6",
+      "statistic": "conj_abs",
+      "observed": 0.7392000000000003,
+      "model_expected": 0.6547044315409561,
+      "synthetic_mean": 0.6544624000000023,
+      "predictive_ci95": [
+        0.6176000000000013,
+        0.6896400000000027
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A6",
+      "statistic": "conj_rel_r",
+      "observed": 0.9599999999999984,
+      "model_expected": 0.6547044315409565,
+      "synthetic_mean": 0.6545161600000023,
+      "predictive_ci95": [
+        0.6160000000000012,
+        0.6912000000000034
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A6",
+      "statistic": "conj_rel_s",
+      "observed": 0.4463999999999998,
+      "model_expected": 0.6547044315409567,
+      "synthetic_mean": 0.6547027200000023,
+      "predictive_ci95": [
+        0.6176000000000013,
+        0.6912000000000034
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A6",
+      "statistic": "conj_all",
+      "observed": 0.9647999999999983,
+      "model_expected": 0.9877749246588227,
+      "synthetic_mean": 0.9877763200000118,
+      "predictive_ci95": [
+        0.9792000000000116,
+        0.9952000000000121
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A6",
+      "statistic": "P2_predicted",
+      "observed": 0.08160000000000002,
+      "model_expected": 0.03216761649010694,
+      "synthetic_mean": 0.03209696,
+      "predictive_ci95": [
+        0.019200000000000005,
+        0.04639999999999998
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A6",
+      "statistic": "P2_reverse",
+      "observed": 0.009600000000000001,
+      "model_expected": 0.03216761649010694,
+      "synthetic_mean": 0.03234784000000001,
+      "predictive_ci95": [
+        0.019200000000000005,
+        0.04639999999999998
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A6",
+      "statistic": "P2_not_applicable",
+      "observed": 0.9087999999999993,
+      "model_expected": 0.9356647670197893,
+      "synthetic_mean": 0.9355552000000105,
+      "predictive_ci95": [
+        0.9152000000000098,
+        0.9536000000000109
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A6",
+      "statistic": "P3_predicted",
+      "observed": 0.02720000000000001,
+      "model_expected": 0.03216761649010694,
+      "synthetic_mean": 0.031987840000000003,
+      "predictive_ci95": [
+        0.019200000000000005,
+        0.04639999999999998
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A6",
+      "statistic": "P3_reverse",
+      "observed": 0.008,
+      "model_expected": 0.03216761649010694,
+      "synthetic_mean": 0.032179200000000005,
+      "predictive_ci95": [
+        0.019200000000000005,
+        0.04799999999999998
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A6",
+      "statistic": "P3_not_applicable",
+      "observed": 0.9647999999999982,
+      "model_expected": 0.9356647670197896,
+      "synthetic_mean": 0.9358329600000103,
+      "predictive_ci95": [
+        0.9168000000000098,
+        0.9536000000000109
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A6",
+      "statistic": "P4_predicted",
+      "observed": 0.12960000000000002,
+      "model_expected": 0.03216761649010694,
+      "synthetic_mean": 0.032136960000000006,
+      "predictive_ci95": [
+        0.019200000000000005,
+        0.04639999999999998
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A6",
+      "statistic": "P4_reverse",
+      "observed": 0.0016,
+      "model_expected": 0.03216761649010694,
+      "synthetic_mean": 0.032374400000000005,
+      "predictive_ci95": [
+        0.019200000000000005,
+        0.04639999999999998
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A6",
+      "statistic": "P4_not_applicable",
+      "observed": 0.8688000000000085,
+      "model_expected": 0.9356647670197732,
+      "synthetic_mean": 0.9354886400000105,
+      "predictive_ci95": [
+        0.9152000000000098,
+        0.9536000000000109
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A6",
+      "statistic": "P2_predicted_among_applicable",
+      "observed": 0.8947368421052632,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.3408970019342361,
+        0.6486486486486486
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 5000,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A6",
+      "statistic": "P3_predicted_among_applicable",
+      "observed": 0.7727272727272728,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.34480064655172415,
+        0.6499999999999998
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 5000,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A6",
+      "statistic": "P4_predicted_among_applicable",
+      "observed": 0.9878048780487806,
+      "model_expected": 0.5,
+      "predictive_ci95": [
+        0.34691915227629533,
+        0.657142857142857
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 5000,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A7",
+      "statistic": "k_1",
+      "observed": 0.028800000000000006,
+      "model_expected": 0.0635184688871979,
+      "synthetic_mean": 0.06353343999999997,
+      "predictive_ci95": [
+        0.044799999999999986,
+        0.08320000000000001
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A7",
+      "statistic": "k_2",
+      "observed": 0.32479999999999987,
+      "model_expected": 0.22504060967776127,
+      "synthetic_mean": 0.22519167999999953,
+      "predictive_ci95": [
+        0.19359999999999972,
+        0.25759999999999933
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A7",
+      "statistic": "k_3",
+      "observed": 0.1823999999999999,
+      "model_expected": 0.3216796727886871,
+      "synthetic_mean": 0.32132479999999897,
+      "predictive_ci95": [
+        0.28479999999999916,
+        0.3583999999999987
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A7",
+      "statistic": "k_4",
+      "observed": 0.35039999999999966,
+      "model_expected": 0.20379183632028028,
+      "synthetic_mean": 0.20408031999999968,
+      "predictive_ci95": [
+        0.17279999999999984,
+        0.23679999999999946
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A7",
+      "statistic": "k_5",
+      "observed": 0.039999999999999994,
+      "model_expected": 0.1252047653139402,
+      "synthetic_mean": 0.12530112000000007,
+      "predictive_ci95": [
+        0.09920000000000005,
+        0.15199999999999997
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A7",
+      "statistic": "k_6",
+      "observed": 0.04799999999999998,
+      "model_expected": 0.04654131731871172,
+      "synthetic_mean": 0.046399999999999976,
+      "predictive_ci95": [
+        0.03040000000000001,
+        0.06399999999999996
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A7",
+      "statistic": "k_7",
+      "observed": 0.019200000000000005,
+      "model_expected": 0.012064507987618463,
+      "synthetic_mean": 0.012039680000000002,
+      "predictive_ci95": [
+        0.0048000000000000004,
+        0.020800000000000006
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A7",
+      "statistic": "k_8",
+      "observed": 0.0064,
+      "model_expected": 0.0021588217058037,
+      "synthetic_mean": 0.00212896,
+      "predictive_ci95": [
+        0.0,
+        0.0064
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A7",
+      "statistic": "conj_abs",
+      "observed": 0.7392000000000003,
+      "model_expected": 0.5259624261282448,
+      "synthetic_mean": 0.5259523199999987,
+      "predictive_ci95": [
+        0.48639999999999795,
+        0.5647999999999997
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A7",
+      "statistic": "conj_rel_r",
+      "observed": 0.9599999999999984,
+      "model_expected": 0.9811186934631939,
+      "synthetic_mean": 0.9810099200000117,
+      "predictive_ci95": [
+        0.9696000000000113,
+        0.9904000000000119
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A7",
+      "statistic": "conj_rel_s",
+      "observed": 0.4463999999999998,
+      "model_expected": 0.5511930462694673,
+      "synthetic_mean": 0.5511110399999994,
+      "predictive_ci95": [
+        0.5135999999999983,
+        0.5904399999999999
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A7",
+      "statistic": "conj_all",
+      "observed": 0.9647999999999983,
+      "model_expected": 0.9812170627276294,
+      "synthetic_mean": 0.9811030400000116,
+      "predictive_ci95": [
+        0.9696000000000113,
+        0.9904000000000119
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A7",
+      "statistic": "P2_predicted",
+      "observed": 0.08160000000000002,
+      "model_expected": 0.07971616508147783,
+      "synthetic_mean": 0.07971264,
+      "predictive_ci95": [
+        0.05919999999999996,
+        0.10240000000000006
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A7",
+      "statistic": "P2_reverse",
+      "observed": 0.009600000000000001,
+      "model_expected": 0.007716153903269936,
+      "synthetic_mean": 0.007733120000000001,
+      "predictive_ci95": [
+        0.0016,
+        0.016000000000000004
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A7",
+      "statistic": "P2_not_applicable",
+      "observed": 0.9087999999999993,
+      "model_expected": 0.9125676810152509,
+      "synthetic_mean": 0.9125542400000096,
+      "predictive_ci95": [
+        0.889600000000009,
+        0.9344000000000103
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A7",
+      "statistic": "P3_predicted",
+      "observed": 0.02720000000000001,
+      "model_expected": 0.05602757404283611,
+      "synthetic_mean": 0.05608415999999997,
+      "predictive_ci95": [
+        0.0384,
+        0.07519999999999999
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A7",
+      "statistic": "P3_reverse",
+      "observed": 0.008,
+      "model_expected": 0.03682756221508718,
+      "synthetic_mean": 0.036737599999999995,
+      "predictive_ci95": [
+        0.022400000000000007,
+        0.05279999999999997
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A7",
+      "statistic": "P3_not_applicable",
+      "observed": 0.9647999999999982,
+      "model_expected": 0.9071448637420756,
+      "synthetic_mean": 0.9071782400000095,
+      "predictive_ci95": [
+        0.8832000000000089,
+        0.9296000000000102
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A7",
+      "statistic": "P4_predicted",
+      "observed": 0.12960000000000002,
+      "model_expected": 0.14248158440083408,
+      "synthetic_mean": 0.14250912000000002,
+      "predictive_ci95": [
+        0.1152000000000001,
+        0.17119999999999985
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A7",
+      "statistic": "P4_reverse",
+      "observed": 0.0016,
+      "model_expected": 0.014481583549901008,
+      "synthetic_mean": 0.014478720000000004,
+      "predictive_ci95": [
+        0.0064,
+        0.024000000000000007
+      ],
+      "inside_interval": false,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A7",
+      "statistic": "P4_not_applicable",
+      "observed": 0.8688000000000085,
+      "model_expected": 0.8430368320492577,
+      "synthetic_mean": 0.8430121600000079,
+      "predictive_ci95": [
+        0.8144000000000069,
+        0.8704000000000085
+      ],
+      "inside_interval": true,
+      "synthetic_samples": 5000,
+      "sample_size": 625,
+      "scope": "MLE fitted-distribution simulation; not Bayesian posterior"
+    },
+    {
+      "model": "A7",
+      "statistic": "P2_predicted_among_applicable",
+      "observed": 0.8947368421052632,
+      "model_expected": 0.9117471205971789,
+      "predictive_ci95": [
+        0.8292397103658536,
+        0.9803921568627451
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 5000,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A7",
+      "statistic": "P3_predicted_among_applicable",
+      "observed": 0.7727272727272728,
+      "model_expected": 0.6033869132151028,
+      "predictive_ci95": [
+        0.47272727272727283,
+        0.732142857142857
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 5000,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    },
+    {
+      "model": "A7",
+      "statistic": "P4_predicted_among_applicable",
+      "observed": 0.9878048780487806,
+      "model_expected": 0.9077389699827781,
+      "predictive_ci95": [
+        0.8461538461538461,
+        0.9611650485436893
+      ],
+      "synthetic_samples": 5000,
+      "valid_nonempty_denominator_samples": 5000,
+      "scope": "conditional directional proportion; empty synthetic denominators recorded"
+    }
+  ],
+  "coefficient_bootstrap": null,
+  "fits": 118,
+  "failed_fits": 0,
+  "A6_lambda": {
+    "values": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "status": "identical",
+    "refitted": false
+  },
+  "unweighted": {
+    "identical_to": "language",
+    "refitted": false
+  }
+}

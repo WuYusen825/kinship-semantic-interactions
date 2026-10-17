@@ -1,0 +1,1368 @@
+{
+  "task": "T0",
+  "started_utc": "2026-10-16T11:01:36.268034+00:00",
+  "commit": "b1f6178adff470c39a50f0b5d91b1183d117e4e6",
+  "seed": 20261016,
+  "checks": [
+    {
+      "label": "主样本系统数",
+      "paper_value": 939,
+      "recomputed_value": 939,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 939,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "主样本谱系组",
+      "paper_value": 125,
+      "recomputed_value": 125,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 125,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "无序类别对",
+      "paper_value": 26292,
+      "recomputed_value": 26292,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 26292,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "严格划分系统",
+      "paper_value": 625,
+      "recomputed_value": 625,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 625,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "严格划分谱系组",
+      "paper_value": 108,
+      "recomputed_value": 108,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 108,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "非合取系统：three",
+      "paper_value": 163,
+      "recomputed_value": 163,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 163,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "非合取系统：four",
+      "paper_value": 22,
+      "recomputed_value": 22,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 22,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "四特征非合取比例（系统）",
+      "paper_value": 0.035,
+      "recomputed_value": 0.0352,
+      "difference_from_paper": 0.0001999999999999988,
+      "old_exact_value": 0.0352,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "按一位百分数核对显示值",
+      "passed": true
+    },
+    {
+      "label": "四特征非合取比例（谱系等权）",
+      "paper_value": 0.028,
+      "recomputed_value": 0.028202812226505034,
+      "difference_from_paper": 0.0002028122265050336,
+      "old_exact_value": 0.028202812226505034,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "按一位百分数核对显示值",
+      "passed": true
+    },
+    {
+      "label": "非合取系统：six",
+      "paper_value": 21,
+      "recomputed_value": 21,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 21,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "P2 systems_predicted",
+      "paper_value": 51,
+      "recomputed_value": 51,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 51,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "P2 systems_opposite",
+      "paper_value": 6,
+      "recomputed_value": 6,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 6,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "P2 families_predicted_majority",
+      "paper_value": 21,
+      "recomputed_value": 21,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 21,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "P2 families_opposite_majority",
+      "paper_value": 3,
+      "recomputed_value": 3,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 3,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "P3 systems_predicted",
+      "paper_value": 17,
+      "recomputed_value": 17,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 17,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "P3 systems_opposite",
+      "paper_value": 5,
+      "recomputed_value": 5,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 5,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "P3 families_predicted_majority",
+      "paper_value": 11,
+      "recomputed_value": 11,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 11,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "P3 families_opposite_majority",
+      "paper_value": 3,
+      "recomputed_value": 3,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 3,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "P4 systems_predicted",
+      "paper_value": 81,
+      "recomputed_value": 81,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 81,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "P4 systems_opposite",
+      "paper_value": 1,
+      "recomputed_value": 1,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 1,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "P4 families_predicted_majority",
+      "paper_value": 17,
+      "recomputed_value": 17,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 17,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "P4 families_opposite_majority",
+      "paper_value": 1,
+      "recomputed_value": 1,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 1,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "family 验证系统数",
+      "paper_value": 939,
+      "recomputed_value": 939,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 939,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "family M0 log loss",
+      "paper_value": 0.5088,
+      "recomputed_value": 0.5087827346442564,
+      "difference_from_paper": -1.7265355743645294e-05,
+      "old_exact_value": 0.5087827346442564,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0001,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "family M1 log loss",
+      "paper_value": 0.502,
+      "recomputed_value": 0.5019724513567103,
+      "difference_from_paper": -2.7548643289687647e-05,
+      "old_exact_value": 0.5019724513567103,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0001,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "family M2 log loss",
+      "paper_value": 0.4961,
+      "recomputed_value": 0.49605459346885034,
+      "difference_from_paper": -4.5406531149649876e-05,
+      "old_exact_value": 0.49605459346885034,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0001,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "family M3 log loss",
+      "paper_value": 0.4944,
+      "recomputed_value": 0.49438554677672675,
+      "difference_from_paper": -1.4453223273258597e-05,
+      "old_exact_value": 0.49438554677672675,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0001,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "family M4 log loss",
+      "paper_value": 0.4943,
+      "recomputed_value": 0.49430012702106374,
+      "difference_from_paper": 1.2702106372275423e-07,
+      "old_exact_value": 0.49430012702106374,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0001,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "area 验证系统数",
+      "paper_value": 909,
+      "recomputed_value": 909,
+      "difference_from_paper": 0.0,
+      "old_exact_value": 909,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "area M0 log loss",
+      "paper_value": 0.5326,
+      "recomputed_value": 0.5326027237724449,
+      "difference_from_paper": 2.723772444923611e-06,
+      "old_exact_value": 0.5326027237724449,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0001,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "area M1 log loss",
+      "paper_value": 0.541,
+      "recomputed_value": 0.5410041157962142,
+      "difference_from_paper": 4.115796214176903e-06,
+      "old_exact_value": 0.5410041157962142,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0001,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "area M2 log loss",
+      "paper_value": 0.54,
+      "recomputed_value": 0.5400308376772123,
+      "difference_from_paper": 3.0837677212236514e-05,
+      "old_exact_value": 0.5400308376772123,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0001,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "area M3 log loss",
+      "paper_value": 0.5407,
+      "recomputed_value": 0.5406620637907332,
+      "difference_from_paper": -3.793620926673125e-05,
+      "old_exact_value": 0.5406620637907332,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0001,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "area M4 log loss",
+      "paper_value": 0.5405,
+      "recomputed_value": 0.5405160810520225,
+      "difference_from_paper": 1.6081052022554054e-05,
+      "old_exact_value": 0.5405160810520225,
+      "difference_from_old_exact": 0.0,
+      "tolerance": 0.0001,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "主全样本M4 DrE",
+      "paper_value": -0.4578,
+      "recomputed_value": -0.4578417310811452,
+      "difference_from_paper": -4.1731081145190974e-05,
+      "old_exact_value": -0.4578417310811507,
+      "difference_from_old_exact": 5.551115123125783e-15,
+      "tolerance": 0.0001,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "主全样本M4 DaB",
+      "paper_value": -0.1195,
+      "recomputed_value": -0.11951831014511531,
+      "difference_from_paper": -1.8310145115316145e-05,
+      "old_exact_value": -0.11951831014511637,
+      "difference_from_old_exact": 1.0547118733938987e-15,
+      "tolerance": 0.0001,
+      "comparison": "绝对差",
+      "passed": true
+    },
+    {
+      "label": "主全样本M4 DaS",
+      "paper_value": -0.6558,
+      "recomputed_value": -0.6558214425314076,
+      "difference_from_paper": -2.1442531407567245e-05,
+      "old_exact_value": -0.6558214425314142,
+      "difference_from_old_exact": 6.5503158452884236e-15,
+      "tolerance": 0.0001,
+      "comparison": "绝对差",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "directions": {
+    "P2": {
+      "n_systems": 625,
+      "n_families_total": 108,
+      "systems_predicted": 51,
+      "systems_opposite": 6,
+      "systems_not_applicable": 568,
+      "systems_structurally_ambiguous_main": 0,
+      "systems_with_multiple_tree_sides_before_edge_filter": 4,
+      "ambiguous_tree_system_ids": [
+        "v_galibicaribgali1262",
+        "v_kaiwakaiw1246",
+        "p_morgan1871kalaallisuteskimogreenlandkala1399",
+        "p_kalamangkara1499"
+      ],
+      "relevant_families_including_ties": 24,
+      "family_ties": 0,
+      "family_tie_ids": [],
+      "families_predicted_majority": 21,
+      "families_opposite_majority": 3,
+      "binomial_trials": 24,
+      "predicted_family_proportion": 0.875,
+      "exact_binomial_p_one_sided": 0.0001385807991027832,
+      "bonferroni_three_p": 0.0004157423973083496,
+      "direction_supported": true,
+      "family_direction_rows": [
+        {
+          "family_group": "algi1248",
+          "predicted_systems": 16,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "anga1289",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "araw1281",
+          "predicted_systems": 0,
+          "opposite_systems": 1,
+          "majority": "opposite_majority"
+        },
+        {
+          "family_group": "atha1245",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "atla1278",
+          "predicted_systems": 2,
+          "opposite_systems": 1,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "aust1305",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "aust1307",
+          "predicted_systems": 4,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "cari1283",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "chib1249",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "eski1264",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "guai1249",
+          "predicted_systems": 0,
+          "opposite_systems": 2,
+          "majority": "opposite_majority"
+        },
+        {
+          "family_group": "haid1248",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "iroq1247",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "isolate:movi1243",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "kolo1268",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "kxaa1236",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "maya1287",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "mong1349",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "nakh1245",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "nucl1709",
+          "predicted_systems": 3,
+          "opposite_systems": 1,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "pama1250",
+          "predicted_systems": 10,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "pano1259",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "uruc1242",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "yuki1242",
+          "predicted_systems": 0,
+          "opposite_systems": 1,
+          "majority": "opposite_majority"
+        }
+      ],
+      "macroarea_directions": [
+        {
+          "macroarea": "Africa",
+          "predicted_systems": 3,
+          "opposite_systems": 1,
+          "majority": "predicted"
+        },
+        {
+          "macroarea": "Australia",
+          "predicted_systems": 10,
+          "opposite_systems": 0,
+          "majority": "predicted"
+        },
+        {
+          "macroarea": "Eurasia",
+          "predicted_systems": 3,
+          "opposite_systems": 0,
+          "majority": "predicted"
+        },
+        {
+          "macroarea": "North America",
+          "predicted_systems": 20,
+          "opposite_systems": 1,
+          "majority": "predicted"
+        },
+        {
+          "macroarea": "Papunesia",
+          "predicted_systems": 9,
+          "opposite_systems": 1,
+          "majority": "predicted"
+        },
+        {
+          "macroarea": "South America",
+          "predicted_systems": 5,
+          "opposite_systems": 3,
+          "majority": "predicted"
+        }
+      ],
+      "unknown_macroarea_direction": {
+        "macroarea": "Unknown",
+        "predicted_systems": 1,
+        "opposite_systems": 0,
+        "majority": "predicted"
+      },
+      "macroareas_with_related_systems": 6,
+      "macroareas_predicted_majority": 6,
+      "macroareas_opposite_majority": 0,
+      "macroareas_tied": 0
+    },
+    "P3": {
+      "n_systems": 625,
+      "n_families_total": 108,
+      "systems_predicted": 17,
+      "systems_opposite": 5,
+      "systems_not_applicable": 603,
+      "systems_structurally_ambiguous_main": 0,
+      "systems_with_multiple_tree_sides_before_edge_filter": 0,
+      "ambiguous_tree_system_ids": [],
+      "relevant_families_including_ties": 15,
+      "family_ties": 1,
+      "family_tie_ids": [
+        "pama1250"
+      ],
+      "families_predicted_majority": 11,
+      "families_opposite_majority": 3,
+      "binomial_trials": 14,
+      "predicted_family_proportion": 0.7857142857142857,
+      "exact_binomial_p_one_sided": 0.0286865234375,
+      "bonferroni_three_p": 0.0860595703125,
+      "direction_supported": false,
+      "family_direction_rows": [
+        {
+          "family_group": "afro1255",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "atla1278",
+          "predicted_systems": 4,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "aust1307",
+          "predicted_systems": 3,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "cadd1255",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "drav1251",
+          "predicted_systems": 0,
+          "opposite_systems": 1,
+          "majority": "opposite_majority"
+        },
+        {
+          "family_group": "east2503",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "indo1319",
+          "predicted_systems": 0,
+          "opposite_systems": 2,
+          "majority": "opposite_majority"
+        },
+        {
+          "family_group": "isolate:puel1244",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "kiow1265",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "more1255",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "nucl1709",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "nyul1248",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "pama1250",
+          "predicted_systems": 1,
+          "opposite_systems": 1,
+          "majority": "tie"
+        },
+        {
+          "family_group": "shas1238",
+          "predicted_systems": 0,
+          "opposite_systems": 1,
+          "majority": "opposite_majority"
+        },
+        {
+          "family_group": "tupi1275",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        }
+      ],
+      "macroarea_directions": [
+        {
+          "macroarea": "Africa",
+          "predicted_systems": 5,
+          "opposite_systems": 0,
+          "majority": "predicted"
+        },
+        {
+          "macroarea": "Australia",
+          "predicted_systems": 1,
+          "opposite_systems": 1,
+          "majority": "tie"
+        },
+        {
+          "macroarea": "Eurasia",
+          "predicted_systems": 0,
+          "opposite_systems": 2,
+          "majority": "opposite"
+        },
+        {
+          "macroarea": "North America",
+          "predicted_systems": 2,
+          "opposite_systems": 1,
+          "majority": "predicted"
+        },
+        {
+          "macroarea": "Papunesia",
+          "predicted_systems": 6,
+          "opposite_systems": 0,
+          "majority": "predicted"
+        },
+        {
+          "macroarea": "South America",
+          "predicted_systems": 2,
+          "opposite_systems": 0,
+          "majority": "predicted"
+        }
+      ],
+      "unknown_macroarea_direction": {
+        "macroarea": "Unknown",
+        "predicted_systems": 1,
+        "opposite_systems": 1,
+        "majority": "tie"
+      },
+      "macroareas_with_related_systems": 6,
+      "macroareas_predicted_majority": 4,
+      "macroareas_opposite_majority": 1,
+      "macroareas_tied": 1
+    },
+    "P4": {
+      "n_systems": 625,
+      "n_families_total": 108,
+      "systems_predicted": 81,
+      "systems_opposite": 1,
+      "systems_not_applicable": 543,
+      "systems_structurally_ambiguous_main": 0,
+      "systems_with_multiple_tree_sides_before_edge_filter": 0,
+      "ambiguous_tree_system_ids": [],
+      "relevant_families_including_ties": 18,
+      "family_ties": 0,
+      "family_tie_ids": [],
+      "families_predicted_majority": 17,
+      "families_opposite_majority": 1,
+      "binomial_trials": 18,
+      "predicted_family_proportion": 0.9444444444444444,
+      "exact_binomial_p_one_sided": 7.2479248046875e-05,
+      "bonferroni_three_p": 0.000217437744140625,
+      "direction_supported": true,
+      "family_direction_rows": [
+        {
+          "family_group": "atla1278",
+          "predicted_systems": 4,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "aust1307",
+          "predicted_systems": 49,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "basq1248",
+          "predicted_systems": 0,
+          "opposite_systems": 1,
+          "majority": "opposite_majority"
+        },
+        {
+          "family_group": "bord1247",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "kaur1274",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "lake1255",
+          "predicted_systems": 2,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "musk1252",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "nimb1257",
+          "predicted_systems": 2,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "nort2923",
+          "predicted_systems": 2,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "nucl1708",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "nucl1709",
+          "predicted_systems": 2,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "paho1240",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "ramu1234",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "sepi1257",
+          "predicted_systems": 3,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "sout2948",
+          "predicted_systems": 2,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "timo1261",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "tupi1275",
+          "predicted_systems": 7,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        },
+        {
+          "family_group": "yawa1259",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted_majority"
+        }
+      ],
+      "macroarea_directions": [
+        {
+          "macroarea": "Africa",
+          "predicted_systems": 4,
+          "opposite_systems": 0,
+          "majority": "predicted"
+        },
+        {
+          "macroarea": "Eurasia",
+          "predicted_systems": 0,
+          "opposite_systems": 1,
+          "majority": "opposite"
+        },
+        {
+          "macroarea": "North America",
+          "predicted_systems": 1,
+          "opposite_systems": 0,
+          "majority": "predicted"
+        },
+        {
+          "macroarea": "Papunesia",
+          "predicted_systems": 66,
+          "opposite_systems": 0,
+          "majority": "predicted"
+        },
+        {
+          "macroarea": "South America",
+          "predicted_systems": 7,
+          "opposite_systems": 0,
+          "majority": "predicted"
+        }
+      ],
+      "unknown_macroarea_direction": {
+        "macroarea": "Unknown",
+        "predicted_systems": 3,
+        "opposite_systems": 0,
+        "majority": "predicted"
+      },
+      "macroareas_with_related_systems": 5,
+      "macroareas_predicted_majority": 4,
+      "macroareas_opposite_majority": 1,
+      "macroareas_tied": 0
+    }
+  },
+  "recomputed_models": {
+    "family": {
+      "systems": 939,
+      "families": 125,
+      "pairs": 26292,
+      "logloss": {
+        "M0": 0.5087827346442564,
+        "M1": 0.5019724513567103,
+        "M2": 0.49605459346885034,
+        "M3": 0.49438554677672675,
+        "M4": 0.49430012702106374
+      },
+      "comparisons": {
+        "M0-M1": {
+          "gain": 0.006810283287545981,
+          "family_cluster_bootstrap_95ci": [
+            0.001082111137669515,
+            0.013120269462295464
+          ]
+        },
+        "M0-M2": {
+          "gain": 0.012728141175406077,
+          "family_cluster_bootstrap_95ci": [
+            0.006602027476814155,
+            0.019159623751260464
+          ]
+        },
+        "M1-M2": {
+          "gain": 0.005917857887860097,
+          "family_cluster_bootstrap_95ci": [
+            0.0021731347520574274,
+            0.009447243211336933
+          ]
+        },
+        "M0-M4": {
+          "gain": 0.014482607623192699,
+          "family_cluster_bootstrap_95ci": [
+            0.0076899197883411536,
+            0.021519138109282594
+          ]
+        },
+        "M2-M4": {
+          "gain": 0.001754466447786622,
+          "family_cluster_bootstrap_95ci": [
+            -0.0004811547240282373,
+            0.004028098802291354
+          ]
+        },
+        "M2-M3": {
+          "gain": 0.0016690466921235152,
+          "family_cluster_bootstrap_95ci": [
+            -0.0006236114994909738,
+            0.00397927764948651
+          ]
+        },
+        "M4-M3": {
+          "gain": -8.541975566310585e-05,
+          "family_cluster_bootstrap_95ci": [
+            -0.0003060038906070888,
+            0.00014452874444449568
+          ]
+        }
+      },
+      "folds": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "area": {
+      "systems": 909,
+      "families": 123,
+      "pairs": 25452,
+      "logloss": {
+        "M0": 0.5326027237724449,
+        "M1": 0.5410041157962142,
+        "M2": 0.5400308376772123,
+        "M3": 0.5406620637907332,
+        "M4": 0.5405160810520225
+      },
+      "comparisons": {
+        "M0-M1": {
+          "gain": -0.008401392023769048,
+          "family_cluster_bootstrap_95ci": [
+            -0.011573805212472567,
+            -0.00504894007161168
+          ]
+        },
+        "M0-M2": {
+          "gain": -0.007428113904767179,
+          "family_cluster_bootstrap_95ci": [
+            -0.013052530300218006,
+            -0.0019655371933924672
+          ]
+        },
+        "M1-M2": {
+          "gain": 0.0009732781190018718,
+          "family_cluster_bootstrap_95ci": [
+            -0.004343543364362817,
+            0.006244110022641759
+          ]
+        },
+        "M0-M4": {
+          "gain": -0.007913357279577544,
+          "family_cluster_bootstrap_95ci": [
+            -0.014325565670666032,
+            -0.0016993018345484508
+          ]
+        },
+        "M2-M4": {
+          "gain": -0.0004852433748103658,
+          "family_cluster_bootstrap_95ci": [
+            -0.003078794414363971,
+            0.0019957040019868344
+          ]
+        },
+        "M2-M3": {
+          "gain": -0.0006312261135210565,
+          "family_cluster_bootstrap_95ci": [
+            -0.00325425216460865,
+            0.0018649215037132864
+          ]
+        },
+        "M4-M3": {
+          "gain": -0.00014598273871069031,
+          "family_cluster_bootstrap_95ci": [
+            -0.00028941006708739774,
+            -8.915330671007044e-06
+          ]
+        }
+      },
+      "folds": [
+        "Africa",
+        "Australia",
+        "Eurasia",
+        "North America",
+        "Papunesia",
+        "South America"
+      ]
+    }
+  },
+  "full_M4_coefficients": {
+    "intercept": 2.8435610663235007,
+    "Dr": -3.907151028424143,
+    "Da": -3.221459830402769,
+    "De": -1.9345626010450356,
+    "DrDa": 1.4012457404930883,
+    "DrDe": 2.544030710164886,
+    "DaDe": 0.6739303016047983,
+    "E": 0.012186429598931984,
+    "B": -0.0478759639374922,
+    "S": 0.07030933675800968,
+    "M": 0.0047283390672638115,
+    "DrE": -0.4578417310811452,
+    "DaB": -0.11951831014511531,
+    "DaS": -0.6558214425314076
+  },
+  "full_M4_diagnostics": {
+    "rank": 14,
+    "weight_sum": 938.9999999999968,
+    "separation": false,
+    "separation_lp_objective": 0.0,
+    "method": "MLE",
+    "converged": true,
+    "iterations": 6,
+    "standardized_score": 3.9698138762766565e-09,
+    "max_abs_beta": 3.907151028424143,
+    "min_probability": 0.05296001842218957,
+    "max_probability": 0.7152834746698684
+  },
+  "interval_checks": [
+    {
+      "validation": "family",
+      "comparison": "M0-M1",
+      "old_interval": [
+        0.0007729225569806676,
+        0.013137752101143318
+      ],
+      "recomputed_interval": [
+        0.001082111137669515,
+        0.013120269462295464
+      ],
+      "max_absolute_difference": 0.00030918858068884744,
+      "tolerance": 0.002,
+      "passed": true
+    },
+    {
+      "validation": "family",
+      "comparison": "M0-M2",
+      "old_interval": [
+        0.006612616205374659,
+        0.019435359423991796
+      ],
+      "recomputed_interval": [
+        0.006602027476814155,
+        0.019159623751260464
+      ],
+      "max_absolute_difference": 0.0002757356727313316,
+      "tolerance": 0.002,
+      "passed": true
+    },
+    {
+      "validation": "family",
+      "comparison": "M1-M2",
+      "old_interval": [
+        0.0022433379729843595,
+        0.009568262178150523
+      ],
+      "recomputed_interval": [
+        0.0021731347520574274,
+        0.009447243211336933
+      ],
+      "max_absolute_difference": 0.00012101896681358977,
+      "tolerance": 0.002,
+      "passed": true
+    },
+    {
+      "validation": "family",
+      "comparison": "M0-M4",
+      "old_interval": [
+        0.007555066958787735,
+        0.02190797732606879
+      ],
+      "recomputed_interval": [
+        0.0076899197883411536,
+        0.021519138109282594
+      ],
+      "max_absolute_difference": 0.0003888392167861951,
+      "tolerance": 0.002,
+      "passed": true
+    },
+    {
+      "validation": "family",
+      "comparison": "M2-M4",
+      "old_interval": [
+        -0.0005492148729450021,
+        0.003948992154594121
+      ],
+      "recomputed_interval": [
+        -0.0004811547240282373,
+        0.004028098802291354
+      ],
+      "max_absolute_difference": 7.910664769723331e-05,
+      "tolerance": 0.002,
+      "passed": true
+    },
+    {
+      "validation": "family",
+      "comparison": "M2-M3",
+      "old_interval": [
+        -0.0006883254595742586,
+        0.003896947953856893
+      ],
+      "recomputed_interval": [
+        -0.0006236114994909738,
+        0.00397927764948651
+      ],
+      "max_absolute_difference": 8.232969562961719e-05,
+      "tolerance": 0.002,
+      "passed": true
+    },
+    {
+      "validation": "family",
+      "comparison": "M4-M3",
+      "old_interval": [
+        -0.00031031171446979454,
+        0.00014918953774781588
+      ],
+      "recomputed_interval": [
+        -0.0003060038906070888,
+        0.00014452874444449568
+      ],
+      "max_absolute_difference": 4.6607933033201965e-06,
+      "tolerance": 0.002,
+      "passed": true
+    },
+    {
+      "validation": "area",
+      "comparison": "M0-M1",
+      "old_interval": [
+        -0.01162723417259628,
+        -0.005010394100932565
+      ],
+      "recomputed_interval": [
+        -0.011573805212472567,
+        -0.00504894007161168
+      ],
+      "max_absolute_difference": 5.3428960123712635e-05,
+      "tolerance": 0.002,
+      "passed": true
+    },
+    {
+      "validation": "area",
+      "comparison": "M0-M2",
+      "old_interval": [
+        -0.012890689366890924,
+        -0.0016269840823417013
+      ],
+      "recomputed_interval": [
+        -0.013052530300218006,
+        -0.0019655371933924672
+      ],
+      "max_absolute_difference": 0.0003385531110507659,
+      "tolerance": 0.002,
+      "passed": true
+    },
+    {
+      "validation": "area",
+      "comparison": "M1-M2",
+      "old_interval": [
+        -0.004386084027650277,
+        0.006198985896929352
+      ],
+      "recomputed_interval": [
+        -0.004343543364362817,
+        0.006244110022641759
+      ],
+      "max_absolute_difference": 4.512412571240718e-05,
+      "tolerance": 0.002,
+      "passed": true
+    },
+    {
+      "validation": "area",
+      "comparison": "M0-M4",
+      "old_interval": [
+        -0.01431646362368411,
+        -0.0013974006932524433
+      ],
+      "recomputed_interval": [
+        -0.014325565670666032,
+        -0.0016993018345484508
+      ],
+      "max_absolute_difference": 0.0003019011412960075,
+      "tolerance": 0.002,
+      "passed": true
+    },
+    {
+      "validation": "area",
+      "comparison": "M2-M4",
+      "old_interval": [
+        -0.0031390549824997366,
+        0.0021158259329669233
+      ],
+      "recomputed_interval": [
+        -0.003078794414363971,
+        0.0019957040019868344
+      ],
+      "max_absolute_difference": 0.00012012193098008897,
+      "tolerance": 0.002,
+      "passed": true
+    },
+    {
+      "validation": "area",
+      "comparison": "M2-M3",
+      "old_interval": [
+        -0.003302380582902964,
+        0.0019697564661998465
+      ],
+      "recomputed_interval": [
+        -0.00325425216460865,
+        0.0018649215037132864
+      ],
+      "max_absolute_difference": 0.00010483496248656012,
+      "tolerance": 0.002,
+      "passed": true
+    },
+    {
+      "validation": "area",
+      "comparison": "M4-M3",
+      "old_interval": [
+        -0.0002891605772658313,
+        -5.64809859181511e-06
+      ],
+      "recomputed_interval": [
+        -0.00028941006708739774,
+        -8.915330671007044e-06
+      ],
+      "max_absolute_difference": 3.267232079191934e-06,
+      "tolerance": 0.002,
+      "passed": true
+    }
+  ],
+  "source_protection": {
+    "file_count": 123,
+    "changed_files": [],
+    "unchanged": true
+  },
+  "finished_utc": "2026-10-16T11:01:38.051663+00:00",
+  "script_sha256": "2f007385cd5c4cba0dce9d8588e06afaa7148fda58cd2b707896e957bb326af9",
+  "input_sha256": {
+    "data/kinbank/kinbank/cldf/forms.csv": "7d1238a69a8ac2f8e4b70b9bca797ad50bf85519fa26acc72fb571e067f01664",
+    "data/kinbank/kinbank/cldf/languages.csv": "0ef532ed2bfe8db4b8cba16ef0fcd80bac69f83a9b302801454bf5b6166f43c9",
+    "data/kinbank/kinbank/cldf/parameters.csv": "90543bf2ecc32c8778181e0e4755c9e3e54212f0c9760077e6157ed6ae85d0cc",
+    "data/glottolog_languages.csv": "1a50a393bc81568b656f9522be18aa4f80f38e94309ba6c863d583234adfbb89"
+  }
+}

@@ -1,0 +1,31 @@
+subset,estimand,estimate,ci95,families,valid_replicates,empty_denominator_replicates,replicates,seed,weighting,scope,margin,supported,status,primary
+overall,family_direction_majority_primary,0.5,"[-0.5, 1.0]",4,5000,0,5000,20261016,majority_family_ratio,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,equivalence_not_established,True
+overall,system_ratio_sensitivity,0.6,"[-1.0, 1.0]",108,4913,87,5000,20261016,system_ratio,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,not_assessable_empty_denominator,False
+overall,continuous_family_equal_sensitivity,0.5,"[-0.5, 1.0]",4,5000,0,5000,20261016,continuous_family_equal,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,equivalence_not_established,False
+excluding_austronesian,family_direction_majority_primary,0.3333333333333333,"[-1.0, 1.0]",3,5000,0,5000,20261016,majority_family_ratio,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,equivalence_not_established,True
+excluding_austronesian,system_ratio_sensitivity,0.3333333333333333,"[-1.0, 1.0]",107,4779,221,5000,20261016,system_ratio,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,not_assessable_empty_denominator,False
+excluding_austronesian,continuous_family_equal_sensitivity,0.3333333333333333,"[-1.0, 1.0]",3,5000,0,5000,20261016,continuous_family_equal,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,equivalence_not_established,False
+excluding_pama_nyungan,family_direction_majority_primary,0.5,"[-0.5, 1.0]",4,5000,0,5000,20261016,majority_family_ratio,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,equivalence_not_established,True
+excluding_pama_nyungan,system_ratio_sensitivity,0.6,"[-1.0, 1.0]",107,4915,85,5000,20261016,system_ratio,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,not_assessable_empty_denominator,False
+excluding_pama_nyungan,continuous_family_equal_sensitivity,0.5,"[-0.5, 1.0]",4,5000,0,5000,20261016,continuous_family_equal,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,equivalence_not_established,False
+missing_macroarea,family_direction_majority_primary,,,0,0,5000,5000,20261016,,,0.15,False,not_assessable_empty_denominator,True
+missing_macroarea,system_ratio_sensitivity,,,13,0,5000,5000,20261016,system_ratio,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,not_assessable_empty_denominator,False
+missing_macroarea,continuous_family_equal_sensitivity,,,0,0,5000,5000,20261016,,,0.15,False,not_assessable_empty_denominator,False
+macroarea:Africa,family_direction_majority_primary,,,0,0,5000,5000,20261016,,,0.15,False,not_assessable_empty_denominator,True
+macroarea:Africa,system_ratio_sensitivity,,,5,0,5000,5000,20261016,system_ratio,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,not_assessable_empty_denominator,False
+macroarea:Africa,continuous_family_equal_sensitivity,,,0,0,5000,5000,20261016,,,0.15,False,not_assessable_empty_denominator,False
+macroarea:Australia,family_direction_majority_primary,-1.0,"[-1.0, -1.0]",1,5000,0,5000,20261016,majority_family_ratio,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,equivalence_not_established,True
+macroarea:Australia,system_ratio_sensitivity,-1.0,"[-1.0, -1.0]",6,3343,1657,5000,20261016,system_ratio,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,not_assessable_empty_denominator,False
+macroarea:Australia,continuous_family_equal_sensitivity,-1.0,"[-1.0, -1.0]",1,5000,0,5000,20261016,continuous_family_equal,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,equivalence_not_established,False
+macroarea:Eurasia,family_direction_majority_primary,,,0,0,5000,5000,20261016,,,0.15,False,not_assessable_empty_denominator,True
+macroarea:Eurasia,system_ratio_sensitivity,,,15,0,5000,5000,20261016,system_ratio,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,not_assessable_empty_denominator,False
+macroarea:Eurasia,continuous_family_equal_sensitivity,,,0,0,5000,5000,20261016,,,0.15,False,not_assessable_empty_denominator,False
+macroarea:North America,family_direction_majority_primary,1.0,"[1.0, 1.0]",2,5000,0,5000,20261016,majority_family_ratio,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,equivalence_not_established,True
+macroarea:North America,system_ratio_sensitivity,1.0,"[1.0, 1.0]",21,4355,645,5000,20261016,system_ratio,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,not_assessable_empty_denominator,False
+macroarea:North America,continuous_family_equal_sensitivity,1.0,"[1.0, 1.0]",2,5000,0,5000,20261016,continuous_family_equal,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,equivalence_not_established,False
+macroarea:Papunesia,family_direction_majority_primary,1.0,"[1.0, 1.0]",1,5000,0,5000,20261016,majority_family_ratio,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,equivalence_not_established,True
+macroarea:Papunesia,system_ratio_sensitivity,1.0,"[1.0, 1.0]",40,3264,1736,5000,20261016,system_ratio,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,not_assessable_empty_denominator,False
+macroarea:Papunesia,continuous_family_equal_sensitivity,1.0,"[1.0, 1.0]",1,5000,0,5000,20261016,continuous_family_equal,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,equivalence_not_established,False
+macroarea:South America,family_direction_majority_primary,,,0,0,5000,5000,20261016,,,0.15,False,not_assessable_empty_denominator,True
+macroarea:South America,system_ratio_sensitivity,,,25,0,5000,5000,20261016,system_ratio,固定系统及类型判定后的整谱系重抽；不包含测量或语义重分析。,0.15,False,not_assessable_empty_denominator,False
+macroarea:South America,continuous_family_equal_sensitivity,,,0,0,5000,5000,20261016,,,0.15,False,not_assessable_empty_denominator,False

@@ -3,14 +3,16 @@
 运行（仓库根目录）：python analysis/export_forum_documents.py
 依赖：pandoc、LibreOffice（soffice）、python-docx；PDF 版使用 Noto CJK 字体。
 投稿 Word 使用宋体／黑体／Times New Roman，PDF 另以 Noto CJK 排版，二者正文相同。
+--format-profile 可读取用户模板的字体、行距及书目悬挂缩进；PDF字体替代另行说明。
 """
 from pathlib import Path
-import argparse, copy, re, shutil, subprocess, tempfile
+import argparse, copy, hashlib, json, re, shutil, subprocess, tempfile
 from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Pt, Cm
+from docx.text.run import Run
 
 ROOT = Path(__file__).resolve().parents[1]
 FORUM = ROOT/'outputs'/'forum'
@@ -75,7 +77,78 @@ def set_widths(table, total):
         tw = OxmlElement('w:tblW'); tblpr.append(tw)
     tw.set(qn('w:w'), str(int(total / 635))); tw.set(qn('w:type'), 'dxa')
 
-def format_docx(path, serif, sans, kai, page_numbers=False):
+def apply_format_profile(document, profile, pdf_preview=False):
+    """仅覆盖字体、行距与书目悬挂缩进；模板未授权更改页面或章节。"""
+    substitutions = profile['pdf_font_substitutions'] if pdf_preview else {}
+
+    def font(target, role):
+        east = substitutions.get(role['east_asia'], role['east_asia'])
+        latin = substitutions.get(role['latin'], role['latin'])
+        target.font.name = latin
+        target.font.size = Pt(role['size_pt'])
+        if role['bold'] is not None:
+            target.font.bold = role['bold']
+        rpr = target._element.get_or_add_rPr()
+        fonts = rpr.find(qn('w:rFonts'))
+        if fonts is None:
+            fonts = OxmlElement('w:rFonts'); rpr.append(fonts)
+        for attr in list(fonts.attrib):
+            if 'theme' in attr.lower():
+                del fonts.attrib[attr]
+        for attr in ['w:ascii', 'w:hAnsi', 'w:cs']:
+            fonts.set(qn(attr), latin)
+        fonts.set(qn('w:eastAsia'), east)
+
+    roles = profile['roles']
+    style_roles = {'Title':'title', 'Subtitle':'subtitle', 'Author':'author',
+                   'Image Caption':'caption', 'Captioned Figure':'caption', 'Figure':'caption'}
+    for style in document.styles:
+        if style.type != 1:
+            continue
+        key = 'heading' if style.name.startswith('Heading') else style_roles.get(style.name, 'body')
+        font(style, roles[key])
+        style.paragraph_format.line_spacing = profile['line_spacing']
+    in_refs = False
+    for p in document.paragraphs:
+        text = p.text.strip()
+        if p.style.name.startswith('Heading'):
+            in_refs = text == '参考文献'
+            key = 'heading'
+        elif in_refs:
+            key = 'references'
+            indent = profile['reference_hanging_indent_pt']
+            p.paragraph_format.left_indent = Pt(indent)
+            p.paragraph_format.first_line_indent = Pt(-indent)
+        elif text.startswith('摘要：'):
+            key = 'abstract'
+            # 模板只有“摘要”二字加粗，冒号不加粗；不改动源文件提取标记。
+            for run in list(p.runs):
+                if run.text == '摘要：':
+                    run.text = '摘要'
+                    colon = copy.deepcopy(run._r)
+                    colon_run = Run(colon, p)
+                    colon_run.text = '：'; colon_run.bold = False
+                    run._r.addnext(colon)
+        elif text.startswith('关键词：'):
+            key = 'keywords'
+        elif re.match(r'^表\d+　', text):
+            key = 'caption'
+        else:
+            key = style_roles.get(p.style.name, 'body')
+        p.paragraph_format.line_spacing = profile['line_spacing']
+        # 包含超链接内部的run；只改字体，不丢失参考文献斜体和页码上标。
+        for element in p._p.iter(qn('w:r')):
+            font(Run(element, p), roles[key])
+    for table in document.tables:
+        for row in table.rows:
+            for cell in row.cells:
+                for p in cell.paragraphs:
+                    p.paragraph_format.line_spacing = profile['line_spacing']
+                    for element in p._p.iter(qn('w:r')):
+                        font(Run(element, p), roles['table'])
+
+
+def format_docx(path, serif, sans, kai, page_numbers=False, profile=None, pdf_preview=False):
     d = Document(path)
     for sec in d.sections:
         sec.page_height, sec.page_width = Cm(29.7), Cm(21)
@@ -144,14 +217,18 @@ def format_docx(path, serif, sans, kai, page_numbers=False):
                     p.paragraph_format.first_line_indent = Pt(0)
                     p.paragraph_format.line_spacing = 1.15
                     for r in p.runs: r.font.size = Pt(10.5)
+    if profile:
+        apply_format_profile(d, profile, pdf_preview)
     if page_numbers:
         for section in d.sections:
             paragraph = section.footer.paragraphs[0]
             paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
             paragraph.paragraph_format.first_line_indent = Pt(0)
             run = paragraph.add_run()
-            run.font.name = 'Times New Roman'
+            run.font.name = 'Liberation Serif' if profile and pdf_preview else 'Times New Roman'
             run.font.size = Pt(9)
+            if profile:
+                paragraph.paragraph_format.line_spacing = profile['line_spacing']
             field = OxmlElement('w:fldSimple')
             field.set(qn('w:instr'), 'PAGE')
             value = OxmlElement('w:t')
@@ -168,7 +245,13 @@ def main():
     parser.add_argument('--name', default=None, help='指定导出文件名，不含扩展名。')
     parser.add_argument('--abstract-name', default=None, help='指定摘要TXT文件名，不含扩展名。')
     parser.add_argument('--page-numbers', action='store_true', help='在页脚居中添加页码。')
+    parser.add_argument('--format-profile', type=Path, help='仅应用用户模板的字体、行距与引用格式规则。')
     args = parser.parse_args()
+    profile = json.loads(args.format_profile.read_text()) if args.format_profile else None
+    if profile:
+        template = ROOT / profile['template_path']
+        if hashlib.sha256(template.read_bytes()).hexdigest() != profile['template_sha256']:
+            raise ValueError('模板SHA不匹配，请先重新核对格式规则。')
     source = args.input.resolve()
     suffix = args.suffix if args.suffix is not None else ('_v2' if source.stem.endswith('_v2') else '')
     name = args.name or NAME + suffix
@@ -178,12 +261,14 @@ def main():
         subprocess.run(['pandoc', str(source), '-o', str(raw), '--resource-path', str(destination)], check=True, cwd=destination)
         word = destination/(name+'.docx')
         shutil.copy(raw, word)
-        format_docx(word, '宋体', '黑体', '楷体', args.page_numbers)
+        format_docx(word, '宋体', '黑体', '楷体', args.page_numbers, profile)
         pdf_docx = Path(tmp)/(name+'.docx')
         shutil.copy(raw, pdf_docx)
-        format_docx(pdf_docx, 'Noto Serif CJK SC', 'Noto Sans CJK SC', 'Noto Serif CJK SC', args.page_numbers)
+        format_docx(pdf_docx, 'Noto Serif CJK SC', 'Noto Sans CJK SC', 'Noto Serif CJK SC', args.page_numbers, profile, pdf_preview=True)
         subprocess.run(['soffice','--headless','--convert-to','pdf','--outdir',tmp,str(pdf_docx)], check=True, capture_output=True)
         shutil.copy(Path(tmp)/(name+'.pdf'), destination/(name+'.pdf'))
+    subprocess.run(['pdftotext', '-layout', str(destination/(name+'.pdf')),
+                    str(destination/(name+'.txt'))], check=True)
     text = source.read_text()
     abstract = text.split('**摘要：** ')[1].split('\n\n')[0].strip()
     keywords = text.split('**关键词：** ')[1].split('\n\n')[0].strip()

@@ -1,0 +1,8 @@
+{"stage": "t0", "description": "从原始字段重算冻结基线", "command": ["/tmp/kinship-v3-final-20261017/clean_venv/bin/python", "analysis/v3/reproduce_baseline.py"], "script_sha256": "2f007385cd5c4cba0dce9d8588e06afaa7148fda58cd2b707896e957bb326af9", "started_utc": "2026-10-17T02:09:34.406781+00:00", "log": "results/reproducibility/pipeline_logs/t0.log"}
+{
+  "passed": true,
+  "checks": 37,
+  "interval_checks": 14,
+  "error": null,
+  "report": "results/baseline/reproduction_report.md"
+}
