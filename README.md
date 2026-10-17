@@ -10,6 +10,7 @@
 
 ## 第三版（当前修订版本）
 
+- **一包下载：** [第三版全部材料ZIP](https://github.com/WuYusen825/kinship-semantic-interactions/releases/download/v3-materials-20261017/kinship-research-v3-complete.zip)｜[Release与校验文件](https://github.com/WuYusen825/kinship-semantic-interactions/releases/tag/v3-materials-20261017)。含论文、完整文献库PDF/TXT、数据、代码、结果、核验及交接记录，并附Git历史包；解压和复现见[资料包说明](docs/v3_materials_package.md)。
 - [中文第三版](outputs/论文_中文第三版.md)｜[Word](outputs/论文_中文第三版.docx)｜[PDF预览](outputs/论文_中文第三版.pdf)｜[TXT](outputs/论文_中文第三版.txt)｜[摘要](outputs/第三版_摘要.txt)。第二版及旧论坛稿单独保留。
 - 正文12161汉字，讨论5727汉字（47.1%），摘要288汉字；42项参考文献、4张表、2幅图，PDF共30页。统计口径见[导出核验](notes/v3/artifact_check.json)。
 - 新版以625个严格系统为主，在4140种划分上精确建模；新增基底、位置与跨领域对照。保留所指者性别的相对基底具有预测优势，另一相对坐标反而更差；位置增量区间含零，类型分布只复现部分总体交互，生成检查与类别对预测的不足均保留。
