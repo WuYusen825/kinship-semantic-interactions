@@ -1,0 +1,34 @@
+{"command": ["make", "all", "PYTHON=/tmp/kinship-v3-final-20261017/clean_venv/bin/python"], "cwd": "/tmp/kinship-v3-final-20261017/repo", "started_utc": "2026-10-17T02:09:34.124711+00:00"}
+/tmp/kinship-v3-final-20261017/clean_venv/bin/python analysis/v3/run_all.py
+[t0] 从原始字段重算冻结基线
+[t0] 通过；日志 results/reproducibility/pipeline_logs/t0.log
+[t1] 4140划分、三种系统映射与基础测试
+[t1] 通过；日志 results/reproducibility/pipeline_logs/t1.log
+[t2_initial_cv] 保留原求解器主条件交叉验证的首次失败诊断
+[t2_initial_cv] 通过；日志 results/reproducibility/pipeline_logs/t2_initial_cv.log
+[t2_initial_full] 保留原求解器主条件全样本结果，不强制失败系数重抽
+[t2_initial_full] 通过；日志 results/reproducibility/pipeline_logs/t2_initial_full.log
+[t2_cv] 精确归一化模型的全部交叉验证
+[t2_cv] 通过；日志 results/reproducibility/pipeline_logs/t2_cv.log
+[t2_full] 全样本估计、预测检验与系数重抽
+[t2_full] 通过；日志 results/reproducibility/pipeline_logs/t2_full.log
+[t3] 127候选特征、描述成本及形状参照
+[t3] 通过；日志 results/reproducibility/pipeline_logs/t3.log
+[t4] 位置对照、等价判定及14型表
+[t4] 通过；日志 results/reproducibility/pipeline_logs/t4.log
+[t5_strict] T2配对比较需要的严格样本基准
+[t5_strict] 通过；日志 results/reproducibility/pipeline_logs/t5_strict.log
+[t5_full] 全部配对规格、地域校准与依赖敏感性
+[t5_full] 通过；日志 results/reproducibility/pipeline_logs/t5_full.log
+[t5_verify] 独立重算T5导出值与全部180区间
+[t5_verify] 通过；日志 results/reproducibility/pipeline_logs/t5_verify.log
+[t2_compare] 划分模型与配对模型的同系统比较
+[t2_compare] 通过；日志 results/reproducibility/pipeline_logs/t2_compare.log
+[t6_feasibility] 按固定原始类别核查跨域覆盖
+[t6_feasibility] 通过；日志 results/reproducibility/pipeline_logs/t6_feasibility.log
+[t6] 跨域补充分析或明确的可行性结论
+[t6] 通过；日志 results/reproducibility/pipeline_logs/t6.log
+[t7] 固定分类树的谱系分析可行性，不拟合Mk
+[t7] 通过；日志 results/reproducibility/pipeline_logs/t7.log
+[t8] 汇总已完成分析，不重新拟合
+[t8] 通过；日志 results/reproducibility/pipeline_logs/t8.log

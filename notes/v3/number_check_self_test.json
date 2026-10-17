@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-17T07:14:56.136646+00:00",
+  "status": "passed",
+  "manuscript_sha256": "ed7d19b6a403792879cbd69d54f7d596b25bc133a6437f7c9e6f3a94e2b8cc09",
+  "checker_sha256": "e60672d65347d7e3ea92f01c389e1c50b1fd4ce5f81ae3efc7bdb1ceda4fe2f7",
+  "base_checker_sha256": "b70103ee326d42da1756ccb1fe6c7bb69a37ea028dc98dae71c6644a13944036",
+  "commands": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "analysis/v3/audit_manuscript_numbers.py",
+        "--self-test"
+      ],
+      "returncode": 0,
+      "stdout": "v3_self_test_passed=true：指定artifact、禁止索引/旧稿同值、生产函数及长小数提取通过\nself_test_passed=true：逐处映射、错误pointer、未知数字、舍入与版本变化检查通过",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "analysis/v3/audit_manuscript_numbers.py",
+        "--check"
+      ],
+      "returncode": 0,
+      "stdout": "{\"passed\": true, \"status\": \"passed\", \"coverage\": {\"total\": 829, \"mapped\": 829, \"validated\": 829, \"all_numeric_occurrences\": true, \"all_validated\": true, \"uncovered_digit_offsets\": []}, \"mismatch_count\": 0, \"report\": \"notes/v3/number_check.json\"}",
+      "stderr": ""
+    }
+  ],
+  "v3_asserted_cases": [
+    {
+      "case": "指定artifact精确指标及四位舍入的阳性对照",
+      "expected": "passed",
+      "observed": "passed"
+    },
+    {
+      "case": "将结果pointer改为numeric_index中的同值",
+      "expected": "failed",
+      "observed": "failed"
+    },
+    {
+      "case": "将来源改为旧结果文件中的同值",
+      "expected": "failed",
+      "observed": "failed"
+    },
+    {
+      "case": "删除artifact的producer_function",
+      "expected": "failed",
+      "observed": "failed"
+    },
+    {
+      "case": "长小数37397057.50不被误切成SHA整数和小数两段",
+      "expected_tokens": [
+        "37397057.50"
+      ],
+      "observed_tokens": [
+        "37397057.50"
+      ]
+    }
+  ],
+  "v3_assertion_basis": "上述五项均由v3_self_test中的真实assert执行；命令退出0。通用检查器原有失败关闭自测亦由同一命令实际执行。",
+  "coverage": {
+    "total": 829,
+    "mapped": 829,
+    "validated": 829,
+    "all_numeric_occurrences": true,
+    "all_validated": true,
+    "uncovered_digit_offsets": []
+  },
+  "claim_counts": {
+    "result": 164,
+    "whitelist": 665,
+    "unresolved": 0
+  },
+  "mismatch_count": 0,
+  "protected_files_unchanged": true,
+  "protected_file_hashes_before_and_after": {
+    "outputs/论文_中文第三版.md": "ed7d19b6a403792879cbd69d54f7d596b25bc133a6437f7c9e6f3a94e2b8cc09",
+    "analysis/v3/partition_model.py": "0fb821fec0d36e4192234ad8869ca874b3615f360f740e04eaa6c7a11393ef61",
+    "analysis/v3/run_t2.py": "4cd62014776f30fa5832f843b9b32ab9349f015d77271121983f7a6483ab24a7",
+    "results/summary.json": "a4de6aba2d501ffd29e77c716e23a07d36a041c9fd73dbff98df89e436b840d6",
+    "notes/manuscript_number_claims.json": "5e493b19c41ee095bc1387e7303ee3ac3b1d3ae99da916e3c029a49078c2c78d",
+    "notes/manuscript_number_check.json": "3c450854e85b8bc723e072166ade294095e4b5cbcc7d4c0746a5d5ec4f143d50",
+    "notes/formal_manuscript_number_claims.json": "e3648c253fc6805f4632ddc08e25b60f8128f0bc3017fda114e1db26a82fc59b",
+    "notes/formal_manuscript_number_check.json": "a0cdace626a19de569df6340d5239e659630cd50eb74306022ba0160e8f16580"
+  },
+  "outputs": {
+    "report": "notes/v3/number_check.json",
+    "report_sha256": "3966e103b1aac472411de3ded258923ab773ae00ba4e5697bcde7972756bbf80",
+    "claims": "notes/v3/manuscript_number_claims.json",
+    "claims_sha256": "d8805dde9178473458745757e803dff7d9f71c31bc8181088654aebe03298346"
+  },
+  "scope_zh": "仅核验工具、成稿数字及临时目录合成失败用例；未重跑科学模型，未改正文或冻结旧稿记录。"
+}

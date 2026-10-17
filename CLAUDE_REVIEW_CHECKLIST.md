@@ -1,3 +1,20 @@
+# 第三版复查入口
+
+第三版验收以新稿及其SHA为准。检查[逐数字来源](results/summary.json)、[独立评审](notes/review/)、[隔离环境实跑](results/reproducibility/clean_environment.json)与`notes/v3/`的数字、引文及导出报告，不能沿用历史版本PASS。
+
+- [x] 新稿的实际数字、author-year、上标页与42项完整全文逐处相符，见[数字报告](notes/v3/number_check_summary.md)与[引文报告](notes/v3/citation_check.md)。
+- [x] rel_r/rel_s、N/E、两种不变性、两种谱系聚合、系数/折外增量均分别解释，见[全文独立评审](notes/review/v3_manuscript_review_round1.md)。
+- [x] MM/FF等价未确立、PPC不足、年龄交互未恢复、pair损失更高及地域概率失配均完整保留。
+- [x] T6条件效应与蒙特卡洛置换的范围分述；T7只有可行性，无伪造Mk结果。
+- [x] 全部模型只用通过收敛门的拟合，首次失败和数值精化轨迹可查，见[独立分析评审](notes/review/v3_analysis_review_round1.md)。
+- [x] 干净环境完成全部16阶段及115项关键测试，320份统计产物差异为零，允许的运行元数据差异单列，见[复现报告](results/reproducibility/clean_environment.json)及[最终实现补查](results/reproducibility/final_source_audit.json)。
+- [x] MD/Word/PDF/TXT及摘要文字相符；Word字体、1.5倍行距及引用格式沿用模板，PDF替代字体说明准确，见[最终独立实物验收](notes/review/v3_final_review.md)。
+- [ ] GitHub、工作目录镜像与ZIP包含全部交付，逐文件校验一致。
+
+最终勾选以交付核验实物为准。下文为历史复查清单。
+
+---
+
 # Claude 复查清单
 
 此清单用于当前及后续独立复查。勾选仅限已附证据的范围；原冻结分析、S1与S2分别判断。S2最终状态和独立审查见`notes/revision_acceptance_matrix.md`及`notes/review/`，文件完整不等于全部全文已逐页人工校订。

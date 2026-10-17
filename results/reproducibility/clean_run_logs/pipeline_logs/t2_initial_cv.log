@@ -1,0 +1,6 @@
+{"stage": "t2_initial_cv", "description": "保留原求解器主条件交叉验证的首次失败诊断", "command": ["/tmp/kinship-v3-final-20261017/clean_venv/bin/python", "analysis/v3/run_t2.py", "--phase", "cv", "--sample", "strict", "--weighting", "family", "--validation", "family", "--solver-profile", "planned"], "script_sha256": "4cd62014776f30fa5832f843b9b32ab9349f015d77271121983f7a6483ab24a7", "started_utc": "2026-10-17T02:09:51.689507+00:00", "log": "results/reproducibility/pipeline_logs/t2_initial_cv.log"}
+T2 strict_family_family: outer 0 saved; fits=148, failed=8
+T2 strict_family_family: outer 1 saved; fits=296, failed=15
+T2 strict_family_family: outer 2 saved; fits=444, failed=23
+T2 strict_family_family: outer 3 saved; fits=592, failed=29
+T2 strict_family_family: outer 4 saved; fits=740, failed=36

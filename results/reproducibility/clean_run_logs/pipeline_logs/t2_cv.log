@@ -1,0 +1,97 @@
+{"stage": "t2_cv", "description": "精确归一化模型的全部交叉验证", "command": ["/tmp/kinship-v3-final-20261017/clean_venv/bin/python", "analysis/v3/run_t2.py", "--phase", "cv", "--solver-profile", "refined"], "script_sha256": "4cd62014776f30fa5832f843b9b32ab9349f015d77271121983f7a6483ab24a7", "started_utc": "2026-10-17T02:10:02.708165+00:00", "log": "results/reproducibility/pipeline_logs/t2_cv.log"}
+T2 strict_family_family: outer 0 saved; fits=148, failed=0
+T2 strict_family_family: outer 1 saved; fits=296, failed=0
+T2 strict_family_family: outer 2 saved; fits=444, failed=0
+T2 strict_family_family: outer 3 saved; fits=592, failed=0
+T2 strict_family_family: outer 4 saved; fits=740, failed=0
+T2 strict_family_area: outer Africa saved; fits=148, failed=0
+T2 strict_family_area: outer Australia saved; fits=296, failed=0
+T2 strict_family_area: outer Eurasia saved; fits=444, failed=0
+T2 strict_family_area: outer North America saved; fits=592, failed=0
+T2 strict_family_area: outer Papunesia saved; fits=740, failed=0
+T2 strict_family_area: outer South America saved; fits=888, failed=0
+T2 strict_family_language: outer 0 saved; fits=148, failed=0
+T2 strict_family_language: outer 1 saved; fits=296, failed=0
+T2 strict_family_language: outer 2 saved; fits=444, failed=0
+T2 strict_family_language: outer 3 saved; fits=592, failed=0
+T2 strict_family_language: outer 4 saved; fits=740, failed=0
+T2 strict_language_family: outer 0 saved; fits=148, failed=0
+T2 strict_language_family: outer 1 saved; fits=296, failed=0
+T2 strict_language_family: outer 2 saved; fits=444, failed=0
+T2 strict_language_family: outer 3 saved; fits=592, failed=0
+T2 strict_language_family: outer 4 saved; fits=740, failed=0
+T2 strict_language_area: outer Africa saved; fits=148, failed=0
+T2 strict_language_area: outer Australia saved; fits=296, failed=0
+T2 strict_language_area: outer Eurasia saved; fits=444, failed=0
+T2 strict_language_area: outer North America saved; fits=592, failed=0
+T2 strict_language_area: outer Papunesia saved; fits=740, failed=0
+T2 strict_language_area: outer South America saved; fits=888, failed=0
+T2 strict_language_language: outer 0 saved; fits=148, failed=0
+T2 strict_language_language: outer 1 saved; fits=296, failed=0
+T2 strict_language_language: outer 2 saved; fits=444, failed=0
+T2 strict_language_language: outer 3 saved; fits=592, failed=0
+T2 strict_language_language: outer 4 saved; fits=740, failed=0
+T2 equal_sets_family_family: outer 0 saved; fits=148, failed=0
+T2 equal_sets_family_family: outer 1 saved; fits=296, failed=0
+T2 equal_sets_family_family: outer 2 saved; fits=444, failed=0
+T2 equal_sets_family_family: outer 3 saved; fits=592, failed=0
+T2 equal_sets_family_family: outer 4 saved; fits=740, failed=0
+T2 equal_sets_family_area: outer Africa saved; fits=148, failed=0
+T2 equal_sets_family_area: outer Australia saved; fits=296, failed=0
+T2 equal_sets_family_area: outer Eurasia saved; fits=444, failed=0
+T2 equal_sets_family_area: outer North America saved; fits=592, failed=0
+T2 equal_sets_family_area: outer Papunesia saved; fits=740, failed=0
+T2 equal_sets_family_area: outer South America saved; fits=888, failed=0
+T2 equal_sets_family_language: outer 0 saved; fits=148, failed=0
+T2 equal_sets_family_language: outer 1 saved; fits=296, failed=0
+T2 equal_sets_family_language: outer 2 saved; fits=444, failed=0
+T2 equal_sets_family_language: outer 3 saved; fits=592, failed=0
+T2 equal_sets_family_language: outer 4 saved; fits=740, failed=1
+T2 equal_sets_language_family: outer 0 saved; fits=148, failed=0
+T2 equal_sets_language_family: outer 1 saved; fits=296, failed=0
+T2 equal_sets_language_family: outer 2 saved; fits=444, failed=0
+T2 equal_sets_language_family: outer 3 saved; fits=592, failed=0
+T2 equal_sets_language_family: outer 4 saved; fits=740, failed=0
+T2 equal_sets_language_area: outer Africa saved; fits=148, failed=0
+T2 equal_sets_language_area: outer Australia saved; fits=296, failed=0
+T2 equal_sets_language_area: outer Eurasia saved; fits=444, failed=0
+T2 equal_sets_language_area: outer North America saved; fits=592, failed=0
+T2 equal_sets_language_area: outer Papunesia saved; fits=740, failed=0
+T2 equal_sets_language_area: outer South America saved; fits=888, failed=0
+T2 equal_sets_language_language: outer 0 saved; fits=148, failed=0
+T2 equal_sets_language_language: outer 1 saved; fits=296, failed=0
+T2 equal_sets_language_language: outer 2 saved; fits=444, failed=0
+T2 equal_sets_language_language: outer 3 saved; fits=592, failed=0
+T2 equal_sets_language_language: outer 4 saved; fits=740, failed=0
+T2 components_family_family: outer 0 saved; fits=148, failed=0
+T2 components_family_family: outer 1 saved; fits=296, failed=0
+T2 components_family_family: outer 2 saved; fits=444, failed=0
+T2 components_family_family: outer 3 saved; fits=592, failed=0
+T2 components_family_family: outer 4 saved; fits=740, failed=0
+T2 components_family_area: outer Africa saved; fits=148, failed=0
+T2 components_family_area: outer Australia saved; fits=296, failed=0
+T2 components_family_area: outer Eurasia saved; fits=444, failed=0
+T2 components_family_area: outer North America saved; fits=592, failed=0
+T2 components_family_area: outer Papunesia saved; fits=740, failed=0
+T2 components_family_area: outer South America saved; fits=888, failed=0
+T2 components_family_language: outer 0 saved; fits=148, failed=0
+T2 components_family_language: outer 1 saved; fits=296, failed=0
+T2 components_family_language: outer 2 saved; fits=444, failed=0
+T2 components_family_language: outer 3 saved; fits=592, failed=0
+T2 components_family_language: outer 4 saved; fits=740, failed=0
+T2 components_language_family: outer 0 saved; fits=148, failed=0
+T2 components_language_family: outer 1 saved; fits=296, failed=0
+T2 components_language_family: outer 2 saved; fits=444, failed=0
+T2 components_language_family: outer 3 saved; fits=592, failed=0
+T2 components_language_family: outer 4 saved; fits=740, failed=0
+T2 components_language_area: outer Africa saved; fits=148, failed=0
+T2 components_language_area: outer Australia saved; fits=296, failed=0
+T2 components_language_area: outer Eurasia saved; fits=444, failed=0
+T2 components_language_area: outer North America saved; fits=592, failed=0
+T2 components_language_area: outer Papunesia saved; fits=740, failed=0
+T2 components_language_area: outer South America saved; fits=888, failed=0
+T2 components_language_language: outer 0 saved; fits=148, failed=0
+T2 components_language_language: outer 1 saved; fits=296, failed=0
+T2 components_language_language: outer 2 saved; fits=444, failed=0
+T2 components_language_language: outer 3 saved; fits=592, failed=0
+T2 components_language_language: outer 4 saved; fits=740, failed=0

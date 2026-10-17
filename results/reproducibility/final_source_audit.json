@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-10-17T07:15:25.679050+00:00",
+  "snapshot": "results/reproducibility/clean_run_logs/snapshot_manifest.json",
+  "snapshot_files": 166,
+  "final_source_files": 169,
+  "snapshot_files_unchanged": true,
+  "changed_or_removed": {},
+  "added_postprocessors": {
+    "analysis/v3/map_manuscript_numbers.py": "589be8c9c34eeebf4f76f6f248b31e3052025f4252e60ebe542fb9eb03da3720",
+    "analysis/v3/audit_manuscript_numbers.py": "e60672d65347d7e3ea92f01c389e1c50b1fd4ce5f81ae3efc7bdb1ceda4fe2f7",
+    "analysis/v3/package_deliverables.py": "e20752e26e6dd1092a24cd36cf21141b04ac89b56d031fa9732d7bcf0bede02a"
+  },
+  "note": "此为完整复现后的最终实现补查，保持166份原快照实现与固定输入；新增3份稿件数字审核／映射和资料打包脚本，不属于科学模型入口。完整复现结论仍以原始日志及比较文件为准。"
+}

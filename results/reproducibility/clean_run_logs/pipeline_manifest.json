@@ -1,0 +1,323 @@
+{
+  "task": "T8_pipeline",
+  "started_utc": "2026-10-17T02:09:34.391273+00:00",
+  "commit": "d7c121b93fc6e98101c261b98581b0f1ad50bc7a",
+  "seed": 20261016,
+  "bootstrap_replicates": 5000,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "executable": "/tmp/kinship-v3-final-20261017/clean_venv/bin/python",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0",
+      "matplotlib": "3.10.8",
+      "statsmodels": "0.15.0",
+      "patsy": "1.0.3",
+      "pyarrow": "21.0.0",
+      "python-docx": "1.2.0"
+    },
+    "threads": 1,
+    "PYTHONHASHSEED": 20261016
+  },
+  "selected_stages": [
+    "t0",
+    "t1",
+    "t2_initial_cv",
+    "t2_initial_full",
+    "t2_cv",
+    "t2_full",
+    "t3",
+    "t4",
+    "t5_strict",
+    "t5_full",
+    "t5_verify",
+    "t2_compare",
+    "t6_feasibility",
+    "t6",
+    "t7",
+    "t8"
+  ],
+  "stages": [
+    {
+      "stage": "t0",
+      "description": "从原始字段重算冻结基线",
+      "command": [
+        "/tmp/kinship-v3-final-20261017/clean_venv/bin/python",
+        "analysis/v3/reproduce_baseline.py"
+      ],
+      "script_sha256": "2f007385cd5c4cba0dce9d8588e06afaa7148fda58cd2b707896e957bb326af9",
+      "started_utc": "2026-10-17T02:09:34.406781+00:00",
+      "log": "results/reproducibility/pipeline_logs/t0.log",
+      "finished_utc": "2026-10-17T02:09:37.132369+00:00",
+      "elapsed_seconds": 2.724325709000027,
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "stage": "t1",
+      "description": "4140划分、三种系统映射与基础测试",
+      "command": [
+        "/tmp/kinship-v3-final-20261017/clean_venv/bin/python",
+        "analysis/v3/build_t1.py"
+      ],
+      "script_sha256": "f0386ecd60135031d4fe1adba3472787da941b321a50892a046ed94d2eb0b32e",
+      "started_utc": "2026-10-17T02:09:37.134529+00:00",
+      "log": "results/reproducibility/pipeline_logs/t1.log",
+      "finished_utc": "2026-10-17T02:09:51.687273+00:00",
+      "elapsed_seconds": 14.550499072000036,
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "stage": "t2_initial_cv",
+      "description": "保留原求解器主条件交叉验证的首次失败诊断",
+      "command": [
+        "/tmp/kinship-v3-final-20261017/clean_venv/bin/python",
+        "analysis/v3/run_t2.py",
+        "--phase",
+        "cv",
+        "--sample",
+        "strict",
+        "--weighting",
+        "family",
+        "--validation",
+        "family",
+        "--solver-profile",
+        "planned"
+      ],
+      "script_sha256": "4cd62014776f30fa5832f843b9b32ab9349f015d77271121983f7a6483ab24a7",
+      "started_utc": "2026-10-17T02:09:51.689507+00:00",
+      "log": "results/reproducibility/pipeline_logs/t2_initial_cv.log",
+      "finished_utc": "2026-10-17T02:09:57.913532+00:00",
+      "elapsed_seconds": 6.222725801000024,
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "stage": "t2_initial_full",
+      "description": "保留原求解器主条件全样本结果，不强制失败系数重抽",
+      "command": [
+        "/tmp/kinship-v3-final-20261017/clean_venv/bin/python",
+        "analysis/v3/run_t2.py",
+        "--phase",
+        "full",
+        "--sample",
+        "strict",
+        "--weighting",
+        "family",
+        "--solver-profile",
+        "planned"
+      ],
+      "script_sha256": "4cd62014776f30fa5832f843b9b32ab9349f015d77271121983f7a6483ab24a7",
+      "started_utc": "2026-10-17T02:09:57.916053+00:00",
+      "log": "results/reproducibility/pipeline_logs/t2_initial_full.log",
+      "finished_utc": "2026-10-17T02:10:02.705504+00:00",
+      "elapsed_seconds": 4.7879325020000465,
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "stage": "t2_cv",
+      "description": "精确归一化模型的全部交叉验证",
+      "command": [
+        "/tmp/kinship-v3-final-20261017/clean_venv/bin/python",
+        "analysis/v3/run_t2.py",
+        "--phase",
+        "cv",
+        "--solver-profile",
+        "refined"
+      ],
+      "script_sha256": "4cd62014776f30fa5832f843b9b32ab9349f015d77271121983f7a6483ab24a7",
+      "started_utc": "2026-10-17T02:10:02.708165+00:00",
+      "log": "results/reproducibility/pipeline_logs/t2_cv.log",
+      "finished_utc": "2026-10-17T02:11:56.469468+00:00",
+      "elapsed_seconds": 113.75996811800002,
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "stage": "t2_full",
+      "description": "全样本估计、预测检验与系数重抽",
+      "command": [
+        "/tmp/kinship-v3-final-20261017/clean_venv/bin/python",
+        "analysis/v3/run_t2.py",
+        "--phase",
+        "full",
+        "--solver-profile",
+        "refined"
+      ],
+      "script_sha256": "4cd62014776f30fa5832f843b9b32ab9349f015d77271121983f7a6483ab24a7",
+      "started_utc": "2026-10-17T02:11:56.471724+00:00",
+      "log": "results/reproducibility/pipeline_logs/t2_full.log",
+      "finished_utc": "2026-10-17T02:13:12.199556+00:00",
+      "elapsed_seconds": 75.72658137399998,
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "stage": "t3",
+      "description": "127候选特征、描述成本及形状参照",
+      "command": [
+        "/tmp/kinship-v3-final-20261017/clean_venv/bin/python",
+        "analysis/v3/basis_enrichment.py"
+      ],
+      "script_sha256": "eb1de33583b384c959761bce1e620baa422f3dcc51068a52759287777aa27693",
+      "started_utc": "2026-10-17T02:13:12.206258+00:00",
+      "log": "results/reproducibility/pipeline_logs/t3.log",
+      "finished_utc": "2026-10-17T02:13:14.631545+00:00",
+      "elapsed_seconds": 2.4234331359999715,
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "stage": "t4",
+      "description": "位置对照、等价判定及14型表",
+      "command": [
+        "/tmp/kinship-v3-final-20261017/clean_venv/bin/python",
+        "analysis/v3/position_tests.py"
+      ],
+      "script_sha256": "71774b858066bafe1371f9844638c42d8a78e7ddda1efe01d83be4fae23ff8d1",
+      "started_utc": "2026-10-17T02:13:14.643724+00:00",
+      "log": "results/reproducibility/pipeline_logs/t4.log",
+      "finished_utc": "2026-10-17T02:13:17.701359+00:00",
+      "elapsed_seconds": 3.0563411870000436,
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "stage": "t5_strict",
+      "description": "T2配对比较需要的严格样本基准",
+      "command": [
+        "/tmp/kinship-v3-final-20261017/clean_venv/bin/python",
+        "analysis/v3/run_t5.py",
+        "--phase",
+        "strict"
+      ],
+      "script_sha256": "d25615b285438f2c46d14d19a7561fa7bb82405b63cc2b00a991361bf728c2ca",
+      "started_utc": "2026-10-17T02:13:17.704408+00:00",
+      "log": "results/reproducibility/pipeline_logs/t5_strict.log",
+      "finished_utc": "2026-10-17T02:13:22.931535+00:00",
+      "elapsed_seconds": 5.225760832000105,
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "stage": "t5_full",
+      "description": "全部配对规格、地域校准与依赖敏感性",
+      "command": [
+        "/tmp/kinship-v3-final-20261017/clean_venv/bin/python",
+        "analysis/v3/run_t5.py",
+        "--phase",
+        "full"
+      ],
+      "script_sha256": "d25615b285438f2c46d14d19a7561fa7bb82405b63cc2b00a991361bf728c2ca",
+      "started_utc": "2026-10-17T02:13:22.933809+00:00",
+      "log": "results/reproducibility/pipeline_logs/t5_full.log",
+      "finished_utc": "2026-10-17T02:14:13.723618+00:00",
+      "elapsed_seconds": 50.7883893180001,
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "stage": "t5_verify",
+      "description": "独立重算T5导出值与全部180区间",
+      "command": [
+        "/tmp/kinship-v3-final-20261017/clean_venv/bin/python",
+        "analysis/v3/verify_t5_outputs.py"
+      ],
+      "script_sha256": "0b817514dfda867c34c4e9004960e77c029cd7e0ac557f857db0b20c579353bb",
+      "started_utc": "2026-10-17T02:14:13.726168+00:00",
+      "log": "results/reproducibility/pipeline_logs/t5_verify.log",
+      "finished_utc": "2026-10-17T02:14:16.097161+00:00",
+      "elapsed_seconds": 2.3693458540000165,
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "stage": "t2_compare",
+      "description": "划分模型与配对模型的同系统比较",
+      "command": [
+        "/tmp/kinship-v3-final-20261017/clean_venv/bin/python",
+        "analysis/v3/run_t2.py",
+        "--phase",
+        "compare",
+        "--solver-profile",
+        "refined"
+      ],
+      "script_sha256": "4cd62014776f30fa5832f843b9b32ab9349f015d77271121983f7a6483ab24a7",
+      "started_utc": "2026-10-17T02:14:16.100129+00:00",
+      "log": "results/reproducibility/pipeline_logs/t2_compare.log",
+      "finished_utc": "2026-10-17T02:14:21.350157+00:00",
+      "elapsed_seconds": 5.246942298000022,
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "stage": "t6_feasibility",
+      "description": "按固定原始类别核查跨域覆盖",
+      "command": [
+        "/tmp/kinship-v3-final-20261017/clean_venv/bin/python",
+        "analysis/v3/domain_feasibility.py"
+      ],
+      "script_sha256": "552506be1228d61bb43044d5313eaa61783143e11c552082255b555f980888bb",
+      "started_utc": "2026-10-17T02:14:21.352692+00:00",
+      "log": "results/reproducibility/pipeline_logs/t6_feasibility.log",
+      "finished_utc": "2026-10-17T02:14:23.267114+00:00",
+      "elapsed_seconds": 1.9127583329999425,
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "stage": "t6",
+      "description": "跨域补充分析或明确的可行性结论",
+      "command": [
+        "/tmp/kinship-v3-final-20261017/clean_venv/bin/python",
+        "analysis/v3/cross_domain.py",
+        "--phase",
+        "all"
+      ],
+      "script_sha256": "a7137886f75ff2be47c044969723354f2da6dd447f9bee5d64684351044bf311",
+      "started_utc": "2026-10-17T02:14:23.269704+00:00",
+      "log": "results/reproducibility/pipeline_logs/t6.log",
+      "finished_utc": "2026-10-17T02:14:25.348674+00:00",
+      "elapsed_seconds": 2.077183161999983,
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "stage": "t7",
+      "description": "固定分类树的谱系分析可行性，不拟合Mk",
+      "command": [
+        "/tmp/kinship-v3-final-20261017/clean_venv/bin/python",
+        "analysis/v3/tree_feasibility.py"
+      ],
+      "script_sha256": "5ba1904f01d11aeb112d0991d586b0f3ae9fe53e50c382784bcbe820ba0a089d",
+      "started_utc": "2026-10-17T02:14:25.351213+00:00",
+      "log": "results/reproducibility/pipeline_logs/t7.log",
+      "finished_utc": "2026-10-17T02:14:25.720004+00:00",
+      "elapsed_seconds": 0.3670102849999921,
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "stage": "t8",
+      "description": "汇总已完成分析，不重新拟合",
+      "command": [
+        "/tmp/kinship-v3-final-20261017/clean_venv/bin/python",
+        "analysis/v3/summarize.py"
+      ],
+      "script_sha256": "1e5c7bcbba322805cec31d7e2a4454add5f34534345bba01d2dc87a8b57bab14",
+      "started_utc": "2026-10-17T02:14:25.722513+00:00",
+      "log": "results/reproducibility/pipeline_logs/t8.log",
+      "finished_utc": "2026-10-17T02:14:26.197685+00:00",
+      "elapsed_seconds": 0.47339111199994477,
+      "returncode": 0,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "finished_utc": "2026-10-17T02:14:26.200332+00:00"
+}

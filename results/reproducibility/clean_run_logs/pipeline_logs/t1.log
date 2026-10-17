@@ -1,0 +1,31 @@
+{"stage": "t1", "description": "4140划分、三种系统映射与基础测试", "command": ["/tmp/kinship-v3-final-20261017/clean_venv/bin/python", "analysis/v3/build_t1.py"], "script_sha256": "f0386ecd60135031d4fe1adba3472787da941b321a50892a046ed94d2eb0b32e", "started_utc": "2026-10-17T02:09:37.134529+00:00", "log": "results/reproducibility/pipeline_logs/t1.log"}
+{
+  "passed": true,
+  "partition_count": 4140,
+  "samples": {
+    "strict": {
+      "systems": 625,
+      "families": 108,
+      "missing_macroarea_systems": 23,
+      "unique_partitions": 77
+    },
+    "equal_sets": {
+      "systems": 939,
+      "families": 125,
+      "missing_macroarea_systems": 30,
+      "unique_partitions": 93
+    },
+    "components": {
+      "systems": 939,
+      "families": 125,
+      "missing_macroarea_systems": 30,
+      "unique_partitions": 85
+    }
+  },
+  "observed_checks": {
+    "abs_nonconjunctive": 163,
+    "all_nonconjunctive": 22
+  },
+  "parquet_written": true,
+  "error": null
+}
