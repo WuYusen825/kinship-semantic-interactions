@@ -1,0 +1,2262 @@
+{
+  "setting": "equal_sets_family_language",
+  "sample": "equal_sets",
+  "weighting": "family",
+  "validation": "language",
+  "systems": 939,
+  "families": 125,
+  "ladder": [
+    {
+      "model": "A0",
+      "penalty": "selected",
+      "mean_log_probability": -8.328451066819364,
+      "derived_pair_logloss": 0.5452161088498277,
+      "evaluable": true
+    },
+    {
+      "model": "A0",
+      "penalty": "fixed_0",
+      "mean_log_probability": -8.328451066819364,
+      "derived_pair_logloss": 0.5452161088498277,
+      "evaluable": true
+    },
+    {
+      "model": "A0",
+      "penalty": "fixed_0.01",
+      "mean_log_probability": -8.328451066819364,
+      "derived_pair_logloss": 0.5452161088498277,
+      "evaluable": true
+    },
+    {
+      "model": "A0",
+      "penalty": "fixed_0.1",
+      "mean_log_probability": -8.328451066819364,
+      "derived_pair_logloss": 0.5452161088498277,
+      "evaluable": true
+    },
+    {
+      "model": "A0",
+      "penalty": "fixed_1",
+      "mean_log_probability": -8.328451066819364,
+      "derived_pair_logloss": 0.5452161088498277,
+      "evaluable": true
+    },
+    {
+      "model": "A1",
+      "penalty": "selected",
+      "mean_log_probability": -8.037714132633683,
+      "derived_pair_logloss": 0.5483658189075589,
+      "evaluable": true
+    },
+    {
+      "model": "A1",
+      "penalty": "fixed_0",
+      "mean_log_probability": -8.037714132633683,
+      "derived_pair_logloss": 0.5483658189075589,
+      "evaluable": true
+    },
+    {
+      "model": "A1",
+      "penalty": "fixed_0.01",
+      "mean_log_probability": -8.054396205654283,
+      "derived_pair_logloss": 0.5464967758719027,
+      "evaluable": true
+    },
+    {
+      "model": "A1",
+      "penalty": "fixed_0.1",
+      "mean_log_probability": -8.179231345130736,
+      "derived_pair_logloss": 0.5445952407768324,
+      "evaluable": true
+    },
+    {
+      "model": "A1",
+      "penalty": "fixed_1",
+      "mean_log_probability": -8.240946295682754,
+      "derived_pair_logloss": 0.5438655895970355,
+      "evaluable": true
+    },
+    {
+      "model": "A2",
+      "penalty": "selected",
+      "mean_log_probability": -5.877213576919706,
+      "derived_pair_logloss": 0.5078257657753995,
+      "evaluable": true
+    },
+    {
+      "model": "A2",
+      "penalty": "fixed_0",
+      "mean_log_probability": -5.8763931572837045,
+      "derived_pair_logloss": 0.5101245555384627,
+      "evaluable": true
+    },
+    {
+      "model": "A2",
+      "penalty": "fixed_0.01",
+      "mean_log_probability": -5.876045067112662,
+      "derived_pair_logloss": 0.5094991155572424,
+      "evaluable": true
+    },
+    {
+      "model": "A2",
+      "penalty": "fixed_0.1",
+      "mean_log_probability": -5.877852472939232,
+      "derived_pair_logloss": 0.5074018666287995,
+      "evaluable": true
+    },
+    {
+      "model": "A2",
+      "penalty": "fixed_1",
+      "mean_log_probability": -5.971723526755569,
+      "derived_pair_logloss": 0.5056231474240779,
+      "evaluable": true
+    },
+    {
+      "model": "A3r",
+      "penalty": "selected",
+      "mean_log_probability": -4.693591258961439,
+      "derived_pair_logloss": 0.47350927548182337,
+      "evaluable": true
+    },
+    {
+      "model": "A3r",
+      "penalty": "fixed_0",
+      "mean_log_probability": -4.693420731516909,
+      "derived_pair_logloss": 0.47351464958553724,
+      "evaluable": true
+    },
+    {
+      "model": "A3r",
+      "penalty": "fixed_0.01",
+      "mean_log_probability": -4.692217741268351,
+      "derived_pair_logloss": 0.4736552782075892,
+      "evaluable": true
+    },
+    {
+      "model": "A3r",
+      "penalty": "fixed_0.1",
+      "mean_log_probability": -4.696651257527461,
+      "derived_pair_logloss": 0.47329709656412683,
+      "evaluable": true
+    },
+    {
+      "model": "A3r",
+      "penalty": "fixed_1",
+      "mean_log_probability": -4.878555387325985,
+      "derived_pair_logloss": 0.473187712526532,
+      "evaluable": true
+    },
+    {
+      "model": "A3s",
+      "penalty": "selected",
+      "mean_log_probability": -7.47750216246254,
+      "derived_pair_logloss": 0.5496553412553536,
+      "evaluable": true
+    },
+    {
+      "model": "A3s",
+      "penalty": "fixed_0",
+      "mean_log_probability": -7.47750216246254,
+      "derived_pair_logloss": 0.5496553412553536,
+      "evaluable": true
+    },
+    {
+      "model": "A3s",
+      "penalty": "fixed_0.01",
+      "mean_log_probability": -7.479439416679759,
+      "derived_pair_logloss": 0.5483371427953645,
+      "evaluable": true
+    },
+    {
+      "model": "A3s",
+      "penalty": "fixed_0.1",
+      "mean_log_probability": -7.506255028986341,
+      "derived_pair_logloss": 0.5459777729863299,
+      "evaluable": true
+    },
+    {
+      "model": "A3s",
+      "penalty": "fixed_1",
+      "mean_log_probability": -7.57813580217987,
+      "derived_pair_logloss": 0.5434893593395261,
+      "evaluable": true
+    },
+    {
+      "model": "A4",
+      "penalty": "selected",
+      "mean_log_probability": -6.038071165623327,
+      "derived_pair_logloss": 0.5090778180767743,
+      "evaluable": true
+    },
+    {
+      "model": "A4",
+      "penalty": "fixed_0",
+      "mean_log_probability": -6.039872976217703,
+      "derived_pair_logloss": 0.5085893900486972,
+      "evaluable": true
+    },
+    {
+      "model": "A4",
+      "penalty": "fixed_0.01",
+      "mean_log_probability": -6.043788080252692,
+      "derived_pair_logloss": 0.5092640027155486,
+      "evaluable": true
+    },
+    {
+      "model": "A4",
+      "penalty": "fixed_0.1",
+      "mean_log_probability": -6.1906002470348325,
+      "derived_pair_logloss": 0.5125611036588312,
+      "evaluable": true
+    },
+    {
+      "model": "A4",
+      "penalty": "fixed_1",
+      "mean_log_probability": -7.083800840022558,
+      "derived_pair_logloss": 0.5227034237943483,
+      "evaluable": true
+    },
+    {
+      "model": "A5r",
+      "penalty": "selected",
+      "mean_log_probability": -4.369407080615651,
+      "derived_pair_logloss": 0.4619896528078337,
+      "evaluable": true
+    },
+    {
+      "model": "A5r",
+      "penalty": "fixed_0",
+      "mean_log_probability": -4.327713987362144,
+      "derived_pair_logloss": 0.46125632283804785,
+      "evaluable": true
+    },
+    {
+      "model": "A5r",
+      "penalty": "fixed_0.01",
+      "mean_log_probability": -4.37822327287446,
+      "derived_pair_logloss": 0.46757173516542483,
+      "evaluable": true
+    },
+    {
+      "model": "A5r",
+      "penalty": "fixed_0.1",
+      "mean_log_probability": -4.949865091397632,
+      "derived_pair_logloss": 0.48571797223417784,
+      "evaluable": true
+    },
+    {
+      "model": "A5r",
+      "penalty": "fixed_1",
+      "mean_log_probability": -6.533633451858688,
+      "derived_pair_logloss": 0.5100640785774859,
+      "evaluable": true
+    },
+    {
+      "model": "A5s",
+      "penalty": "selected",
+      "mean_log_probability": -8.08024464353395,
+      "derived_pair_logloss": 0.5493140494022092,
+      "evaluable": true
+    },
+    {
+      "model": "A5s",
+      "penalty": "fixed_0",
+      "mean_log_probability": -8.08024464353395,
+      "derived_pair_logloss": 0.5493140494022092,
+      "evaluable": true
+    },
+    {
+      "model": "A5s",
+      "penalty": "fixed_0.01",
+      "mean_log_probability": -8.095958260764014,
+      "derived_pair_logloss": 0.5476404736441292,
+      "evaluable": true
+    },
+    {
+      "model": "A5s",
+      "penalty": "fixed_0.1",
+      "mean_log_probability": -8.21048842905478,
+      "derived_pair_logloss": 0.5458294364526799,
+      "evaluable": true
+    },
+    {
+      "model": "A5s",
+      "penalty": "fixed_1",
+      "mean_log_probability": -8.249753638861089,
+      "derived_pair_logloss": 0.5445290557569118,
+      "evaluable": true
+    },
+    {
+      "model": "A6",
+      "penalty": "selected",
+      "mean_log_probability": -4.705271701696432,
+      "derived_pair_logloss": 0.49152676100758214,
+      "evaluable": true
+    },
+    {
+      "model": "A6",
+      "penalty": "fixed_0",
+      "mean_log_probability": -4.6617965163213375,
+      "derived_pair_logloss": 0.4908045006362174,
+      "evaluable": true
+    },
+    {
+      "model": "A6",
+      "penalty": "fixed_0.01",
+      "mean_log_probability": -4.744052893530029,
+      "derived_pair_logloss": 0.4954375999102786,
+      "evaluable": true
+    },
+    {
+      "model": "A6",
+      "penalty": "fixed_0.1",
+      "mean_log_probability": -5.295542734899557,
+      "derived_pair_logloss": 0.5072600054104515,
+      "evaluable": true
+    },
+    {
+      "model": "A6",
+      "penalty": "fixed_1",
+      "mean_log_probability": -6.810467631130199,
+      "derived_pair_logloss": 0.5240989764102127,
+      "evaluable": true
+    },
+    {
+      "model": "BASE",
+      "penalty": "selected",
+      "mean_log_probability": -4.369407080615651,
+      "derived_pair_logloss": 0.4619896528078337,
+      "evaluable": true
+    },
+    {
+      "model": "A7",
+      "penalty": "selected",
+      "mean_log_probability": -4.274772670732381,
+      "derived_pair_logloss": 0.45664276516960245,
+      "evaluable": true
+    },
+    {
+      "model": "A7",
+      "penalty": "fixed_0",
+      "mean_log_probability": -4.232313549708438,
+      "derived_pair_logloss": 0.455757482338445,
+      "evaluable": true
+    },
+    {
+      "model": "A7",
+      "penalty": "fixed_0.01",
+      "mean_log_probability": -4.28782442881926,
+      "derived_pair_logloss": 0.4629450432767553,
+      "evaluable": true
+    },
+    {
+      "model": "A7",
+      "penalty": "fixed_0.1",
+      "mean_log_probability": -4.850800237399093,
+      "derived_pair_logloss": 0.4787691329943038,
+      "evaluable": true
+    },
+    {
+      "model": "A7",
+      "penalty": "fixed_1",
+      "mean_log_probability": -6.26281102990417,
+      "derived_pair_logloss": 0.49770952207730335,
+      "evaluable": true
+    }
+  ],
+  "comparisons": [
+    {
+      "comparison": "A0-A1",
+      "penalty": "selected",
+      "gain": -0.29073693418567825,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -0.44171150009310556,
+        -0.14400257333589547
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A1-A0",
+      "penalty": "selected",
+      "gain": 0.29073693418567825,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.14400257333589528,
+        0.44171150009310556
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A2-A0",
+      "penalty": "selected",
+      "gain": 2.4512374898996527,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        2.087063708032851,
+        2.7870365823062433
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A2-A1",
+      "penalty": "selected",
+      "gain": 2.160500555713976,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.7919578715794624,
+        2.507338979750994
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3r-A0",
+      "penalty": "selected",
+      "gain": 3.6348598078579206,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.362893751539225,
+        3.876184871297415
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3r-A1",
+      "penalty": "selected",
+      "gain": 3.3441228736722417,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.07727591316243,
+        3.572903978929671
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3s-A0",
+      "penalty": "selected",
+      "gain": 0.8509489043568209,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.5677006486574945,
+        1.1530904425430233
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3s-A1",
+      "penalty": "selected",
+      "gain": 0.5602119701711428,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.3403427154931016,
+        0.7918548045388901
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A4-A0",
+      "penalty": "selected",
+      "gain": 2.290379901196033,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.8589707521988736,
+        2.686180182420606
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A4-A1",
+      "penalty": "selected",
+      "gain": 1.9996429670103555,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.5611248267557243,
+        2.397110536551952
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5r-A0",
+      "penalty": "selected",
+      "gain": 3.959043986203709,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.5199294187817562,
+        4.325359402012592
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5r-A1",
+      "penalty": "selected",
+      "gain": 3.6683070520180308,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.222456065761871,
+        4.0357672603766686
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5s-A0",
+      "penalty": "selected",
+      "gain": 0.24820642328540726,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.10203217869960288,
+        0.39970589078389956
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5s-A1",
+      "penalty": "selected",
+      "gain": -0.04253051090027094,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -0.06790285031187855,
+        -0.018061621778883062
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A6-A0",
+      "penalty": "selected",
+      "gain": 3.623179365122929,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.2167736871616595,
+        3.9546252400845305
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A6-A1",
+      "penalty": "selected",
+      "gain": 3.332442430937251,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        2.939529710608517,
+        3.6443935968519794
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A7-A0",
+      "penalty": "selected",
+      "gain": 4.053678396086978,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.6049388900428796,
+        4.427237371585788
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A7-A1",
+      "penalty": "selected",
+      "gain": 3.7629414619013,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.307466712097794,
+        4.138480676076313
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3r-A2",
+      "penalty": "selected",
+      "gain": 1.1836223179582672,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.8424318673394606,
+        1.5396855964248206
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3s-A2",
+      "penalty": "selected",
+      "gain": -1.6002885855428322,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -2.102713404392534,
+        -1.0654712595604352
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A5r-A4",
+      "penalty": "selected",
+      "gain": 1.6686640850076753,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.1568973425944078,
+        2.188119140234992
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5s-A4",
+      "penalty": "selected",
+      "gain": -2.042173477910627,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -2.4342410673205017,
+        -1.604037025109556
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A7-BASE",
+      "penalty": "selected",
+      "gain": 0.09463440988326999,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.023227550799091223,
+        0.16906411031090554
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A0-A1",
+      "penalty": "fixed_0",
+      "gain": -0.29073693418567825,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -0.44171150009310556,
+        -0.14400257333589547
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A1-A0",
+      "penalty": "fixed_0",
+      "gain": 0.29073693418567825,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.14400257333589528,
+        0.44171150009310556
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A2-A0",
+      "penalty": "fixed_0",
+      "gain": 2.4520579095356547,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        2.0840047878662205,
+        2.793442500854793
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A2-A1",
+      "penalty": "fixed_0",
+      "gain": 2.1613209753499776,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.788837259755496,
+        2.509106131998826
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3r-A0",
+      "penalty": "fixed_0",
+      "gain": 3.635030335302453,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.3489084430492007,
+        3.885465992778264
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3r-A1",
+      "penalty": "fixed_0",
+      "gain": 3.3442934011167753,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.067921589668133,
+        3.582905962741296
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3s-A0",
+      "penalty": "fixed_0",
+      "gain": 0.8509489043568209,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.5677006486574945,
+        1.1530904425430233
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3s-A1",
+      "penalty": "fixed_0",
+      "gain": 0.5602119701711428,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.3403427154931016,
+        0.7918548045388901
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A4-A0",
+      "penalty": "fixed_0",
+      "gain": 2.288578090601658,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.8347973709527885,
+        2.70518489005721
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A4-A1",
+      "penalty": "fixed_0",
+      "gain": 1.9978411564159804,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.537877723469289,
+        2.41535285643032
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5r-A0",
+      "penalty": "fixed_0",
+      "gain": 4.000737079457214,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.559501005097379,
+        4.3702055300669755
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5r-A1",
+      "penalty": "fixed_0",
+      "gain": 3.7100001452715365,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.2648688737728624,
+        4.0772699295347525
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5s-A0",
+      "penalty": "fixed_0",
+      "gain": 0.24820642328540726,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.10203217869960288,
+        0.39970589078389956
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5s-A1",
+      "penalty": "fixed_0",
+      "gain": -0.04253051090027094,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -0.06790285031187855,
+        -0.018061621778883062
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A6-A0",
+      "penalty": "fixed_0",
+      "gain": 3.6666545504980226,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.255858061216429,
+        4.000567111729722
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A6-A1",
+      "penalty": "fixed_0",
+      "gain": 3.3759176163123445,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        2.975981085478613,
+        3.690665229232581
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A7-A0",
+      "penalty": "fixed_0",
+      "gain": 4.096137517110921,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.6491624609009152,
+        4.472143040287394
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A7-A1",
+      "penalty": "fixed_0",
+      "gain": 3.8054005829252424,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.3460396188526738,
+        4.180310090335804
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3r-A2",
+      "penalty": "fixed_0",
+      "gain": 1.1829724257667982,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.8363347994923609,
+        1.544689167763137
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3s-A2",
+      "penalty": "fixed_0",
+      "gain": -1.601109005178834,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -2.1066129921411147,
+        -1.0621448022569961
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A5r-A4",
+      "penalty": "fixed_0",
+      "gain": 1.7121589888555564,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.18800673282985,
+        2.2477242611370594
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5s-A4",
+      "penalty": "fixed_0",
+      "gain": -2.040371667316251,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -2.4517308687322483,
+        -1.5790134968520968
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A7-BASE",
+      "penalty": "fixed_0",
+      "gain": 0.1370935309072125,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.06395025135269619,
+        0.21314843042196818
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A0-A1",
+      "penalty": "fixed_0.01",
+      "gain": -0.2740548611650783,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -0.39905158759811576,
+        -0.1532724958395899
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A1-A0",
+      "penalty": "fixed_0.01",
+      "gain": 0.2740548611650783,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.1532724958395899,
+        0.3990515875981157
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A2-A0",
+      "penalty": "fixed_0.01",
+      "gain": 2.4524059997066985,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        2.0830221541614193,
+        2.793823401746155
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A2-A1",
+      "penalty": "fixed_0.01",
+      "gain": 2.1783511385416197,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.8155396768542955,
+        2.515481136018002
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3r-A0",
+      "penalty": "fixed_0.01",
+      "gain": 3.6362333255510095,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.353770236761848,
+        3.884191297963855
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3r-A1",
+      "penalty": "fixed_0.01",
+      "gain": 3.3621784643859316,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.1092953137476878,
+        3.583345496157259
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3s-A0",
+      "penalty": "fixed_0.01",
+      "gain": 0.8490116501396014,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.5659852744603702,
+        1.1490295027925197
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3s-A1",
+      "penalty": "fixed_0.01",
+      "gain": 0.5749567889745232,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.34985246982850127,
+        0.8108065435806682
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A4-A0",
+      "penalty": "fixed_0.01",
+      "gain": 2.284662986566668,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.8531700478985005,
+        2.6775776695946427
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A4-A1",
+      "penalty": "fixed_0.01",
+      "gain": 2.01060812540159,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.5885380203180726,
+        2.394888767291108
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5r-A0",
+      "penalty": "fixed_0.01",
+      "gain": 3.950227793944899,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.6923603079413096,
+        4.177130137495559
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5r-A1",
+      "penalty": "fixed_0.01",
+      "gain": 3.6761729327798216,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.4372360560657316,
+        3.887469425361309
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5s-A0",
+      "penalty": "fixed_0.01",
+      "gain": 0.23249280605534825,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.10491344204219166,
+        0.36559394732515077
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5s-A1",
+      "penalty": "fixed_0.01",
+      "gain": -0.04156205510973014,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -0.06451013969205407,
+        -0.01865840545557658
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A6-A0",
+      "penalty": "fixed_0.01",
+      "gain": 3.58439817328933,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.3538070956875052,
+        3.7907464449375583
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A6-A1",
+      "penalty": "fixed_0.01",
+      "gain": 3.3103433121242523,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.1133368119475593,
+        3.4849115319923425
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A7-A0",
+      "penalty": "fixed_0.01",
+      "gain": 4.040626638000099,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.7753984163064493,
+        4.2758423289978555
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A7-A1",
+      "penalty": "fixed_0.01",
+      "gain": 3.766571776835021,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.521953769531596,
+        3.985628493442718
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3r-A2",
+      "penalty": "fixed_0.01",
+      "gain": 1.1838273258443115,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.8386383037691968,
+        1.5442210684235196
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3s-A2",
+      "penalty": "fixed_0.01",
+      "gain": -1.6033943495670973,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -2.1119904083166614,
+        -1.0617079783301318
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A5r-A4",
+      "penalty": "fixed_0.01",
+      "gain": 1.6655648073782312,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.2723518092257244,
+        2.0853833823639407
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5s-A4",
+      "penalty": "fixed_0.01",
+      "gain": -2.05217018051132,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -2.439281389915685,
+        -1.6162561407437799
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A7-BASE",
+      "penalty": "fixed_0.01",
+      "gain": 0.08158265179639014,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -0.10311817189213288,
+        0.3014097145733789
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A0-A1",
+      "penalty": "fixed_0.1",
+      "gain": -0.14921972168862363,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -0.23430473396945764,
+        -0.06181107370344973
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A1-A0",
+      "penalty": "fixed_0.1",
+      "gain": 0.14921972168862363,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.06181107370344961,
+        0.23430473396945756
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A2-A0",
+      "penalty": "fixed_0.1",
+      "gain": 2.4505985938801293,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        2.0868191892986476,
+        2.7867644958700373
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A2-A1",
+      "penalty": "fixed_0.1",
+      "gain": 2.301378872191506,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.963614283038627,
+        2.616772336976093
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3r-A0",
+      "penalty": "fixed_0.1",
+      "gain": 3.6317998092918997,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.368142557152069,
+        3.86159642509668
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3r-A1",
+      "penalty": "fixed_0.1",
+      "gain": 3.482580087603277,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.279230576007348,
+        3.6484971267971336
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3s-A0",
+      "penalty": "fixed_0.1",
+      "gain": 0.8221960378330185,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.5421313998135683,
+        1.1133149038420629
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3s-A1",
+      "penalty": "fixed_0.1",
+      "gain": 0.6729763161443951,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.4364032461043701,
+        0.9271282915027751
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A4-A0",
+      "penalty": "fixed_0.1",
+      "gain": 2.137850819784526,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.8162477091911167,
+        2.4400063899959092
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A4-A1",
+      "penalty": "fixed_0.1",
+      "gain": 1.9886310980959025,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.6904073508647979,
+        2.2599942132169817
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5r-A0",
+      "penalty": "fixed_0.1",
+      "gain": 3.3785859754217302,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.1770328594800126,
+        3.5556154046236976
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5r-A1",
+      "penalty": "fixed_0.1",
+      "gain": 3.2293662537331063,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.1019632669176853,
+        3.339274225089298
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5s-A0",
+      "penalty": "fixed_0.1",
+      "gain": 0.1179626377645808,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.011525427827719285,
+        0.22218238521190578
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5s-A1",
+      "penalty": "fixed_0.1",
+      "gain": -0.03125708392404286,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -0.06515734428777034,
+        0.003030127925314449
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A6-A0",
+      "penalty": "fixed_0.1",
+      "gain": 3.0329083319198036,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        2.8361528515995365,
+        3.2108704688165886
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A6-A1",
+      "penalty": "fixed_0.1",
+      "gain": 2.8836886102311796,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        2.7642536226733263,
+        2.9894317959508507
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A7-A0",
+      "penalty": "fixed_0.1",
+      "gain": 3.477650829420265,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.2553658048195024,
+        3.684541489089415
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A7-A1",
+      "penalty": "fixed_0.1",
+      "gain": 3.328431107731643,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.166305705909524,
+        3.4818894023421727
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3r-A2",
+      "penalty": "fixed_0.1",
+      "gain": 1.1812012154117708,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.8480008263850976,
+        1.5303814772038018
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3s-A2",
+      "penalty": "fixed_0.1",
+      "gain": -1.6284025560471107,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -2.134437382676848,
+        -1.0930798864663478
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A5r-A4",
+      "penalty": "fixed_0.1",
+      "gain": 1.2407351556372044,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.9685823139422,
+        1.5389052997216774
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5s-A4",
+      "penalty": "fixed_0.1",
+      "gain": -2.019888182019945,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -2.3082973952408765,
+        -1.701288620445621
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A7-BASE",
+      "penalty": "fixed_0.1",
+      "gain": -0.48139315678344297,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -0.7377389500973632,
+        -0.17454140469381157
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A0-A1",
+      "penalty": "fixed_1",
+      "gain": -0.08750477113660528,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -0.14443573130063828,
+        -0.02601949056346616
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A1-A0",
+      "penalty": "fixed_1",
+      "gain": 0.08750477113660528,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.026019490563466155,
+        0.14443573130063822
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A2-A0",
+      "penalty": "fixed_1",
+      "gain": 2.356727540063792,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        2.054190001751767,
+        2.6364047681410745
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A2-A1",
+      "penalty": "fixed_1",
+      "gain": 2.269222768927187,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.9812513619126002,
+        2.5364433221365106
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3r-A0",
+      "penalty": "fixed_1",
+      "gain": 3.4498956794933755,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.255136496693532,
+        3.6196537144623377
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3r-A1",
+      "penalty": "fixed_1",
+      "gain": 3.3623909083567702,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.2122880338210864,
+        3.485814688036462
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3s-A0",
+      "penalty": "fixed_1",
+      "gain": 0.7503152646394903,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.523497350524934,
+        0.9864914474476051
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3s-A1",
+      "penalty": "fixed_1",
+      "gain": 0.662810493502885,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.46146384708038934,
+        0.8793320525063634
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A4-A0",
+      "penalty": "fixed_1",
+      "gain": 1.2446502267968025,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.0753402296157126,
+        1.4104692037111455
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A4-A1",
+      "penalty": "fixed_1",
+      "gain": 1.157145455660197,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.0282614018352934,
+        1.281646231670066
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5r-A0",
+      "penalty": "fixed_1",
+      "gain": 1.7948176149606723,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.635135413697624,
+        1.9393813521263683
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5r-A1",
+      "penalty": "fixed_1",
+      "gain": 1.7073128438240668,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.6081260002930131,
+        1.7973079522118927
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5s-A0",
+      "penalty": "fixed_1",
+      "gain": 0.0786974279582728,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.0006590440461090643,
+        0.1534770545210873
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5s-A1",
+      "penalty": "fixed_1",
+      "gain": -0.008807343178332509,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -0.037821654427905325,
+        0.020367720219748774
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A6-A0",
+      "penalty": "fixed_1",
+      "gain": 1.517983435689162,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.358740731321721,
+        1.6617361541127407
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A6-A1",
+      "penalty": "fixed_1",
+      "gain": 1.4304786645525565,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.3327490479657131,
+        1.5184560271407734
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A7-A0",
+      "penalty": "fixed_1",
+      "gain": 2.0656400369151897,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.806292692940687,
+        2.3124393431967163
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A7-A1",
+      "penalty": "fixed_1",
+      "gain": 1.978135265778584,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.758751802829405,
+        2.1963614419075483
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3r-A2",
+      "penalty": "fixed_1",
+      "gain": 1.0931681394295834,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.8151705909020848,
+        1.389883256407136
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A3s-A2",
+      "penalty": "fixed_1",
+      "gain": -1.606412275424302,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -2.0382786473040264,
+        -1.1536316149237287
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A5r-A4",
+      "penalty": "fixed_1",
+      "gain": 0.55016738816387,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.445675937421,
+        0.665522671834553
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    {
+      "comparison": "A5s-A4",
+      "penalty": "fixed_1",
+      "gain": -1.1659527988385292,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -1.2977485201077452,
+        -1.0233038669758299
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    {
+      "comparison": "A7-BASE",
+      "penalty": "fixed_1",
+      "gain": -1.8934039492885189,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -2.241180699494384,
+        -1.4884913139063158
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    }
+  ],
+  "fits": 740,
+  "failed_fits": 1,
+  "A6_lambda": {
+    "values": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "status": "identical",
+    "reason": "constant 4*lambda cancels in exact normalization; not refitted"
+  },
+  "unweighted": {
+    "identical_to": "language",
+    "refitted": false
+  },
+  "seed": 20261016,
+  "bootstrap_replicates": 5000,
+  "selected_models": {
+    "A0": {
+      "model": "A0",
+      "penalty": "selected",
+      "mean_log_probability": -8.328451066819364,
+      "derived_pair_logloss": 0.5452161088498277,
+      "evaluable": true
+    },
+    "A1": {
+      "model": "A1",
+      "penalty": "selected",
+      "mean_log_probability": -8.037714132633683,
+      "derived_pair_logloss": 0.5483658189075589,
+      "evaluable": true
+    },
+    "A2": {
+      "model": "A2",
+      "penalty": "selected",
+      "mean_log_probability": -5.877213576919706,
+      "derived_pair_logloss": 0.5078257657753995,
+      "evaluable": true
+    },
+    "A3r": {
+      "model": "A3r",
+      "penalty": "selected",
+      "mean_log_probability": -4.693591258961439,
+      "derived_pair_logloss": 0.47350927548182337,
+      "evaluable": true
+    },
+    "A3s": {
+      "model": "A3s",
+      "penalty": "selected",
+      "mean_log_probability": -7.47750216246254,
+      "derived_pair_logloss": 0.5496553412553536,
+      "evaluable": true
+    },
+    "A4": {
+      "model": "A4",
+      "penalty": "selected",
+      "mean_log_probability": -6.038071165623327,
+      "derived_pair_logloss": 0.5090778180767743,
+      "evaluable": true
+    },
+    "A5r": {
+      "model": "A5r",
+      "penalty": "selected",
+      "mean_log_probability": -4.369407080615651,
+      "derived_pair_logloss": 0.4619896528078337,
+      "evaluable": true
+    },
+    "A5s": {
+      "model": "A5s",
+      "penalty": "selected",
+      "mean_log_probability": -8.08024464353395,
+      "derived_pair_logloss": 0.5493140494022092,
+      "evaluable": true
+    },
+    "A6": {
+      "model": "A6",
+      "penalty": "selected",
+      "mean_log_probability": -4.705271701696432,
+      "derived_pair_logloss": 0.49152676100758214,
+      "evaluable": true
+    },
+    "BASE": {
+      "model": "BASE",
+      "penalty": "selected",
+      "mean_log_probability": -4.369407080615651,
+      "derived_pair_logloss": 0.4619896528078337,
+      "evaluable": true
+    },
+    "A7": {
+      "model": "A7",
+      "penalty": "selected",
+      "mean_log_probability": -4.274772670732381,
+      "derived_pair_logloss": 0.45664276516960245,
+      "evaluable": true
+    }
+  },
+  "selected_comparisons": {
+    "A0-A1": {
+      "comparison": "A0-A1",
+      "penalty": "selected",
+      "gain": -0.29073693418567825,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -0.44171150009310556,
+        -0.14400257333589547
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    "A1-A0": {
+      "comparison": "A1-A0",
+      "penalty": "selected",
+      "gain": 0.29073693418567825,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.14400257333589528,
+        0.44171150009310556
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    "A2-A0": {
+      "comparison": "A2-A0",
+      "penalty": "selected",
+      "gain": 2.4512374898996527,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        2.087063708032851,
+        2.7870365823062433
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    "A2-A1": {
+      "comparison": "A2-A1",
+      "penalty": "selected",
+      "gain": 2.160500555713976,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.7919578715794624,
+        2.507338979750994
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    "A3r-A0": {
+      "comparison": "A3r-A0",
+      "penalty": "selected",
+      "gain": 3.6348598078579206,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.362893751539225,
+        3.876184871297415
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    "A3r-A1": {
+      "comparison": "A3r-A1",
+      "penalty": "selected",
+      "gain": 3.3441228736722417,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.07727591316243,
+        3.572903978929671
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    "A3s-A0": {
+      "comparison": "A3s-A0",
+      "penalty": "selected",
+      "gain": 0.8509489043568209,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.5677006486574945,
+        1.1530904425430233
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    "A3s-A1": {
+      "comparison": "A3s-A1",
+      "penalty": "selected",
+      "gain": 0.5602119701711428,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.3403427154931016,
+        0.7918548045388901
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    "A4-A0": {
+      "comparison": "A4-A0",
+      "penalty": "selected",
+      "gain": 2.290379901196033,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.8589707521988736,
+        2.686180182420606
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    "A4-A1": {
+      "comparison": "A4-A1",
+      "penalty": "selected",
+      "gain": 1.9996429670103555,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.5611248267557243,
+        2.397110536551952
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    "A5r-A0": {
+      "comparison": "A5r-A0",
+      "penalty": "selected",
+      "gain": 3.959043986203709,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.5199294187817562,
+        4.325359402012592
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    "A5r-A1": {
+      "comparison": "A5r-A1",
+      "penalty": "selected",
+      "gain": 3.6683070520180308,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.222456065761871,
+        4.0357672603766686
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    "A5s-A0": {
+      "comparison": "A5s-A0",
+      "penalty": "selected",
+      "gain": 0.24820642328540726,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.10203217869960288,
+        0.39970589078389956
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    "A5s-A1": {
+      "comparison": "A5s-A1",
+      "penalty": "selected",
+      "gain": -0.04253051090027094,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -0.06790285031187855,
+        -0.018061621778883062
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    "A6-A0": {
+      "comparison": "A6-A0",
+      "penalty": "selected",
+      "gain": 3.623179365122929,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.2167736871616595,
+        3.9546252400845305
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    "A6-A1": {
+      "comparison": "A6-A1",
+      "penalty": "selected",
+      "gain": 3.332442430937251,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        2.939529710608517,
+        3.6443935968519794
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    "A7-A0": {
+      "comparison": "A7-A0",
+      "penalty": "selected",
+      "gain": 4.053678396086978,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.6049388900428796,
+        4.427237371585788
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    "A7-A1": {
+      "comparison": "A7-A1",
+      "penalty": "selected",
+      "gain": 3.7629414619013,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        3.307466712097794,
+        4.138480676076313
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    "A3r-A2": {
+      "comparison": "A3r-A2",
+      "penalty": "selected",
+      "gain": 1.1836223179582672,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.8424318673394606,
+        1.5396855964248206
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    "A3s-A2": {
+      "comparison": "A3s-A2",
+      "penalty": "selected",
+      "gain": -1.6002885855428322,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -2.102713404392534,
+        -1.0654712595604352
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    "A5r-A4": {
+      "comparison": "A5r-A4",
+      "penalty": "selected",
+      "gain": 1.6686640850076753,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        1.1568973425944078,
+        2.188119140234992
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    },
+    "A5s-A4": {
+      "comparison": "A5s-A4",
+      "penalty": "selected",
+      "gain": -2.042173477910627,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        -2.4342410673205017,
+        -1.604037025109556
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": false
+    },
+    "A7-BASE": {
+      "comparison": "A7-BASE",
+      "penalty": "selected",
+      "gain": 0.09463440988326999,
+      "systems": 939,
+      "scope": "fixed OOF, family cluster resampling, no refitting",
+      "ci95": [
+        0.023227550799091223,
+        0.16906411031090554
+      ],
+      "evaluable": true,
+      "interval_excludes_zero_positive": true
+    }
+  }
+}

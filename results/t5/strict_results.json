@@ -1,0 +1,42 @@
+{
+  "T0_passed": true,
+  "baseline_result_sha256": "97c7d032686a3f093499689582dc8e23c5b84c7a198012aa2c76386d3799e1c6",
+  "baseline_tag_commit": "49bc16c52af0c1467c9db366e422e83aa18c7f14",
+  "plan_commit": "5e31d20c310920ffbbc9b0bfd84b720210895998",
+  "plan_sha256": "a5c919605d384850d0ff237dd4ee70c2db61ef814d9918ddb5900d8cced133f2",
+  "plan_commit_time": "2026-10-16T11:05:38Z",
+  "seed": 20261016,
+  "bootstrap_replicates": 5000,
+  "runner_sha256": "d25615b285438f2c46d14d19a7561fa7bb82405b63cc2b00a991361bf728c2ca",
+  "pair_models_sha256": "5a7b32922b01bb4366ed315bfa05826cf05855bea8d54eba04f854761e9ca541",
+  "S2_fitter_sha256": "ce55131d9063f1aa441b525d84b9f7affb04a4da0a063f6f1683fd9ede3685fc",
+  "input_pairs_sha256": "47e676a8fe2e988a40a45a5dd558f61cfa85b4f1a528a6a7bf4153d8e128dfbf",
+  "completed_utc": "2026-10-16T13:31:46.633688+00:00",
+  "sample": "strict",
+  "systems": 625,
+  "families": 108,
+  "settings": 6,
+  "models": [
+    "M0",
+    "M1",
+    "M2",
+    "M3",
+    "M4"
+  ],
+  "cv_fits": 160,
+  "all_cv_fits_converged": true,
+  "firth_fits": 0,
+  "scores_file": "strict_language_scores.csv",
+  "predictions_file": "strict_pair_predictions.csv.gz",
+  "fullfit_file": "strict_fullfit.json",
+  "same_old_folds": true,
+  "missing_area_systems": 23,
+  "schema_note": "逐系统loss为28对均值；validation/cv=family,area,language；fold字符串规范比较。",
+  "files": {
+    "strict_language_scores.csv": "1eb40f68ca1978e1554eed2ad84d24ab40e00ac7dd26843d2e603b2cf1dd787a",
+    "strict_pair_predictions.csv.gz": "2d3b94f95d8f6081bb801a9860ea16b8417bf3b83eea16385290023ec5a29e82",
+    "strict_fit_diagnostics.json": "e8f9937ce6ab9551d4576bf38ce06ad74ec814abba99847f51616abb46ce2220",
+    "strict_fold_info.json": "46bc8d0e2c6bb7d71e5380d7a50c1dfa3ae6d07a16af8cadaa3a1f319eaf1c5e",
+    "strict_fullfit.json": "9a1ecfd1509ff4bb63d77d0a7fb4c4c1b7bff44ef049361a621afcc41cec058a"
+  }
+}

@@ -1,0 +1,562 @@
+{
+  "sample": "strict",
+  "systems": 625,
+  "families": 108,
+  "model_fits": {
+    "family": {
+      "M0": {
+        "model": "M0",
+        "columns": [
+          "intercept",
+          "Dr",
+          "Da",
+          "De"
+        ],
+        "coefficients": [
+          0.5075668863685131,
+          -1.6815323208733417,
+          -1.9387893345757958,
+          0.1300587187497433
+        ],
+        "diagnostics": {
+          "rank": 4,
+          "weight_sum": 624.9999999999993,
+          "separation": false,
+          "separation_lp_objective": 0.0,
+          "method": "MLE",
+          "converged": true,
+          "iterations": 6,
+          "standardized_score": 5.295348515232951e-11,
+          "max_abs_beta": 1.9387893345757958,
+          "min_probability": 0.04258418851534233,
+          "max_probability": 0.6542165283576002,
+          "finite_coefficients": true
+        }
+      },
+      "M1": {
+        "model": "M1",
+        "columns": [
+          "intercept",
+          "Dr",
+          "Da",
+          "De",
+          "Dq"
+        ],
+        "coefficients": [
+          1.3317773403127917,
+          -2.0472088823658288,
+          -2.290028757065584,
+          0.06444746194985684,
+          -0.845052919421413
+        ],
+        "diagnostics": {
+          "rank": 5,
+          "weight_sum": 624.9999999999993,
+          "separation": false,
+          "separation_lp_objective": 0.0,
+          "method": "MLE",
+          "converged": true,
+          "iterations": 6,
+          "standardized_score": 4.364023503455887e-09,
+          "max_abs_beta": 2.290028757065584,
+          "min_probability": 0.020825876310391754,
+          "max_probability": 0.6344074340244913,
+          "finite_coefficients": true
+        }
+      },
+      "M2": {
+        "model": "M2",
+        "columns": [
+          "intercept",
+          "Dr",
+          "Da",
+          "De",
+          "DrDa",
+          "DrDe",
+          "DaDe"
+        ],
+        "coefficients": [
+          2.7974253796898405,
+          -4.376119050668082,
+          -3.7556767964426325,
+          -2.025968300834287,
+          1.604010847763937,
+          2.7379350109794798,
+          0.7873240857448591
+        ],
+        "diagnostics": {
+          "rank": 7,
+          "weight_sum": 624.9999999999993,
+          "separation": false,
+          "separation_lp_objective": 0.0,
+          "method": "MLE",
+          "converged": true,
+          "iterations": 7,
+          "standardized_score": 4.2493507095287034e-10,
+          "max_abs_beta": 4.376119050668082,
+          "min_probability": 0.023422440384932203,
+          "max_probability": 0.6838360048353425,
+          "finite_coefficients": true
+        }
+      },
+      "M3": {
+        "model": "M3",
+        "columns": [
+          "feB|feZ",
+          "feB|fyB",
+          "feB|fyZ",
+          "feZ|fyZ",
+          "fyB|feZ",
+          "fyB|fyZ",
+          "meB|feB",
+          "meB|feZ",
+          "meB|fyB",
+          "meB|fyZ",
+          "meB|meZ",
+          "meB|myB",
+          "meB|myZ",
+          "meZ|feB",
+          "meZ|feZ",
+          "meZ|fyB",
+          "meZ|fyZ",
+          "meZ|myZ",
+          "myB|feB",
+          "myB|feZ",
+          "myB|fyB",
+          "myB|fyZ",
+          "myB|meZ",
+          "myB|myZ",
+          "myZ|feB",
+          "myZ|feZ",
+          "myZ|fyB",
+          "myZ|fyZ"
+        ],
+        "coefficients": [
+          -1.9617926181323597,
+          -0.7696787521395881,
+          -3.656943360024096,
+          -1.2038043920113568,
+          -4.042318724670664,
+          -1.2723754199757231,
+          0.6872033941640774,
+          -1.0596744655828174,
+          -2.4902960668663363,
+          -2.7202479545946305,
+          -1.8803004011213782,
+          -1.3640795096699248,
+          -3.662402000067216,
+          -1.1336743946852725,
+          0.8436423219327057,
+          -1.8816376684757203,
+          -2.0304748267456003,
+          -0.5841079544670418,
+          -2.356977263539982,
+          -2.698681052670076,
+          0.811854835082454,
+          -0.5791482149193641,
+          -3.6136488572134122,
+          -1.328281065613679,
+          -1.8926840174584936,
+          -1.9827670072606425,
+          -0.7365486786477774,
+          0.7458011639563725
+        ],
+        "diagnostics": {
+          "rank": 28,
+          "weight_sum": 624.9999999999993,
+          "separation": false,
+          "separation_lp_objective": 0.0,
+          "method": "MLE",
+          "converged": true,
+          "iterations": 7,
+          "standardized_score": 2.065835813702679e-09,
+          "max_abs_beta": 4.042318724670664,
+          "min_probability": 0.017253795995833758,
+          "max_probability": 0.6992317761256512,
+          "finite_coefficients": true
+        }
+      },
+      "M4": {
+        "model": "M4",
+        "columns": [
+          "intercept",
+          "Dr",
+          "Da",
+          "De",
+          "DrDa",
+          "DrDe",
+          "DaDe",
+          "E",
+          "B",
+          "S",
+          "M",
+          "DrE",
+          "DaB",
+          "DaS"
+        ],
+        "coefficients": [
+          3.4776659166004484,
+          -4.827613542143631,
+          -4.010286136842682,
+          -2.6762261888086663,
+          1.62421053007051,
+          3.341318235403164,
+          1.1302022397238056,
+          -0.014320149310674851,
+          -0.04543653578402954,
+          0.1198638168536021,
+          0.011296815567388157,
+          -0.49751464124536865,
+          -0.20343853371710666,
+          -0.7903176335548723
+        ],
+        "diagnostics": {
+          "rank": 14,
+          "weight_sum": 624.9999999999993,
+          "separation": false,
+          "separation_lp_objective": 0.0,
+          "method": "MLE",
+          "converged": true,
+          "iterations": 7,
+          "standardized_score": 4.250307090281074e-10,
+          "max_abs_beta": 4.827613542143631,
+          "min_probability": 0.023293240947765668,
+          "max_probability": 0.6902823685986652,
+          "finite_coefficients": true
+        }
+      }
+    },
+    "language": {
+      "M0": {
+        "model": "M0",
+        "columns": [
+          "intercept",
+          "Dr",
+          "Da",
+          "De"
+        ],
+        "coefficients": [
+          0.569603538618245,
+          -1.4130085702609634,
+          -1.6896261057173492,
+          0.14951660593831448
+        ],
+        "diagnostics": {
+          "rank": 4,
+          "weight_sum": 624.9999999999992,
+          "separation": false,
+          "separation_lp_objective": 0.0,
+          "method": "MLE",
+          "converged": true,
+          "iterations": 6,
+          "standardized_score": 7.014744340949628e-14,
+          "max_abs_beta": 1.6896261057173492,
+          "min_probability": 0.07357477241911807,
+          "max_probability": 0.6724132374839067,
+          "finite_coefficients": true
+        }
+      },
+      "M1": {
+        "model": "M1",
+        "columns": [
+          "intercept",
+          "Dr",
+          "Da",
+          "De",
+          "Dq"
+        ],
+        "coefficients": [
+          1.3671498957645174,
+          -1.7273270889046342,
+          -1.9949919779166942,
+          0.06781081605019494,
+          -0.8325593741555095
+        ],
+        "diagnostics": {
+          "rank": 5,
+          "weight_sum": 624.9999999999992,
+          "separation": false,
+          "separation_lp_objective": 0.0,
+          "method": "MLE",
+          "converged": true,
+          "iterations": 6,
+          "standardized_score": 1.2975922203395402e-11,
+          "max_abs_beta": 1.9949919779166942,
+          "min_probability": 0.03963013984820981,
+          "max_probability": 0.6462055020821081,
+          "finite_coefficients": true
+        }
+      },
+      "M2": {
+        "model": "M2",
+        "columns": [
+          "intercept",
+          "Dr",
+          "Da",
+          "De",
+          "DrDa",
+          "DrDe",
+          "DaDe"
+        ],
+        "coefficients": [
+          2.368810073153511,
+          -3.550213222765668,
+          -2.996652155305688,
+          -1.607675551608601,
+          0.9356291907909017,
+          2.341766483177095,
+          0.603835090374946
+        ],
+        "diagnostics": {
+          "rank": 7,
+          "weight_sum": 624.9999999999992,
+          "separation": false,
+          "separation_lp_objective": 0.0,
+          "method": "MLE",
+          "converged": true,
+          "iterations": 7,
+          "standardized_score": 7.117026967762295e-13,
+          "max_abs_beta": 3.550213222765668,
+          "min_probability": 0.03760000000498204,
+          "max_probability": 0.681600000000007,
+          "finite_coefficients": true
+        }
+      },
+      "M3": {
+        "model": "M3",
+        "columns": [
+          "feB|feZ",
+          "feB|fyB",
+          "feB|fyZ",
+          "feZ|fyZ",
+          "fyB|feZ",
+          "fyB|fyZ",
+          "meB|feB",
+          "meB|feZ",
+          "meB|fyB",
+          "meB|fyZ",
+          "meB|meZ",
+          "meB|myB",
+          "meB|myZ",
+          "meZ|feB",
+          "meZ|feZ",
+          "meZ|fyB",
+          "meZ|fyZ",
+          "meZ|myZ",
+          "myB|feB",
+          "myB|feZ",
+          "myB|fyB",
+          "myB|fyZ",
+          "myB|meZ",
+          "myB|myZ",
+          "myZ|feB",
+          "myZ|feZ",
+          "myZ|fyB",
+          "myZ|fyZ"
+        ],
+        "coefficients": [
+          -1.396324535479828,
+          -0.3788677955888957,
+          -3.2205411040920175,
+          -0.8818237292362783,
+          -3.097753887935555,
+          -0.9603905853344532,
+          0.7172447321390364,
+          -0.492945198488142,
+          -1.7567328471168033,
+          -2.1364947311286717,
+          -1.4267857224746274,
+          -1.0501307188538507,
+          -3.3590517593213582,
+          -0.7611345215448793,
+          0.7907856501238941,
+          -1.7066402403904626,
+          -1.5326930641428307,
+          -0.26717809225406836,
+          -1.7314672389719343,
+          -2.1030575347511755,
+          0.8132423559747418,
+          -0.1249623598994126,
+          -3.3108747429491188,
+          -0.9925940945913134,
+          -1.7314672389719343,
+          -1.5217769738756748,
+          -0.43220466915006184,
+          0.7245128398381955
+        ],
+        "diagnostics": {
+          "rank": 28,
+          "weight_sum": 624.9999999999992,
+          "separation": false,
+          "separation_lp_objective": 0.0,
+          "method": "MLE",
+          "converged": true,
+          "iterations": 7,
+          "standardized_score": 1.0321528520762526e-12,
+          "max_abs_beta": 3.3590517593213582,
+          "min_probability": 0.03360000002890032,
+          "max_probability": 0.6928000000000072,
+          "finite_coefficients": true
+        }
+      },
+      "M4": {
+        "model": "M4",
+        "columns": [
+          "intercept",
+          "Dr",
+          "Da",
+          "De",
+          "DrDa",
+          "DrDe",
+          "DaDe",
+          "E",
+          "B",
+          "S",
+          "M",
+          "DrE",
+          "DaB",
+          "DaS"
+        ],
+        "coefficients": [
+          3.0578719327473602,
+          -4.035171643509402,
+          -3.3116538539389087,
+          -2.293038781758338,
+          1.0674331318056889,
+          2.865185085428909,
+          0.9973466480222787,
+          -0.01474522364238101,
+          0.007372642089552255,
+          0.2889307690757033,
+          -0.042223527936676615,
+          -0.37123555601589286,
+          -0.17660581327852,
+          -0.8524293498483771
+        ],
+        "diagnostics": {
+          "rank": 14,
+          "weight_sum": 624.9999999999992,
+          "separation": false,
+          "separation_lp_objective": 0.0,
+          "method": "MLE",
+          "converged": true,
+          "iterations": 7,
+          "standardized_score": 7.129617785039964e-13,
+          "max_abs_beta": 4.035171643509402,
+          "min_probability": 0.03683614581053686,
+          "max_probability": 0.6839978578021899,
+          "finite_coefficients": true
+        }
+      }
+    }
+  },
+  "seven_cells": [
+    {
+      "weighting": "family",
+      "pattern": "001",
+      "observed_rate": 0.6838360048353429,
+      "systems": 625,
+      "pairs": 2500
+    },
+    {
+      "weighting": "family",
+      "pattern": "010",
+      "observed_rate": 0.2772284269259985,
+      "systems": 625,
+      "pairs": 2500
+    },
+    {
+      "weighting": "family",
+      "pattern": "011",
+      "observed_rate": 0.10002960899009046,
+      "systems": 625,
+      "pairs": 2500
+    },
+    {
+      "weighting": "family",
+      "pattern": "100",
+      "observed_rate": 0.1709805696376366,
+      "systems": 625,
+      "pairs": 2500
+    },
+    {
+      "weighting": "family",
+      "pattern": "101",
+      "observed_rate": 0.2959358094680384,
+      "systems": 625,
+      "pairs": 2500
+    },
+    {
+      "weighting": "family",
+      "pattern": "110",
+      "observed_rate": 0.02342243741038676,
+      "systems": 625,
+      "pairs": 2500
+    },
+    {
+      "weighting": "family",
+      "pattern": "111",
+      "observed_rate": 0.09699498563138127,
+      "systems": 625,
+      "pairs": 2500
+    },
+    {
+      "weighting": "language",
+      "pattern": "001",
+      "observed_rate": 0.6816000000000009,
+      "systems": 625,
+      "pairs": 2500
+    },
+    {
+      "weighting": "language",
+      "pattern": "010",
+      "observed_rate": 0.34800000000000014,
+      "systems": 625,
+      "pairs": 2500
+    },
+    {
+      "weighting": "language",
+      "pattern": "011",
+      "observed_rate": 0.16360000000000002,
+      "systems": 625,
+      "pairs": 2500
+    },
+    {
+      "weighting": "language",
+      "pattern": "100",
+      "observed_rate": 0.23480000000000004,
+      "systems": 625,
+      "pairs": 2500
+    },
+    {
+      "weighting": "language",
+      "pattern": "101",
+      "observed_rate": 0.3900000000000001,
+      "systems": 625,
+      "pairs": 2500
+    },
+    {
+      "weighting": "language",
+      "pattern": "110",
+      "observed_rate": 0.03760000000000001,
+      "systems": 625,
+      "pairs": 2500
+    },
+    {
+      "weighting": "language",
+      "pattern": "111",
+      "observed_rate": 0.12960000000000002,
+      "systems": 625,
+      "pairs": 2500
+    }
+  ],
+  "coefficient_order_M2": [
+    "intercept",
+    "Dr",
+    "Da",
+    "De",
+    "DrDa",
+    "DrDe",
+    "DaDe"
+  ]
+}

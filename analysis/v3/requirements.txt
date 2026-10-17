@@ -1,3 +1,4 @@
 -r ../supplementary_s2/requirements.txt
+-c environment.lock.txt
 pyarrow==21.0.0
 python-docx==1.2.0

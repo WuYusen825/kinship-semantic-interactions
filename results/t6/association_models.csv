@@ -1,0 +1,13 @@
+domain,sample,model,status,systems,families,contributing_families,contributing_systems,beta,or,se_cluster_cr1,beta_ci95_t,or_ci95_t,p_two_sided_t,p_holm_two,df
+cousins16,all_complete_singleton,conditional_logit,estimated,192,43,5.0,135.0,6.984401029974817,1079.6595403196873,3.76477875726837,"[-3.4683005227955803, 17.437102582745215]","[0.031169958307263768, 37397057.49724005]",0.13716141166682044,0.2743228233336409,4.0
+cousins16,all_complete_singleton,general_logit_cluster_sensitivity,estimated,192,43,43.0,,4.785318851417772,119.73953611862713,1.1685354765600042,"[2.4271187870777964, 7.143518915757747]","[11.326201824166096, 1265.8750684905463]",0.0001879115810200535,0.000375823162040107,42.0
+cousins16,same_source_sensitivity,conditional_logit,estimated,179,42,5.0,126.0,6.613394094789394,745.0073579616615,3.062713805850819,"[-1.8900626600868176, 15.116850849665605]","[0.15106234296028287, 3674217.8926944393]",0.09696242694086732,,4.0
+cousins16,same_source_sensitivity,general_logit_cluster_sensitivity,estimated,179,42,42.0,,4.569719138236767,96.51699803144805,1.0514944021045498,"[2.44618311299687, 6.693255163476664]","[11.544199615093886, 806.9447185253638]",8.921982848040045e-05,,41.0
+parent_siblings_age16,all_complete_singleton,conditional_logit,not_estimable_no_within_family_outcome_variation,351,80,0.0,0.0,,,,,,,,
+parent_siblings_age16,all_complete_singleton,general_logit_cluster_sensitivity,not_estimable_separation,351,80,,,,,,,,,,
+parent_siblings_age16,same_source_sensitivity,conditional_logit,not_estimable_no_within_family_outcome_variation,333,78,0.0,0.0,,,,,,,,
+parent_siblings_age16,same_source_sensitivity,general_logit_cluster_sensitivity,not_estimable_separation,333,78,,,,,,,,,,
+parent_siblings_generic8,all_complete_singleton,conditional_logit,not_estimable_no_within_family_outcome_variation,96,35,0.0,0.0,,,,,,,,
+parent_siblings_generic8,all_complete_singleton,general_logit_cluster_sensitivity,not_estimable_separation,96,35,,,,,,,,,,
+parent_siblings_generic8,same_source_sensitivity,conditional_logit,not_estimable_no_within_family_outcome_variation,85,33,0.0,0.0,,,,,,,,
+parent_siblings_generic8,same_source_sensitivity,general_logit_cluster_sensitivity,not_estimable_separation,85,33,,,,,,,,,,

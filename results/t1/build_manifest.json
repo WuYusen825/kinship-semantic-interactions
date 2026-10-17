@@ -1,8 +1,8 @@
 {
   "task": "T1",
-  "started_utc": "2026-10-16T13:24:40.087972+00:00",
+  "started_utc": "2026-10-16T18:23:05.559447+00:00",
   "passed": true,
-  "commit": "57afd8c343b2f464906cad700df371c5dee4267f",
+  "commit": "2b59811cb906b183b349c6e34ed316ee632b2644",
   "baseline": {
     "T0_passed": true,
     "baseline_result_sha256": "97c7d032686a3f093499689582dc8e23c5b84c7a198012aa2c76386d3799e1c6",
@@ -36,6 +36,40 @@
     "abs_nonconjunctive": 163,
     "all_nonconjunctive": 22
   },
+  "observed_language_summary": {
+    "abs": {
+      "systems": 625,
+      "families": 108,
+      "conjunctive_systems": 462,
+      "nonconjunctive_systems": 163,
+      "system_equal_proportion": 0.7392,
+      "family_equal_proportion": 0.7586703345090205
+    },
+    "rel_r": {
+      "systems": 625,
+      "families": 108,
+      "conjunctive_systems": 600,
+      "nonconjunctive_systems": 25,
+      "system_equal_proportion": 0.96,
+      "family_equal_proportion": 0.9623118587415973
+    },
+    "rel_s": {
+      "systems": 625,
+      "families": 108,
+      "conjunctive_systems": 279,
+      "nonconjunctive_systems": 346,
+      "system_equal_proportion": 0.4464,
+      "family_equal_proportion": 0.37025871740614247
+    },
+    "all": {
+      "systems": 625,
+      "families": 108,
+      "conjunctive_systems": 603,
+      "nonconjunctive_systems": 22,
+      "system_equal_proportion": 0.9648,
+      "family_equal_proportion": 0.9717971877734949
+    }
+  },
   "tests_passed": true,
   "tests_command": [
     "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
@@ -49,15 +83,15 @@
     "-v"
   ],
   "parquet_status": "已生成Parquet",
-  "finished_utc": "2026-10-16T13:24:53.772493+00:00",
+  "finished_utc": "2026-10-16T18:23:20.714809+00:00",
   "source_sha256": {
     "common.py": "a994bec32a42c0a971518dda50437bc75302bb22db9edde09c450ef4d6c9803b",
     "partitions.py": "347d7e4c0c1676111144bf3af555d54f0bbfe445c2ef7cc27f24a1e688e37aa0",
     "languages.py": "a221d94037059460a5955cb23272d12ea7f2294ed50b62da602607c5846a3be1",
-    "build_t1.py": "420b5d88b1ea9efd850dca37c80bf014b6c4467a89c6e1cafe24632d01dfb850"
+    "build_t1.py": "f0386ecd60135031d4fe1adba3472787da941b321a50892a046ed94d2eb0b32e"
   },
   "output_sha256": {
-    "infrastructure_tests.log": "ba43fdfc23af1747e5e3752fdc42b7bf876571442d4a918d86016616eebb8380",
+    "infrastructure_tests.log": "785ec7015feaedc8a2bc25f609b89c4629e2486fd99cf273cc20242df2fabdfb",
     "pair_design_metadata.csv": "0c48b276533dd0c9d0f945f00bb72476ab579770af0134f9d24ea63d366e964a",
     "partitions.csv": "c800cac1a1cf13b36ee0c0e57fee9d706c5fc78b4a35e8c7f7dd74865c08e5f8",
     "partitions.json": "da209fcb8e03428f460ae94bcb2e6793930ea7a6d7fd6158c3f62300d0313887",

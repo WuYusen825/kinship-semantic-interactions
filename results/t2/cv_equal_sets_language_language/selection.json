@@ -1,0 +1,477 @@
+[
+  {
+    "fold": "0",
+    "base": {
+      "model": "A5r",
+      "space": "A5r",
+      "alpha": 0.0,
+      "score": -4.3469493201752485,
+      "successful_inner_folds": 3,
+      "scoring": "pooled_inner_OOF_then_requested_system_weights",
+      "outer_fold": "outer0"
+    },
+    "A7": {
+      "model": "A7",
+      "space": "A7@A5r",
+      "alpha": 0.0,
+      "score": -4.309933371499583,
+      "successful_inner_folds": 3,
+      "scoring": "pooled_inner_OOF_then_requested_system_weights",
+      "outer_fold": "outer0"
+    },
+    "models": {
+      "A1": {
+        "model": "A1",
+        "space": "A1",
+        "alpha": 0.0,
+        "score": -7.907016739482538,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer0"
+      },
+      "A2": {
+        "model": "A2",
+        "space": "A2",
+        "alpha": 0.1,
+        "score": -5.952961750923633,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer0"
+      },
+      "A3r": {
+        "model": "A3r",
+        "space": "A3r",
+        "alpha": 0.1,
+        "score": -4.718726442369104,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer0"
+      },
+      "A3s": {
+        "model": "A3s",
+        "space": "A3s",
+        "alpha": 0.0,
+        "score": -7.476000749490531,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer0"
+      },
+      "A4": {
+        "model": "A4",
+        "space": "A4",
+        "alpha": 0.01,
+        "score": -6.275339821757729,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer0"
+      },
+      "A5r": {
+        "model": "A5r",
+        "space": "A5r",
+        "alpha": 0.0,
+        "score": -4.3469493201752485,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer0"
+      },
+      "A5s": {
+        "model": "A5s",
+        "space": "A5s",
+        "alpha": 0.0,
+        "score": -8.400457225273176,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer0"
+      },
+      "A6": {
+        "model": "A6",
+        "space": "A6",
+        "alpha": 0.0,
+        "score": -4.693500976483514,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer0"
+      }
+    }
+  },
+  {
+    "fold": "1",
+    "base": {
+      "model": "A5r",
+      "space": "A5r",
+      "alpha": 0.0,
+      "score": -4.172237899607907,
+      "successful_inner_folds": 3,
+      "scoring": "pooled_inner_OOF_then_requested_system_weights",
+      "outer_fold": "outer1"
+    },
+    "A7": {
+      "model": "A7",
+      "space": "A7@A5r",
+      "alpha": 0.0,
+      "score": -4.138795488554655,
+      "successful_inner_folds": 3,
+      "scoring": "pooled_inner_OOF_then_requested_system_weights",
+      "outer_fold": "outer1"
+    },
+    "models": {
+      "A1": {
+        "model": "A1",
+        "space": "A1",
+        "alpha": 0.0,
+        "score": -7.905800360935846,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer1"
+      },
+      "A2": {
+        "model": "A2",
+        "space": "A2",
+        "alpha": 0.1,
+        "score": -5.841858271102774,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer1"
+      },
+      "A3r": {
+        "model": "A3r",
+        "space": "A3r",
+        "alpha": 0.01,
+        "score": -4.616881239623015,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer1"
+      },
+      "A3s": {
+        "model": "A3s",
+        "space": "A3s",
+        "alpha": 0.0,
+        "score": -7.499296569133967,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer1"
+      },
+      "A4": {
+        "model": "A4",
+        "space": "A4",
+        "alpha": 0.01,
+        "score": -6.200953178538746,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer1"
+      },
+      "A5r": {
+        "model": "A5r",
+        "space": "A5r",
+        "alpha": 0.0,
+        "score": -4.172237899607907,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer1"
+      },
+      "A5s": {
+        "model": "A5s",
+        "space": "A5s",
+        "alpha": 1.0,
+        "score": -8.439027272511233,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer1"
+      },
+      "A6": {
+        "model": "A6",
+        "space": "A6",
+        "alpha": 0.0,
+        "score": -4.536495608511482,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer1"
+      }
+    }
+  },
+  {
+    "fold": "2",
+    "base": {
+      "model": "A5r",
+      "space": "A5r",
+      "alpha": 0.0,
+      "score": -4.2624446469113115,
+      "successful_inner_folds": 3,
+      "scoring": "pooled_inner_OOF_then_requested_system_weights",
+      "outer_fold": "outer2"
+    },
+    "A7": {
+      "model": "A7",
+      "space": "A7@A5r",
+      "alpha": 0.0,
+      "score": -4.214039252261574,
+      "successful_inner_folds": 3,
+      "scoring": "pooled_inner_OOF_then_requested_system_weights",
+      "outer_fold": "outer2"
+    },
+    "models": {
+      "A1": {
+        "model": "A1",
+        "space": "A1",
+        "alpha": 0.0,
+        "score": -7.89875407526711,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer2"
+      },
+      "A2": {
+        "model": "A2",
+        "space": "A2",
+        "alpha": 0.1,
+        "score": -5.779077922648884,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer2"
+      },
+      "A3r": {
+        "model": "A3r",
+        "space": "A3r",
+        "alpha": 0.1,
+        "score": -4.63742252001829,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer2"
+      },
+      "A3s": {
+        "model": "A3s",
+        "space": "A3s",
+        "alpha": 0.0,
+        "score": -7.466523667562441,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer2"
+      },
+      "A4": {
+        "model": "A4",
+        "space": "A4",
+        "alpha": 0.01,
+        "score": -6.097906180287922,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer2"
+      },
+      "A5r": {
+        "model": "A5r",
+        "space": "A5r",
+        "alpha": 0.0,
+        "score": -4.2624446469113115,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer2"
+      },
+      "A5s": {
+        "model": "A5s",
+        "space": "A5s",
+        "alpha": 1.0,
+        "score": -8.342644116516794,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer2"
+      },
+      "A6": {
+        "model": "A6",
+        "space": "A6",
+        "alpha": 0.0,
+        "score": -4.605354318725686,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer2"
+      }
+    }
+  },
+  {
+    "fold": "3",
+    "base": {
+      "model": "A5r",
+      "space": "A5r",
+      "alpha": 0.0,
+      "score": -4.289723389424734,
+      "successful_inner_folds": 3,
+      "scoring": "pooled_inner_OOF_then_requested_system_weights",
+      "outer_fold": "outer3"
+    },
+    "A7": {
+      "model": "A7",
+      "space": "A7@A5r",
+      "alpha": 0.0,
+      "score": -4.2379401357441076,
+      "successful_inner_folds": 3,
+      "scoring": "pooled_inner_OOF_then_requested_system_weights",
+      "outer_fold": "outer3"
+    },
+    "models": {
+      "A1": {
+        "model": "A1",
+        "space": "A1",
+        "alpha": 0.0,
+        "score": -7.923514013892692,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer3"
+      },
+      "A2": {
+        "model": "A2",
+        "space": "A2",
+        "alpha": 0.1,
+        "score": -5.900105103259158,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer3"
+      },
+      "A3r": {
+        "model": "A3r",
+        "space": "A3r",
+        "alpha": 0.1,
+        "score": -4.669468758584078,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer3"
+      },
+      "A3s": {
+        "model": "A3s",
+        "space": "A3s",
+        "alpha": 0.0,
+        "score": -7.414635090844694,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer3"
+      },
+      "A4": {
+        "model": "A4",
+        "space": "A4",
+        "alpha": 0.01,
+        "score": -6.225999608554723,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer3"
+      },
+      "A5r": {
+        "model": "A5r",
+        "space": "A5r",
+        "alpha": 0.0,
+        "score": -4.289723389424734,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer3"
+      },
+      "A5s": {
+        "model": "A5s",
+        "space": "A5s",
+        "alpha": 1.0,
+        "score": -8.400659721434678,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer3"
+      },
+      "A6": {
+        "model": "A6",
+        "space": "A6",
+        "alpha": 0.0,
+        "score": -4.620202048983056,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer3"
+      }
+    }
+  },
+  {
+    "fold": "4",
+    "base": {
+      "model": "A5r",
+      "space": "A5r",
+      "alpha": 0.0,
+      "score": -4.238211962218411,
+      "successful_inner_folds": 3,
+      "scoring": "pooled_inner_OOF_then_requested_system_weights",
+      "outer_fold": "outer4"
+    },
+    "A7": {
+      "model": "A7",
+      "space": "A7@A5r",
+      "alpha": 0.0,
+      "score": -4.2041672167811885,
+      "successful_inner_folds": 3,
+      "scoring": "pooled_inner_OOF_then_requested_system_weights",
+      "outer_fold": "outer4"
+    },
+    "models": {
+      "A1": {
+        "model": "A1",
+        "space": "A1",
+        "alpha": 0.0,
+        "score": -7.908483096875625,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer4"
+      },
+      "A2": {
+        "model": "A2",
+        "space": "A2",
+        "alpha": 0.1,
+        "score": -5.7894406533668,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer4"
+      },
+      "A3r": {
+        "model": "A3r",
+        "space": "A3r",
+        "alpha": 0.1,
+        "score": -4.635430810586811,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer4"
+      },
+      "A3s": {
+        "model": "A3s",
+        "space": "A3s",
+        "alpha": 0.0,
+        "score": -7.4971042461504345,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer4"
+      },
+      "A4": {
+        "model": "A4",
+        "space": "A4",
+        "alpha": 0.01,
+        "score": -6.102769713705015,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer4"
+      },
+      "A5r": {
+        "model": "A5r",
+        "space": "A5r",
+        "alpha": 0.0,
+        "score": -4.238211962218411,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer4"
+      },
+      "A5s": {
+        "model": "A5s",
+        "space": "A5s",
+        "alpha": 1.0,
+        "score": -8.370201596592048,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer4"
+      },
+      "A6": {
+        "model": "A6",
+        "space": "A6",
+        "alpha": 0.0,
+        "score": -4.637864455588226,
+        "successful_inner_folds": 3,
+        "scoring": "pooled_inner_OOF_then_requested_system_weights",
+        "outer_fold": "outer4"
+      }
+    }
+  }
+]

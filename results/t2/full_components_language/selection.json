@@ -1,0 +1,94 @@
+{
+  "base": {
+    "model": "A5r",
+    "space": "A5r",
+    "alpha": 0.0,
+    "score": -4.062892537139038,
+    "successful_inner_folds": 3,
+    "scoring": "pooled_inner_OOF_then_requested_system_weights",
+    "outer_fold": "full"
+  },
+  "A7": {
+    "model": "A7",
+    "space": "A7@A5r",
+    "alpha": 0.0,
+    "score": -4.004004516151646,
+    "successful_inner_folds": 3,
+    "scoring": "pooled_inner_OOF_then_requested_system_weights",
+    "outer_fold": "full"
+  },
+  "models": {
+    "A1": {
+      "model": "A1",
+      "space": "A1",
+      "alpha": 0.0,
+      "score": -7.489968402086296,
+      "successful_inner_folds": 3,
+      "scoring": "pooled_inner_OOF_then_requested_system_weights",
+      "outer_fold": "full"
+    },
+    "A2": {
+      "model": "A2",
+      "space": "A2",
+      "alpha": 0.1,
+      "score": -5.489586521141446,
+      "successful_inner_folds": 3,
+      "scoring": "pooled_inner_OOF_then_requested_system_weights",
+      "outer_fold": "full"
+    },
+    "A3r": {
+      "model": "A3r",
+      "space": "A3r",
+      "alpha": 0.1,
+      "score": -4.3959661410811,
+      "successful_inner_folds": 3,
+      "scoring": "pooled_inner_OOF_then_requested_system_weights",
+      "outer_fold": "full"
+    },
+    "A3s": {
+      "model": "A3s",
+      "space": "A3s",
+      "alpha": 0.0,
+      "score": -7.002091796090464,
+      "successful_inner_folds": 3,
+      "scoring": "pooled_inner_OOF_then_requested_system_weights",
+      "outer_fold": "full"
+    },
+    "A4": {
+      "model": "A4",
+      "space": "A4",
+      "alpha": 0.01,
+      "score": -5.769924636617522,
+      "successful_inner_folds": 3,
+      "scoring": "pooled_inner_OOF_then_requested_system_weights",
+      "outer_fold": "full"
+    },
+    "A5r": {
+      "model": "A5r",
+      "space": "A5r",
+      "alpha": 0.0,
+      "score": -4.062892537139038,
+      "successful_inner_folds": 3,
+      "scoring": "pooled_inner_OOF_then_requested_system_weights",
+      "outer_fold": "full"
+    },
+    "A5s": {
+      "model": "A5s",
+      "space": "A5s",
+      "alpha": 0.0,
+      "score": -7.869047492856779,
+      "successful_inner_folds": 3,
+      "scoring": "pooled_inner_OOF_then_requested_system_weights",
+      "outer_fold": "full"
+    },
+    "A6": {
+      "model": "A6",
+      "space": "A6",
+      "alpha": 0.0,
+      "score": -4.400950374895195,
+      "successful_inner_folds": 3,
+      "scoring": "pooled_inner_OOF_then_requested_system_weights",
+      "outer_fold": "full"
+    }
+  }
+}

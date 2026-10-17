@@ -1,0 +1,418 @@
+{
+  "A0": {
+    "active_names": [],
+    "dropped_names": [],
+    "mean": [],
+    "scale": [],
+    "support_size": 4140,
+    "unique_feature_patterns": 1,
+    "rank": 0,
+    "parameters_identifiable": true,
+    "standardization": "complete_theoretical_support_population_sd"
+  },
+  "A1": {
+    "active_names": [
+      "k",
+      "k_squared"
+    ],
+    "dropped_names": [],
+    "mean": [
+      4.107971014492754,
+      17.797342995169082
+    ],
+    "scale": [
+      0.9601651624884433,
+      8.175593623986979
+    ],
+    "support_size": 4140,
+    "unique_feature_patterns": 8,
+    "rank": 2,
+    "parameters_identifiable": true,
+    "standardization": "complete_theoretical_support_population_sd"
+  },
+  "A2": {
+    "active_names": [
+      "k",
+      "k_squared",
+      "conj_abs"
+    ],
+    "dropped_names": [],
+    "mean": [
+      4.107971014492754,
+      17.797342995169082,
+      0.03719806763285024
+    ],
+    "scale": [
+      0.9601651624884433,
+      8.175593623986979,
+      0.18924685307088235
+    ],
+    "support_size": 4140,
+    "unique_feature_patterns": 14,
+    "rank": 3,
+    "parameters_identifiable": true,
+    "standardization": "complete_theoretical_support_population_sd"
+  },
+  "A3r": {
+    "active_names": [
+      "k",
+      "k_squared",
+      "conj_rel_r"
+    ],
+    "dropped_names": [],
+    "mean": [
+      4.107971014492754,
+      17.797342995169082,
+      0.03719806763285024
+    ],
+    "scale": [
+      0.9601651624884433,
+      8.175593623986979,
+      0.18924685307088235
+    ],
+    "support_size": 4140,
+    "unique_feature_patterns": 14,
+    "rank": 3,
+    "parameters_identifiable": true,
+    "standardization": "complete_theoretical_support_population_sd"
+  },
+  "A3s": {
+    "active_names": [
+      "k",
+      "k_squared",
+      "conj_rel_s"
+    ],
+    "dropped_names": [],
+    "mean": [
+      4.107971014492754,
+      17.797342995169082,
+      0.03719806763285024
+    ],
+    "scale": [
+      0.9601651624884433,
+      8.175593623986979,
+      0.18924685307088235
+    ],
+    "support_size": 4140,
+    "unique_feature_patterns": 14,
+    "rank": 3,
+    "parameters_identifiable": true,
+    "standardization": "complete_theoretical_support_population_sd"
+  },
+  "A4": {
+    "active_names": [
+      "k",
+      "k_squared",
+      "DL_abs"
+    ],
+    "dropped_names": [],
+    "mean": [
+      4.107971014492754,
+      17.797342995169082,
+      16.317391304347826
+    ],
+    "scale": [
+      0.9601651624884433,
+      8.175593623986979,
+      4.159586675458154
+    ],
+    "support_size": 4140,
+    "unique_feature_patterns": 51,
+    "rank": 3,
+    "parameters_identifiable": true,
+    "standardization": "complete_theoretical_support_population_sd"
+  },
+  "A5r": {
+    "active_names": [
+      "k",
+      "k_squared",
+      "DL_rel_r"
+    ],
+    "dropped_names": [],
+    "mean": [
+      4.107971014492754,
+      17.797342995169082,
+      16.317391304347826
+    ],
+    "scale": [
+      0.9601651624884433,
+      8.175593623986979,
+      4.159586675458154
+    ],
+    "support_size": 4140,
+    "unique_feature_patterns": 51,
+    "rank": 3,
+    "parameters_identifiable": true,
+    "standardization": "complete_theoretical_support_population_sd"
+  },
+  "A5s": {
+    "active_names": [
+      "k",
+      "k_squared",
+      "DL_rel_s"
+    ],
+    "dropped_names": [],
+    "mean": [
+      4.107971014492754,
+      17.797342995169082,
+      16.317391304347826
+    ],
+    "scale": [
+      0.9601651624884433,
+      8.175593623986979,
+      4.159586675458154
+    ],
+    "support_size": 4140,
+    "unique_feature_patterns": 51,
+    "rank": 3,
+    "parameters_identifiable": true,
+    "standardization": "complete_theoretical_support_population_sd"
+  },
+  "A6": {
+    "active_names": [
+      "k",
+      "k_squared",
+      "DL_all"
+    ],
+    "dropped_names": [],
+    "mean": [
+      4.107971014492754,
+      17.797342995169082,
+      14.653140096618358
+    ],
+    "scale": [
+      0.9601651624884433,
+      8.175593623986979,
+      3.7889334528124845
+    ],
+    "support_size": 4140,
+    "unique_feature_patterns": 42,
+    "rank": 3,
+    "parameters_identifiable": true,
+    "standardization": "complete_theoretical_support_population_sd"
+  },
+  "A7@A2": {
+    "active_names": [
+      "k",
+      "k_squared",
+      "conj_abs",
+      "P2",
+      "P3",
+      "P4"
+    ],
+    "dropped_names": [],
+    "mean": [
+      4.107971014492754,
+      17.797342995169082,
+      0.03719806763285024,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      0.9601651624884433,
+      8.175593623986979,
+      0.18924685307088235,
+      0.062166987216020916,
+      0.062166987216020916,
+      0.062166987216020916
+    ],
+    "support_size": 4140,
+    "unique_feature_patterns": 38,
+    "rank": 6,
+    "parameters_identifiable": true,
+    "standardization": "complete_theoretical_support_population_sd"
+  },
+  "A7@A3r": {
+    "active_names": [
+      "k",
+      "k_squared",
+      "conj_rel_r",
+      "P2",
+      "P3",
+      "P4"
+    ],
+    "dropped_names": [],
+    "mean": [
+      4.107971014492754,
+      17.797342995169082,
+      0.03719806763285024,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      0.9601651624884433,
+      8.175593623986979,
+      0.18924685307088235,
+      0.062166987216020916,
+      0.062166987216020916,
+      0.062166987216020916
+    ],
+    "support_size": 4140,
+    "unique_feature_patterns": 42,
+    "rank": 6,
+    "parameters_identifiable": true,
+    "standardization": "complete_theoretical_support_population_sd"
+  },
+  "A7@A3s": {
+    "active_names": [
+      "k",
+      "k_squared",
+      "conj_rel_s",
+      "P2",
+      "P3",
+      "P4"
+    ],
+    "dropped_names": [],
+    "mean": [
+      4.107971014492754,
+      17.797342995169082,
+      0.03719806763285024,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      0.9601651624884433,
+      8.175593623986979,
+      0.18924685307088235,
+      0.062166987216020916,
+      0.062166987216020916,
+      0.062166987216020916
+    ],
+    "support_size": 4140,
+    "unique_feature_patterns": 40,
+    "rank": 6,
+    "parameters_identifiable": true,
+    "standardization": "complete_theoretical_support_population_sd"
+  },
+  "A7@A4": {
+    "active_names": [
+      "k",
+      "k_squared",
+      "DL_abs",
+      "P2",
+      "P3",
+      "P4"
+    ],
+    "dropped_names": [],
+    "mean": [
+      4.107971014492754,
+      17.797342995169082,
+      16.317391304347826,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      0.9601651624884433,
+      8.175593623986979,
+      4.159586675458154,
+      0.062166987216020916,
+      0.062166987216020916,
+      0.062166987216020916
+    ],
+    "support_size": 4140,
+    "unique_feature_patterns": 83,
+    "rank": 6,
+    "parameters_identifiable": true,
+    "standardization": "complete_theoretical_support_population_sd"
+  },
+  "A7@A5r": {
+    "active_names": [
+      "k",
+      "k_squared",
+      "DL_rel_r",
+      "P2",
+      "P3",
+      "P4"
+    ],
+    "dropped_names": [],
+    "mean": [
+      4.107971014492754,
+      17.797342995169082,
+      16.317391304347826,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      0.9601651624884433,
+      8.175593623986979,
+      4.159586675458154,
+      0.062166987216020916,
+      0.062166987216020916,
+      0.062166987216020916
+    ],
+    "support_size": 4140,
+    "unique_feature_patterns": 86,
+    "rank": 6,
+    "parameters_identifiable": true,
+    "standardization": "complete_theoretical_support_population_sd"
+  },
+  "A7@A5s": {
+    "active_names": [
+      "k",
+      "k_squared",
+      "DL_rel_s",
+      "P2",
+      "P3",
+      "P4"
+    ],
+    "dropped_names": [],
+    "mean": [
+      4.107971014492754,
+      17.797342995169082,
+      16.317391304347826,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      0.9601651624884433,
+      8.175593623986979,
+      4.159586675458154,
+      0.062166987216020916,
+      0.062166987216020916,
+      0.062166987216020916
+    ],
+    "support_size": 4140,
+    "unique_feature_patterns": 83,
+    "rank": 6,
+    "parameters_identifiable": true,
+    "standardization": "complete_theoretical_support_population_sd"
+  },
+  "A7@A6": {
+    "active_names": [
+      "k",
+      "k_squared",
+      "DL_all",
+      "P2",
+      "P3",
+      "P4"
+    ],
+    "dropped_names": [],
+    "mean": [
+      4.107971014492754,
+      17.797342995169082,
+      14.653140096618358,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      0.9601651624884433,
+      8.175593623986979,
+      3.7889334528124845,
+      0.062166987216020916,
+      0.062166987216020916,
+      0.062166987216020916
+    ],
+    "support_size": 4140,
+    "unique_feature_patterns": 78,
+    "rank": 6,
+    "parameters_identifiable": true,
+    "standardization": "complete_theoretical_support_population_sd"
+  }
+}

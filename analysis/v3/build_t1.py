@@ -92,6 +92,23 @@ def make_system_mappings(base):
     return tables
 
 
+def observed_language_summary(strict_mapping,catalogue):
+    """共同基础表中四语言的系统数与两种比例；不另立理论规格。"""
+    columns=['partition_id']+['conj_'+name for name in LANGUAGES]
+    joined=strict_mapping.merge(catalogue[columns],on='partition_id',validate='many_to_one')
+    if joined[columns[1:]].isna().any().any():raise RuntimeError('四语言合取汇总存在未连接的划分。')
+    result={}
+    for language in LANGUAGES:
+        values=joined['conj_'+language].astype(bool)
+        family_means=joined.assign(conj=values.astype(float)).groupby('family_group').conj.mean()
+        result[language]={'systems':len(joined),'families':len(family_means),
+                          'conjunctive_systems':int(values.sum()),
+                          'nonconjunctive_systems':int((~values).sum()),
+                          'system_equal_proportion':float(values.mean()),
+                          'family_equal_proportion':float(family_means.mean())}
+    return result
+
+
 def write_cell_coding():
     lines=['# 八位置、划分编码与描述成本','',
            '以下位序完整沿用S2的`ATOMS`与`KINTYPES`。s/a/r的0依次表示男性参照者、所指者年长、男性所指者；q=s XOR r，q=0表示同性。mask中的第i位为位置i。数据表的排列次序不作为逻辑位置次序。','',
@@ -144,8 +161,9 @@ def main():
                                 'witness_terms':minimum_dnf_witness(mask,language)})
         save_json(OUT/'subset_description_costs.json',subsets)
         write_cell_coding()
-        strict=mappings['strict'].merge(table[['partition_id','conj_abs','conj_all']],on='partition_id',validate='many_to_one')
-        observed={'abs_nonconjunctive':int((~strict.conj_abs).sum()),'all_nonconjunctive':int((~strict.conj_all).sum())}
+        language_summary=observed_language_summary(mappings['strict'],table)
+        observed={'abs_nonconjunctive':language_summary['abs']['nonconjunctive_systems'],
+                  'all_nonconjunctive':language_summary['all']['nonconjunctive_systems']}
         if observed!={'abs_nonconjunctive':163,'all_nonconjunctive':22}:raise RuntimeError('T1观测合取基线不符。')
         command=[sys.executable,'-m','unittest','discover','-s','tests','-p','test_v3_infrastructure.py','-v']
         log_run('T1_tests',{'command':command},{},'started')
@@ -155,6 +173,7 @@ def main():
         if test.returncode:raise RuntimeError('基础设施单元测试未通过，见infrastructure_tests.log。')
         result.update(passed=True,partition_count=len(table),old_conjunction_crosschecks=crosschecks,
                       direction_supports_nonzero_mutually_exclusive=True,samples=sample_metrics,observed_checks=observed,
+                      observed_language_summary=language_summary,
                       tests_passed=True,tests_command=command,
                       parquet_status='已生成Parquet' if parquet_available else '未安装pyarrow；CSV/JSON和全部检查已完成，Parquet待统一依赖安装后补')
     except Exception as exc:
